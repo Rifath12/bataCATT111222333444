@@ -155,7 +155,8 @@ def transcribe(
                 row = {"speaker": speaker, "start": a, "end": b, "text": text}
                 if character_fn is not None:
                     chars = character_fn(result.tokens, result.timestamps, a - 0.05, b)
-                    if "".join(x["text"] for x in chars) == "".join(text.split()):
+                    known_text = re.sub(r"<(?:unk|blk|sos/eos)>", "", text)
+                    if "".join(x["text"] for x in chars) == "".join(known_text.split()):
                         for ch in chars:
                             ch["start_ms"] = max(round(a * 1000), ch["start_ms"])
                             ch["end_ms"] = max(ch["start_ms"], ch["end_ms"])
