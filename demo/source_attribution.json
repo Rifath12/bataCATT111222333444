@@ -1,0 +1,37 @@
+{
+  "clip": "test_G2_2voices",
+  "seconds": 1.6,
+  "source_count": 2,
+  "exact_concurrency_seconds": {
+    "0": 0.68,
+    "1": 0.32,
+    "2": 0.6,
+    "3": 0.0,
+    "4": 0.0
+  },
+  "activity_rule": "20 ms frames above each source peak-frame RMS × 0.055 and 0.0002 RMS",
+  "speakers": {
+    "A": [
+      {
+        "start_s": 0.2,
+        "end_s": 1.36,
+        "transcript": "怎么这么多呀",
+        "recording_speaker_id": "SSB0018",
+        "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0018/SSB00180030.wav"
+      }
+    ],
+    "B": [
+      {
+        "start_s": 0.23,
+        "end_s": 1.09,
+        "transcript": "烤鸭",
+        "recording_speaker_id": "SSB0033",
+        "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0033/SSB00330114.wav"
+      }
+    ]
+  },
+  "relative_gains_db": {
+    "A": 0,
+    "B": 0
+  }
+}

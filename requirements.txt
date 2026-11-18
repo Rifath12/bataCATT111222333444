@@ -1,0 +1,14 @@
+# Install matched CPU torch and torchaudio 2.7.1 first, then this file.
+# Install asteroid==0.7.0 with --no-deps afterward. Only its inference code is used.
+numpy==2.5.5
+scipy==1.18.1
+soundfile==0.14.0
+sherpa-onnx==2.0.1
+asteroid-filterbanks==0.4.0
+julius==0.2.8
+requests==2.34.2
+PyYAML==6.0.3
+huggingface-hub==2.4.0
+pandas==3.1.1
+torch-stoi==0.2.3
+torchmetrics==0.11.4

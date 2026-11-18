@@ -1,0 +1,10 @@
+/.venv/
+/models/
+/results/
+__pycache__/
+*.py[cod]
+*.onnx
+*.pt
+*.zip
+*.wav
+!/demo/mixed.wav
