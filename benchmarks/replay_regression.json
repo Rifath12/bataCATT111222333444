@@ -1,0 +1,9 @@
+{
+  "sample_exact": true,
+  "chunks": 5,
+  "wav_outputs": 4,
+  "replay_delay_median_s": 2.599576468998567,
+  "replay_delay_p95_s": 2.7143868936001674,
+  "file_model_load_s": 1.1261813039964181,
+  "file_audio_wall_s": 11.498498380002275
+}

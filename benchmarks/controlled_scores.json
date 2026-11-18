@@ -1,0 +1,1238 @@
+[
+  {
+    "clip": "evaluation_G3_2voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 2,
+        "audio_seconds": 3.4,
+        "warm_audio_seconds": 2.39201692899951,
+        "model_counts": [
+          2,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 2,
+        "full_overlap_seconds": 1.14,
+        "text": {
+          "errors": 6,
+          "reference_chars": 14,
+          "cpCER": 0.42857142857142855,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.050410083288175166,
+            "track": "spk_A",
+            "whole_improvement_dB": 2.7532523790121006,
+            "exact_overlap_improvement_dB": 1.0221976902361856,
+            "mixture_exact_overlap_SI_SDR_dB": -2.2382569048370935
+          },
+          {
+            "source": "B",
+            "source_rms": 0.046740808534797125,
+            "track": "spk_B",
+            "whole_improvement_dB": 2.297219047275086,
+            "exact_overlap_improvement_dB": -2.321908743325763,
+            "mixture_exact_overlap_SI_SDR_dB": 2.817114594443257
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 2,
+        "audio_seconds": 3.4,
+        "warm_audio_seconds": 3.5362933249998605,
+        "model_counts": [
+          2,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 2,
+        "full_overlap_seconds": 1.14,
+        "text": {
+          "errors": 6,
+          "reference_chars": 14,
+          "cpCER": 0.42857142857142855,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.050410083288175166,
+            "track": "spk_A",
+            "whole_improvement_dB": 2.7532523790121006,
+            "exact_overlap_improvement_dB": 1.0221976902361856,
+            "mixture_exact_overlap_SI_SDR_dB": -2.2382569048370935
+          },
+          {
+            "source": "B",
+            "source_rms": 0.046740808534797125,
+            "track": "spk_B",
+            "whole_improvement_dB": 2.297219047275086,
+            "exact_overlap_improvement_dB": -2.321908743325763,
+            "mixture_exact_overlap_SI_SDR_dB": 2.817114594443257
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G3_3voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 3,
+        "audio_seconds": 3.4,
+        "warm_audio_seconds": 2.7611465849986416,
+        "model_counts": [
+          3,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 3,
+        "full_overlap_seconds": 0.76,
+        "text": {
+          "errors": 18,
+          "reference_chars": 20,
+          "cpCER": 0.9,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1,
+            "2": 2
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.050410083288175166,
+            "track": "spk_A",
+            "whole_improvement_dB": 2.3426659432328285,
+            "exact_overlap_improvement_dB": 2.7526596629146827,
+            "mixture_exact_overlap_SI_SDR_dB": -6.315099032213693
+          },
+          {
+            "source": "B",
+            "source_rms": 0.046740808534797125,
+            "track": "spk_B",
+            "whole_improvement_dB": 0.7590853518575849,
+            "exact_overlap_improvement_dB": -1.8957683303302169,
+            "mixture_exact_overlap_SI_SDR_dB": 0.6829004290936476
+          },
+          {
+            "source": "C",
+            "source_rms": 0.03627752167277023,
+            "track": "spk_C",
+            "whole_improvement_dB": 0.5742028913242834,
+            "exact_overlap_improvement_dB": 0.6605440968498542,
+            "mixture_exact_overlap_SI_SDR_dB": -5.981590965564698
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 3,
+        "audio_seconds": 3.4,
+        "warm_audio_seconds": 3.0426728210004512,
+        "model_counts": [
+          3,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 3,
+        "full_overlap_seconds": 0.76,
+        "text": {
+          "errors": 18,
+          "reference_chars": 20,
+          "cpCER": 0.9,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1,
+            "2": 2
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.050410083288175166,
+            "track": "spk_A",
+            "whole_improvement_dB": 2.3426659432328285,
+            "exact_overlap_improvement_dB": 2.7526596629146827,
+            "mixture_exact_overlap_SI_SDR_dB": -6.315099032213693
+          },
+          {
+            "source": "B",
+            "source_rms": 0.046740808534797125,
+            "track": "spk_B",
+            "whole_improvement_dB": 0.7590853518575849,
+            "exact_overlap_improvement_dB": -1.8957683303302169,
+            "mixture_exact_overlap_SI_SDR_dB": 0.6829004290936476
+          },
+          {
+            "source": "C",
+            "source_rms": 0.03627752167277023,
+            "track": "spk_C",
+            "whole_improvement_dB": 0.5742028913242834,
+            "exact_overlap_improvement_dB": 0.6605440968498542,
+            "mixture_exact_overlap_SI_SDR_dB": -5.981590965564698
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G3_4voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 3,
+        "audio_seconds": 3.56,
+        "warm_audio_seconds": 3.532732761996158,
+        "model_counts": [
+          3,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 4,
+        "full_overlap_seconds": 0.64,
+        "text": {
+          "errors": 25,
+          "reference_chars": 29,
+          "cpCER": 0.8620689655172413,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": null
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.049264249892542564,
+            "track": "spk_A",
+            "whole_improvement_dB": 3.5058876311011202,
+            "exact_overlap_improvement_dB": -0.6013953598433961,
+            "mixture_exact_overlap_SI_SDR_dB": -7.178899703991303
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04567837864251002,
+            "track": "spk_B",
+            "whole_improvement_dB": 0.3507636283103288,
+            "exact_overlap_improvement_dB": -2.8667416678716835,
+            "mixture_exact_overlap_SI_SDR_dB": -0.18884021758130376
+          },
+          {
+            "source": "C",
+            "source_rms": 0.03545292482364746,
+            "track": null,
+            "whole_improvement_dB": null,
+            "exact_overlap_improvement_dB": null,
+            "mixture_exact_overlap_SI_SDR_dB": -8.844794184624183
+          },
+          {
+            "source": "D",
+            "source_rms": 0.031582652466831174,
+            "track": "spk_C",
+            "whole_improvement_dB": 0.9336837319870117,
+            "exact_overlap_improvement_dB": -3.4964275985376014,
+            "mixture_exact_overlap_SI_SDR_dB": -6.696487376690903
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 3.56,
+        "warm_audio_seconds": 3.17680590999953,
+        "model_counts": [
+          4,
+          3
+        ],
+        "accepted_extra_sources": 1,
+        "source_count": 4,
+        "full_overlap_seconds": 0.64,
+        "text": {
+          "errors": 24,
+          "reference_chars": 29,
+          "cpCER": 0.8275862068965517,
+          "hypothesis_index_by_reference": {
+            "0": 2,
+            "1": 1,
+            "2": 3,
+            "3": 0
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.049264249892542564,
+            "track": "spk_A",
+            "whole_improvement_dB": 3.4247197552245376,
+            "exact_overlap_improvement_dB": -3.1990393456398296,
+            "mixture_exact_overlap_SI_SDR_dB": -7.178899703991303
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04567837864251002,
+            "track": "spk_D",
+            "whole_improvement_dB": 0.4359027571957994,
+            "exact_overlap_improvement_dB": -2.702988232199531,
+            "mixture_exact_overlap_SI_SDR_dB": -0.18884021758130376
+          },
+          {
+            "source": "C",
+            "source_rms": 0.03545292482364746,
+            "track": "spk_C",
+            "whole_improvement_dB": -0.1696126960786124,
+            "exact_overlap_improvement_dB": 0.3096727920629121,
+            "mixture_exact_overlap_SI_SDR_dB": -8.844794184624183
+          },
+          {
+            "source": "D",
+            "source_rms": 0.031582652466831174,
+            "track": "spk_B",
+            "whole_improvement_dB": 4.169326802904102,
+            "exact_overlap_improvement_dB": 2.769887533237224,
+            "mixture_exact_overlap_SI_SDR_dB": -6.696487376690903
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G4_2voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 3,
+        "audio_seconds": 4.14,
+        "warm_audio_seconds": 3.1740477710045525,
+        "model_counts": [
+          3,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 2,
+        "full_overlap_seconds": 1.88,
+        "text": {
+          "errors": 27,
+          "reference_chars": 28,
+          "cpCER": 0.9642857142857143,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.055638584555663166,
+            "track": "spk_A",
+            "whole_improvement_dB": -0.2948669610959336,
+            "exact_overlap_improvement_dB": -2.2349244298341056,
+            "mixture_exact_overlap_SI_SDR_dB": 0.9589423051639058
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04693797153093611,
+            "track": "spk_B",
+            "whole_improvement_dB": 1.2031393400832067,
+            "exact_overlap_improvement_dB": -1.3577008101901096,
+            "mixture_exact_overlap_SI_SDR_dB": -0.9283971870207196
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 3,
+        "audio_seconds": 4.14,
+        "warm_audio_seconds": 3.181151565993787,
+        "model_counts": [
+          3,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 2,
+        "full_overlap_seconds": 1.88,
+        "text": {
+          "errors": 27,
+          "reference_chars": 28,
+          "cpCER": 0.9642857142857143,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.055638584555663166,
+            "track": "spk_A",
+            "whole_improvement_dB": -0.2948669610959336,
+            "exact_overlap_improvement_dB": -2.2349244298341056,
+            "mixture_exact_overlap_SI_SDR_dB": 0.9589423051639058
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04693797153093611,
+            "track": "spk_B",
+            "whole_improvement_dB": 1.2031393400832067,
+            "exact_overlap_improvement_dB": -1.3577008101901096,
+            "mixture_exact_overlap_SI_SDR_dB": -0.9283971870207196
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G4_3voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 3,
+        "audio_seconds": 4.2,
+        "warm_audio_seconds": 3.327407712000422,
+        "model_counts": [
+          3,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 3,
+        "full_overlap_seconds": 1.46,
+        "text": {
+          "errors": 26,
+          "reference_chars": 41,
+          "cpCER": 0.6341463414634146,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 2,
+            "2": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05523973651324352,
+            "track": "spk_A",
+            "whole_improvement_dB": 2.4478960881540983,
+            "exact_overlap_improvement_dB": 2.804664072925491,
+            "mixture_exact_overlap_SI_SDR_dB": -0.2619330479374865
+          },
+          {
+            "source": "B",
+            "source_rms": 0.046601494278508286,
+            "track": "spk_C",
+            "whole_improvement_dB": 1.696190418310422,
+            "exact_overlap_improvement_dB": 2.320578312720587,
+            "mixture_exact_overlap_SI_SDR_dB": -3.8723575289869716
+          },
+          {
+            "source": "C",
+            "source_rms": 0.038996733051939965,
+            "track": "spk_B",
+            "whole_improvement_dB": 5.068200990346102,
+            "exact_overlap_improvement_dB": 3.846441599023446,
+            "mixture_exact_overlap_SI_SDR_dB": -5.269328423597317
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 3,
+        "audio_seconds": 4.2,
+        "warm_audio_seconds": 3.6441693470042082,
+        "model_counts": [
+          3,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 3,
+        "full_overlap_seconds": 1.46,
+        "text": {
+          "errors": 26,
+          "reference_chars": 41,
+          "cpCER": 0.6341463414634146,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 2,
+            "2": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05523973651324352,
+            "track": "spk_A",
+            "whole_improvement_dB": 2.4478960881540983,
+            "exact_overlap_improvement_dB": 2.804664072925491,
+            "mixture_exact_overlap_SI_SDR_dB": -0.2619330479374865
+          },
+          {
+            "source": "B",
+            "source_rms": 0.046601494278508286,
+            "track": "spk_C",
+            "whole_improvement_dB": 1.696190418310422,
+            "exact_overlap_improvement_dB": 2.320578312720587,
+            "mixture_exact_overlap_SI_SDR_dB": -3.8723575289869716
+          },
+          {
+            "source": "C",
+            "source_rms": 0.038996733051939965,
+            "track": "spk_B",
+            "whole_improvement_dB": 5.068200990346102,
+            "exact_overlap_improvement_dB": 3.846441599023446,
+            "mixture_exact_overlap_SI_SDR_dB": -5.269328423597317
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G4_4voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 4,
+        "audio_seconds": 4.2,
+        "warm_audio_seconds": 3.6673973189972457,
+        "model_counts": [
+          4,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 4,
+        "full_overlap_seconds": 0.96,
+        "text": {
+          "errors": 40,
+          "reference_chars": 47,
+          "cpCER": 0.851063829787234,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 2,
+            "2": 3,
+            "3": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05523973651324352,
+            "track": "spk_A",
+            "whole_improvement_dB": 0.4880868597651422,
+            "exact_overlap_improvement_dB": -1.4656316438473524,
+            "mixture_exact_overlap_SI_SDR_dB": -1.2604762820158522
+          },
+          {
+            "source": "B",
+            "source_rms": 0.046601494278508286,
+            "track": "spk_C",
+            "whole_improvement_dB": -0.02814067266506015,
+            "exact_overlap_improvement_dB": 0.9557821677955296,
+            "mixture_exact_overlap_SI_SDR_dB": -5.716750314326404
+          },
+          {
+            "source": "C",
+            "source_rms": 0.038996733051939965,
+            "track": "spk_D",
+            "whole_improvement_dB": 4.242182495429471,
+            "exact_overlap_improvement_dB": 1.5802543144584948,
+            "mixture_exact_overlap_SI_SDR_dB": -6.8467728969466854
+          },
+          {
+            "source": "D",
+            "source_rms": 0.03953494498103495,
+            "track": "spk_B",
+            "whole_improvement_dB": 0.3656009027174072,
+            "exact_overlap_improvement_dB": -2.005425683111909,
+            "mixture_exact_overlap_SI_SDR_dB": -5.33176401408587
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 4.2,
+        "warm_audio_seconds": 3.2103857080001035,
+        "model_counts": [
+          4,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 4,
+        "full_overlap_seconds": 0.96,
+        "text": {
+          "errors": 40,
+          "reference_chars": 47,
+          "cpCER": 0.851063829787234,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 2,
+            "2": 3,
+            "3": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05523973651324352,
+            "track": "spk_A",
+            "whole_improvement_dB": 0.4880868597651422,
+            "exact_overlap_improvement_dB": -1.4656316438473524,
+            "mixture_exact_overlap_SI_SDR_dB": -1.2604762820158522
+          },
+          {
+            "source": "B",
+            "source_rms": 0.046601494278508286,
+            "track": "spk_C",
+            "whole_improvement_dB": -0.02814067266506015,
+            "exact_overlap_improvement_dB": 0.9557821677955296,
+            "mixture_exact_overlap_SI_SDR_dB": -5.716750314326404
+          },
+          {
+            "source": "C",
+            "source_rms": 0.038996733051939965,
+            "track": "spk_D",
+            "whole_improvement_dB": 4.242182495429471,
+            "exact_overlap_improvement_dB": 1.5802543144584948,
+            "mixture_exact_overlap_SI_SDR_dB": -6.8467728969466854
+          },
+          {
+            "source": "D",
+            "source_rms": 0.03953494498103495,
+            "track": "spk_B",
+            "whole_improvement_dB": 0.3656009027174072,
+            "exact_overlap_improvement_dB": -2.005425683111909,
+            "mixture_exact_overlap_SI_SDR_dB": -5.33176401408587
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G5_2voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 2,
+        "audio_seconds": 3.92,
+        "warm_audio_seconds": 2.712143274002301,
+        "model_counts": [
+          2,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 2,
+        "full_overlap_seconds": 1.86,
+        "text": {
+          "errors": 10,
+          "reference_chars": 20,
+          "cpCER": 0.5,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05538363369611807,
+            "track": "spk_A",
+            "whole_improvement_dB": -0.410049234103639,
+            "exact_overlap_improvement_dB": -0.781652087044717,
+            "mixture_exact_overlap_SI_SDR_dB": 1.3878597486394377
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04432336645231215,
+            "track": "spk_B",
+            "whole_improvement_dB": 4.390105565920971,
+            "exact_overlap_improvement_dB": 3.925724501614442,
+            "mixture_exact_overlap_SI_SDR_dB": -1.1748002445715557
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 3.92,
+        "warm_audio_seconds": 2.9129159989970503,
+        "model_counts": [
+          3,
+          3
+        ],
+        "accepted_extra_sources": 2,
+        "source_count": 2,
+        "full_overlap_seconds": 1.86,
+        "text": {
+          "errors": 17,
+          "reference_chars": 20,
+          "cpCER": 0.85,
+          "hypothesis_index_by_reference": {
+            "0": 1,
+            "1": 0
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05538363369611807,
+            "track": "spk_B",
+            "whole_improvement_dB": 2.226137952048683,
+            "exact_overlap_improvement_dB": 4.207174976182307,
+            "mixture_exact_overlap_SI_SDR_dB": 1.3878597486394377
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04432336645231215,
+            "track": "spk_A",
+            "whole_improvement_dB": 8.972866747749178,
+            "exact_overlap_improvement_dB": 8.19581451901707,
+            "mixture_exact_overlap_SI_SDR_dB": -1.1748002445715557
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G5_3voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 4,
+        "audio_seconds": 3.92,
+        "warm_audio_seconds": 2.8418041359982453,
+        "model_counts": [
+          4,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 3,
+        "full_overlap_seconds": 1.8,
+        "text": {
+          "errors": 30,
+          "reference_chars": 34,
+          "cpCER": 0.8823529411764706,
+          "hypothesis_index_by_reference": {
+            "0": 0,
+            "1": 1,
+            "2": 3
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05538363369611807,
+            "track": "spk_A",
+            "whole_improvement_dB": 1.1614471927844945,
+            "exact_overlap_improvement_dB": 1.3526539583759223,
+            "mixture_exact_overlap_SI_SDR_dB": -0.8494450259060053
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04432336645231215,
+            "track": "spk_B",
+            "whole_improvement_dB": 1.636082905280924,
+            "exact_overlap_improvement_dB": 2.4463929842582774,
+            "mixture_exact_overlap_SI_SDR_dB": -3.1157541111729485
+          },
+          {
+            "source": "C",
+            "source_rms": 0.038617193974135565,
+            "track": "spk_D",
+            "whole_improvement_dB": -0.4981986100023974,
+            "exact_overlap_improvement_dB": 0.06924293852092145,
+            "mixture_exact_overlap_SI_SDR_dB": -5.719558117424222
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 3.92,
+        "warm_audio_seconds": 3.1299749729951145,
+        "model_counts": [
+          4,
+          4
+        ],
+        "accepted_extra_sources": 1,
+        "source_count": 3,
+        "full_overlap_seconds": 1.8,
+        "text": {
+          "errors": 29,
+          "reference_chars": 34,
+          "cpCER": 0.8529411764705882,
+          "hypothesis_index_by_reference": {
+            "0": 2,
+            "1": 1,
+            "2": 3
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05538363369611807,
+            "track": "spk_C",
+            "whole_improvement_dB": 1.262172131756227,
+            "exact_overlap_improvement_dB": 1.4274626970467106,
+            "mixture_exact_overlap_SI_SDR_dB": -0.8494450259060053
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04432336645231215,
+            "track": "spk_B",
+            "whole_improvement_dB": 2.421767875919065,
+            "exact_overlap_improvement_dB": 2.6371919781070856,
+            "mixture_exact_overlap_SI_SDR_dB": -3.1157541111729485
+          },
+          {
+            "source": "C",
+            "source_rms": 0.038617193974135565,
+            "track": "spk_A",
+            "whole_improvement_dB": 1.1504813970404681,
+            "exact_overlap_improvement_dB": 1.0278932624908546,
+            "mixture_exact_overlap_SI_SDR_dB": -5.719558117424222
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G5_4voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 4,
+        "audio_seconds": 3.92,
+        "warm_audio_seconds": 3.1026923720055493,
+        "model_counts": [
+          4,
+          4
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 4,
+        "full_overlap_seconds": 1.0,
+        "text": {
+          "errors": 33,
+          "reference_chars": 40,
+          "cpCER": 0.825,
+          "hypothesis_index_by_reference": {
+            "0": 1,
+            "1": 0,
+            "2": 3,
+            "3": 2
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05538363369611807,
+            "track": "spk_D",
+            "whole_improvement_dB": -1.5518975629253597,
+            "exact_overlap_improvement_dB": -4.534368885741277,
+            "mixture_exact_overlap_SI_SDR_dB": -2.686292951839315
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04432336645231215,
+            "track": "spk_A",
+            "whole_improvement_dB": 3.749473521656778,
+            "exact_overlap_improvement_dB": 3.8923801965421085,
+            "mixture_exact_overlap_SI_SDR_dB": -3.3424867981386037
+          },
+          {
+            "source": "C",
+            "source_rms": 0.038617193974135565,
+            "track": "spk_B",
+            "whole_improvement_dB": 1.404090188754596,
+            "exact_overlap_improvement_dB": 1.3967115551744183,
+            "mixture_exact_overlap_SI_SDR_dB": -5.943029718361997
+          },
+          {
+            "source": "D",
+            "source_rms": 0.027848170078809076,
+            "track": "spk_C",
+            "whole_improvement_dB": 4.306354480439126,
+            "exact_overlap_improvement_dB": 3.7542888124626552,
+            "mixture_exact_overlap_SI_SDR_dB": -11.379278973739195
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 3.92,
+        "warm_audio_seconds": 3.032910986999923,
+        "model_counts": [
+          4,
+          4
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 4,
+        "full_overlap_seconds": 1.0,
+        "text": {
+          "errors": 33,
+          "reference_chars": 40,
+          "cpCER": 0.825,
+          "hypothesis_index_by_reference": {
+            "0": 1,
+            "1": 0,
+            "2": 3,
+            "3": 2
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05538363369611807,
+            "track": "spk_D",
+            "whole_improvement_dB": -1.5518975629253597,
+            "exact_overlap_improvement_dB": -4.534368885741277,
+            "mixture_exact_overlap_SI_SDR_dB": -2.686292951839315
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04432336645231215,
+            "track": "spk_A",
+            "whole_improvement_dB": 3.749473521656778,
+            "exact_overlap_improvement_dB": 3.8923801965421085,
+            "mixture_exact_overlap_SI_SDR_dB": -3.3424867981386037
+          },
+          {
+            "source": "C",
+            "source_rms": 0.038617193974135565,
+            "track": "spk_B",
+            "whole_improvement_dB": 1.404090188754596,
+            "exact_overlap_improvement_dB": 1.3967115551744183,
+            "mixture_exact_overlap_SI_SDR_dB": -5.943029718361997
+          },
+          {
+            "source": "D",
+            "source_rms": 0.027848170078809076,
+            "track": "spk_C",
+            "whole_improvement_dB": 4.306354480439126,
+            "exact_overlap_improvement_dB": 3.7542888124626552,
+            "mixture_exact_overlap_SI_SDR_dB": -11.379278973739195
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G6_2voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 3,
+        "audio_seconds": 3.86,
+        "warm_audio_seconds": 2.6757895900009316,
+        "model_counts": [
+          3,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 2,
+        "full_overlap_seconds": 1.92,
+        "text": {
+          "errors": 12,
+          "reference_chars": 24,
+          "cpCER": 0.5,
+          "hypothesis_index_by_reference": {
+            "0": 1,
+            "1": 0
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05530883236006673,
+            "track": "spk_B",
+            "whole_improvement_dB": 3.1394211449153304,
+            "exact_overlap_improvement_dB": 1.3919331811197688,
+            "mixture_exact_overlap_SI_SDR_dB": 2.0377986302769098
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04529565662677214,
+            "track": "spk_A",
+            "whole_improvement_dB": 7.186253376106637,
+            "exact_overlap_improvement_dB": 5.547374509202593,
+            "mixture_exact_overlap_SI_SDR_dB": -1.7535868195676305
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 3,
+        "audio_seconds": 3.86,
+        "warm_audio_seconds": 2.8602512879951973,
+        "model_counts": [
+          3,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 2,
+        "full_overlap_seconds": 1.92,
+        "text": {
+          "errors": 12,
+          "reference_chars": 24,
+          "cpCER": 0.5,
+          "hypothesis_index_by_reference": {
+            "0": 1,
+            "1": 0
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.05530883236006673,
+            "track": "spk_B",
+            "whole_improvement_dB": 3.1394211449153304,
+            "exact_overlap_improvement_dB": 1.3919331811197688,
+            "mixture_exact_overlap_SI_SDR_dB": 2.0377986302769098
+          },
+          {
+            "source": "B",
+            "source_rms": 0.04529565662677214,
+            "track": "spk_A",
+            "whole_improvement_dB": 7.186253376106637,
+            "exact_overlap_improvement_dB": 5.547374509202593,
+            "mixture_exact_overlap_SI_SDR_dB": -1.7535868195676305
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G6_3voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 3,
+        "audio_seconds": 5.36,
+        "warm_audio_seconds": 3.5049546449954505,
+        "model_counts": [
+          3,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 3,
+        "full_overlap_seconds": 1.34,
+        "text": {
+          "errors": 20,
+          "reference_chars": 30,
+          "cpCER": 0.6666666666666666,
+          "hypothesis_index_by_reference": {
+            "0": 1,
+            "1": 2,
+            "2": 0
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.04693596458814111,
+            "track": "spk_B",
+            "whole_improvement_dB": 4.186733133790112,
+            "exact_overlap_improvement_dB": 0.33881033388978987,
+            "mixture_exact_overlap_SI_SDR_dB": -0.5952768953658226
+          },
+          {
+            "source": "B",
+            "source_rms": 0.038438622634271266,
+            "track": "spk_C",
+            "whole_improvement_dB": 1.8792529224784453,
+            "exact_overlap_improvement_dB": 2.5190740124154196,
+            "mixture_exact_overlap_SI_SDR_dB": -3.8998792877662227
+          },
+          {
+            "source": "C",
+            "source_rms": 0.03977569420778647,
+            "track": "spk_A",
+            "whole_improvement_dB": 2.5567292594271187,
+            "exact_overlap_improvement_dB": 1.1221299392466686,
+            "mixture_exact_overlap_SI_SDR_dB": -4.486030528778256
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 5.36,
+        "warm_audio_seconds": 3.973683519005135,
+        "model_counts": [
+          4,
+          2
+        ],
+        "accepted_extra_sources": 1,
+        "source_count": 3,
+        "full_overlap_seconds": 1.34,
+        "text": {
+          "errors": 25,
+          "reference_chars": 30,
+          "cpCER": 0.8333333333333334,
+          "hypothesis_index_by_reference": {
+            "0": 1,
+            "1": 0,
+            "2": 3
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.04693596458814111,
+            "track": "spk_B",
+            "whole_improvement_dB": 4.021067916117435,
+            "exact_overlap_improvement_dB": 0.16556404471725783,
+            "mixture_exact_overlap_SI_SDR_dB": -0.5952768953658226
+          },
+          {
+            "source": "B",
+            "source_rms": 0.038438622634271266,
+            "track": "spk_A",
+            "whole_improvement_dB": 0.7764322233051701,
+            "exact_overlap_improvement_dB": -3.5910891125889526,
+            "mixture_exact_overlap_SI_SDR_dB": -3.8998792877662227
+          },
+          {
+            "source": "C",
+            "source_rms": 0.03977569420778647,
+            "track": "spk_D",
+            "whole_improvement_dB": 3.5550719896126086,
+            "exact_overlap_improvement_dB": 2.1470815715166633,
+            "mixture_exact_overlap_SI_SDR_dB": -4.486030528778256
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "clip": "evaluation_G6_4voices",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 4,
+        "audio_seconds": 5.36,
+        "warm_audio_seconds": 4.219340203999309,
+        "model_counts": [
+          4,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 4,
+        "full_overlap_seconds": 0.9,
+        "text": {
+          "errors": 25,
+          "reference_chars": 36,
+          "cpCER": 0.6944444444444444,
+          "hypothesis_index_by_reference": {
+            "0": 3,
+            "1": 1,
+            "2": 2,
+            "3": 0
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.04693596458814111,
+            "track": "spk_D",
+            "whole_improvement_dB": 3.8365534018754324,
+            "exact_overlap_improvement_dB": -2.4024544566185644,
+            "mixture_exact_overlap_SI_SDR_dB": -2.576374989040992
+          },
+          {
+            "source": "B",
+            "source_rms": 0.038438622634271266,
+            "track": "spk_B",
+            "whole_improvement_dB": -3.544235824994482,
+            "exact_overlap_improvement_dB": -7.566255610494659,
+            "mixture_exact_overlap_SI_SDR_dB": -5.348809153781433
+          },
+          {
+            "source": "C",
+            "source_rms": 0.03977569420778647,
+            "track": "spk_C",
+            "whole_improvement_dB": 2.399799067727386,
+            "exact_overlap_improvement_dB": -0.027687435859633958,
+            "mixture_exact_overlap_SI_SDR_dB": -5.080834358980578
+          },
+          {
+            "source": "D",
+            "source_rms": 0.034741877384914216,
+            "track": "spk_A",
+            "whole_improvement_dB": 5.139882704461277,
+            "exact_overlap_improvement_dB": -0.10720670767875085,
+            "mixture_exact_overlap_SI_SDR_dB": -5.910862779725381
+          }
+        ]
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 5.36,
+        "warm_audio_seconds": 4.967594620000455,
+        "model_counts": [
+          4,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "source_count": 4,
+        "full_overlap_seconds": 0.9,
+        "text": {
+          "errors": 25,
+          "reference_chars": 36,
+          "cpCER": 0.6944444444444444,
+          "hypothesis_index_by_reference": {
+            "0": 3,
+            "1": 1,
+            "2": 2,
+            "3": 0
+          }
+        },
+        "waveform": [
+          {
+            "source": "A",
+            "source_rms": 0.04693596458814111,
+            "track": "spk_D",
+            "whole_improvement_dB": 3.8365534018754324,
+            "exact_overlap_improvement_dB": -2.4024544566185644,
+            "mixture_exact_overlap_SI_SDR_dB": -2.576374989040992
+          },
+          {
+            "source": "B",
+            "source_rms": 0.038438622634271266,
+            "track": "spk_B",
+            "whole_improvement_dB": -3.544235824994482,
+            "exact_overlap_improvement_dB": -7.566255610494659,
+            "mixture_exact_overlap_SI_SDR_dB": -5.348809153781433
+          },
+          {
+            "source": "C",
+            "source_rms": 0.03977569420778647,
+            "track": "spk_C",
+            "whole_improvement_dB": 2.399799067727386,
+            "exact_overlap_improvement_dB": -0.027687435859633958,
+            "mixture_exact_overlap_SI_SDR_dB": -5.080834358980578
+          },
+          {
+            "source": "D",
+            "source_rms": 0.034741877384914216,
+            "track": "spk_A",
+            "whole_improvement_dB": 5.139882704461277,
+            "exact_overlap_improvement_dB": -0.10720670767875085,
+            "mixture_exact_overlap_SI_SDR_dB": -5.910862779725381
+          }
+        ]
+      }
+    ]
+  }
+]

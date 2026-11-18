@@ -1,0 +1,2012 @@
+{
+  "files": [
+    {
+      "file": "SSB02870128.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870128.wav",
+      "sha256": "1547b84e673de257650ea1d5938309c02908af27b6cbb1a3af97f11575756a57"
+    },
+    {
+      "file": "SSB02870167.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870167.wav",
+      "sha256": "6848c1f3fced3b8f0701a1a7de226dce8373a50a71db24eb2af1b44cd7ce7db0"
+    },
+    {
+      "file": "SSB02870195.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870195.wav",
+      "sha256": "5bd489969bb914da840fa7344d3ed6b2adde00ae24f48ea9f03c33533aafda03"
+    },
+    {
+      "file": "SSB02880036.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880036.wav",
+      "sha256": "677bced982b02a523c847c9454719b85f13c4eb23af4d6e1c614f41e29618dfe"
+    },
+    {
+      "file": "SSB02880053.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880053.wav",
+      "sha256": "0185c7bd1a90df2ca41abb4222ff18c7874077a423218fe6e3b1210e5bd44151"
+    },
+    {
+      "file": "SSB02880072.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880072.wav",
+      "sha256": "971feb8569f4440ab00ba61ca61fae589e8b65a9e653517b59ab041170876ccc"
+    },
+    {
+      "file": "SSB02990037.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990037.wav",
+      "sha256": "ace7aa1cda178e8415b9ced6ae7f0f1f0228de62213a43deafc5307718bbfb4e"
+    },
+    {
+      "file": "SSB02990203.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990203.wav",
+      "sha256": "d1f5a37c1ac9f38de2768e226d8d569247210e46d94d495876f5de8e84235cf9"
+    },
+    {
+      "file": "SSB02990450.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990450.wav",
+      "sha256": "55d8676aa4f4ae6073fbb62efbe320fe5fdc75e9829cf7f283223561a45df9fd"
+    },
+    {
+      "file": "SSB03070038.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0307/SSB03070038.wav",
+      "sha256": "a5fcdc12b00e7f56b48a43d0baa661ed9dfcf701ec74ca32ced3ef0d89b4f2f8"
+    },
+    {
+      "file": "SSB03070043.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0307/SSB03070043.wav",
+      "sha256": "145d3d445f64fb92ad7f5ddb266398c5419af3669c4dcc4b31747fb029fc14a0"
+    },
+    {
+      "file": "SSB03070085.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0307/SSB03070085.wav",
+      "sha256": "aa9b2e4bad26c776ef711877e52f95b1afdf2480cd91b65e0bcfb0fc3757b8f7"
+    },
+    {
+      "file": "SSB03150038.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150038.wav",
+      "sha256": "f8434bb44f6369280e60897efcc5ef37f6bb518b0e3bc6014f54b4b46e3709b0"
+    },
+    {
+      "file": "SSB03150060.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150060.wav",
+      "sha256": "1c4ae0441dafb934ade78c4f10d936e31d92cf9bc790140008770d35290604f7"
+    },
+    {
+      "file": "SSB03150076.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150076.wav",
+      "sha256": "02a0e353f8ef91f6563ad7cb0e236d10ed22b8fdf6b290067b45c88eb8012cff"
+    },
+    {
+      "file": "SSB03160030.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160030.wav",
+      "sha256": "f065bed3a81c75c9f7bfd6471ae93c7b076fc254d78df3ad4b641b9ee1968f1c"
+    },
+    {
+      "file": "SSB03160056.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160056.wav",
+      "sha256": "ec08d9cecc6c1324b1b375287bf2433db0039a7d49b9e876346c5fcf086c8b02"
+    },
+    {
+      "file": "SSB03160098.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160098.wav",
+      "sha256": "d89f068d29fae31b3fb9cd589337431121850f3f0e4a65cbc443ef35af525fec"
+    },
+    {
+      "file": "SSB03230019.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230019.wav",
+      "sha256": "0ccf757c3fbf9a5bf1bb623509b589c0725bfa355dbbc2b648774c6b5d2f217d"
+    },
+    {
+      "file": "SSB03230050.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230050.wav",
+      "sha256": "d6b85d728e13423f1d5d0bc38e6873ca38a2390229dcae3bf1a884367ff62ee8"
+    },
+    {
+      "file": "SSB03230286.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230286.wav",
+      "sha256": "9ca50a6306a71bc93c5697c73cd04bacaa95cae7cfe6faf317a530c1346fd154"
+    },
+    {
+      "file": "SSB03380013.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0338/SSB03380013.wav",
+      "sha256": "70e104e9a15c2dab55399bfd7b1463d291ac15be1bf99cac3393aa95ec8527a5"
+    },
+    {
+      "file": "SSB03380033.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0338/SSB03380033.wav",
+      "sha256": "bfcbdbb93a7ad07816c85803fcf27d701f26ec8e5b6e4e517d5df91c05f147c5"
+    },
+    {
+      "file": "SSB03380034.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0338/SSB03380034.wav",
+      "sha256": "887a954e1f567e7723847b02921914d07bac18bb8f8cb63f752e9191b0d55457"
+    },
+    {
+      "file": "SSB03390129.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390129.wav",
+      "sha256": "bc83bbe9598a1346cedc14b5d2c00ee172ee127988f882bdc3513a682a875484"
+    },
+    {
+      "file": "SSB03390162.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390162.wav",
+      "sha256": "0dadd019b33ddad8a444ec78b0beb50bd9fccaaab7c33ab379ab39ac8da561fd"
+    },
+    {
+      "file": "SSB03390177.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390177.wav",
+      "sha256": "a8259e82abb712cf6d6f69b806fc6792274566b22fcdcae577245dd422ba731c"
+    },
+    {
+      "file": "SSB03410063.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410063.wav",
+      "sha256": "c38fff035cb892be23a4d681242e7f3e87368bb57aed1e61160c147bd870baa1"
+    },
+    {
+      "file": "SSB03410142.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410142.wav",
+      "sha256": "6589c314d7960323dc4a194c830dac9dde4e7051919e851fb6353162a321355c"
+    },
+    {
+      "file": "SSB03410231.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410231.wav",
+      "sha256": "68f34d8e702e99cfbdfc902fe50c9e012595998691ca2165a662df2887a568aa"
+    },
+    {
+      "file": "SSB03420017.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420017.wav",
+      "sha256": "dad6b5d6ba96eec07676edda66f65fa3fb93c9781f538a90f091e061737b5adc"
+    },
+    {
+      "file": "SSB03420042.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420042.wav",
+      "sha256": "f4e360466c5aba3cee92c783bbcde3ee741a3033b5ec4286d276153313cc3af0"
+    },
+    {
+      "file": "SSB03420103.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420103.wav",
+      "sha256": "a82887d6b4f9eee121950d69a7cc1020c775c8c71db419e78a0e029b5b072293"
+    },
+    {
+      "file": "SSB03540005.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0354/SSB03540005.wav",
+      "sha256": "f005f5e9f33b5c6ca9cb8077d95a9c7e9597344ddd07697ffc485dda1b0cf41d"
+    },
+    {
+      "file": "SSB03540018.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0354/SSB03540018.wav",
+      "sha256": "9d771bdbae2bb4d7a346a51ae56d15e6f7cb79c9d50deed66683cd4b6708f392"
+    },
+    {
+      "file": "SSB03540090.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0354/SSB03540090.wav",
+      "sha256": "52ed88003fddd3014c2dd0f7325b69153738471ab4d2578c65e1c7fe67ddf890"
+    },
+    {
+      "file": "SSB03660055.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660055.wav",
+      "sha256": "312b04e0d5f2db6532b4f9a23daff424a409cd46e075ed4feddb6397de58e0d2"
+    },
+    {
+      "file": "SSB03660077.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660077.wav",
+      "sha256": "18d28d86793b1482c8c054e09f5fabdab57f63ba946e834f5c46173fed4c8e34"
+    },
+    {
+      "file": "SSB03660107.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660107.wav",
+      "sha256": "834c4818623f81c5433d51d0f358d9f98bc7fa90e6d2faad2be64db770f1d349"
+    },
+    {
+      "file": "SSB03790001.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790001.wav",
+      "sha256": "a746c94dd6398dabb54062a16e709b4b68041eef97101d89b7aef8e4ece7988c"
+    },
+    {
+      "file": "SSB03790038.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790038.wav",
+      "sha256": "fac4c0610bf1dfe2cc7d3d108971ba90b0095804d2de138ff1b013494e0acded"
+    },
+    {
+      "file": "SSB03790105.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790105.wav",
+      "sha256": "26b465a56b3298e44fbca696551d73c00373a25bc774d78cf2dec12dd09565d2"
+    },
+    {
+      "file": "SSB03820195.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820195.wav",
+      "sha256": "1d6f248a31087dc43607b99ac21faa94f84468270487e45ee7b5aa1de3e6b056"
+    },
+    {
+      "file": "SSB03820212.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820212.wav",
+      "sha256": "a2ad104da2a1bb2b4d85185683ab37b2c8ef102c18ca8e4103cc15dfaba40299"
+    },
+    {
+      "file": "SSB03820364.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820364.wav",
+      "sha256": "ec962efae909f835ac39a379aea44d8629e7ed29615815aa2b4b287a93402177"
+    },
+    {
+      "file": "SSB03930036.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0393/SSB03930036.wav",
+      "sha256": "b8a1422ddbf35488ac23755678f3fbe2e3c6a1bcbc4adda1c8695f3ac2cdeea9"
+    },
+    {
+      "file": "SSB03930180.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0393/SSB03930180.wav",
+      "sha256": "d37f2bc408c8bc6aa5f7373603f6a02e8405c2873da743ad8dfa916914e73896"
+    },
+    {
+      "file": "SSB03930181.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0393/SSB03930181.wav",
+      "sha256": "f6b2d2df95a4170bfbf290b9a8c6785686318f9b3e5e953b77f690777649dc3d"
+    },
+    {
+      "file": "SSB03940019.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940019.wav",
+      "sha256": "569e5678f8bec756ea19fddd118722581bd1c6773c932119300e058bf45fd378"
+    },
+    {
+      "file": "SSB03940057.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940057.wav",
+      "sha256": "378f346d0abadf34017ca50a2a8e60f9401e49acc088654045be4329e23a149b"
+    },
+    {
+      "file": "SSB03940088.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940088.wav",
+      "sha256": "6341d23b2bd4643d6615eeb6c4846c9b71977cb08e011097afcd2e3a846e79e6"
+    },
+    {
+      "file": "SSB03950012.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950012.wav",
+      "sha256": "c34385d79f972c9633acd3ae2fb09450852ee61c289754e1bb8612f1b87bbb7d"
+    },
+    {
+      "file": "SSB03950014.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950014.wav",
+      "sha256": "5baf00e823c61d7c118c1d1def24203c53e53cb2b91bdcaeaab8172a673d516b"
+    },
+    {
+      "file": "SSB03950043.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950043.wav",
+      "sha256": "b75463114869d4f0a8ac9e878260adbfa650679c067cb84c3f9e947a9cbb3aa8"
+    },
+    {
+      "file": "SSB04070024.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070024.wav",
+      "sha256": "a50fa207a65c1a564639cb22511945b73c0583eae2af330fcb15c797cde72e62"
+    },
+    {
+      "file": "SSB04070029.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070029.wav",
+      "sha256": "efc5ea5ae51cb59fd581fb2d06bff7eb6355e61269467ee21e7f742122adbecb"
+    },
+    {
+      "file": "SSB04070045.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070045.wav",
+      "sha256": "16dc0ecba036dae58df03035b01c4d75d81e9db8bcc59365a7d7331a564a0f8e"
+    },
+    {
+      "file": "SSB04270035.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0427/SSB04270035.wav",
+      "sha256": "52227d6a6f92b6994dbcc1116b22d86292f89b6845166314f9e29f6526b9f189"
+    },
+    {
+      "file": "SSB04270075.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0427/SSB04270075.wav",
+      "sha256": "bef5af40631549f3e9b2293f6f041f85c44563c1d5853e42e69453a48f25bbcb"
+    },
+    {
+      "file": "SSB04270079.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0427/SSB04270079.wav",
+      "sha256": "f5b52a8c097ecbb1c41934b065c5d4085a2c6adb55754a21e622ef88436886fd"
+    },
+    {
+      "file": "SSB04340014.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340014.wav",
+      "sha256": "ae403c2471daef2f5dd03436a9f2ce3a3e04fb22ac85348c4fbffb0752e5db17"
+    },
+    {
+      "file": "SSB04340046.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340046.wav",
+      "sha256": "5347949bc5e004b8c4e8bed28826a5f6292c0688a1cedb9b472c3b97115d682f"
+    },
+    {
+      "file": "SSB04340054.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340054.wav",
+      "sha256": "26d5d6928c07e55dbfdadfd3ea3fbb0bd7d3d1deb7c69d5fbdad8840b0cceeda"
+    },
+    {
+      "file": "SSB04700071.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700071.wav",
+      "sha256": "3350e3015d8d39bd89a637fa49255923448c0bfff425051045e8bc03633bd26e"
+    },
+    {
+      "file": "SSB04700115.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700115.wav",
+      "sha256": "d5955a633e7c0b9acbf9b85c4a6f607c8295bd038ec1544afb8341bd8559a22f"
+    },
+    {
+      "file": "SSB04700117.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700117.wav",
+      "sha256": "0a4478106227622e34e6317ca63000f1488b605415aa52b009adcc77952daba0"
+    },
+    {
+      "file": "SSB04820034.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820034.wav",
+      "sha256": "e16443f36876796ed895c938a1a4154d5aa2d18efd3134969ab92963f77c39de"
+    },
+    {
+      "file": "SSB04820296.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820296.wav",
+      "sha256": "88ccdbeb9551f102260ff842c54ec06ceab379ca5a96bf062ee45aa4091c7c1d"
+    },
+    {
+      "file": "SSB04820398.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820398.wav",
+      "sha256": "1447e62210e92ecafe6f13d8b50763201c3235e279f264c82c68c7f0d8b98ca2"
+    },
+    {
+      "file": "SSB05020002.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0502/SSB05020002.wav",
+      "sha256": "f4de33992399cf5c5e74e7bb41bced2c0eea2c6d97f613984c83b8b6dc721ff3"
+    },
+    {
+      "file": "SSB05020027.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0502/SSB05020027.wav",
+      "sha256": "ea4c81ab4bd95db92e3713c98ffdee1e384014c63ff427b3d6b17a8fc17c8f8d"
+    },
+    {
+      "file": "SSB05020043.wav",
+      "url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0502/SSB05020043.wav",
+      "sha256": "17924a281bc6b9525065f71bdf42e822dc3dd3ebb881c16000c44a106efa02c4"
+    },
+    {
+      "file": "R8007_M8010_MS803_mixture_1607.99_1619.92.wav",
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval1/mixtures/R8007_M8010_MS803_mixture_1607.99_1619.92.wav",
+      "sha256": "231a02087295e73d11a6b30ebfbc14eb27ac199b8c9029a16dd0a7dd33e7e159"
+    },
+    {
+      "file": "R8007_M8011_MS806_mixture_1571.24_1587.66.wav",
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval1/mixtures/R8007_M8011_MS806_mixture_1571.24_1587.66.wav",
+      "sha256": "e87c00971a4e77c37f80def2cdaa160189619a9a099df92e87f05da65cefa371"
+    },
+    {
+      "file": "R8007_M8010_MS803_mixture_1040.28_1062.36.wav",
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval1/mixtures/R8007_M8010_MS803_mixture_1040.28_1062.36.wav",
+      "sha256": "6e108f6ae45863727b3ee56c9ff166ad8f3402414659442ef19848fe09fe8931"
+    },
+    {
+      "file": "R8003_M8001_MS801_mixture_912.97_933.22.wav",
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval1/mixtures/R8003_M8001_MS801_mixture_912.97_933.22.wav",
+      "sha256": "ac03815e707e0ba63953ec37e05f8a682bdf942b3044077f6ff448ddb3c852a9"
+    },
+    {
+      "file": "R8007_M8010.rttm",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Eval_Ali_far/R8007_M8010.rttm",
+      "sha256": "2cdc3b77496942fa46b435bf0a6880cfa7452c3e34ae1ef0dd070a05032e0ed6"
+    },
+    {
+      "file": "R8007_M8011.rttm",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Eval_Ali_far/R8007_M8011.rttm",
+      "sha256": "114d4f524b47e2bca45b7467c331c8fb7a3861b5473c170d660c84de46197ee4"
+    },
+    {
+      "file": "R8003_M8001.rttm",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Eval_Ali_far/R8003_M8001.rttm",
+      "sha256": "e1a4f93457b43c6d316ae02ea71d4d7f90d70e92d612c29f73ab4313f0f13fe0"
+    }
+  ],
+  "cases": [
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.09,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870128.wav",
+            "transcript": "放手了吗",
+            "recording_id": "SSB0287"
+          },
+          {
+            "start_s": 1.16,
+            "end_s": 2.08,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870167.wav",
+            "transcript": "婉君",
+            "recording_id": "SSB0287"
+          },
+          {
+            "start_s": 2.15,
+            "end_s": 2.89,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870195.wav",
+            "transcript": "婉如",
+            "recording_id": "SSB0287"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.54,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880036.wav",
+            "transcript": "天黑黑",
+            "recording_id": "SSB0288"
+          },
+          {
+            "start_s": 1.625,
+            "end_s": 2.545,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880053.wav",
+            "transcript": "兄弟",
+            "recording_id": "SSB0288"
+          },
+          {
+            "start_s": 2.63,
+            "end_s": 3.79,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880072.wav",
+            "transcript": "你懂得",
+            "recording_id": "SSB0288"
+          }
+        ]
+      },
+      "source_count": 2,
+      "sample_rate": 8000,
+      "seconds": 4.04,
+      "exact_concurrency_seconds": {
+        "0": 0.96,
+        "1": 2.02,
+        "2": 1.06,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "name": "development_G1_2voices",
+      "gain_db": [
+        0.0,
+        -1.2
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.09,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870128.wav",
+            "transcript": "放手了吗",
+            "recording_id": "SSB0287"
+          },
+          {
+            "start_s": 1.16,
+            "end_s": 2.08,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870167.wav",
+            "transcript": "婉君",
+            "recording_id": "SSB0287"
+          },
+          {
+            "start_s": 2.15,
+            "end_s": 2.89,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870195.wav",
+            "transcript": "婉如",
+            "recording_id": "SSB0287"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.54,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880036.wav",
+            "transcript": "天黑黑",
+            "recording_id": "SSB0288"
+          },
+          {
+            "start_s": 1.625,
+            "end_s": 2.545,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880053.wav",
+            "transcript": "兄弟",
+            "recording_id": "SSB0288"
+          },
+          {
+            "start_s": 2.63,
+            "end_s": 3.79,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880072.wav",
+            "transcript": "你懂得",
+            "recording_id": "SSB0288"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.26,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990037.wav",
+            "transcript": "什么都行",
+            "recording_id": "SSB0299"
+          },
+          {
+            "start_s": 1.36,
+            "end_s": 2.78,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990203.wav",
+            "transcript": "红坊",
+            "recording_id": "SSB0299"
+          },
+          {
+            "start_s": 2.88,
+            "end_s": 4.22,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990450.wav",
+            "transcript": "决战到底",
+            "recording_id": "SSB0299"
+          }
+        ]
+      },
+      "source_count": 3,
+      "sample_rate": 8000,
+      "seconds": 4.48,
+      "exact_concurrency_seconds": {
+        "0": 0.68,
+        "1": 1.22,
+        "2": 1.68,
+        "3": 0.9,
+        "4": 0.0
+      },
+      "name": "development_G1_3voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.09,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870128.wav",
+            "transcript": "放手了吗",
+            "recording_id": "SSB0287"
+          },
+          {
+            "start_s": 1.16,
+            "end_s": 2.08,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870167.wav",
+            "transcript": "婉君",
+            "recording_id": "SSB0287"
+          },
+          {
+            "start_s": 2.15,
+            "end_s": 2.89,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0287/SSB02870195.wav",
+            "transcript": "婉如",
+            "recording_id": "SSB0287"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.54,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880036.wav",
+            "transcript": "天黑黑",
+            "recording_id": "SSB0288"
+          },
+          {
+            "start_s": 1.625,
+            "end_s": 2.545,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880053.wav",
+            "transcript": "兄弟",
+            "recording_id": "SSB0288"
+          },
+          {
+            "start_s": 2.63,
+            "end_s": 3.79,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0288/SSB02880072.wav",
+            "transcript": "你懂得",
+            "recording_id": "SSB0288"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.26,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990037.wav",
+            "transcript": "什么都行",
+            "recording_id": "SSB0299"
+          },
+          {
+            "start_s": 1.36,
+            "end_s": 2.78,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990203.wav",
+            "transcript": "红坊",
+            "recording_id": "SSB0299"
+          },
+          {
+            "start_s": 2.88,
+            "end_s": 4.22,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0299/SSB02990450.wav",
+            "transcript": "决战到底",
+            "recording_id": "SSB0299"
+          }
+        ],
+        "D": [
+          {
+            "start_s": 0.29,
+            "end_s": 1.07,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0307/SSB03070038.wav",
+            "transcript": "放飞",
+            "recording_id": "SSB0307"
+          },
+          {
+            "start_s": 1.185,
+            "end_s": 2.145,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0307/SSB03070043.wav",
+            "transcript": "放狠爱",
+            "recording_id": "SSB0307"
+          },
+          {
+            "start_s": 2.26,
+            "end_s": 2.88,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0307/SSB03070085.wav",
+            "transcript": "跑吧",
+            "recording_id": "SSB0307"
+          }
+        ]
+      },
+      "source_count": 4,
+      "sample_rate": 8000,
+      "seconds": 4.48,
+      "exact_concurrency_seconds": {
+        "0": 0.62,
+        "1": 1.12,
+        "2": 1.08,
+        "3": 0.82,
+        "4": 0.84
+      },
+      "name": "development_G1_4voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0,
+        -4.5
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.41,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150038.wav",
+            "transcript": "单小源",
+            "recording_id": "SSB0315"
+          },
+          {
+            "start_s": 1.48,
+            "end_s": 2.4,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150060.wav",
+            "transcript": "陈小云",
+            "recording_id": "SSB0315"
+          },
+          {
+            "start_s": 2.47,
+            "end_s": 3.47,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150076.wav",
+            "transcript": "张智成",
+            "recording_id": "SSB0315"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.28,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160030.wav",
+            "transcript": "别说傻话了",
+            "recording_id": "SSB0316"
+          },
+          {
+            "start_s": 1.365,
+            "end_s": 2.365,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160056.wav",
+            "transcript": "佛教音乐",
+            "recording_id": "SSB0316"
+          },
+          {
+            "start_s": 2.45,
+            "end_s": 3.39,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160098.wav",
+            "transcript": "嗨宝贝",
+            "recording_id": "SSB0316"
+          }
+        ]
+      },
+      "source_count": 2,
+      "sample_rate": 8000,
+      "seconds": 3.72,
+      "exact_concurrency_seconds": {
+        "0": 1.04,
+        "1": 0.7,
+        "2": 1.98,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "name": "development_G2_2voices",
+      "gain_db": [
+        0.0,
+        -1.2
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.41,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150038.wav",
+            "transcript": "单小源",
+            "recording_id": "SSB0315"
+          },
+          {
+            "start_s": 1.48,
+            "end_s": 2.4,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150060.wav",
+            "transcript": "陈小云",
+            "recording_id": "SSB0315"
+          },
+          {
+            "start_s": 2.47,
+            "end_s": 3.47,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150076.wav",
+            "transcript": "张智成",
+            "recording_id": "SSB0315"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.28,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160030.wav",
+            "transcript": "别说傻话了",
+            "recording_id": "SSB0316"
+          },
+          {
+            "start_s": 1.365,
+            "end_s": 2.365,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160056.wav",
+            "transcript": "佛教音乐",
+            "recording_id": "SSB0316"
+          },
+          {
+            "start_s": 2.45,
+            "end_s": 3.39,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160098.wav",
+            "transcript": "嗨宝贝",
+            "recording_id": "SSB0316"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.22,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230019.wav",
+            "transcript": "陈悦",
+            "recording_id": "SSB0323"
+          },
+          {
+            "start_s": 1.32,
+            "end_s": 2.2,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230050.wav",
+            "transcript": "郭美美",
+            "recording_id": "SSB0323"
+          },
+          {
+            "start_s": 2.3,
+            "end_s": 3.12,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230286.wav",
+            "transcript": "听见",
+            "recording_id": "SSB0323"
+          }
+        ]
+      },
+      "source_count": 3,
+      "sample_rate": 8000,
+      "seconds": 3.72,
+      "exact_concurrency_seconds": {
+        "0": 0.72,
+        "1": 0.66,
+        "2": 0.86,
+        "3": 1.48,
+        "4": 0.0
+      },
+      "name": "development_G2_3voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.41,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150038.wav",
+            "transcript": "单小源",
+            "recording_id": "SSB0315"
+          },
+          {
+            "start_s": 1.48,
+            "end_s": 2.4,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150060.wav",
+            "transcript": "陈小云",
+            "recording_id": "SSB0315"
+          },
+          {
+            "start_s": 2.47,
+            "end_s": 3.47,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0315/SSB03150076.wav",
+            "transcript": "张智成",
+            "recording_id": "SSB0315"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.28,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160030.wav",
+            "transcript": "别说傻话了",
+            "recording_id": "SSB0316"
+          },
+          {
+            "start_s": 1.365,
+            "end_s": 2.365,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160056.wav",
+            "transcript": "佛教音乐",
+            "recording_id": "SSB0316"
+          },
+          {
+            "start_s": 2.45,
+            "end_s": 3.39,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0316/SSB03160098.wav",
+            "transcript": "嗨宝贝",
+            "recording_id": "SSB0316"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.22,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230019.wav",
+            "transcript": "陈悦",
+            "recording_id": "SSB0323"
+          },
+          {
+            "start_s": 1.32,
+            "end_s": 2.2,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230050.wav",
+            "transcript": "郭美美",
+            "recording_id": "SSB0323"
+          },
+          {
+            "start_s": 2.3,
+            "end_s": 3.12,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0323/SSB03230286.wav",
+            "transcript": "听见",
+            "recording_id": "SSB0323"
+          }
+        ],
+        "D": [
+          {
+            "start_s": 0.29,
+            "end_s": 1.31,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0338/SSB03380013.wav",
+            "transcript": "来儿歌吗",
+            "recording_id": "SSB0338"
+          },
+          {
+            "start_s": 1.425,
+            "end_s": 2.325,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0338/SSB03380033.wav",
+            "transcript": "韩语歌",
+            "recording_id": "SSB0338"
+          },
+          {
+            "start_s": 2.44,
+            "end_s": 3.58,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0338/SSB03380034.wav",
+            "transcript": "歌手王龙",
+            "recording_id": "SSB0338"
+          }
+        ]
+      },
+      "source_count": 4,
+      "sample_rate": 8000,
+      "seconds": 3.84,
+      "exact_concurrency_seconds": {
+        "0": 0.7,
+        "1": 0.68,
+        "2": 0.16,
+        "3": 0.9,
+        "4": 1.4
+      },
+      "name": "development_G2_4voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0,
+        -1.8
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 0.93,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390129.wav",
+            "transcript": "点歌",
+            "recording_id": "SSB0339"
+          },
+          {
+            "start_s": 1.0,
+            "end_s": 1.76,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390162.wav",
+            "transcript": "彭羚",
+            "recording_id": "SSB0339"
+          },
+          {
+            "start_s": 1.83,
+            "end_s": 2.73,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390177.wav",
+            "transcript": "曾轶可",
+            "recording_id": "SSB0339"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.18,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410063.wav",
+            "transcript": "美国佬",
+            "recording_id": "SSB0341"
+          },
+          {
+            "start_s": 1.265,
+            "end_s": 2.005,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410142.wav",
+            "transcript": "背包",
+            "recording_id": "SSB0341"
+          },
+          {
+            "start_s": 2.09,
+            "end_s": 3.15,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410231.wav",
+            "transcript": "唐磊",
+            "recording_id": "SSB0341"
+          }
+        ]
+      },
+      "source_count": 2,
+      "sample_rate": 8000,
+      "seconds": 3.4,
+      "exact_concurrency_seconds": {
+        "0": 0.66,
+        "1": 1.6,
+        "2": 1.14,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "name": "evaluation_G3_2voices",
+      "gain_db": [
+        0.0,
+        -1.2
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 0.93,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390129.wav",
+            "transcript": "点歌",
+            "recording_id": "SSB0339"
+          },
+          {
+            "start_s": 1.0,
+            "end_s": 1.76,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390162.wav",
+            "transcript": "彭羚",
+            "recording_id": "SSB0339"
+          },
+          {
+            "start_s": 1.83,
+            "end_s": 2.73,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390177.wav",
+            "transcript": "曾轶可",
+            "recording_id": "SSB0339"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.18,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410063.wav",
+            "transcript": "美国佬",
+            "recording_id": "SSB0341"
+          },
+          {
+            "start_s": 1.265,
+            "end_s": 2.005,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410142.wav",
+            "transcript": "背包",
+            "recording_id": "SSB0341"
+          },
+          {
+            "start_s": 2.09,
+            "end_s": 3.15,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410231.wav",
+            "transcript": "唐磊",
+            "recording_id": "SSB0341"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.24,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420017.wav",
+            "transcript": "小宝",
+            "recording_id": "SSB0342"
+          },
+          {
+            "start_s": 1.34,
+            "end_s": 2.06,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420042.wav",
+            "transcript": "维客",
+            "recording_id": "SSB0342"
+          },
+          {
+            "start_s": 2.16,
+            "end_s": 2.88,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420103.wav",
+            "transcript": "背心",
+            "recording_id": "SSB0342"
+          }
+        ]
+      },
+      "source_count": 3,
+      "sample_rate": 8000,
+      "seconds": 3.4,
+      "exact_concurrency_seconds": {
+        "0": 0.56,
+        "1": 0.88,
+        "2": 1.2,
+        "3": 0.76,
+        "4": 0.0
+      },
+      "name": "evaluation_G3_3voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 0.93,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390129.wav",
+            "transcript": "点歌",
+            "recording_id": "SSB0339"
+          },
+          {
+            "start_s": 1.0,
+            "end_s": 1.76,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390162.wav",
+            "transcript": "彭羚",
+            "recording_id": "SSB0339"
+          },
+          {
+            "start_s": 1.83,
+            "end_s": 2.73,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0339/SSB03390177.wav",
+            "transcript": "曾轶可",
+            "recording_id": "SSB0339"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.18,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410063.wav",
+            "transcript": "美国佬",
+            "recording_id": "SSB0341"
+          },
+          {
+            "start_s": 1.265,
+            "end_s": 2.005,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410142.wav",
+            "transcript": "背包",
+            "recording_id": "SSB0341"
+          },
+          {
+            "start_s": 2.09,
+            "end_s": 3.15,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0341/SSB03410231.wav",
+            "transcript": "唐磊",
+            "recording_id": "SSB0341"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.24,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420017.wav",
+            "transcript": "小宝",
+            "recording_id": "SSB0342"
+          },
+          {
+            "start_s": 1.34,
+            "end_s": 2.06,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420042.wav",
+            "transcript": "维客",
+            "recording_id": "SSB0342"
+          },
+          {
+            "start_s": 2.16,
+            "end_s": 2.88,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0342/SSB03420103.wav",
+            "transcript": "背心",
+            "recording_id": "SSB0342"
+          }
+        ],
+        "D": [
+          {
+            "start_s": 0.29,
+            "end_s": 1.07,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0354/SSB03540005.wav",
+            "transcript": "音乐",
+            "recording_id": "SSB0354"
+          },
+          {
+            "start_s": 1.185,
+            "end_s": 2.205,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0354/SSB03540018.wav",
+            "transcript": "不得不爱",
+            "recording_id": "SSB0354"
+          },
+          {
+            "start_s": 2.32,
+            "end_s": 3.3,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0354/SSB03540090.wav",
+            "transcript": "东塔寺",
+            "recording_id": "SSB0354"
+          }
+        ]
+      },
+      "source_count": 4,
+      "sample_rate": 8000,
+      "seconds": 3.56,
+      "exact_concurrency_seconds": {
+        "0": 0.56,
+        "1": 0.56,
+        "2": 0.78,
+        "3": 1.02,
+        "4": 0.64
+      },
+      "name": "evaluation_G3_4voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0,
+        -4.5
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.41,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660055.wav",
+            "transcript": "我们开始思考",
+            "recording_id": "SSB0366"
+          },
+          {
+            "start_s": 1.48,
+            "end_s": 2.64,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660077.wav",
+            "transcript": "墨菲的妻子",
+            "recording_id": "SSB0366"
+          },
+          {
+            "start_s": 2.71,
+            "end_s": 3.89,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660107.wav",
+            "transcript": "玉荣酒店",
+            "recording_id": "SSB0366"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.12,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790001.wav",
+            "transcript": "百安居",
+            "recording_id": "SSB0379"
+          },
+          {
+            "start_s": 1.205,
+            "end_s": 2.865,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790038.wav",
+            "transcript": "巴黎春天新宁店",
+            "recording_id": "SSB0379"
+          },
+          {
+            "start_s": 2.95,
+            "end_s": 3.77,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790105.wav",
+            "transcript": "枣子树",
+            "recording_id": "SSB0379"
+          }
+        ]
+      },
+      "source_count": 2,
+      "sample_rate": 8000,
+      "seconds": 4.14,
+      "exact_concurrency_seconds": {
+        "0": 0.66,
+        "1": 1.6,
+        "2": 1.88,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "name": "evaluation_G4_2voices",
+      "gain_db": [
+        0.0,
+        -1.2
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.41,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660055.wav",
+            "transcript": "我们开始思考",
+            "recording_id": "SSB0366"
+          },
+          {
+            "start_s": 1.48,
+            "end_s": 2.64,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660077.wav",
+            "transcript": "墨菲的妻子",
+            "recording_id": "SSB0366"
+          },
+          {
+            "start_s": 2.71,
+            "end_s": 3.89,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660107.wav",
+            "transcript": "玉荣酒店",
+            "recording_id": "SSB0366"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.12,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790001.wav",
+            "transcript": "百安居",
+            "recording_id": "SSB0379"
+          },
+          {
+            "start_s": 1.205,
+            "end_s": 2.865,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790038.wav",
+            "transcript": "巴黎春天新宁店",
+            "recording_id": "SSB0379"
+          },
+          {
+            "start_s": 2.95,
+            "end_s": 3.77,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790105.wav",
+            "transcript": "枣子树",
+            "recording_id": "SSB0379"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.98,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820195.wav",
+            "transcript": "天庭五公主青儿",
+            "recording_id": "SSB0382"
+          },
+          {
+            "start_s": 2.08,
+            "end_s": 2.92,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820212.wav",
+            "transcript": "吉吉安",
+            "recording_id": "SSB0382"
+          },
+          {
+            "start_s": 3.02,
+            "end_s": 3.94,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820364.wav",
+            "transcript": "停车场",
+            "recording_id": "SSB0382"
+          }
+        ]
+      },
+      "source_count": 3,
+      "sample_rate": 8000,
+      "seconds": 4.2,
+      "exact_concurrency_seconds": {
+        "0": 0.64,
+        "1": 0.5,
+        "2": 1.6,
+        "3": 1.46,
+        "4": 0.0
+      },
+      "name": "evaluation_G4_3voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.41,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660055.wav",
+            "transcript": "我们开始思考",
+            "recording_id": "SSB0366"
+          },
+          {
+            "start_s": 1.48,
+            "end_s": 2.64,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660077.wav",
+            "transcript": "墨菲的妻子",
+            "recording_id": "SSB0366"
+          },
+          {
+            "start_s": 2.71,
+            "end_s": 3.89,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0366/SSB03660107.wav",
+            "transcript": "玉荣酒店",
+            "recording_id": "SSB0366"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.12,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790001.wav",
+            "transcript": "百安居",
+            "recording_id": "SSB0379"
+          },
+          {
+            "start_s": 1.205,
+            "end_s": 2.865,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790038.wav",
+            "transcript": "巴黎春天新宁店",
+            "recording_id": "SSB0379"
+          },
+          {
+            "start_s": 2.95,
+            "end_s": 3.77,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0379/SSB03790105.wav",
+            "transcript": "枣子树",
+            "recording_id": "SSB0379"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.98,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820195.wav",
+            "transcript": "天庭五公主青儿",
+            "recording_id": "SSB0382"
+          },
+          {
+            "start_s": 2.08,
+            "end_s": 2.92,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820212.wav",
+            "transcript": "吉吉安",
+            "recording_id": "SSB0382"
+          },
+          {
+            "start_s": 3.02,
+            "end_s": 3.94,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0382/SSB03820364.wav",
+            "transcript": "停车场",
+            "recording_id": "SSB0382"
+          }
+        ],
+        "D": [
+          {
+            "start_s": 0.29,
+            "end_s": 1.13,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0393/SSB03930036.wav",
+            "transcript": "愚爱",
+            "recording_id": "SSB0393"
+          },
+          {
+            "start_s": 1.245,
+            "end_s": 2.165,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0393/SSB03930180.wav",
+            "transcript": "面具",
+            "recording_id": "SSB0393"
+          },
+          {
+            "start_s": 2.28,
+            "end_s": 3.28,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0393/SSB03930181.wav",
+            "transcript": "春花",
+            "recording_id": "SSB0393"
+          }
+        ]
+      },
+      "source_count": 4,
+      "sample_rate": 8000,
+      "seconds": 4.2,
+      "exact_concurrency_seconds": {
+        "0": 0.64,
+        "1": 0.16,
+        "2": 1.06,
+        "3": 1.38,
+        "4": 0.96
+      },
+      "name": "evaluation_G4_4voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0,
+        -1.8
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.37,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940019.wav",
+            "transcript": "纽约传奇",
+            "recording_id": "SSB0394"
+          },
+          {
+            "start_s": 1.44,
+            "end_s": 2.4,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940057.wav",
+            "transcript": "洋葱咖喱",
+            "recording_id": "SSB0394"
+          },
+          {
+            "start_s": 2.47,
+            "end_s": 3.67,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940088.wav",
+            "transcript": "桌上是什么",
+            "recording_id": "SSB0394"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.28,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950012.wav",
+            "transcript": "呜",
+            "recording_id": "SSB0395"
+          },
+          {
+            "start_s": 1.365,
+            "end_s": 2.265,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950014.wav",
+            "transcript": "我期待",
+            "recording_id": "SSB0395"
+          },
+          {
+            "start_s": 2.35,
+            "end_s": 3.25,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950043.wav",
+            "transcript": "马天宇",
+            "recording_id": "SSB0395"
+          }
+        ]
+      },
+      "source_count": 2,
+      "sample_rate": 8000,
+      "seconds": 3.92,
+      "exact_concurrency_seconds": {
+        "0": 0.92,
+        "1": 1.14,
+        "2": 1.86,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "name": "evaluation_G5_2voices",
+      "gain_db": [
+        0.0,
+        -1.2
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.37,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940019.wav",
+            "transcript": "纽约传奇",
+            "recording_id": "SSB0394"
+          },
+          {
+            "start_s": 1.44,
+            "end_s": 2.4,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940057.wav",
+            "transcript": "洋葱咖喱",
+            "recording_id": "SSB0394"
+          },
+          {
+            "start_s": 2.47,
+            "end_s": 3.67,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940088.wav",
+            "transcript": "桌上是什么",
+            "recording_id": "SSB0394"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.28,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950012.wav",
+            "transcript": "呜",
+            "recording_id": "SSB0395"
+          },
+          {
+            "start_s": 1.365,
+            "end_s": 2.265,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950014.wav",
+            "transcript": "我期待",
+            "recording_id": "SSB0395"
+          },
+          {
+            "start_s": 2.35,
+            "end_s": 3.25,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950043.wav",
+            "transcript": "马天宇",
+            "recording_id": "SSB0395"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.26,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070024.wav",
+            "transcript": "成旺饭店",
+            "recording_id": "SSB0407"
+          },
+          {
+            "start_s": 1.36,
+            "end_s": 2.42,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070029.wav",
+            "transcript": "我没看见它",
+            "recording_id": "SSB0407"
+          },
+          {
+            "start_s": 2.52,
+            "end_s": 3.64,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070045.wav",
+            "transcript": "你觉得冷吗",
+            "recording_id": "SSB0407"
+          }
+        ]
+      },
+      "source_count": 3,
+      "sample_rate": 8000,
+      "seconds": 3.92,
+      "exact_concurrency_seconds": {
+        "0": 0.9,
+        "1": 0.26,
+        "2": 0.96,
+        "3": 1.8,
+        "4": 0.0
+      },
+      "name": "evaluation_G5_3voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.37,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940019.wav",
+            "transcript": "纽约传奇",
+            "recording_id": "SSB0394"
+          },
+          {
+            "start_s": 1.44,
+            "end_s": 2.4,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940057.wav",
+            "transcript": "洋葱咖喱",
+            "recording_id": "SSB0394"
+          },
+          {
+            "start_s": 2.47,
+            "end_s": 3.67,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0394/SSB03940088.wav",
+            "transcript": "桌上是什么",
+            "recording_id": "SSB0394"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.28,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950012.wav",
+            "transcript": "呜",
+            "recording_id": "SSB0395"
+          },
+          {
+            "start_s": 1.365,
+            "end_s": 2.265,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950014.wav",
+            "transcript": "我期待",
+            "recording_id": "SSB0395"
+          },
+          {
+            "start_s": 2.35,
+            "end_s": 3.25,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0395/SSB03950043.wav",
+            "transcript": "马天宇",
+            "recording_id": "SSB0395"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.26,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070024.wav",
+            "transcript": "成旺饭店",
+            "recording_id": "SSB0407"
+          },
+          {
+            "start_s": 1.36,
+            "end_s": 2.42,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070029.wav",
+            "transcript": "我没看见它",
+            "recording_id": "SSB0407"
+          },
+          {
+            "start_s": 2.52,
+            "end_s": 3.64,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0407/SSB04070045.wav",
+            "transcript": "你觉得冷吗",
+            "recording_id": "SSB0407"
+          }
+        ],
+        "D": [
+          {
+            "start_s": 0.29,
+            "end_s": 1.05,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0427/SSB04270035.wav",
+            "transcript": "汤灿",
+            "recording_id": "SSB0427"
+          },
+          {
+            "start_s": 1.165,
+            "end_s": 1.985,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0427/SSB04270075.wav",
+            "transcript": "认错",
+            "recording_id": "SSB0427"
+          },
+          {
+            "start_s": 2.1,
+            "end_s": 2.9,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0427/SSB04270079.wav",
+            "transcript": "午夜",
+            "recording_id": "SSB0427"
+          }
+        ]
+      },
+      "source_count": 4,
+      "sample_rate": 8000,
+      "seconds": 3.92,
+      "exact_concurrency_seconds": {
+        "0": 0.64,
+        "1": 0.34,
+        "2": 0.72,
+        "3": 1.22,
+        "4": 1.0
+      },
+      "name": "evaluation_G5_4voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0,
+        -4.5
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.51,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340014.wav",
+            "transcript": "王女自鸣鼓",
+            "recording_id": "SSB0434"
+          },
+          {
+            "start_s": 1.58,
+            "end_s": 2.56,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340046.wav",
+            "transcript": "女人不是妖",
+            "recording_id": "SSB0434"
+          },
+          {
+            "start_s": 2.63,
+            "end_s": 3.61,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340054.wav",
+            "transcript": "温柔与霸道",
+            "recording_id": "SSB0434"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.3,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700071.wav",
+            "transcript": "邓丽君啊",
+            "recording_id": "SSB0470"
+          },
+          {
+            "start_s": 1.385,
+            "end_s": 2.365,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700115.wav",
+            "transcript": "王韵壹",
+            "recording_id": "SSB0470"
+          },
+          {
+            "start_s": 2.45,
+            "end_s": 3.33,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700117.wav",
+            "transcript": "雄狮",
+            "recording_id": "SSB0470"
+          }
+        ]
+      },
+      "source_count": 2,
+      "sample_rate": 8000,
+      "seconds": 3.86,
+      "exact_concurrency_seconds": {
+        "0": 0.72,
+        "1": 1.22,
+        "2": 1.92,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "name": "evaluation_G6_2voices",
+      "gain_db": [
+        0.0,
+        -1.2
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.51,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340014.wav",
+            "transcript": "王女自鸣鼓",
+            "recording_id": "SSB0434"
+          },
+          {
+            "start_s": 1.58,
+            "end_s": 2.56,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340046.wav",
+            "transcript": "女人不是妖",
+            "recording_id": "SSB0434"
+          },
+          {
+            "start_s": 2.63,
+            "end_s": 3.61,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340054.wav",
+            "transcript": "温柔与霸道",
+            "recording_id": "SSB0434"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.3,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700071.wav",
+            "transcript": "邓丽君啊",
+            "recording_id": "SSB0470"
+          },
+          {
+            "start_s": 1.385,
+            "end_s": 2.365,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700115.wav",
+            "transcript": "王韵壹",
+            "recording_id": "SSB0470"
+          },
+          {
+            "start_s": 2.45,
+            "end_s": 3.33,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700117.wav",
+            "transcript": "雄狮",
+            "recording_id": "SSB0470"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.8,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820034.wav",
+            "transcript": "想哭",
+            "recording_id": "SSB0482"
+          },
+          {
+            "start_s": 1.9,
+            "end_s": 3.42,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820296.wav",
+            "transcript": "缘分",
+            "recording_id": "SSB0482"
+          },
+          {
+            "start_s": 3.52,
+            "end_s": 5.1,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820398.wav",
+            "transcript": "出墙",
+            "recording_id": "SSB0482"
+          }
+        ]
+      },
+      "source_count": 3,
+      "sample_rate": 8000,
+      "seconds": 5.36,
+      "exact_concurrency_seconds": {
+        "0": 1.0,
+        "1": 1.5,
+        "2": 1.52,
+        "3": 1.34,
+        "4": 0.0
+      },
+      "name": "evaluation_G6_3voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0
+      ]
+    },
+    {
+      "speakers": {
+        "A": [
+          {
+            "start_s": 0.19,
+            "end_s": 1.51,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340014.wav",
+            "transcript": "王女自鸣鼓",
+            "recording_id": "SSB0434"
+          },
+          {
+            "start_s": 1.58,
+            "end_s": 2.56,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340046.wav",
+            "transcript": "女人不是妖",
+            "recording_id": "SSB0434"
+          },
+          {
+            "start_s": 2.63,
+            "end_s": 3.61,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0434/SSB04340054.wav",
+            "transcript": "温柔与霸道",
+            "recording_id": "SSB0434"
+          }
+        ],
+        "B": [
+          {
+            "start_s": 0.26,
+            "end_s": 1.3,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700071.wav",
+            "transcript": "邓丽君啊",
+            "recording_id": "SSB0470"
+          },
+          {
+            "start_s": 1.385,
+            "end_s": 2.365,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700115.wav",
+            "transcript": "王韵壹",
+            "recording_id": "SSB0470"
+          },
+          {
+            "start_s": 2.45,
+            "end_s": 3.33,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0470/SSB04700117.wav",
+            "transcript": "雄狮",
+            "recording_id": "SSB0470"
+          }
+        ],
+        "C": [
+          {
+            "start_s": 0.2,
+            "end_s": 1.8,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820034.wav",
+            "transcript": "想哭",
+            "recording_id": "SSB0482"
+          },
+          {
+            "start_s": 1.9,
+            "end_s": 3.42,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820296.wav",
+            "transcript": "缘分",
+            "recording_id": "SSB0482"
+          },
+          {
+            "start_s": 3.52,
+            "end_s": 5.1,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0482/SSB04820398.wav",
+            "transcript": "出墙",
+            "recording_id": "SSB0482"
+          }
+        ],
+        "D": [
+          {
+            "start_s": 0.29,
+            "end_s": 1.21,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0502/SSB05020002.wav",
+            "transcript": "陈星",
+            "recording_id": "SSB0502"
+          },
+          {
+            "start_s": 1.325,
+            "end_s": 2.085,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0502/SSB05020027.wav",
+            "transcript": "浪漫",
+            "recording_id": "SSB0502"
+          },
+          {
+            "start_s": 2.2,
+            "end_s": 3.24,
+            "source_url": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/test/wav/SSB0502/SSB05020043.wav",
+            "transcript": "妞妞",
+            "recording_id": "SSB0502"
+          }
+        ]
+      },
+      "source_count": 4,
+      "sample_rate": 8000,
+      "seconds": 5.36,
+      "exact_concurrency_seconds": {
+        "0": 0.98,
+        "1": 1.34,
+        "2": 0.78,
+        "3": 1.36,
+        "4": 0.9
+      },
+      "name": "evaluation_G6_4voices",
+      "gain_db": [
+        0.0,
+        -1.2,
+        -3.0,
+        -1.8
+      ]
+    }
+  ],
+  "natural_files": [
+    "R8007_M8010_MS803_mixture_1607.99_1619.92.wav",
+    "R8007_M8011_MS806_mixture_1571.24_1587.66.wav",
+    "R8007_M8010_MS803_mixture_1040.28_1062.36.wav",
+    "R8003_M8001_MS801_mixture_912.97_933.22.wav",
+    "R8007_M8010.rttm",
+    "R8007_M8011.rttm",
+    "R8003_M8001.rttm"
+  ]
+}

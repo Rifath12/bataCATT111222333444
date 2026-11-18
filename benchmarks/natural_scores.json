@@ -1,0 +1,316 @@
+[
+  {
+    "clip": "R8007_M8010_MS803_mixture_1607.99_1619.92",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 4,
+        "audio_seconds": 11.93,
+        "warm_audio_seconds": 11.897459923995484,
+        "model_counts": [
+          3,
+          4,
+          4,
+          4,
+          3
+        ],
+        "accepted_extra_sources": 0,
+        "session": "R8007_M8010",
+        "start_s": 1607.99,
+        "labeled_speakers": 4,
+        "rttm_overlap_seconds": {
+          "0": 0.03,
+          "1": 1.19,
+          "2": 5.67,
+          "3": 4.2,
+          "4": 0.84
+        },
+        "ref_speaker_seconds": 28.48,
+        "missed_speaker_seconds": 3.62,
+        "false_alarm_seconds": 6.78,
+        "confusion_seconds": 2.16,
+        "energy_mask_DER": 0.4410112359550562,
+        "acoustic_mapping": {
+          "N_SPK8050": "spk_C",
+          "N_SPK8054": "spk_B",
+          "N_SPK8055": "spk_D",
+          "N_SPK8056": "spk_A"
+        }
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 11.93,
+        "warm_audio_seconds": 13.425157536999905,
+        "model_counts": [
+          4,
+          4,
+          4,
+          4,
+          3
+        ],
+        "accepted_extra_sources": 1,
+        "session": "R8007_M8010",
+        "start_s": 1607.99,
+        "labeled_speakers": 4,
+        "rttm_overlap_seconds": {
+          "0": 0.03,
+          "1": 1.19,
+          "2": 5.67,
+          "3": 4.2,
+          "4": 0.84
+        },
+        "ref_speaker_seconds": 28.48,
+        "missed_speaker_seconds": 3.0,
+        "false_alarm_seconds": 8.46,
+        "confusion_seconds": 2.06,
+        "energy_mask_DER": 0.4747191011235955,
+        "acoustic_mapping": {
+          "N_SPK8050": "spk_B",
+          "N_SPK8054": "spk_C",
+          "N_SPK8055": "spk_D",
+          "N_SPK8056": "spk_A"
+        }
+      }
+    ]
+  },
+  {
+    "clip": "R8007_M8011_MS806_mixture_1571.24_1587.66",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 2,
+        "audio_seconds": 16.42,
+        "warm_audio_seconds": 14.629200542003673,
+        "model_counts": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "session": "R8007_M8011",
+        "start_s": 1571.24,
+        "labeled_speakers": 4,
+        "rttm_overlap_seconds": {
+          "0": 0.28,
+          "1": 11.73,
+          "2": 2.57,
+          "3": 1.19,
+          "4": 0.65
+        },
+        "ref_speaker_seconds": 23.080000000000002,
+        "missed_speaker_seconds": 9.38,
+        "false_alarm_seconds": 1.3800000000000001,
+        "confusion_seconds": 2.44,
+        "energy_mask_DER": 0.5719237435008665,
+        "acoustic_mapping": {
+          "N_SPK8066": null,
+          "N_SPK8067": "spk_B",
+          "N_SPK8068": "spk_A",
+          "N_SPK8069": null
+        }
+      },
+      {
+        "margin": 1.4,
+        "track_count": 3,
+        "audio_seconds": 16.42,
+        "warm_audio_seconds": 15.285506521999196,
+        "model_counts": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          3
+        ],
+        "accepted_extra_sources": 1,
+        "session": "R8007_M8011",
+        "start_s": 1571.24,
+        "labeled_speakers": 4,
+        "rttm_overlap_seconds": {
+          "0": 0.28,
+          "1": 11.73,
+          "2": 2.57,
+          "3": 1.19,
+          "4": 0.65
+        },
+        "ref_speaker_seconds": 23.080000000000002,
+        "missed_speaker_seconds": 8.3,
+        "false_alarm_seconds": 1.3800000000000001,
+        "confusion_seconds": 2.36,
+        "energy_mask_DER": 0.5216637781629117,
+        "acoustic_mapping": {
+          "N_SPK8066": "spk_B",
+          "N_SPK8067": "spk_C",
+          "N_SPK8068": "spk_A",
+          "N_SPK8069": null
+        }
+      }
+    ]
+  },
+  {
+    "clip": "R8007_M8010_MS803_mixture_1040.28_1062.36",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 4,
+        "audio_seconds": 22.08,
+        "warm_audio_seconds": 21.172681094001746,
+        "model_counts": [
+          3,
+          2,
+          4,
+          3,
+          4,
+          4,
+          3,
+          2
+        ],
+        "accepted_extra_sources": 0,
+        "session": "R8007_M8010",
+        "start_s": 1040.28,
+        "labeled_speakers": 4,
+        "rttm_overlap_seconds": {
+          "0": 1.45,
+          "1": 11.39,
+          "2": 6.43,
+          "3": 1.71,
+          "4": 1.1
+        },
+        "ref_speaker_seconds": 33.76,
+        "missed_speaker_seconds": 6.2,
+        "false_alarm_seconds": 10.700000000000001,
+        "confusion_seconds": 4.96,
+        "energy_mask_DER": 0.6475118483412322,
+        "acoustic_mapping": {
+          "N_SPK8050": "spk_C",
+          "N_SPK8054": "spk_A",
+          "N_SPK8055": "spk_B",
+          "N_SPK8056": "spk_D"
+        }
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 22.08,
+        "warm_audio_seconds": 21.255458954998176,
+        "model_counts": [
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        "accepted_extra_sources": 3,
+        "session": "R8007_M8010",
+        "start_s": 1040.28,
+        "labeled_speakers": 4,
+        "rttm_overlap_seconds": {
+          "0": 1.45,
+          "1": 11.39,
+          "2": 6.43,
+          "3": 1.71,
+          "4": 1.1
+        },
+        "ref_speaker_seconds": 33.76,
+        "missed_speaker_seconds": 6.18,
+        "false_alarm_seconds": 12.5,
+        "confusion_seconds": 5.88,
+        "energy_mask_DER": 0.7274881516587678,
+        "acoustic_mapping": {
+          "N_SPK8050": "spk_B",
+          "N_SPK8054": "spk_C",
+          "N_SPK8055": "spk_A",
+          "N_SPK8056": "spk_D"
+        }
+      }
+    ]
+  },
+  {
+    "clip": "R8003_M8001_MS801_mixture_912.97_933.22",
+    "modes": [
+      {
+        "margin": 0.0,
+        "track_count": 4,
+        "audio_seconds": 20.25,
+        "warm_audio_seconds": 17.61608868499752,
+        "model_counts": [
+          1,
+          1,
+          1,
+          2,
+          4,
+          1,
+          3,
+          1
+        ],
+        "accepted_extra_sources": 0,
+        "session": "R8003_M8001",
+        "start_s": 912.97,
+        "labeled_speakers": 4,
+        "rttm_overlap_seconds": {
+          "0": 2.33,
+          "1": 14.45,
+          "2": 2.86,
+          "3": 0.4,
+          "4": 0.21
+        },
+        "ref_speaker_seconds": 22.22,
+        "missed_speaker_seconds": 5.94,
+        "false_alarm_seconds": 5.34,
+        "confusion_seconds": 3.48,
+        "energy_mask_DER": 0.6642664266426642,
+        "acoustic_mapping": {
+          "N_SPK8001": "spk_C",
+          "N_SPK8002": "spk_B",
+          "N_SPK8003": "spk_A",
+          "N_SPK8004": "spk_D"
+        }
+      },
+      {
+        "margin": 1.4,
+        "track_count": 4,
+        "audio_seconds": 20.25,
+        "warm_audio_seconds": 16.021373196999775,
+        "model_counts": [
+          1,
+          1,
+          1,
+          3,
+          4,
+          1,
+          4,
+          1
+        ],
+        "accepted_extra_sources": 2,
+        "session": "R8003_M8001",
+        "start_s": 912.97,
+        "labeled_speakers": 4,
+        "rttm_overlap_seconds": {
+          "0": 2.33,
+          "1": 14.45,
+          "2": 2.86,
+          "3": 0.4,
+          "4": 0.21
+        },
+        "ref_speaker_seconds": 22.22,
+        "missed_speaker_seconds": 4.66,
+        "false_alarm_seconds": 6.24,
+        "confusion_seconds": 3.56,
+        "energy_mask_DER": 0.6507650765076508,
+        "acoustic_mapping": {
+          "N_SPK8001": "spk_B",
+          "N_SPK8002": "spk_D",
+          "N_SPK8003": "spk_A",
+          "N_SPK8004": "spk_C"
+        }
+      }
+    ]
+  }
+]

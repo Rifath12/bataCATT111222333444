@@ -1,0 +1,39 @@
+{
+  "input_file": "mixed.wav",
+  "separator": "tuned",
+  "device": "cpu",
+  "mode": "file",
+  "speaker_count_hint": null,
+  "input_samples": 28480,
+  "input_sample_rate": 8000,
+  "output_samples": 28480,
+  "output_sample_rate": 8000,
+  "block_s": 2.8,
+  "history_s": 0.6,
+  "lookahead_s": 0.35,
+  "overlap_margin": 1.4,
+  "wav_playback_gain": 1.0,
+  "review_windows": 1,
+  "model_setup_wall_s": 0.8945679879980162,
+  "audio_export_wall_s": 3.4849979740029084,
+  "speakers": {
+    "spk_A": {
+      "display_name": "Speaker A",
+      "file": "Speaker_A.wav"
+    },
+    "spk_B": {
+      "display_name": "Speaker B",
+      "file": "Speaker_B.wav"
+    },
+    "spk_C": {
+      "display_name": "Speaker C",
+      "file": "Speaker_C.wav"
+    },
+    "spk_D": {
+      "display_name": "Speaker D",
+      "file": "Speaker_D.wav"
+    }
+  },
+  "asr": "Zipformer CTC Mandarin, per-speaker file pass",
+  "complete_wall_s": 9.545507522001571
+}

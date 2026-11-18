@@ -29,7 +29,7 @@ Replay schedules input at the recording rate and logs bounded-window commit dela
 
 ## Verification
 
-[The demo transcript](demo/transcript.txt) is actual output from the included human-speech mixture. See the [evaluation report](benchmarks/QUALITY.md) for count accuracy, character errors, waveform recovery, and limitations.
+[The demo transcript](demo/transcript.txt) is actual output from the included human-speech mixture. [Hear the four-voice example](demo/four_voices/README.md) and see the [evaluation report](benchmarks/QUALITY.md) for count accuracy, character errors, waveform recovery, and the Windows and Linux checks.
 
 ```sh
 python -m unittest discover -s tests -v

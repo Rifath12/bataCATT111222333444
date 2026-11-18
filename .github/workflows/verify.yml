@@ -35,6 +35,16 @@ jobs:
       - name: Fetch verified model weights
         run: python fetch_models.py
       - name: Run and inspect the bundled sample
+        if: runner.os != 'Windows'
         run: |
           python process_meeting.py demo/mixed.wav --transcribe --out results/ci_demo
           python verify_demo.py results/ci_demo
+      - name: Run and inspect the Windows launcher
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: |
+          python -m venv --system-site-packages .venv
+          if errorlevel 1 exit /b 1
+          call process_meeting.bat "demo\mixed.wav" --transcribe --out "results\ci_demo"
+          if errorlevel 1 exit /b 1
+          python verify_demo.py "results\ci_demo"
