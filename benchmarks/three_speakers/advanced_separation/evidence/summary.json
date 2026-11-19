@@ -1,0 +1,34 @@
+{
+  "meetings": {
+    "M8016": {
+      "duration_s": 1838.99,
+      "reference_chars": 7705,
+      "previous_mono_edits": 1818,
+      "quality_pass_mono_edits": 1806,
+      "previous_array_edits": 1503,
+      "quality_pass_array_edits": 1361,
+      "three_close_microphones_edits": 1008,
+      "three_close_microphones_cpu_s": 282.02064290098497,
+      "three_close_microphones_der": 0.1857678828664187
+    },
+    "M8017": {
+      "duration_s": 1820.06,
+      "reference_chars": 8154,
+      "previous_mono_edits": 925,
+      "quality_pass_mono_edits": 909,
+      "previous_array_edits": 623,
+      "quality_pass_array_edits": 533,
+      "three_close_microphones_edits": 497,
+      "three_close_microphones_cpu_s": 247.66083550598705,
+      "three_close_microphones_der": 0.14691763207524064
+    }
+  },
+  "totals": {
+    "reference_chars": 15859,
+    "previous_mono_edits": 2743,
+    "quality_pass_mono_edits": 2715,
+    "previous_array_edits": 2126,
+    "quality_pass_array_edits": 1894,
+    "three_close_microphones_edits": 1505
+  }
+}

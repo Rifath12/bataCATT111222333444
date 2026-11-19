@@ -1,0 +1,170 @@
+[
+  {
+    "file": "cases/trio_1_dry_synchronous.npz",
+    "sha256": "85f7d9f61812bf25cc9ca4ab1c0fe4f7739af45b723c01e6c4148543397ae099",
+    "speakers": [
+      "0666",
+      "0606",
+      "0565"
+    ],
+    "texts": [
+      "加油站郑源驼铃同林明天逆向十年",
+      "帮我播母亲龙梅毕竟杰伦听听听话",
+      "可是还是不对他们需要机会原始式的武器我有一支彩笔一个字都不是你妈是被杀的我到附近看看"
+    ],
+    "condition": "dry_synchronous",
+    "starts": [
+      0,
+      0,
+      0
+    ],
+    "target_db": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "seconds": 7.16,
+    "triple_seconds": 3.6,
+    "sample_rate": 16000
+  },
+  {
+    "file": "cases/trio_1_room_staggered.npz",
+    "sha256": "242bcb783956852fc6045754dc9f20476a47f52cba7bf389a8d67c39bffeec49",
+    "speakers": [
+      "0666",
+      "0606",
+      "0565"
+    ],
+    "texts": [
+      "加油站郑源驼铃同林明天逆向十年",
+      "帮我播母亲龙梅毕竟杰伦听听听话",
+      "可是还是不对他们需要机会原始式的武器我有一支彩笔一个字都不是你妈是被杀的我到附近看看"
+    ],
+    "condition": "room_staggered",
+    "starts": [
+      0,
+      1920,
+      3840
+    ],
+    "target_db": [
+      0.0,
+      -4.0,
+      -8.0
+    ],
+    "seconds": 7.4,
+    "triple_seconds": 3.36,
+    "sample_rate": 16000
+  },
+  {
+    "file": "cases/trio_2_dry_synchronous.npz",
+    "sha256": "6b79575075950f0ce0c758b04b0416f483842242a8419d630dcfa40d2d0b368b",
+    "speakers": [
+      "0603",
+      "0578",
+      "0570"
+    ],
+    "texts": [
+      "中国话五十九不想杨凡童年首歌彭青",
+      "但你没有杀人听不懂报刊亭玉美人罗大佑那时雨乐瞳",
+      "停车场停车场王袁被爱姜潮王芳"
+    ],
+    "condition": "dry_synchronous",
+    "starts": [
+      0,
+      0,
+      0
+    ],
+    "target_db": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "seconds": 6.94,
+    "triple_seconds": 2.64,
+    "sample_rate": 16000
+  },
+  {
+    "file": "cases/trio_2_room_staggered.npz",
+    "sha256": "5f547b56c274f725bbf571ca9e404938fe36d9f03f8cc0771d113b71be33d298",
+    "speakers": [
+      "0603",
+      "0578",
+      "0570"
+    ],
+    "texts": [
+      "中国话五十九不想杨凡童年首歌彭青",
+      "但你没有杀人听不懂报刊亭玉美人罗大佑那时雨乐瞳",
+      "停车场停车场王袁被爱姜潮王芳"
+    ],
+    "condition": "room_staggered",
+    "starts": [
+      3840,
+      0,
+      1920
+    ],
+    "target_db": [
+      -8.0,
+      0.0,
+      -4.0
+    ],
+    "seconds": 7.024125,
+    "triple_seconds": 2.52,
+    "sample_rate": 16000
+  },
+  {
+    "file": "cases/trio_3_dry_synchronous.npz",
+    "sha256": "425f107355d65c36e2f920fb5643a6e200e4b51316a7d7d57b4be76f38ccf1e1",
+    "speakers": [
+      "0594",
+      "0778",
+      "0607"
+    ],
+    "texts": [
+      "公用电话潜龙潜罪诺迪潜伏",
+      "我现在就得走他们在船上幼儿歌曲播首歌吧五百零六五百零一爱回来",
+      "功夫美男我不信邰正宵彭佳慧孟庭苇轻音乐周笔畅"
+    ],
+    "condition": "dry_synchronous",
+    "starts": [
+      0,
+      0,
+      0
+    ],
+    "target_db": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "seconds": 7.38,
+    "triple_seconds": 2.24,
+    "sample_rate": 16000
+  },
+  {
+    "file": "cases/trio_3_room_staggered.npz",
+    "sha256": "755a330f41922ba5790dc0b80bac181a434792f00078ce2c36a59c6bf9840ac1",
+    "speakers": [
+      "0594",
+      "0778",
+      "0607"
+    ],
+    "texts": [
+      "公用电话潜龙潜罪诺迪潜伏",
+      "我现在就得走他们在船上幼儿歌曲播首歌吧五百零六五百零一爱回来",
+      "功夫美男我不信邰正宵彭佳慧孟庭苇轻音乐周笔畅"
+    ],
+    "condition": "room_staggered",
+    "starts": [
+      1920,
+      3840,
+      0
+    ],
+    "target_db": [
+      -4.0,
+      -8.0,
+      0.0
+    ],
+    "seconds": 7.62,
+    "triple_seconds": 2.14,
+    "sample_rate": 16000
+  }
+]

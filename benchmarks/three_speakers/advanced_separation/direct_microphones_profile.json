@@ -1,0 +1,53 @@
+{
+  "bleed_db": 21,
+  "minimum_probability": 0.4,
+  "devel_der": 0.17943482348336928,
+  "trials": 20,
+  "report": {
+    "full": {
+      "clock_s": 2239.48,
+      "reference_speaker_s": 2350.77,
+      "speaker_recall": 0.8423920672800826,
+      "DER": 0.17943482348336928,
+      "miss_s": 360.85,
+      "false_alarm_s": 51.31,
+      "confusion_s": 9.65
+    },
+    "single": {
+      "clock_s": 1710.69,
+      "reference_speaker_s": 1710.69,
+      "speaker_recall": 0.8854555764048425,
+      "DER": 0.12473329475240985,
+      "miss_s": 188.09,
+      "false_alarm_s": 17.43,
+      "confusion_s": 7.86
+    },
+    "two_simultaneous": {
+      "clock_s": 290.04,
+      "reference_speaker_s": 580.08,
+      "speaker_recall": 0.7383464349744863,
+      "DER": 0.2635153771893532,
+      "miss_s": 149.99,
+      "false_alarm_s": 1.08,
+      "confusion_s": 1.79
+    },
+    "three_simultaneous": {
+      "clock_s": 20.0,
+      "reference_speaker_s": 60.0,
+      "speaker_recall": 0.6205,
+      "DER": 0.3795,
+      "miss_s": 22.77,
+      "false_alarm_s": 0.0,
+      "confusion_s": 0.0
+    },
+    "all_overlap": {
+      "clock_s": 310.04,
+      "reference_speaker_s": 640.08,
+      "speaker_recall": 0.7272997125359331,
+      "DER": 0.2743875765529309,
+      "miss_s": 172.76,
+      "false_alarm_s": 1.08,
+      "confusion_s": 1.79
+    }
+  }
+}

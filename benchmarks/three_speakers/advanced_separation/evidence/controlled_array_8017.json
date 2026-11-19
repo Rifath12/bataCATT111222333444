@@ -1,0 +1,272 @@
+[
+  {
+    "trial": 1,
+    "sources": {
+      "enrollment": [
+        1186.52,
+        724.22,
+        769.76
+      ],
+      "mixed": [
+        {
+          "speaker": "A",
+          "start_in_original": 1708.8500000000001,
+          "gain": 1.0
+        },
+        {
+          "speaker": "B",
+          "start_in_original": 1165.08,
+          "gain": 0.56
+        },
+        {
+          "speaker": "C",
+          "start_in_original": 221.1,
+          "gain": 0.31
+        }
+      ]
+    },
+    "simultaneous_seconds": 1.84375,
+    "voices": [
+      {
+        "speaker": "A",
+        "mixture_si_sdr_db": 3.7427351851239665,
+        "baseline_si_sdri_db": -3.451994690177311,
+        "focus_si_sdri_db": -6.25312965030873,
+        "mix_sir_db": 3.787630486522107,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": 9.755960813111084,
+        "focus_sir_db": 13.293092256638301,
+        "image_sir_db": 8.768728228785763,
+        "image_si_sdri_db": 2.524023853232637,
+        "beam-mask_sir_db": 11.437378095954001,
+        "beam-mask_si_sdri_db": -3.340693185730377,
+        "overlap-image_sir_db": 8.768728228785763,
+        "overlap-image_si_sdri_db": 2.524023853232637,
+        "balanced_sir_db": 10.240955530820138,
+        "balanced_si_sdri_db": 2.3575908423436207,
+        "production_sir_db": 10.240955530820138,
+        "production_si_sdri_db": 2.3575908423436207
+      },
+      {
+        "speaker": "B",
+        "mixture_si_sdr_db": -6.071675368385495,
+        "baseline_si_sdri_db": 2.0208151723926004,
+        "focus_si_sdri_db": 1.1692270850718067,
+        "mix_sir_db": -5.555151059683368,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": 0.3463378548361564,
+        "focus_sir_db": 3.030154620182243,
+        "image_sir_db": 1.8838475028580335,
+        "image_si_sdri_db": 6.015318564365511,
+        "beam-mask_sir_db": 3.3982233554948325,
+        "beam-mask_si_sdri_db": 4.180698808591211,
+        "overlap-image_sir_db": 1.8838475028580335,
+        "overlap-image_si_sdri_db": 6.015318564365511,
+        "balanced_sir_db": 5.249189696567806,
+        "balanced_si_sdri_db": 7.028082783323449,
+        "production_sir_db": 5.249189696567806,
+        "production_si_sdri_db": 7.028082783323449
+      },
+      {
+        "speaker": "C",
+        "mixture_si_sdr_db": -10.287613450251401,
+        "baseline_si_sdri_db": -0.6018123867717744,
+        "focus_si_sdri_db": -3.2589134314445314,
+        "mix_sir_db": -10.560930425404365,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": -1.372383408896786,
+        "focus_sir_db": 7.777137904620652,
+        "image_sir_db": -6.034352522245418,
+        "image_si_sdri_db": 3.3088320000516624,
+        "beam-mask_sir_db": 0.23667829010282346,
+        "beam-mask_si_sdri_db": -0.12260238122414968,
+        "overlap-image_sir_db": -6.034352522245418,
+        "overlap-image_si_sdri_db": 3.3088320000516624,
+        "balanced_sir_db": -3.3343704656330435,
+        "balanced_si_sdri_db": 3.9868024108482842,
+        "production_sir_db": -3.3343704656330435,
+        "production_si_sdri_db": 3.9868024108482842
+      }
+    ]
+  },
+  {
+    "trial": 2,
+    "sources": {
+      "enrollment": [
+        1186.52,
+        724.22,
+        769.76
+      ],
+      "mixed": [
+        {
+          "speaker": "A",
+          "start_in_original": 425.61,
+          "gain": 0.31
+        },
+        {
+          "speaker": "B",
+          "start_in_original": 730.79,
+          "gain": 1.0
+        },
+        {
+          "speaker": "C",
+          "start_in_original": 134.84,
+          "gain": 0.56
+        }
+      ]
+    },
+    "simultaneous_seconds": 1.84375,
+    "voices": [
+      {
+        "speaker": "A",
+        "mixture_si_sdr_db": -12.339035871720274,
+        "baseline_si_sdri_db": 1.4895266437163297,
+        "focus_si_sdri_db": 1.6877405947499557,
+        "mix_sir_db": -11.853841400588719,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": -6.71720783905436,
+        "focus_sir_db": -3.125204336316153,
+        "image_sir_db": -6.468140954780313,
+        "image_si_sdri_db": 4.500252581288352,
+        "beam-mask_sir_db": -5.282492834650339,
+        "beam-mask_si_sdri_db": 2.7287040015733552,
+        "overlap-image_sir_db": -6.468140954780313,
+        "overlap-image_si_sdri_db": 4.500252581288352,
+        "balanced_sir_db": -4.027119622073013,
+        "balanced_si_sdri_db": 5.545545924720345,
+        "production_sir_db": -4.027119622073013,
+        "production_si_sdri_db": 5.545545924720345
+      },
+      {
+        "speaker": "B",
+        "mixture_si_sdr_db": 2.5970536245856146,
+        "baseline_si_sdri_db": -1.465915262468716,
+        "focus_si_sdri_db": -3.2065793679393093,
+        "mix_sir_db": 2.67117806566811,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": 9.605506989092744,
+        "focus_sir_db": 13.236565659996202,
+        "image_sir_db": 10.596747100724677,
+        "image_si_sdri_db": 3.245740042488141,
+        "beam-mask_sir_db": 12.785918876945313,
+        "beam-mask_si_sdri_db": -1.0542628850120108,
+        "overlap-image_sir_db": 10.596747100724677,
+        "overlap-image_si_sdri_db": 3.245740042488141,
+        "balanced_sir_db": 13.084542860148357,
+        "balanced_si_sdri_db": 3.0207276252474045,
+        "production_sir_db": 13.084542860148357,
+        "production_si_sdri_db": 3.0207276252474045
+      },
+      {
+        "speaker": "C",
+        "mixture_si_sdr_db": -3.942243135312137,
+        "baseline_si_sdri_db": -2.054646109266545,
+        "focus_si_sdri_db": -5.049014018795474,
+        "mix_sir_db": -3.838798187018143,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": 7.057828869874835,
+        "focus_sir_db": 14.909407374434158,
+        "image_sir_db": 3.9978865322079784,
+        "image_si_sdri_db": 5.283521177764581,
+        "beam-mask_sir_db": 9.600416028960145,
+        "beam-mask_si_sdri_db": -1.6226526283585407,
+        "overlap-image_sir_db": 3.9978865322079784,
+        "overlap-image_si_sdri_db": 5.283521177764581,
+        "balanced_sir_db": 7.482278804687919,
+        "balanced_si_sdri_db": 5.576446334546708,
+        "production_sir_db": 7.482278804687919,
+        "production_si_sdri_db": 5.576446334546708
+      }
+    ]
+  },
+  {
+    "trial": 3,
+    "sources": {
+      "enrollment": [
+        1186.52,
+        724.22,
+        769.76
+      ],
+      "mixed": [
+        {
+          "speaker": "A",
+          "start_in_original": 1757.8500000000001,
+          "gain": 0.56
+        },
+        {
+          "speaker": "B",
+          "start_in_original": 1360.97,
+          "gain": 0.31
+        },
+        {
+          "speaker": "C",
+          "start_in_original": 575.04,
+          "gain": 1.0
+        }
+      ]
+    },
+    "simultaneous_seconds": 1.84375,
+    "voices": [
+      {
+        "speaker": "A",
+        "mixture_si_sdr_db": -7.171695301848068,
+        "baseline_si_sdri_db": -2.557621478767702,
+        "focus_si_sdri_db": -4.192285217681302,
+        "mix_sir_db": -7.460157436126976,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": -4.87911651703918,
+        "focus_sir_db": -2.5667025671272925,
+        "image_sir_db": -4.892778589769278,
+        "image_si_sdri_db": 1.7347313053873128,
+        "beam-mask_sir_db": -4.111173939580398,
+        "beam-mask_si_sdri_db": -1.9852952090759928,
+        "overlap-image_sir_db": -4.892778589769278,
+        "overlap-image_si_sdri_db": 1.7347313053873128,
+        "balanced_sir_db": -3.303496867239258,
+        "balanced_si_sdri_db": 2.1283114115226596,
+        "production_sir_db": -3.303496867239258,
+        "production_si_sdri_db": 2.1283114115226596
+      },
+      {
+        "speaker": "B",
+        "mixture_si_sdr_db": -11.751762272733721,
+        "baseline_si_sdri_db": 1.808201417028405,
+        "focus_si_sdri_db": 0.8847406808512321,
+        "mix_sir_db": -10.625484375936523,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": -5.7913665731131205,
+        "focus_sir_db": -3.527853694665141,
+        "image_sir_db": -4.819445856069452,
+        "image_si_sdri_db": 5.004061383200681,
+        "beam-mask_sir_db": -3.809295001495613,
+        "beam-mask_si_sdri_db": 3.5806665240956566,
+        "overlap-image_sir_db": -4.819445856069452,
+        "overlap-image_si_sdri_db": 5.004061383200681,
+        "balanced_sir_db": -2.144230002168484,
+        "balanced_si_sdri_db": 5.8486237873150415,
+        "production_sir_db": -2.144230002168484,
+        "production_si_sdri_db": 5.8486237873150415
+      },
+      {
+        "speaker": "C",
+        "mixture_si_sdr_db": 5.228128896404138,
+        "baseline_si_sdri_db": -10.228270844999306,
+        "focus_si_sdri_db": -13.692951912799991,
+        "mix_sir_db": 5.270244951814869,
+        "mix_si_sdri_db": 0.0,
+        "baseline_sir_db": 13.42675506624439,
+        "focus_sir_db": 17.010332411833254,
+        "image_sir_db": 8.853821605754678,
+        "image_si_sdri_db": 0.3674163063615099,
+        "beam-mask_sir_db": 15.010312954063824,
+        "beam-mask_si_sdri_db": -10.487459786557064,
+        "overlap-image_sir_db": 8.853821605754678,
+        "overlap-image_si_sdri_db": 0.3674163063615099,
+        "balanced_sir_db": 10.171417294834594,
+        "balanced_si_sdri_db": -0.5019145413174897,
+        "production_sir_db": 10.171417294834594,
+        "production_si_sdri_db": -0.5019145413174897
+      }
+    ]
+  }
+]

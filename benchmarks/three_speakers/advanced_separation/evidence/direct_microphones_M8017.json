@@ -1,0 +1,114 @@
+{
+  "vad_seconds": 30.21799174399348,
+  "asr_seconds": 217.44284376199357,
+  "transcribed_turns": 515,
+  "transcription": {
+    "cpCER": 0.06095168015697817,
+    "correct_reference_characters": 0.9545008584743684,
+    "totals": {
+      "reference_chars": 8154,
+      "recognized_chars": 8062,
+      "correct_reference_chars": 7783,
+      "substitutions": 153,
+      "deletions": 218,
+      "insertions": 126,
+      "errors": 497
+    },
+    "speaker_scores": [
+      {
+        "reference": "N_SPK8063",
+        "system": "A",
+        "reference_chars": 3735,
+        "recognized_chars": 3684,
+        "correct_reference_chars": 3615,
+        "substitutions": 59,
+        "deletions": 61,
+        "insertions": 10
+      },
+      {
+        "reference": "N_SPK8064",
+        "system": "B",
+        "reference_chars": 1713,
+        "recognized_chars": 1605,
+        "correct_reference_chars": 1554,
+        "substitutions": 43,
+        "deletions": 116,
+        "insertions": 8
+      },
+      {
+        "reference": "N_SPK8065",
+        "system": "C",
+        "reference_chars": 2706,
+        "recognized_chars": 2773,
+        "correct_reference_chars": 2614,
+        "substitutions": 51,
+        "deletions": 41,
+        "insertions": 108
+      }
+    ]
+  },
+  "activity": {
+    "ref_labels": [
+      "N_SPK8063",
+      "N_SPK8064",
+      "N_SPK8065"
+    ],
+    "system_labels": [
+      "A",
+      "B",
+      "C"
+    ],
+    "mapping": {
+      "A": "N_SPK8063",
+      "B": "N_SPK8064",
+      "C": "N_SPK8065"
+    },
+    "scores": {
+      "full": {
+        "clock_s": 1820.06,
+        "reference_speaker_s": 1633.16,
+        "speaker_recall": 0.8745438291410517,
+        "DER": 0.14691763207524064,
+        "miss_s": 202.81,
+        "false_alarm_s": 35.050000000000004,
+        "confusion_s": 2.08
+      },
+      "single": {
+        "clock_s": 1477.21,
+        "reference_speaker_s": 1477.21,
+        "speaker_recall": 0.893204080665579,
+        "DER": 0.12059219745330725,
+        "miss_s": 155.77,
+        "false_alarm_s": 20.38,
+        "confusion_s": 1.99
+      },
+      "two_simultaneous": {
+        "clock_s": 73.4,
+        "reference_speaker_s": 146.8,
+        "speaker_recall": 0.7026566757493188,
+        "DER": 0.29795640326975475,
+        "miss_s": 43.56,
+        "false_alarm_s": 0.09,
+        "confusion_s": 0.09
+      },
+      "three_simultaneous": {
+        "clock_s": 3.0500000000000003,
+        "reference_speaker_s": 9.15,
+        "speaker_recall": 0.6196721311475409,
+        "DER": 0.380327868852459,
+        "miss_s": 3.48,
+        "false_alarm_s": 0.0,
+        "confusion_s": 0.0
+      },
+      "all_overlap": {
+        "clock_s": 76.45,
+        "reference_speaker_s": 155.95000000000002,
+        "speaker_recall": 0.6977877524847708,
+        "DER": 0.30278935556268033,
+        "miss_s": 47.04,
+        "false_alarm_s": 0.09,
+        "confusion_s": 0.09
+      }
+    }
+  }
+}

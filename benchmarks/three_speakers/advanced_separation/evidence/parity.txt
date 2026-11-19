@@ -1,0 +1,2 @@
+8016 checked output samples and rate; peak edition-vs-prototype PCM difference 0.0 and solo-vs-baseline PCM difference 0.0
+8017 checked output samples and rate; peak edition-vs-prototype PCM difference 0.0 and solo-vs-baseline PCM difference 0.0

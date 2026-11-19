@@ -8,7 +8,8 @@ from pathlib import Path
 import time
 import numpy as np
 from scipy.fft import rfft, irfft
-from scipy.ndimage import minimum_filter1d
+from scipy.ndimage import minimum_filter1d, uniform_filter1d
+from scipy.special import softmax
 import soundfile as sf
 
 from diarize import masks
@@ -93,7 +94,57 @@ def filters(cov):
     return np.stack(output).astype("F")
 
 
-def write_continuous_beams(source, weights, frame_count, temp):
+class SpatialOverlapMask:
+    """Preserve the reference-microphone image when several known voices are active."""
+
+    def __init__(self, covariance, activity):
+        channels = covariance.shape[-1]
+        unit = np.eye(channels, dtype=np.complex64)
+        noise = covariance[3]
+        speech = covariance[:3] - 0.65 * noise
+        eigenvalues, basis = np.linalg.eigh(speech)
+        scale = np.maximum(speech.trace(axis1=-2, axis2=-1).real / channels, 1e-9)
+        eigenvalues = np.maximum(eigenvalues, 0.10 * scale[..., None])
+        speech = (basis * eigenvalues[..., None, :]) @ basis.conj().swapaxes(-1, -2)
+        speech_scale = np.maximum(speech.trace(axis1=-2, axis2=-1).real / channels, 1e-9)
+        noise_scale = np.maximum(noise.trace(axis1=-2, axis2=-1).real / channels, 1e-9)
+        speech_shape = speech / speech_scale[..., None, None]
+        noise_shape = noise / noise_scale[..., None, None] + 0.10 * unit
+        shapes = np.concatenate([speech_shape, noise_shape[None]], axis=0)
+        self.inverse = np.linalg.inv(shapes).astype(np.complex64)
+        self.log_determinants = np.linalg.slogdet(shapes)[1].astype(np.float32)
+        self.activity = activity
+
+    def apply(self, spectrum, baseline, start, stop):
+        """Use the original beam spectra at frames with at most one predicted voice."""
+        active = self.activity[:, start:stop].T
+        overlap = active.sum(axis=1) >= 2
+        if not overlap.any():
+            return baseline
+
+        power = np.maximum(np.sum(np.abs(spectrum) ** 2, axis=-1), 1e-14)
+        likelihoods = []
+        for inverse, log_determinant in zip(self.inverse, self.log_determinants):
+            whitened = np.einsum("tfc,fcd->tfd", spectrum.conj(), inverse, optimize=True)
+            distance = (
+                np.einsum("tfd,tfd->tf", whitened, spectrum, optimize=True).real / power
+            )
+            likelihoods.append(
+                -spectrum.shape[-1] * np.log(np.maximum(distance, 1e-5)) - log_determinant
+            )
+
+        loglike = np.stack(likelihoods, axis=1)
+        loglike = uniform_filter1d(loglike, size=3, axis=0, mode="nearest")
+        loglike = uniform_filter1d(loglike, size=3, axis=-1, mode="nearest")
+        loglike[:, :3] -= (~active)[:, :, None] * 20.0
+        loglike[:, 3] -= 3.5
+        posterior = softmax(loglike[overlap] / 1.3, axis=1)
+        gain = 0.025 + 0.975 * posterior[:, :3]
+        baseline[overlap] = spectrum[overlap, :, 0][:, None, :] * gain
+        return baseline
+
+
+def write_continuous_beams(source, weights, frame_count, temp, overlap_mask=None):
     """Carry the overlap-add tail across FFT blocks on the original sample clock."""
     tail_length = FFT - HOP
     channels = weights.shape[0]
@@ -103,10 +154,13 @@ def write_continuous_beams(source, weights, frame_count, temp):
     with sf.SoundFile(
         temp, "w", samplerate=16000, channels=channels, subtype="FLOAT"
     ) as out:
-        for start in range(0, frame_count, 350):
-            stop = min(frame_count, start + 350)
+        block_size = 360 if overlap_mask is not None else 350
+        for start in range(0, frame_count, block_size):
+            stop = min(frame_count, start + block_size)
             x = spectra(source, start, stop)
             y = np.einsum("tfc,sfc->tsf", x, weights.conj(), optimize=True)
+            if overlap_mask is not None:
+                y = overlap_mask.apply(x, y, start, stop)
             frames = irfft(y, n=FFT, axis=-1) * WINDOW
             advance = len(frames) * HOP
             samples = np.zeros((channels, advance + tail_length), dtype="float32")
@@ -165,6 +219,7 @@ def save_tracks(temp, dest, names, activity, gain, ungated):
 def separate(args):
     start_time = time.perf_counter()
     segments = json.loads(args.timing.read_text(encoding="utf-8"))["segments"]
+    profile = getattr(args, "profile", "mvdr")
     args.out.mkdir(parents=True, exist_ok=True)
     with (
         sf.SoundFile(args.audio) as f,
@@ -172,20 +227,26 @@ def separate(args):
     ):
         if f.samplerate != 16000 or f.channels < 2 or len(f) == 0:
             raise ValueError("Expected nonempty synchronized multichannel 16 kHz audio")
+        if profile == "overlap-mask" and f.channels != 8:
+            raise ValueError("The overlap-mask profile expects eight synchronized microphone channels")
         size = len(f)
         names, activity = masks(segments, size / 16000)
         if len(names) != 3:
             raise ValueError("Expected exactly three timing labels")
         if any(Path(name).name != name or name in {"", ".", ".."} for name in names):
             raise ValueError("Invalid speaker ID")
-        weights = filters(covariances(f, activity))
+        cov = covariances(f, activity)
+        weights = filters(cov)
+        overlap = SpatialOverlapMask(cov, activity) if profile == "overlap-mask" else None
         temp = Path(work) / "continuous.wav"
-        gain = write_continuous_beams(f, weights, activity.shape[1], temp)
+        gain = write_continuous_beams(
+            f, weights, activity.shape[1], temp, overlap_mask=overlap
+        )
         save_tracks(temp, args.out, names, activity, gain, args.ungated)
     (args.out / "render.json").write_text(
         json.dumps(
             dict(
-                method="spatial_mvdr",
+                method="spatial_overlap_mask" if profile == "overlap-mask" else "spatial_mvdr",
                 speaker_ids=names,
                 sample_count=size,
                 array_channels=weights.shape[-1],
@@ -203,6 +264,7 @@ if __name__ == "__main__":
     p.add_argument("--audio", type=Path, required=True)
     p.add_argument("--timing", type=Path, required=True)
     p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--profile", choices=["mvdr", "overlap-mask"], default="mvdr")
     p.add_argument(
         "--ungated",
         action="store_true",

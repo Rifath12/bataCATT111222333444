@@ -1,0 +1,41 @@
+{
+  "upstream_code": {
+    "repo": "https://github.com/vu-duy-tung/byd-speech-separation",
+    "commit": "5dc71a5c783c118d191288306132626364f97819",
+    "source_archive_sha256": "a7b9af48077fa1f6fdfd448313d172b691917df57071fe2eeb98e9e5fafa14c8"
+  },
+  "models": {
+    "recorrnet-v2-1ch-aishell1mix-ver2-alimeeting": {
+      "repo": "playwithmino/recorrnet-v2-1ch-aishell1mix-ver2-alimeeting",
+      "revision": "96357df71553dd777f7f775367028bbbdf184573",
+      "native_rate": 8000,
+      "files": {
+        "model.pt": "d7f08d69824886ca1300ef0bbfae4f7befec1d3435006bc137de9826e0d59ffd",
+        "config.yaml": "27dfc3fdee78ae649b013c2b79b7fe50e3de1e0173375971bf74b427076185d0",
+        "metadata.json": "502fb89c90610af49773e3eb531de79ee7c2a1b57c013e8bdcc7e0f0543fcc7d",
+        "README.md": "4fa2348e1b23f2348110e81fe1200f76bb37a3b722ec71afab7919b60470b22e"
+      }
+    },
+    "sr-corrnet-ss-1ch-aishell1mix-ver1": {
+      "repo": "playwithmino/sr-corrnet-ss-1ch-aishell1mix-ver1",
+      "revision": "c7774b4a30012194e9c7849d8ac760dd90684737",
+      "native_rate": 8000,
+      "files": {
+        "model.pt": "f084c1c768f6c1a26e2ed76460b0e2f1be5119c49a1b7ec131321195e2f6af7f",
+        "config.yaml": "c4427e0cda45d6ce44021838d30e578c16b67962e3811ea90de3dd6f4d5da0b1",
+        "metadata.json": "30f8c16b63ef5f5501c7ff23bffcae0331a87150aad86a70b6d2373bf5ee111a",
+        "README.md": "499e459129cd5adbe006625be7d1f181f55641c8b31477469117c87ccf247e0e"
+      }
+    },
+    "sandglasset-3spk-polyvox": {
+      "repo": "isaacnetero/sandglasset-3spk-polyvox",
+      "revision": "fbb82ec5d75523cdb0733af0113df031a9ab6f7d",
+      "native_rate": 16000,
+      "files": {
+        "modeling_sandglasset.py": "9626ce15d9e0805a51bf9c52cb1ff93af2f1ddda50831a7fe84ea2485c0c9483",
+        "best_model.pt": "a99c88b546a4fefaf70963a3627d2f21469126375b6c7658a4d1481bf3c8fd86",
+        "README.md": "fafed84fff47ac02789f585c397b7023478a0aa445a8cfa17b8fa4e8eb1063db"
+      }
+    }
+  }
+}

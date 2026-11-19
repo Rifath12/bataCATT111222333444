@@ -1,0 +1,624 @@
+{
+  "corpus": "AISHELL-3 Test",
+  "revision": "f20d5db4a31fe779ef07bb1af4ea92da5c786622",
+  "license": "Apache-2.0",
+  "license_url": "https://www.openslr.org/93/",
+  "seed": 202611192107,
+  "sample_rate": 16000,
+  "transcript_sha256": "3cd4504905becdbe4efb90b530fad0eb38e5ef7a7b2d09cf136d1ee22f53917f",
+  "sha256": {
+    "SSB05650040.wav": "921fbb2bb5ad6f6c9d30fb67985998e03726f2df08e85fa0893f1a3881181d45",
+    "SSB05650162.wav": "a4250c71b377ae8312750de15e7aa84f17b91d7ace8bef973e88eac972339b33",
+    "SSB05650203.wav": "e8a7457c3ee04dc1c8641fb5bc73c67dffcb20bb79587bfb435b2f1c17546409",
+    "SSB05650209.wav": "3a63a07720c40eeac3ce93269e7981e8e8293a4feeaf43a5de7a9302891c0b9d",
+    "SSB05650214.wav": "0a8772779772e0c6b2f7a8364878be6c8dc34016eb968dbba3b18250745f4afb",
+    "SSB05650221.wav": "efb235e6bfc52c4e9ae34ff51f55ff33f73b222d24f2c0476a6015ff6733899c",
+    "SSB05650365.wav": "da713494e45dbca887b39fcaabb8486d36520fc19eb29c268d24608d0f1dcebd",
+    "SSB05650445.wav": "f56ce34a08d90e50d23c0198fca1e819893cd031443ad8830e372bc3d52d891a",
+    "SSB05700046.wav": "faa449b9527d07242d2aa39b697bbe03fa32cf49827788872004d9748a361e3a",
+    "SSB05700155.wav": "7438755d7421db9c5310196d89b58612ada1d418ffcce9fa0b457d87050ef5ae",
+    "SSB05700172.wav": "916d1c7a5cdec2b4a664399c9e338ad2acedf1160dc35d0a3eaa4201ba808548",
+    "SSB05700182.wav": "45634626166007ad32a1881cd913031163ba3cf11b2260d81666f6ae912a39f4",
+    "SSB05700235.wav": "27f1fd2506d6cbd5f07b4e2e2e8792281ce330f878492e70d695dc91bbff3171",
+    "SSB05700298.wav": "a331b8e2a401795ba55fc79a4fa94cc49e2821d4a0e2f52b3e6c04c65806876d",
+    "SSB05700337.wav": "737236fc0a25e36c64e47f0ce9c9558e6858413b05bac4401f4b607e23e70778",
+    "SSB05780006.wav": "4be8d0d2e4f80dd55227fc7419c76b59d8bbeac841a7c642c98ef7c00473a6d9",
+    "SSB05780038.wav": "0975586af4f6cd2dbc4659c70823c106efe45ed61090c2b2af47d187a9f44c6b",
+    "SSB05780115.wav": "bcc0437b82c2a055950d7c1aa3f5fe2865769d41f04586e6f537a52f8493c798",
+    "SSB05780159.wav": "b1c2ea6dae29fba316c75278455c7b46ee4563430351914705e60dbdfa28f3d2",
+    "SSB05780205.wav": "65941f7024d6f9a4f7a2b082c626a9fafb8ddde306293e672741582b58de0674",
+    "SSB05780232.wav": "bd7f5c58222384e27e8f00c94af67f6a26af13d08128c8e5ec0c822ffcea740b",
+    "SSB05780274.wav": "bf2f6ae562fa97b416a618f609b4bad8607befc18f192f6047450425c79cfcfe",
+    "SSB05780466.wav": "b0cb9cb20e86dae35d4e35d9edd589d306e0c9e30411e9c0ad73ac00cf76f9fa",
+    "SSB05940059.wav": "f7c3b56f8cb1ddb543c397595c5a6fce63ad775b4498e0e71b02645be61b89e7",
+    "SSB05940275.wav": "e60686d22eef7e34d8d6f84b41421d8a65d1cb946293fa761cad09df1b00860d",
+    "SSB05940379.wav": "7d68044baf073fecc8e99f771941ba4148b10d7fd0cfa13119f4277d18946f3a",
+    "SSB05940411.wav": "6a9049244b1db60cc33c30e4d80233721a87d3cb6fb9b2477de3a9af29a48f6c",
+    "SSB05940420.wav": "8d8532c404fd5cf8fd9a42ba52f77a428575c5e89379bc2c52675b672db1cc19",
+    "SSB05940441.wav": "2682bd7bbeed83b9475a0f70abce850fc7e1a5dd4601914bec3fd12def5f0ae7",
+    "SSB06030028.wav": "de191053431288292559ce93717d87a6de115c1cfe01585b47efa1d551bd0ab5",
+    "SSB06030080.wav": "7490263ee9edd5c9303fbf44e41d524cfafafc2f4591af9e176f7ee1ec6f54ec",
+    "SSB06030102.wav": "df1ad4261ed897d80c85ddf48c4211bd7a75395e12528f1e06f57bec5fb6693a",
+    "SSB06030274.wav": "27b73ee60f197e616f08e772dd0d0669ea35b390ccf0bc82c7164b35c95bbdf3",
+    "SSB06030278.wav": "ec72984974e93b4bb1af079b96465f4da7e923e48a4404a20412035a3ae74059",
+    "SSB06030280.wav": "8ec7582897ac799599632e0c1125bf60944d3293bd47743a579a986def5ec75c",
+    "SSB06030298.wav": "32a3645d08fb9e08406a9b3a90806dcdbd3e5910a9dc7fe1b25c5143cdac0fb8",
+    "SSB06030302.wav": "6bd72c843bc42c681648f4a8d6ca4359fb97039db11eb9388090e3d90df47cd1",
+    "SSB06060074.wav": "f1a341bf868e9b2936df379f0a14773c5a800c5bd2141711d2b5401aee2484a0",
+    "SSB06060155.wav": "af7a7c7c7f41409434b91fba4627476abe6cc223e32ec6ade53d6f9aac367d55",
+    "SSB06060176.wav": "843600aa0bc098a04f61188b1637473a3cabf7dcdac2703e2b7af272142c20e2",
+    "SSB06060184.wav": "2857837aa7774b2056ee21e4cbb5ccc4e68cde99f2f9dc23242b020bda92273b",
+    "SSB06060193.wav": "fb1899bbb37c492ced4e286ef42e4b3ef1b4fea4d79d3154b636ba24499caa92",
+    "SSB06060254.wav": "6bca61f381e0a58f1429f5b6c4e52b6ca9eda6e752df83e6b8127922c2f69c61",
+    "SSB06060264.wav": "4e51bd2d8aa96d7789739d64ee9ba1644ff9c9ef3205e94024d1d0d44f3971f3",
+    "SSB06060355.wav": "19d30afe03b6164d5a136272bbe1bf4cb824df8e20e2902f1e3b63bddbc51c0d",
+    "SSB06070044.wav": "f41b2369b2681f4058ac22aa63a5723f90eab6b3c37da39c7a631b13744febe2",
+    "SSB06070060.wav": "d57521e0b9b83085185c49d4ff0fa5aa7f0038eb8de7324d8a70c68216d46c3e",
+    "SSB06070122.wav": "5b89fca1beab5c49e2edd4b73d97963254fa65b57f78caaf5e302e10f481f7d1",
+    "SSB06070163.wav": "73cbef100abfac3b75e40731716ccde666fad7d34b5402a6e356da0e6d438fbb",
+    "SSB06070166.wav": "4916fb67c4af2b0356754f71b3acd4a113c1cc47b46d635f8a14dbe91503f241",
+    "SSB06070171.wav": "89803c99feafaadb8c39f39866d40768bcebb703a5d6ffc50a688268f1065682",
+    "SSB06070176.wav": "ca66aef97fbfdd1188ed1172efbc71a496b4663389a233373657bd493c8165ce",
+    "SSB06070394.wav": "73e39265f4af02926f08a9627dde73c1d99d1a2bdb2db341b8681ec90a96c851",
+    "SSB06660025.wav": "ba73b4c117d585a39e34ee76fb2f5fc161e9383323e2485e3de38f0d98999898",
+    "SSB06660071.wav": "e9ea42d13d010eb1692eafd9a9c7001c9538cd3038cd76e41adcc34823fa2ae4",
+    "SSB06660120.wav": "fbab59b7be483415b15c88fa2a1eed3d3c0fece2343177e44432fdc600673d27",
+    "SSB06660152.wav": "3822c45da8821a23c371a1e5b61d3b5a23cb83dc06bd3e11e257b18d6e80cea8",
+    "SSB06660226.wav": "290f87889d4cfd4eccdb7a4f50af0ccb1f0408dd6dcd77a64cf52b8bbbb1b5d0",
+    "SSB06660229.wav": "f881a11dc1a57185b4136fa45edefe88cb71c4a0538b868cf9f64ce5e8330847",
+    "SSB06660327.wav": "4f5ebddcd0fd29f87d848f406709c201ab59786dbc2880146ae230290cd44d2d",
+    "SSB06660402.wav": "0ff6b664b67c3194270860c08b133d10d983841205d64f6952d51a6a6a17ffba",
+    "SSB07780045.wav": "c96e0b4300c0c19b473cdfa7bc4c74ac25675ae2d29423039b945278d0988b61",
+    "SSB07780066.wav": "618bb2ec154d11c0d732660daa7e84f379a533a92e472cc1c1fd828d21414751",
+    "SSB07780086.wav": "d3ee3e984537584acbf1bc5572ffc6cfa41a209847ac9322d00142e1389a148d",
+    "SSB07780138.wav": "8536303e65434dc62b823d8dcab95a3d1578613b18fd8831c529d4eae177f723",
+    "SSB07780180.wav": "df1e82db5c669d521f492b89a43fab091d59a4cb296a6f3f4e7a21f76f091ebf",
+    "SSB07780259.wav": "d0b7e507a0f9c4011bd625f66290c6d03cf8dbad222b971d293e51c567fb0609",
+    "SSB07780437.wav": "181762cde95d58c588a83a7c19ae349f8ad345c9c93677ee07169daf9c2e755b",
+    "SSB07780461.wav": "41784c71191c90f21b75c67999102000b98441ec6443442f9b651a24b79de9fd",
+    "SSB0666_sequence.wav": "33bd1e53decf1251895e29eaaa0a44a7e2c0f8dfc75c8b4c56ca7c57b62aede0",
+    "SSB0606_sequence.wav": "7523f470329db286e1e0c2b727c38ffd5fabfb13ad27154ee5736814d5b56ae8",
+    "SSB0565_sequence.wav": "16af4030339e57412fbda523edde8ad67b26fca078c641798f811c717ac88317",
+    "SSB0603_sequence.wav": "bd88c848bcf1b31341ec0ccb4d26dc6cc4a90e6f77014fa6373a246be9ae9397",
+    "SSB0578_sequence.wav": "2ec8095971e676b064f89495decdcafa004d06658470f52236e8f8ff2c5220f6",
+    "SSB0570_sequence.wav": "92b3827fad5edd439fdccce84a4fe0fc84b36fc44adcc7a5518412300b6fa8e9",
+    "SSB0594_sequence.wav": "3e0d82764c06432cbfc73bc0601c1b7b080d93b5363b8cf750d26806c4b8f275",
+    "SSB0778_sequence.wav": "41098bb532180bc6781d9f26ef64bc822b0408ce238dcbd200b5f87afb3a84e8",
+    "SSB0607_sequence.wav": "078638695c5b416915f5c83099072992c88adff99317d77360811343c2658607"
+  },
+  "groups": {
+    "heldout": [
+      [
+        {
+          "id": "0666",
+          "target": "SSB0666_sequence.wav",
+          "enroll": "SSB06660025.wav",
+          "text": "加油站郑源驼铃同林明天逆向十年",
+          "parts": [
+            {
+              "wav": "SSB06660229.wav",
+              "text": "加油站",
+              "start_sample": 0,
+              "end_sample": 14720
+            },
+            {
+              "wav": "SSB06660071.wav",
+              "text": "郑源",
+              "start_sample": 14720,
+              "end_sample": 26880
+            },
+            {
+              "wav": "SSB06660120.wav",
+              "text": "驼铃",
+              "start_sample": 26880,
+              "end_sample": 39360
+            },
+            {
+              "wav": "SSB06660152.wav",
+              "text": "同林",
+              "start_sample": 39360,
+              "end_sample": 54720
+            },
+            {
+              "wav": "SSB06660226.wav",
+              "text": "明天",
+              "start_sample": 54720,
+              "end_sample": 69440
+            },
+            {
+              "wav": "SSB06660327.wav",
+              "text": "逆向",
+              "start_sample": 69440,
+              "end_sample": 82880
+            },
+            {
+              "wav": "SSB06660402.wav",
+              "text": "十年",
+              "start_sample": 82880,
+              "end_sample": 98240
+            }
+          ]
+        },
+        {
+          "id": "0606",
+          "target": "SSB0606_sequence.wav",
+          "enroll": "SSB06060355.wav",
+          "text": "帮我播母亲龙梅毕竟杰伦听听听话",
+          "parts": [
+            {
+              "wav": "SSB06060184.wav",
+              "text": "帮我播",
+              "start_sample": 0,
+              "end_sample": 14080
+            },
+            {
+              "wav": "SSB06060074.wav",
+              "text": "母亲",
+              "start_sample": 14080,
+              "end_sample": 26560
+            },
+            {
+              "wav": "SSB06060155.wav",
+              "text": "龙梅",
+              "start_sample": 26560,
+              "end_sample": 39040
+            },
+            {
+              "wav": "SSB06060176.wav",
+              "text": "毕竟",
+              "start_sample": 39040,
+              "end_sample": 49600
+            },
+            {
+              "wav": "SSB06060193.wav",
+              "text": "杰伦",
+              "start_sample": 49600,
+              "end_sample": 61120
+            },
+            {
+              "wav": "SSB06060254.wav",
+              "text": "听听",
+              "start_sample": 61120,
+              "end_sample": 72320
+            },
+            {
+              "wav": "SSB06060264.wav",
+              "text": "听话",
+              "start_sample": 72320,
+              "end_sample": 83520
+            }
+          ]
+        },
+        {
+          "id": "0565",
+          "target": "SSB0565_sequence.wav",
+          "enroll": "SSB05650162.wav",
+          "text": "可是还是不对他们需要机会原始式的武器我有一支彩笔一个字都不是你妈是被杀的我到附近看看",
+          "parts": [
+            {
+              "wav": "SSB05650040.wav",
+              "text": "可是还是不对",
+              "start_sample": 0,
+              "end_sample": 15680
+            },
+            {
+              "wav": "SSB05650203.wav",
+              "text": "他们需要机会",
+              "start_sample": 15680,
+              "end_sample": 31360
+            },
+            {
+              "wav": "SSB05650209.wav",
+              "text": "原始式的武器",
+              "start_sample": 31360,
+              "end_sample": 48320
+            },
+            {
+              "wav": "SSB05650214.wav",
+              "text": "我有一支彩笔",
+              "start_sample": 48320,
+              "end_sample": 64320
+            },
+            {
+              "wav": "SSB05650221.wav",
+              "text": "一个字都不是",
+              "start_sample": 64320,
+              "end_sample": 79680
+            },
+            {
+              "wav": "SSB05650365.wav",
+              "text": "你妈是被杀的",
+              "start_sample": 79680,
+              "end_sample": 95360
+            },
+            {
+              "wav": "SSB05650445.wav",
+              "text": "我到附近看看",
+              "start_sample": 95360,
+              "end_sample": 111360
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0603",
+          "target": "SSB0603_sequence.wav",
+          "enroll": "SSB06030298.wav",
+          "text": "中国话五十九不想杨凡童年首歌彭青",
+          "parts": [
+            {
+              "wav": "SSB06030080.wav",
+              "text": "中国话",
+              "start_sample": 0,
+              "end_sample": 13760
+            },
+            {
+              "wav": "SSB06030302.wav",
+              "text": "五十九",
+              "start_sample": 13760,
+              "end_sample": 25920
+            },
+            {
+              "wav": "SSB06030028.wav",
+              "text": "不想",
+              "start_sample": 25920,
+              "end_sample": 34560
+            },
+            {
+              "wav": "SSB06030102.wav",
+              "text": "杨凡",
+              "start_sample": 34560,
+              "end_sample": 46720
+            },
+            {
+              "wav": "SSB06030274.wav",
+              "text": "童年",
+              "start_sample": 46720,
+              "end_sample": 59200
+            },
+            {
+              "wav": "SSB06030278.wav",
+              "text": "首歌",
+              "start_sample": 59200,
+              "end_sample": 71680
+            },
+            {
+              "wav": "SSB06030280.wav",
+              "text": "彭青",
+              "start_sample": 71680,
+              "end_sample": 83200
+            }
+          ]
+        },
+        {
+          "id": "0578",
+          "target": "SSB0578_sequence.wav",
+          "enroll": "SSB05780232.wav",
+          "text": "但你没有杀人听不懂报刊亭玉美人罗大佑那时雨乐瞳",
+          "parts": [
+            {
+              "wav": "SSB05780159.wav",
+              "text": "但你没有杀人",
+              "start_sample": 0,
+              "end_sample": 23360
+            },
+            {
+              "wav": "SSB05780038.wav",
+              "text": "听不懂",
+              "start_sample": 23360,
+              "end_sample": 36160
+            },
+            {
+              "wav": "SSB05780115.wav",
+              "text": "报刊亭",
+              "start_sample": 36160,
+              "end_sample": 51200
+            },
+            {
+              "wav": "SSB05780205.wav",
+              "text": "玉美人",
+              "start_sample": 51200,
+              "end_sample": 65600
+            },
+            {
+              "wav": "SSB05780274.wav",
+              "text": "罗大佑",
+              "start_sample": 65600,
+              "end_sample": 80000
+            },
+            {
+              "wav": "SSB05780466.wav",
+              "text": "那时雨",
+              "start_sample": 80000,
+              "end_sample": 94080
+            },
+            {
+              "wav": "SSB05780006.wav",
+              "text": "乐瞳",
+              "start_sample": 94080,
+              "end_sample": 107520
+            }
+          ]
+        },
+        {
+          "id": "0570",
+          "target": "SSB0570_sequence.wav",
+          "enroll": "SSB05700182.wav",
+          "text": "停车场停车场王袁被爱姜潮王芳",
+          "parts": [
+            {
+              "wav": "SSB05700046.wav",
+              "text": "停车场",
+              "start_sample": 0,
+              "end_sample": 17600
+            },
+            {
+              "wav": "SSB05700337.wav",
+              "text": "停车场",
+              "start_sample": 17600,
+              "end_sample": 35200
+            },
+            {
+              "wav": "SSB05700155.wav",
+              "text": "王袁",
+              "start_sample": 35200,
+              "end_sample": 51520
+            },
+            {
+              "wav": "SSB05700172.wav",
+              "text": "被爱",
+              "start_sample": 51520,
+              "end_sample": 73057
+            },
+            {
+              "wav": "SSB05700235.wav",
+              "text": "姜潮",
+              "start_sample": 73057,
+              "end_sample": 90626
+            },
+            {
+              "wav": "SSB05700298.wav",
+              "text": "王芳",
+              "start_sample": 90626,
+              "end_sample": 106946
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0594",
+          "target": "SSB0594_sequence.wav",
+          "enroll": "SSB05940411.wav",
+          "text": "公用电话潜龙潜罪诺迪潜伏",
+          "parts": [
+            {
+              "wav": "SSB05940379.wav",
+              "text": "公用电话",
+              "start_sample": 0,
+              "end_sample": 15040
+            },
+            {
+              "wav": "SSB05940059.wav",
+              "text": "潜龙",
+              "start_sample": 15040,
+              "end_sample": 26240
+            },
+            {
+              "wav": "SSB05940275.wav",
+              "text": "潜罪",
+              "start_sample": 26240,
+              "end_sample": 37760
+            },
+            {
+              "wav": "SSB05940420.wav",
+              "text": "诺迪",
+              "start_sample": 37760,
+              "end_sample": 48000
+            },
+            {
+              "wav": "SSB05940441.wav",
+              "text": "潜伏",
+              "start_sample": 48000,
+              "end_sample": 60480
+            }
+          ]
+        },
+        {
+          "id": "0778",
+          "target": "SSB0778_sequence.wav",
+          "enroll": "SSB07780045.wav",
+          "text": "我现在就得走他们在船上幼儿歌曲播首歌吧五百零六五百零一爱回来",
+          "parts": [
+            {
+              "wav": "SSB07780437.wav",
+              "text": "我现在就得走",
+              "start_sample": 0,
+              "end_sample": 17600
+            },
+            {
+              "wav": "SSB07780461.wav",
+              "text": "他们在船上",
+              "start_sample": 17600,
+              "end_sample": 34880
+            },
+            {
+              "wav": "SSB07780086.wav",
+              "text": "幼儿歌曲",
+              "start_sample": 34880,
+              "end_sample": 50240
+            },
+            {
+              "wav": "SSB07780138.wav",
+              "text": "播首歌吧",
+              "start_sample": 50240,
+              "end_sample": 66880
+            },
+            {
+              "wav": "SSB07780180.wav",
+              "text": "五百零六",
+              "start_sample": 66880,
+              "end_sample": 81920
+            },
+            {
+              "wav": "SSB07780259.wav",
+              "text": "五百零一",
+              "start_sample": 81920,
+              "end_sample": 99840
+            },
+            {
+              "wav": "SSB07780066.wav",
+              "text": "爱回来",
+              "start_sample": 99840,
+              "end_sample": 114560
+            }
+          ]
+        },
+        {
+          "id": "0607",
+          "target": "SSB0607_sequence.wav",
+          "enroll": "SSB06070044.wav",
+          "text": "功夫美男我不信邰正宵彭佳慧孟庭苇轻音乐周笔畅",
+          "parts": [
+            {
+              "wav": "SSB06070394.wav",
+              "text": "功夫美男",
+              "start_sample": 0,
+              "end_sample": 14400
+            },
+            {
+              "wav": "SSB06070060.wav",
+              "text": "我不信",
+              "start_sample": 14400,
+              "end_sample": 27200
+            },
+            {
+              "wav": "SSB06070122.wav",
+              "text": "邰正宵",
+              "start_sample": 27200,
+              "end_sample": 41600
+            },
+            {
+              "wav": "SSB06070163.wav",
+              "text": "彭佳慧",
+              "start_sample": 41600,
+              "end_sample": 53760
+            },
+            {
+              "wav": "SSB06070166.wav",
+              "text": "孟庭苇",
+              "start_sample": 53760,
+              "end_sample": 67200
+            },
+            {
+              "wav": "SSB06070171.wav",
+              "text": "轻音乐",
+              "start_sample": 67200,
+              "end_sample": 80640
+            },
+            {
+              "wav": "SSB06070176.wav",
+              "text": "周笔畅",
+              "start_sample": 80640,
+              "end_sample": 92160
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "speakers_disjoint_from_current_development": true,
+  "speakers_also_seen_in_previous_experiments": [],
+  "speaker_exclusions": [
+    "0009",
+    "0011",
+    "0012",
+    "0016",
+    "0018",
+    "0033",
+    "0038",
+    "0043",
+    "0057",
+    "0073",
+    "0080",
+    "0112",
+    "0122",
+    "0133",
+    "0139",
+    "0145",
+    "0193",
+    "0197",
+    "0200",
+    "0241",
+    "0246",
+    "0261",
+    "0267",
+    "0273",
+    "0287",
+    "0288",
+    "0299",
+    "0307",
+    "0315",
+    "0316",
+    "0323",
+    "0338",
+    "0339",
+    "0341",
+    "0342",
+    "0354",
+    "0366",
+    "0379",
+    "0382",
+    "0393",
+    "0394",
+    "0395",
+    "0407",
+    "0427",
+    "0434",
+    "0470",
+    "0482",
+    "0502",
+    "0534",
+    "0535",
+    "0539",
+    "0544",
+    "0588",
+    "0590",
+    "0599",
+    "0601",
+    "0623",
+    "0632",
+    "0668",
+    "0671",
+    "0686",
+    "0693",
+    "0700",
+    "0702",
+    "0711",
+    "0716",
+    "0717",
+    "0723",
+    "0736",
+    "0737",
+    "0746",
+    "0749",
+    "0751",
+    "0758",
+    "0760",
+    "0780"
+  ],
+  "checked_manifests": [
+    "pareto_wave/exclusions.json",
+    "pareto_wave/holdout/holdout.json",
+    "further_sep/holdout.json",
+    "next_root_wave/manifest.json",
+    "trial_next_wave/source_manifest.json",
+    "trial_next_wave/cache/development.json",
+    "trial_next_wave/cache/test.json",
+    "tri90_wave/results/test.json",
+    "tri90_wave/results/development.json",
+    "mandarin-github/benchmarks/cases.json",
+    "/tmp/mandarin-audio-run.wfQ7MzyH/controlled_sources.json"
+  ]
+}
