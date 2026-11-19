@@ -1,0 +1,212 @@
+{
+  "packages": {
+    "python": "3.12.14",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "onnxruntime": "1.23.2",
+    "sherpa_onnx": "2.0.1",
+    "soundfile": "0.14.0"
+  },
+  "models": {
+    "silero_vad.onnx": {
+      "sha256": "2623a2953f6ff3d2c1e61740c6cdb7168133479b267dfef114a4a3cc5bdd788f",
+      "bytes": 2327524
+    },
+    "model.int8.onnx": {
+      "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+      "bytes": 239233841
+    },
+    "tokens.txt": {
+      "sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc",
+      "bytes": 315894
+    },
+    "direct_microphones_adaptive.json": {
+      "sha256": "0dcc13b679f26d1134789ea45f24bcd22bccc56918a4a627524761089aa43d11",
+      "bytes": 190
+    }
+  },
+  "datasets": {
+    "M8013": {
+      "duration_s": 2239.4705,
+      "close_mics": [
+        {
+          "file": "R8008_M8013_N_SPK8047.wav",
+          "speaker": 8047,
+          "samples": 35831528,
+          "rate": 16000,
+          "sha256": "9ac386157aaaf079b6961c4b5f28e790f2cd3032b7daa1359d5dd6ea849d442c",
+          "bytes": 71663100
+        },
+        {
+          "file": "R8008_M8013_N_SPK8048.wav",
+          "speaker": 8048,
+          "samples": 35831528,
+          "rate": 16000,
+          "sha256": "5828b2a9da9710346b23ce79f3568a24dfcbf411107ad329b226b6250f83aedb",
+          "bytes": 71663100
+        },
+        {
+          "file": "R8008_M8013_N_SPK8049.wav",
+          "speaker": 8049,
+          "samples": 35831528,
+          "rate": 16000,
+          "sha256": "bea1c439dbe45cfc52610b57b4dff6f4b14dc63f064f2fd2de1bd628cc7287d5",
+          "bytes": 71663100
+        }
+      ],
+      "labels": [
+        {
+          "file": "far.TextGrid",
+          "sha256": "b0f938c81b95728bd38f7aec655f6804ca4dcc3182bb0facb8d05a9a84293869",
+          "bytes": 79663
+        },
+        {
+          "file": "R8008_M8013.rttm",
+          "sha256": "3d754d9c176eb1115337e4fb93cefc030346d0edf970fb129c187d3575bd1472",
+          "bytes": 87936
+        }
+      ]
+    },
+    "M8016": {
+      "duration_s": 1838.980125,
+      "close_mics": [
+        {
+          "file": "R8008_M8016_N_SPK8060.wav",
+          "speaker": 8060,
+          "samples": 29423682,
+          "rate": 16000,
+          "sha256": "ee0bf8c0a00a4deb5ccdf7b1d5d5a9d01d8a6026632e4f4cd0cc87419eeac313",
+          "bytes": 58847408
+        },
+        {
+          "file": "R8008_M8016_N_SPK8061.wav",
+          "speaker": 8061,
+          "samples": 29423682,
+          "rate": 16000,
+          "sha256": "29c756ef298e40511c5a9fad64f469ee3914fc8246b42c0d1c2560ea998bcb4b",
+          "bytes": 58847408
+        },
+        {
+          "file": "R8008_M8016_N_SPK8062.wav",
+          "speaker": 8062,
+          "samples": 29423682,
+          "rate": 16000,
+          "sha256": "657ccd0e048aae95d34404ef5feb370e448c773370302910745710c47339a5f9",
+          "bytes": 58847408
+        }
+      ],
+      "labels": [
+        {
+          "file": "R8008_M8016.TextGrid",
+          "sha256": "68b7e6a42ad94c7d0d87036ae460b04f769696d687386ef732802bd894b45e95",
+          "bytes": 67923
+        },
+        {
+          "file": "reference.rttm",
+          "sha256": "956bb96575ff7058f0f9d16cea6413af8d42294f62314a3585ce1f6a6b82499d",
+          "bytes": 75961
+        }
+      ]
+    },
+    "M8017": {
+      "duration_s": 1820.0520625,
+      "close_mics": [
+        {
+          "file": "R8008_M8017_N_SPK8063.wav",
+          "speaker": 8063,
+          "samples": 29120833,
+          "rate": 16000,
+          "sha256": "56433830e11f9f32839fde5e81478cb7bd04c1abf0a48d22e3f9e01b143b00d8",
+          "bytes": 58241710
+        },
+        {
+          "file": "R8008_M8017_N_SPK8064.wav",
+          "speaker": 8064,
+          "samples": 29120833,
+          "rate": 16000,
+          "sha256": "6cfea0781e526bdf5b2da70d704a7b931c36e783a063df5b2c5f348cfa40af2f",
+          "bytes": 58241710
+        },
+        {
+          "file": "R8008_M8017_N_SPK8065.wav",
+          "speaker": 8065,
+          "samples": 29120833,
+          "rate": 16000,
+          "sha256": "0a3f9288f9ea0ad3fdd045fca6aac70a8251d664f021735b3afe747907a8fc94",
+          "bytes": 58241710
+        }
+      ],
+      "labels": [
+        {
+          "file": "R8008_M8017.TextGrid",
+          "sha256": "d64f26c7cf544d79b618b343a2061bd10ad9b2a2141ab12429aefbdbdacaaa57",
+          "bytes": 54576
+        },
+        {
+          "file": "reference.rttm",
+          "sha256": "e5cd37b9ed81cc7af5fc3b15b120e2b8db41a17fbfc37aedd145b6fae1025c86",
+          "bytes": 55315
+        }
+      ]
+    }
+  },
+  "transcripts": {
+    "M8016": {
+      "duration": 1838.980125,
+      "speakers": {
+        "A": {
+          "activity_turns": 383,
+          "transcript_turns": 264,
+          "text_chars": 3342
+        },
+        "B": {
+          "activity_turns": 345,
+          "transcript_turns": 222,
+          "text_chars": 2766
+        },
+        "C": {
+          "activity_turns": 246,
+          "transcript_turns": 200,
+          "text_chars": 1424
+        }
+      }
+    },
+    "M8017": {
+      "duration": 1820.0520625,
+      "speakers": {
+        "A": {
+          "activity_turns": 332,
+          "transcript_turns": 233,
+          "text_chars": 3711
+        },
+        "B": {
+          "activity_turns": 163,
+          "transcript_turns": 95,
+          "text_chars": 1629
+        },
+        "C": {
+          "activity_turns": 301,
+          "transcript_turns": 222,
+          "text_chars": 2818
+        }
+      }
+    }
+  },
+  "production_smoke": {
+    "A": {
+      "samples": 320000,
+      "rate": 16000,
+      "pcm_identical": true
+    },
+    "B": {
+      "samples": 320000,
+      "rate": 16000,
+      "pcm_identical": true
+    },
+    "C": {
+      "samples": 320000,
+      "rate": 16000,
+      "pcm_identical": true
+    }
+  }
+}

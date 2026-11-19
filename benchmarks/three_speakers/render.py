@@ -207,10 +207,13 @@ def output_tracks(y, activity, method, args):
                     s = resample(separated[k], 8000, RATE)
                     ordered[rank, : min(len(s), len(fragment))] = s[: len(fragment)]
                 separated = ordered
+            # Merged regions can include short solo gaps. Keep their original
+            # room signal and use separated samples only during actual overlap.
+            overlap = count[lo:hi] > 1
             for i, idx in enumerate(speakers):
                 take = separated[i, a - left : b - left]
-                active = np.repeat(activity[idx, lo:hi], HOP)[: b - a]
-                outputs[idx, a:b] = take * active
+                write = np.repeat(activity[idx, lo:hi] & overlap, HOP)[: b - a]
+                np.copyto(outputs[idx, a:b], take, where=write)
             lengths.append(hi - lo)
             if (index + 1) % 32 == 0 or index + 1 == len(overlap_chunks):
                 print(

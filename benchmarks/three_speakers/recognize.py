@@ -68,10 +68,13 @@ def text_scores(ref, hyp):
     b = list(h.values()) + [""] * (k - len(h))
     matrix = np.asarray(
         [[Levenshtein.distance(x, y) for y in b] for x in a], dtype=np.int64
-    )
+    ).reshape((k, k))
     rr, hh = linear_sum_assignment(matrix)
     per = []
-    total = Counter()
+    total = Counter(dict.fromkeys((
+        "reference_chars", "recognized_chars", "correct_reference_chars",
+        "substitutions", "deletions", "insertions",
+    ), 0))
     for i, j in zip(rr, hh):
         ops = Counter(q.tag for q in Levenshtein.editops(a[i], b[j]))
         correct = len(a[i]) - ops["replace"] - ops["delete"]
@@ -92,8 +95,10 @@ def text_scores(ref, hyp):
     denominator = total["reference_chars"]
     total["errors"] = total["substitutions"] + total["deletions"] + total["insertions"]
     return {
-        "cpCER": total["errors"] / denominator,
-        "correct_reference_characters": total["correct_reference_chars"] / denominator,
+        "cpCER": total["errors"] / denominator if denominator else None,
+        "correct_reference_characters": (
+            total["correct_reference_chars"] / denominator if denominator else None
+        ),
         "totals": dict(total),
         "speaker_scores": per,
     }

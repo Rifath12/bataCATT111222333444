@@ -1,0 +1,650 @@
+{
+  "AliMeeting": {
+    "extracts": 18,
+    "old": {
+      "DER": 0.17682413291478447,
+      "precision": 0.8785563089728411,
+      "recall": 0.9374473623765408,
+      "reference_speaker_seconds": 522.44,
+      "triple_seconds": 26.25,
+      "exact_three_F1": 0.6215940550779543,
+      "three_way_speaker_recall": 0.9316825396825397
+    },
+    "new": {
+      "DER": 0.16583722532731032,
+      "precision": 0.8846676926380588,
+      "recall": 0.9462713421636935,
+      "reference_speaker_seconds": 522.44,
+      "triple_seconds": 26.25,
+      "exact_three_F1": 0.6215940550779543,
+      "three_way_speaker_recall": 0.9306666666666666
+    },
+    "seconds": 0.14676575700286776,
+    "by_clip": {
+      "R8002_M8002_153879_154906": [
+        {
+          "DER": 0.22664924885695623,
+          "precision": 0.8809993425378041,
+          "recall": 0.8752449379490529,
+          "reference_speaker_seconds": 15.31,
+          "triple_seconds": 1.66,
+          "exact_three_F1": 0.7969543147208121,
+          "three_way_speaker_recall": 0.9819277108433735
+        },
+        {
+          "DER": 0.13585891574134554,
+          "precision": 0.9010321797207043,
+          "recall": 0.969301110385369,
+          "reference_speaker_seconds": 15.31,
+          "triple_seconds": 1.66,
+          "exact_three_F1": 0.7969543147208121,
+          "three_way_speaker_recall": 0.9819277108433735
+        }
+      ],
+      "R8005_M8007_125513_127280": [
+        {
+          "DER": 0.2350019105846389,
+          "precision": 0.8455143747835123,
+          "recall": 0.9327474207107375,
+          "reference_speaker_seconds": 26.17,
+          "triple_seconds": 2.32,
+          "exact_three_F1": 0.593607305936073,
+          "three_way_speaker_recall": 0.9468390804597702
+        },
+        {
+          "DER": 0.2265953381734811,
+          "precision": 0.8541374474053296,
+          "recall": 0.930836836071838,
+          "reference_speaker_seconds": 26.17,
+          "triple_seconds": 2.32,
+          "exact_three_F1": 0.593607305936073,
+          "three_way_speaker_recall": 0.9468390804597702
+        }
+      ],
+      "R8005_M8008_055326_057099": [
+        {
+          "DER": 0.20673486786018755,
+          "precision": 0.8420081210778885,
+          "recall": 0.9722932651321398,
+          "reference_speaker_seconds": 23.46,
+          "triple_seconds": 1.83,
+          "exact_three_F1": 0.5316455696202531,
+          "three_way_speaker_recall": 0.8961748633879781
+        },
+        {
+          "DER": 0.19437340153452684,
+          "precision": 0.8511194029850746,
+          "recall": 0.9722932651321398,
+          "reference_speaker_seconds": 23.46,
+          "triple_seconds": 1.83,
+          "exact_three_F1": 0.5316455696202531,
+          "three_way_speaker_recall": 0.8961748633879781
+        }
+      ],
+      "R8002_M8002_029648_035777": [
+        {
+          "DER": 0.17779810917962793,
+          "precision": 0.8681751824817519,
+          "recall": 0.9068313510216529,
+          "reference_speaker_seconds": 65.58,
+          "triple_seconds": 1.13,
+          "exact_three_F1": 0.410958904109589,
+          "three_way_speaker_recall": 0.8436578171091446
+        },
+        {
+          "DER": 0.1605672461116194,
+          "precision": 0.8773128380301737,
+          "recall": 0.9399207075327843,
+          "reference_speaker_seconds": 65.58,
+          "triple_seconds": 1.13,
+          "exact_three_F1": 0.410958904109589,
+          "three_way_speaker_recall": 0.8436578171091446
+        }
+      ],
+      "R8002_M8002_060489_065768": [
+        {
+          "DER": 0.09889158295808798,
+          "precision": 0.9182359568646387,
+          "recall": 0.988049878766886,
+          "reference_speaker_seconds": 57.74,
+          "triple_seconds": 1.04,
+          "exact_three_F1": 0.697986577181208,
+          "three_way_speaker_recall": 1.0
+        },
+        {
+          "DER": 0.08988569449255282,
+          "precision": 0.9269443540514155,
+          "recall": 0.986664357464496,
+          "reference_speaker_seconds": 57.74,
+          "triple_seconds": 1.04,
+          "exact_three_F1": 0.697986577181208,
+          "three_way_speaker_recall": 1.0
+        }
+      ],
+      "R8002_M8002_077790_079266": [
+        {
+          "DER": 0.1890179514255544,
+          "precision": 0.8965696465696466,
+          "recall": 0.9107708553326294,
+          "reference_speaker_seconds": 18.94,
+          "triple_seconds": 0.7,
+          "exact_three_F1": 0.4581005586592179,
+          "three_way_speaker_recall": 0.8238095238095238
+        },
+        {
+          "DER": 0.18268215417106654,
+          "precision": 0.9044619422572179,
+          "recall": 0.909714889123548,
+          "reference_speaker_seconds": 18.94,
+          "triple_seconds": 0.7,
+          "exact_three_F1": 0.4581005586592179,
+          "three_way_speaker_recall": 0.8238095238095238
+        }
+      ],
+      "R8002_M8002_082135_083813": [
+        {
+          "DER": 0.09427443237907206,
+          "precision": 0.9145569620253164,
+          "recall": 0.9985192497532083,
+          "reference_speaker_seconds": 20.26,
+          "triple_seconds": 0.61,
+          "exact_three_F1": 0.7393939393939394,
+          "three_way_speaker_recall": 1.0
+        },
+        {
+          "DER": 0.08538993089832182,
+          "precision": 0.923923006416132,
+          "recall": 0.9950641658440277,
+          "reference_speaker_seconds": 20.26,
+          "triple_seconds": 0.61,
+          "exact_three_F1": 0.7393939393939394,
+          "three_way_speaker_recall": 1.0
+        }
+      ],
+      "R8002_M8002_177331_183415": [
+        {
+          "DER": 0.16638808691688192,
+          "precision": 0.9111579581388345,
+          "recall": 0.9194651268804133,
+          "reference_speaker_seconds": 65.81,
+          "triple_seconds": 1.22,
+          "exact_three_F1": 0.668769716088328,
+          "three_way_speaker_recall": 0.9562841530054644
+        },
+        {
+          "DER": 0.15514359519829812,
+          "precision": 0.9200363471149478,
+          "recall": 0.9231119890594135,
+          "reference_speaker_seconds": 65.81,
+          "triple_seconds": 1.22,
+          "exact_three_F1": 0.668769716088328,
+          "three_way_speaker_recall": 0.9562841530054644
+        }
+      ],
+      "R8005_M8007_022999_024474": [
+        {
+          "DER": 0.36790123456790125,
+          "precision": 0.7273500638026372,
+          "recall": 0.8444444444444444,
+          "reference_speaker_seconds": 20.25,
+          "triple_seconds": 1.48,
+          "exact_three_F1": 0.645,
+          "three_way_speaker_recall": 0.9527027027027027
+        },
+        {
+          "DER": 0.4454320987654321,
+          "precision": 0.6838379866299646,
+          "recall": 0.8587654320987654,
+          "reference_speaker_seconds": 20.25,
+          "triple_seconds": 1.48,
+          "exact_three_F1": 0.645,
+          "three_way_speaker_recall": 0.9481981981981982
+        }
+      ],
+      "R8005_M8007_031447_034112": [
+        {
+          "DER": 0.32472826086956524,
+          "precision": 0.8448523085747061,
+          "recall": 0.8005434782608696,
+          "reference_speaker_seconds": 36.8,
+          "triple_seconds": 2.04,
+          "exact_three_F1": 0.22580645161290322,
+          "three_way_speaker_recall": 0.6699346405228758
+        },
+        {
+          "DER": 0.3154891304347826,
+          "precision": 0.8549087749782798,
+          "recall": 0.8021739130434783,
+          "reference_speaker_seconds": 36.8,
+          "triple_seconds": 2.04,
+          "exact_three_F1": 0.22580645161290322,
+          "three_way_speaker_recall": 0.6666666666666666
+        }
+      ],
+      "R8005_M8007_055247_056057": [
+        {
+          "DER": 0.09443507588532883,
+          "precision": 0.9421487603305785,
+          "recall": 0.9612141652613828,
+          "reference_speaker_seconds": 11.86,
+          "triple_seconds": 1.48,
+          "exact_three_F1": 0.8838709677419355,
+          "three_way_speaker_recall": 0.9752252252252253
+        },
+        {
+          "DER": 0.09190556492411467,
+          "precision": 0.9452282157676348,
+          "recall": 0.9603709949409781,
+          "reference_speaker_seconds": 11.86,
+          "triple_seconds": 1.48,
+          "exact_three_F1": 0.8838709677419355,
+          "three_way_speaker_recall": 0.9707207207207207
+        }
+      ],
+      "R8005_M8007_093151_094184": [
+        {
+          "DER": 0.17478152309612985,
+          "precision": 0.8968014484007242,
+          "recall": 0.9275905118601748,
+          "reference_speaker_seconds": 16.02,
+          "triple_seconds": 1.48,
+          "exact_three_F1": 0.6683804627249358,
+          "three_way_speaker_recall": 0.9527027027027027
+        },
+        {
+          "DER": 0.132334581772784,
+          "precision": 0.9050966608084359,
+          "recall": 0.9644194756554307,
+          "reference_speaker_seconds": 16.02,
+          "triple_seconds": 1.48,
+          "exact_three_F1": 0.6683804627249358,
+          "three_way_speaker_recall": 0.9481981981981982
+        }
+      ],
+      "R8005_M8007_169229_170460": [
+        {
+          "DER": 0.22807017543859648,
+          "precision": 0.8147590361445783,
+          "recall": 0.9818511796733213,
+          "reference_speaker_seconds": 16.53,
+          "triple_seconds": 1.68,
+          "exact_three_F1": 0.632183908045977,
+          "three_way_speaker_recall": 0.9940476190476191
+        },
+        {
+          "DER": 0.2250453720508167,
+          "precision": 0.8183198380566802,
+          "recall": 0.9782214156079855,
+          "reference_speaker_seconds": 16.53,
+          "triple_seconds": 1.68,
+          "exact_three_F1": 0.632183908045977,
+          "three_way_speaker_recall": 0.9940476190476191
+        }
+      ],
+      "R8005_M8008_043075_046235": [
+        {
+          "DER": 0.11292315295280454,
+          "precision": 0.9073315118397086,
+          "recall": 0.9846800098838646,
+          "reference_speaker_seconds": 40.47,
+          "triple_seconds": 1.8,
+          "exact_three_F1": 0.6312056737588653,
+          "three_way_speaker_recall": 0.9962962962962963
+        },
+        {
+          "DER": 0.10378057820607858,
+          "precision": 0.9140625,
+          "recall": 0.9829503335804299,
+          "reference_speaker_seconds": 40.47,
+          "triple_seconds": 1.8,
+          "exact_three_F1": 0.6312056737588653,
+          "three_way_speaker_recall": 0.9962962962962963
+        }
+      ],
+      "R8005_M8008_083662_086184": [
+        {
+          "DER": 0.11248492159227985,
+          "precision": 0.9195893926432849,
+          "recall": 0.9725572979493365,
+          "reference_speaker_seconds": 33.16,
+          "triple_seconds": 1.64,
+          "exact_three_F1": 0.620253164556962,
+          "three_way_speaker_recall": 0.8658536585365854
+        },
+        {
+          "DER": 0.09650180940892641,
+          "precision": 0.9344547563805105,
+          "recall": 0.9716525934861279,
+          "reference_speaker_seconds": 33.16,
+          "triple_seconds": 1.64,
+          "exact_three_F1": 0.620253164556962,
+          "three_way_speaker_recall": 0.8658536585365854
+        }
+      ],
+      "R8005_M8008_140591_142745": [
+        {
+          "DER": 0.10687022900763359,
+          "precision": 0.903448275862069,
+          "recall": 1.0,
+          "reference_speaker_seconds": 24.89,
+          "triple_seconds": 1.78,
+          "exact_three_F1": 0.716297786720322,
+          "three_way_speaker_recall": 1.0
+        },
+        {
+          "DER": 0.09682603455202893,
+          "precision": 0.9123257520176082,
+          "recall": 0.9991964644435516,
+          "reference_speaker_seconds": 24.89,
+          "triple_seconds": 1.78,
+          "exact_three_F1": 0.716297786720322,
+          "three_way_speaker_recall": 1.0
+        }
+      ],
+      "R8005_M8008_171434_172438": [
+        {
+          "DER": 0.11295180722891567,
+          "precision": 0.8980285520054385,
+          "recall": 0.9947289156626506,
+          "reference_speaker_seconds": 13.28,
+          "triple_seconds": 1.25,
+          "exact_three_F1": 0.7352941176470589,
+          "three_way_speaker_recall": 1.0
+        },
+        {
+          "DER": 0.10843373493975904,
+          "precision": 0.9017064846416383,
+          "recall": 0.9947289156626506,
+          "reference_speaker_seconds": 13.28,
+          "triple_seconds": 1.25,
+          "exact_three_F1": 0.7352941176470589,
+          "three_way_speaker_recall": 1.0
+        }
+      ],
+      "R8005_M8008_181193_182423": [
+        {
+          "DER": 0.28598365807668136,
+          "precision": 0.7819013726487036,
+          "recall": 0.9666876178504086,
+          "reference_speaker_seconds": 15.91,
+          "triple_seconds": 1.11,
+          "exact_three_F1": 0.4920273348519362,
+          "three_way_speaker_recall": 0.990990990990991
+        },
+        {
+          "DER": 0.26021370207416716,
+          "precision": 0.7939979654120041,
+          "recall": 0.9811439346323068,
+          "reference_speaker_seconds": 15.91,
+          "triple_seconds": 1.11,
+          "exact_three_F1": 0.4920273348519362,
+          "three_way_speaker_recall": 0.990990990990991
+        }
+      ]
+    }
+  },
+  "AISHELL-4": {
+    "extracts": 12,
+    "old": {
+      "DER": 0.22495226328203977,
+      "precision": 0.9113722121667638,
+      "recall": 0.8342131865663259,
+      "reference_speaker_seconds": 356.12,
+      "triple_seconds": 18.39,
+      "exact_three_F1": 0.3602865916069601,
+      "three_way_speaker_recall": 0.7275693311582382
+    },
+    "new": {
+      "DER": 0.21133325845220713,
+      "precision": 0.9121766105472398,
+      "recall": 0.8504717510951365,
+      "reference_speaker_seconds": 356.12,
+      "triple_seconds": 18.39,
+      "exact_three_F1": 0.3602865916069601,
+      "three_way_speaker_recall": 0.7284756208084103
+    },
+    "seconds": 0.08752571999502834,
+    "by_clip": {
+      "L_R003S03C02_140966_143166": [
+        {
+          "DER": 0.2401552967276761,
+          "precision": 0.9591412742382271,
+          "recall": 0.7681641708264004,
+          "reference_speaker_seconds": 36.06,
+          "triple_seconds": 1.78,
+          "exact_three_F1": 0.0,
+          "three_way_speaker_recall": 0.4288389513108614
+        },
+        {
+          "DER": 0.23349972268441485,
+          "precision": 0.9578333904696607,
+          "recall": 0.7748197448696617,
+          "reference_speaker_seconds": 36.06,
+          "triple_seconds": 1.78,
+          "exact_three_F1": 0.0,
+          "three_way_speaker_recall": 0.4288389513108614
+        }
+      ],
+      "L_R003S03C02_143735_145935": [
+        {
+          "DER": 0.323589001447178,
+          "precision": 0.825658939345824,
+          "recall": 0.7525325615050651,
+          "reference_speaker_seconds": 34.55,
+          "triple_seconds": 1.7,
+          "exact_three_F1": 0.49372384937238495,
+          "three_way_speaker_recall": 0.8509803921568627
+        },
+        {
+          "DER": 0.2937771345875543,
+          "precision": 0.8271716260895702,
+          "recall": 0.7965267727930535,
+          "reference_speaker_seconds": 34.55,
+          "triple_seconds": 1.7,
+          "exact_three_F1": 0.49372384937238495,
+          "three_way_speaker_recall": 0.8509803921568627
+        }
+      ],
+      "L_R003S03C02_155295_157495": [
+        {
+          "DER": 0.19613947696139478,
+          "precision": 0.8966489195114312,
+          "recall": 0.8913449564134496,
+          "reference_speaker_seconds": 32.12,
+          "triple_seconds": 1.61,
+          "exact_three_F1": 0.5652173913043478,
+          "three_way_speaker_recall": 0.9627329192546584
+        },
+        {
+          "DER": 0.18368617683686178,
+          "precision": 0.9012461059190031,
+          "recall": 0.9006849315068494,
+          "reference_speaker_seconds": 32.12,
+          "triple_seconds": 1.61,
+          "exact_three_F1": 0.5652173913043478,
+          "three_way_speaker_recall": 0.9627329192546584
+        }
+      ],
+      "L_R003S03C02_209104_211304": [
+        {
+          "DER": 0.3610280932456665,
+          "precision": 0.8065371024734982,
+          "recall": 0.8185893604303646,
+          "reference_speaker_seconds": 33.46,
+          "triple_seconds": 2.07,
+          "exact_three_F1": 0.3092269326683292,
+          "three_way_speaker_recall": 0.855072463768116
+        },
+        {
+          "DER": 0.29826658696951586,
+          "precision": 0.8180812828310755,
+          "recall": 0.8843395098625224,
+          "reference_speaker_seconds": 33.46,
+          "triple_seconds": 2.07,
+          "exact_three_F1": 0.3092269326683292,
+          "three_way_speaker_recall": 0.8631239935587761
+        }
+      ],
+      "M_R003S02C01_098328_100528": [
+        {
+          "DER": 0.30738060781476123,
+          "precision": 0.8359229334990678,
+          "recall": 0.7785817655571635,
+          "reference_speaker_seconds": 34.55,
+          "triple_seconds": 2.59,
+          "exact_three_F1": 0.14655172413793102,
+          "three_way_speaker_recall": 0.7104247104247104
+        },
+        {
+          "DER": 0.3007235890014472,
+          "precision": 0.8376722817764165,
+          "recall": 0.7916063675832128,
+          "reference_speaker_seconds": 34.55,
+          "triple_seconds": 2.59,
+          "exact_three_F1": 0.14655172413793102,
+          "three_way_speaker_recall": 0.7104247104247104
+        }
+      ],
+      "M_R003S02C01_128692_130892": [
+        {
+          "DER": 0.2174721189591078,
+          "precision": 0.9476682093271627,
+          "recall": 0.8246592317224287,
+          "reference_speaker_seconds": 32.28,
+          "triple_seconds": 1.66,
+          "exact_three_F1": 0.3983402489626556,
+          "three_way_speaker_recall": 0.6465863453815262
+        },
+        {
+          "DER": 0.19919454770755887,
+          "precision": 0.950664800559832,
+          "recall": 0.8416976456009914,
+          "reference_speaker_seconds": 32.28,
+          "triple_seconds": 1.66,
+          "exact_three_F1": 0.3983402489626556,
+          "three_way_speaker_recall": 0.6506024096385542
+        }
+      ],
+      "M_R003S02C01_155696_157896": [
+        {
+          "DER": 0.18226977455101262,
+          "precision": 0.9805341783612495,
+          "recall": 0.8276652655712649,
+          "reference_speaker_seconds": 26.17,
+          "triple_seconds": 1.27,
+          "exact_three_F1": 0.0,
+          "three_way_speaker_recall": 0.6666666666666666
+        },
+        {
+          "DER": 0.1830340084065724,
+          "precision": 0.98140589569161,
+          "recall": 0.8269010317157051,
+          "reference_speaker_seconds": 26.17,
+          "triple_seconds": 1.27,
+          "exact_three_F1": 0.0,
+          "three_way_speaker_recall": 0.6666666666666666
+        }
+      ],
+      "M_R003S02C01_197200_199400": [
+        {
+          "DER": 0.16474464579901152,
+          "precision": 0.9903288201160542,
+          "recall": 0.8434925864909391,
+          "reference_speaker_seconds": 30.35,
+          "triple_seconds": 0.86,
+          "exact_three_F1": 0.0,
+          "three_way_speaker_recall": 0.43410852713178294
+        },
+        {
+          "DER": 0.16672158154859967,
+          "precision": 0.9887901043679939,
+          "recall": 0.842833607907743,
+          "reference_speaker_seconds": 30.35,
+          "triple_seconds": 0.86,
+          "exact_three_F1": 0.0,
+          "three_way_speaker_recall": 0.4263565891472868
+        }
+      ],
+      "S_R003S04C01_058687_060887": [
+        {
+          "DER": 0.0948878264067672,
+          "precision": 0.938549481957842,
+          "recall": 0.966164030893711,
+          "reference_speaker_seconds": 27.19,
+          "triple_seconds": 1.19,
+          "exact_three_F1": 0.521978021978022,
+          "three_way_speaker_recall": 0.9327731092436975
+        },
+        {
+          "DER": 0.08900331004045604,
+          "precision": 0.9373451327433628,
+          "recall": 0.9738874586244943,
+          "reference_speaker_seconds": 27.19,
+          "triple_seconds": 1.19,
+          "exact_three_F1": 0.521978021978022,
+          "three_way_speaker_recall": 0.9327731092436975
+        }
+      ],
+      "S_R003S04C01_131060_133260": [
+        {
+          "DER": 0.12428078250863062,
+          "precision": 0.9187292205393425,
+          "recall": 0.953970080552359,
+          "reference_speaker_seconds": 26.07,
+          "triple_seconds": 0.92,
+          "exact_three_F1": 0.4899598393574297,
+          "three_way_speaker_recall": 0.8876811594202898
+        },
+        {
+          "DER": 0.12389719984656694,
+          "precision": 0.9151183970856102,
+          "recall": 0.9635596471039509,
+          "reference_speaker_seconds": 26.07,
+          "triple_seconds": 0.92,
+          "exact_three_F1": 0.4899598393574297,
+          "three_way_speaker_recall": 0.8876811594202898
+        }
+      ],
+      "S_R003S04C01_224114_226314": [
+        {
+          "DER": 0.08948708621316842,
+          "precision": 0.9644992526158446,
+          "recall": 0.9388868679519825,
+          "reference_speaker_seconds": 27.49,
+          "triple_seconds": 1.35,
+          "exact_three_F1": 0.5912408759124088,
+          "three_way_speaker_recall": 0.8493827160493828
+        },
+        {
+          "DER": 0.08330301927973809,
+          "precision": 0.9668034315553897,
+          "recall": 0.9428883230265551,
+          "reference_speaker_seconds": 27.49,
+          "triple_seconds": 1.35,
+          "exact_three_F1": 0.5912408759124088,
+          "three_way_speaker_recall": 0.8493827160493828
+        }
+      ],
+      "S_R003S04C01_237242_238295": [
+        {
+          "DER": 0.39166140240050534,
+          "precision": 0.9948347107438017,
+          "recall": 0.6083385975994946,
+          "reference_speaker_seconds": 15.83,
+          "triple_seconds": 1.39,
+          "exact_three_F1": 0.0,
+          "three_way_speaker_recall": 0.4628297362110312
+        },
+        {
+          "DER": 0.39166140240050534,
+          "precision": 0.9968944099378882,
+          "recall": 0.6083385975994946,
+          "reference_speaker_seconds": 15.83,
+          "triple_seconds": 1.39,
+          "exact_three_F1": 0.0,
+          "three_way_speaker_recall": 0.4628297362110312
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "M8016": {
+    "unrefined": {
+      "errors": 1818,
+      "substitutions": 983,
+      "deletions": 685,
+      "insertions": 150,
+      "reference_chars": 7705
+    },
+    "previous": {
+      "errors": 1806,
+      "substitutions": 977,
+      "deletions": 680,
+      "insertions": 149,
+      "reference_chars": 7705
+    },
+    "candidate": {
+      "errors": 1805,
+      "substitutions": 977,
+      "deletions": 679,
+      "insertions": 149,
+      "reference_chars": 7705
+    },
+    "changes": {
+      "whole_agreements": 1
+    }
+  },
+  "M8017": {
+    "unrefined": {
+      "errors": 925,
+      "substitutions": 517,
+      "deletions": 345,
+      "insertions": 63,
+      "reference_chars": 8154
+    },
+    "previous": {
+      "errors": 909,
+      "substitutions": 503,
+      "deletions": 340,
+      "insertions": 66,
+      "reference_chars": 8154
+    },
+    "candidate": {
+      "errors": 908,
+      "substitutions": 503,
+      "deletions": 340,
+      "insertions": 65,
+      "reference_chars": 8154
+    },
+    "changes": {
+      "whole_agreements": 1
+    }
+  },
+  "R8002_M8003_027646_031931": {
+    "unrefined": {
+      "errors": 72,
+      "substitutions": 36,
+      "deletions": 29,
+      "insertions": 7,
+      "reference_chars": 213
+    },
+    "previous": {
+      "errors": 70,
+      "substitutions": 35,
+      "deletions": 28,
+      "insertions": 7,
+      "reference_chars": 213
+    },
+    "candidate": {
+      "errors": 68,
+      "substitutions": 35,
+      "deletions": 26,
+      "insertions": 7,
+      "reference_chars": 213
+    },
+    "changes": {
+      "whole_agreements": 3
+    }
+  },
+  "R8004_M8005_160952_168387": {
+    "unrefined": {
+      "errors": 145,
+      "substitutions": 67,
+      "deletions": 70,
+      "insertions": 8,
+      "reference_chars": 517
+    },
+    "previous": {
+      "errors": 140,
+      "substitutions": 66,
+      "deletions": 66,
+      "insertions": 8,
+      "reference_chars": 517
+    },
+    "candidate": {
+      "errors": 140,
+      "substitutions": 66,
+      "deletions": 66,
+      "insertions": 8,
+      "reference_chars": 517
+    },
+    "changes": {}
+  },
+  "R8006_M8012_017727_024396": {
+    "unrefined": {
+      "errors": 138,
+      "substitutions": 63,
+      "deletions": 56,
+      "insertions": 19,
+      "reference_chars": 398
+    },
+    "previous": {
+      "errors": 135,
+      "substitutions": 60,
+      "deletions": 56,
+      "insertions": 19,
+      "reference_chars": 398
+    },
+    "candidate": {
+      "errors": 135,
+      "substitutions": 60,
+      "deletions": 56,
+      "insertions": 19,
+      "reference_chars": 398
+    },
+    "changes": {}
+  },
+  "ASR_L_R003S03C02_209104_211304_0294_1925": {
+    "unrefined": {
+      "errors": 55,
+      "substitutions": 30,
+      "deletions": 15,
+      "insertions": 10,
+      "reference_chars": 101
+    },
+    "previous": {
+      "errors": 53,
+      "substitutions": 30,
+      "deletions": 13,
+      "insertions": 10,
+      "reference_chars": 101
+    },
+    "candidate": {
+      "errors": 53,
+      "substitutions": 30,
+      "deletions": 13,
+      "insertions": 10,
+      "reference_chars": 101
+    },
+    "changes": {}
+  },
+  "ASR_S_R003S04C01_237242_238295_0051_1053": {
+    "unrefined": {
+      "errors": 13,
+      "substitutions": 1,
+      "deletions": 10,
+      "insertions": 2,
+      "reference_chars": 46
+    },
+    "previous": {
+      "errors": 12,
+      "substitutions": 1,
+      "deletions": 9,
+      "insertions": 2,
+      "reference_chars": 46
+    },
+    "candidate": {
+      "errors": 12,
+      "substitutions": 1,
+      "deletions": 9,
+      "insertions": 2,
+      "reference_chars": 46
+    },
+    "changes": {}
+  },
+  "R8002_M8002_153879_154906": {
+    "unrefined": {
+      "errors": 52,
+      "substitutions": 23,
+      "deletions": 27,
+      "insertions": 2,
+      "reference_chars": 88
+    },
+    "previous": {
+      "errors": 51,
+      "substitutions": 22,
+      "deletions": 27,
+      "insertions": 2,
+      "reference_chars": 88
+    },
+    "candidate": {
+      "errors": 51,
+      "substitutions": 22,
+      "deletions": 27,
+      "insertions": 2,
+      "reference_chars": 88
+    },
+    "changes": {}
+  },
+  "R8002_M8002_177331_183415": {
+    "unrefined": {
+      "errors": 99,
+      "substitutions": 51,
+      "deletions": 35,
+      "insertions": 13,
+      "reference_chars": 386
+    },
+    "previous": {
+      "errors": 96,
+      "substitutions": 48,
+      "deletions": 35,
+      "insertions": 13,
+      "reference_chars": 386
+    },
+    "candidate": {
+      "errors": 96,
+      "substitutions": 48,
+      "deletions": 35,
+      "insertions": 13,
+      "reference_chars": 386
+    },
+    "changes": {}
+  },
+  "R8005_M8007_125513_127280": {
+    "unrefined": {
+      "errors": 38,
+      "substitutions": 23,
+      "deletions": 13,
+      "insertions": 2,
+      "reference_chars": 123
+    },
+    "previous": {
+      "errors": 38,
+      "substitutions": 23,
+      "deletions": 13,
+      "insertions": 2,
+      "reference_chars": 123
+    },
+    "candidate": {
+      "errors": 38,
+      "substitutions": 24,
+      "deletions": 12,
+      "insertions": 2,
+      "reference_chars": 123
+    },
+    "changes": {
+      "whole_agreements": 1
+    }
+  },
+  "R8005_M8007_031447_034112": {
+    "unrefined": {
+      "errors": 76,
+      "substitutions": 31,
+      "deletions": 42,
+      "insertions": 3,
+      "reference_chars": 186
+    },
+    "previous": {
+      "errors": 74,
+      "substitutions": 30,
+      "deletions": 41,
+      "insertions": 3,
+      "reference_chars": 186
+    },
+    "candidate": {
+      "errors": 74,
+      "substitutions": 30,
+      "deletions": 41,
+      "insertions": 3,
+      "reference_chars": 186
+    },
+    "changes": {}
+  },
+  "R8005_M8008_055326_057099": {
+    "unrefined": {
+      "errors": 38,
+      "substitutions": 22,
+      "deletions": 11,
+      "insertions": 5,
+      "reference_chars": 131
+    },
+    "previous": {
+      "errors": 38,
+      "substitutions": 22,
+      "deletions": 11,
+      "insertions": 5,
+      "reference_chars": 131
+    },
+    "candidate": {
+      "errors": 38,
+      "substitutions": 22,
+      "deletions": 11,
+      "insertions": 5,
+      "reference_chars": 131
+    },
+    "changes": {}
+  },
+  "R8005_M8008_043075_046235": {
+    "unrefined": {
+      "errors": 33,
+      "substitutions": 20,
+      "deletions": 9,
+      "insertions": 4,
+      "reference_chars": 232
+    },
+    "previous": {
+      "errors": 32,
+      "substitutions": 19,
+      "deletions": 9,
+      "insertions": 4,
+      "reference_chars": 232
+    },
+    "candidate": {
+      "errors": 32,
+      "substitutions": 19,
+      "deletions": 9,
+      "insertions": 4,
+      "reference_chars": 232
+    },
+    "changes": {}
+  }
+}

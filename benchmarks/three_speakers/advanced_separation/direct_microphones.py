@@ -22,6 +22,10 @@ SEATS=tuple("ABC")
 def calculate_features(files, model_path):
     """Run one recurrent speech detector per channel in a small batch."""
     import onnxruntime as ort
+
+    file_ids = [(info.st_dev, info.st_ino) for info in (Path(path).stat() for path in files)]
+    if len(file_ids) != 3 or len(set(file_ids)) != 3:
+        raise ValueError("Use three distinct synchronized microphone recordings")
     options=ort.SessionOptions()
     options.intra_op_num_threads=1
     options.inter_op_num_threads=1
@@ -47,6 +51,8 @@ def calculate_features(files, model_path):
         k=0
         for i in range(0,n,HOP*block_frames):
             block=np.stack([f.read(HOP*block_frames,dtype="float32") for f in handle_list])
+            if not np.isfinite(block).all():
+                raise ValueError("Microphone audio contains a nonfinite sample")
             block=np.pad(block,((0,0),(0,(-block.shape[1])%HOP)))
             for t in range(0,block.shape[1],HOP):
                 x=block[:,t:t+HOP]
@@ -117,7 +123,7 @@ def main():
     for key in ("vad","asr","out"):
         parser.add_argument("--"+key,type=Path,required=True)
     parser.add_argument("--reference",type=Path,help="Optional evaluation-only TextGrid")
-    parser.add_argument("--profile",type=Path,help="Audio detector thresholds calibrated on a separate recording")
+    parser.add_argument("--profile",type=Path,help="Choose a separately calibrated legacy or adaptive activity profile")
     parser.add_argument("--threads", type=int, default=1)
     parser.add_argument("--copy-audio", action="store_true", help="Also save speaker_A/B/C.wav")
     parser.add_argument("--only-activity",action="store_true",help="Stop after producing blind timing")
@@ -126,9 +132,17 @@ def main():
     started=time.perf_counter()
     power, prob, length = calculate_features(args.microphones, args.vad)
     thresholds=json.loads(args.profile.read_text()) if args.profile else {}
-    activity=voice_mask(power,prob,thresholds.get("bleed_db",15.),thresholds.get("minimum_probability",.5))
+    adaptive = thresholds.get("adaptive_activity")
+    if adaptive is None:
+        activity = voice_mask(
+            power, prob, thresholds.get("bleed_db", 15.), thresholds.get("minimum_probability", .5)
+        )
+    else:
+        from close_activity import activity_mask
+
+        activity = activity_mask(power, prob, **adaptive)
     marks=timestamps(activity,length)
-    timing=dict(duration_s=length/RATE,speaker_ids=list(SEATS),segments=marks)
+    timing=dict(duration_s=length/RATE,speaker_ids=list(SEATS),segments=marks, activity_profile="adaptive" if adaptive is not None else "fixed")
     (args.out/"speaker_timing.json").write_text(json.dumps(timing,indent=2)+"\n")
     timing_wall=time.perf_counter()-started
     print("blind timing",len(marks),round(timing_wall,3),flush=True)

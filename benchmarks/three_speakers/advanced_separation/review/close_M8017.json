@@ -1,0 +1,174 @@
+{
+  "old_fixed": {
+    "fixed_cer": 0.06095168015697817,
+    "totals": {
+      "reference_chars": 8154,
+      "recognized_chars": 8062,
+      "errors": 497,
+      "substitutions": 153,
+      "deletions": 218,
+      "insertions": 126
+    },
+    "speakers": {
+      "A": {
+        "reference_id": "N_SPK8063",
+        "reference_chars": 3735,
+        "recognized_chars": 3684,
+        "errors": 130,
+        "substitutions": 59,
+        "deletions": 61,
+        "insertions": 10
+      },
+      "B": {
+        "reference_id": "N_SPK8064",
+        "reference_chars": 1713,
+        "recognized_chars": 1605,
+        "errors": 167,
+        "substitutions": 43,
+        "deletions": 116,
+        "insertions": 8
+      },
+      "C": {
+        "reference_id": "N_SPK8065",
+        "reference_chars": 2706,
+        "recognized_chars": 2773,
+        "errors": 200,
+        "substitutions": 51,
+        "deletions": 41,
+        "insertions": 108
+      }
+    }
+  },
+  "new_fixed": {
+    "fixed_cer": 0.056781947510424334,
+    "totals": {
+      "reference_chars": 8154,
+      "recognized_chars": 8156,
+      "errors": 463,
+      "substitutions": 163,
+      "deletions": 149,
+      "insertions": 151
+    },
+    "speakers": {
+      "A": {
+        "reference_id": "N_SPK8063",
+        "reference_chars": 3735,
+        "recognized_chars": 3711,
+        "errors": 117,
+        "substitutions": 67,
+        "deletions": 37,
+        "insertions": 13
+      },
+      "B": {
+        "reference_id": "N_SPK8064",
+        "reference_chars": 1713,
+        "recognized_chars": 1629,
+        "errors": 159,
+        "substitutions": 53,
+        "deletions": 95,
+        "insertions": 11
+      },
+      "C": {
+        "reference_id": "N_SPK8065",
+        "reference_chars": 2706,
+        "recognized_chars": 2816,
+        "errors": 187,
+        "substitutions": 43,
+        "deletions": 17,
+        "insertions": 127
+      }
+    }
+  },
+  "old_permuted": {
+    "cpCER": 0.06095168015697817,
+    "correct_reference_characters": 0.9545008584743684,
+    "totals": {
+      "reference_chars": 8154,
+      "recognized_chars": 8062,
+      "correct_reference_chars": 7783,
+      "substitutions": 153,
+      "deletions": 218,
+      "insertions": 126,
+      "errors": 497
+    },
+    "speaker_scores": [
+      {
+        "reference": "N_SPK8063",
+        "system": "A",
+        "reference_chars": 3735,
+        "recognized_chars": 3684,
+        "correct_reference_chars": 3615,
+        "substitutions": 59,
+        "deletions": 61,
+        "insertions": 10
+      },
+      {
+        "reference": "N_SPK8064",
+        "system": "B",
+        "reference_chars": 1713,
+        "recognized_chars": 1605,
+        "correct_reference_chars": 1554,
+        "substitutions": 43,
+        "deletions": 116,
+        "insertions": 8
+      },
+      {
+        "reference": "N_SPK8065",
+        "system": "C",
+        "reference_chars": 2706,
+        "recognized_chars": 2773,
+        "correct_reference_chars": 2614,
+        "substitutions": 51,
+        "deletions": 41,
+        "insertions": 108
+      }
+    ]
+  },
+  "new_permuted": {
+    "cpCER": 0.056781947510424334,
+    "correct_reference_characters": 0.9617365710080942,
+    "totals": {
+      "reference_chars": 8154,
+      "recognized_chars": 8156,
+      "correct_reference_chars": 7842,
+      "substitutions": 163,
+      "deletions": 149,
+      "insertions": 151,
+      "errors": 463
+    },
+    "speaker_scores": [
+      {
+        "reference": "N_SPK8063",
+        "system": "A",
+        "reference_chars": 3735,
+        "recognized_chars": 3711,
+        "correct_reference_chars": 3631,
+        "substitutions": 67,
+        "deletions": 37,
+        "insertions": 13
+      },
+      {
+        "reference": "N_SPK8064",
+        "system": "B",
+        "reference_chars": 1713,
+        "recognized_chars": 1629,
+        "correct_reference_chars": 1565,
+        "substitutions": 53,
+        "deletions": 95,
+        "insertions": 11
+      },
+      {
+        "reference": "N_SPK8065",
+        "system": "C",
+        "reference_chars": 2706,
+        "recognized_chars": 2816,
+        "correct_reference_chars": 2646,
+        "substitutions": 43,
+        "deletions": 17,
+        "insertions": 127
+      }
+    ]
+  },
+  "asr_seconds": 141.65895280499535,
+  "threads": 2
+}

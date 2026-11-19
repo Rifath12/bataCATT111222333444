@@ -1,0 +1,116 @@
+{
+  "8016": {
+    "A": {
+      "affected_samples": 3200,
+      "previous_samples_different_from_input": 3191,
+      "max_pcm16_delta": 1137,
+      "segments": [
+        {
+          "start_s": 168.65,
+          "end_s": 168.66,
+          "max_delta": 566
+        },
+        {
+          "start_s": 210.43,
+          "end_s": 210.53,
+          "max_delta": 614
+        },
+        {
+          "start_s": 643.06,
+          "end_s": 643.08,
+          "max_delta": 1137
+        },
+        {
+          "start_s": 1130.42,
+          "end_s": 1130.49,
+          "max_delta": 415
+        }
+      ]
+    },
+    "B": {
+      "affected_samples": 4960,
+      "previous_samples_different_from_input": 4938,
+      "max_pcm16_delta": 1252,
+      "segments": [
+        {
+          "start_s": 168.39,
+          "end_s": 168.51,
+          "max_delta": 204
+        },
+        {
+          "start_s": 168.76,
+          "end_s": 168.79,
+          "max_delta": 522
+        },
+        {
+          "start_s": 903.38,
+          "end_s": 903.46,
+          "max_delta": 1252
+        },
+        {
+          "start_s": 1203.59,
+          "end_s": 1203.67,
+          "max_delta": 643
+        }
+      ]
+    },
+    "C": {
+      "affected_samples": 6560,
+      "previous_samples_different_from_input": 6490,
+      "max_pcm16_delta": 2024,
+      "segments": [
+        {
+          "start_s": 356.48,
+          "end_s": 356.57,
+          "max_delta": 648
+        },
+        {
+          "start_s": 1037.18,
+          "end_s": 1037.28,
+          "max_delta": 2024
+        },
+        {
+          "start_s": 1587.27,
+          "end_s": 1587.28,
+          "max_delta": 262
+        },
+        {
+          "start_s": 1659.02,
+          "end_s": 1659.14,
+          "max_delta": 60
+        },
+        {
+          "start_s": 1790.2,
+          "end_s": 1790.29,
+          "max_delta": 416
+        }
+      ]
+    }
+  },
+  "8017": {
+    "A": {
+      "affected_samples": 0,
+      "previous_samples_different_from_input": 0,
+      "max_pcm16_delta": 0,
+      "segments": []
+    },
+    "B": {
+      "affected_samples": 0,
+      "previous_samples_different_from_input": 0,
+      "max_pcm16_delta": 0,
+      "segments": []
+    },
+    "C": {
+      "affected_samples": 160,
+      "previous_samples_different_from_input": 160,
+      "max_pcm16_delta": 232,
+      "segments": [
+        {
+          "start_s": 946.0,
+          "end_s": 946.01,
+          "max_delta": 232
+        }
+      ]
+    }
+  }
+}

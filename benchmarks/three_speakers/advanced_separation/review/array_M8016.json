@@ -1,0 +1,55 @@
+{
+  "windows": {
+    "A": {
+      "changed_windows": 16,
+      "old_windows_replaced": 16,
+      "prior_duplicate_seconds": 1.1600000000002808
+    },
+    "B": {
+      "changed_windows": 8,
+      "old_windows_replaced": 8,
+      "prior_duplicate_seconds": 0.4400000000001967
+    },
+    "C": {
+      "changed_windows": 2,
+      "old_windows_replaced": 2,
+      "prior_duplicate_seconds": 0.19999999999998863
+    }
+  },
+  "previous": {
+    "reference_chars": 7705,
+    "recognized_chars": 7442,
+    "correct_reference_chars": 6482,
+    "substitutions": 819,
+    "deletions": 404,
+    "insertions": 141,
+    "errors": 1364
+  },
+  "amended": {
+    "reference_chars": 7705,
+    "recognized_chars": 7442,
+    "correct_reference_chars": 6487,
+    "substitutions": 812,
+    "deletions": 406,
+    "insertions": 143,
+    "errors": 1361
+  },
+  "previous_after_same_filter": {
+    "reference_chars": 7705,
+    "recognized_chars": 7432,
+    "correct_reference_chars": 6483,
+    "substitutions": 810,
+    "deletions": 412,
+    "insertions": 139,
+    "errors": 1361
+  },
+  "amended_after_same_filter": {
+    "reference_chars": 7705,
+    "recognized_chars": 7432,
+    "correct_reference_chars": 6488,
+    "substitutions": 803,
+    "deletions": 414,
+    "insertions": 141,
+    "errors": 1358
+  }
+}

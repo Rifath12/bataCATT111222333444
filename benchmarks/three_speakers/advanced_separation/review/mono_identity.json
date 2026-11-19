@@ -1,0 +1,348 @@
+{
+  "M8016": {
+    "global": {
+      "correct": 148600,
+      "ref": 153135,
+      "hyp": 161861,
+      "err": 17510,
+      "der": 0.11434355307408496
+    },
+    "speaker_mapping": {
+      "A": "N_SPK8060",
+      "B": "N_SPK8061",
+      "C": "N_SPK8062"
+    },
+    "speaker_activity_by_reference_count": {
+      "A": {
+        "0": {
+          "correct": 0,
+          "ref": 0,
+          "hyp": 2894,
+          "err": 2894,
+          "der": 2894.0
+        },
+        "1": {
+          "correct": 61390,
+          "ref": 62289,
+          "hyp": 62967,
+          "err": 2476,
+          "der": 0.039750196663937455
+        },
+        "2": {
+          "correct": 6959,
+          "ref": 7108,
+          "hyp": 7100,
+          "err": 290,
+          "der": 0.04079909960607766
+        },
+        "3": {
+          "correct": 124,
+          "ref": 130,
+          "hyp": 124,
+          "err": 6,
+          "der": 0.046153846153846156
+        }
+      },
+      "B": {
+        "0": {
+          "correct": 0,
+          "ref": 0,
+          "hyp": 2980,
+          "err": 2980,
+          "der": 2980.0
+        },
+        "1": {
+          "correct": 53597,
+          "ref": 54467,
+          "hyp": 55065,
+          "err": 2338,
+          "der": 0.04292507389795656
+        },
+        "2": {
+          "correct": 5979,
+          "ref": 6139,
+          "hyp": 6049,
+          "err": 230,
+          "der": 0.037465385241896076
+        },
+        "3": {
+          "correct": 126,
+          "ref": 130,
+          "hyp": 126,
+          "err": 4,
+          "der": 0.03076923076923077
+        }
+      },
+      "C": {
+        "0": {
+          "correct": 0,
+          "ref": 0,
+          "hyp": 2048,
+          "err": 2048,
+          "der": 2048.0
+        },
+        "1": {
+          "correct": 16983,
+          "ref": 18557,
+          "hyp": 18845,
+          "err": 3436,
+          "der": 0.18515923910114782
+        },
+        "2": {
+          "correct": 3317,
+          "ref": 4185,
+          "hyp": 3538,
+          "err": 1089,
+          "der": 0.26021505376344084
+        },
+        "3": {
+          "correct": 125,
+          "ref": 130,
+          "hyp": 125,
+          "err": 5,
+          "der": 0.038461538461538464
+        }
+      }
+    },
+    "chunk_local_oracle": [
+      {
+        "seconds": 1.0,
+        "ideal_der": 0.1137819570966794
+      },
+      {
+        "seconds": 3.0,
+        "ideal_der": 0.11403010415646325
+      },
+      {
+        "seconds": 10.0,
+        "ideal_der": 0.11431743233094982
+      },
+      {
+        "seconds": 60.0,
+        "ideal_der": 0.11434355307408496
+      }
+    ],
+    "processed_overlap_regions": 277,
+    "solo_overwritten_frames": 92,
+    "solo_overwritten_segment_count": 13,
+    "overlap_chunk_count": 277,
+    "transcript": {
+      "cpCER": 0.23439325113562623,
+      "correct_reference_characters": 0.7849448410123296,
+      "totals": {
+        "reference_chars": 7705,
+        "recognized_chars": 7174,
+        "correct_reference_chars": 6048,
+        "substitutions": 977,
+        "deletions": 680,
+        "insertions": 149,
+        "errors": 1806
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8060",
+          "system": "A",
+          "reference_chars": 3380,
+          "recognized_chars": 3370,
+          "correct_reference_chars": 3078,
+          "substitutions": 224,
+          "deletions": 78,
+          "insertions": 68
+        },
+        {
+          "reference": "N_SPK8061",
+          "system": "B",
+          "reference_chars": 2745,
+          "recognized_chars": 2741,
+          "correct_reference_chars": 2411,
+          "substitutions": 259,
+          "deletions": 75,
+          "insertions": 71
+        },
+        {
+          "reference": "N_SPK8062",
+          "system": "C",
+          "reference_chars": 1580,
+          "recognized_chars": 1063,
+          "correct_reference_chars": 559,
+          "substitutions": 494,
+          "deletions": 527,
+          "insertions": 10
+        }
+      ]
+    }
+  },
+  "M8017": {
+    "global": {
+      "correct": 136820,
+      "ref": 140551,
+      "hyp": 145603,
+      "err": 12272,
+      "der": 0.0873135018605346
+    },
+    "speaker_mapping": {
+      "A": "N_SPK8063",
+      "B": "N_SPK8065",
+      "C": "N_SPK8064"
+    },
+    "speaker_activity_by_reference_count": {
+      "A": {
+        "0": {
+          "correct": 0,
+          "ref": 0,
+          "hyp": 3192,
+          "err": 3192,
+          "der": 3192.0
+        },
+        "1": {
+          "correct": 58172,
+          "ref": 58728,
+          "hyp": 58630,
+          "err": 1014,
+          "der": 0.01726604004903964
+        },
+        "2": {
+          "correct": 3158,
+          "ref": 3229,
+          "hyp": 3237,
+          "err": 150,
+          "der": 0.04645401052957572
+        },
+        "3": {
+          "correct": 113,
+          "ref": 113,
+          "hyp": 113,
+          "err": 0,
+          "der": 0.0
+        }
+      },
+      "B": {
+        "0": {
+          "correct": 0,
+          "ref": 0,
+          "hyp": 2660,
+          "err": 2660,
+          "der": 2660.0
+        },
+        "1": {
+          "correct": 45864,
+          "ref": 46434,
+          "hyp": 46470,
+          "err": 1176,
+          "der": 0.025326269543868716
+        },
+        "2": {
+          "correct": 2490,
+          "ref": 2496,
+          "hyp": 2615,
+          "err": 131,
+          "der": 0.05248397435897436
+        },
+        "3": {
+          "correct": 51,
+          "ref": 113,
+          "hyp": 51,
+          "err": 62,
+          "der": 0.5486725663716814
+        }
+      },
+      "C": {
+        "0": {
+          "correct": 0,
+          "ref": 0,
+          "hyp": 1117,
+          "err": 1117,
+          "der": 1117.0
+        },
+        "1": {
+          "correct": 24606,
+          "ref": 26162,
+          "hyp": 24973,
+          "err": 1923,
+          "der": 0.07350355477409984
+        },
+        "2": {
+          "correct": 2257,
+          "ref": 3163,
+          "hyp": 2436,
+          "err": 1085,
+          "der": 0.34302877015491623
+        },
+        "3": {
+          "correct": 109,
+          "ref": 113,
+          "hyp": 109,
+          "err": 4,
+          "der": 0.035398230088495575
+        }
+      }
+    },
+    "chunk_local_oracle": [
+      {
+        "seconds": 1.0,
+        "ideal_der": 0.0865522123641952
+      },
+      {
+        "seconds": 3.0,
+        "ideal_der": 0.08677277287248045
+      },
+      {
+        "seconds": 10.0,
+        "ideal_der": 0.08713563048288521
+      },
+      {
+        "seconds": 60.0,
+        "ideal_der": 0.0873135018605346
+      }
+    ],
+    "processed_overlap_regions": 80,
+    "solo_overwritten_frames": 1,
+    "solo_overwritten_segment_count": 1,
+    "overlap_chunk_count": 80,
+    "transcript": {
+      "cpCER": 0.11147902869757174,
+      "correct_reference_characters": 0.8966151582045622,
+      "totals": {
+        "reference_chars": 8154,
+        "recognized_chars": 7880,
+        "correct_reference_chars": 7311,
+        "substitutions": 503,
+        "deletions": 340,
+        "insertions": 66,
+        "errors": 909
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8063",
+          "system": "A",
+          "reference_chars": 3735,
+          "recognized_chars": 3666,
+          "correct_reference_chars": 3415,
+          "substitutions": 217,
+          "deletions": 103,
+          "insertions": 34
+        },
+        {
+          "reference": "N_SPK8064",
+          "system": "C",
+          "reference_chars": 1713,
+          "recognized_chars": 1529,
+          "correct_reference_chars": 1321,
+          "substitutions": 192,
+          "deletions": 200,
+          "insertions": 16
+        },
+        {
+          "reference": "N_SPK8065",
+          "system": "B",
+          "reference_chars": 2706,
+          "recognized_chars": 2685,
+          "correct_reference_chars": 2575,
+          "substitutions": 94,
+          "deletions": 37,
+          "insertions": 16
+        }
+      ]
+    }
+  }
+}

@@ -85,6 +85,38 @@ class ShortEnrollmentTest(unittest.TestCase):
         self.assertEqual(metadata["speakers_without_usable_embedding"], [0, 1, 2])
         self.assertEqual(metadata["tied_identity_windows"], 0)
 
+    def test_renderer_keeps_direct_samples_in_solo_gap(self):
+        activity = np.zeros((3, 400), dtype=bool)
+        activity[0, :280] = True
+        activity[1, 100:150] = True
+        activity[1, 160:220] = True
+        activity[2, 300:] = True
+        mixture = np.full(400 * 160, 0.1, np.float32)
+
+        class FixedSeparation:
+            def __init__(self, model, device):
+                pass
+
+            def infer(self, mix, speakers):
+                return np.full((speakers, len(mix)), 0.5, np.float32), None, None
+
+        fake = SimpleNamespace(
+            Separation=FixedSeparation,
+            load_separator=lambda *a: None,
+            VoiceEmbeddings=lambda path: lambda samples: None,
+            resample=lambda x, src, dst: x[::2] if dst < src else np.repeat(x, 2),
+            normalized_dot=lambda a, b: 0.0,
+        )
+        options = SimpleNamespace(project=Path("."), models=Path("."), workers=1)
+        with patch.dict(sys.modules, process_meeting=fake):
+            tracks, metadata = output_tracks(mixture, activity, "dprnn", options)
+        gap = slice(150 * 160, 160 * 160)
+        overlap = slice(100 * 160, 150 * 160)
+        self.assertEqual(metadata["overlap_windows"], 1)
+        np.testing.assert_array_equal(tracks[0, gap], mixture[gap])
+        np.testing.assert_array_equal(tracks[1:, gap], 0.0)
+        np.testing.assert_array_equal(tracks[:2, overlap], 0.5)
+
     def test_no_overlap_export_even_when_two_speakers_have_only_short_turns(self):
         activity = np.zeros((3, 100), dtype=bool)
         activity[0, 0:80] = True

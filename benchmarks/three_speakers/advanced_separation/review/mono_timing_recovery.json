@@ -1,0 +1,222 @@
+{
+  "dev_only_freeze": [
+    0.5,
+    0.35,
+    45,
+    true
+  ],
+  "dev_trim_freeze": [
+    0.3,
+    2
+  ],
+  "M8013": {
+    "old": {
+      "DER": 0.12794402604926186,
+      "exact_three_precision": 0.2295351707116413,
+      "exact_three_recall": 0.6326530612244898,
+      "exact_three_f1": 0.33685481436764264,
+      "three_speaker_recall": 0.8718820861678005,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9487905945841766,
+          "precision": 0.8864319798325381
+        },
+        "B": {
+          "recall": 0.963573043490472,
+          "precision": 0.9153449034857196
+        },
+        "C": {
+          "recall": 0.9788306974332383,
+          "precision": 0.9167030885780886
+        }
+      },
+      "false_three_seconds": 18.73
+    },
+    "new": {
+      "DER": 0.12713997482970096,
+      "exact_three_precision": 0.2295351707116413,
+      "exact_three_recall": 0.6326530612244898,
+      "exact_three_f1": 0.33685481436764264,
+      "three_speaker_recall": 0.8718820861678005,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9527030933795895,
+          "precision": 0.8839592274678112
+        },
+        "B": {
+          "recall": 0.9653705185996545,
+          "precision": 0.9142716548523094
+        },
+        "C": {
+          "recall": 0.981125226860254,
+          "precision": 0.916615194564546
+        }
+      },
+      "false_three_seconds": 18.73
+    },
+    "with_trim": {
+      "DER": 0.11908448031323039,
+      "exact_three_precision": 0.2295351707116413,
+      "exact_three_recall": 0.6326530612244898,
+      "exact_three_f1": 0.33685481436764264,
+      "three_speaker_recall": 0.8711262282690854,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9503902862098873,
+          "precision": 0.8913129925529607
+        },
+        "B": {
+          "recall": 0.9643313533021584,
+          "precision": 0.9215110037573806
+        },
+        "C": {
+          "recall": 0.9802048224008296,
+          "precision": 0.9259830755477179
+        }
+      },
+      "false_three_seconds": 18.73
+    }
+  },
+  "M8016": {
+    "old": {
+      "DER": 0.11434355307408496,
+      "exact_three_precision": 0.2153558052434457,
+      "exact_three_recall": 0.8846153846153846,
+      "exact_three_f1": 0.3463855421686747,
+      "three_speaker_recall": 0.9615384615384616,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9848404217066751,
+          "precision": 0.9368953957720463
+        },
+        "B": {
+          "recall": 0.9829755005268704,
+          "precision": 0.9296480847088134
+        },
+        "C": {
+          "recall": 0.8930132913606156,
+          "precision": 0.831772275614921
+        }
+      },
+      "false_three_seconds": 4.19
+    },
+    "new": {
+      "DER": 0.11224083325170602,
+      "exact_three_precision": 0.2153558052434457,
+      "exact_three_recall": 0.8846153846153846,
+      "exact_three_f1": 0.3463855421686747,
+      "three_speaker_recall": 0.9615384615384616,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9867533476203489,
+          "precision": 0.9360895074362123
+        },
+        "B": {
+          "recall": 0.9863836933614331,
+          "precision": 0.9290233539062742
+        },
+        "C": {
+          "recall": 0.9018013291360616,
+          "precision": 0.8308894618111505
+        }
+      },
+      "false_three_seconds": 4.19
+    },
+    "with_trim": {
+      "DER": 0.10038201586835145,
+      "exact_three_precision": 0.2153558052434457,
+      "exact_three_recall": 0.8846153846153846,
+      "exact_three_f1": 0.3463855421686747,
+      "three_speaker_recall": 0.9615384615384616,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9859622880319876,
+          "precision": 0.9466670349246682
+        },
+        "B": {
+          "recall": 0.9857415700737618,
+          "precision": 0.9378573554521672
+        },
+        "C": {
+          "recall": 0.8992217558586918,
+          "precision": 0.8499462765517811
+        }
+      },
+      "false_three_seconds": 4.19
+    },
+    "trim_s": 21.52,
+    "added_s": 7.39,
+    "processing_s": 0.12780359100725036
+  },
+  "M8017": {
+    "old": {
+      "DER": 0.0873135018605346,
+      "exact_three_precision": 0.13583815028901733,
+      "exact_three_recall": 0.415929203539823,
+      "exact_three_f1": 0.2047930283224401,
+      "three_speaker_recall": 0.8053097345132744,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9898985016916385,
+          "precision": 0.9427821763947708
+        },
+        "B": {
+          "recall": 0.9869910078910344,
+          "precision": 0.9345316240636342
+        },
+        "C": {
+          "recall": 0.9162307221958014,
+          "precision": 0.9419242186135848
+        }
+      },
+      "false_three_seconds": 2.99
+    },
+    "new": {
+      "DER": 0.08480195800812516,
+      "exact_three_precision": 0.13583815028901733,
+      "exact_three_recall": 0.415929203539823,
+      "exact_three_f1": 0.2047930283224401,
+      "three_speaker_recall": 0.8053097345132744,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9918156919606895,
+          "precision": 0.9427853839321265
+        },
+        "B": {
+          "recall": 0.9903146218624472,
+          "precision": 0.9345931071641619
+        },
+        "C": {
+          "recall": 0.919695631496705,
+          "precision": 0.9416060932772232
+        }
+      },
+      "false_three_seconds": 2.99
+    },
+    "with_trim": {
+      "DER": 0.0740442970878898,
+      "exact_three_precision": 0.13583815028901733,
+      "exact_three_recall": 0.415929203539823,
+      "exact_three_f1": 0.2047930283224401,
+      "three_speaker_recall": 0.8053097345132744,
+      "speaker_metrics": {
+        "A": {
+          "recall": 0.9913162558401805,
+          "precision": 0.9530233566693513
+        },
+        "B": {
+          "recall": 0.9895805721509695,
+          "precision": 0.9464856853108666
+        },
+        "C": {
+          "recall": 0.9177593586520824,
+          "precision": 0.9516714220296594
+        }
+      },
+      "false_three_seconds": 2.99
+    },
+    "trim_s": 17.89,
+    "added_s": 4.15,
+    "processing_s": 0.11934021099295933
+  }
+}

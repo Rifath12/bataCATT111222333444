@@ -1,0 +1,142 @@
+[
+  {
+    "id": "M8016",
+    "textgrid": "trial_next/R8008_M8016.TextGrid",
+    "rttm": "trial_next_fresh/R8008_M8016/reference.rttm",
+    "seconds": 1838.980125,
+    "predictions": {
+      "mono_previous": {
+        "text": "pareto_text/production/M8016/transcript.jsonl",
+        "activity": "trial_next/listening/timing.json",
+        "speaker_map": {
+          "A": "N_SPK8060",
+          "B": "N_SPK8061",
+          "C": "N_SPK8062"
+        }
+      },
+      "mono_quality_pass": {
+        "text": "vnext_release/mono/M8016/transcript.jsonl",
+        "activity": "trial_next/listening/timing.json",
+        "speaker_map": {
+          "A": "N_SPK8060",
+          "B": "N_SPK8061",
+          "C": "N_SPK8062"
+        }
+      },
+      "array_previous": {
+        "text": "next_root_asr/dup_array_8016/transcript.jsonl",
+        "activity": "trial_next/listening/timing.json",
+        "speaker_map": {
+          "A": "N_SPK8060",
+          "B": "N_SPK8061",
+          "C": "N_SPK8062"
+        }
+      },
+      "array_context": {
+        "text": "vnext_array/context_8016_filtered/transcript.jsonl",
+        "activity": "trial_next/listening/timing.json",
+        "speaker_map": {
+          "A": "N_SPK8060",
+          "B": "N_SPK8061",
+          "C": "N_SPK8062"
+        }
+      },
+      "three_close_microphones": {
+        "text": "vnext_headset/M8016/transcript.jsonl",
+        "activity": "vnext_headset/M8016/speaker_timing.json",
+        "speaker_map": {
+          "A": "N_SPK8060",
+          "B": "N_SPK8061",
+          "C": "N_SPK8062"
+        }
+      },
+      "close_adaptive": {
+        "text": "vnext_check/close/M8016/transcript.jsonl",
+        "activity": "vnext_check/close/M8016/speaker_timing.json",
+        "speaker_map": {
+          "A": "N_SPK8060",
+          "B": "N_SPK8061",
+          "C": "N_SPK8062"
+        }
+      },
+      "mono_timing_refinement": {
+        "activity": "vnext_check/identity/timing/M8016_frozen.json",
+        "speaker_map": {
+          "A": "N_SPK8060",
+          "B": "N_SPK8061",
+          "C": "N_SPK8062"
+        }
+      }
+    }
+  },
+  {
+    "id": "M8017",
+    "textgrid": "next_root_fresh/R8008_M8017.TextGrid",
+    "rttm": "trial_next_fresh/R8008_M8017/reference.rttm",
+    "seconds": 1820.052,
+    "predictions": {
+      "mono_previous": {
+        "text": "pareto_text/production/M8017/transcript.jsonl",
+        "activity": "next_root_fresh/R8008_M8017/timing.json",
+        "speaker_map": {
+          "A": "N_SPK8063",
+          "C": "N_SPK8064",
+          "B": "N_SPK8065"
+        }
+      },
+      "mono_quality_pass": {
+        "text": "vnext_release/mono/M8017/transcript.jsonl",
+        "activity": "next_root_fresh/R8008_M8017/timing.json",
+        "speaker_map": {
+          "A": "N_SPK8063",
+          "C": "N_SPK8064",
+          "B": "N_SPK8065"
+        }
+      },
+      "array_previous": {
+        "text": "next_root_asr/dup_array_8017/transcript.jsonl",
+        "activity": "next_root_fresh/R8008_M8017/timing.json",
+        "speaker_map": {
+          "A": "N_SPK8063",
+          "C": "N_SPK8064",
+          "B": "N_SPK8065"
+        }
+      },
+      "array_context": {
+        "text": "vnext_array/context_8017_filtered/transcript.jsonl",
+        "activity": "next_root_fresh/R8008_M8017/timing.json",
+        "speaker_map": {
+          "A": "N_SPK8063",
+          "C": "N_SPK8064",
+          "B": "N_SPK8065"
+        }
+      },
+      "three_close_microphones": {
+        "text": "vnext_headset/M8017/transcript.jsonl",
+        "activity": "vnext_headset/M8017/speaker_timing.json",
+        "speaker_map": {
+          "A": "N_SPK8063",
+          "B": "N_SPK8064",
+          "C": "N_SPK8065"
+        }
+      },
+      "close_adaptive": {
+        "text": "vnext_check/close/M8017/transcript.jsonl",
+        "activity": "vnext_check/close/M8017/speaker_timing.json",
+        "speaker_map": {
+          "A": "N_SPK8063",
+          "B": "N_SPK8064",
+          "C": "N_SPK8065"
+        }
+      },
+      "mono_timing_refinement": {
+        "activity": "vnext_check/identity/timing/M8017_frozen.json",
+        "speaker_map": {
+          "A": "N_SPK8063",
+          "C": "N_SPK8064",
+          "B": "N_SPK8065"
+        }
+      }
+    }
+  }
+]

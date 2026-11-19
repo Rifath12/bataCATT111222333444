@@ -14,6 +14,7 @@ HERE = Path(__file__).resolve().parent
 BENCH = HERE.parent
 ROOT = BENCH.parent.parent
 WORDS = BENCH / "refinement" / "words"
+ADVANCED = BENCH / "advanced_separation"
 
 
 def run(script, arguments, env):
@@ -71,6 +72,19 @@ def main():
         help="Optional Zipformer directory for selected-turn text reconciliation",
     )
     parser.add_argument(
+        "--quality-paraformer",
+        type=Path,
+        help="Optional second mono character-corroboration stage using Paraformer and Zipformer",
+    )
+    parser.add_argument(
+        "--array-context", action="store_true",
+        help="Decode contextual speech from the synchronized microphone array beams",
+    )
+    parser.add_argument(
+        "--array-overlap-mask", action="store_true",
+        help="Use the optional spatial overlap mask on eight physical microphones",
+    )
+    parser.add_argument(
         "--native-library", type=Path, help="Nemotron native runtime library"
     )
     parser.add_argument("--diar-model", type=Path, help="Nemotron 3 model checkpoint")
@@ -117,6 +131,16 @@ def main():
         parser.error("Please supply a nonempty 16 kHz recording")
     if args.consensus_zipformer and (info.channels > 1 or args.fast_transcript):
         parser.error("--consensus-zipformer requires contextual mono transcription")
+    if args.quality_paraformer and not args.consensus_zipformer:
+        parser.error("--quality-paraformer requires --consensus-zipformer")
+    if args.quality_paraformer and not all(
+        (args.quality_paraformer / file).is_file() for file in ("model.int8.onnx", "tokens.txt")
+    ):
+        parser.error("--quality-paraformer needs model.int8.onnx and tokens.txt")
+    if args.array_context and info.channels < 2:
+        parser.error("--array-context requires synchronized multichannel audio")
+    if args.array_overlap_mask and info.channels != 8:
+        parser.error("--array-overlap-mask requires eight synchronized physical channels")
     if info.channels > 1 and args.mask_for_asr:
         parser.error("--mask-for-asr applies only to mono input")
     if info.channels == 1 and not args.models:
@@ -218,11 +242,12 @@ def main():
                 )
             run(BENCH / "render.py", opts, env)
         else:
-            run(
-                HERE / "spatial_render.py",
-                ["--audio", args.audio, "--timing", timing, "--out", product],
-                env,
-            )
+            spatial_options = ["--audio", args.audio, "--timing", timing, "--out", product]
+            if args.array_context:
+                spatial_options.append("--ungated")
+            if args.array_overlap_mask:
+                spatial_options.extend(["--profile", "overlap-mask"])
+            run(HERE / "spatial_render.py", spatial_options, env)
         decode_audio = product
         if info.channels == 1 and args.mask_for_asr is not False:
             decode_audio = work / "masked_audio"
@@ -271,26 +296,31 @@ def main():
             if args.consensus_zipformer:
                 decode.extend(["--consensus-zipformer", args.consensus_zipformer])
             run(BENCH / "recognize.py", decode, env)
+            if args.quality_paraformer:
+                transcripts = product / "transcripts"
+                run(
+                    ADVANCED / "mono_text.py",
+                    [
+                        "--baseline", transcripts / "transcript.jsonl",
+                        "--tracks", product, "--timing", timing,
+                        "--zipformer", args.consensus_zipformer,
+                        "--paraformer", args.quality_paraformer,
+                        "--threads", args.threads,
+                        "--out", transcripts,
+                    ],
+                    env,
+                )
         else:
             raw = work / "raw_text"
-            run(
-                WORDS / "compare_recognizers.py",
-                [
-                    "--tracks",
-                    product,
-                    "--timing",
-                    timing,
-                    "--model",
-                    args.sensevoice,
-                    "--backend",
-                    "sensevoice",
-                    "--out",
-                    raw,
-                    "--threads",
-                    args.threads,
-                ],
-                env,
-            )
+            array_options = [
+                "--tracks", product, "--timing", timing, "--model", args.sensevoice,
+                "--out", raw, "--threads", args.threads,
+            ]
+            if args.array_context:
+                run(ADVANCED / "array_context.py", array_options, env)
+                raw = raw / "extended"
+            else:
+                run(WORDS / "compare_recognizers.py", array_options + ["--backend", "sensevoice"], env)
             run(
                 BENCH / "duplicate_leakage.py",
                 [

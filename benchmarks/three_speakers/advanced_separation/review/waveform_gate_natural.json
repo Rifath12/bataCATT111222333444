@@ -1,0 +1,46 @@
+[
+  {
+    "analysis_span": [
+      0.0,
+      1.28
+    ],
+    "replacement_span": [
+      0.1,
+      0.98
+    ],
+    "prior_fit_fullband": 0.010052065292472712,
+    "fit_lowband": 0.010686083939999369,
+    "hypothesis_l2_share": [
+      0.09963182209734352,
+      0.028357695973424836,
+      0.0
+    ],
+    "independence": 0.6569582758216563,
+    "assignment_margin": 0.033026427030563354,
+    "candidate_accepted": false,
+    "highband_fraction": 0.23799604177474976,
+    "elapsed_s": 18.387254964007298
+  },
+  {
+    "analysis_span": [
+      1.7,
+      3.3
+    ],
+    "replacement_span": [
+      2.0,
+      3.0
+    ],
+    "prior_fit_fullband": 0.07199534448322187,
+    "fit_lowband": 0.07346776352418993,
+    "hypothesis_l2_share": [
+      0.008723572531996897,
+      0.27082623600300204,
+      0.0
+    ],
+    "independence": 0.9592277137091605,
+    "assignment_margin": 0.11469176411628723,
+    "candidate_accepted": false,
+    "highband_fraction": 0.13296213746070862,
+    "elapsed_s": 20.352018904988654
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "config": [
+    1,
+    0.2,
+    null
+  ],
+  "baseline_blocks": [
+    {
+      "reference_chars": 1642,
+      "recognized_chars": 1570,
+      "correct_reference_chars": 1434,
+      "substitutions": 126,
+      "deletions": 82,
+      "insertions": 10,
+      "errors": 218
+    },
+    {
+      "reference_chars": 1878,
+      "recognized_chars": 1775,
+      "correct_reference_chars": 1482,
+      "substitutions": 263,
+      "deletions": 133,
+      "insertions": 30,
+      "errors": 426
+    },
+    {
+      "reference_chars": 1844,
+      "recognized_chars": 1657,
+      "correct_reference_chars": 1262,
+      "substitutions": 332,
+      "deletions": 250,
+      "insertions": 63,
+      "errors": 645
+    },
+    {
+      "reference_chars": 1727,
+      "recognized_chars": 1636,
+      "correct_reference_chars": 1285,
+      "substitutions": 295,
+      "deletions": 147,
+      "insertions": 56,
+      "errors": 498
+    },
+    {
+      "reference_chars": 1852,
+      "recognized_chars": 1740,
+      "correct_reference_chars": 1393,
+      "substitutions": 292,
+      "deletions": 167,
+      "insertions": 55,
+      "errors": 514
+    }
+  ],
+  "new_blocks": [
+    {
+      "reference_chars": 1642,
+      "recognized_chars": 1570,
+      "correct_reference_chars": 1434,
+      "substitutions": 126,
+      "deletions": 82,
+      "insertions": 10,
+      "errors": 218
+    },
+    {
+      "reference_chars": 1878,
+      "recognized_chars": 1777,
+      "correct_reference_chars": 1483,
+      "substitutions": 264,
+      "deletions": 131,
+      "insertions": 30,
+      "errors": 425
+    },
+    {
+      "reference_chars": 1844,
+      "recognized_chars": 1657,
+      "correct_reference_chars": 1263,
+      "substitutions": 331,
+      "deletions": 250,
+      "insertions": 63,
+      "errors": 644
+    },
+    {
+      "reference_chars": 1727,
+      "recognized_chars": 1634,
+      "correct_reference_chars": 1284,
+      "substitutions": 295,
+      "deletions": 148,
+      "insertions": 55,
+      "errors": 498
+    },
+    {
+      "reference_chars": 1852,
+      "recognized_chars": 1741,
+      "correct_reference_chars": 1395,
+      "substitutions": 291,
+      "deletions": 166,
+      "insertions": 55,
+      "errors": 512
+    }
+  ],
+  "calibration_changes": {
+    "whole_agreements": 9
+  },
+  "eligible_settings": 45
+}

@@ -1,0 +1,12 @@
+{
+  "adaptive_activity": {
+    "rule": "adaptive",
+    "threshold": 0.2,
+    "absolute": 0.0009,
+    "own_fraction": 0.25,
+    "open_min": 1,
+    "gap": 4,
+    "pre": 3,
+    "hang": 3
+  }
+}

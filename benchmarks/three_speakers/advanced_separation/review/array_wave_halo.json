@@ -1,0 +1,186 @@
+{
+  "8016": [
+    {
+      "trial": 1,
+      "speaker": "A",
+      "old_si_sdri_db": 0.32319660010143614,
+      "patched_si_sdri_db": 0.32319660010143614,
+      "old_sir_i_db": 3.681054050745525,
+      "patched_sir_i_db": 3.681054050745525,
+      "num_changed_pcm_samples": 0,
+      "max_absolute_pcm_change": 0
+    },
+    {
+      "trial": 1,
+      "speaker": "B",
+      "old_si_sdri_db": 2.0897155732468664,
+      "patched_si_sdri_db": 2.0895540543510758,
+      "old_sir_i_db": 5.207599202757055,
+      "patched_sir_i_db": 5.207446111550251,
+      "num_changed_pcm_samples": 751,
+      "max_absolute_pcm_change": 62
+    },
+    {
+      "trial": 1,
+      "speaker": "C",
+      "old_si_sdri_db": 0.7635799068052656,
+      "patched_si_sdri_db": 0.7637509231131343,
+      "old_sir_i_db": 3.0726236384080092,
+      "patched_sir_i_db": 3.072832661117859,
+      "num_changed_pcm_samples": 742,
+      "max_absolute_pcm_change": 62
+    },
+    {
+      "trial": 2,
+      "speaker": "A",
+      "old_si_sdri_db": 3.8332314628642816,
+      "patched_si_sdri_db": 3.8332314628642816,
+      "old_sir_i_db": 5.238275964058575,
+      "patched_sir_i_db": 5.238275964058575,
+      "num_changed_pcm_samples": 0,
+      "max_absolute_pcm_change": 0
+    },
+    {
+      "trial": 2,
+      "speaker": "B",
+      "old_si_sdri_db": 0.8101148106338947,
+      "patched_si_sdri_db": 0.8101055624184745,
+      "old_sir_i_db": 4.695086653344486,
+      "patched_sir_i_db": 4.695063539721707,
+      "num_changed_pcm_samples": 735,
+      "max_absolute_pcm_change": 77
+    },
+    {
+      "trial": 2,
+      "speaker": "C",
+      "old_si_sdri_db": 3.0138568691201537,
+      "patched_si_sdri_db": 3.013839996221834,
+      "old_sir_i_db": 5.640702591340021,
+      "patched_sir_i_db": 5.640677318475522,
+      "num_changed_pcm_samples": 732,
+      "max_absolute_pcm_change": 77
+    },
+    {
+      "trial": 3,
+      "speaker": "A",
+      "old_si_sdri_db": 0.2674480960034664,
+      "patched_si_sdri_db": 0.2674480960034664,
+      "old_sir_i_db": 1.634353302279461,
+      "patched_sir_i_db": 1.634353302279461,
+      "num_changed_pcm_samples": 0,
+      "max_absolute_pcm_change": 0
+    },
+    {
+      "trial": 3,
+      "speaker": "B",
+      "old_si_sdri_db": -0.1315568381244656,
+      "patched_si_sdri_db": -0.13194522884207238,
+      "old_sir_i_db": 1.7633267875873369,
+      "patched_sir_i_db": 1.7629070210692461,
+      "num_changed_pcm_samples": 773,
+      "max_absolute_pcm_change": 59
+    },
+    {
+      "trial": 3,
+      "speaker": "C",
+      "old_si_sdri_db": -2.5305135188895944,
+      "patched_si_sdri_db": -2.5305083643330293,
+      "old_sir_i_db": 0.9282058375286901,
+      "patched_sir_i_db": 0.9281644906459228,
+      "num_changed_pcm_samples": 770,
+      "max_absolute_pcm_change": 59
+    }
+  ],
+  "8017": [
+    {
+      "trial": 1,
+      "speaker": "A",
+      "old_si_sdri_db": 2.3575908423436207,
+      "patched_si_sdri_db": 2.3575908423436207,
+      "old_sir_i_db": 6.4533250442980306,
+      "patched_sir_i_db": 6.4533250442980306,
+      "num_changed_pcm_samples": 0,
+      "max_absolute_pcm_change": 0
+    },
+    {
+      "trial": 1,
+      "speaker": "B",
+      "old_si_sdri_db": 7.028082783323449,
+      "patched_si_sdri_db": 7.028212953613294,
+      "old_sir_i_db": 10.804340756251175,
+      "patched_sir_i_db": 10.804558932314151,
+      "num_changed_pcm_samples": 773,
+      "max_absolute_pcm_change": 51
+    },
+    {
+      "trial": 1,
+      "speaker": "C",
+      "old_si_sdri_db": 3.9868024108482842,
+      "patched_si_sdri_db": 3.9866961294847876,
+      "old_sir_i_db": 7.226559959771322,
+      "patched_sir_i_db": 7.22657625318811,
+      "num_changed_pcm_samples": 766,
+      "max_absolute_pcm_change": 53
+    },
+    {
+      "trial": 2,
+      "speaker": "A",
+      "old_si_sdri_db": 5.545545924720345,
+      "patched_si_sdri_db": 5.545545924720345,
+      "old_sir_i_db": 7.826721778515705,
+      "patched_sir_i_db": 7.826721778515705,
+      "num_changed_pcm_samples": 0,
+      "max_absolute_pcm_change": 0
+    },
+    {
+      "trial": 2,
+      "speaker": "B",
+      "old_si_sdri_db": 3.0207276252474045,
+      "patched_si_sdri_db": 3.0207226937037643,
+      "old_sir_i_db": 10.413364794480247,
+      "patched_sir_i_db": 10.413081110140032,
+      "num_changed_pcm_samples": 762,
+      "max_absolute_pcm_change": 85
+    },
+    {
+      "trial": 2,
+      "speaker": "C",
+      "old_si_sdri_db": 5.576446334546708,
+      "patched_si_sdri_db": 5.576494821788961,
+      "old_sir_i_db": 11.321076991706061,
+      "patched_sir_i_db": 11.321040577220725,
+      "num_changed_pcm_samples": 768,
+      "max_absolute_pcm_change": 85
+    },
+    {
+      "trial": 3,
+      "speaker": "A",
+      "old_si_sdri_db": 2.1283114115226596,
+      "patched_si_sdri_db": 2.1283114115226596,
+      "old_sir_i_db": 4.156660568887718,
+      "patched_sir_i_db": 4.156660568887718,
+      "num_changed_pcm_samples": 0,
+      "max_absolute_pcm_change": 0
+    },
+    {
+      "trial": 3,
+      "speaker": "B",
+      "old_si_sdri_db": 5.8486237873150415,
+      "patched_si_sdri_db": 5.848172518406578,
+      "old_sir_i_db": 8.481254373768039,
+      "patched_sir_i_db": 8.480739542258638,
+      "num_changed_pcm_samples": 771,
+      "max_absolute_pcm_change": 92
+    },
+    {
+      "trial": 3,
+      "speaker": "C",
+      "old_si_sdri_db": -0.5019145413174897,
+      "patched_si_sdri_db": -0.5016326363770851,
+      "old_sir_i_db": 4.901172343019725,
+      "patched_sir_i_db": 4.9018294010733765,
+      "num_changed_pcm_samples": 779,
+      "max_absolute_pcm_change": 93
+    }
+  ]
+}

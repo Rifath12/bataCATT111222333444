@@ -1,0 +1,60 @@
+{
+  "clips": [
+    {
+      "case": "trio_1_room_staggered",
+      "choice": "baseline",
+      "reconstruction": 0.0974614231120503,
+      "fraction_min": 0.022766366622148048,
+      "independence": 0.6345059842144556,
+      "exact_three_s": 1.96,
+      "released_exact_three_si_sdri_db": [
+        -2.2949954739950376,
+        -1.189598321467364,
+        3.607695996402777
+      ],
+      "hardened_exact_three_si_sdri_db": [
+        -2.2949954739950376,
+        -1.189598321467364,
+        3.607695996402777
+      ]
+    },
+    {
+      "case": "trio_2_room_staggered",
+      "choice": "second_pass",
+      "reconstruction": 0.9936909157085243,
+      "fraction_min": 0.27544074007523167,
+      "independence": 0.9415251744655703,
+      "exact_three_s": 1.8,
+      "released_exact_three_si_sdri_db": [
+        13.699110869152802,
+        -2.930447249753912,
+        -0.6527439333947918
+      ],
+      "hardened_exact_three_si_sdri_db": [
+        18.879060596533947,
+        12.995389829038732,
+        17.32528964759087
+      ]
+    },
+    {
+      "case": "trio_3_room_staggered",
+      "choice": "second_pass",
+      "reconstruction": 0.9941118282069873,
+      "fraction_min": 0.29699268109370924,
+      "independence": 0.8271081937595446,
+      "exact_three_s": 1.72,
+      "released_exact_three_si_sdri_db": [
+        1.819559946081555,
+        -5.255653202559465,
+        -3.1759935134801824
+      ],
+      "hardened_exact_three_si_sdri_db": [
+        13.572390256147827,
+        14.45280411052548,
+        11.961380905236668
+      ]
+    }
+  ],
+  "released_median_db": -1.189598321467364,
+  "hardened_median_db": 12.995389829038732
+}

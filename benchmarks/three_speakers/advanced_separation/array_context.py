@@ -1,7 +1,9 @@
 """Decode the continuous array beams with bounded linguistic context and soft activity gating."""
 
 from argparse import ArgumentParser
+from contextlib import ExitStack
 import json
+import math
 from pathlib import Path
 import time
 
@@ -19,21 +21,44 @@ RATE = 16000
 FRAME = 160
 
 
+def valid_turns(rows, duration):
+    """Keep valid portions of turns that intersect the analyzed sample clock."""
+    for row in rows:
+        speaker = row["speaker"]
+        start = float(row["start"])
+        end = float(row["end"])
+        if speaker not in ("A", "B", "C") or not all(map(math.isfinite, (start, end))):
+            raise ValueError("Timing requires finite start/end values and a speaker in A/B/C")
+        if end < start:
+            raise ValueError(f"Reversed timing interval for {speaker}: {start} to {end}")
+        start, end = max(0.0, start), min(duration, end)
+        if start < end:
+            yield dict(speaker=speaker, start=start, end=end)
+
+
 def activity(timing, samples):
     nframes = (samples + FRAME - 1) // FRAME
     active = np.zeros((nframes, len(SPEAKERS)), dtype=bool)
-    for row in timing:
+    for row in valid_turns(timing, samples / RATE):
         speaker = SPEAKERS.index(row["speaker"])
         start = int(np.floor(row["start"] * RATE / FRAME))
         end = int(np.ceil(row["end"] * RATE / FRAME))
-        active[max(0, start):end, speaker] = True
+        active[start:end, speaker] = True
     return active
 
 
-def beam_power(wave):
-    nframes = (len(wave) + FRAME - 1) // FRAME
-    padded = np.pad(wave, (0, nframes * FRAME - len(wave)))
-    return uniform_filter1d(np.mean(padded.reshape(nframes, FRAME) ** 2, axis=1), 7)
+def beam_power(source, samples):
+    nframes = (samples + FRAME - 1) // FRAME
+    powers = np.empty(nframes, dtype="float32")
+    source.seek(0)
+    for first in range(0, nframes, 1000):
+        count = min(1000, nframes - first)
+        requested = min(count * FRAME, samples - first * FRAME)
+        waveform = source.read(requested, dtype="float32")
+        if len(waveform) < count * FRAME:
+            waveform = np.pad(waveform, (0, count * FRAME - len(waveform)))
+        powers[first : first + count] = np.mean(waveform.reshape(count, FRAME) ** 2, axis=1)
+    return uniform_filter1d(powers, 7)
 
 
 def unmix_power(powers, active):
@@ -64,15 +89,29 @@ def unmix_power(powers, active):
 
 
 def spans(turns, duration, bridge, margin, limit):
+    """Pad nearby turns, assigning any shared padded boundary to one decode window."""
     combined = []
     for row in sorted(turns, key=lambda item: item["start"]):
-        start = max(0.0, float(row["start"]) - margin)
-        end = min(duration, float(row["end"]) + margin)
+        start = max(0.0, row["start"] - margin)
+        end = min(duration, row["end"] + margin)
         if end - start < 0.055:
             continue
-        if combined and start - combined[-1][1] < bridge and end - combined[-1][0] < limit:
+        if (
+            combined
+            and start - combined[-1][1] < bridge
+            and end - combined[-1][0] < limit
+        ):
             combined[-1][1] = max(combined[-1][1], end)
+        elif combined and end <= combined[-1][1]:
+            # Entirely nested turns already occur in the previous decode window.
+            continue
         else:
+            if combined and start < combined[-1][1]:
+                # The two spans could not be merged at the decoding duration cap.
+                # Divide shared context rather than decoding both copies.
+                cut = 0.5 * (start + combined[-1][1])
+                combined[-1][1] = cut
+                start = cut
             combined.append([start, end])
     for start, end in combined:
         while end - start > limit + 1:
@@ -81,42 +120,49 @@ def spans(turns, duration, bridge, margin, limit):
         yield start, end
 
 
-def recognize(byaudio, timing, active, recognizer, mode, estimates, labels, limit=17.0):
+def decoder_context(mode, speaker, active, estimates):
+    if mode != "extended":
+        bridge, margin = (0.40, 0.14) if mode == "pad" else (0.30, 0.0)
+        return bridge, margin, np.ones(len(active), dtype="float32")
+
+    nearby = gaussian_filter1d(active[:, speaker].astype("float32"), 7, mode="constant")
+    own = estimates[:, speaker]
+    others = estimates.sum(axis=1) - own
+    confidence = (own / np.maximum(own + others, 1e-12)) > 0.42
+    retained = active[:, speaker] | ((nearby > 0.013) & (confidence | ~active.any(axis=1)))
+    return 0.42, 0.18, gaussian_filter1d(retained.astype("float32"), 2.0, mode="constant")
+
+
+def decode_span(source, start, end, weight, recognizer):
+    first = round(start * RATE)
+    last = round(end * RATE)
+    frames = np.arange(first, last) / FRAME - 0.5
+    left = np.clip(np.floor(frames).astype(int), 0, len(weight) - 1)
+    fraction = np.maximum(frames - left, 0)
+    right = np.minimum(left + 1, len(weight) - 1)
+    gain = weight[left] * (1.0 - fraction) + weight[right] * fraction
+    source.seek(first)
+    speech = (source.read(last - first, dtype="float32") * gain).astype("float32")
+    rms = max(float(np.sqrt(np.mean(speech ** 2))), 1e-7)
+    peak = max(float(np.max(np.abs(speech))), 1e-7)
+    stream = recognizer.create_stream()
+    scale = min(0.035 / rms, 0.98 / peak, 20.0)
+    stream.accept_waveform(RATE, np.pad(speech * scale, (800, 1280)))
+    recognizer.decode_stream(stream)
+    return stream.result.text.strip()
+
+
+def recognize(sources, samples, timing, active, recognizer, mode, estimates, labels, limit=17.0):
     rows = []
+    duration = samples / RATE
+    timing = list(valid_turns(timing, duration))
     for label in labels:
         speaker = SPEAKERS.index(label)
         started = time.perf_counter()
-        wave = byaudio[speaker]
-        durations = len(wave) / RATE
-        turns = [row for row in timing if row["speaker"] == label and row["end"] <= durations]
-        if mode == "extended":
-            bridge, margin = 0.42, 0.18
-            nearby = gaussian_filter1d(active[:, speaker].astype("float32"), 7, mode="constant")
-            own = estimates[:, speaker]
-            others = estimates.sum(axis=1) - own
-            confidence = (own / np.maximum(own + others, 1e-12)) > 0.42
-            weight = active[:, speaker] | ((nearby > 0.013) & (confidence | ~active.any(axis=1)))
-            weight = gaussian_filter1d(weight.astype("float32"), 2.0, mode="constant")
-        elif mode == "pad":
-            bridge, margin = 0.40, 0.14
-            weight = np.ones(len(active), dtype="float32")
-        else:
-            bridge, margin = 0.30, 0.0
-            weight = np.ones(len(active), dtype="float32")
-        for start, end in spans(turns, durations, bridge, margin, limit=limit):
-            first = round(start * RATE)
-            last = round(end * RATE)
-            frames = np.arange(first, last) / FRAME - 0.5
-            left = np.clip(np.floor(frames).astype(int), 0, len(weight) - 1)
-            fraction = np.maximum(frames - left, 0)
-            gain = weight[left] * (1.0 - fraction) + weight[np.minimum(left + 1, len(weight) - 1)] * fraction
-            speech = (wave[first:last] * gain).astype("float32")
-            rms = max(float(np.sqrt(np.mean(speech ** 2))), 1e-7)
-            peak = max(float(np.max(np.abs(speech))), 1e-7)
-            stream = recognizer.create_stream()
-            stream.accept_waveform(RATE, np.pad(speech * min(0.035 / rms, 0.98 / peak, 20.0), (800, 1280)))
-            recognizer.decode_stream(stream)
-            decoded = stream.result.text.strip()
+        turns = [row for row in timing if row["speaker"] == label]
+        bridge, margin, weight = decoder_context(mode, speaker, active, estimates)
+        for start, end in spans(turns, duration, bridge, margin, limit):
+            decoded = decode_span(sources[speaker], start, end, weight, recognizer)
             if decoded:
                 rows.append(dict(speaker=label, start=start, end=end, text=decoded))
         print(mode, label, round(time.perf_counter() - started, 2), flush=True)
@@ -137,6 +183,12 @@ def main():
     parser.add_argument("--reference-labels")
     parser.add_argument("--limit", type=float, default=17.0)
     opts = parser.parse_args()
+    if math.isnan(opts.pilot_seconds) or opts.pilot_seconds <= 0:
+        parser.error("--pilot-seconds must be positive")
+    if not math.isfinite(opts.limit) or opts.limit < 0.055:
+        parser.error("--limit must be finite and at least 0.055 seconds")
+    if opts.threads < 1:
+        parser.error("--threads must be positive")
     opts.out.mkdir(parents=True, exist_ok=True)
     timing = json.loads(opts.timing.read_text(encoding="utf-8"))["segments"]
     files = [opts.tracks / f"beam_{speaker}.flac" for speaker in SPEAKERS]
@@ -157,27 +209,33 @@ def main():
         reference = [r for r in textgrid(opts.reference) if r["end"] <= count / RATE]
         if opts.reference_labels:
             reference = [r for r in reference if r["speaker"] in opts.reference_labels.split(",")]
+    predicted = activity(timing, count)
     recognizer = sx.OfflineRecognizer.from_sense_voice(
         model=str(opts.model / "model.int8.onnx"), tokens=str(opts.model / "tokens.txt"),
         language="zh", use_itn=False, num_threads=opts.threads,
     )
 
-    audios = [sf.read(path, frames=count, dtype="float32")[0] for path in files]
-    predicted = activity(timing, count)
-    power = np.stack([beam_power(y) for y in audios], axis=1)
-    estimates, mixing, floor = unmix_power(power, predicted)
-    print("Leakage profile", mixing.tolist(), "noise", floor.tolist(), flush=True)
-    for mode in opts.modes:
-        started = time.perf_counter()
-        root = opts.out / mode
-        root.mkdir(exist_ok=True)
-        rows = recognize(audios, timing, predicted, recognizer, mode, estimates, opts.labels, opts.limit)
-        export_rows(rows, root)
-        scores = text_scores(reference, rows) if opts.reference else {}
-        scores.update(asr_seconds=time.perf_counter() - started, duration_s=count / RATE)
-        (root / "scores.json").write_text(json.dumps(scores, indent=2) + "\n", encoding="utf-8")
-        print(mode, scores.get("cpCER"), len(rows), flush=True)
-
+    with ExitStack() as stack:
+        sources = [stack.enter_context(sf.SoundFile(path)) for path in files]
+        power = np.stack([beam_power(source, count) for source in sources], axis=1)
+        estimates, mixing, floor = unmix_power(power, predicted)
+        print("Leakage profile", mixing.tolist(), "noise", floor.tolist(), flush=True)
+        for mode in opts.modes:
+            started = time.perf_counter()
+            root = opts.out / mode
+            root.mkdir(exist_ok=True)
+            rows = recognize(sources, count, timing, predicted, recognizer, mode, estimates, opts.labels, opts.limit)
+            export_rows(rows, root)
+            scores = {}
+            if opts.reference:
+                scores = (
+                    text_scores(reference, rows)
+                    if reference
+                    else {"cpCER": None, "evaluation": "no_reference_speech_in_window"}
+                )
+            scores.update(asr_seconds=time.perf_counter() - started, duration_s=count / RATE)
+            (root / "scores.json").write_text(json.dumps(scores, indent=2) + "\n", encoding="utf-8")
+            print(mode, scores.get("cpCER"), len(rows), flush=True)
 
 
 if __name__ == "__main__":

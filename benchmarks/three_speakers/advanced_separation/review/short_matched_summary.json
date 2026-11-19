@@ -1,0 +1,46 @@
+{
+  "independent_aishell4": {
+    "previous": {
+      "edits": 68,
+      "timed_edits": 98,
+      "reference_chars": 147,
+      "triple_timed_edits": 22,
+      "triple_reference_chars": 32,
+      "triple_ref_with_supplied_times": 0,
+      "triple_clock_s": 3.4535,
+      "triple_exact_clock_s": 1.2771
+    },
+    "recognizer_quality_pass": {
+      "edits": 65,
+      "timed_edits": 93,
+      "reference_chars": 147,
+      "triple_timed_edits": 21,
+      "triple_reference_chars": 32,
+      "triple_ref_with_supplied_times": 0,
+      "triple_clock_s": 3.4535,
+      "triple_exact_clock_s": 1.2771
+    }
+  },
+  "ali_dense_replay": {
+    "previous": {
+      "edits": 336,
+      "timed_edits": 369,
+      "reference_chars": 1146,
+      "triple_timed_edits": 70,
+      "triple_reference_chars": 153,
+      "triple_ref_with_supplied_times": 153,
+      "triple_clock_s": 10.870000000000001,
+      "triple_exact_clock_s": 7.97
+    },
+    "recognizer_quality_pass": {
+      "edits": 329,
+      "timed_edits": 362,
+      "reference_chars": 1146,
+      "triple_timed_edits": 69,
+      "triple_reference_chars": 153,
+      "triple_ref_with_supplied_times": 153,
+      "triple_clock_s": 10.870000000000001,
+      "triple_exact_clock_s": 7.97
+    }
+  }
+}

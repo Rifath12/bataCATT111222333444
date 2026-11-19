@@ -115,13 +115,16 @@ class SpatialOverlapMask:
         self.log_determinants = np.linalg.slogdet(shapes)[1].astype(np.float32)
         self.activity = activity
 
-    def apply(self, spectrum, baseline, start, stop):
+    def apply(self, spectrum, baseline, start, stop, *, spectrum_start=None):
         """Use the original beam spectra at frames with at most one predicted voice."""
         active = self.activity[:, start:stop].T
         overlap = active.sum(axis=1) >= 2
         if not overlap.any():
             return baseline
 
+        spectrum_start = start if spectrum_start is None else spectrum_start
+        core_start = start - spectrum_start
+        core = slice(core_start, core_start + stop - start)
         power = np.maximum(np.sum(np.abs(spectrum) ** 2, axis=-1), 1e-14)
         likelihoods = []
         for inverse, log_determinant in zip(self.inverse, self.log_determinants):
@@ -134,13 +137,13 @@ class SpatialOverlapMask:
             )
 
         loglike = np.stack(likelihoods, axis=1)
-        loglike = uniform_filter1d(loglike, size=3, axis=0, mode="nearest")
+        loglike = uniform_filter1d(loglike, size=3, axis=0, mode="nearest")[core]
         loglike = uniform_filter1d(loglike, size=3, axis=-1, mode="nearest")
         loglike[:, :3] -= (~active)[:, :, None] * 20.0
         loglike[:, 3] -= 3.5
         posterior = softmax(loglike[overlap] / 1.3, axis=1)
         gain = 0.025 + 0.975 * posterior[:, :3]
-        baseline[overlap] = spectrum[overlap, :, 0][:, None, :] * gain
+        baseline[overlap] = spectrum[core][overlap, :, 0][:, None, :] * gain
         return baseline
 
 
@@ -157,10 +160,18 @@ def write_continuous_beams(source, weights, frame_count, temp, overlap_mask=None
         block_size = 360 if overlap_mask is not None else 350
         for start in range(0, frame_count, block_size):
             stop = min(frame_count, start + block_size)
-            x = spectra(source, start, stop)
+            if overlap_mask is not None:
+                # A likelihood window of three frames needs one neighboring frame
+                # on each side so its result is independent of the FFT block boundary.
+                context_start = max(0, start - 1)
+                context_stop = min(frame_count, stop + 1)
+                context = spectra(source, context_start, context_stop)
+                x = context[start - context_start : stop - context_start]
+            else:
+                x = spectra(source, start, stop)
             y = np.einsum("tfc,sfc->tsf", x, weights.conj(), optimize=True)
             if overlap_mask is not None:
-                y = overlap_mask.apply(x, y, start, stop)
+                y = overlap_mask.apply(context, y, start, stop, spectrum_start=context_start)
             frames = irfft(y, n=FFT, axis=-1) * WINDOW
             advance = len(frames) * HOP
             samples = np.zeros((channels, advance + tail_length), dtype="float32")
