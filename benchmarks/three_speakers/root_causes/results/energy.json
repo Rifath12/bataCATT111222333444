@@ -1,0 +1,54 @@
+{
+  "resolution_s": 0.01,
+  "speakers": {
+    "N_SPK8060": {
+      "headset_speech_db_threshold": -51.32,
+      "room_speech_db_threshold": -46.04,
+      "solo_envelope_lag_ms": 60,
+      "solo": {
+        "frames": 29436,
+        "all_zero_frames": 142
+      },
+      "overlap": {
+        "frames": 6255,
+        "all_zero_frames": 82
+      }
+    },
+    "N_SPK8061": {
+      "headset_speech_db_threshold": -46.2,
+      "room_speech_db_threshold": -46.04,
+      "solo_envelope_lag_ms": 50,
+      "solo": {
+        "frames": 29370,
+        "all_zero_frames": 204
+      },
+      "overlap": {
+        "frames": 5782,
+        "all_zero_frames": 170
+      }
+    },
+    "N_SPK8062": {
+      "headset_speech_db_threshold": -43.23,
+      "room_speech_db_threshold": -46.04,
+      "solo_envelope_lag_ms": 60,
+      "solo": {
+        "frames": 7149,
+        "all_zero_frames": 103
+      },
+      "overlap": {
+        "frames": 2292,
+        "all_zero_frames": 240
+      }
+    }
+  },
+  "totals": {
+    "solo": {
+      "frames": 65955,
+      "all_zero_frames": 449
+    },
+    "overlap": {
+      "frames": 14329,
+      "all_zero_frames": 492
+    }
+  }
+}

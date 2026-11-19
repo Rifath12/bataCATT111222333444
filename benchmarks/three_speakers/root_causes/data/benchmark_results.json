@@ -1,0 +1,336 @@
+{
+  "excerpts": [
+    {
+      "session": "R8006_M8012",
+      "duration_s": 66.69,
+      "timing": {
+        "speaker_recall": 0.9751025991792066,
+        "speaker_precision": 0.8718199608610567,
+        "DER": 0.15663474692202461,
+        "three_way_speaker_recall": 0.9830729166666666,
+        "exact_three_precision": 0.4153846153846154,
+        "exact_three_recall": 0.94921875,
+        "exact_three_F1": 0.5778834720570749,
+        "seconds": 66.69,
+        "reference_three_s": 2.56,
+        "predicted_three_s": 5.85,
+        "false_three_s": 3.42,
+        "exact_three_true_positive_s": 2.43
+      },
+      "render": {
+        "method": "dprnn",
+        "overlap_regions": 17,
+        "overlap_windows": 17,
+        "processed_core_s": 18.3,
+        "initialize_s": 13.106275010999525,
+        "overlap_inference_s": 126.39924277599494,
+        "workers": 1,
+        "sepformer_three_windows": 8,
+        "refined_three_voice_windows": 8,
+        "audio_wall_s": 139.645490091003,
+        "speaker_ids": [
+          "A",
+          "B",
+          "C"
+        ],
+        "sample_rate": 16000,
+        "sample_count": 1067040,
+        "detected_overlap_seconds": 18.25
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8071",
+          "system": "A",
+          "reference_chars": 184,
+          "recognized_chars": 162,
+          "correct_reference_chars": 129,
+          "substitutions": 32,
+          "deletions": 23,
+          "insertions": 1
+        },
+        {
+          "reference": "N_SPK8072",
+          "system": "B",
+          "reference_chars": 148,
+          "recognized_chars": 120,
+          "correct_reference_chars": 79,
+          "substitutions": 40,
+          "deletions": 29,
+          "insertions": 1
+        },
+        {
+          "reference": "N_SPK8073",
+          "system": "C",
+          "reference_chars": 66,
+          "recognized_chars": 62,
+          "correct_reference_chars": 35,
+          "substitutions": 24,
+          "deletions": 7,
+          "insertions": 3
+        }
+      ],
+      "character_counts": {
+        "reference_chars": 398,
+        "recognized_chars": 344,
+        "correct_reference_chars": 243,
+        "substitutions": 96,
+        "deletions": 59,
+        "insertions": 5,
+        "errors": 160
+      },
+      "cpCER": 0.4020100502512563,
+      "asr_wall_s": 31.913082280007075
+    },
+    {
+      "session": "R8002_M8003",
+      "duration_s": 42.85000000000002,
+      "timing": {
+        "speaker_recall": 0.9793999104343932,
+        "speaker_precision": 0.8605154436356482,
+        "DER": 0.17666815942678013,
+        "three_way_speaker_recall": 0.9921875,
+        "exact_three_precision": 0.6648936170212766,
+        "exact_three_recall": 0.9765625,
+        "exact_three_F1": 0.7911392405063291,
+        "seconds": 42.86,
+        "reference_three_s": 1.28,
+        "predicted_three_s": 1.88,
+        "false_three_s": 0.63,
+        "exact_three_true_positive_s": 1.25
+      },
+      "render": {
+        "method": "routing",
+        "audio_wall_s": 0.09082369500538334,
+        "speaker_ids": [
+          "A",
+          "B",
+          "C"
+        ],
+        "sample_rate": 16000,
+        "sample_count": 685600,
+        "detected_overlap_seconds": 12.31
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8009",
+          "system": "C",
+          "reference_chars": 25,
+          "recognized_chars": 28,
+          "correct_reference_chars": 12,
+          "substitutions": 13,
+          "deletions": 0,
+          "insertions": 3
+        },
+        {
+          "reference": "N_SPK8010",
+          "system": "B",
+          "reference_chars": 46,
+          "recognized_chars": 58,
+          "correct_reference_chars": 12,
+          "substitutions": 29,
+          "deletions": 5,
+          "insertions": 17
+        },
+        {
+          "reference": "N_SPK8011",
+          "system": "A",
+          "reference_chars": 142,
+          "recognized_chars": 141,
+          "correct_reference_chars": 132,
+          "substitutions": 7,
+          "deletions": 3,
+          "insertions": 2
+        }
+      ],
+      "character_counts": {
+        "reference_chars": 213,
+        "recognized_chars": 227,
+        "correct_reference_chars": 156,
+        "substitutions": 49,
+        "deletions": 8,
+        "insertions": 22,
+        "errors": 79
+      },
+      "cpCER": 0.37089201877934275,
+      "asr_wall_s": 11.186814433007385
+    },
+    {
+      "session": "R8004_M8005",
+      "duration_s": 74.34999999999991,
+      "timing": {
+        "speaker_recall": 0.9620607028753994,
+        "speaker_precision": 0.9378406436542953,
+        "DER": 0.10010649627263046,
+        "three_way_speaker_recall": 0.6666666666666666,
+        "exact_three_precision": 0.0,
+        "exact_three_recall": 0.0,
+        "exact_three_F1": 0.0,
+        "seconds": 74.35,
+        "reference_three_s": 0.26,
+        "predicted_three_s": 0.67,
+        "false_three_s": 0.67,
+        "exact_three_true_positive_s": 0.0
+      },
+      "render": {
+        "method": "dprnn",
+        "overlap_regions": 14,
+        "overlap_windows": 14,
+        "processed_core_s": 9.68,
+        "initialize_s": 4.031633110003895,
+        "overlap_inference_s": 40.82190413499484,
+        "workers": 1,
+        "sepformer_three_windows": 2,
+        "refined_three_voice_windows": 2,
+        "audio_wall_s": 44.94653181200556,
+        "speaker_ids": [
+          "A",
+          "B",
+          "C"
+        ],
+        "sample_rate": 16000,
+        "sample_count": 1189600,
+        "detected_overlap_seconds": 9.6
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8017",
+          "system": "B",
+          "reference_chars": 271,
+          "recognized_chars": 245,
+          "correct_reference_chars": 211,
+          "substitutions": 29,
+          "deletions": 31,
+          "insertions": 5
+        },
+        {
+          "reference": "N_SPK8019",
+          "system": "C",
+          "reference_chars": 45,
+          "recognized_chars": 25,
+          "correct_reference_chars": 6,
+          "substitutions": 19,
+          "deletions": 20,
+          "insertions": 0
+        },
+        {
+          "reference": "N_SPK8020",
+          "system": "A",
+          "reference_chars": 201,
+          "recognized_chars": 189,
+          "correct_reference_chars": 154,
+          "substitutions": 27,
+          "deletions": 20,
+          "insertions": 8
+        }
+      ],
+      "character_counts": {
+        "reference_chars": 517,
+        "recognized_chars": 459,
+        "correct_reference_chars": 371,
+        "substitutions": 75,
+        "deletions": 71,
+        "insertions": 13,
+        "errors": 159
+      },
+      "cpCER": 0.30754352030947774,
+      "asr_wall_s": 13.939399672002764
+    }
+  ],
+  "pooled_excerpt_timing": {
+    "speaker_recall": 0.9710182496889258,
+    "speaker_precision": 0.8933460529453852,
+    "DER": 0.1392575694732476,
+    "three_way_speaker_recall": 0.9658536585365853,
+    "exact_three_precision": 0.4380952380952381,
+    "exact_three_recall": 0.8975609756097561,
+    "exact_three_F1": 0.5888,
+    "seconds": 183.9,
+    "reference_three_s": 4.1,
+    "predicted_three_s": 8.4,
+    "false_three_s": 4.72,
+    "exact_three_true_positive_s": 3.68
+  },
+  "pooled_excerpt_character_counts": {
+    "reference_chars": 1128,
+    "recognized_chars": 1030,
+    "correct_reference_chars": 770,
+    "substitutions": 220,
+    "deletions": 138,
+    "insertions": 40,
+    "errors": 398
+  },
+  "pooled_excerpt_cpCER": 0.3528368794326241,
+  "full_meeting": {
+    "id": "R8008_M8017",
+    "render": {
+      "method": "dprnn",
+      "overlap_regions": 80,
+      "overlap_windows": 80,
+      "processed_core_s": 50.46,
+      "initialize_s": 3.6063051920064026,
+      "overlap_inference_s": 75.57808138999098,
+      "workers": 2,
+      "sepformer_three_windows": 8,
+      "refined_three_voice_windows": 8,
+      "audio_wall_s": 80.54191633900336,
+      "speaker_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "sample_rate": 16000,
+      "sample_count": 29120832,
+      "detected_overlap_seconds": 50.45
+    },
+    "asr": {
+      "backend": "sensevoice",
+      "target_rms": 0.035,
+      "threads": 2,
+      "inference_s": 287.59648625800037,
+      "cpCER": 0.14692175619327938,
+      "correct_reference_characters": 0.8594554819720382,
+      "totals": {
+        "reference_chars": 8154,
+        "recognized_chars": 7705,
+        "correct_reference_chars": 7008,
+        "substitutions": 645,
+        "deletions": 501,
+        "insertions": 52,
+        "errors": 1198
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8063",
+          "system": "A",
+          "reference_chars": 3735,
+          "recognized_chars": 3585,
+          "correct_reference_chars": 3278,
+          "substitutions": 281,
+          "deletions": 176,
+          "insertions": 26
+        },
+        {
+          "reference": "N_SPK8064",
+          "system": "C",
+          "reference_chars": 1713,
+          "recognized_chars": 1480,
+          "correct_reference_chars": 1252,
+          "substitutions": 220,
+          "deletions": 241,
+          "insertions": 8
+        },
+        {
+          "reference": "N_SPK8065",
+          "system": "B",
+          "reference_chars": 2706,
+          "recognized_chars": 2640,
+          "correct_reference_chars": 2478,
+          "substitutions": 144,
+          "deletions": 84,
+          "insertions": 18
+        }
+      ]
+    },
+    "text_reference_sha256": "d64f26c7cf544d79b618b343a2061bd10ad9b2a2141ab12429aefbdbdacaaa57"
+  }
+}

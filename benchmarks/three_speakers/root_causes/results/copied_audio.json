@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "routing": {
+      "active_pair_ticks": 6232,
+      "both_nonsilent_ticks": 6232,
+      "identical_ticks": 6232
+    },
+    "dprnn": {
+      "active_pair_ticks": 6232,
+      "both_nonsilent_ticks": 6078,
+      "identical_ticks": 0
+    }
+  },
+  "cases": [
+    {
+      "source": "R8001_M8004_147751_152384",
+      "routing": {
+        "active_pair_ticks": 958,
+        "both_nonsilent_ticks": 958,
+        "identical_ticks": 958
+      },
+      "dprnn": {
+        "active_pair_ticks": 958,
+        "both_nonsilent_ticks": 928,
+        "identical_ticks": 0
+      }
+    },
+    {
+      "source": "R8003_M8001_074865_080557",
+      "routing": {
+        "active_pair_ticks": 693,
+        "both_nonsilent_ticks": 693,
+        "identical_ticks": 693
+      },
+      "dprnn": {
+        "active_pair_ticks": 693,
+        "both_nonsilent_ticks": 661,
+        "identical_ticks": 0
+      }
+    },
+    {
+      "source": "R8003_M8001_134514_139717",
+      "routing": {
+        "active_pair_ticks": 1089,
+        "both_nonsilent_ticks": 1089,
+        "identical_ticks": 1089
+      },
+      "dprnn": {
+        "active_pair_ticks": 1089,
+        "both_nonsilent_ticks": 1051,
+        "identical_ticks": 0
+      }
+    },
+    {
+      "source": "R8007_M8010_102544_104513",
+      "routing": {
+        "active_pair_ticks": 1239,
+        "both_nonsilent_ticks": 1239,
+        "identical_ticks": 1239
+      },
+      "dprnn": {
+        "active_pair_ticks": 1239,
+        "both_nonsilent_ticks": 1220,
+        "identical_ticks": 0
+      }
+    },
+    {
+      "source": "R8007_M8011_173020_177116",
+      "routing": {
+        "active_pair_ticks": 1230,
+        "both_nonsilent_ticks": 1230,
+        "identical_ticks": 1230
+      },
+      "dprnn": {
+        "active_pair_ticks": 1230,
+        "both_nonsilent_ticks": 1210,
+        "identical_ticks": 0
+      }
+    },
+    {
+      "source": "R8007_M8011_167898_171082",
+      "routing": {
+        "active_pair_ticks": 1023,
+        "both_nonsilent_ticks": 1023,
+        "identical_ticks": 1023
+      },
+      "dprnn": {
+        "active_pair_ticks": 1023,
+        "both_nonsilent_ticks": 1008,
+        "identical_ticks": 0
+      }
+    }
+  ]
+}

@@ -23,21 +23,24 @@ def sensevoice(wavs, times, model_dir, threads, target_rms):
     rows = []
     start = time.perf_counter()
     for speaker, wav in sorted(wavs.items()):
-        y, sr = sf.read(wav, dtype="float32")
-        if sr != 16000 or y.ndim != 1:
-            raise ValueError(f"Expected mono 16 kHz WAV: {wav}")
-        turns = [t for t in times if str(t["speaker"]) == speaker]
-        for a, b in inference_spans(turns, len(y) / sr):
-            chunk = y[round(a * sr) : round(b * sr)]
-            rms = max(float(np.sqrt(np.mean(chunk**2))), 1e-7)
-            peak = max(float(np.max(np.abs(chunk))), 1e-7)
-            gain = min(target_rms / rms, 0.98 / peak, 20.0)
-            stream = recognizer.create_stream()
-            stream.accept_waveform(sr, np.pad(chunk * gain, (800, 1280)))
-            recognizer.decode_stream(stream)
-            text = stream.result.text.strip()
-            if text:
-                rows.append(dict(speaker=speaker, start=a, end=b, text=text))
+        with sf.SoundFile(wav) as source:
+            sr = source.samplerate
+            if sr != 16000 or source.channels != 1:
+                raise ValueError(f"Expected mono 16 kHz WAV: {wav}")
+            turns = [t for t in times if str(t["speaker"]) == speaker]
+            for a, b in inference_spans(turns, len(source) / sr):
+                from_sample, to_sample = round(a * sr), round(b * sr)
+                source.seek(from_sample)
+                chunk = source.read(to_sample - from_sample, dtype="float32")
+                rms = max(float(np.sqrt(np.mean(chunk**2))), 1e-7)
+                peak = max(float(np.max(np.abs(chunk))), 1e-7)
+                gain = min(target_rms / rms, 0.98 / peak, 20.0)
+                stream = recognizer.create_stream()
+                stream.accept_waveform(sr, np.pad(chunk * gain, (800, 1280)))
+                recognizer.decode_stream(stream)
+                text = stream.result.text.strip()
+                if text:
+                    rows.append(dict(speaker=speaker, start=a, end=b, text=text))
         print(f"Decoded speaker {speaker}", flush=True)
     return sorted(
         rows, key=lambda t: (t["start"], t["speaker"])

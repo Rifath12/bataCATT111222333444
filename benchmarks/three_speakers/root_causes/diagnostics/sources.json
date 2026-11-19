@@ -1,0 +1,42 @@
+{
+  "repo": "ggfox00000/dia-alimeeting-test",
+  "revision": "cef2837c4a1a0762074522c1bbbbb90eb4d1acf5",
+  "files": [
+    {
+      "type": "file",
+      "oid": "bca13bb708e3cf5b182752735aa0e531fcc09573",
+      "size": 58847408,
+      "lfs": {
+        "oid": "ee0bf8c0a00a4deb5ccdf7b1d5d5a9d01d8a6026632e4f4cd0cc87419eeac313",
+        "size": 58847408,
+        "pointerSize": 133
+      },
+      "xetHash": "93bf1ae8324b0d70e5a54adb335a9de4126e506f24029e5d10364c21624fa0ee",
+      "path": "audio/near/R8008_M8016_N_SPK8060.wav"
+    },
+    {
+      "type": "file",
+      "oid": "8ee5381dc1fa37e7532caa499b55e73d2f9f3a77",
+      "size": 58847408,
+      "lfs": {
+        "oid": "29c756ef298e40511c5a9fad64f469ee3914fc8246b42c0d1c2560ea998bcb4b",
+        "size": 58847408,
+        "pointerSize": 133
+      },
+      "xetHash": "159f7600352536103dfe29af2d738cfc9e380ca1ae445200f65a6ee2b2fcf772",
+      "path": "audio/near/R8008_M8016_N_SPK8061.wav"
+    },
+    {
+      "type": "file",
+      "oid": "31ee9bfa58cb417b4f45397e9eb227cdb10a95de",
+      "size": 58847408,
+      "lfs": {
+        "oid": "657ccd0e048aae95d34404ef5feb370e448c773370302910745710c47339a5f9",
+        "size": 58847408,
+        "pointerSize": 133
+      },
+      "xetHash": "7534d3c35237dbb7c15ba29c7b8f8cfe6b1abd3e10745251037a513fa4387307",
+      "path": "audio/near/R8008_M8016_N_SPK8062.wav"
+    }
+  ]
+}

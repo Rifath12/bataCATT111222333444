@@ -1,0 +1,854 @@
+{
+  "summary": {
+    "0": {
+      "speaker_slot_assignments": 36,
+      "embeddings_only_correct": 23,
+      "with_oracle_activity_correct": 23
+    },
+    "1": {
+      "speaker_slot_assignments": 108,
+      "embeddings_only_correct": 65,
+      "with_oracle_activity_correct": 98
+    },
+    "2": {
+      "speaker_slot_assignments": 108,
+      "embeddings_only_correct": 47,
+      "with_oracle_activity_correct": 98
+    },
+    "3": {
+      "speaker_slot_assignments": 36,
+      "embeddings_only_correct": 9,
+      "with_oracle_activity_correct": 33
+    }
+  },
+  "clips": [
+    {
+      "name": "test_1_clean",
+      "source_wav_if_reference_slot": [
+        0,
+        1,
+        2
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 1,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_1_room",
+      "source_wav_if_reference_slot": [
+        0,
+        1,
+        2
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_2_clean",
+      "source_wav_if_reference_slot": [
+        0,
+        2,
+        1
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 1,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_2_room",
+      "source_wav_if_reference_slot": [
+        1,
+        2,
+        0
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 1,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_3_clean",
+      "source_wav_if_reference_slot": [
+        1,
+        2,
+        0
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_3_room",
+      "source_wav_if_reference_slot": [
+        1,
+        2,
+        0
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 1,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_4_clean",
+      "source_wav_if_reference_slot": [
+        0,
+        2,
+        1
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 1,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_4_room",
+      "source_wav_if_reference_slot": [
+        0,
+        2,
+        1
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 0,
+          "with_activity_correct": 0
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 0
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 0
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 0
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 0
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 1
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 0
+        }
+      ]
+    },
+    {
+      "name": "test_5_clean",
+      "source_wav_if_reference_slot": [
+        2,
+        0,
+        1
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_5_room",
+      "source_wav_if_reference_slot": [
+        2,
+        0,
+        1
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_6_clean",
+      "source_wav_if_reference_slot": [
+        2,
+        0,
+        1
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        }
+      ]
+    },
+    {
+      "name": "test_6_room",
+      "source_wav_if_reference_slot": [
+        2,
+        0,
+        1
+      ],
+      "conditions": [
+        {
+          "missing": [],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            2
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1
+          ],
+          "voice_only_correct": 1,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            1,
+            2
+          ],
+          "voice_only_correct": 3,
+          "with_activity_correct": 3
+        },
+        {
+          "missing": [
+            0,
+            1,
+            2
+          ],
+          "voice_only_correct": 0,
+          "with_activity_correct": 3
+        }
+      ]
+    }
+  ]
+}

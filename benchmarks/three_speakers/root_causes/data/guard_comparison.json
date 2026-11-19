@@ -1,0 +1,172 @@
+{
+  "cases": [
+    {
+      "clip": "R8006_M8012_017727_024396",
+      "used_partial_enrollment": false,
+      "character_counts": {
+        "previous": {
+          "reference_chars": 398,
+          "recognized_chars": 344,
+          "correct_reference_chars": 243,
+          "substitutions": 96,
+          "deletions": 59,
+          "insertions": 5,
+          "errors": 160
+        },
+        "partial_enrollment": {
+          "reference_chars": 398,
+          "recognized_chars": 344,
+          "correct_reference_chars": 243,
+          "substitutions": 96,
+          "deletions": 59,
+          "insertions": 5,
+          "errors": 160
+        },
+        "asr_mask": {
+          "reference_chars": 398,
+          "recognized_chars": 378,
+          "correct_reference_chars": 280,
+          "substitutions": 76,
+          "deletions": 42,
+          "insertions": 22,
+          "errors": 140
+        },
+        "asr_mask_on_missing_enrollment_only": {
+          "reference_chars": 398,
+          "recognized_chars": 344,
+          "correct_reference_chars": 243,
+          "substitutions": 96,
+          "deletions": 59,
+          "insertions": 5,
+          "errors": 160
+        }
+      }
+    },
+    {
+      "clip": "R8002_M8003_027646_031931",
+      "used_partial_enrollment": true,
+      "character_counts": {
+        "previous": {
+          "reference_chars": 213,
+          "recognized_chars": 227,
+          "correct_reference_chars": 156,
+          "substitutions": 49,
+          "deletions": 8,
+          "insertions": 22,
+          "errors": 79
+        },
+        "partial_enrollment": {
+          "reference_chars": 213,
+          "recognized_chars": 202,
+          "correct_reference_chars": 138,
+          "substitutions": 57,
+          "deletions": 18,
+          "insertions": 7,
+          "errors": 82
+        },
+        "asr_mask": {
+          "reference_chars": 213,
+          "recognized_chars": 219,
+          "correct_reference_chars": 152,
+          "substitutions": 51,
+          "deletions": 10,
+          "insertions": 16,
+          "errors": 77
+        },
+        "asr_mask_on_missing_enrollment_only": {
+          "reference_chars": 213,
+          "recognized_chars": 219,
+          "correct_reference_chars": 152,
+          "substitutions": 51,
+          "deletions": 10,
+          "insertions": 16,
+          "errors": 77
+        }
+      }
+    },
+    {
+      "clip": "R8004_M8005_160952_168387",
+      "used_partial_enrollment": false,
+      "character_counts": {
+        "previous": {
+          "reference_chars": 517,
+          "recognized_chars": 459,
+          "correct_reference_chars": 371,
+          "substitutions": 75,
+          "deletions": 71,
+          "insertions": 13,
+          "errors": 159
+        },
+        "partial_enrollment": {
+          "reference_chars": 517,
+          "recognized_chars": 459,
+          "correct_reference_chars": 371,
+          "substitutions": 75,
+          "deletions": 71,
+          "insertions": 13,
+          "errors": 159
+        },
+        "asr_mask": {
+          "reference_chars": 517,
+          "recognized_chars": 471,
+          "correct_reference_chars": 378,
+          "substitutions": 82,
+          "deletions": 57,
+          "insertions": 11,
+          "errors": 150
+        },
+        "asr_mask_on_missing_enrollment_only": {
+          "reference_chars": 517,
+          "recognized_chars": 459,
+          "correct_reference_chars": 371,
+          "substitutions": 75,
+          "deletions": 71,
+          "insertions": 13,
+          "errors": 159
+        }
+      }
+    }
+  ],
+  "pooled": {
+    "previous": {
+      "reference_chars": 1128,
+      "recognized_chars": 1030,
+      "correct_reference_chars": 770,
+      "substitutions": 220,
+      "deletions": 138,
+      "insertions": 40,
+      "errors": 398,
+      "cpCER": 0.3528368794326241
+    },
+    "partial_enrollment": {
+      "reference_chars": 1128,
+      "recognized_chars": 1005,
+      "correct_reference_chars": 752,
+      "substitutions": 228,
+      "deletions": 148,
+      "insertions": 25,
+      "errors": 401,
+      "cpCER": 0.3554964539007092
+    },
+    "asr_mask": {
+      "reference_chars": 1128,
+      "recognized_chars": 1068,
+      "correct_reference_chars": 810,
+      "substitutions": 209,
+      "deletions": 109,
+      "insertions": 49,
+      "errors": 367,
+      "cpCER": 0.325354609929078
+    },
+    "asr_mask_on_missing_enrollment_only": {
+      "reference_chars": 1128,
+      "recognized_chars": 1022,
+      "correct_reference_chars": 766,
+      "substitutions": 222,
+      "deletions": 140,
+      "insertions": 34,
+      "errors": 396,
+      "cpCER": 0.35106382978723405
+    }
+  }
+}

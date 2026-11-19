@@ -1,0 +1,80 @@
+{
+  "candidate": "wpe",
+  "development": {
+    "room_baseline": {
+      "time_s": 63.164342969990685,
+      "sensevoice": {
+        "reference_chars": 103,
+        "errors": 52,
+        "substitutions": 35,
+        "deletions": 17,
+        "insertions": 0,
+        "correct_reference_chars": 51,
+        "cpCER": 0.5048543689320388,
+        "phrases_matched": 2
+      },
+      "zipformer": {
+        "reference_chars": 103,
+        "errors": 40,
+        "substitutions": 33,
+        "deletions": 7,
+        "insertions": 0,
+        "correct_reference_chars": 63,
+        "cpCER": 0.3883495145631068,
+        "phrases_matched": 2
+      },
+      "median_whole_SI_SDRi": 4.858135650949108,
+      "median_triple_SI_SDRi": 4.444682944136453
+    },
+    "wpe": {
+      "time_s": 48.091165155987255,
+      "sensevoice": {
+        "reference_chars": 103,
+        "errors": 45,
+        "substitutions": 32,
+        "deletions": 13,
+        "insertions": 0,
+        "correct_reference_chars": 58,
+        "cpCER": 0.4368932038834951,
+        "phrases_matched": 2
+      },
+      "zipformer": {
+        "reference_chars": 103,
+        "errors": 42,
+        "substitutions": 30,
+        "deletions": 12,
+        "insertions": 0,
+        "correct_reference_chars": 61,
+        "cpCER": 0.4077669902912621,
+        "phrases_matched": 2
+      },
+      "median_whole_SI_SDRi": 8.855003917573697,
+      "median_triple_SI_SDRi": 5.332344237369137
+    },
+    "prompt": {
+      "time_s": 74.65212515799794,
+      "sensevoice": {
+        "reference_chars": 103,
+        "errors": 45,
+        "substitutions": 23,
+        "deletions": 22,
+        "insertions": 0,
+        "correct_reference_chars": 58,
+        "cpCER": 0.4368932038834951,
+        "phrases_matched": 2
+      },
+      "zipformer": {
+        "reference_chars": 103,
+        "errors": 43,
+        "substitutions": 33,
+        "deletions": 8,
+        "insertions": 2,
+        "correct_reference_chars": 62,
+        "cpCER": 0.4174757281553398,
+        "phrases_matched": 2
+      },
+      "median_whole_SI_SDRi": 8.694089124368869,
+      "median_triple_SI_SDRi": 6.263535074334247
+    }
+  }
+}

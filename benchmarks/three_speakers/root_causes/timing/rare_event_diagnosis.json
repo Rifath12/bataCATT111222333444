@@ -1,0 +1,90 @@
+{
+  "R8008_M8016": [
+    {
+      "start_s": 210.97,
+      "end_s": 211.28,
+      "duration_s": 0.31,
+      "detected_s": 0.29
+    },
+    {
+      "start_s": 465.76,
+      "end_s": 465.81,
+      "duration_s": 0.05,
+      "detected_s": 0.0,
+      "native_weakest_posterior_median": 0.1613157093524933,
+      "native_weakest_posterior_peak": 0.1887657195329666,
+      "alternate_weakest_posterior_median": 0.04452319070696831,
+      "alternate_weakest_posterior_peak": 0.04809430614113808
+    },
+    {
+      "start_s": 640.67,
+      "end_s": 641.14,
+      "duration_s": 0.47,
+      "detected_s": 0.47
+    },
+    {
+      "start_s": 649.72,
+      "end_s": 649.76,
+      "duration_s": 0.04,
+      "detected_s": 0.02
+    },
+    {
+      "start_s": 1320.49,
+      "end_s": 1320.65,
+      "duration_s": 0.16,
+      "detected_s": 0.16
+    },
+    {
+      "start_s": 1468.56,
+      "end_s": 1468.64,
+      "duration_s": 0.08,
+      "detected_s": 0.08
+    },
+    {
+      "start_s": 1755.23,
+      "end_s": 1755.42,
+      "duration_s": 0.19,
+      "detected_s": 0.13
+    }
+  ],
+  "R8008_M8017": [
+    {
+      "start_s": 429.5,
+      "end_s": 429.54,
+      "duration_s": 0.04,
+      "detected_s": 0.0,
+      "native_weakest_posterior_median": 0.0054719168692827225,
+      "native_weakest_posterior_peak": 0.005694896914064884,
+      "alternate_weakest_posterior_median": 0.006191745400428772,
+      "alternate_weakest_posterior_peak": 0.0063694678246974945
+    },
+    {
+      "start_s": 904.76,
+      "end_s": 905.07,
+      "duration_s": 0.31,
+      "detected_s": 0.31
+    },
+    {
+      "start_s": 1216.42,
+      "end_s": 1216.47,
+      "duration_s": 0.05,
+      "detected_s": 0.05
+    },
+    {
+      "start_s": 1278.76,
+      "end_s": 1278.87,
+      "duration_s": 0.11,
+      "detected_s": 0.11
+    },
+    {
+      "start_s": 1749.57,
+      "end_s": 1750.19,
+      "duration_s": 0.62,
+      "detected_s": 0.0,
+      "native_weakest_posterior_median": 0.05169111117720604,
+      "native_weakest_posterior_peak": 0.08473470062017441,
+      "alternate_weakest_posterior_median": 0.012584405019879341,
+      "alternate_weakest_posterior_peak": 0.02405932918190956
+    }
+  ]
+}

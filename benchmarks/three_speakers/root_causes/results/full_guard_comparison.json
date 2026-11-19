@@ -1,0 +1,74 @@
+{
+  "complete_meetings": [
+    {
+      "session": "R8008_M8016",
+      "previous": {
+        "reference_chars": 7705,
+        "recognized_chars": 6927,
+        "correct_reference_chars": 5610,
+        "substitutions": 1224,
+        "deletions": 871,
+        "insertions": 93,
+        "errors": 2188,
+        "cpCER": 0.28397144711226474
+      },
+      "asr_mask": {
+        "reference_chars": 7705,
+        "recognized_chars": 7249,
+        "correct_reference_chars": 5883,
+        "substitutions": 1218,
+        "deletions": 604,
+        "insertions": 148,
+        "errors": 1970,
+        "cpCER": 0.2556781310837119,
+        "identical_spans_reused": 378,
+        "redecoded_spans": 477
+      }
+    },
+    {
+      "session": "R8008_M8017",
+      "previous": {
+        "reference_chars": 8154,
+        "recognized_chars": 7705,
+        "correct_reference_chars": 7008,
+        "substitutions": 645,
+        "deletions": 501,
+        "insertions": 52,
+        "errors": 1198,
+        "cpCER": 0.14692175619327938
+      },
+      "asr_mask": {
+        "reference_chars": 8154,
+        "recognized_chars": 7827,
+        "correct_reference_chars": 7121,
+        "substitutions": 639,
+        "deletions": 394,
+        "insertions": 67,
+        "errors": 1100,
+        "cpCER": 0.13490311503556537
+      }
+    }
+  ],
+  "pooled": {
+    "previous": {
+      "reference_chars": 15859,
+      "recognized_chars": 14632,
+      "correct_reference_chars": 12618,
+      "substitutions": 1869,
+      "deletions": 1372,
+      "insertions": 145,
+      "errors": 3386,
+      "cpCER": 0.21350652626268996
+    },
+    "asr_mask": {
+      "reference_chars": 15859,
+      "recognized_chars": 15076,
+      "correct_reference_chars": 13004,
+      "substitutions": 1857,
+      "deletions": 998,
+      "insertions": 215,
+      "errors": 3070,
+      "cpCER": 0.19358093196292325
+    }
+  }
+}

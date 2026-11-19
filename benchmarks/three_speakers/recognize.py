@@ -201,6 +201,26 @@ def main():
     p.add_argument(
         "--backend", choices=("zipformer", "sensevoice"), default="zipformer"
     )
+    p.add_argument(
+        "--suppress-duplicates",
+        action="store_true",
+        help="Suppress quieter cross-speaker copies of overlapping text",
+    )
+    p.add_argument(
+        "--protect-long-turns",
+        action="store_true",
+        help="Retain the stem on long turns if the alternative adds insufficient text",
+    )
+    p.add_argument(
+        "--restore-supported-text",
+        action="store_true",
+        help="Retain longer stem text that contains the continuous decoded words",
+    )
+    p.add_argument(
+        "--context-mix",
+        type=Path,
+        help="Add a continuous mono SenseVoice pass to recover short fragments",
+    )
     p.add_argument("--project", type=Path)
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--threads", type=int, default=4)
@@ -217,6 +237,18 @@ def main():
         help="Optional per-utterance gain with peak limiting",
     )
     args = p.parse_args()
+    if args.protect_long_turns and not (
+        args.context_mix and args.restore_supported_text
+    ):
+        p.error(
+            "--protect-long-turns requires --context-mix and --restore-supported-text"
+        )
+    if args.restore_supported_text and not args.context_mix:
+        p.error("--restore-supported-text requires --context-mix")
+    if args.suppress_duplicates and args.headsets:
+        p.error("--suppress-duplicates requires the separated speaker tracks")
+    if args.context_mix and (args.backend != "sensevoice" or args.headsets):
+        p.error("--context-mix requires SenseVoice on the separated speaker tracks")
     if args.target_rms is not None and not 0 < args.target_rms < 1:
         p.error("--target-rms must be between 0 and 1")
     if args.headsets and not args.reference:
@@ -253,6 +285,47 @@ def main():
         args.target_rms,
         backend=args.backend,
     )
+    if args.context_mix:
+        from contextual_asr import (
+            candidates,
+            decode_mixture,
+            select,
+            restore_supported_text,
+            protect_long_turns,
+        )
+
+        audio_info = sf.info(args.context_mix)
+        if audio_info.frames != sf.info(next(iter(paths.values()))).frames:
+            p.error(
+                "The context mix and separated tracks must have identical sample counts"
+            )
+        parameters = json.loads(
+            Path(__file__).with_name("context_settings.json").read_text()
+        )
+        context_start = time.perf_counter()
+        words = decode_mixture(args.context_mix, args.asr, args.threads)
+        pairs = candidates(timing, args.audio, results, words)
+        results = select(pairs, parameters)
+        if args.restore_supported_text:
+            settings = json.loads(
+                Path(__file__).with_name("restoration_settings.json").read_text()
+            )
+            results = restore_supported_text(pairs, results, settings)
+        if args.protect_long_turns:
+            settings = json.loads(
+                Path(__file__).with_name("long_turn_settings.json").read_text()
+            )
+            results = protect_long_turns(pairs, results, settings)
+        wall += time.perf_counter() - context_start
+    if args.suppress_duplicates:
+        from duplicate_leakage import apply, encounters
+
+        duplicate_start = time.perf_counter()
+        settings = json.loads(
+            Path(__file__).with_name("duplicate_settings.json").read_text()
+        )
+        results = apply(results, encounters(results, args.audio), settings)
+        wall += time.perf_counter() - duplicate_start
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "transcript.jsonl").write_text(
         "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in results),
@@ -279,6 +352,14 @@ def main():
         "backend": args.backend,
         "speakers_decoded": len(paths),
     }
+    if args.context_mix:
+        evaluation["continuous_context"] = True
+    if args.protect_long_turns:
+        evaluation["protect_long_turns"] = True
+    if args.restore_supported_text:
+        evaluation["restore_supported_text"] = True
+    if args.suppress_duplicates:
+        evaluation["suppress_duplicates"] = True
     if args.target_rms:
         evaluation["target_rms"] = args.target_rms
     if refs:

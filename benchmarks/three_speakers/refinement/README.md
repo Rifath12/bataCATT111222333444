@@ -1,5 +1,7 @@
 # Three Mandarin voices from one microphone
 
+[Run the updated three-speaker pipeline and see both complete-meeting comparisons](../root_causes/README.md).
+
 This release adds a spectral filter for three-voice separation and a Mandarin SenseVoice recognition option. Both work with the existing three-speaker file pipeline. The delivered per-speaker transcripts use A/B/C timing and utterance timestamps. The strongest gains came from speech recognition and from recovering a quieter voice in controlled mixtures.
 
 ## Using the improvements

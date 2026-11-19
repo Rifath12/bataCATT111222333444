@@ -1,0 +1,247 @@
+{
+  "revision": "f20d5db4a31fe779ef07bb1af4ea92da5c786622",
+  "sha256": {
+    "SSB00090030.wav": "82521b2c22489f43ca8353065dbe3fd75c4695d49e0dddda01fa98338e6d120f",
+    "SSB00090138.wav": "635aaffd261f53012a4ad892dadbee52d928efc2b176b769df9fd9d73a0238d1",
+    "SSB00110049.wav": "2d4a973bf27442d240673e73dbb7ef601511cdecfdd75cdbc8deb45d960ba841",
+    "SSB00110115.wav": "c23a7370e45a3bcbfa317cf3821916b970a65e19ecc731b13a45583db8cbe3dd",
+    "SSB00120013.wav": "679048aa40cb8a273935c83c1bdc8ae3fb9c572f3788b67acf50aefe2a1a68bf",
+    "SSB00120107.wav": "b90f3ca10cc9bc2b6411378684a48d8df465f8c2aa2544fe4ee9e8224dcce866",
+    "SSB00160056.wav": "ea715ec224800fe98b4bc63f7396b5eaaaacd845662bf35d0eebcc454ad5cac0",
+    "SSB00160197.wav": "2b986096fdcbf7fefd54d8b3cd6a025807adaecf00ad814436d239b836a1ab3d",
+    "SSB00330114.wav": "4cf20c9a71c802b68b1e2a42c5f16e3a0f4a08078cac12bff34134e636f7dc93",
+    "SSB00330223.wav": "624048c2f3694e0b515d7158f5e5f1befcfff760b4631ddea350b25b1155f405",
+    "SSB00430010.wav": "78366a894278bdf26842b1d4d85d283f4856826207db4dd9929eba8d64a40de9",
+    "SSB00430011.wav": "b67db728961b76d1744c0797e94d9ff73a15a5229fae90b96b9e02736c3f8101",
+    "SSB00570074.wav": "6b3d707deadc68602a2069a2b137d349515cfa41e26871ace783f9171fe073a7",
+    "SSB00570176.wav": "15b4ee4f098aaca1b65669abe3d44e95de1a6c8150a096c52c2ec1bb218c8dae",
+    "SSB00730202.wav": "923a215b81d7cc8a3d708fd9e711ae232b160ef3128fd0a24a694c61b0e5c69c",
+    "SSB00730450.wav": "228ffa25f5df67136858061f0260cb8fa719179c00cb5166751256731aec367a",
+    "SSB00800163.wav": "978fe7483546897cff361f8a1212112f54a82cf2977ff9883b41f7bfbb639755",
+    "SSB00800481.wav": "4216eb418ab07533925addc1d5ea805efb23343e7e374982cd04533e5ac40d37",
+    "SSB01120005.wav": "42b7d89e09e6c85323c534d95fd358334e492e7064f5e2e85bd54627e7ab561b",
+    "SSB01120088.wav": "530fd14148a2b92f454e2223401055e97737d6b83825296781ec0271d31701f7",
+    "SSB05350209.wav": "5ee48ee36162a3df4269da03641a33c0753573cbffc0e77ae5b388fe03a4b9e3",
+    "SSB05350290.wav": "9daa08dc498f5665a321123908b4c9148a79580e8a346cc10379adda996fa37b",
+    "SSB05880006.wav": "ed034e7a75dc47bb45d38d142bdc392df66c3f325ec96c28891e92f4fdbac289",
+    "SSB05880189.wav": "2a8136a7910772890cc65f42a1873466aa175f929a61020206e7c9cffd490983",
+    "SSB05990036.wav": "960a97a926dab0b468d3e102c09ac78d32d78bdaa4b91f68ff063f43c0b1cb5d",
+    "SSB05990478.wav": "0ee6c80c81bf3633368c2d281362c8f8cdb427144ee94479d64264c5196f2871",
+    "SSB06010001.wav": "2c101ddd704876035701662882b269039ab8bea3b5a2d5e4122e83a092c071ca",
+    "SSB06010207.wav": "f00a5914f674d73a2e41940007e1074776ba466f87cb377e7b6d9703ff6f071c",
+    "SSB06230191.wav": "a91b86656be9e9799349e33cfcca8566efbb8e5ffea8d2730ad66bc4445a2164",
+    "SSB06230264.wav": "f7b02c0cb0417897efbb1e0304eae763d7723c02d98201e0548aad41d7e76bb6",
+    "SSB06680384.wav": "da7a9d4cf6d7c319475524ba881ca63676a04ff3bb16123b4a9f1cae7e2c2ee9",
+    "SSB06680411.wav": "54d371997a61ee0e6da0627d83c3fb4ac35f51ac49bfbad0d31a6de7dacc8101",
+    "SSB06930002.wav": "fcd17b40ab749b3d002b2ad829479b6786a84faf409b63bebd9718af525d232f",
+    "SSB06930003.wav": "7c0198d938a07261e7f9e032b3e853e97b4d478050b68167f94a004960a63faf",
+    "SSB07020001.wav": "6c6478f040b1ed30ead45da69f5b65e4ca24f9e4a26d5bdb95cec2fbe588a53a",
+    "SSB07020002.wav": "9c97dd822221dcb45de9c45a58c339b3232dc4022ea653d3bf80ba589a8aad41",
+    "SSB07110001.wav": "4b288a064673060ecafe8a35e4ff2557bc5cb4ff461ada3f03cf9fde32270d35",
+    "SSB07110002.wav": "012b2524eece350d5f78f86fe53bfab988949489c47d411e9a0923290fef16a1",
+    "SSB07160004.wav": "901aef010222b94bfe9160fcbdc18e099ac1a388b920507335fdc4aefdd9c1eb",
+    "SSB07160005.wav": "01d3122afe14ea9b2c214e4197fe7c24260e402e4e4b5d67db4985bf8a865a16",
+    "SSB07170001.wav": "9f5e3b6e29d9bbe23f3aca63bbd367cf9c8e3f94a2b1137c0a60818e4c35dc4c",
+    "SSB07170004.wav": "11800c1a049cce9cb35873c05434893536d60a3f4de0cf123c063062cc2b6ae9",
+    "SSB07230005.wav": "755acb3f6904015037e1bac73c414c3ea9e7aaf27ef71660930f2810468c5d20",
+    "SSB07230464.wav": "826ff3c88fd4ea9859517272da483c7332c5ff16ed90441298001a9bb476e6fb",
+    "SSB07460027.wav": "c7531fd655670364ae924b4003de73910b2d295567af5dde247493e827233510",
+    "SSB07460029.wav": "0ecd162480ced802d156d23f86e96c946922219d33bdfd95053b5ec1b9febbef",
+    "SSB07490003.wav": "08112a92f0b17ac207f21e6d4a08cff6a98bd5eba3d1029d8a4c63acd2c212f6",
+    "SSB07490004.wav": "8725144ef9493fa0a1bee5efd944b34dc6f7d7b5468e1304f712f986a8c3dff9",
+    "SSB07580250.wav": "e0926febc9676aaa69f5b08a14cfd16b788767b116a6334da856e3947619e9c2",
+    "SSB07580354.wav": "ed4f531b62b96626071162c980011e8267cd11267d9c5480ede93c7bcccc19f6",
+    "SSB07600009.wav": "35ae6a4d07dafd29a6deb8ae3ae4d93b138dd192f78304f5fce3400fca461061",
+    "SSB07600098.wav": "616c223a2a3e547e7f58528fe53cb04bca5bd0426de8c197755f384af4cbbd7d",
+    "SSB07800044.wav": "15586de8787f05f97aafc481db2a96a4e82e1867e9f93c879cdbe97191188126",
+    "SSB07800223.wav": "8d30f5549fb158760e8687de2a9190bcd1b70704251e787aba2fb11976c765d9"
+  },
+  "groups": {
+    "development": [
+      [
+        {
+          "id": "0758",
+          "target": "SSB07580250.wav",
+          "enroll": "SSB07580354.wav",
+          "text": "进入这一行业的第一年"
+        },
+        {
+          "id": "0535",
+          "target": "SSB05350209.wav",
+          "enroll": "SSB05350290.wav",
+          "text": "例如一些假设性的前提条件常常被忽略"
+        },
+        {
+          "id": "0588",
+          "target": "SSB05880006.wav",
+          "enroll": "SSB05880189.wav",
+          "text": "盖子啪嗒一声合上了"
+        }
+      ],
+      [
+        {
+          "id": "0623",
+          "target": "SSB06230191.wav",
+          "enroll": "SSB06230264.wav",
+          "text": "战争的创伤已被抹去"
+        },
+        {
+          "id": "0749",
+          "target": "SSB07490003.wav",
+          "enroll": "SSB07490004.wav",
+          "text": "这也导致了类固醇的大幅上涨"
+        },
+        {
+          "id": "0711",
+          "target": "SSB07110001.wav",
+          "enroll": "SSB07110002.wav",
+          "text": "幺三五零四三零七零三五"
+        }
+      ],
+      [
+        {
+          "id": "0716",
+          "target": "SSB07160004.wav",
+          "enroll": "SSB07160005.wav",
+          "text": "河北电视台电视剧有什么"
+        },
+        {
+          "id": "0702",
+          "target": "SSB07020001.wav",
+          "enroll": "SSB07020002.wav",
+          "text": "我这些年就没有毛绒玩具"
+        },
+        {
+          "id": "0693",
+          "target": "SSB06930002.wav",
+          "enroll": "SSB06930003.wav",
+          "text": "武术始终被看作我国的国粹"
+        }
+      ]
+    ],
+    "repeat": [
+      [
+        {
+          "id": "0009",
+          "target": "SSB00090030.wav",
+          "enroll": "SSB00090138.wav",
+          "text": "碗碗香"
+        },
+        {
+          "id": "0011",
+          "target": "SSB00110049.wav",
+          "enroll": "SSB00110115.wav",
+          "text": "搁浅"
+        },
+        {
+          "id": "0012",
+          "target": "SSB00120013.wav",
+          "enroll": "SSB00120107.wav",
+          "text": "停车场"
+        }
+      ],
+      [
+        {
+          "id": "0016",
+          "target": "SSB00160056.wav",
+          "enroll": "SSB00160197.wav",
+          "text": "见集"
+        },
+        {
+          "id": "0033",
+          "target": "SSB00330114.wav",
+          "enroll": "SSB00330223.wav",
+          "text": "烤鸭"
+        },
+        {
+          "id": "0043",
+          "target": "SSB00430010.wav",
+          "enroll": "SSB00430011.wav",
+          "text": "野山茶"
+        }
+      ],
+      [
+        {
+          "id": "0057",
+          "target": "SSB00570074.wav",
+          "enroll": "SSB00570176.wav",
+          "text": "广亮"
+        },
+        {
+          "id": "0080",
+          "target": "SSB00800163.wav",
+          "enroll": "SSB00800481.wav",
+          "text": "惊兆"
+        },
+        {
+          "id": "0112",
+          "target": "SSB01120005.wav",
+          "enroll": "SSB01120088.wav",
+          "text": "来一首萍聚"
+        }
+      ]
+    ],
+    "new": [
+      [
+        {
+          "id": "0780",
+          "target": "SSB07800223.wav",
+          "enroll": "SSB07800044.wav",
+          "text": "共和党犯下文化战争失败的战略失误"
+        },
+        {
+          "id": "0746",
+          "target": "SSB07460029.wav",
+          "enroll": "SSB07460027.wav",
+          "text": "公共健康机关完全忽略了汤米的话"
+        },
+        {
+          "id": "0723",
+          "target": "SSB07230464.wav",
+          "enroll": "SSB07230005.wav",
+          "text": "成交面积一万平方米"
+        }
+      ],
+      [
+        {
+          "id": "0668",
+          "target": "SSB06680384.wav",
+          "enroll": "SSB06680411.wav",
+          "text": "李里俊杰的过去式的童话"
+        },
+        {
+          "id": "0717",
+          "target": "SSB07170001.wav",
+          "enroll": "SSB07170004.wav",
+          "text": "你一人可以统治苏格兰"
+        },
+        {
+          "id": "0760",
+          "target": "SSB07600009.wav",
+          "enroll": "SSB07600098.wav",
+          "text": "工厂不再依靠机修工在车间里组装组织机"
+        }
+      ],
+      [
+        {
+          "id": "0599",
+          "target": "SSB05990478.wav",
+          "enroll": "SSB05990036.wav",
+          "text": "看似没有方向的竞争仿佛拨云见日"
+        },
+        {
+          "id": "0073",
+          "target": "SSB00730450.wav",
+          "enroll": "SSB00730202.wav",
+          "text": "在罗湖上班的向先生跑去东莞凤岗"
+        },
+        {
+          "id": "0601",
+          "target": "SSB06010207.wav",
+          "enroll": "SSB06010001.wav",
+          "text": "这通行证有效期很短"
+        }
+      ]
+    ]
+  }
+}

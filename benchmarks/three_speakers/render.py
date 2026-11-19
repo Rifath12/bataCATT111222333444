@@ -14,6 +14,7 @@ import soundfile as sf
 import torch
 
 from diarize import masks
+from partial_enrollment import activity_affinity, assignment_is_tied, short_solo_cue
 
 
 RATE = 16000
@@ -26,10 +27,11 @@ def runs(x):
     return list(zip(borders[::2], borders[1::2]))
 
 
-def enrollment(y, activity, count, length=4.0):
+def enrollment(y, activity, count, length=4.0, allow_partial=False):
     """Use only regions predicted to be clean in the input recording."""
     anchors = []
-    for row in activity:
+    missing = []
+    for slot, row in enumerate(activity):
         solo = row & (count == 1)
         fragments = []
         for a, b in sorted(runs(solo), key=lambda x: x[1] - x[0], reverse=True):
@@ -47,9 +49,15 @@ def enrollment(y, activity, count, length=4.0):
             if sum(len(x) for x in fragments) >= round(length * RATE):
                 break
         if not fragments:
-            raise ValueError("No usable solo anchor for one of the three speakers.")
+            if not allow_partial:
+                raise ValueError("No usable solo anchor for one of the three speakers.")
+            missing.append(slot)
+            anchors.append(short_solo_cue(y, runs(solo), RATE, length))
+            continue
         cue = np.concatenate(fragments)
         anchors.append(np.pad(cue, (0, max(0, round(length * RATE) - len(cue)))))
+    if allow_partial:
+        return anchors, missing
     return np.stack(anchors)
 
 
@@ -80,8 +88,17 @@ def output_tracks(y, activity, method, args):
     if method == "routing":
         return outputs, prefix
     count = activity.sum(axis=0)
-    cues = enrollment(y, activity, count)
     candidates = merge_overlap(count)
+    if not candidates:
+        prefix.update(overlap_regions=0, overlap_windows=0, processed_core_s=0)
+        return outputs, prefix
+    missing = []
+    if method == "dprnn":
+        cues, missing = enrollment(y, activity, count, allow_partial=True)
+    else:
+        cues = enrollment(y, activity, count)
+    if missing:
+        prefix["speakers_without_long_solo"] = missing
     overlap_chunks = [
         (lo, min(lo + 300, b)) for a, b in candidates for lo in range(a, b, 300)
     ]
@@ -105,7 +122,13 @@ def output_tracks(y, activity, method, args):
 
         separator = Separation(load_separator(args.models, "tuned", "cpu"), "cpu")
         voice = VoiceEmbeddings(args.models / "voiceprint.onnx")
-        anchors = [voice(resample(s, RATE, 8000)) for s in cues]
+        anchors = [
+            voice(resample(s, RATE, 8000)) if s is not None else None for s in cues
+        ]
+        unavailable = [i for i, anchor in enumerate(anchors) if anchor is None]
+        if unavailable:
+            prefix["speakers_without_usable_embedding"] = unavailable
+            missing = sorted(set(missing) | set(unavailable))
         sepformer_weights = getattr(args, "sepformer_three", None)
         if sepformer_weights:
             from sepformer_three import SepFormer
@@ -117,6 +140,7 @@ def output_tracks(y, activity, method, args):
                 refiner = SpectralRefiner()
     started = time.perf_counter()
     lengths = []
+    tied_identity_windows = 0
 
     def prepare(lo, hi):
         # An observed global identity must be active within the core interval.
@@ -169,7 +193,15 @@ def output_tracks(y, activity, method, args):
                         for i in speakers
                     ]
                 )
+                if missing:
+                    # A stream that stays quiet during this speaker's pauses is more
+                    # consistent with the diarization labels. Known anchors still vote.
+                    score += activity_affinity(
+                        separated, activity[speakers], left // HOP
+                    )
                 i, j = linear_sum_assignment(-score)
+                if missing and assignment_is_tied(score, i, j):
+                    tied_identity_windows += 1
                 ordered = np.zeros((len(speakers), len(fragment)), np.float32)
                 for rank, k in zip(i, j):
                     s = resample(separated[k], 8000, RATE)
@@ -194,6 +226,8 @@ def output_tracks(y, activity, method, args):
         workers=workers,
         sepformer_three_windows=sum(bool(job[-1]) for job in jobs),
     )
+    if missing:
+        prefix["tied_identity_windows"] = tied_identity_windows
     if refiner is not None:
         prefix["refined_three_voice_windows"] = prefix["sepformer_three_windows"]
     return outputs, prefix

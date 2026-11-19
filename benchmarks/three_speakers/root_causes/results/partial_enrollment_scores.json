@@ -1,0 +1,409 @@
+{
+  "conditions": {
+    "natural": "AliMeeting Eval single far-field channel, exactly three reference and three predicted speakers. The six validation clips exclude the four previously transcribed clips but reuse four previously timed meetings. Selected two longest qualifying clips per meeting if available. Each has at least one speaker without a predicted 750 ms solo turn and five seconds of complete reference utterances.",
+    "recognition": "Same unmodified predicted timing, same Mandarin SenseVoice Small int8 model, RMS 0.035. cpCER is total speaker-permuted character edit errors / reference characters, aggregated by counts.",
+    "spectral_mask": "Single candidate proposed for ASR after observing errors on two original clips. Strength 0.8, 400-sample window, 100-sample hop, 512-point FFT and magnitude weighting. Reported as experimental.",
+    "identification": "Reference-source energy timing in the controlled label diagnostic is an oracle used to isolate labeling effects. Multiple missing-cue permutations of the same audio do not represent independent recordings."
+  },
+  "development": {
+    "summary": {
+      "clips": 2,
+      "reference_characters": 560,
+      "routing": {
+        "errors": 225,
+        "insertions": 19,
+        "deletions": 47,
+        "substitutions": 159,
+        "correct_reference_chars": 354,
+        "cpCER": 0.4017857142857143
+      },
+      "dprnn": {
+        "errors": 202,
+        "insertions": 4,
+        "deletions": 109,
+        "substitutions": 89,
+        "correct_reference_chars": 362,
+        "cpCER": 0.3607142857142857,
+        "clips_improved": 1,
+        "clips_regressed": 1
+      },
+      "asr_mask": {
+        "errors": 186,
+        "insertions": 16,
+        "deletions": 40,
+        "substitutions": 130,
+        "correct_reference_chars": 390,
+        "cpCER": 0.33214285714285713,
+        "clips_improved": 2,
+        "clips_regressed": 0
+      }
+    },
+    "cases": [
+      {
+        "source": "R8001_M8004",
+        "routing": {
+          "reference_chars": 298,
+          "recognized_chars": 284,
+          "correct_reference_chars": 190,
+          "substitutions": 82,
+          "deletions": 26,
+          "insertions": 12,
+          "errors": 120
+        },
+        "dprnn": {
+          "reference_chars": 298,
+          "recognized_chars": 217,
+          "correct_reference_chars": 168,
+          "substitutions": 47,
+          "deletions": 83,
+          "insertions": 2,
+          "errors": 132
+        },
+        "asr_mask": {
+          "reference_chars": 298,
+          "recognized_chars": 290,
+          "correct_reference_chars": 196,
+          "substitutions": 80,
+          "deletions": 22,
+          "insertions": 14,
+          "errors": 116
+        }
+      },
+      {
+        "source": "R8007_M8010",
+        "routing": {
+          "reference_chars": 262,
+          "recognized_chars": 248,
+          "correct_reference_chars": 164,
+          "substitutions": 77,
+          "deletions": 21,
+          "insertions": 7,
+          "errors": 105
+        },
+        "dprnn": {
+          "reference_chars": 262,
+          "recognized_chars": 238,
+          "correct_reference_chars": 194,
+          "substitutions": 42,
+          "deletions": 26,
+          "insertions": 2,
+          "errors": 70
+        },
+        "asr_mask": {
+          "reference_chars": 262,
+          "recognized_chars": 246,
+          "correct_reference_chars": 194,
+          "substitutions": 50,
+          "deletions": 18,
+          "insertions": 2,
+          "errors": 70
+        }
+      }
+    ]
+  },
+  "validation": {
+    "summary": {
+      "clips": 6,
+      "reference_characters": 1135,
+      "routing": {
+        "errors": 428,
+        "insertions": 80,
+        "deletions": 116,
+        "substitutions": 232,
+        "correct_reference_chars": 787,
+        "cpCER": 0.37709251101321584
+      },
+      "dprnn": {
+        "errors": 425,
+        "insertions": 20,
+        "deletions": 239,
+        "substitutions": 166,
+        "correct_reference_chars": 730,
+        "cpCER": 0.3744493392070485,
+        "clips_improved": 4,
+        "clips_regressed": 2
+      },
+      "asr_mask": {
+        "errors": 428,
+        "insertions": 70,
+        "deletions": 125,
+        "substitutions": 233,
+        "correct_reference_chars": 777,
+        "cpCER": 0.37709251101321584,
+        "clips_improved": 4,
+        "clips_regressed": 2
+      }
+    },
+    "duration_s": 186.88000000000022,
+    "cases": [
+      {
+        "source": "R8001_M8004_147751_152384",
+        "session": "R8001_M8004",
+        "duration_s": 43.00999999999999,
+        "longest_solo_frames": [
+          270,
+          0,
+          307
+        ],
+        "routing": {
+          "reference_chars": 266,
+          "recognized_chars": 246,
+          "correct_reference_chars": 189,
+          "substitutions": 53,
+          "deletions": 24,
+          "insertions": 4,
+          "errors": 81,
+          "cpCER": 0.30451127819548873
+        },
+        "dprnn": {
+          "reference_chars": 266,
+          "recognized_chars": 196,
+          "correct_reference_chars": 148,
+          "substitutions": 48,
+          "deletions": 70,
+          "insertions": 0,
+          "errors": 118,
+          "cpCER": 0.44360902255639095
+        },
+        "asr_mask": {
+          "reference_chars": 266,
+          "recognized_chars": 240,
+          "correct_reference_chars": 178,
+          "substitutions": 59,
+          "deletions": 29,
+          "insertions": 3,
+          "errors": 91
+        }
+      },
+      {
+        "source": "R8003_M8001_074865_080557",
+        "session": "R8003_M8001",
+        "duration_s": 21.389999999999986,
+        "longest_solo_frames": [
+          125,
+          26,
+          325
+        ],
+        "routing": {
+          "reference_chars": 122,
+          "recognized_chars": 146,
+          "correct_reference_chars": 94,
+          "substitutions": 24,
+          "deletions": 4,
+          "insertions": 28,
+          "errors": 56,
+          "cpCER": 0.45901639344262296
+        },
+        "dprnn": {
+          "reference_chars": 122,
+          "recognized_chars": 109,
+          "correct_reference_chars": 87,
+          "substitutions": 16,
+          "deletions": 19,
+          "insertions": 6,
+          "errors": 41,
+          "cpCER": 0.3360655737704918
+        },
+        "asr_mask": {
+          "reference_chars": 122,
+          "recognized_chars": 145,
+          "correct_reference_chars": 95,
+          "substitutions": 23,
+          "deletions": 4,
+          "insertions": 27,
+          "errors": 54
+        }
+      },
+      {
+        "source": "R8003_M8001_134514_139717",
+        "session": "R8003_M8001",
+        "duration_s": 48.01999999999998,
+        "longest_solo_frames": [
+          17,
+          653,
+          289
+        ],
+        "routing": {
+          "reference_chars": 253,
+          "recognized_chars": 272,
+          "correct_reference_chars": 209,
+          "substitutions": 39,
+          "deletions": 5,
+          "insertions": 24,
+          "errors": 68,
+          "cpCER": 0.26877470355731226
+        },
+        "dprnn": {
+          "reference_chars": 253,
+          "recognized_chars": 245,
+          "correct_reference_chars": 203,
+          "substitutions": 36,
+          "deletions": 14,
+          "insertions": 6,
+          "errors": 56,
+          "cpCER": 0.22134387351778656
+        },
+        "asr_mask": {
+          "reference_chars": 253,
+          "recognized_chars": 273,
+          "correct_reference_chars": 211,
+          "substitutions": 38,
+          "deletions": 4,
+          "insertions": 24,
+          "errors": 66
+        }
+      },
+      {
+        "source": "R8007_M8010_102544_104513",
+        "session": "R8007_M8010",
+        "duration_s": 12.660000000000082,
+        "longest_solo_frames": [
+          151,
+          121,
+          0
+        ],
+        "routing": {
+          "reference_chars": 91,
+          "recognized_chars": 98,
+          "correct_reference_chars": 55,
+          "substitutions": 32,
+          "deletions": 4,
+          "insertions": 11,
+          "errors": 47,
+          "cpCER": 0.5164835164835165
+        },
+        "dprnn": {
+          "reference_chars": 91,
+          "recognized_chars": 80,
+          "correct_reference_chars": 65,
+          "substitutions": 15,
+          "deletions": 11,
+          "insertions": 0,
+          "errors": 26,
+          "cpCER": 0.2857142857142857
+        },
+        "asr_mask": {
+          "reference_chars": 91,
+          "recognized_chars": 92,
+          "correct_reference_chars": 63,
+          "substitutions": 24,
+          "deletions": 4,
+          "insertions": 5,
+          "errors": 33
+        }
+      },
+      {
+        "source": "R8007_M8011_173020_177116",
+        "session": "R8007_M8011",
+        "duration_s": 40.960000000000036,
+        "longest_solo_frames": [
+          515,
+          417,
+          0
+        ],
+        "routing": {
+          "reference_chars": 261,
+          "recognized_chars": 266,
+          "correct_reference_chars": 206,
+          "substitutions": 51,
+          "deletions": 4,
+          "insertions": 9,
+          "errors": 64,
+          "cpCER": 0.24521072796934865
+        },
+        "dprnn": {
+          "reference_chars": 261,
+          "recognized_chars": 240,
+          "correct_reference_chars": 201,
+          "substitutions": 38,
+          "deletions": 22,
+          "insertions": 1,
+          "errors": 61,
+          "cpCER": 0.23371647509578544
+        },
+        "asr_mask": {
+          "reference_chars": 261,
+          "recognized_chars": 266,
+          "correct_reference_chars": 208,
+          "substitutions": 48,
+          "deletions": 5,
+          "insertions": 10,
+          "errors": 63
+        }
+      },
+      {
+        "source": "R8007_M8011_167898_171082",
+        "session": "R8007_M8011",
+        "duration_s": 20.840000000000146,
+        "longest_solo_frames": [
+          75,
+          6,
+          0
+        ],
+        "routing": {
+          "reference_chars": 142,
+          "recognized_chars": 71,
+          "correct_reference_chars": 34,
+          "substitutions": 33,
+          "deletions": 75,
+          "insertions": 4,
+          "errors": 112,
+          "cpCER": 0.7887323943661971
+        },
+        "dprnn": {
+          "reference_chars": 142,
+          "recognized_chars": 46,
+          "correct_reference_chars": 26,
+          "substitutions": 13,
+          "deletions": 103,
+          "insertions": 7,
+          "errors": 123,
+          "cpCER": 0.8661971830985915
+        },
+        "asr_mask": {
+          "reference_chars": 142,
+          "recognized_chars": 64,
+          "correct_reference_chars": 22,
+          "substitutions": 41,
+          "deletions": 79,
+          "insertions": 1,
+          "errors": 121
+        }
+      }
+    ]
+  },
+  "copied_audio": {
+    "routing": {
+      "active_pair_ticks": 6232,
+      "both_nonsilent_ticks": 6232,
+      "identical_ticks": 6232
+    },
+    "dprnn": {
+      "active_pair_ticks": 6232,
+      "both_nonsilent_ticks": 6078,
+      "identical_ticks": 0
+    }
+  },
+  "controlled_label_assignment": {
+    "0": {
+      "speaker_slot_assignments": 36,
+      "embeddings_only_correct": 23,
+      "with_oracle_activity_correct": 23
+    },
+    "1": {
+      "speaker_slot_assignments": 108,
+      "embeddings_only_correct": 65,
+      "with_oracle_activity_correct": 98
+    },
+    "2": {
+      "speaker_slot_assignments": 108,
+      "embeddings_only_correct": 47,
+      "with_oracle_activity_correct": 98
+    },
+    "3": {
+      "speaker_slot_assignments": 36,
+      "embeddings_only_correct": 9,
+      "with_oracle_activity_correct": 33
+    }
+  }
+}

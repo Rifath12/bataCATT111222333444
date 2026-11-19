@@ -1,0 +1,65 @@
+[
+  {
+    "session": "R8006_M8012",
+    "source_session": "R8006_M8012",
+    "start": 177.27,
+    "end": 243.96,
+    "duration_s": 66.69,
+    "exact_three_s": 2.56,
+    "audio": "R8006_M8012_017727_024396.wav",
+    "ref": "R8006_M8012_017727_024396.rttm",
+    "text_reference": "R8006_M8012_017727_024396.json",
+    "speaker_ids": [
+      "N_SPK8071",
+      "N_SPK8072",
+      "N_SPK8073"
+    ],
+    "aligned_reference_revision": "9527b7c64846fb38316a610f32e9d3466bd6d8b7",
+    "full_textgrid_sha256": "1c7579e5ccbef5b5cd26c01098b1b6ad008349e255d224e8867c5ddba5078adf",
+    "source_audio_path": "AliMeeting/Test_Ali/Test_Ali_far/audio_dir/R8006_M8012_MS803.wav",
+    "source_revision": "68dd695283723a78d850895466b9a380f630b561",
+    "wav_sha256": "ded3cc5a97e9e549fabfeb1b9997a168bfd9081e1f8e75c6f0c5c013822d50cf"
+  },
+  {
+    "session": "R8002_M8003",
+    "source_session": "R8002_M8003",
+    "start": 276.46,
+    "end": 319.31,
+    "duration_s": 42.85000000000002,
+    "exact_three_s": 1.28,
+    "audio": "R8002_M8003_027646_031931.wav",
+    "ref": "R8002_M8003_027646_031931.rttm",
+    "text_reference": "R8002_M8003_027646_031931.json",
+    "speaker_ids": [
+      "N_SPK8009",
+      "N_SPK8010",
+      "N_SPK8011"
+    ],
+    "aligned_reference_revision": "9527b7c64846fb38316a610f32e9d3466bd6d8b7",
+    "full_textgrid_sha256": "eafb500917c3bdbbf171f876c7f3c40971f730b4c2cb306667627242ac387dad",
+    "source_audio_path": "AliMeeting/Test_Ali/Test_Ali_far/audio_dir/R8002_M8003_MS803.wav",
+    "source_revision": "68dd695283723a78d850895466b9a380f630b561",
+    "wav_sha256": "e5cdfed452785ac75a917e7cca1f96cfb829a1b8bc5f6a4277f87c4ede9e5006"
+  },
+  {
+    "session": "R8004_M8005",
+    "source_session": "R8004_M8005",
+    "start": 1609.52,
+    "end": 1683.87,
+    "duration_s": 74.34999999999991,
+    "exact_three_s": 0.26,
+    "audio": "R8004_M8005_160952_168387.wav",
+    "ref": "R8004_M8005_160952_168387.rttm",
+    "text_reference": "R8004_M8005_160952_168387.json",
+    "speaker_ids": [
+      "N_SPK8017",
+      "N_SPK8019",
+      "N_SPK8020"
+    ],
+    "aligned_reference_revision": "9527b7c64846fb38316a610f32e9d3466bd6d8b7",
+    "full_textgrid_sha256": "e6b488ec01ae6ed12d3f6602f1f6f560cc89af6daad60274178fffecfa56c787",
+    "source_audio_path": "AliMeeting/Test_Ali/Test_Ali_far/audio_dir/R8004_M8005_MS803.wav",
+    "source_revision": "68dd695283723a78d850895466b9a380f630b561",
+    "wav_sha256": "69f9044697fd4e8d1d26117c79c52ce66671bf0a6f25480ff9fc3e360b1073b1"
+  }
+]

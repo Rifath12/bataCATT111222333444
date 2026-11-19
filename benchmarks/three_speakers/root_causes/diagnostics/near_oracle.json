@@ -1,0 +1,61 @@
+{
+  "arm": "near_oracle",
+  "duration_s": 1838.980125,
+  "inference_s": 260.90880514404853,
+  "threads": 2,
+  "ref_to_system_by_occupancy": {
+    "N_SPK8060": "A",
+    "N_SPK8061": "B",
+    "N_SPK8062": "C"
+  },
+  "alignment_ms": {
+    "A": 60,
+    "B": 50,
+    "C": 60
+  },
+  "original_turns": 622,
+  "decoded_segments": 605,
+  "cpCER": 0.07112264763140817,
+  "correct_reference_characters": 0.9404282933160285,
+  "totals": {
+    "reference_chars": 7705,
+    "recognized_chars": 7703,
+    "correct_reference_chars": 7246,
+    "substitutions": 368,
+    "deletions": 91,
+    "insertions": 89,
+    "errors": 548
+  },
+  "speaker_scores": [
+    {
+      "reference": "N_SPK8060",
+      "system": "A",
+      "reference_chars": 3380,
+      "recognized_chars": 3375,
+      "correct_reference_chars": 3305,
+      "substitutions": 63,
+      "deletions": 12,
+      "insertions": 7
+    },
+    {
+      "reference": "N_SPK8061",
+      "system": "B",
+      "reference_chars": 2745,
+      "recognized_chars": 2742,
+      "correct_reference_chars": 2655,
+      "substitutions": 75,
+      "deletions": 15,
+      "insertions": 12
+    },
+    {
+      "reference": "N_SPK8062",
+      "system": "C",
+      "reference_chars": 1580,
+      "recognized_chars": 1586,
+      "correct_reference_chars": 1286,
+      "substitutions": 230,
+      "deletions": 64,
+      "insertions": 70
+    }
+  ]
+}

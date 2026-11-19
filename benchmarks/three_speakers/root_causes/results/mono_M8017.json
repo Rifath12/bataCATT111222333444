@@ -1,0 +1,69 @@
+{
+  "backend": "sensevoice",
+  "target_rms": 0.035,
+  "threads": 2,
+  "inference_s": 287.59648625800037,
+  "cpCER": 0.14692175619327938,
+  "correct_reference_characters": 0.8594554819720382,
+  "totals": {
+    "reference_chars": 8154,
+    "recognized_chars": 7705,
+    "correct_reference_chars": 7008,
+    "substitutions": 645,
+    "deletions": 501,
+    "insertions": 52,
+    "errors": 1198
+  },
+  "speaker_scores": [
+    {
+      "reference": "N_SPK8063",
+      "system": "A",
+      "reference_chars": 3735,
+      "recognized_chars": 3585,
+      "correct_reference_chars": 3278,
+      "substitutions": 281,
+      "deletions": 176,
+      "insertions": 26
+    },
+    {
+      "reference": "N_SPK8064",
+      "system": "C",
+      "reference_chars": 1713,
+      "recognized_chars": 1480,
+      "correct_reference_chars": 1252,
+      "substitutions": 220,
+      "deletions": 241,
+      "insertions": 8
+    },
+    {
+      "reference": "N_SPK8065",
+      "system": "B",
+      "reference_chars": 2706,
+      "recognized_chars": 2640,
+      "correct_reference_chars": 2478,
+      "substitutions": 144,
+      "deletions": 84,
+      "insertions": 18
+    }
+  ],
+  "render": {
+    "method": "dprnn",
+    "overlap_regions": 80,
+    "overlap_windows": 80,
+    "processed_core_s": 50.46,
+    "initialize_s": 3.6063051920064026,
+    "overlap_inference_s": 75.57808138999098,
+    "workers": 2,
+    "sepformer_three_windows": 8,
+    "refined_three_voice_windows": 8,
+    "audio_wall_s": 80.54191633900336,
+    "speaker_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "sample_rate": 16000,
+    "sample_count": 29120832,
+    "detected_overlap_seconds": 50.45
+  }
+}

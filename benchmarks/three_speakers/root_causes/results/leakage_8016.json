@@ -1,0 +1,65 @@
+{
+  "A": {
+    "matched_id": "N_SPK8060",
+    "relative_rejection_of_other_solo_speakers_db": 4.3348610401153564,
+    "per_true_speaker": {
+      "N_SPK8060": {
+        "solo_s": 560.67,
+        "reference_mic_rms_dbfs": -43.18804168701172,
+        "gain_db": -2.4716076850891113
+      },
+      "N_SPK8061": {
+        "solo_s": 494.64,
+        "reference_mic_rms_dbfs": -41.80353546142578,
+        "gain_db": -7.634363174438477
+      },
+      "N_SPK8062": {
+        "solo_s": 148.68,
+        "reference_mic_rms_dbfs": -42.671852111816406,
+        "gain_db": -5.978574275970459
+      }
+    }
+  },
+  "B": {
+    "matched_id": "N_SPK8061",
+    "relative_rejection_of_other_solo_speakers_db": 3.8712265491485596,
+    "per_true_speaker": {
+      "N_SPK8060": {
+        "solo_s": 560.67,
+        "reference_mic_rms_dbfs": -43.18804168701172,
+        "gain_db": -5.326263904571533
+      },
+      "N_SPK8061": {
+        "solo_s": 494.64,
+        "reference_mic_rms_dbfs": -41.80353546142578,
+        "gain_db": -1.457289218902588
+      },
+      "N_SPK8062": {
+        "solo_s": 148.68,
+        "reference_mic_rms_dbfs": -42.671852111816406,
+        "gain_db": -5.330767631530762
+      }
+    }
+  },
+  "C": {
+    "matched_id": "N_SPK8062",
+    "relative_rejection_of_other_solo_speakers_db": 3.283111572265625,
+    "per_true_speaker": {
+      "N_SPK8060": {
+        "solo_s": 560.67,
+        "reference_mic_rms_dbfs": -43.18804168701172,
+        "gain_db": -3.966512441635132
+      },
+      "N_SPK8061": {
+        "solo_s": 494.64,
+        "reference_mic_rms_dbfs": -41.80353546142578,
+        "gain_db": -4.90071964263916
+      },
+      "N_SPK8062": {
+        "solo_s": 148.68,
+        "reference_mic_rms_dbfs": -42.671852111816406,
+        "gain_db": -1.150504469871521
+      }
+    }
+  }
+}

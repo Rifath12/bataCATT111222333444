@@ -1,0 +1,18 @@
+{
+  "thresholds": [
+    0.8,
+    0.38,
+    0.35
+  ],
+  "expansion_frames": 81,
+  "promotion": {
+    "anchor": 0.22,
+    "radius_frames": 28,
+    "minimum_probability": 0.008,
+    "second_probability": 0.48
+  },
+  "trim_triples": [
+    0.006,
+    0.6
+  ]
+}

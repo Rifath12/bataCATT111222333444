@@ -1,0 +1,38 @@
+{
+  "overlap_covered": {
+    "turns": 304,
+    "chars": 5415,
+    "replace": 752,
+    "delete": 507,
+    "insert": 68,
+    "errors": 1327,
+    "error_rate": 0.2450600184672207
+  },
+  "solo_covered": {
+    "turns": 141,
+    "chars": 1516,
+    "replace": 193,
+    "delete": 108,
+    "insert": 18,
+    "errors": 319,
+    "error_rate": 0.2104221635883905
+  },
+  "solo_gated": {
+    "turns": 86,
+    "chars": 174,
+    "insert": 1,
+    "replace": 61,
+    "delete": 63,
+    "errors": 125,
+    "error_rate": 0.7183908045977011
+  },
+  "overlap_gated": {
+    "turns": 91,
+    "chars": 600,
+    "insert": 6,
+    "replace": 218,
+    "delete": 193,
+    "errors": 417,
+    "error_rate": 0.695
+  }
+}

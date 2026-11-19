@@ -1,0 +1,49 @@
+{
+  "backend": "sensevoice",
+  "target_rms": 0.035,
+  "threads": 1,
+  "inference_s": 310.65395345499564,
+  "cpCER": 0.14802550895266128,
+  "correct_reference_characters": 0.8598233995584988,
+  "totals": {
+    "reference_chars": 8154,
+    "recognized_chars": 7739,
+    "correct_reference_chars": 7011,
+    "substitutions": 664,
+    "deletions": 479,
+    "insertions": 64,
+    "errors": 1207
+  },
+  "speaker_scores": [
+    {
+      "reference": "N_SPK8063",
+      "system": "A",
+      "reference_chars": 3735,
+      "recognized_chars": 3607,
+      "correct_reference_chars": 3277,
+      "substitutions": 298,
+      "deletions": 160,
+      "insertions": 32
+    },
+    {
+      "reference": "N_SPK8064",
+      "system": "C",
+      "reference_chars": 1713,
+      "recognized_chars": 1488,
+      "correct_reference_chars": 1252,
+      "substitutions": 228,
+      "deletions": 233,
+      "insertions": 8
+    },
+    {
+      "reference": "N_SPK8065",
+      "system": "B",
+      "reference_chars": 2706,
+      "recognized_chars": 2644,
+      "correct_reference_chars": 2482,
+      "substitutions": 138,
+      "deletions": 86,
+      "insertions": 24
+    }
+  ]
+}

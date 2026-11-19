@@ -1,0 +1,61 @@
+{
+  "backend": "sensevoice",
+  "target_rms": 0.035,
+  "threads": 1,
+  "inference_s": 325.636688255996,
+  "cpCER": 0.19519792342634654,
+  "correct_reference_characters": 0.8193380921479558,
+  "totals": {
+    "reference_chars": 7705,
+    "recognized_chars": 7335,
+    "correct_reference_chars": 6313,
+    "substitutions": 910,
+    "deletions": 482,
+    "insertions": 112,
+    "errors": 1504
+  },
+  "speaker_scores": [
+    {
+      "reference": "N_SPK8060",
+      "system": "A",
+      "reference_chars": 3380,
+      "recognized_chars": 3365,
+      "correct_reference_chars": 3198,
+      "substitutions": 141,
+      "deletions": 41,
+      "insertions": 26
+    },
+    {
+      "reference": "N_SPK8061",
+      "system": "B",
+      "reference_chars": 2745,
+      "recognized_chars": 2727,
+      "correct_reference_chars": 2503,
+      "substitutions": 175,
+      "deletions": 67,
+      "insertions": 49
+    },
+    {
+      "reference": "N_SPK8062",
+      "system": "C",
+      "reference_chars": 1580,
+      "recognized_chars": 1243,
+      "correct_reference_chars": 612,
+      "substitutions": 594,
+      "deletions": 374,
+      "insertions": 37
+    }
+  ],
+  "render": {
+    "method": "spatial_mvdr",
+    "speaker_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "sample_count": 29423682,
+    "array_channels": 8,
+    "gain": 1.0,
+    "render_wall_s": 21.407580125000095
+  }
+}

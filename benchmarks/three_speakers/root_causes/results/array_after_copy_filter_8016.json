@@ -1,0 +1,94 @@
+{
+  "previous": {
+    "cpCER": 0.19519792342634654,
+    "correct_reference_characters": 0.8193380921479558,
+    "totals": {
+      "reference_chars": 7705,
+      "recognized_chars": 7335,
+      "correct_reference_chars": 6313,
+      "substitutions": 910,
+      "deletions": 482,
+      "insertions": 112,
+      "errors": 1504
+    },
+    "speaker_scores": [
+      {
+        "reference": "N_SPK8060",
+        "system": "A",
+        "reference_chars": 3380,
+        "recognized_chars": 3365,
+        "correct_reference_chars": 3198,
+        "substitutions": 141,
+        "deletions": 41,
+        "insertions": 26
+      },
+      {
+        "reference": "N_SPK8061",
+        "system": "B",
+        "reference_chars": 2745,
+        "recognized_chars": 2727,
+        "correct_reference_chars": 2503,
+        "substitutions": 175,
+        "deletions": 67,
+        "insertions": 49
+      },
+      {
+        "reference": "N_SPK8062",
+        "system": "C",
+        "reference_chars": 1580,
+        "recognized_chars": 1243,
+        "correct_reference_chars": 612,
+        "substitutions": 594,
+        "deletions": 374,
+        "insertions": 37
+      }
+    ]
+  },
+  "candidate": {
+    "cpCER": 0.19506813757300454,
+    "correct_reference_characters": 0.8193380921479558,
+    "totals": {
+      "reference_chars": 7705,
+      "recognized_chars": 7327,
+      "correct_reference_chars": 6313,
+      "substitutions": 903,
+      "deletions": 489,
+      "insertions": 111,
+      "errors": 1503
+    },
+    "speaker_scores": [
+      {
+        "reference": "N_SPK8060",
+        "system": "A",
+        "reference_chars": 3380,
+        "recognized_chars": 3363,
+        "correct_reference_chars": 3198,
+        "substitutions": 140,
+        "deletions": 42,
+        "insertions": 25
+      },
+      {
+        "reference": "N_SPK8061",
+        "system": "B",
+        "reference_chars": 2745,
+        "recognized_chars": 2727,
+        "correct_reference_chars": 2503,
+        "substitutions": 175,
+        "deletions": 67,
+        "insertions": 49
+      },
+      {
+        "reference": "N_SPK8062",
+        "system": "C",
+        "reference_chars": 1580,
+        "recognized_chars": 1237,
+        "correct_reference_chars": 612,
+        "substitutions": 588,
+        "deletions": 380,
+        "insertions": 37
+      }
+    ]
+  },
+  "removed": 4,
+  "candidate_duplicates": 27
+}

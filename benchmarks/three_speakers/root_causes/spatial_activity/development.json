@@ -1,0 +1,42 @@
+{
+  "baseline": {
+    "DER": 0.12778959308095847,
+    "speaker_precision": 0.907379277262552,
+    "speaker_recall": 0.9655040408336878,
+    "exact_three_precision": 0.23648648648648649,
+    "exact_three_recall": 0.3511705685618729,
+    "exact_three_F1": 0.28263795423956933,
+    "speaker_recall_on_true_triples": 0.7837235228539576,
+    "reference_triple_seconds": 2.99,
+    "predicted_triple_seconds": 4.44,
+    "correct_triple_seconds": 1.05,
+    "duration_s": 783.82
+  },
+  "candidate": {
+    "DER": 0.12597476251240608,
+    "speaker_precision": 0.9090168423020929,
+    "speaker_recall": 0.9649652630086488,
+    "exact_three_precision": 0.352059925093633,
+    "exact_three_recall": 0.31438127090301005,
+    "exact_three_F1": 0.3321554770318021,
+    "speaker_recall_on_true_triples": 0.7714604236343366,
+    "reference_triple_seconds": 2.99,
+    "predicted_triple_seconds": 2.67,
+    "correct_triple_seconds": 0.9400000000000001,
+    "duration_s": 783.82
+  },
+  "add_only": {
+    "DER": 0.12778959308095847,
+    "speaker_precision": 0.907379277262552,
+    "speaker_recall": 0.9655040408336878,
+    "exact_three_precision": 0.23648648648648649,
+    "exact_three_recall": 0.3511705685618729,
+    "exact_three_F1": 0.28263795423956933,
+    "speaker_recall_on_true_triples": 0.7837235228539576,
+    "reference_triple_seconds": 2.99,
+    "predicted_triple_seconds": 4.44,
+    "correct_triple_seconds": 1.05,
+    "duration_s": 783.82
+  },
+  "split_frame": 145566
+}

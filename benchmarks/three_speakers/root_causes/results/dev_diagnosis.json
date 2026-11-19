@@ -1,0 +1,84 @@
+{
+  "scores": {
+    "cpCER": 0.33378061053337804,
+    "correct_reference_characters": 0.677960415967796,
+    "totals": {
+      "reference_chars": 8943,
+      "recognized_chars": 7769,
+      "correct_reference_chars": 6063,
+      "substitutions": 1601,
+      "deletions": 1279,
+      "insertions": 105,
+      "errors": 2985
+    },
+    "speaker_scores": [
+      {
+        "reference": "N_SPK8047",
+        "system": "1",
+        "reference_chars": 3167,
+        "recognized_chars": 2783,
+        "correct_reference_chars": 2187,
+        "substitutions": 559,
+        "deletions": 421,
+        "insertions": 37
+      },
+      {
+        "reference": "N_SPK8048",
+        "system": "2",
+        "reference_chars": 3375,
+        "recognized_chars": 3051,
+        "correct_reference_chars": 2598,
+        "substitutions": 405,
+        "deletions": 372,
+        "insertions": 48
+      },
+      {
+        "reference": "N_SPK8049",
+        "system": "0",
+        "reference_chars": 2401,
+        "recognized_chars": 1935,
+        "correct_reference_chars": 1278,
+        "substitutions": 637,
+        "deletions": 486,
+        "insertions": 20
+      }
+    ]
+  },
+  "hypothesis_spans": {
+    "3.2s+": {
+      "utterances": 215,
+      "equal": 3841,
+      "replace": 415,
+      "insert": 31,
+      "seconds": 1095.2799999999975
+    },
+    "1.6-3.2s": {
+      "utterances": 243,
+      "replace": 408,
+      "equal": 1543,
+      "insert": 18,
+      "seconds": 569.4100000000008
+    },
+    ".4-.8s": {
+      "utterances": 269,
+      "replace": 310,
+      "equal": 148,
+      "insert": 26,
+      "seconds": 152.7499999999986
+    },
+    "0-.4s": {
+      "utterances": 58,
+      "replace": 48,
+      "insert": 10,
+      "equal": 22,
+      "seconds": 18.299999999999066
+    },
+    ".8-1.6s": {
+      "utterances": 261,
+      "equal": 509,
+      "replace": 420,
+      "insert": 20,
+      "seconds": 303.32999999999913
+    }
+  }
+}
