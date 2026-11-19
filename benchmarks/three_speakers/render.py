@@ -2,6 +2,8 @@
 
 from pathlib import Path
 import argparse
+from concurrent.futures import ThreadPoolExecutor
+from contextlib import nullcontext
 import json
 import sys
 import time
@@ -84,6 +86,7 @@ def output_tracks(y, activity, method, args):
         (lo, min(lo + 300, b)) for a, b in candidates for lo in range(a, b, 300)
     ]
     initialized = time.perf_counter()
+    three_voice_separator = None
     if method == "target":
         from target_extract import TargetExtractor
 
@@ -102,58 +105,86 @@ def output_tracks(y, activity, method, args):
         separator = Separation(load_separator(args.models, "tuned", "cpu"), "cpu")
         voice = VoiceEmbeddings(args.models / "voiceprint.onnx")
         anchors = [voice(resample(s, RATE, 8000)) for s in cues]
+        sepformer_weights = getattr(args, "sepformer_three", None)
+        if sepformer_weights:
+            from sepformer_three import SepFormer
+
+            three_voice_separator = SepFormer(sepformer_weights)
     started = time.perf_counter()
     lengths = []
-    for index, (lo, hi) in enumerate(overlap_chunks):
+
+    def prepare(lo, hi):
         # An observed global identity must be active within the core interval.
         speakers = np.flatnonzero(activity[:, lo:hi].any(axis=1))
         a, b = lo * HOP, min(len(y), hi * HOP)
         left = max(0, a - 4800)
         right = min(len(y), b + 4800)
-        fragment = y[left:right]
+        use_three_voice_model = (
+            three_voice_separator is not None and (count[lo:hi] == 3).sum() >= 5
+        )
+        return lo, hi, a, b, left, y[left:right], speakers, use_three_voice_model
+
+    def infer(task):
+        fragment, speakers, use_three_voice_model = task[-3:]
         if method == "target":
-            separated = scale_sources(
+            return scale_sources(
                 separator.extract(fragment, cue_emb[speakers]), fragment
             )
-        else:
-            raw, _, _ = separator.infer(resample(fragment, RATE, 8000), len(speakers))
-            if len(raw) != len(speakers):
-                continue
-            embeds = [voice(wave) for wave in raw]
-            # The model outputs are unlabeled. Compare with the session anchors.
-            score = np.asarray(
-                [
+        mixture = resample(fragment, RATE, 8000)
+        if use_three_voice_model:
+            return scale_sources(three_voice_separator(mixture), mixture)
+        return separator.infer(mixture, len(speakers))[0]
+
+    jobs = [prepare(lo, hi) for lo, hi in overlap_chunks]
+    workers = getattr(args, "workers", 1) if method == "dprnn" else 1
+    with (
+        ThreadPoolExecutor(max_workers=workers) if workers > 1 else nullcontext()
+    ) as pool:
+        separated_jobs = pool.map(infer, jobs) if pool else map(infer, jobs)
+        for index, (job, separated) in enumerate(
+            zip(jobs, separated_jobs, strict=True)
+        ):
+            lo, hi, a, b, left, fragment, speakers, _ = job
+            if method == "dprnn":
+                if len(separated) != len(speakers):
+                    continue
+                embeds = [voice(wave) for wave in separated]
+                # Keep voice matching on the calling thread, in chronological order.
+                score = np.asarray(
                     [
-                        normalized_dot(e, anchors[i])
-                        if e is not None and anchors[i] is not None
-                        else 0.0
-                        for e in embeds
+                        [
+                            normalized_dot(e, anchors[i])
+                            if e is not None and anchors[i] is not None
+                            else 0.0
+                            for e in embeds
+                        ]
+                        for i in speakers
                     ]
-                    for i in speakers
-                ]
-            )
-            i, j = linear_sum_assignment(-score)
-            ordered = np.zeros((len(speakers), len(fragment)), np.float32)
-            for rank, k in zip(i, j):
-                s = resample(raw[k], 8000, RATE)
-                ordered[rank, : min(len(s), len(fragment))] = s[: len(fragment)]
-            separated = ordered
-        for i, idx in enumerate(speakers):
-            take = separated[i, a - left : b - left]
-            active = np.repeat(activity[idx, lo:hi], HOP)[: b - a]
-            outputs[idx, a:b] = take * active
-        lengths.append(hi - lo)
-        if (index + 1) % 32 == 0 or index + 1 == len(overlap_chunks):
-            print(
-                f"{method} overlap windows {index + 1}/{len(overlap_chunks)}, {time.perf_counter() - started:.1f} s",
-                flush=True,
-            )
+                )
+                i, j = linear_sum_assignment(-score)
+                ordered = np.zeros((len(speakers), len(fragment)), np.float32)
+                for rank, k in zip(i, j):
+                    s = resample(separated[k], 8000, RATE)
+                    ordered[rank, : min(len(s), len(fragment))] = s[: len(fragment)]
+                separated = ordered
+            for i, idx in enumerate(speakers):
+                take = separated[i, a - left : b - left]
+                active = np.repeat(activity[idx, lo:hi], HOP)[: b - a]
+                outputs[idx, a:b] = take * active
+            lengths.append(hi - lo)
+            if (index + 1) % 32 == 0 or index + 1 == len(overlap_chunks):
+                print(
+                    f"{method} overlap windows {index + 1}/{len(overlap_chunks)}, {time.perf_counter() - started:.1f} s",
+                    flush=True,
+                )
     prefix.update(
         overlap_regions=len(candidates),
         overlap_windows=len(overlap_chunks),
         processed_core_s=sum(lengths) * TICK,
         initialize_s=started - initialized,
         overlap_inference_s=time.perf_counter() - started,
+        workers=workers,
+        sepformer_three_windows=sum(bool(job[-1]) for job in jobs),
     )
     return outputs, prefix
 
@@ -170,7 +201,17 @@ def main():
     p.add_argument("--toolkit", type=Path, default=Path("wesep-real-tse"))
     p.add_argument("--wespeaker", type=Path, default=Path("wespeaker"))
     p.add_argument("--threads", type=int, default=4)
+    p.add_argument(
+        "--workers", type=int, default=1, help="Independent CPU windows for DPRNN"
+    )
+    p.add_argument(
+        "--sepformer-three", type=Path, help="Optional three-voice checkpoint directory"
+    )
     args = p.parse_args()
+    if args.threads < 1 or args.workers < 1:
+        p.error("Thread and worker counts must be positive")
+    if args.sepformer_three and args.method != "dprnn":
+        p.error("--sepformer-three requires --method dprnn")
     torch.set_num_threads(args.threads)
     wave, sr = sf.read(args.input, dtype="float32")
     if sr != RATE or wave.ndim != 1:

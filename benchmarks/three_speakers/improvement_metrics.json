@@ -1,0 +1,1500 @@
+{
+  "development_session": "R8008_M8013",
+  "reference_revision": "9527b7c64846fb38316a610f32e9d3466bd6d8b7",
+  "held_out_sessions": {
+    "R8008_M8014": {
+      "source": {
+        "dataset_revision": "cef2837c4a1a0762074522c1bbbbb90eb4d1acf5",
+        "asset": "audio/far/R8008_M8014_MS807.wav",
+        "array_sha256": "ee05cff80668316979976a1ce2b3c69922ed7a14959e51df2b7594a4e97b0323",
+        "channel_index": 0
+      },
+      "duration_s": 1937.0916875,
+      "model_wall_s": 137.1617738770001,
+      "decoder_wall_s": 0.09345627499715192,
+      "parameters_fit_on_this_recording": false,
+      "profile": {
+        "thresholds": [
+          0.8,
+          0.38,
+          0.35
+        ],
+        "expansion_frames": 15,
+        "promotion": {
+          "anchor": 0.22,
+          "radius_frames": 28,
+          "minimum_probability": 0.008,
+          "second_probability": 0.48
+        },
+        "trim_triples": [
+          0.006,
+          0.6
+        ]
+      },
+      "native": {
+        "diagnostics": {
+          "DER": 0.18680402004308005,
+          "overall_precision": 0.8508107304011504,
+          "overlap_recall": 0.8883641778345033,
+          "triple_speaker_recall": 0.7877094972067039,
+          "all_three_precision": 0.2846715328467153,
+          "all_three_recall": 0.36312849162011174,
+          "all_three_F1": 0.3191489361702128,
+          "predicted_three_seconds": 6.8500000000000005,
+          "reference_three_seconds": 5.37
+        },
+        "evaluation": {
+          "ref_labels": [
+            "N_SPK8051",
+            "N_SPK8052",
+            "N_SPK8053"
+          ],
+          "system_labels": [
+            "0",
+            "1",
+            "2"
+          ],
+          "mapping": {
+            "0": "N_SPK8051",
+            "2": "N_SPK8052",
+            "1": "N_SPK8053"
+          },
+          "scores": {
+            "full": {
+              "clock_s": 1937.1000000000001,
+              "reference_speaker_s": 1750.23,
+              "speaker_recall": 0.9803454403135587,
+              "DER": 0.18680402004308005,
+              "miss_s": 26.080000000000002,
+              "false_alarm_s": 292.55,
+              "confusion_s": 8.32
+            },
+            "single": {
+              "clock_s": 1515.18,
+              "reference_speaker_s": 1515.18,
+              "speaker_recall": 0.9946145012473766,
+              "DER": 0.05341279583943822,
+              "miss_s": 4.46,
+              "false_alarm_s": 72.77,
+              "confusion_s": 3.7
+            },
+            "two_simultaneous": {
+              "clock_s": 109.47,
+              "reference_speaker_s": 218.94,
+              "speaker_recall": 0.8957705307390152,
+              "DER": 0.11948479035352151,
+              "miss_s": 18.2,
+              "false_alarm_s": 3.34,
+              "confusion_s": 4.62
+            },
+            "three_simultaneous": {
+              "clock_s": 5.37,
+              "reference_speaker_s": 16.11,
+              "speaker_recall": 0.7877094972067039,
+              "DER": 0.2122905027932961,
+              "miss_s": 3.42,
+              "false_alarm_s": 0.0,
+              "confusion_s": 0.0
+            },
+            "all_overlap": {
+              "clock_s": 114.84,
+              "reference_speaker_s": 235.05,
+              "speaker_recall": 0.8883641778345033,
+              "DER": 0.12584556477345246,
+              "miss_s": 21.62,
+              "false_alarm_s": 3.34,
+              "confusion_s": 4.62
+            }
+          }
+        }
+      },
+      "candidate": {
+        "diagnostics": {
+          "DER": 0.09071379190163578,
+          "overall_precision": 0.9325693777816564,
+          "overlap_recall": 0.9184003403531164,
+          "triple_speaker_recall": 0.8801986343885785,
+          "all_three_precision": 0.32036199095022627,
+          "all_three_recall": 0.659217877094972,
+          "all_three_F1": 0.43118148599269185,
+          "predicted_three_seconds": 11.05,
+          "reference_three_seconds": 5.37
+        },
+        "evaluation": {
+          "ref_labels": [
+            "N_SPK8051",
+            "N_SPK8052",
+            "N_SPK8053"
+          ],
+          "system_labels": [
+            "0",
+            "1",
+            "2"
+          ],
+          "mapping": {
+            "0": "N_SPK8051",
+            "2": "N_SPK8052",
+            "1": "N_SPK8053"
+          },
+          "scores": {
+            "full": {
+              "clock_s": 1937.1000000000001,
+              "reference_speaker_s": 1750.23,
+              "speaker_recall": 0.9769058923684316,
+              "DER": 0.09071379190163578,
+              "miss_s": 35.14,
+              "false_alarm_s": 118.35000000000001,
+              "confusion_s": 5.28
+            },
+            "single": {
+              "clock_s": 1515.18,
+              "reference_speaker_s": 1515.18,
+              "speaker_recall": 0.9859818635409654,
+              "DER": 0.041519819427394765,
+              "miss_s": 18.57,
+              "false_alarm_s": 41.67,
+              "confusion_s": 2.67
+            },
+            "two_simultaneous": {
+              "clock_s": 109.47,
+              "reference_speaker_s": 218.94,
+              "speaker_recall": 0.9212112907645931,
+              "DER": 0.11007581985932219,
+              "miss_s": 14.64,
+              "false_alarm_s": 6.8500000000000005,
+              "confusion_s": 2.61
+            },
+            "three_simultaneous": {
+              "clock_s": 5.37,
+              "reference_speaker_s": 16.11,
+              "speaker_recall": 0.8801986343885785,
+              "DER": 0.11980136561142148,
+              "miss_s": 1.93,
+              "false_alarm_s": 0.0,
+              "confusion_s": 0.0
+            },
+            "all_overlap": {
+              "clock_s": 114.84,
+              "reference_speaker_s": 235.05,
+              "speaker_recall": 0.9184003403531164,
+              "DER": 0.11074239523505637,
+              "miss_s": 16.57,
+              "false_alarm_s": 6.8500000000000005,
+              "confusion_s": 2.61
+            }
+          }
+        }
+      }
+    },
+    "R8008_M8015": {
+      "source": {
+        "dataset_revision": "cef2837c4a1a0762074522c1bbbbb90eb4d1acf5",
+        "asset": "audio/far/R8008_M8015_MS808.wav",
+        "array_sha256": "702d2ab4f355f172b000f808a0b51d3f68716fc39efd01ef8e7f1152e4dd6b4c",
+        "channel_index": 0
+      },
+      "duration_s": 1896.185375,
+      "model_wall_s": 137.30399205499998,
+      "decoder_wall_s": 0.09462942300160648,
+      "parameters_fit_on_this_recording": false,
+      "profile": {
+        "thresholds": [
+          0.8,
+          0.38,
+          0.35
+        ],
+        "expansion_frames": 15,
+        "promotion": {
+          "anchor": 0.22,
+          "radius_frames": 28,
+          "minimum_probability": 0.008,
+          "second_probability": 0.48
+        },
+        "trim_triples": [
+          0.006,
+          0.6
+        ]
+      },
+      "native": {
+        "diagnostics": {
+          "DER": 0.24881548236102188,
+          "overall_precision": 0.8128352562281966,
+          "overlap_recall": 0.8293865675260648,
+          "triple_speaker_recall": 0.7897727272727273,
+          "all_three_precision": 0.1941031941031941,
+          "all_three_recall": 0.44886363636363635,
+          "all_three_F1": 0.27101200686106347,
+          "predicted_three_seconds": 4.07,
+          "reference_three_seconds": 1.76
+        },
+        "evaluation": {
+          "ref_labels": [
+            "N_SPK8057",
+            "N_SPK8058",
+            "N_SPK8059"
+          ],
+          "system_labels": [
+            "0",
+            "1",
+            "2"
+          ],
+          "mapping": {
+            "1": "N_SPK8057",
+            "0": "N_SPK8058",
+            "2": "N_SPK8059"
+          },
+          "scores": {
+            "full": {
+              "clock_s": 1896.19,
+              "reference_speaker_s": 1572.3700000000001,
+              "speaker_recall": 0.9646838848362663,
+              "DER": 0.24881548236102188,
+              "miss_s": 41.96,
+              "false_alarm_s": 335.7,
+              "confusion_s": 13.57
+            },
+            "single": {
+              "clock_s": 1324.91,
+              "reference_speaker_s": 1324.91,
+              "speaker_recall": 0.9899540346136718,
+              "DER": 0.05541508479821271,
+              "miss_s": 5.13,
+              "false_alarm_s": 60.11,
+              "confusion_s": 8.18
+            },
+            "two_simultaneous": {
+              "clock_s": 121.09,
+              "reference_speaker_s": 242.18,
+              "speaker_recall": 0.8302502271038071,
+              "DER": 0.17804938475514082,
+              "miss_s": 35.72,
+              "false_alarm_s": 2.0100000000000002,
+              "confusion_s": 5.39
+            },
+            "three_simultaneous": {
+              "clock_s": 1.76,
+              "reference_speaker_s": 5.28,
+              "speaker_recall": 0.7897727272727273,
+              "DER": 0.21022727272727273,
+              "miss_s": 1.11,
+              "false_alarm_s": 0.0,
+              "confusion_s": 0.0
+            },
+            "all_overlap": {
+              "clock_s": 122.85000000000001,
+              "reference_speaker_s": 247.46,
+              "speaker_recall": 0.8293865675260648,
+              "DER": 0.1787359573264366,
+              "miss_s": 36.83,
+              "false_alarm_s": 2.0100000000000002,
+              "confusion_s": 5.39
+            }
+          }
+        }
+      },
+      "candidate": {
+        "diagnostics": {
+          "DER": 0.13147668805688228,
+          "overall_precision": 0.9030241323258846,
+          "overlap_recall": 0.8807484037824295,
+          "triple_speaker_recall": 0.8314393939393939,
+          "all_three_precision": 0.05464824120603015,
+          "all_three_recall": 0.4943181818181818,
+          "all_three_F1": 0.09841628959276018,
+          "predicted_three_seconds": 15.92,
+          "reference_three_seconds": 1.76
+        },
+        "evaluation": {
+          "ref_labels": [
+            "N_SPK8057",
+            "N_SPK8058",
+            "N_SPK8059"
+          ],
+          "system_labels": [
+            "0",
+            "1",
+            "2"
+          ],
+          "mapping": {
+            "1": "N_SPK8057",
+            "0": "N_SPK8058",
+            "2": "N_SPK8059"
+          },
+          "scores": {
+            "full": {
+              "clock_s": 1896.19,
+              "reference_speaker_s": 1572.3700000000001,
+              "speaker_recall": 0.9645439686587762,
+              "DER": 0.13147668805688228,
+              "miss_s": 43.86,
+              "false_alarm_s": 150.98,
+              "confusion_s": 11.89
+            },
+            "single": {
+              "clock_s": 1324.91,
+              "reference_speaker_s": 1324.91,
+              "speaker_recall": 0.9801948811617393,
+              "DER": 0.0594606426096867,
+              "miss_s": 21.52,
+              "false_alarm_s": 52.54,
+              "confusion_s": 4.72
+            },
+            "two_simultaneous": {
+              "clock_s": 121.09,
+              "reference_speaker_s": 242.18,
+              "speaker_recall": 0.8818234371128912,
+              "DER": 0.1679329424395078,
+              "miss_s": 21.45,
+              "false_alarm_s": 12.05,
+              "confusion_s": 7.17
+            },
+            "three_simultaneous": {
+              "clock_s": 1.76,
+              "reference_speaker_s": 5.28,
+              "speaker_recall": 0.8314393939393939,
+              "DER": 0.16856060606060605,
+              "miss_s": 0.89,
+              "false_alarm_s": 0.0,
+              "confusion_s": 0.0
+            },
+            "all_overlap": {
+              "clock_s": 122.85000000000001,
+              "reference_speaker_s": 247.46,
+              "speaker_recall": 0.8807484037824295,
+              "DER": 0.16794633476117352,
+              "miss_s": 22.34,
+              "false_alarm_s": 12.05,
+              "confusion_s": 7.17
+            }
+          }
+        }
+      }
+    }
+  },
+  "pooled_held_out_scores": {
+    "native": {
+      "full": {
+        "speaker_recall": 0.972933846987299,
+        "speaker_precision": 0.8325594092937846,
+        "DER": 0.2161500030096912,
+        "reference_speaker_s": 3322.6000000000004
+      },
+      "all_overlap": {
+        "speaker_recall": 0.8581169302190628,
+        "speaker_precision": 0.9642299899862602,
+        "DER": 0.1529709228824273,
+        "reference_speaker_s": 482.51
+      },
+      "three_simultaneous": {
+        "speaker_recall": 0.7882187938288919,
+        "speaker_precision": 1.0,
+        "DER": 0.211781206171108,
+        "reference_speaker_s": 21.39
+      },
+      "exact_three_frame_decisions": {
+        "precision": 0.2509157509157509,
+        "recall": 0.3842917251051894,
+        "F1": 0.30360110803324103,
+        "reference_s": 7.13,
+        "predicted_s": 10.920000000000002
+      }
+    },
+    "candidate": {
+      "full": {
+        "speaker_recall": 0.9710557996749534,
+        "speaker_precision": 0.9184441477626938,
+        "DER": 0.11000421356768794,
+        "reference_speaker_s": 3322.6000000000004
+      },
+      "all_overlap": {
+        "speaker_recall": 0.8990901742969059,
+        "speaker_precision": 0.9379891891891893,
+        "DER": 0.1400799983420033,
+        "reference_speaker_s": 482.51
+      },
+      "three_simultaneous": {
+        "speaker_recall": 0.8681626928471248,
+        "speaker_precision": 1.0,
+        "DER": 0.13183730715287517,
+        "reference_speaker_s": 21.39
+      },
+      "exact_three_frame_decisions": {
+        "precision": 0.1635150166852058,
+        "recall": 0.6185133239831697,
+        "F1": 0.2586510263929619,
+        "reference_s": 7.13,
+        "predicted_s": 26.97
+      }
+    }
+  },
+  "waveform_trial": {
+    "cases": [
+      {
+        "name": "evaluation_G3_3voices.1.clean",
+        "condition": "clean",
+        "audio_seconds": 1.4325,
+        "exact_three_seconds": 0.18,
+        "models": {
+          "DPRNN_FP32": {
+            "elapsed_s": 0.7352633059999789,
+            "si_sdri_db": [
+              3.764911082485889,
+              3.41763504196122,
+              0.9945056595504651
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 0.8255048130013165,
+            "si_sdri_db": [
+              4.687663963671155,
+              2.6104906738359013,
+              0.8628135754098154
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.2981282329928945,
+            "si_sdri_db": [
+              2.523769532393264,
+              -0.9265881847542508,
+              9.99389602489674
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G3_3voices.1.room",
+        "condition": "room",
+        "audio_seconds": 1.4325,
+        "exact_three_seconds": 0.18,
+        "models": {
+          "DPRNN_INT8": {
+            "elapsed_s": 0.7982626070006518,
+            "si_sdri_db": [
+              4.627947828200513,
+              2.358992982621131,
+              6.1902010874151525
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.357810988003621,
+            "si_sdri_db": [
+              6.265339585406158,
+              7.610024034266295,
+              7.073318858372901
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.730012287000136,
+            "si_sdri_db": [
+              4.692945773001208,
+              1.6448408116078443,
+              6.575694215314835
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G3_3voices.2.clean",
+        "condition": "clean",
+        "audio_seconds": 1.565,
+        "exact_three_seconds": 0.36,
+        "models": {
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.6627003920002608,
+            "si_sdri_db": [
+              4.735331355828319,
+              6.275904412490754,
+              7.111576068105919
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 1.036080761004996,
+            "si_sdri_db": [
+              6.523912607666672,
+              4.194228071501916,
+              6.4425869906648
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.1593926260029548,
+            "si_sdri_db": [
+              6.16993620164673,
+              4.454266839574467,
+              6.3180829277475095
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G3_3voices.2.room",
+        "condition": "room",
+        "audio_seconds": 1.565,
+        "exact_three_seconds": 0.38,
+        "models": {
+          "DPRNN_FP32": {
+            "elapsed_s": 0.8247761419988819,
+            "si_sdri_db": [
+              5.177455523530684,
+              4.678092569515025,
+              4.021939805814256
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.2188641800021287,
+            "si_sdri_db": [
+              5.569189899317781,
+              4.1957694087670205,
+              4.009275139771152
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.2190886119933566,
+            "si_sdri_db": [
+              -2.1150812857503665,
+              0.375474141698418,
+              5.799264392426942
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G3_3voices.3.clean",
+        "condition": "clean",
+        "audio_seconds": 1.6325,
+        "exact_three_seconds": 0.2,
+        "models": {
+          "DPRNN_INT8": {
+            "elapsed_s": 1.2519009969983017,
+            "si_sdri_db": [
+              4.400194122051677,
+              6.01818233565503,
+              3.1162625009631744
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.056358984998951,
+            "si_sdri_db": [
+              9.795632625914712,
+              22.65800829391105,
+              7.7259676857721455
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.8502206039993325,
+            "si_sdri_db": [
+              4.9553963222037325,
+              2.3025828532672605,
+              2.4295240314395206
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G3_3voices.3.room",
+        "condition": "room",
+        "audio_seconds": 1.6325,
+        "exact_three_seconds": 0.2,
+        "models": {
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.957621105997532,
+            "si_sdri_db": [
+              7.022655005570733,
+              2.3831706309959184,
+              6.680648956712487
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.9212067069965997,
+            "si_sdri_db": [
+              5.078008042164021,
+              -1.27816892164671,
+              4.458338715303761
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 0.9562833870004397,
+            "si_sdri_db": [
+              1.0522882739647184,
+              -5.101386914163001,
+              4.684254534298093
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G4_3voices.1.clean",
+        "condition": "clean",
+        "audio_seconds": 2.185,
+        "exact_three_seconds": 0.66,
+        "models": {
+          "DPRNN_FP32": {
+            "elapsed_s": 1.1653773150028428,
+            "si_sdri_db": [
+              0.20166784341945157,
+              0.9104140260195788,
+              1.15604817359361
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.3930921810024302,
+            "si_sdri_db": [
+              -0.2456075599713987,
+              -4.722712779827224,
+              -0.9979810152104163
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.7014028030025656,
+            "si_sdri_db": [
+              4.719169535313271,
+              3.966295180733228,
+              -2.7554624794838674
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G4_3voices.1.room",
+        "condition": "room",
+        "audio_seconds": 2.185,
+        "exact_three_seconds": 0.66,
+        "models": {
+          "DPRNN_INT8": {
+            "elapsed_s": 1.749344398995163,
+            "si_sdri_db": [
+              1.920610779364619,
+              0.9230561295511874,
+              -1.4509594889700193
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.8679287940030918,
+            "si_sdri_db": [
+              4.308699484897102,
+              6.146677248391438,
+              -1.2784934495814326
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 1.223010488,
+            "si_sdri_db": [
+              1.9293759196104936,
+              1.2070433023430087,
+              -3.8633321142431525
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G4_3voices.2.clean",
+        "condition": "clean",
+        "audio_seconds": 2.305,
+        "exact_three_seconds": 0.28,
+        "models": {
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 4.610187427999335,
+            "si_sdri_db": [
+              2.61062243072776,
+              12.69802479129194,
+              2.2277395997121032
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 1.4694717820020742,
+            "si_sdri_db": [
+              8.598022537438132,
+              10.669192385329477,
+              6.4659395824702965
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.2817793779977364,
+            "si_sdri_db": [
+              8.420307025885693,
+              10.448507625980275,
+              6.143480709037709
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G4_3voices.2.room",
+        "condition": "room",
+        "audio_seconds": 2.305,
+        "exact_three_seconds": 0.3,
+        "models": {
+          "DPRNN_FP32": {
+            "elapsed_s": 1.3389833879991784,
+            "si_sdri_db": [
+              -2.950604738249835,
+              10.420627434088097,
+              -1.354854747204671
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.4120517100018333,
+            "si_sdri_db": [
+              -2.963756023436577,
+              9.963442571755634,
+              -0.4404355906650553
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 4.423031172002084,
+            "si_sdri_db": [
+              0.8145240340436244,
+              12.588350012672317,
+              0.2700059777218389
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G4_3voices.3.clean",
+        "condition": "clean",
+        "audio_seconds": 1.705,
+        "exact_three_seconds": 0.3,
+        "models": {
+          "DPRNN_INT8": {
+            "elapsed_s": 1.012314145998971,
+            "si_sdri_db": [
+              3.366839546299669,
+              0.02998967640480643,
+              -0.6860009026437508
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.3366181519959355,
+            "si_sdri_db": [
+              10.649237074087281,
+              14.50698651048806,
+              6.379779979606987
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.9270927239995217,
+            "si_sdri_db": [
+              10.626877288763152,
+              5.1848540485530314,
+              2.810849466309742
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G4_3voices.3.room",
+        "condition": "room",
+        "audio_seconds": 1.705,
+        "exact_three_seconds": 0.3,
+        "models": {
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.562220324994996,
+            "si_sdri_db": [
+              7.146314951158065,
+              4.328099573108399,
+              1.4666092717286547
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.9015813200021512,
+            "si_sdri_db": [
+              2.9183042814742155,
+              0.8087232474939423,
+              0.24258703825838435
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.1847857890024898,
+            "si_sdri_db": [
+              0.4477151875585115,
+              2.6635292498143723,
+              2.791987908927264
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G5_3voices.1.clean",
+        "condition": "clean",
+        "audio_seconds": 1.8325,
+        "exact_three_seconds": 0.52,
+        "models": {
+          "DPRNN_FP32": {
+            "elapsed_s": 0.9731509240009473,
+            "si_sdri_db": [
+              2.919087975332818,
+              10.156919409139611,
+              0.1974638512905873
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.2308218870020937,
+            "si_sdri_db": [
+              3.341351686544494,
+              10.070216946953444,
+              0.4996502769740232
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.0449554809965775,
+            "si_sdri_db": [
+              13.032802671840772,
+              14.422156484721791,
+              15.047744469491812
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G5_3voices.1.room",
+        "condition": "room",
+        "audio_seconds": 1.8325,
+        "exact_three_seconds": 0.54,
+        "models": {
+          "DPRNN_INT8": {
+            "elapsed_s": 1.09528544999921,
+            "si_sdri_db": [
+              4.019541112109836,
+              7.250393956078145,
+              3.4241757541272126
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.1743149500034633,
+            "si_sdri_db": [
+              8.682519724716586,
+              12.138450966195752,
+              7.760487109289637
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.9954160650013364,
+            "si_sdri_db": [
+              4.657380734085977,
+              7.398668481426145,
+              4.169035127067567
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G5_3voices.2.clean",
+        "condition": "clean",
+        "audio_seconds": 1.6725,
+        "exact_three_seconds": 0.36,
+        "models": {
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.6313656339989393,
+            "si_sdri_db": [
+              5.602282456916318,
+              13.528755155254796,
+              5.324012006396825
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.939028134002001,
+            "si_sdri_db": [
+              -1.729336679946364,
+              4.826619295916588,
+              7.100704586165356
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 0.9749897980000242,
+            "si_sdri_db": [
+              0.4732894479919221,
+              8.546962390268845,
+              7.20390904623879
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G5_3voices.2.room",
+        "condition": "room",
+        "audio_seconds": 1.6725,
+        "exact_three_seconds": 0.38,
+        "models": {
+          "DPRNN_FP32": {
+            "elapsed_s": 0.8705437230019015,
+            "si_sdri_db": [
+              0.28099301410412103,
+              7.362708306808361,
+              4.155163801121988
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 0.9869126049961778,
+            "si_sdri_db": [
+              -0.4400896659235354,
+              6.687431638347288,
+              7.275806511030392
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.01821162700071,
+            "si_sdri_db": [
+              0.9067133595862504,
+              11.443789193467232,
+              5.298932038479581
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G5_3voices.3.clean",
+        "condition": "clean",
+        "audio_seconds": 1.7325,
+        "exact_three_seconds": 0.5,
+        "models": {
+          "DPRNN_INT8": {
+            "elapsed_s": 1.2942828189989086,
+            "si_sdri_db": [
+              2.6859321965421996,
+              0.35953772633370384,
+              2.2178626290404466
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.6862471679996816,
+            "si_sdri_db": [
+              5.934406632423366,
+              -4.389159745685468,
+              -6.277765097732131
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.9524532969953725,
+            "si_sdri_db": [
+              3.1522672498917217,
+              0.193677024989948,
+              1.9442234702422132
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G5_3voices.3.room",
+        "condition": "room",
+        "audio_seconds": 1.7325,
+        "exact_three_seconds": 0.5,
+        "models": {
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.9066830949959694,
+            "si_sdri_db": [
+              7.707336962603562,
+              6.359719581102765,
+              4.659137581191644
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.8927523930033203,
+            "si_sdri_db": [
+              2.7022468663351553,
+              0.1527770640777879,
+              0.2222225360672626
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 0.9635854379957891,
+            "si_sdri_db": [
+              2.078068145751593,
+              -0.5679925492633533,
+              -0.08669508333335546
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G6_3voices.1.clean",
+        "condition": "clean",
+        "audio_seconds": 2.2925,
+        "exact_three_seconds": 0.46,
+        "models": {
+          "DPRNN_FP32": {
+            "elapsed_s": 1.3952279449949856,
+            "si_sdri_db": [
+              -2.975240739511582,
+              0.3762045047727165,
+              4.542903677639375
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.7026490729986108,
+            "si_sdri_db": [
+              -2.427635606647664,
+              -0.42611974060786384,
+              3.678559068236675
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 4.367550201000995,
+            "si_sdri_db": [
+              4.373509769608727,
+              8.101206924491473,
+              6.049975415845427
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G6_3voices.1.room",
+        "condition": "room",
+        "audio_seconds": 2.2925,
+        "exact_three_seconds": 0.48,
+        "models": {
+          "DPRNN_INT8": {
+            "elapsed_s": 1.3196418349980377,
+            "si_sdri_db": [
+              0.2554871612135844,
+              2.001106572206905,
+              2.07968884707258
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.9481992540022475,
+            "si_sdri_db": [
+              5.7062174319724015,
+              6.894759747633247,
+              5.442505729649714
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 1.3684100390019012,
+            "si_sdri_db": [
+              1.4117719295442988,
+              2.883685444107061,
+              2.9577163976574052
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G6_3voices.2.clean",
+        "condition": "clean",
+        "audio_seconds": 2.125,
+        "exact_three_seconds": 0.28,
+        "models": {
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.7263652839974384,
+            "si_sdri_db": [
+              10.844292701731616,
+              -0.5949074250781095,
+              -6.487301095942833
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 1.2232897569992929,
+            "si_sdri_db": [
+              2.613059174984558,
+              -0.48166312718056825,
+              -4.893681436494336
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.4604415020003216,
+            "si_sdri_db": [
+              2.8626133743539137,
+              3.996988920195709,
+              1.2648156437429579
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G6_3voices.2.room",
+        "condition": "room",
+        "audio_seconds": 2.125,
+        "exact_three_seconds": 0.26,
+        "models": {
+          "DPRNN_FP32": {
+            "elapsed_s": 1.314955847003148,
+            "si_sdri_db": [
+              3.176676677993421,
+              3.2315171145012886,
+              2.834784911961153
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.508084642002359,
+            "si_sdri_db": [
+              3.5302985648084464,
+              -0.9034356706870307,
+              -4.463067879263369
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 3.79883467900072,
+            "si_sdri_db": [
+              9.844550000615017,
+              -1.0851844296525943,
+              -4.602523524987043
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G6_3voices.3.clean",
+        "condition": "clean",
+        "audio_seconds": 1.845,
+        "exact_three_seconds": 0.58,
+        "models": {
+          "DPRNN_INT8": {
+            "elapsed_s": 1.3734162530017784,
+            "si_sdri_db": [
+              2.7697179159519605,
+              -2.6057911174073904,
+              -3.514430860472141
+            ]
+          },
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.6365638589995797,
+            "si_sdri_db": [
+              7.174728963333362,
+              13.212999586667832,
+              5.625636319839778
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 0.9932127029969706,
+            "si_sdri_db": [
+              2.0425625206836755,
+              -3.111752763226386,
+              -4.47005595080761
+            ]
+          }
+        }
+      },
+      {
+        "name": "evaluation_G6_3voices.3.room",
+        "condition": "room",
+        "audio_seconds": 1.845,
+        "exact_three_seconds": 0.58,
+        "models": {
+          "SepFormer_Libri3Mix": {
+            "elapsed_s": 2.980749645998003,
+            "si_sdri_db": [
+              7.027089516141366,
+              6.021996779809636,
+              2.825386639233572
+            ]
+          },
+          "DPRNN_FP32": {
+            "elapsed_s": 1.1491234999994049,
+            "si_sdri_db": [
+              4.213214466298424,
+              3.0867505342366197,
+              1.1077797351557788
+            ]
+          },
+          "DPRNN_INT8": {
+            "elapsed_s": 1.2837913100011065,
+            "si_sdri_db": [
+              1.3889324071958664,
+              -0.26629461969847235,
+              -2.1796716022899805
+            ]
+          }
+        }
+      }
+    ],
+    "summary": {
+      "clean": {
+        "DPRNN_FP32": {
+          "seconds": 12.659869251998316,
+          "median_exact_three_si_sdri_db": 2.71195432064715
+        },
+        "DPRNN_INT8": {
+          "seconds": 14.960585473003448,
+          "median_exact_three_si_sdri_db": 2.816165645152937
+        },
+        "SepFormer_Libri3Mix": {
+          "seconds": 39.758443619983154,
+          "median_exact_three_si_sdri_db": 6.16293991416809
+        }
+      },
+      "room": {
+        "DPRNN_FP32": {
+          "seconds": 12.53077189900796,
+          "median_exact_three_si_sdri_db": 2.9380103395658104
+        },
+        "DPRNN_INT8": {
+          "seconds": 14.476893351995386,
+          "median_exact_three_si_sdri_db": 2.039587358979249
+        },
+        "SepFormer_Libri3Mix": {
+          "seconds": 39.214694247995794,
+          "median_exact_three_si_sdri_db": 5.910630586118289
+        }
+      }
+    },
+    "threads": 3,
+    "sepformer_revision": "1f2d824e2333aec9e60d0030fb144885c1afc426",
+    "sepformer_weight_sha256": {
+      "decoder.ckpt": "9afdda4e4ecb9eefb5d49329193c7a9215ae7443aab206f2fe4eb0f50988ca53",
+      "encoder.ckpt": "e949e80c1a96965b723460209bb155eac1fdb2f6d2cf4e7b3e1d3152716f38d0",
+      "masknet.ckpt": "416af7b09d912c486261dd824788dd92d3b21373c8ec4d029209792522f4dbcb"
+    }
+  },
+  "cpu_export_trial": {
+    "duration_s": 300,
+    "runs": {
+      "serial": {
+        "method": "dprnn",
+        "overlap_regions": 32,
+        "overlap_windows": 32,
+        "processed_core_s": 19.7,
+        "initialize_s": 2.580166323998128,
+        "overlap_inference_s": 21.033273709006608,
+        "workers": 1,
+        "audio_wall_s": 23.807207746998756,
+        "speaker_ids": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sample_rate": 16000,
+        "sample_count": 4800000,
+        "detected_overlap_seconds": 19.7
+      },
+      "parallel": {
+        "method": "dprnn",
+        "overlap_regions": 32,
+        "overlap_windows": 32,
+        "processed_core_s": 19.7,
+        "initialize_s": 2.1599113780030166,
+        "overlap_inference_s": 12.722815766996064,
+        "workers": 4,
+        "audio_wall_s": 15.09828052100056,
+        "speaker_ids": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sample_rate": 16000,
+        "sample_count": 4800000,
+        "detected_overlap_seconds": 19.7
+      },
+      "serial_repeat": {
+        "method": "dprnn",
+        "overlap_regions": 32,
+        "overlap_windows": 32,
+        "processed_core_s": 19.7,
+        "initialize_s": 2.161997330003942,
+        "overlap_inference_s": 21.921668762995978,
+        "workers": 1,
+        "audio_wall_s": 24.285000967996893,
+        "speaker_ids": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sample_rate": 16000,
+        "sample_count": 4800000,
+        "detected_overlap_seconds": 19.7
+      },
+      "parallel_repeat": {
+        "method": "dprnn",
+        "overlap_regions": 32,
+        "overlap_windows": 32,
+        "processed_core_s": 19.7,
+        "initialize_s": 1.9148929039947689,
+        "overlap_inference_s": 13.132355863002886,
+        "workers": 4,
+        "audio_wall_s": 15.251562637000461,
+        "speaker_ids": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sample_rate": 16000,
+        "sample_count": 4800000,
+        "detected_overlap_seconds": 19.7
+      }
+    },
+    "parity": {
+      "0": {
+        "samples": 4800000,
+        "max_pcm16_delta": 1,
+        "different_samples": 34
+      },
+      "1": {
+        "samples": 4800000,
+        "max_pcm16_delta": 1,
+        "different_samples": 23
+      },
+      "2": {
+        "samples": 4800000,
+        "max_pcm16_delta": 1,
+        "different_samples": 16
+      }
+    }
+  },
+  "recognition_original_recording": {
+    "baseline": {
+      "headset_oracle_timing": false,
+      "asr_wall_s": 156.0657015129982,
+      "speakers_decoded": 3,
+      "cpCER": 0.4286033769428603,
+      "correct_reference_characters": 0.5725148160572515,
+      "totals": {
+        "reference_chars": 8943,
+        "recognized_chars": 5547,
+        "correct_reference_chars": 5120,
+        "substitutions": 417,
+        "deletions": 3406,
+        "insertions": 10,
+        "errors": 3833
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8047",
+          "system": "1",
+          "reference_chars": 3167,
+          "recognized_chars": 1949,
+          "correct_reference_chars": 1816,
+          "substitutions": 132,
+          "deletions": 1219,
+          "insertions": 1
+        },
+        {
+          "reference": "N_SPK8048",
+          "system": "2",
+          "reference_chars": 3375,
+          "recognized_chars": 2473,
+          "correct_reference_chars": 2338,
+          "substitutions": 128,
+          "deletions": 909,
+          "insertions": 7
+        },
+        {
+          "reference": "N_SPK8049",
+          "system": "0",
+          "reference_chars": 2401,
+          "recognized_chars": 1125,
+          "correct_reference_chars": 966,
+          "substitutions": 157,
+          "deletions": 1278,
+          "insertions": 2
+        }
+      ]
+    },
+    "level_normalized": {
+      "headset_oracle_timing": false,
+      "asr_wall_s": 188.39330562300165,
+      "speakers_decoded": 3,
+      "target_rms": 0.035,
+      "cpCER": 0.38946662193894666,
+      "correct_reference_characters": 0.6129934026612993,
+      "totals": {
+        "reference_chars": 8943,
+        "recognized_chars": 6042,
+        "correct_reference_chars": 5482,
+        "substitutions": 538,
+        "deletions": 2923,
+        "insertions": 22,
+        "errors": 3483
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8047",
+          "system": "1",
+          "reference_chars": 3167,
+          "recognized_chars": 2186,
+          "correct_reference_chars": 1988,
+          "substitutions": 191,
+          "deletions": 988,
+          "insertions": 7
+        },
+        {
+          "reference": "N_SPK8048",
+          "system": "2",
+          "reference_chars": 3375,
+          "recognized_chars": 2568,
+          "correct_reference_chars": 2420,
+          "substitutions": 138,
+          "deletions": 817,
+          "insertions": 10
+        },
+        {
+          "reference": "N_SPK8049",
+          "system": "0",
+          "reference_chars": 2401,
+          "recognized_chars": 1288,
+          "correct_reference_chars": 1074,
+          "substitutions": 209,
+          "deletions": 1118,
+          "insertions": 5
+        }
+      ]
+    },
+    "combined_candidate": {
+      "headset_oracle_timing": false,
+      "asr_wall_s": 178.89954118400055,
+      "speakers_decoded": 3,
+      "target_rms": 0.035,
+      "cpCER": 0.40825226434082523,
+      "correct_reference_characters": 0.5944313988594432,
+      "totals": {
+        "reference_chars": 8943,
+        "recognized_chars": 5919,
+        "correct_reference_chars": 5316,
+        "substitutions": 579,
+        "deletions": 3048,
+        "insertions": 24,
+        "errors": 3651
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8047",
+          "system": "1",
+          "reference_chars": 3167,
+          "recognized_chars": 2139,
+          "correct_reference_chars": 1943,
+          "substitutions": 190,
+          "deletions": 1034,
+          "insertions": 6
+        },
+        {
+          "reference": "N_SPK8048",
+          "system": "2",
+          "reference_chars": 3375,
+          "recognized_chars": 2517,
+          "correct_reference_chars": 2331,
+          "substitutions": 173,
+          "deletions": 871,
+          "insertions": 13
+        },
+        {
+          "reference": "N_SPK8049",
+          "system": "0",
+          "reference_chars": 2401,
+          "recognized_chars": 1263,
+          "correct_reference_chars": 1042,
+          "substitutions": 216,
+          "deletions": 1143,
+          "insertions": 5
+        }
+      ]
+    },
+    "combined_candidate_render": {
+      "method": "dprnn",
+      "overlap_regions": 409,
+      "overlap_windows": 410,
+      "processed_core_s": 264.55,
+      "initialize_s": 3.731949686000007,
+      "overlap_inference_s": 212.54832927399548,
+      "workers": 4,
+      "sepformer_three_windows": 51,
+      "audio_wall_s": 218.02299586599838,
+      "speaker_ids": [
+        "0",
+        "1",
+        "2"
+      ],
+      "sample_rate": 16000,
+      "sample_count": 35831528,
+      "detected_overlap_seconds": 263.2
+    }
+  }
+}

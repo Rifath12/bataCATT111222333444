@@ -24,6 +24,14 @@ class Config(c.Structure):
     ]
 
 
+class Segment(c.Structure):
+    _fields_ = [
+        ("start_time", c.c_double),
+        ("end_time", c.c_double),
+        ("speaker", c.c_int32),
+    ]
+
+
 class Runtime:
     def __init__(self, library):
         self.lib = c.CDLL(str(library.resolve()))
@@ -42,6 +50,15 @@ class Runtime:
         self.start = self.bind("frame_probs_start", c.c_int64, handle)
         self.end = self.bind("frame_count", c.c_int64, handle)
         self.copy = self.bind("frame_probs", c.c_int, handle, floats, c.c_size_t)
+        self.segments = self.bind(
+            "segments",
+            c.c_int,
+            handle,
+            c.c_void_p,
+            c.POINTER(Segment),
+            c.c_size_t,
+            c.POINTER(c.c_size_t),
+        )
         self.lib.nemo_speech_asr_last_error.restype = c.c_char_p
 
     def bind(self, name, returned, *args):
@@ -114,6 +131,19 @@ def export(args):
                     print(f"Native probability frames {end}", flush=True)
         rt.check(rt.finish(stream))
         collect()
+        if args.default_rttm is not None:
+            count = c.c_size_t()
+            rt.check(rt.segments(stream, None, None, 0, c.byref(count)))
+            spans = (Segment * count.value)()
+            rt.check(rt.segments(stream, None, spans, count.value, c.byref(count)))
+            args.default_rttm.write_text(
+                "".join(
+                    f"SPEAKER {args.recording_id} 1 {s.start_time:.3f} "
+                    f"{s.end_time - s.start_time:.3f} <NA> <NA> speaker_{s.speaker} <NA> <NA>\n"
+                    for s in spans
+                ),
+                encoding="utf-8",
+            )
         return np.concatenate(parts, axis=0), step
     finally:
         if stream.value:
@@ -127,6 +157,10 @@ def main():
     p.add_argument("--library", type=Path, required=True)
     p.add_argument("--model", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
+    p.add_argument(
+        "--default-rttm", type=Path, help="Also save the native postprocessing"
+    )
+    p.add_argument("--recording-id", default="meeting")
     args = p.parse_args()
     started = time.perf_counter()
     probabilities, step = export(args)

@@ -121,7 +121,14 @@ def inference_spans(intervals, duration):
 
 
 def transcribe(
-    wav_paths, times, asr, tokenizer, threads=4, batch_size=1, character_fn=None
+    wav_paths,
+    times,
+    asr,
+    tokenizer,
+    threads=4,
+    batch_size=1,
+    character_fn=None,
+    target_rms=None,
 ):
     decoder = sx.OfflineRecognizer.from_zipformer_ctc(
         model=str(asr), tokens=str(tokenizer), num_threads=threads
@@ -144,6 +151,10 @@ def transcribe(
                 stream = decoder.create_stream()
                 # Pad the ends without importing adjacent speakers' words.
                 speech = y[round(a * sr) : round(b * sr)]
+                if target_rms:
+                    rms = max(float(np.sqrt(np.mean(np.square(speech)))), 1e-7)
+                    peak = max(float(np.abs(speech).max()), 1e-7)
+                    speech = speech * min(target_rms / rms, 0.98 / peak, 20.0)
                 stream.accept_waveform(sr, np.pad(speech, (800, 1280)))
                 streams.append(stream)
             decoder.decode_streams(streams)
@@ -190,7 +201,14 @@ def main():
         help="The supplied int8 Zipformer expects one utterance per batch",
     )
     p.add_argument("--headsets", action="store_true")
+    p.add_argument(
+        "--target-rms",
+        type=float,
+        help="Optional per-utterance gain with peak limiting",
+    )
     args = p.parse_args()
+    if args.target_rms is not None and not 0 < args.target_rms < 1:
+        p.error("--target-rms must be between 0 and 1")
     if args.headsets and not args.reference:
         p.error("--headsets requires reference timing from --reference")
     refs = textgrid(args.reference) if args.reference else []
@@ -222,6 +240,7 @@ def main():
         args.threads,
         args.batch,
         export_characters,
+        args.target_rms,
     )
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "transcript.jsonl").write_text(
@@ -240,6 +259,8 @@ def main():
         "asr_wall_s": wall,
         "speakers_decoded": len(paths),
     }
+    if args.target_rms:
+        evaluation["target_rms"] = args.target_rms
     if refs:
         evaluation.update(text_scores(refs, results))
     (args.out / "asr_scores.json").write_text(
