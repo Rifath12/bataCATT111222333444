@@ -1,0 +1,12 @@
+{
+  "fixed_channels_verified": 3,
+  "distinct_source_intervals": 410,
+  "overlapping_reuse_intervals": 0,
+  "intersection_with_original_24_case_donors": 0,
+  "intersection_with_calibration": 0,
+  "calibration_steps": 3750,
+  "time_preserved": true,
+  "out_of_window_audio_sample_exact_s": 1073.6120625,
+  "vacated_slots_digital_silence_s": 414.19,
+  "rttm_exclusive_source_throughout_each_trimmed_donor": true
+}

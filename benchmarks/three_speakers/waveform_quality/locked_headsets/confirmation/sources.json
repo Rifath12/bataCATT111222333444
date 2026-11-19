@@ -1,0 +1,56 @@
+{
+  "rooms": {
+    "R8002_M8002": [
+      8005,
+      8006,
+      8007
+    ],
+    "R8002_M8003": [
+      8009,
+      8011,
+      8012
+    ]
+  },
+  "sources": [
+    {
+      "file": "R8002_M8002/room.rttm",
+      "sha256": "6e61b6ffd2dbd1dcd6ac13b08d63c404926100c56292e705775b4c0ec8f00612",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8002_M8002.rttm"
+    },
+    {
+      "file": "R8002_M8002/audio/8005.wav",
+      "sha256": "9e3c1b53b99164bee8715200625e64c4ac2aa519618f8380c2a5bb0592e8a6d0",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8002_M8002_N_SPK8005.wav"
+    },
+    {
+      "file": "R8002_M8002/audio/8006.wav",
+      "sha256": "96080858943ae4159e8cb0ab5e68e68d39a8048c09878e14d566106457e86101",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8002_M8002_N_SPK8006.wav"
+    },
+    {
+      "file": "R8002_M8002/audio/8007.wav",
+      "sha256": "a89d614294a75ab49dd543adeb751d42762b7225682b3043ad142a282ddc609c",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8002_M8002_N_SPK8007.wav"
+    },
+    {
+      "file": "R8002_M8003/room.rttm",
+      "sha256": "e563aa410bd94256097c2c02c8dd07b80d5a36f19a9f5f386fa1b32b0e4f22ab",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8002_M8003.rttm"
+    },
+    {
+      "file": "R8002_M8003/audio/8009.wav",
+      "sha256": "4c318aa15635e6b9febae0f6f4c1f7b25363c42b46dcb56c6b07d7baf67e3888",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8002_M8003_N_SPK8009.wav"
+    },
+    {
+      "file": "R8002_M8003/audio/8011.wav",
+      "sha256": "037a2f5119903c970538278f77c444043a7e4edb04689e6bc0780716aaf9196d",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8002_M8003_N_SPK8011.wav"
+    },
+    {
+      "file": "R8002_M8003/audio/8012.wav",
+      "sha256": "512c3fbd5ce58d7382ee26efd6627f3b896ab5be91a3a49e6caff1c496ec24d0",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8002_M8003_N_SPK8012.wav"
+    }
+  ]
+}

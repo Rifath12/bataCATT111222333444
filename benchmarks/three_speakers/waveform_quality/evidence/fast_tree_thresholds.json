@@ -1,0 +1,86 @@
+{
+  "np": "2.3.5",
+  "scipy": "1.17.0",
+  "sessions": {
+    "R8004_M8005": {
+      "clips": 32,
+      "paired_threshold_decisions_unchanged": 32,
+      "same_runtime_backend_comparison": [
+        {
+          "case": "r8004_m8005_001",
+          "max_diff": 0.0,
+          "identical": true
+        },
+        {
+          "case": "r8004_m8005_004",
+          "max_diff": 0.0,
+          "identical": true
+        }
+      ]
+    },
+    "R8005_M8008": {
+      "clips": 53,
+      "paired_threshold_decisions_unchanged": 53,
+      "same_runtime_backend_comparison": [
+        {
+          "case": "r8005_m8008_001",
+          "max_diff": 0.0,
+          "identical": true
+        },
+        {
+          "case": "r8005_m8008_004",
+          "max_diff": 0.0,
+          "identical": true
+        }
+      ]
+    },
+    "R8006_M8012": {
+      "clips": 71,
+      "paired_threshold_decisions_unchanged": 71,
+      "same_runtime_backend_comparison": [
+        {
+          "case": "r8006_m8012_001",
+          "max_diff": 0.0,
+          "identical": true
+        },
+        {
+          "case": "r8006_m8012_004",
+          "max_diff": 0.0,
+          "identical": true
+        }
+      ]
+    },
+    "R8002_M8002": {
+      "clips": 51,
+      "paired_threshold_decisions_unchanged": 51,
+      "same_runtime_backend_comparison": [
+        {
+          "case": "r8002_m8002_001",
+          "max_diff": 0.0,
+          "identical": true
+        },
+        {
+          "case": "r8002_m8002_004",
+          "max_diff": 0.0,
+          "identical": true
+        }
+      ]
+    },
+    "R8002_M8003": {
+      "clips": 37,
+      "paired_threshold_decisions_unchanged": 37,
+      "same_runtime_backend_comparison": [
+        {
+          "case": "r8002_m8003_001",
+          "max_diff": 0.0,
+          "identical": true
+        },
+        {
+          "case": "r8002_m8003_004",
+          "max_diff": 0.0,
+          "identical": true
+        }
+      ]
+    }
+  }
+}

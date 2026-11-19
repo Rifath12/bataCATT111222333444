@@ -1,0 +1,503 @@
+{
+  "corpus": "R8008_M8017",
+  "construction": "Pass published late 3-speaker donor references directly into physical A/B/C as simulated perfectly isolated microphones, with identity transfer calibration. Reports waveform alignment on the original exact-three masks. This is a passthrough control only.",
+  "sample_rate": 16000,
+  "n_cases": 24,
+  "exact_three_seconds": 27.264,
+  "summary": {
+    "gentle": {
+      "old_joint_96": 24,
+      "old_joint_98": 24,
+      "old_worst_track_alignment": 0.99581534,
+      "new_sample_exact_cases": 24
+    },
+    "boosted": {
+      "old_joint_96": 24,
+      "old_joint_98": 24,
+      "old_worst_track_alignment": 0.98349949,
+      "new_sample_exact_cases": 24
+    }
+  },
+  "rows": [
+    {
+      "id": "m8017_01",
+      "three_active_samples": 17920,
+      "gentle": {
+        "old_alignment": [
+          0.99988001,
+          0.99998883,
+          0.99934883
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99676254,
+          0.99960772,
+          0.9874725
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_02",
+      "three_active_samples": 17408,
+      "gentle": {
+        "old_alignment": [
+          0.99991928,
+          0.99993359,
+          0.99988856
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99887571,
+          0.99932207,
+          0.99977558
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_03",
+      "three_active_samples": 18944,
+      "gentle": {
+        "old_alignment": [
+          0.99993403,
+          0.99999205,
+          0.99876141
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99578407,
+          0.99955136,
+          0.99893789
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_04",
+      "three_active_samples": 24064,
+      "gentle": {
+        "old_alignment": [
+          0.99863355,
+          0.99999355,
+          0.99965635
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99829263,
+          0.99980417,
+          0.9990499
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_05",
+      "three_active_samples": 18432,
+      "gentle": {
+        "old_alignment": [
+          0.9999193,
+          0.99999093,
+          0.99942184
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99920797,
+          0.99984041,
+          0.99432624
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_06",
+      "three_active_samples": 16896,
+      "gentle": {
+        "old_alignment": [
+          0.9999181,
+          0.99998299,
+          0.99936556
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99799778,
+          0.99960381,
+          0.99859993
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_07",
+      "three_active_samples": 20480,
+      "gentle": {
+        "old_alignment": [
+          0.99926234,
+          0.99999037,
+          0.99951554
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99492974,
+          0.99963089,
+          0.99621152
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_08",
+      "three_active_samples": 16896,
+      "gentle": {
+        "old_alignment": [
+          0.99980343,
+          0.99929389,
+          0.99980666
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99761748,
+          0.99900436,
+          0.99591899
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_09",
+      "three_active_samples": 15872,
+      "gentle": {
+        "old_alignment": [
+          0.99988867,
+          0.99999168,
+          0.99955263
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99856861,
+          0.99905881,
+          0.99410933
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_10",
+      "three_active_samples": 17920,
+      "gentle": {
+        "old_alignment": [
+          0.99966177,
+          0.99998787,
+          0.99917831
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.98899161,
+          0.99979175,
+          0.99276717
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_11",
+      "three_active_samples": 18432,
+      "gentle": {
+        "old_alignment": [
+          0.99993633,
+          0.99977437,
+          0.99974208
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99949211,
+          0.99921604,
+          0.98349949
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_12",
+      "three_active_samples": 15872,
+      "gentle": {
+        "old_alignment": [
+          0.9999257,
+          0.99999138,
+          0.99581534
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99896911,
+          0.99968484,
+          0.99064682
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_13",
+      "three_active_samples": 14848,
+      "gentle": {
+        "old_alignment": [
+          0.99986476,
+          0.99999181,
+          0.99927306
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.9982115,
+          0.99973699,
+          0.98843816
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_14",
+      "three_active_samples": 16896,
+      "gentle": {
+        "old_alignment": [
+          0.99992658,
+          0.99993568,
+          0.99951372
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99281036,
+          0.99956863,
+          0.99484219
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_15",
+      "three_active_samples": 19456,
+      "gentle": {
+        "old_alignment": [
+          0.99991403,
+          0.99999188,
+          0.99767609
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99329034,
+          0.99956703,
+          0.99515328
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_16",
+      "three_active_samples": 18944,
+      "gentle": {
+        "old_alignment": [
+          0.99824594,
+          0.99999137,
+          0.99930525
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99753838,
+          0.99985142,
+          0.98520136
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_17",
+      "three_active_samples": 18944,
+      "gentle": {
+        "old_alignment": [
+          0.99989367,
+          0.99997968,
+          0.99944104
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99425138,
+          0.99939143,
+          0.98825551
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_18",
+      "three_active_samples": 19968,
+      "gentle": {
+        "old_alignment": [
+          0.99993589,
+          0.99998655,
+          0.99893413
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99606896,
+          0.99959775,
+          0.99356603
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_19",
+      "three_active_samples": 17920,
+      "gentle": {
+        "old_alignment": [
+          0.99947634,
+          0.99999486,
+          0.99959046
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99694663,
+          0.999842,
+          0.99682461
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_20",
+      "three_active_samples": 17920,
+      "gentle": {
+        "old_alignment": [
+          0.99989067,
+          0.99831639,
+          0.99962177
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99797378,
+          0.99859207,
+          0.99870926
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_21",
+      "three_active_samples": 18944,
+      "gentle": {
+        "old_alignment": [
+          0.99985308,
+          0.99998995,
+          0.99909994
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99792481,
+          0.99934226,
+          0.98497153
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_22",
+      "three_active_samples": 15360,
+      "gentle": {
+        "old_alignment": [
+          0.99969376,
+          0.99999493,
+          0.999663
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99936347,
+          0.99979208,
+          0.99924197
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_23",
+      "three_active_samples": 17920,
+      "gentle": {
+        "old_alignment": [
+          0.99995183,
+          0.99980765,
+          0.99970238
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99897044,
+          0.99930519,
+          0.98468744
+        ],
+        "new_max_sample_error": 0.0
+      }
+    },
+    {
+      "id": "m8017_24",
+      "three_active_samples": 19968,
+      "gentle": {
+        "old_alignment": [
+          0.99994572,
+          0.9999939,
+          0.99735356
+        ],
+        "new_max_sample_error": 0.0
+      },
+      "boosted": {
+        "old_alignment": [
+          0.99898217,
+          0.99969275,
+          0.99502177
+        ],
+        "new_max_sample_error": 0.0
+      }
+    }
+  ]
+}

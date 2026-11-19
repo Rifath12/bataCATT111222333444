@@ -1,0 +1,664 @@
+{
+  "protocol": "A partially engineered 30:20 timeline with the same three headset speakers from M8017. Metrics apply only inside annotated controlled windows. Both other-speaker-only leakage and alignment were analyzed without speaker permutation. Audio untouched outside edited destinations and vacated original slots. All duration values are seconds. File timing is wall time with precomputed calibration, one thread per process; several modes ran concurrently. No ASR/diarization.",
+  "scene": {
+    "samples": 29120833,
+    "sample_rate": 16000,
+    "duration_s": 1820.0520625,
+    "scored_windows": 179,
+    "scored_window_s": 332.25,
+    "scored_activity_s_0_1_2_3": [
+      8.879,
+      77.231,
+      159.075,
+      87.065
+    ],
+    "vacated_original_donor_slot_s": 414.19,
+    "untouched_original_s": 1073.6120625,
+    "sha256": {
+      "A.wav": "130ea0c32ecc1a25b4c36aa047a7c00044ea3ef779d2e8873b23a00e66bd02a5",
+      "B.wav": "7b9d505ed0233be500a37ba5deb7b13b13a1f36429563bb20ab0998b7e967451",
+      "C.wav": "45504c8c31259fc300ae9b356ffd0c6aa4fd98c35fcf95ffa022ba68ab95e1b3"
+    },
+    "manifest_sha256": "86b11e42d2e4cf663533f9fe8af14d92dcc098743b486559be576b099d4c78be"
+  },
+  "verification": {
+    "fixed_channels_verified": 3,
+    "distinct_source_intervals": 410,
+    "overlapping_reuse_intervals": 0,
+    "intersection_with_original_24_case_donors": 0,
+    "intersection_with_calibration": 0,
+    "calibration_steps": 3750,
+    "time_preserved": true,
+    "out_of_window_audio_sample_exact_s": 1073.6120625,
+    "vacated_slots_digital_silence_s": 414.19,
+    "rttm_exclusive_source_throughout_each_trimmed_donor": true
+  },
+  "lower_count_controls": "Twenty solo events use A, 87 two-person events use A and C. Speaker B is prioritized in three-person comparisons owing to scarce donor material.",
+  "calibration": {
+    "sample_rate": 16000,
+    "prefix_seconds": 120,
+    "window_steps": 3750,
+    "sha256": "04f02a806399aba295831f0d7b57bdc8b3bf818871f707e161dff3dba13ca83d",
+    "calibration": [
+      {
+        "source": "A",
+        "selected_dominant": 1363,
+        "paths": {
+          "B": {
+            "0.55": -22.97
+          },
+          "C": {
+            "0.55": -22.53
+          }
+        }
+      },
+      {
+        "source": "B",
+        "selected_dominant": 127,
+        "paths": {
+          "A": {
+            "0.55": -38.2
+          },
+          "C": {
+            "0.55": -28.0
+          }
+        }
+      },
+      {
+        "source": "C",
+        "selected_dominant": 515,
+        "paths": {
+          "A": {
+            "0.55": -38.84
+          },
+          "B": {
+            "0.55": -28.62
+          }
+        }
+      }
+    ]
+  },
+  "excerpt": {
+    "selection": "Highest reference exact-three duration in any continuous 30s on a 10ms start grid, tie earliest. End-to-end recognition/separation scores were not used to select it.",
+    "start_sample": 2508800,
+    "end_sample": 2988800,
+    "sample_rate": 16000,
+    "start_s": 156.8,
+    "end_s": 186.8,
+    "known_exact_three_s": 7.268,
+    "windows": [
+      {
+        "id": "p3_018",
+        "destination_start": 2508640,
+        "length": 46240,
+        "quiet_speaker": "A",
+        "quiet_level_db": -12
+      },
+      {
+        "id": "p3_014",
+        "destination_start": 2584320,
+        "length": 23680,
+        "quiet_speaker": "C",
+        "quiet_level_db": -12
+      },
+      {
+        "id": "p2_004",
+        "destination_start": 2615520,
+        "length": 45120,
+        "quiet_speaker": null,
+        "quiet_level_db": 0
+      },
+      {
+        "id": "p3_041",
+        "destination_start": 2771040,
+        "length": 31040,
+        "quiet_speaker": "C",
+        "quiet_level_db": -6
+      },
+      {
+        "id": "p3_000",
+        "destination_start": 2819200,
+        "length": 17760,
+        "quiet_speaker": null,
+        "quiet_level_db": 0
+      },
+      {
+        "id": "p3_001",
+        "destination_start": 2930240,
+        "length": 87840,
+        "quiet_speaker": "B",
+        "quiet_level_db": -6
+      }
+    ]
+  },
+  "modes": {
+    "raw": {
+      "cases": 72,
+      "exact_three_s": 87.065,
+      "joint_96": 48,
+      "joint_98": 33,
+      "weakest_track_min_p10_median": [
+        0.08422086,
+        0.718852227,
+        0.978397825
+      ],
+      "worst_case": {
+        "id": "p3_047",
+        "anchor_sample": 18981280,
+        "quiet_speaker": "C",
+        "nominal_quiet_db": -20,
+        "exact_three_seconds": 2.73,
+        "alignment": [
+          0.99998978,
+          0.9970571,
+          0.08422086
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "pass": {
+          "96": false,
+          "98": false
+        }
+      },
+      "by_nominal_quiet_level_db": {
+        "0": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 13
+        },
+        "-6": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 12
+        },
+        "-12": {
+          "cases": 18,
+          "joint_96": 12,
+          "joint_98": 6
+        },
+        "-20": {
+          "cases": 18,
+          "joint_96": 4,
+          "joint_98": 2
+        }
+      },
+      "pooled_alignment_ABC": [
+        0.9991445524064213,
+        0.9867269402033365,
+        0.9940689015564932
+      ],
+      "pooled_activity_retained_ABC": [
+        1.0,
+        0.9991974980822564,
+        1.0
+      ],
+      "eligible_exact_three_s_in_250ms_windows": 86.60900000000012,
+      "all_three_time_fraction_in_eligible_250ms_windows": {
+        "96": 0.6449214284889562,
+        "98": 0.508884757935087
+      },
+      "solo_and_dual_cases": {
+        "1": {
+          "cases": 20,
+          "joint_active_96": 20,
+          "joint_active_98": 20,
+          "median_inactive_output_relative_to_active_reference_db": -28.702663710073224
+        },
+        "2": {
+          "cases": 87,
+          "joint_active_96": 67,
+          "joint_active_98": 56,
+          "median_inactive_output_relative_to_active_reference_db": -21.17169370979541
+        }
+      },
+      "overlap_changes_from_raw": {
+        "96": {
+          "gained_windows": [],
+          "lost_windows": []
+        },
+        "98": {
+          "gained_windows": [],
+          "lost_windows": []
+        }
+      }
+    },
+    "standard": {
+      "cases": 72,
+      "exact_three_s": 87.065,
+      "joint_96": 50,
+      "joint_98": 32,
+      "weakest_track_min_p10_median": [
+        0.08088148,
+        0.720600196,
+        0.97876949
+      ],
+      "worst_case": {
+        "id": "p3_047",
+        "anchor_sample": 18981280,
+        "quiet_speaker": "C",
+        "nominal_quiet_db": -20,
+        "exact_three_seconds": 2.73,
+        "alignment": [
+          0.99990008,
+          0.99714428,
+          0.08088148
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "pass": {
+          "96": false,
+          "98": false
+        }
+      },
+      "by_nominal_quiet_level_db": {
+        "0": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 13
+        },
+        "-6": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 12
+        },
+        "-12": {
+          "cases": 18,
+          "joint_96": 12,
+          "joint_98": 7
+        },
+        "-20": {
+          "cases": 18,
+          "joint_96": 6,
+          "joint_98": 0
+        }
+      },
+      "pooled_alignment_ABC": [
+        0.9991287133844854,
+        0.9871006857414286,
+        0.9942990718139301
+      ],
+      "pooled_activity_retained_ABC": [
+        1.0,
+        0.9991974980822564,
+        1.0
+      ],
+      "eligible_exact_three_s_in_250ms_windows": 86.60900000000012,
+      "all_three_time_fraction_in_eligible_250ms_windows": {
+        "96": 0.65704487986237,
+        "98": 0.5304298629472685
+      },
+      "solo_and_dual_cases": {
+        "1": {
+          "cases": 20,
+          "joint_active_96": 20,
+          "joint_active_98": 20,
+          "median_inactive_output_relative_to_active_reference_db": -30.32318112311512
+        },
+        "2": {
+          "cases": 87,
+          "joint_active_96": 71,
+          "joint_active_98": 60,
+          "median_inactive_output_relative_to_active_reference_db": -22.064171209509034
+        }
+      },
+      "overlap_changes_from_raw": {
+        "96": {
+          "gained_windows": [
+            "p3_059",
+            "p3_067"
+          ],
+          "lost_windows": []
+        },
+        "98": {
+          "gained_windows": [
+            "p3_038"
+          ],
+          "lost_windows": [
+            "p3_039",
+            "p3_063"
+          ]
+        }
+      },
+      "export": {
+        "wall_s_cached": 17.130910460999985,
+        "wav": {
+          "A": {
+            "sha256": "b84104b8f6a2ef5548287dbdffdb25c9113e565ec0f415ed46e934970f02bd52",
+            "peak": 0.7346493005752563
+          },
+          "B": {
+            "sha256": "1e4d4535ef39e3a51c23eff16ca9655960a4b355e5767e3bd6e147c51b701f11",
+            "peak": 0.7452670931816101
+          },
+          "C": {
+            "sha256": "1056e68c986b074a4d4189f9e343aca25dcb2253cd7584a224ceffcc6c0da92b",
+            "peak": 0.8607156276702881
+          }
+        },
+        "listening_excerpt_sample_identical": true
+      }
+    },
+    "gentle": {
+      "cases": 72,
+      "exact_three_s": 87.065,
+      "joint_96": 50,
+      "joint_98": 32,
+      "weakest_track_min_p10_median": [
+        0.08256367,
+        0.734670049,
+        0.9787613500000001
+      ],
+      "worst_case": {
+        "id": "p3_047",
+        "anchor_sample": 18981280,
+        "quiet_speaker": "C",
+        "nominal_quiet_db": -20,
+        "exact_three_seconds": 2.73,
+        "alignment": [
+          0.9998163,
+          0.99724122,
+          0.08256367
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "pass": {
+          "96": false,
+          "98": false
+        }
+      },
+      "by_nominal_quiet_level_db": {
+        "0": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 13
+        },
+        "-6": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 12
+        },
+        "-12": {
+          "cases": 18,
+          "joint_96": 12,
+          "joint_98": 7
+        },
+        "-20": {
+          "cases": 18,
+          "joint_96": 6,
+          "joint_98": 0
+        }
+      },
+      "pooled_alignment_ABC": [
+        0.999012875107046,
+        0.9873132475073543,
+        0.9942328253376972
+      ],
+      "pooled_activity_retained_ABC": [
+        1.0,
+        0.9991974980822564,
+        1.0
+      ],
+      "eligible_exact_three_s_in_250ms_windows": 86.60900000000012,
+      "all_three_time_fraction_in_eligible_250ms_windows": {
+        "96": 0.6569640568532139,
+        "98": 0.5327852763569603
+      },
+      "solo_and_dual_cases": {
+        "1": {
+          "cases": 20,
+          "joint_active_96": 20,
+          "joint_active_98": 20,
+          "median_inactive_output_relative_to_active_reference_db": -31.05854034949554
+        },
+        "2": {
+          "cases": 87,
+          "joint_active_96": 72,
+          "joint_active_98": 60,
+          "median_inactive_output_relative_to_active_reference_db": -22.302084415330153
+        }
+      },
+      "overlap_changes_from_raw": {
+        "96": {
+          "gained_windows": [
+            "p3_059",
+            "p3_067"
+          ],
+          "lost_windows": []
+        },
+        "98": {
+          "gained_windows": [
+            "p3_038"
+          ],
+          "lost_windows": [
+            "p3_039",
+            "p3_063"
+          ]
+        }
+      },
+      "export": {
+        "wall_s_cached": 144.1474180969999,
+        "wav": {
+          "A": {
+            "sha256": "45c66ae463ec66dfc598d465eb6b87a8b0e5ec5f5afe6fed6df27e784318a25f",
+            "peak": 0.7345399856567383
+          },
+          "B": {
+            "sha256": "d5fd800a469bf1f227031ec0ef5dd70cf447937f2b23f54154ad6d36121d95eb",
+            "peak": 0.7451507449150085
+          },
+          "C": {
+            "sha256": "926a68da848819fcbbc309c745650e4bc87109a1779e8d58a477b6de0c8b7b93",
+            "peak": 0.8590169548988342
+          }
+        },
+        "listening_excerpt_sample_identical": true
+      }
+    },
+    "boosted": {
+      "cases": 72,
+      "exact_three_s": 87.065,
+      "joint_96": 50,
+      "joint_98": 35,
+      "weakest_track_min_p10_median": [
+        0.10441856,
+        0.756815829,
+        0.9773213249999999
+      ],
+      "worst_case": {
+        "id": "p3_047",
+        "anchor_sample": 18981280,
+        "quiet_speaker": "C",
+        "nominal_quiet_db": -20,
+        "exact_three_seconds": 2.73,
+        "alignment": [
+          0.99759313,
+          0.99721146,
+          0.10441856
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "pass": {
+          "96": false,
+          "98": false
+        }
+      },
+      "by_nominal_quiet_level_db": {
+        "0": {
+          "cases": 18,
+          "joint_96": 17,
+          "joint_98": 14
+        },
+        "-6": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 15
+        },
+        "-12": {
+          "cases": 18,
+          "joint_96": 12,
+          "joint_98": 6
+        },
+        "-20": {
+          "cases": 18,
+          "joint_96": 5,
+          "joint_98": 0
+        }
+      },
+      "pooled_alignment_ABC": [
+        0.9975761717661934,
+        0.9882412514553671,
+        0.9836818870580688
+      ],
+      "pooled_activity_retained_ABC": [
+        1.0,
+        0.9991974980822564,
+        1.0
+      ],
+      "eligible_exact_three_s_in_250ms_windows": 86.60900000000012,
+      "all_three_time_fraction_in_eligible_250ms_windows": {
+        "96": 0.6494013324250367,
+        "98": 0.4842221939983136
+      },
+      "solo_and_dual_cases": {
+        "1": {
+          "cases": 20,
+          "joint_active_96": 20,
+          "joint_active_98": 20,
+          "median_inactive_output_relative_to_active_reference_db": -31.236386925214273
+        },
+        "2": {
+          "cases": 87,
+          "joint_active_96": 72,
+          "joint_active_98": 53,
+          "median_inactive_output_relative_to_active_reference_db": -23.00329438290121
+        }
+      },
+      "overlap_changes_from_raw": {
+        "96": {
+          "gained_windows": [
+            "p3_040",
+            "p3_067"
+          ],
+          "lost_windows": []
+        },
+        "98": {
+          "gained_windows": [
+            "p3_001",
+            "p3_029",
+            "p3_052",
+            "p3_013"
+          ],
+          "lost_windows": [
+            "p3_039",
+            "p3_063"
+          ]
+        }
+      },
+      "export": {
+        "wall_s_cached": 510.60907197400047,
+        "wav": {
+          "A": {
+            "sha256": "9d29ac0fd6f64e975422cb6b0200ef73cccdde492678d9420cb304369b4f5c65",
+            "peak": 0.6557110548019409
+          },
+          "B": {
+            "sha256": "182c3171413590c31ea24e76917da9089c92c8d6439f5a07b2c5e28bb4628c04",
+            "peak": 0.7411598563194275
+          },
+          "C": {
+            "sha256": "d975d22300e115cbe2a168507bb820fc9fa7a63ffc30f3456a67b9051a6cba2b",
+            "peak": 0.7799168229103088
+          }
+        },
+        "listening_excerpt_sample_identical": true
+      }
+    }
+  },
+  "worst_controlled_case": {
+    "case": "p3_047",
+    "quiet_speaker": "C",
+    "anchor_sample": 18981280,
+    "nominal_quiet_db": -20,
+    "exact_three_s": 2.73,
+    "other_source_images_db_relative_to_target_in_quiet_mic": 10.476442921622573,
+    "raw_peak": 0.6956908702850342,
+    "individual_leak_to_intended_target_in_quiet_mic_db": {
+      "A": 10.467087848454067,
+      "B": -18.684593489648623
+    },
+    "levels_by_mode": {
+      "raw": {
+        "target_aligned_fraction": 0.08422086285028677,
+        "si_sdr_db": -10.363710589184958,
+        "target_gain_db": 0.11256964548617644
+      },
+      "standard": {
+        "target_aligned_fraction": 0.08088148264382612,
+        "si_sdr_db": -10.555224121270474,
+        "target_gain_db": -0.11555683349345015
+      },
+      "gentle": {
+        "target_aligned_fraction": 0.0825636730525078,
+        "si_sdr_db": -10.457869271319083,
+        "target_gain_db": -0.6310106878593786
+      }
+    },
+    "A_donor_headset_consistency": {
+      "A_B": {
+        "max_corr_abs_lags_under_100ms": 0.15424703061580658,
+        "lag_samples": 46,
+        "spectrum_power_weighted_coherence_100to7500Hz": 0.11860352754592896
+      },
+      "A_C": {
+        "max_corr_abs_lags_under_100ms": 0.039079297333955765,
+        "lag_samples": 72,
+        "spectrum_power_weighted_coherence_100to7500Hz": 0.01007638406008482
+      }
+    },
+    "early_calibration_error_a_to_c_db": 22.733472665260678,
+    "early_calibration_error_b_to_c_db": -6.633068805239841,
+    "interpretation": "Source attribution refers to the original annotated solo interval. The A-to-C channel coherence in the dominant donor is 0.010. Its energy could include room noise or unannotated speech, so it cannot all be identified as acoustic leakage of A."
+  },
+  "interference_donor_check": {
+    "interpretation": "Coherence is descriptive. Low coherence is consistent with additional noise, a time-varying path, or missed speech in a donor and does not identify which.",
+    "rows_with_other_energy_louder_than_target": 4,
+    "coherence_when_other_energy_louder": [
+      {
+        "id": "p3_031",
+        "other_to_target_db": 7.768642313654003,
+        "dominant_interferer_donor_speaker": "A",
+        "same_donor_power_weighted_coherence": 0.021744731813669205
+      },
+      {
+        "id": "p3_043",
+        "other_to_target_db": 0.7403298312609468,
+        "dominant_interferer_donor_speaker": "A",
+        "same_donor_power_weighted_coherence": 0.0692526176571846
+      },
+      {
+        "id": "p3_047",
+        "other_to_target_db": 10.476442921622573,
+        "dominant_interferer_donor_speaker": "A",
+        "same_donor_power_weighted_coherence": 0.01007638406008482
+      },
+      {
+        "id": "p3_007",
+        "other_to_target_db": 3.2871635412848423,
+        "dominant_interferer_donor_speaker": "C",
+        "same_donor_power_weighted_coherence": 0.0361328050494194
+      }
+    ]
+  }
+}

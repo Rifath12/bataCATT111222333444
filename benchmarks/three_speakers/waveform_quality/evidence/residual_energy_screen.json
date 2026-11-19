@@ -1,0 +1,514 @@
+{
+  "description": "Frozen post-boosted residual energy mask, exact-three physical A/B/C waveform fidelity with 96% reference-active gain coverage.",
+  "selection": "48 controlled remixes from previously held-out early single-speaker donors within first 45% of M8014. No initial physical demixer exceeded the criterion. Three add-on types and three strengths were compared on those early controls; energy only at 0.8 selected from successful candidates maximizing (joint96, joint98, quiet_p10).",
+  "source_sha256": {
+    "bounded_post.py": "911699ec15f8594aac9fdb50b53e4449d04a85be0f36238c427b598372e6ac13",
+    "local_cancellation.py": "be6714ff315cd237d457f753ae1a96611198bd1e54e630ecb75066ff78c3c114"
+  },
+  "protocol": {
+    "fresh_panels": [
+      "R8004_M8005",
+      "R8005_M8008",
+      "R8006_M8012"
+    ],
+    "clips": 156,
+    "exact_three_s": 114.464,
+    "held_evaluation": "One selected candidate; no tuning on fresh labels."
+  },
+  "arms": [
+    "boosted",
+    "residual_energy"
+  ],
+  "groups": {
+    "development_M8014": {
+      "boosted": {
+        "n": 48,
+        "pass96": 17,
+        "pass98": 8,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.2613716532022254,
+        "median": 0.9914888350673217,
+        "worst": 0.11774622812987084,
+        "mean_coverage": 0.9983709716868465,
+        "coverage_min": 0.9223744292237442
+      },
+      "residual_energy": {
+        "n": 48,
+        "pass96": 17,
+        "pass98": 8,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.2699017479891084,
+        "median": 0.9908984982865018,
+        "worst": 0.11152741240758234,
+        "mean_coverage": 0.9980371041654791,
+        "coverage_min": 0.9223744292237442
+      }
+    },
+    "fresh_all": {
+      "boosted": {
+        "n": 156,
+        "pass96": 122,
+        "pass98": 108,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.8525664786542309,
+        "median": 0.9987341310256432,
+        "worst": 0.07144697039741356,
+        "mean_coverage": 0.9997641247641248,
+        "coverage_min": 0.8896103896103896
+      },
+      "residual_energy": {
+        "n": 156,
+        "pass96": 123,
+        "pass98": 108,
+        "lost96": [],
+        "gained96": [
+          "r8004_m8005_016"
+        ],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.8491222806567023,
+        "median": 0.9987092451187274,
+        "worst": 0.07070958776301894,
+        "mean_coverage": 0.9997641247641248,
+        "coverage_min": 0.8896103896103896
+      }
+    },
+    "fresh_R8004_M8005": {
+      "boosted": {
+        "n": 32,
+        "pass96": 21,
+        "pass98": 19,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.696588901660825,
+        "median": 0.9982631668828079,
+        "worst": 0.10202932024672082,
+        "mean_coverage": 0.9988501082251083,
+        "coverage_min": 0.8896103896103896
+      },
+      "residual_energy": {
+        "n": 32,
+        "pass96": 22,
+        "pass98": 19,
+        "lost96": [],
+        "gained96": [
+          "r8004_m8005_016"
+        ],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.7177996221879888,
+        "median": 0.9983027073971693,
+        "worst": 0.101343737096211,
+        "mean_coverage": 0.9988501082251083,
+        "coverage_min": 0.8896103896103896
+      }
+    },
+    "fresh_gap_0.0": {
+      "boosted": {
+        "n": 40,
+        "pass96": 38,
+        "pass98": 32,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.9916685859486478,
+        "median": 0.9987341310256432,
+        "worst": 0.695897442254565,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      },
+      "residual_energy": {
+        "n": 40,
+        "pass96": 38,
+        "pass98": 32,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.991678706093075,
+        "median": 0.9987363903698919,
+        "worst": 0.6958289448241533,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      }
+    },
+    "fresh_gap_6.0": {
+      "boosted": {
+        "n": 39,
+        "pass96": 36,
+        "pass98": 35,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.9842322675734338,
+        "median": 0.9986542695572368,
+        "worst": 0.8824948037632743,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      },
+      "residual_energy": {
+        "n": 39,
+        "pass96": 36,
+        "pass98": 35,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.9849273903292897,
+        "median": 0.9985966264849205,
+        "worst": 0.8825380538183586,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      }
+    },
+    "fresh_gap_12.0": {
+      "boosted": {
+        "n": 39,
+        "pass96": 32,
+        "pass98": 30,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.8987111478985094,
+        "median": 0.9987886907294745,
+        "worst": 0.10202932024672082,
+        "mean_coverage": 0.9990564990564991,
+        "coverage_min": 0.8896103896103896
+      },
+      "residual_energy": {
+        "n": 39,
+        "pass96": 32,
+        "pass98": 30,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.9087478075772767,
+        "median": 0.9987790768861521,
+        "worst": 0.101343737096211,
+        "mean_coverage": 0.9990564990564991,
+        "coverage_min": 0.8896103896103896
+      }
+    },
+    "fresh_gap_20.0": {
+      "boosted": {
+        "n": 38,
+        "pass96": 16,
+        "pass98": 11,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.5350080492557356,
+        "median": 0.998665855949759,
+        "worst": 0.07144697039741356,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      },
+      "residual_energy": {
+        "n": 38,
+        "pass96": 17,
+        "pass98": 11,
+        "lost96": [],
+        "gained96": [
+          "r8004_m8005_016"
+        ],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.5386259640585324,
+        "median": 0.9987122052214157,
+        "worst": 0.07070958776301894,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      }
+    },
+    "fresh_R8005_M8008": {
+      "boosted": {
+        "n": 53,
+        "pass96": 38,
+        "pass98": 34,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.7475521871609772,
+        "median": 0.9983293830725596,
+        "worst": 0.07144697039741356,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      },
+      "residual_energy": {
+        "n": 53,
+        "pass96": 38,
+        "pass98": 34,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.7498278936852123,
+        "median": 0.998324186571831,
+        "worst": 0.07070958776301894,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      }
+    },
+    "fresh_R8006_M8012": {
+      "boosted": {
+        "n": 71,
+        "pass96": 63,
+        "pass98": 55,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.9545361948146565,
+        "median": 0.9991111776809544,
+        "worst": 0.19682147059107685,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      },
+      "residual_energy": {
+        "n": 71,
+        "pass96": 63,
+        "pass98": 55,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.9542012879490049,
+        "median": 0.9990594749695368,
+        "worst": 0.1964787019263019,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      }
+    },
+    "historical_all": {
+      "boosted": {
+        "n": 56,
+        "pass96": 37,
+        "pass98": 24,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.7976596928505275,
+        "median": 0.9930200539782779,
+        "worst": 0.1382378770461038,
+        "mean_coverage": 0.9995378586217095,
+        "coverage_min": 0.922360248447205
+      },
+      "residual_energy": {
+        "n": 56,
+        "pass96": 37,
+        "pass98": 22,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [
+          "m8018_16",
+          "m8018_22"
+        ],
+        "gained98": [],
+        "quiet10": 0.7971625494883487,
+        "median": 0.9928342907621037,
+        "worst": 0.1365543550828645,
+        "mean_coverage": 0.9995378586217095,
+        "coverage_min": 0.922360248447205
+      }
+    },
+    "historical_old14": {
+      "boosted": {
+        "n": 24,
+        "pass96": 14,
+        "pass98": 8,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.5975560265587015,
+        "median": 0.9887138188245754,
+        "worst": 0.1382378770461038,
+        "mean_coverage": 0.9989216701173222,
+        "coverage_min": 0.922360248447205
+      },
+      "residual_energy": {
+        "n": 24,
+        "pass96": 14,
+        "pass98": 6,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [
+          "m8018_16",
+          "m8018_22"
+        ],
+        "gained98": [],
+        "quiet10": 0.6080389612429709,
+        "median": 0.9886413665158401,
+        "worst": 0.1365543550828645,
+        "mean_coverage": 0.9989216701173222,
+        "coverage_min": 0.922360248447205
+      }
+    },
+    "historical_old16": {
+      "boosted": {
+        "n": 8,
+        "pass96": 5,
+        "pass98": 4,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.7399791921290221,
+        "median": 0.9946455033074642,
+        "worst": 0.6546757028955805,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      },
+      "residual_energy": {
+        "n": 8,
+        "pass96": 5,
+        "pass98": 4,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.7620550608250273,
+        "median": 0.9949773513834428,
+        "worst": 0.7118946152531532,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      }
+    },
+    "historical_old17": {
+      "boosted": {
+        "n": 24,
+        "pass96": 18,
+        "pass98": 12,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.8633651083725475,
+        "median": 0.9936313108332073,
+        "worst": 0.8017807748575466,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      },
+      "residual_energy": {
+        "n": 24,
+        "pass96": 18,
+        "pass98": 12,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": [],
+        "quiet10": 0.8799899145903329,
+        "median": 0.993608501456499,
+        "worst": 0.7966799536251761,
+        "mean_coverage": 1.0,
+        "coverage_min": 1.0
+      }
+    }
+  },
+  "edge_checks": {
+    "deployed_vs_research_max_sample_difference": 0.0,
+    "chunked_vs_whole_max_sample_difference": 0.0,
+    "permuted_physical_mics_and_gains_max_sample_difference": 0.0,
+    "identity_calibration_equals_previous": true,
+    "silence_max_absolute_sample": 0.0,
+    "short_lengths_preserved": [
+      0,
+      1,
+      25,
+      127,
+      128,
+      511
+    ]
+  },
+  "diagnostic": {
+    "room": "M8014",
+    "stage": "annotated early solo intervals before 36% cutoff",
+    "analysis": "250\u20134000 Hz correlation (peak over +/-200 ms). Delay quantiles use solo takes with normalized correlation >=0.14.",
+    "by_path": {
+      "A->B": {
+        "solo_takes": 59,
+        "median_peak_ncc": 0.6069798967796833,
+        "high_correlation_count": 56,
+        "lag_ms_q10_median_q90": [
+          6.375,
+          6.5,
+          6.5625
+        ],
+        "abs_lag_gt_16ms": 0.0
+      },
+      "A->C": {
+        "solo_takes": 59,
+        "median_peak_ncc": 0.4810434363025735,
+        "high_correlation_count": 57,
+        "lag_ms_q10_median_q90": [
+          7.25,
+          7.5,
+          7.625
+        ],
+        "abs_lag_gt_16ms": 0.0
+      },
+      "B->A": {
+        "solo_takes": 27,
+        "median_peak_ncc": 0.22894296327463373,
+        "high_correlation_count": 16,
+        "lag_ms_q10_median_q90": [
+          0.5625,
+          1.4375,
+          1.5625
+        ],
+        "abs_lag_gt_16ms": 0.0
+      },
+      "B->C": {
+        "solo_takes": 27,
+        "median_peak_ncc": 0.2791653916241534,
+        "high_correlation_count": 25,
+        "lag_ms_q10_median_q90": [
+          4.0625,
+          4.375,
+          4.5375
+        ],
+        "abs_lag_gt_16ms": 0.0
+      },
+      "C->A": {
+        "solo_takes": 36,
+        "median_peak_ncc": 0.1952565545787975,
+        "high_correlation_count": 22,
+        "lag_ms_q10_median_q90": [
+          0.4375,
+          0.5625,
+          0.6875
+        ],
+        "abs_lag_gt_16ms": 0.0
+      },
+      "C->B": {
+        "solo_takes": 36,
+        "median_peak_ncc": 0.4947939277686573,
+        "high_correlation_count": 33,
+        "lag_ms_q10_median_q90": [
+          2.45,
+          2.5625,
+          2.625
+        ],
+        "abs_lag_gt_16ms": 0.0
+      }
+    }
+  }
+}

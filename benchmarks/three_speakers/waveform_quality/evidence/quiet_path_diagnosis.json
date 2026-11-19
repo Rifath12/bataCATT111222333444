@@ -1,0 +1,1080 @@
+{
+  "accounting": "Evaluation-only calibrated prediction uses each isolated opposing headset donor passed through square root of early frequency-dependent power transfer, with original phase, then energy over exact three. Prediction error can include delay/phase and room path variation. Direct references include headset color and any ambient sound present in donor intervals.",
+  "quiet_cases": 54,
+  "raw_quiet_alignment_vs_physical_bleed_db_spearman": -0.9996188298075089,
+  "worst": {
+    "id": "p3_047",
+    "quiet_speaker": "C",
+    "quiet_setting_db": -20,
+    "other_to_target_db": 10.476442921622573,
+    "raw_quiet_alignment": 0.08422086,
+    "source_paths": {
+      "A": {
+        "actual_source_bleed_relative_to_target_db": 10.467087848454067,
+        "prediction_error_db_observed_minus_early_calibration": 22.733472665260678
+      },
+      "B": {
+        "actual_source_bleed_relative_to_target_db": -18.684593489648623,
+        "prediction_error_db_observed_minus_early_calibration": -6.633068805239841
+      }
+    }
+  },
+  "all_rows": [
+    {
+      "id": "p3_046",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -9.833284958827111,
+      "raw_quiet_alignment": 0.90522356,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -11.329068143111716,
+          "prediction_error_db_observed_minus_early_calibration": 10.171808884884088
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -15.489002369680003,
+          "prediction_error_db_observed_minus_early_calibration": 5.381714285467907
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.17601437866687775
+    },
+    {
+      "id": "p3_018",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -15.592940970958878,
+      "raw_quiet_alignment": 0.97334631,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -40.1853438725651,
+          "prediction_error_db_observed_minus_early_calibration": -21.387416422816305
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -15.601528200183568,
+          "prediction_error_db_observed_minus_early_calibration": 7.917958032826064
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.1278686821460724
+    },
+    {
+      "id": "p3_014",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -14.603013327929968,
+      "raw_quiet_alignment": 0.96656982,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -14.693741532192666,
+          "prediction_error_db_observed_minus_early_calibration": 5.986075052431095
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -31.432150886609293,
+          "prediction_error_db_observed_minus_early_calibration": -8.6966005479796
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.43287134170532227
+    },
+    {
+      "id": "p3_041",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -20.186062964653935,
+      "raw_quiet_alignment": 0.99046934,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -20.4171789911842,
+          "prediction_error_db_observed_minus_early_calibration": 5.290929382753121
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -33.07835732532493,
+          "prediction_error_db_observed_minus_early_calibration": -6.949040639847994
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.4161406457424164
+    },
+    {
+      "id": "p3_001",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -16.4580856244785,
+      "raw_quiet_alignment": 0.97797521,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -23.69598736635961,
+          "prediction_error_db_observed_minus_early_calibration": 3.888382584908369
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -17.339850557850486,
+          "prediction_error_db_observed_minus_early_calibration": 10.464795646163076
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.045890919864177704
+    },
+    {
+      "id": "p3_025",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -20.82597723685399,
+      "raw_quiet_alignment": 0.99179838,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -25.69674381625712,
+          "prediction_error_db_observed_minus_early_calibration": 2.4599117760981666
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -22.605842138608004,
+          "prediction_error_db_observed_minus_early_calibration": 3.6431449263098505
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.20969639718532562
+    },
+    {
+      "id": "p3_017",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -20.74414483182643,
+      "raw_quiet_alignment": 0.9916107,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -21.143869260476798,
+          "prediction_error_db_observed_minus_early_calibration": 4.878759734576238
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -30.53984686757424,
+          "prediction_error_db_observed_minus_early_calibration": -2.9287333589140503
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.4071536064147949
+    },
+    {
+      "id": "p3_003",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -4.929663745765761,
+      "raw_quiet_alignment": 0.76185857,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -29.959328328810436,
+          "prediction_error_db_observed_minus_early_calibration": -19.741716234397725
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -4.941338818902255,
+          "prediction_error_db_observed_minus_early_calibration": 9.810586599549238
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.14973345398902893
+    },
+    {
+      "id": "p3_045",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -33.0727989641787,
+      "raw_quiet_alignment": 0.99950788,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -44.75816767708985,
+          "prediction_error_db_observed_minus_early_calibration": -17.60087678039858
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -33.646669635128404,
+          "prediction_error_db_observed_minus_early_calibration": 2.380462122849983
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.37029892206192017
+    },
+    {
+      "id": "p3_029",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -21.638756754482863,
+      "raw_quiet_alignment": 0.99319539,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -22.1990984135819,
+          "prediction_error_db_observed_minus_early_calibration": 4.1716422451221655
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -30.613426990112252,
+          "prediction_error_db_observed_minus_early_calibration": -4.3790837273814125
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.3053962290287018
+    },
+    {
+      "id": "p3_039",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -18.68187049732366,
+      "raw_quiet_alignment": 0.98671719,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -32.21798143360625,
+          "prediction_error_db_observed_minus_early_calibration": -22.793960349090895
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -18.845486896070447,
+          "prediction_error_db_observed_minus_early_calibration": -2.4357350534215
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.31462204456329346
+    },
+    {
+      "id": "p3_019",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -7.737308187145859,
+      "raw_quiet_alignment": 0.85624405,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -9.102373358303195,
+          "prediction_error_db_observed_minus_early_calibration": 3.7601695920086375
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -13.49134463971077,
+          "prediction_error_db_observed_minus_early_calibration": -0.688148279087848
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.26069337129592896
+    },
+    {
+      "id": "p3_031",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -20,
+      "other_to_target_db": 7.768642313654003,
+      "raw_quiet_alignment": 0.14440161,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": 7.64962202533429,
+          "prediction_error_db_observed_minus_early_calibration": 21.38403812537073
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -7.880677559742387,
+          "prediction_error_db_observed_minus_early_calibration": 3.1973145429798904
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.021744731813669205
+    },
+    {
+      "id": "p3_063",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -17.132432923421753,
+      "raw_quiet_alignment": 0.98110614,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -29.303875485535734,
+          "prediction_error_db_observed_minus_early_calibration": -19.1798227231665
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -17.371694838145096,
+          "prediction_error_db_observed_minus_early_calibration": -1.957477359545094
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.2550880014896393
+    },
+    {
+      "id": "p3_027",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -14.798160365789343,
+      "raw_quiet_alignment": 0.96829061,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -15.168609222545742,
+          "prediction_error_db_observed_minus_early_calibration": -5.626002848384447
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -26.109685322400274,
+          "prediction_error_db_observed_minus_early_calibration": -4.330068832956963
+        }
+      },
+      "dominant_interferer_donor_speaker": "B",
+      "same_donor_power_weighted_coherence": 0.07188379764556885
+    },
+    {
+      "id": "p3_010",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -3.6030447018779133,
+      "raw_quiet_alignment": 0.70011704,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -17.756696510225304,
+          "prediction_error_db_observed_minus_early_calibration": 3.433366702536471
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -3.881688732784048,
+          "prediction_error_db_observed_minus_early_calibration": 16.781370203547922
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.03250264748930931
+    },
+    {
+      "id": "p3_023",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -8.046417178080652,
+      "raw_quiet_alignment": 0.86380673,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -8.238263203358843,
+          "prediction_error_db_observed_minus_early_calibration": 4.783435795084076
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -22.365280437114787,
+          "prediction_error_db_observed_minus_early_calibration": -6.701937577505185
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.36601749062538147
+    },
+    {
+      "id": "p3_005",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -25.808164930121933,
+      "raw_quiet_alignment": 0.99738114,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -26.45036507493336,
+          "prediction_error_db_observed_minus_early_calibration": 0.628033573151594
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -34.219831790616624,
+          "prediction_error_db_observed_minus_early_calibration": -7.495327305629509
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.5146392583847046
+    },
+    {
+      "id": "p3_051",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -4.202781674799746,
+      "raw_quiet_alignment": 0.73094541,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -4.5317441142049955,
+          "prediction_error_db_observed_minus_early_calibration": 4.760521530253605
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -17.13905285859503,
+          "prediction_error_db_observed_minus_early_calibration": 3.135691445766136
+        }
+      },
+      "dominant_interferer_donor_speaker": "B",
+      "same_donor_power_weighted_coherence": 0.07388690859079361
+    },
+    {
+      "id": "p3_033",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -31.56000583152401,
+      "raw_quiet_alignment": 0.99930435,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -41.33371969108066,
+          "prediction_error_db_observed_minus_early_calibration": -16.650213678936037
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -32.09530555469484,
+          "prediction_error_db_observed_minus_early_calibration": -4.821520101088341
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.33998292684555054
+    },
+    {
+      "id": "p3_069",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -29.160321768282607,
+      "raw_quiet_alignment": 0.99879004,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -45.63118376221091,
+          "prediction_error_db_observed_minus_early_calibration": -19.343610080666803
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -29.250984544643078,
+          "prediction_error_db_observed_minus_early_calibration": 2.463926060905169
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.3068697452545166
+    },
+    {
+      "id": "p3_071",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -3.671975114284457,
+      "raw_quiet_alignment": 0.70154646,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -3.78560791855276,
+          "prediction_error_db_observed_minus_early_calibration": 8.858913900973238
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -19.233837958854814,
+          "prediction_error_db_observed_minus_early_calibration": -9.357691708487938
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.457958459854126
+    },
+    {
+      "id": "p3_053",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -20.654472140971553,
+      "raw_quiet_alignment": 0.99150333,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -20.929743498304664,
+          "prediction_error_db_observed_minus_early_calibration": 5.540684763772106
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -31.673708844190365,
+          "prediction_error_db_observed_minus_early_calibration": -6.375473155437167
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.436005175113678
+    },
+    {
+      "id": "p3_026",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -14.463653596956936,
+      "raw_quiet_alignment": 0.96567051,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -15.207507938208419,
+          "prediction_error_db_observed_minus_early_calibration": 5.432190151375584
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -22.103334701983908,
+          "prediction_error_db_observed_minus_early_calibration": -3.8246334322490676
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.41399604082107544
+    },
+    {
+      "id": "p3_030",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -11.457302338623448,
+      "raw_quiet_alignment": 0.93338172,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -15.40103628947513,
+          "prediction_error_db_observed_minus_early_calibration": 1.219019355460778
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -13.245193676732875,
+          "prediction_error_db_observed_minus_early_calibration": 8.5775934496419
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.08855319023132324
+    },
+    {
+      "id": "p3_055",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -3.6277307919949004,
+      "raw_quiet_alignment": 0.67120733,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -16.27927557116084,
+          "prediction_error_db_observed_minus_early_calibration": -1.3847267552031561
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -3.9561782446640787,
+          "prediction_error_db_observed_minus_early_calibration": 9.059131946569277
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.0625116378068924
+    },
+    {
+      "id": "p3_034",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -15.372547034825594,
+      "raw_quiet_alignment": 0.97185171,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -28.202176534668816,
+          "prediction_error_db_observed_minus_early_calibration": -4.780021636457105
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -15.618417243344034,
+          "prediction_error_db_observed_minus_early_calibration": 4.050034268136581
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.45149850845336914
+    },
+    {
+      "id": "p3_038",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -16.800591067532306,
+      "raw_quiet_alignment": 0.97956095,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -17.015676902888707,
+          "prediction_error_db_observed_minus_early_calibration": 3.7444088909482125
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -30.44969314042994,
+          "prediction_error_db_observed_minus_early_calibration": -7.523998518193311
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.442192941904068
+    },
+    {
+      "id": "p3_021",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -33.44335847696606,
+      "raw_quiet_alignment": 0.99954804,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -33.943992671469054,
+          "prediction_error_db_observed_minus_early_calibration": -8.975787456090941
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -42.6836585436444,
+          "prediction_error_db_observed_minus_early_calibration": -8.68718856410644
+        }
+      },
+      "dominant_interferer_donor_speaker": "B",
+      "same_donor_power_weighted_coherence": 0.22498193383216858
+    },
+    {
+      "id": "p3_054",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -27.317793111030994,
+      "raw_quiet_alignment": 0.99815312,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -31.53065306598662,
+          "prediction_error_db_observed_minus_early_calibration": -20.20938137954834
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -29.565328990047917,
+          "prediction_error_db_observed_minus_early_calibration": -7.017011054093853
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.3724348247051239
+    },
+    {
+      "id": "p3_013",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -16.458650388960017,
+      "raw_quiet_alignment": 0.97789366,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -16.875417908478877,
+          "prediction_error_db_observed_minus_early_calibration": 12.499183965102649
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -26.72310440879095,
+          "prediction_error_db_observed_minus_early_calibration": 0.6624661256882907
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.176086887717247
+    },
+    {
+      "id": "p3_011",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -12.161797994867477,
+      "raw_quiet_alignment": 0.94218377,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -12.596330675646982,
+          "prediction_error_db_observed_minus_early_calibration": 0.7874519077881413
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -22.44732743842873,
+          "prediction_error_db_observed_minus_early_calibration": -7.688549996099352
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.31195321679115295
+    },
+    {
+      "id": "p3_015",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -14.045261127538517,
+      "raw_quiet_alignment": 0.9621088,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -29.30637455698015,
+          "prediction_error_db_observed_minus_early_calibration": -22.186804342784168
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -14.20674003511703,
+          "prediction_error_db_observed_minus_early_calibration": 5.7491619491271635
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.16438794136047363
+    },
+    {
+      "id": "p3_043",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -20,
+      "other_to_target_db": 0.7403298312609468,
+      "raw_quiet_alignment": 0.46808905,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": 0.06395212455067974,
+          "prediction_error_db_observed_minus_early_calibration": 10.846626805367025
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -7.518644739354667,
+          "prediction_error_db_observed_minus_early_calibration": 4.71886778386582
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.0692526176571846
+    },
+    {
+      "id": "p3_066",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -25.370848000337503,
+      "raw_quiet_alignment": 0.99710234,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -34.54935832885304,
+          "prediction_error_db_observed_minus_early_calibration": -23.40951638737923
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -25.92945238906097,
+          "prediction_error_db_observed_minus_early_calibration": 2.8687260701335533
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.2915409803390503
+    },
+    {
+      "id": "p3_050",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -20.892404503877657,
+      "raw_quiet_alignment": 0.99192263,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -21.719259023107096,
+          "prediction_error_db_observed_minus_early_calibration": 1.2214988901181387
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -28.204938999214747,
+          "prediction_error_db_observed_minus_early_calibration": -5.612380460618988
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.32853373885154724
+    },
+    {
+      "id": "p3_070",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -7.645922430079883,
+      "raw_quiet_alignment": 0.85193069,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -21.629155903503058,
+          "prediction_error_db_observed_minus_early_calibration": -0.1501280449743224
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -7.754859690687136,
+          "prediction_error_db_observed_minus_early_calibration": 13.469395883964218
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.02178937941789627
+    },
+    {
+      "id": "p3_057",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -21.752223142587095,
+      "raw_quiet_alignment": 0.99331983,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -45.423921631551295,
+          "prediction_error_db_observed_minus_early_calibration": -19.751530566542247
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -21.768903274571088,
+          "prediction_error_db_observed_minus_early_calibration": 10.778375935467675
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.198811873793602
+    },
+    {
+      "id": "p3_047",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -20,
+      "other_to_target_db": 10.476442921622573,
+      "raw_quiet_alignment": 0.08422086,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": 10.467087848454067,
+          "prediction_error_db_observed_minus_early_calibration": 22.733472665260678
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -18.684593489648623,
+          "prediction_error_db_observed_minus_early_calibration": -6.633068805239841
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.01007638406008482
+    },
+    {
+      "id": "p3_002",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -4.577986560370305,
+      "raw_quiet_alignment": 0.71750854,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -4.552020374696228,
+          "prediction_error_db_observed_minus_early_calibration": 16.9218433354046
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -25.85257250948779,
+          "prediction_error_db_observed_minus_early_calibration": -0.5767822541121369
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.07409632951021194
+    },
+    {
+      "id": "p3_042",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -19.28080228824091,
+      "raw_quiet_alignment": 0.9884603,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -36.00249684922305,
+          "prediction_error_db_observed_minus_early_calibration": -16.93609022815393
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -19.336009192158343,
+          "prediction_error_db_observed_minus_early_calibration": 10.817287695300983
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.09252332895994186
+    },
+    {
+      "id": "p3_037",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -15.625145965608723,
+      "raw_quiet_alignment": 0.97327051,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -16.003364756495927,
+          "prediction_error_db_observed_minus_early_calibration": 11.212580650822703
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -26.743004163932234,
+          "prediction_error_db_observed_minus_early_calibration": 0.7324022772921206
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.037750061601400375
+    },
+    {
+      "id": "p3_059",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -11.741301103804215,
+      "raw_quiet_alignment": 0.938048,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -12.374666414642913,
+          "prediction_error_db_observed_minus_early_calibration": 1.7941286331134407
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -20.330994308563582,
+          "prediction_error_db_observed_minus_early_calibration": -5.285658017251178
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.42898184061050415
+    },
+    {
+      "id": "p3_067",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -11.686622490988007,
+      "raw_quiet_alignment": 0.93676428,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -12.228480126015038,
+          "prediction_error_db_observed_minus_early_calibration": 2.618153480004231
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -21.35647812848668,
+          "prediction_error_db_observed_minus_early_calibration": -7.77369060772055
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.43561267852783203
+    },
+    {
+      "id": "p3_062",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -20.987006876197846,
+      "raw_quiet_alignment": 0.99207826,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -23.155165255723492,
+          "prediction_error_db_observed_minus_early_calibration": 0.3975074875866268
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -24.283409274488047,
+          "prediction_error_db_observed_minus_early_calibration": -3.9500089918451575
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.3815041780471802
+    },
+    {
+      "id": "p3_022",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -12.90332708654234,
+      "raw_quiet_alignment": 0.95126453,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -13.361928648425422,
+          "prediction_error_db_observed_minus_early_calibration": 9.759134222422318
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -22.966381428938508,
+          "prediction_error_db_observed_minus_early_calibration": -2.2727939112251243
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.13653907179832458
+    },
+    {
+      "id": "p3_035",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -20,
+      "other_to_target_db": -11.391152311084792,
+      "raw_quiet_alignment": 0.93382173,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -12.584350026781957,
+          "prediction_error_db_observed_minus_early_calibration": 1.7585074279458681
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -17.533777338549413,
+          "prediction_error_db_observed_minus_early_calibration": -2.091004286474077
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.3505181074142456
+    },
+    {
+      "id": "p3_007",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -20,
+      "other_to_target_db": 3.2871635412848423,
+      "raw_quiet_alignment": 0.30592972,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -8.085293983530397,
+          "prediction_error_db_observed_minus_early_calibration": 7.0722379699047195
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": 2.7400566930092984,
+          "prediction_error_db_observed_minus_early_calibration": 16.02012733701035
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.0361328050494194
+    },
+    {
+      "id": "p3_049",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -12.946043908414227,
+      "raw_quiet_alignment": 0.95157984,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -17.31937422109143,
+          "prediction_error_db_observed_minus_early_calibration": 11.261423949108716
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -14.85517191634089,
+          "prediction_error_db_observed_minus_early_calibration": 9.844151327691348
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.06168082728981972
+    },
+    {
+      "id": "p3_061",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -23.501413470394667,
+      "raw_quiet_alignment": 0.99558267,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -31.34623107632713,
+          "prediction_error_db_observed_minus_early_calibration": -2.5432723450552324
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -24.14354382980537,
+          "prediction_error_db_observed_minus_early_calibration": 4.260529597175613
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.06746433675289154
+    },
+    {
+      "id": "p3_058",
+      "quiet_speaker": "B",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -13.807834461550009,
+      "raw_quiet_alignment": 0.960139,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -19.68924012277246,
+          "prediction_error_db_observed_minus_early_calibration": 1.6988615193823133
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -15.113417297132765,
+          "prediction_error_db_observed_minus_early_calibration": 4.95225427096722
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.2913438081741333
+    },
+    {
+      "id": "p3_065",
+      "quiet_speaker": "C",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -25.78938993921615,
+      "raw_quiet_alignment": 0.99736535,
+      "source_paths": {
+        "A": {
+          "actual_source_bleed_relative_to_target_db": -27.387018787535993,
+          "prediction_error_db_observed_minus_early_calibration": -0.27003076057079184
+        },
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -31.722382243386416,
+          "prediction_error_db_observed_minus_early_calibration": -6.236726837561552
+        }
+      },
+      "dominant_interferer_donor_speaker": "A",
+      "same_donor_power_weighted_coherence": 0.4821624159812927
+    },
+    {
+      "id": "p3_009",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -6,
+      "other_to_target_db": -32.42329015474341,
+      "raw_quiet_alignment": 0.99943028,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -37.264268637508444,
+          "prediction_error_db_observed_minus_early_calibration": -14.442969063356255
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -34.07661375030329,
+          "prediction_error_db_observed_minus_early_calibration": -1.877948323001153
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.21132853627204895
+    },
+    {
+      "id": "p3_006",
+      "quiet_speaker": "A",
+      "quiet_setting_db": -12,
+      "other_to_target_db": -24.414640534166686,
+      "raw_quiet_alignment": 0.99640082,
+      "source_paths": {
+        "B": {
+          "actual_source_bleed_relative_to_target_db": -27.65937287904976,
+          "prediction_error_db_observed_minus_early_calibration": -10.168487984756444
+        },
+        "C": {
+          "actual_source_bleed_relative_to_target_db": -27.24855768100256,
+          "prediction_error_db_observed_minus_early_calibration": -6.666143100080831
+        }
+      },
+      "dominant_interferer_donor_speaker": "C",
+      "same_donor_power_weighted_coherence": 0.23460066318511963
+    }
+  ],
+  "interference_donor_check": {
+    "interpretation": "Coherence is descriptive. Low coherence is consistent with additional noise, a time-varying path, or missed speech in a donor and does not identify which.",
+    "rows_with_other_energy_louder_than_target": 4,
+    "coherence_when_other_energy_louder": [
+      {
+        "id": "p3_031",
+        "other_to_target_db": 7.768642313654003,
+        "dominant_interferer_donor_speaker": "A",
+        "same_donor_power_weighted_coherence": 0.021744731813669205
+      },
+      {
+        "id": "p3_043",
+        "other_to_target_db": 0.7403298312609468,
+        "dominant_interferer_donor_speaker": "A",
+        "same_donor_power_weighted_coherence": 0.0692526176571846
+      },
+      {
+        "id": "p3_047",
+        "other_to_target_db": 10.476442921622573,
+        "dominant_interferer_donor_speaker": "A",
+        "same_donor_power_weighted_coherence": 0.01007638406008482
+      },
+      {
+        "id": "p3_007",
+        "other_to_target_db": 3.2871635412848423,
+        "dominant_interferer_donor_speaker": "C",
+        "same_donor_power_weighted_coherence": 0.0361328050494194
+      }
+    ]
+  }
+}

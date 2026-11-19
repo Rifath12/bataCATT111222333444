@@ -1,0 +1,35 @@
+{
+  "room": "R8008_M8017",
+  "samples": 29120833,
+  "seconds": 1820.0520625,
+  "active_speakers_reference_seconds": [
+    461.2420625,
+    1313.24,
+    44.44,
+    1.1300000000000001
+  ],
+  "definition": "100 ms non-overlapping windows 200 ms inside singly annotated turns with raw own-channel RMS above 0.005 full scale. Other microphone energy includes background. All exact natural overlaps lack isolated waveform references.",
+  "speakers": {
+    "A": {
+      "eligible_seconds": 416.1,
+      "own_level_db": -0.13776549968696153,
+      "median_projected_gain_db": -0.096567629116559,
+      "retained_100ms_fraction": 1.0,
+      "other_mics_total_energy_reduction_db": 0.8637138225309846
+    },
+    "B": {
+      "eligible_seconds": 184.1,
+      "own_level_db": -0.06682374314458796,
+      "median_projected_gain_db": -0.06462049363269573,
+      "retained_100ms_fraction": 1.0,
+      "other_mics_total_energy_reduction_db": 1.7183912421223835
+    },
+    "C": {
+      "eligible_seconds": 309.1,
+      "own_level_db": -0.32574317515762774,
+      "median_projected_gain_db": -0.08561733646023698,
+      "retained_100ms_fraction": 1.0,
+      "other_mics_total_energy_reduction_db": 0.5379559360971569
+    }
+  }
+}

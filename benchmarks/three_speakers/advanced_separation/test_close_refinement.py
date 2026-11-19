@@ -38,6 +38,7 @@ class LearnedRefinementTest(unittest.TestCase):
         matrix = np.tile(np.eye(3,dtype=np.float32),(waveform.FFT//2+1,1,1))
         matrix[:,0,1] = .04
         matrix[:,2,1] = .06
+        matrix[:,1,0] = .02
         original = waveform.suppress(audio,matrix,waveform.FROZEN_PROFILE)
         expected = refine(audio,original,self.parameters)
         with TemporaryDirectory() as directory:

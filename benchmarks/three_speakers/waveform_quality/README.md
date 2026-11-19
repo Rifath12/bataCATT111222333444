@@ -4,17 +4,33 @@ This evaluation measures how well the separated audio tracks preserve their inte
 
 A track's target alignment is the fraction of centered output energy explained by the sample-aligned target waveform. The 96% and 98% targets correspond to absolute SI-SDR thresholds of +13.80 and +16.90 dB. A trial passes only if all three tracks reach the threshold and retain at least 96% of the eligible target speech time above the minimum projected level. The level guard is −12 dB in 100 ms blocks. A muted or swapped output cannot pass. These measurements describe waveform alignment and retained speech, independently of transcription accuracy. [Scoring details](SCORING.md) · [SI-SDR reference](https://research.google/pubs/sdr-half-baked-or-well-done/)
 
+## Three-speaker field tests and fixes
+
+The [five-session test and failure analysis](FIELD_TESTS.md) covers 244 controlled Mandarin clips from four physical rooms, with fresh tests in a fourth room and one 30:20 mixed natural/controlled replay. The results apply to three synchronized headset microphones. The separate mono experiment is reported alongside them.
+
+A receiver with zero measured incoming leakage now passes through the original samples. This covers an isolated mic and a mic with insufficient calibration evidence. The exporter rejects duplicated active recordings, including exact inverted copies, and checks the length and finiteness of every output block. It preserves silent channels and a shared silent introduction. The standard filter is still the default.
+
+For offline calibration, each solo WAV must contain all three synchronized microphone channels in A/B/C order. Have only A speak for the first file, only B for the second and only C for the third. Twelve seconds of speech per person was tested. The recordings must use the same positions, gains and channel order as the meeting. A JSON report identifies microphones receiving unusually strong bleed and records the matrix checksum.
+
+```sh
+cd benchmarks/three_speakers/advanced_separation
+python calibrate_close.py solo_A.wav solo_B.wav solo_C.wav --out setup.npy
+python close_waveform.py mic_A.wav mic_B.wav mic_C.wav --power-transfer setup.npy --refinement boosted --out results
+```
+
+To accelerate the boosted filter on CPU, install the optional Numba package in the same Python environment and append `--fast-trees` to the export command. The compiled tree traversal uses the same weights, thresholds and summation order as the portable implementation. The test environment used Numba 0.65.1, Python 3.12 and NumPy 2.3.5.
+
 ## Optional learned close-mic refinements
 
 The close-mic exporter accepts `--refinement gentle` or `--refinement boosted`. Both require three synchronized 16 kHz mono recordings in physical A/B/C order. The profiles were calibrated before testing. Their supervised model data comes from earlier M8014 audio. The baseline transfer for each test room was fitted using only that recording's first 45%.
 
-| Close-mic waveform processing | All three at 96%, independent rooms | All three at 98%, independent rooms |
+| Close-mic waveform processing | All three at 96%, separate sessions | All three at 98%, separate sessions |
 | --- | ---: | ---: |
 | Standard | 21/32 | 16/32 |
 | Gentle | 22/32 | 16/32 |
 | Boosted | **23/32** | 16/32 |
 
-The 32 control clips are disjoint three-source remixes from two separate meetings (24 M8017, 8 M8016), with 32.608 seconds of exact three-way overlap. Both profiles preserved all 96% and 98% passes in these two rooms. On that room, the weakest output rose from 76.52% to 80.18% with boosted filtering, while median track quality moved from 99.90% to 99.36%. On later M8014 controls, boosted gained two all-three 98% passes and lost one. Gentle reduced the weakest M8016 track from 65.48% to 63.78%. Sustained natural overlap and consistent 96–98% performance remain unverified.
+M8014, M8016 and M8017 have the same physical room ID, R8008. The 32 control clips are disjoint three-source remixes from two separate meetings (24 M8017, 8 M8016), with 32.608 seconds of exact three-way overlap. Both profiles preserved all 96% and 98% passes in these two sessions. In M8017, the weakest output rose from 76.52% to 80.18% with boosted filtering, while median track quality moved from 99.90% to 99.36%. On later M8014 controls, boosted gained two all-three 98% passes and lost one. Gentle reduced the weakest M8016 track from 65.48% to 63.78%. Sustained natural overlap and consistent 96–98% performance remain unverified.
 
 Use a voice activity model, or a stored power transfer array from the same setup, channel order and levels:
 
@@ -105,4 +121,4 @@ python benchmarks/three_speakers/waveform_quality/calibrate_wiring.py \
   solo_A.wav solo_B.wav solo_C.wav --out waveform_calibration.json
 ```
 
-This bench checks the recording setup under the acoustic source positions used for the takes. The included M8016 and M8017 setup checks passed 98% on all three tracks in the balanced trial. Once a voice was made 20 dB quieter, the worst track in each room fell below 71%. All three people speaking naturally can differ from the remix. [Setup check data](evidence/solo_setup_check.json) · [AliMeeting corpus and license](https://www.openslr.org/119/)
+This bench checks the recording setup under the acoustic source positions used for the takes. The included M8016 and M8017 setup checks passed 98% on all three tracks in the balanced trial. Once a voice was made 20 dB quieter, the worst track in each session fell below 71%. All three people speaking naturally can differ from the remix. [Setup check data](evidence/solo_setup_check.json) · [AliMeeting corpus and license](https://www.openslr.org/119/)

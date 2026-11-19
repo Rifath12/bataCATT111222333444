@@ -1,0 +1,21 @@
+{
+  "samples": 29120833,
+  "sample_rate": 16000,
+  "duration_s": 1820.0520625,
+  "scored_windows": 179,
+  "scored_window_s": 332.25,
+  "scored_activity_s_0_1_2_3": [
+    8.879,
+    77.231,
+    159.075,
+    87.065
+  ],
+  "vacated_original_donor_slot_s": 414.19,
+  "untouched_original_s": 1073.6120625,
+  "sha256": {
+    "A.wav": "130ea0c32ecc1a25b4c36aa047a7c00044ea3ef779d2e8873b23a00e66bd02a5",
+    "B.wav": "7b9d505ed0233be500a37ba5deb7b13b13a1f36429563bb20ab0998b7e967451",
+    "C.wav": "45504c8c31259fc300ae9b356ffd0c6aa4fd98c35fcf95ffa022ba68ab95e1b3"
+  },
+  "manifest_sha256": "86b11e42d2e4cf663533f9fe8af14d92dcc098743b486559be576b099d4c78be"
+}

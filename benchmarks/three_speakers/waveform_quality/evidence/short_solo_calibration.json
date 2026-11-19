@@ -1,0 +1,993 @@
+{
+  "acceptance": "All three fixed identities must each reach the stated waveform energy alignment and retain at least 96% of eligible speech blocks above −12 dB gain.",
+  "protocol": "For each speaker take the earliest 12 seconds of annotated sole-speaker segments in the initial 45% of the recording. Consider all annotated meeting participants, trim 0.20 seconds from each annotation edge, accept segments with at least 0.50 seconds left, insert 1024 silence samples between segments. No label from later test donors is used for calibration. No VAD or ONNX runtime used by the short-take procedure.",
+  "models": "The standard and boosted renderer weights and settings were identical between calibration conditions. Fresh held benchmark compares standard only.",
+  "caveat": "Known-source overlapping remixes of recorded solo speech. Count differences compare ways to obtain a calibration. Ground-truth isolation during natural overlap is unknown.",
+  "automatic_fitter_regression": {
+    "session": "M8016",
+    "array_equal": true,
+    "max_difference": 0.0,
+    "selected_frames": [
+      2800,
+      2800,
+      2194
+    ]
+  },
+  "cli_integration": {
+    "case": "m8017_03",
+    "sample_count": 28672,
+    "shapes_match": true,
+    "finite": true,
+    "calibration_s": 1.171101474000352,
+    "onnxruntime_loaded": false,
+    "renderer": {
+      "samples": 28672,
+      "sample_rate": 16000,
+      "direct_mic_order": "ABC",
+      "fitting_fraction": null,
+      "profile": {
+        "spectral_transfer_percentile": 0.55,
+        "exponent": 0.9,
+        "lower_gain": 0.55,
+        "time_smoothing": 5,
+        "cross_share": 1.0
+      },
+      "calibration": null,
+      "speech_detection_s": 0.0,
+      "calibration_s": 0.0004030029995192308,
+      "render_s": 5.016227899000114,
+      "processing_s": 5.01663112299957,
+      "calibration_source": "stored_power_transfer",
+      "learned_refinement": {
+        "model": "boosted",
+        "training_room": "R8008_M8014",
+        "blend": 0.35
+      }
+    }
+  },
+  "fresh_rooms": {
+    "M8005": {
+      "cases": 32,
+      "exact_three_s": 22.56,
+      "paired": {
+        "standard": {
+          "96": {
+            "meeting_count": 21,
+            "short_solo_count": 21,
+            "gained": [],
+            "lost": []
+          },
+          "98": {
+            "meeting_count": 19,
+            "short_solo_count": 18,
+            "gained": [],
+            "lost": [
+              "r8004_m8005_006"
+            ]
+          }
+        }
+      },
+      "calibration": {
+        "transfer_sha256": "e1187a4a674f29fb38984259d999fc58626ff3402b2afe51ec959fc8f8686ab0",
+        "early_source_sample_spans": {
+          "A": [
+            [
+              58880,
+              110560
+            ],
+            [
+              141440,
+              168320
+            ],
+            [
+              179040,
+              210240
+            ],
+            [
+              349920,
+              366880
+            ],
+            [
+              431840,
+              454240
+            ],
+            [
+              750880,
+              759840
+            ],
+            [
+              1217440,
+              1226560
+            ],
+            [
+              1237600,
+              1256000
+            ],
+            [
+              1287200,
+              1293600
+            ]
+          ],
+          "B": [
+            [
+              392160,
+              413760
+            ],
+            [
+              477760,
+              490880
+            ],
+            [
+              525280,
+              544800
+            ],
+            [
+              634240,
+              652000
+            ],
+            [
+              720000,
+              730720
+            ],
+            [
+              813280,
+              821280
+            ],
+            [
+              1139200,
+              1153760
+            ],
+            [
+              3470880,
+              3506720
+            ],
+            [
+              4530240,
+              4581120
+            ]
+          ],
+          "C": [
+            [
+              840160,
+              890400
+            ],
+            [
+              902880,
+              953280
+            ],
+            [
+              967360,
+              998240
+            ],
+            [
+              1008320,
+              1049600
+            ],
+            [
+              1058080,
+              1067840
+            ],
+            [
+              2365440,
+              2374880
+            ]
+          ]
+        },
+        "diagnostics": [
+          {
+            "speaker": "A",
+            "windows": 270,
+            "broadband_db": {
+              "A": 0.0,
+              "B": -18.79890092821154,
+              "C": -37.79783806119938
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "B",
+            "windows": 325,
+            "broadband_db": {
+              "A": -17.791245214163148,
+              "B": 0.0,
+              "C": -28.151024055268525
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "C",
+            "windows": 354,
+            "broadband_db": {
+              "A": -29.63645989482012,
+              "B": -26.765795889300634,
+              "C": 0.0
+            },
+            "paths_over_calibration_bound": []
+          }
+        ]
+      }
+    },
+    "M8008": {
+      "cases": 53,
+      "exact_three_s": 39.648,
+      "paired": {
+        "standard": {
+          "96": {
+            "meeting_count": 36,
+            "short_solo_count": 36,
+            "gained": [],
+            "lost": []
+          },
+          "98": {
+            "meeting_count": 33,
+            "short_solo_count": 33,
+            "gained": [],
+            "lost": []
+          }
+        }
+      },
+      "calibration": {
+        "transfer_sha256": "733ba098cc2891529d8bef9e34c092d057f5df84487206397c6964cf26b2463c",
+        "early_source_sample_spans": {
+          "A": [
+            [
+              487200,
+              524800
+            ],
+            [
+              1317440,
+              1368480
+            ],
+            [
+              1701760,
+              1712000
+            ],
+            [
+              2794240,
+              2836960
+            ],
+            [
+              2847360,
+              2872800
+            ],
+            [
+              2884160,
+              2909120
+            ]
+          ],
+          "B": [
+            [
+              610560,
+              670080
+            ],
+            [
+              680640,
+              703040
+            ],
+            [
+              733120,
+              746240
+            ],
+            [
+              1044480,
+              1063360
+            ],
+            [
+              1112000,
+              1121600
+            ],
+            [
+              1216960,
+              1231360
+            ],
+            [
+              1735360,
+              1745280
+            ],
+            [
+              1786240,
+              1811200
+            ],
+            [
+              1823520,
+              1833760
+            ],
+            [
+              1845440,
+              1854400
+            ]
+          ],
+          "C": [
+            [
+              22080,
+              89760
+            ],
+            [
+              108640,
+              140320
+            ],
+            [
+              158080,
+              184000
+            ],
+            [
+              202400,
+              255360
+            ],
+            [
+              268000,
+              281760
+            ]
+          ]
+        },
+        "diagnostics": [
+          {
+            "speaker": "A",
+            "windows": 270,
+            "broadband_db": {
+              "A": 0.0,
+              "B": -31.79308454452648,
+              "C": -35.419024578839625
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "B",
+            "windows": 299,
+            "broadband_db": {
+              "A": -31.27729360903932,
+              "B": 0.0,
+              "C": -28.856060955277854
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "C",
+            "windows": 314,
+            "broadband_db": {
+              "A": -38.37470727901456,
+              "B": -29.077750327598736,
+              "C": 0.0
+            },
+            "paths_over_calibration_bound": []
+          }
+        ]
+      }
+    },
+    "M8012": {
+      "cases": 71,
+      "exact_three_s": 52.256,
+      "paired": {
+        "standard": {
+          "96": {
+            "meeting_count": 58,
+            "short_solo_count": 58,
+            "gained": [],
+            "lost": []
+          },
+          "98": {
+            "meeting_count": 54,
+            "short_solo_count": 54,
+            "gained": [],
+            "lost": []
+          }
+        }
+      },
+      "calibration": {
+        "transfer_sha256": "d9d7809940167e246a87e3583875a66f576a9772ae50b083557545d1df9ac181",
+        "early_source_sample_spans": {
+          "A": [
+            [
+              1043200,
+              1113440
+            ],
+            [
+              1123840,
+              1156000
+            ],
+            [
+              1193120,
+              1213760
+            ],
+            [
+              1715040,
+              1735840
+            ],
+            [
+              1944000,
+              1960800
+            ],
+            [
+              2061440,
+              2092800
+            ]
+          ],
+          "B": [
+            [
+              969120,
+              982560
+            ],
+            [
+              1385440,
+              1403680
+            ],
+            [
+              1425280,
+              1493440
+            ],
+            [
+              1518080,
+              1528800
+            ],
+            [
+              1549440,
+              1567840
+            ],
+            [
+              2822720,
+              2833120
+            ],
+            [
+              3356480,
+              3405440
+            ],
+            [
+              3434720,
+              3438400
+            ]
+          ],
+          "C": [
+            [
+              50560,
+              97760
+            ],
+            [
+              109760,
+              156800
+            ],
+            [
+              167840,
+              182720
+            ],
+            [
+              205120,
+              229280
+            ],
+            [
+              241440,
+              267360
+            ],
+            [
+              278560,
+              309920
+            ],
+            [
+              323840,
+              325280
+            ]
+          ]
+        },
+        "diagnostics": [
+          {
+            "speaker": "A",
+            "windows": 340,
+            "broadband_db": {
+              "A": 0.0,
+              "B": -18.110433908327103,
+              "C": -31.128853026674996
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "B",
+            "windows": 334,
+            "broadband_db": {
+              "A": -27.065156055155914,
+              "B": 0.0,
+              "C": -39.95025488892684
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "C",
+            "windows": 362,
+            "broadband_db": {
+              "A": -30.221131224179388,
+              "B": -14.788471548356995,
+              "C": 0.0
+            },
+            "paths_over_calibration_bound": []
+          }
+        ]
+      }
+    }
+  },
+  "prior_rooms": {
+    "M8017": {
+      "cases": 24,
+      "exact_three_s": 27.264,
+      "paired": {
+        "standard": {
+          "96": {
+            "meeting_count": 16,
+            "short_solo_count": 15,
+            "gained": [],
+            "lost": [
+              "m8017_23"
+            ]
+          },
+          "98": {
+            "meeting_count": 12,
+            "short_solo_count": 12,
+            "gained": [],
+            "lost": []
+          }
+        },
+        "boosted": {
+          "96": {
+            "meeting_count": 18,
+            "short_solo_count": 18,
+            "gained": [],
+            "lost": []
+          },
+          "98": {
+            "meeting_count": 12,
+            "short_solo_count": 12,
+            "gained": [],
+            "lost": []
+          }
+        }
+      },
+      "calibration": {
+        "transfer_sha256": "b328c5e6b790fef211b83bb8c37dee772db441465cd64655a4b84d43346ec642",
+        "early_source_sample_spans": {
+          "A": [
+            [
+              43520,
+              57760
+            ],
+            [
+              85920,
+              139040
+            ],
+            [
+              151520,
+              168640
+            ],
+            [
+              196480,
+              234240
+            ],
+            [
+              244640,
+              279680
+            ],
+            [
+              681920,
+              694560
+            ],
+            [
+              732640,
+              753120
+            ],
+            [
+              763360,
+              764960
+            ]
+          ],
+          "B": [
+            [
+              560480,
+              628160
+            ],
+            [
+              640640,
+              663040
+            ],
+            [
+              2158560,
+              2205920
+            ],
+            [
+              2217280,
+              2271840
+            ]
+          ],
+          "C": [
+            [
+              316640,
+              380480
+            ],
+            [
+              414720,
+              430720
+            ],
+            [
+              445440,
+              498080
+            ],
+            [
+              1528960,
+              1568960
+            ],
+            [
+              1581600,
+              1601120
+            ]
+          ]
+        },
+        "diagnostics": [
+          {
+            "speaker": "A",
+            "windows": 351,
+            "broadband_db": {
+              "A": 0.0,
+              "B": -34.26093675650646,
+              "C": -30.70072617927693
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "B",
+            "windows": 287,
+            "broadband_db": {
+              "A": -28.08287844982216,
+              "B": 0.0,
+              "C": -36.77711491820758
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "C",
+            "windows": 337,
+            "broadband_db": {
+              "A": -28.340851761088413,
+              "B": -33.24133751159048,
+              "C": 0.0
+            },
+            "paths_over_calibration_bound": []
+          }
+        ]
+      }
+    },
+    "M8016": {
+      "cases": 8,
+      "exact_three_s": 5.344,
+      "paired": {
+        "standard": {
+          "96": {
+            "meeting_count": 5,
+            "short_solo_count": 5,
+            "gained": [],
+            "lost": []
+          },
+          "98": {
+            "meeting_count": 4,
+            "short_solo_count": 4,
+            "gained": [],
+            "lost": []
+          }
+        },
+        "boosted": {
+          "96": {
+            "meeting_count": 5,
+            "short_solo_count": 5,
+            "gained": [],
+            "lost": []
+          },
+          "98": {
+            "meeting_count": 4,
+            "short_solo_count": 4,
+            "gained": [],
+            "lost": []
+          }
+        }
+      },
+      "calibration": {
+        "transfer_sha256": "6f5452ce7a3077969e301f31719e2abfad3fa69b3afff2cddba3d2f9942df3a0",
+        "early_source_sample_spans": {
+          "A": [
+            [
+              23680,
+              71360
+            ],
+            [
+              79360,
+              117920
+            ],
+            [
+              130080,
+              154240
+            ],
+            [
+              172000,
+              213280
+            ],
+            [
+              236160,
+              253760
+            ],
+            [
+              281120,
+              296160
+            ],
+            [
+              314560,
+              322240
+            ]
+          ],
+          "B": [
+            [
+              507840,
+              533760
+            ],
+            [
+              558240,
+              566880
+            ],
+            [
+              622400,
+              670560
+            ],
+            [
+              929920,
+              951360
+            ],
+            [
+              983040,
+              999840
+            ],
+            [
+              1013440,
+              1028000
+            ],
+            [
+              1051200,
+              1067840
+            ],
+            [
+              1076000,
+              1093600
+            ],
+            [
+              1123520,
+              1145760
+            ]
+          ],
+          "C": [
+            [
+              867840,
+              889280
+            ],
+            [
+              1622080,
+              1648320
+            ],
+            [
+              1661120,
+              1697760
+            ],
+            [
+              1830240,
+              1855200
+            ],
+            [
+              1884640,
+              1914080
+            ],
+            [
+              1938080,
+              1990880
+            ],
+            [
+              2081280,
+              2081760
+            ]
+          ]
+        },
+        "diagnostics": [
+          {
+            "speaker": "A",
+            "windows": 310,
+            "broadband_db": {
+              "A": 0.0,
+              "B": -24.981114718625985,
+              "C": -36.12409638084068
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "B",
+            "windows": 283,
+            "broadband_db": {
+              "A": -38.63033823853052,
+              "B": 0.0,
+              "C": -34.84410365011707
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "C",
+            "windows": 262,
+            "broadband_db": {
+              "A": -45.19129062614858,
+              "B": -30.764691975809324,
+              "C": 0.0
+            },
+            "paths_over_calibration_bound": []
+          }
+        ]
+      }
+    },
+    "M8014": {
+      "cases": 24,
+      "exact_three_s": 32.576,
+      "paired": {
+        "standard": {
+          "96": {
+            "meeting_count": 14,
+            "short_solo_count": 13,
+            "gained": [],
+            "lost": [
+              "m8018_13"
+            ]
+          },
+          "98": {
+            "meeting_count": 7,
+            "short_solo_count": 4,
+            "gained": [],
+            "lost": [
+              "m8018_02",
+              "m8018_08",
+              "m8018_16"
+            ]
+          }
+        },
+        "boosted": {
+          "96": {
+            "meeting_count": 14,
+            "short_solo_count": 13,
+            "gained": [],
+            "lost": [
+              "m8018_13"
+            ]
+          },
+          "98": {
+            "meeting_count": 8,
+            "short_solo_count": 6,
+            "gained": [],
+            "lost": [
+              "m8018_16",
+              "m8018_22"
+            ]
+          }
+        }
+      },
+      "calibration": {
+        "transfer_sha256": "f87f6ff85c8bab14e04a055e8840a1f58d33ce9f170d63f0c4ad402ad333acf4",
+        "early_source_sample_spans": {
+          "A": [
+            [
+              28960,
+              88480
+            ],
+            [
+              102880,
+              138080
+            ],
+            [
+              149280,
+              163680
+            ],
+            [
+              181920,
+              211520
+            ],
+            [
+              227840,
+              281120
+            ]
+          ],
+          "B": [
+            [
+              1144800,
+              1161600
+            ],
+            [
+              1173440,
+              1218880
+            ],
+            [
+              1239360,
+              1257920
+            ],
+            [
+              1271200,
+              1287040
+            ],
+            [
+              1298400,
+              1310560
+            ],
+            [
+              1326400,
+              1372960
+            ],
+            [
+              1430880,
+              1467520
+            ]
+          ],
+          "C": [
+            [
+              554080,
+              598560
+            ],
+            [
+              613280,
+              623520
+            ],
+            [
+              639840,
+              710240
+            ],
+            [
+              725120,
+              733280
+            ],
+            [
+              745920,
+              756320
+            ],
+            [
+              836160,
+              864160
+            ],
+            [
+              878240,
+              892000
+            ],
+            [
+              904160,
+              910720
+            ]
+          ]
+        },
+        "diagnostics": [
+          {
+            "speaker": "A",
+            "windows": 293,
+            "broadband_db": {
+              "A": 0.0,
+              "B": -28.209974925271098,
+              "C": -23.57415412889788
+            },
+            "paths_over_calibration_bound": []
+          },
+          {
+            "speaker": "B",
+            "windows": 332,
+            "broadband_db": {
+              "A": -32.172865254483,
+              "B": 0.0,
+              "C": -1.4025584570633423
+            },
+            "paths_over_calibration_bound": [
+              "C"
+            ]
+          },
+          {
+            "speaker": "C",
+            "windows": 325,
+            "broadband_db": {
+              "A": -33.4573334389789,
+              "B": -36.950818025724864,
+              "C": 0.0
+            },
+            "paths_over_calibration_bound": []
+          }
+        ]
+      }
+    }
+  }
+}

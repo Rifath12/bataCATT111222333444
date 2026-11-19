@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checked": [
+    "exact microphone sums",
+    "diagonal target mapping",
+    "exact activity intersection",
+    "source clips after fit boundary",
+    "no other annotated voice within 199.94 ms of any donor",
+    "independent source level reconstruction from PCM with explicit gain and measured active RMS",
+    "nonoverlapping donors within each room"
+  ],
+  "results": [
+    {
+      "room": "R8004_M8005",
+      "matched_case_images": 96,
+      "distinct_nonreused_time_spans": 96
+    },
+    {
+      "room": "R8005_M8008",
+      "matched_case_images": 159,
+      "distinct_nonreused_time_spans": 159
+    },
+    {
+      "room": "R8006_M8012",
+      "matched_case_images": 213,
+      "distinct_nonreused_time_spans": 213
+    }
+  ]
+}

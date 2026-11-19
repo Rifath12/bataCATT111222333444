@@ -1,0 +1,53 @@
+{
+  "selection": "Highest reference exact-three duration in any continuous 30s on a 10ms start grid, tie earliest. End-to-end recognition/separation scores were not used to select it.",
+  "start_sample": 2508800,
+  "end_sample": 2988800,
+  "sample_rate": 16000,
+  "start_s": 156.8,
+  "end_s": 186.8,
+  "known_exact_three_s": 7.268,
+  "windows": [
+    {
+      "id": "p3_018",
+      "destination_start": 2508640,
+      "length": 46240,
+      "quiet_speaker": "A",
+      "quiet_level_db": -12
+    },
+    {
+      "id": "p3_014",
+      "destination_start": 2584320,
+      "length": 23680,
+      "quiet_speaker": "C",
+      "quiet_level_db": -12
+    },
+    {
+      "id": "p2_004",
+      "destination_start": 2615520,
+      "length": 45120,
+      "quiet_speaker": null,
+      "quiet_level_db": 0
+    },
+    {
+      "id": "p3_041",
+      "destination_start": 2771040,
+      "length": 31040,
+      "quiet_speaker": "C",
+      "quiet_level_db": -6
+    },
+    {
+      "id": "p3_000",
+      "destination_start": 2819200,
+      "length": 17760,
+      "quiet_speaker": null,
+      "quiet_level_db": 0
+    },
+    {
+      "id": "p3_001",
+      "destination_start": 2930240,
+      "length": 87840,
+      "quiet_speaker": "B",
+      "quiet_level_db": -6
+    }
+  ]
+}

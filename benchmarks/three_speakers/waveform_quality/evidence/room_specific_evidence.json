@@ -1,0 +1,518 @@
+{
+  "method": "Physical-microphone-specific signed gain table learned from 128 deterministic remixes of real early solo triplets. The 15% blend with boosted was frozen before the two new confirmation meetings, and the per-room table was fitted within the initial 36% of each recording. All slates retained fixed speaker identity.",
+  "selection": {
+    "selected": 0.15,
+    "sha256": "16c52c15dcebe3c94028160c295cd320b9c25dc250a5bfabf58ccd254352dcee",
+    "summary": {
+      "boosted": {
+        "n": 48,
+        "worst": 0.11774622812987084,
+        "p10": 0.6799953965126138,
+        "quiet10": 0.2613716532022254,
+        "median": 0.9914888350673217,
+        "mean_coverage": 0.9983709716868465,
+        "coverage_min": 0.9223744292237442,
+        "pass96": 17,
+        "lost96": [],
+        "gained96": [],
+        "pass98": 8,
+        "lost98": [],
+        "gained98": []
+      },
+      "0.05": {
+        "n": 48,
+        "worst": 0.11708694013563067,
+        "p10": 0.6823184166685271,
+        "quiet10": 0.26357177893181755,
+        "median": 0.9914364674697054,
+        "mean_coverage": 0.9983709716868465,
+        "coverage_min": 0.9223744292237442,
+        "pass96": 17,
+        "lost96": [],
+        "gained96": [],
+        "pass98": 8,
+        "lost98": [],
+        "gained98": []
+      },
+      "0.1": {
+        "n": 48,
+        "worst": 0.11642079614313718,
+        "p10": 0.6846160373496905,
+        "quiet10": 0.26584411239677574,
+        "median": 0.9913707461623311,
+        "mean_coverage": 0.9983709716868465,
+        "coverage_min": 0.9223744292237442,
+        "pass96": 17,
+        "lost96": [],
+        "gained96": [],
+        "pass98": 8,
+        "lost98": [],
+        "gained98": []
+      },
+      "0.15": {
+        "n": 48,
+        "worst": 0.11574772665094717,
+        "p10": 0.6868794219214103,
+        "quiet10": 0.26819148583611935,
+        "median": 0.9912913632751431,
+        "mean_coverage": 0.9983709716868465,
+        "coverage_min": 0.9223744292237442,
+        "pass96": 17,
+        "lost96": [],
+        "gained96": [],
+        "pass98": 8,
+        "lost98": [],
+        "gained98": []
+      }
+    }
+  },
+  "groups": {
+    "confirmation": {
+      "R8002_M8002": {
+        "metrics": {
+          "boosted": {
+            "n": 51,
+            "worst": 0.07220163171317244,
+            "p10": 0.9468812526100988,
+            "quiet10": 0.6838943532326048,
+            "median": 0.9947020697306995,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 31,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 19,
+            "lost98": [],
+            "gained98": []
+          },
+          "calibrated": {
+            "n": 51,
+            "worst": 0.06703865956537323,
+            "p10": 0.9487062426801887,
+            "quiet10": 0.693588380873286,
+            "median": 0.9949229690507576,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 31,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 21,
+            "lost98": [],
+            "gained98": [
+              "r8002_m8002_021",
+              "r8002_m8002_033"
+            ]
+          }
+        },
+        "training_donor_counts": [
+          66,
+          27,
+          30
+        ],
+        "fit_max_samples": 11878480,
+        "table_fit_s": 3.3751641240005483
+      },
+      "R8002_M8003": {
+        "metrics": {
+          "boosted": {
+            "n": 37,
+            "worst": 0.10250485407738537,
+            "p10": 0.8598120894279908,
+            "quiet10": 0.6698163262214307,
+            "median": 0.9885660298215379,
+            "mean_coverage": 0.9987347871149334,
+            "coverage_min": 0.9247787610619469,
+            "pass96": 18,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 8,
+            "lost98": [],
+            "gained98": []
+          },
+          "calibrated": {
+            "n": 37,
+            "worst": 0.10017064353939022,
+            "p10": 0.8633342845671002,
+            "quiet10": 0.6734528014967138,
+            "median": 0.9898827743702302,
+            "mean_coverage": 0.9987347871149334,
+            "coverage_min": 0.9247787610619469,
+            "pass96": 18,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 8,
+            "lost98": [],
+            "gained98": []
+          }
+        },
+        "training_donor_counts": [
+          2,
+          48,
+          5
+        ],
+        "fit_max_samples": 11752862,
+        "table_fit_s": 3.0833991969993804
+      },
+      "all": {
+        "boosted": {
+          "n": 88,
+          "worst": 0.07220163171317244,
+          "p10": 0.9099077832778347,
+          "quiet10": 0.6736182536718465,
+          "median": 0.9927138361271879,
+          "mean_coverage": 0.9994680354915061,
+          "coverage_min": 0.9247787610619469,
+          "pass96": 49,
+          "lost96": [],
+          "gained96": [],
+          "pass98": 27,
+          "lost98": [],
+          "gained98": [],
+          "retention_failures": 2
+        },
+        "calibrated": {
+          "n": 88,
+          "worst": 0.06703865956537323,
+          "p10": 0.9112179071943471,
+          "quiet10": 0.6829303623389159,
+          "median": 0.9932319392937127,
+          "mean_coverage": 0.9994680354915061,
+          "coverage_min": 0.9247787610619469,
+          "pass96": 49,
+          "lost96": [],
+          "gained96": [],
+          "pass98": 29,
+          "lost98": [],
+          "gained98": [
+            "r8002_m8002_021",
+            "r8002_m8002_033"
+          ],
+          "retention_failures": 2
+        }
+      },
+      "exact_three_s": 67.80799999999999
+    },
+    "earlier_156": {
+      "R8004_M8005": {
+        "metrics": {
+          "boosted": {
+            "n": 32,
+            "worst": 0.10202932024672082,
+            "p10": 0.9512512581426986,
+            "quiet10": 0.696588901660825,
+            "median": 0.9982631668828079,
+            "mean_coverage": 0.9988501082251083,
+            "coverage_min": 0.8896103896103896,
+            "pass96": 21,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 19,
+            "lost98": [],
+            "gained98": []
+          },
+          "calibrated": {
+            "n": 32,
+            "worst": 0.10130868129749694,
+            "p10": 0.9524617776374096,
+            "quiet10": 0.700463804908423,
+            "median": 0.9982899227545698,
+            "mean_coverage": 0.9988501082251083,
+            "coverage_min": 0.8896103896103896,
+            "pass96": 21,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 19,
+            "lost98": [],
+            "gained98": []
+          }
+        },
+        "training_donor_counts": [
+          44,
+          19,
+          31
+        ],
+        "fit_max_samples": 12051094,
+        "table_fit_s": 8.989575202999731
+      },
+      "R8005_M8008": {
+        "metrics": {
+          "boosted": {
+            "n": 53,
+            "worst": 0.07144697039741356,
+            "p10": 0.9563563716753545,
+            "quiet10": 0.7475521871609772,
+            "median": 0.9983293830725596,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 38,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 34,
+            "lost98": [],
+            "gained98": []
+          },
+          "calibrated": {
+            "n": 53,
+            "worst": 0.07095560346129094,
+            "p10": 0.9554444040505577,
+            "quiet10": 0.7437161230056561,
+            "median": 0.9985968019307296,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 38,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 34,
+            "lost98": [],
+            "gained98": []
+          }
+        },
+        "training_donor_counts": [
+          20,
+          26,
+          37
+        ],
+        "fit_max_samples": 11200250,
+        "table_fit_s": 10.960661629000242
+      },
+      "R8006_M8012": {
+        "metrics": {
+          "boosted": {
+            "n": 71,
+            "worst": 0.19682147059107685,
+            "p10": 0.9898703053288966,
+            "quiet10": 0.9545361948146565,
+            "median": 0.9991111776809544,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 63,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 55,
+            "lost98": [],
+            "gained98": []
+          },
+          "calibrated": {
+            "n": 71,
+            "worst": 0.194276580562023,
+            "p10": 0.9898169901714158,
+            "quiet10": 0.9545166340838831,
+            "median": 0.9991638670937221,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 63,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 55,
+            "lost98": [],
+            "gained98": []
+          }
+        },
+        "training_donor_counts": [
+          14,
+          36,
+          42
+        ],
+        "fit_max_samples": 10538760,
+        "table_fit_s": 10.154639643999872
+      },
+      "all": {
+        "boosted": {
+          "n": 156,
+          "worst": 0.07144697039741356,
+          "p10": 0.9732318661686324,
+          "quiet10": 0.8525664786542309,
+          "median": 0.9987341310256432,
+          "mean_coverage": 0.9997641247641248,
+          "coverage_min": 0.8896103896103896,
+          "pass96": 122,
+          "lost96": [],
+          "gained96": [],
+          "pass98": 108,
+          "lost98": [],
+          "gained98": [],
+          "retention_failures": 1
+        },
+        "calibrated": {
+          "n": 156,
+          "worst": 0.07095560346129094,
+          "p10": 0.9732540012734086,
+          "quiet10": 0.852199919143052,
+          "median": 0.9988238357017096,
+          "mean_coverage": 0.9997641247641248,
+          "coverage_min": 0.8896103896103896,
+          "pass96": 122,
+          "lost96": [],
+          "gained96": [],
+          "pass98": 108,
+          "lost98": [],
+          "gained98": [],
+          "retention_failures": 1
+        }
+      }
+    },
+    "earlier_56": {
+      "old14": {
+        "metrics": {
+          "boosted": {
+            "n": 24,
+            "worst": 0.1382378770461038,
+            "p10": 0.9249247305988904,
+            "quiet10": 0.5975560265587015,
+            "median": 0.9887138188245754,
+            "mean_coverage": 0.9989216701173222,
+            "coverage_min": 0.922360248447205,
+            "pass96": 14,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 8,
+            "lost98": [],
+            "gained98": []
+          },
+          "calibrated": {
+            "n": 24,
+            "worst": 0.14027895345866828,
+            "p10": 0.9302486066365413,
+            "quiet10": 0.6092196161772849,
+            "median": 0.988680203755215,
+            "mean_coverage": 0.9989216701173222,
+            "coverage_min": 0.922360248447205,
+            "pass96": 14,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 7,
+            "lost98": [
+              "m8018_22"
+            ],
+            "gained98": []
+          }
+        },
+        "training_donor_counts": [
+          59,
+          27,
+          36
+        ],
+        "fit_max_samples": "early M8014 %36",
+        "table_fit_s": 0.0003559260003385134
+      },
+      "old16": {
+        "metrics": {
+          "boosted": {
+            "n": 8,
+            "worst": 0.6546757028955805,
+            "p10": 0.9639951047345906,
+            "quiet10": 0.7399791921290221,
+            "median": 0.9946455033074642,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 5,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 4,
+            "lost98": [],
+            "gained98": []
+          },
+          "calibrated": {
+            "n": 8,
+            "worst": 0.6695230415724137,
+            "p10": 0.9641940372516262,
+            "quiet10": 0.7450078596153733,
+            "median": 0.9956062283838929,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 5,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 4,
+            "lost98": [],
+            "gained98": []
+          }
+        },
+        "training_donor_counts": [
+          48,
+          42,
+          14
+        ],
+        "fit_max_samples": 10592524,
+        "table_fit_s": 8.84022093800013
+      },
+      "old17": {
+        "metrics": {
+          "boosted": {
+            "n": 24,
+            "worst": 0.8017807748575466,
+            "p10": 0.967318938997759,
+            "quiet10": 0.8633651083725475,
+            "median": 0.9936313108332073,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 18,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 12,
+            "lost98": [],
+            "gained98": []
+          },
+          "calibrated": {
+            "n": 24,
+            "worst": 0.7976528086458803,
+            "p10": 0.9664261196318552,
+            "quiet10": 0.865712899085736,
+            "median": 0.9950335531240936,
+            "mean_coverage": 1.0,
+            "coverage_min": 1.0,
+            "pass96": 18,
+            "lost96": [],
+            "gained96": [],
+            "pass98": 12,
+            "lost98": [],
+            "gained98": []
+          }
+        },
+        "training_donor_counts": [
+          51,
+          25,
+          33
+        ],
+        "fit_max_samples": 10483499,
+        "table_fit_s": 5.396424730000035
+      },
+      "all": {
+        "boosted": {
+          "n": 56,
+          "worst": 0.1382378770461038,
+          "p10": 0.941702651397496,
+          "quiet10": 0.7976596928505275,
+          "median": 0.9930200539782779,
+          "mean_coverage": 0.9995378586217095,
+          "coverage_min": 0.922360248447205,
+          "pass96": 37,
+          "lost96": [],
+          "gained96": [],
+          "pass98": 24,
+          "lost98": [],
+          "gained98": [],
+          "retention_failures": 1
+        },
+        "calibrated": {
+          "n": 56,
+          "worst": 0.14027895345866828,
+          "p10": 0.9424769755277993,
+          "quiet10": 0.7974422455111654,
+          "median": 0.9937483186427163,
+          "mean_coverage": 0.9995378586217095,
+          "coverage_min": 0.922360248447205,
+          "pass96": 37,
+          "lost96": [],
+          "gained96": [],
+          "pass98": 23,
+          "lost98": [
+            "m8018_22"
+          ],
+          "gained98": [],
+          "retention_failures": 1
+        }
+      }
+    }
+  }
+}

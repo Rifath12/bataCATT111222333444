@@ -1,0 +1,268 @@
+{
+  "frozen_prototype_sha256": "34714393a86136d9f6bd926b8c5e14de2cc4e62603c5e548a19750b77262e22e",
+  "release_source_sha256": "a8ab8ffa70b9e636b40092d2b39f026c799d846f816cd7fd9dfc5eb688ed05b1",
+  "cold_matrix_sha256": "04f02a806399aba295831f0d7b57bdc8b3bf818871f707e161dff3dba13ca83d",
+  "protocol": "Reuse known M8017 partly remixed 30:20 replay. The prior underprediction on single C case p3_047 was known before proposal. One rolling rule frozen before checking these 72 performance results. Processing, detection of dominant microphones, and updates see only input WAVs plus physical power calibration. Reference windows enter the scorer only. All 3 headset identities fixed.",
+  "initial_conditions": "Previously available initial transfer from first 120 s of same recording. For strictly prospective streaming, such calibration must be available beforehand; incremental updates here use only completed 16.384 s blocks while regular spectral subtraction is offline.",
+  "input_samples": 29120833,
+  "seconds": 1820.0520625,
+  "render_wall_s": 23.068764469999223,
+  "timing_host": "Linux CPU, single software math thread; this run may share the host with other experiments.",
+  "release_tests_passed": 4,
+  "complete_pcm_parity": [
+    {
+      "speaker": "A",
+      "samples": 29120833,
+      "peak_difference_to_frozen": 0.0,
+      "decoded_f32le_sha256": "8f09332293bc28c9285ef57cc2fa21633325afcf89531b9f8f0c49725e936293"
+    },
+    {
+      "speaker": "B",
+      "samples": 29120833,
+      "peak_difference_to_frozen": 0.0,
+      "decoded_f32le_sha256": "c6eab06ed2fd0721fb81e1d4542c15be749cdc514806ada21f32defd52790591"
+    },
+    {
+      "speaker": "C",
+      "samples": 29120833,
+      "peak_difference_to_frozen": 0.0,
+      "decoded_f32le_sha256": "fa7ec1b61d6c76a5bf5e8e715e4f461c185421f04ef2c0ebb2bd9bee538a3d89"
+    }
+  ],
+  "processed_blocks": 112,
+  "blocks_with_eligible_source_evidence": 85,
+  "summaries": {
+    "standard": {
+      "cases": 72,
+      "exact_three_s": 87.065,
+      "joint_96": 50,
+      "joint_98": 32,
+      "weakest_track_min_p10_median": [
+        0.08088148,
+        0.720600196,
+        0.97876949
+      ],
+      "by_nominal_quiet_level_db": {
+        "0": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 13
+        },
+        "-6": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 12
+        },
+        "-12": {
+          "cases": 18,
+          "joint_96": 12,
+          "joint_98": 7
+        },
+        "-20": {
+          "cases": 18,
+          "joint_96": 6,
+          "joint_98": 0
+        }
+      },
+      "pooled_alignment_ABC": [
+        0.9991287133844854,
+        0.9871006857414286,
+        0.9942990718139301
+      ],
+      "pooled_activity_retained_ABC": [
+        1.0,
+        0.9991974980822564,
+        1.0
+      ],
+      "eligible_exact_three_s_in_250ms_windows": 86.60900000000012,
+      "all_three_time_fraction_in_eligible_250ms_windows": {
+        "96": 0.65704487986237,
+        "98": 0.5304298629472685
+      },
+      "solo_and_dual_cases": {
+        "1": {
+          "cases": 20,
+          "joint_active_96": 20,
+          "joint_active_98": 20,
+          "median_inactive_output_relative_to_active_reference_db": -30.32318112311512
+        },
+        "2": {
+          "cases": 87,
+          "joint_active_96": 71,
+          "joint_active_98": 60,
+          "median_inactive_output_relative_to_active_reference_db": -22.064171209509034
+        }
+      }
+    },
+    "rolling": {
+      "cases": 72,
+      "exact_three_s": 87.065,
+      "joint_96": 50,
+      "joint_98": 33,
+      "weakest_track_min_p10_median": [
+        0.08130992,
+        0.729738977,
+        0.978964585
+      ],
+      "by_nominal_quiet_level_db": {
+        "0": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 13
+        },
+        "-6": {
+          "cases": 18,
+          "joint_96": 16,
+          "joint_98": 12
+        },
+        "-12": {
+          "cases": 18,
+          "joint_96": 12,
+          "joint_98": 8
+        },
+        "-20": {
+          "cases": 18,
+          "joint_96": 6,
+          "joint_98": 0
+        }
+      },
+      "pooled_alignment_ABC": [
+        0.9991459931918737,
+        0.9871937839446738,
+        0.9943077227267996
+      ],
+      "pooled_activity_retained_ABC": [
+        1.0,
+        0.9991974980822564,
+        1.0
+      ],
+      "eligible_exact_three_s_in_250ms_windows": 86.60900000000012,
+      "all_three_time_fraction_in_eligible_250ms_windows": {
+        "96": 0.665023265480493,
+        "98": 0.5356025355332584
+      },
+      "solo_and_dual_cases": {
+        "1": {
+          "cases": 20,
+          "joint_active_96": 20,
+          "joint_active_98": 20,
+          "median_inactive_output_relative_to_active_reference_db": -30.548152334109666
+        },
+        "2": {
+          "cases": 87,
+          "joint_active_96": 72,
+          "joint_active_98": 60,
+          "median_inactive_output_relative_to_active_reference_db": -22.178395074762886
+        }
+      }
+    }
+  },
+  "severe_case_047": {
+    "note": "Only two eligible A observations from a single run in the six immediately previous blocks; threshold requires 32 rows in three runs spanning two blocks. The current source-period transfer cannot reliably repair a mismatched or incoherent donor recorded at another time.",
+    "rolling_observations": {
+      "sample": 18874368,
+      "history_end_exclusive": 18874368,
+      "evidence": [
+        {
+          "source": "A",
+          "blocks": 1,
+          "runs": 1,
+          "rows": 2
+        },
+        {
+          "source": "B",
+          "blocks": 5,
+          "runs": 53,
+          "rows": 186
+        },
+        {
+          "source": "C",
+          "blocks": 1,
+          "runs": 8,
+          "rows": 39
+        }
+      ],
+      "median_path_db": {
+        "A->B": -21.427955627441406,
+        "A->C": -21.355674743652344,
+        "B->A": -40.057960510253906,
+        "B->C": -32.3421516418457,
+        "C->A": -37.86778259277344,
+        "C->B": -28.167537689208984
+      }
+    },
+    "input_assessment": "In another evaluation using reference source images the first-120-second calibration underpredicted A-donor foreign energy by 22.7 dB. A-to-C coherence was 0.010; true acoustic crosstalk, background sound and unannotated speech are not distinguishable in the donor.",
+    "standard": {
+      "id": "p3_047",
+      "anchor_sample": 18981280,
+      "quiet_speaker": "C",
+      "nominal_quiet_db": -20,
+      "exact_three_seconds": 2.73,
+      "alignment": [
+        0.99990008,
+        0.99714428,
+        0.08088148
+      ],
+      "retention": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pass": {
+        "96": false,
+        "98": false
+      }
+    },
+    "rolling": {
+      "id": "p3_047",
+      "anchor_sample": 18981280,
+      "quiet_speaker": "C",
+      "nominal_quiet_db": -20,
+      "exact_three_seconds": 2.73,
+      "alignment": [
+        0.99996623,
+        0.99723773,
+        0.08130992
+      ],
+      "retention": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pass": {
+        "96": false,
+        "98": false
+      }
+    }
+  },
+  "changes_96": {
+    "gained": [],
+    "lost": []
+  },
+  "changes_98": {
+    "gained": [
+      "p3_034"
+    ],
+    "lost": []
+  },
+  "largest_individual_alignment_drop": [
+    -0.002093360000000044,
+    "p3_070",
+    "B"
+  ],
+  "largest_individual_alignment_gain": [
+    0.02863294999999999,
+    "p3_055",
+    "B"
+  ],
+  "integrated_export_verification": {
+    "identical_samples_checked": 87362499,
+    "max_abs_difference": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0
+    },
+    "seconds": 23.84766769399903,
+    "integrated_code_sha256": "3779653aaef987fa684d874f415f9dc40932b0f52f6ec732148febd5a2916026"
+  }
+}

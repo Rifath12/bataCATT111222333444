@@ -1,0 +1,469 @@
+{
+  "metric": "Fixed A/B/C exact-three centered target-aligned output fraction; all three >=96 or 98 percent with active-gain retention >=96 percent. Percentages stored as fractions.",
+  "scope": "Offline three synchronized close microphones. Test clips constructed from time-disjoint labeled solo donors; exact_three is signal-level activity on all three references. Can evaluate separation of known targets without a microphone.",
+  "development": "24 deterministic mixes from M8014 validation donor pool (36\u201345%); reused donors are possible. Boosted physical transfer is common across arms and uses first 45% including the early development pool. Frozen before scoring fresh or previous late data. No ASR or live claims.",
+  "mechanism": "Fewer than 140 Hz spectral energy at least 33% and more than 8 percentage points above own solo 95th percentile, with competing channel strong. Apply bounded 0\u2013320 Hz attenuation relative to the speaker\u2019s four measured band/midband energy ratios. Fit with 12 seconds of earlier solo speech per person, synchronized all mics, all annotated people excluded from each solo window, time-disjoint from late control donors.",
+  "phase_dev": {
+    "boosted": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028812514003699104,
+      "quiet_p10": 0.367645750584358,
+      "quiet_median": 0.9392257800124433,
+      "retention_min": 1.0
+    },
+    "fixed35": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028805628547560178,
+      "quiet_p10": 0.36719694308486783,
+      "quiet_median": 0.9393056847624217,
+      "retention_min": 1.0
+    },
+    "fixed65": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.02879666939426529,
+      "quiet_p10": 0.36591741097600405,
+      "quiet_median": 0.9390152735396458,
+      "retention_min": 1.0
+    },
+    "fixed100": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028782658567357875,
+      "quiet_p10": 0.3634220962207776,
+      "quiet_median": 0.9382584650274363,
+      "retention_min": 1.0
+    },
+    "local35": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.02831978744513117,
+      "quiet_p10": 0.36678247930077074,
+      "quiet_median": 0.939146358595357,
+      "retention_min": 1.0
+    },
+    "local65": {
+      "joint96": 10,
+      "joint98": 5,
+      "worst": 0.027894944070296104,
+      "quiet_p10": 0.36527672840663283,
+      "quiet_median": 0.9387865585415136,
+      "retention_min": 1.0
+    },
+    "local100": {
+      "joint96": 10,
+      "joint98": 5,
+      "worst": 0.027396704621123962,
+      "quiet_p10": 0.3626185101781125,
+      "quiet_median": 0.9380250801115892,
+      "retention_min": 1.0
+    }
+  },
+  "independent_component_dev": {
+    "0": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028812514003699104,
+      "quiet_p10": 0.367645750584358,
+      "quiet_median": 0.9392257800124433,
+      "retention_min": 1.0
+    },
+    "0.35": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028154597742362977,
+      "quiet_p10": 0.366924905751522,
+      "quiet_median": 0.9392193531764225,
+      "retention_min": 1.0
+    },
+    "0.65": {
+      "joint96": 10,
+      "joint98": 5,
+      "worst": 0.02757324314026983,
+      "quiet_p10": 0.3653120640878337,
+      "quiet_median": 0.938413672358245,
+      "retention_min": 1.0
+    },
+    "1.0": {
+      "joint96": 9,
+      "joint98": 5,
+      "worst": 0.026876025572993047,
+      "quiet_p10": 0.3622659525326272,
+      "quiet_median": 0.9368912978924592,
+      "retention_min": 1.0
+    }
+  },
+  "spectral_dictionary_dev": {
+    "0": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028812514003699104,
+      "quiet_p10": 0.367645750584358,
+      "quiet_median": 0.9392257800124433,
+      "retention_min": 1.0
+    },
+    "0.25": {
+      "joint96": 9,
+      "joint98": 4,
+      "worst": 0.028673670172095704,
+      "quiet_p10": 0.380482917945892,
+      "quiet_median": 0.9469268159663453,
+      "retention_min": 1.0
+    },
+    "0.55": {
+      "joint96": 7,
+      "joint98": 2,
+      "worst": 0.02850125279997431,
+      "quiet_p10": 0.40447930182516567,
+      "quiet_median": 0.9341380234952341,
+      "retention_min": 1.0
+    },
+    "0.85": {
+      "joint96": 5,
+      "joint98": 0,
+      "worst": 0.028323264177898246,
+      "quiet_p10": 0.4390182733674776,
+      "quiet_median": 0.8906942349016342,
+      "retention_min": 0.6997167138810199
+    }
+  },
+  "ungated_bass_dev": {
+    "0": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028812514003699104,
+      "quiet_p10": 0.367645750584358,
+      "quiet_median": 0.9392257800124433,
+      "retention_min": 1.0
+    },
+    "0.45": {
+      "joint96": 10,
+      "joint98": 3,
+      "worst": 0.03114965059800308,
+      "quiet_p10": 0.46399489823045215,
+      "quiet_median": 0.9434777680400348,
+      "retention_min": 1.0
+    },
+    "0.8": {
+      "joint96": 5,
+      "joint98": 1,
+      "worst": 0.03210630268883763,
+      "quiet_p10": 0.518235836849059,
+      "quiet_median": 0.9332505877225235,
+      "retention_min": 1.0
+    },
+    "1.0": {
+      "joint96": 3,
+      "joint98": 1,
+      "worst": 0.031999286694106406,
+      "quiet_p10": 0.5369783662739788,
+      "quiet_median": 0.9110942718995584,
+      "retention_min": 0.8753993610223643
+    }
+  },
+  "calibrated_bass_dev": {
+    "0": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028812514003699104,
+      "quiet_p10": 0.367645750584358,
+      "quiet_median": 0.9392257800124433,
+      "retention_min": 1.0
+    },
+    "0.35": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028812377250269187,
+      "quiet_p10": 0.43880877547512903,
+      "quiet_median": 0.9392257799991218,
+      "retention_min": 1.0
+    },
+    "0.65": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028812259769476465,
+      "quiet_p10": 0.5003563552164021,
+      "quiet_median": 0.94424528094393,
+      "retention_min": 1.0
+    },
+    "1.0": {
+      "joint96": 10,
+      "joint98": 6,
+      "worst": 0.028812122956670596,
+      "quiet_p10": 0.5236641311028299,
+      "quiet_median": 0.9500304493821146,
+      "retention_min": 1.0
+    }
+  },
+  "lost_case_root_cause": {
+    "id": "r8005_m8008_027",
+    "affected_track": "C",
+    "nominal_gap_db": -12,
+    "reference_rms": 0.014835518,
+    "foreign_rms": 0.00057995255,
+    "true_reference_sub140_fraction": 0.1908576,
+    "calibration_sub140_p95": 0.10113456,
+    "max_local_mixture_sub140_fraction": 0.5348994,
+    "boosted_alignment_C": 0.9931,
+    "guard_alignment_C": 0.8749,
+    "boosted_retention_C": 1.0,
+    "guard_retention_C": 0.867,
+    "mechanism": "Some genuine bass in this speaker had much greater local energy than the short early solo sample; the learned noise gate removed desired signal."
+  },
+  "selection": {
+    "share": "1.0",
+    "ranking": "non-regressing joint96 and joint98 and improving quiet_p10, then summed joint counts, quiet_p10, worst"
+  },
+  "source_hashes": [
+    "0f0fb840d1cda80f4ce1fa914b482916da2e99c5fc9d83d4141c2ed3756eafa4  science_fix/fir/rumble_guard.py",
+    "5b329be60b9b0fcba1f45bf12f047cf6df3301d43ff038bb9d0f547c2cc9dd2b  science_fix/fir/rumble_guard_experiment.py",
+    "a5b83dd08c1dacddb3e2a441e56d6b46e757918d83d1684af6f0256d3df7300b  science_fix/fir/rumble_guard_freeze.json"
+  ],
+  "fresh_panel": {
+    "boosted": {
+      "total": 156,
+      "exact_three_s": 114.464,
+      "joint96": 122,
+      "joint98": 108,
+      "worst_all_voices": 0.07144697050728825,
+      "quiet_p10": 0.8525664788970428,
+      "quiet_median": 0.9950678452711252,
+      "retention_below_96_tracks": 1,
+      "worst_retention": 0.8896103896103896
+    },
+    "guard": {
+      "total": 156,
+      "exact_three_s": 114.464,
+      "joint96": 121,
+      "joint98": 107,
+      "worst_all_voices": 0.07142599655397174,
+      "quiet_p10": 0.8727933237856667,
+      "quiet_median": 0.9950678450958987,
+      "retention_below_96_tracks": 2,
+      "worst_retention": 0.8670212765957447
+    },
+    "96": {
+      "gained": [],
+      "lost": [
+        "r8005_m8008_027"
+      ]
+    },
+    "98": {
+      "gained": [],
+      "lost": [
+        "r8005_m8008_027"
+      ]
+    }
+  },
+  "rooms": {
+    "M8005": {
+      "boosted": {
+        "total": 32,
+        "exact_three_s": 22.56,
+        "joint96": 21,
+        "joint98": 19,
+        "worst_all_voices": 0.10202932051412766,
+        "quiet_p10": 0.6965889016503328,
+        "quiet_median": 0.9884674212495232,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.8896103896103896
+      },
+      "guard": {
+        "total": 32,
+        "exact_three_s": 22.56,
+        "joint96": 21,
+        "joint98": 19,
+        "worst_all_voices": 0.10202932158867505,
+        "quiet_p10": 0.6965889010355049,
+        "quiet_median": 0.9884674211088427,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.8896103896103896
+      },
+      "96": {
+        "gained": [],
+        "lost": []
+      },
+      "98": {
+        "gained": [],
+        "lost": []
+      }
+    },
+    "M8008": {
+      "boosted": {
+        "total": 53,
+        "exact_three_s": 39.648,
+        "joint96": 38,
+        "joint98": 34,
+        "worst_all_voices": 0.07144697050728825,
+        "quiet_p10": 0.747552187376616,
+        "quiet_median": 0.9950083771509728,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0
+      },
+      "guard": {
+        "total": 53,
+        "exact_three_s": 39.648,
+        "joint96": 37,
+        "joint98": 33,
+        "worst_all_voices": 0.07142599655397174,
+        "quiet_p10": 0.8413983322303319,
+        "quiet_median": 0.9950083768278962,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.8670212765957447
+      },
+      "96": {
+        "gained": [],
+        "lost": [
+          "r8005_m8008_027"
+        ]
+      },
+      "98": {
+        "gained": [],
+        "lost": [
+          "r8005_m8008_027"
+        ]
+      }
+    },
+    "M8012": {
+      "boosted": {
+        "total": 71,
+        "exact_three_s": 52.256,
+        "joint96": 63,
+        "joint98": 55,
+        "worst_all_voices": 0.19682147073027229,
+        "quiet_p10": 0.9545361947300254,
+        "quiet_median": 0.9963571682900074,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0
+      },
+      "guard": {
+        "total": 71,
+        "exact_three_s": 52.256,
+        "joint96": 63,
+        "joint98": 55,
+        "worst_all_voices": 0.5189612163565981,
+        "quiet_p10": 0.9545361952669289,
+        "quiet_median": 0.996357168393987,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0
+      },
+      "96": {
+        "gained": [],
+        "lost": []
+      },
+      "98": {
+        "gained": [],
+        "lost": []
+      }
+    },
+    "M8017": {
+      "boosted": {
+        "total": 24,
+        "exact_three_s": 27.264,
+        "joint96": 18,
+        "joint98": 12,
+        "worst_all_voices": 0.8017807755209493,
+        "quiet_p10": 0.8633651080408065,
+        "quiet_median": 0.9857495008641732,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0
+      },
+      "guard": {
+        "total": 24,
+        "exact_three_s": 27.264,
+        "joint96": 13,
+        "joint98": 9,
+        "worst_all_voices": 0.7596235706549412,
+        "quiet_p10": 0.8251267905272118,
+        "quiet_median": 0.9812225653677724,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.9215686274509803
+      },
+      "96": {
+        "gained": [],
+        "lost": [
+          "m8017_07",
+          "m8017_10",
+          "m8017_14",
+          "m8017_21",
+          "m8017_23"
+        ]
+      },
+      "98": {
+        "gained": [],
+        "lost": [
+          "m8017_07",
+          "m8017_14",
+          "m8017_21"
+        ]
+      }
+    },
+    "M8016": {
+      "boosted": {
+        "total": 8,
+        "exact_three_s": 5.344,
+        "joint96": 5,
+        "joint98": 4,
+        "worst_all_voices": 0.6546757030509147,
+        "quiet_p10": 0.7399791922374837,
+        "quiet_median": 0.9852567500892228,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0
+      },
+      "guard": {
+        "total": 8,
+        "exact_three_s": 5.344,
+        "joint96": 5,
+        "joint98": 4,
+        "worst_all_voices": 0.6546757027049718,
+        "quiet_p10": 0.7399791923779724,
+        "quiet_median": 0.9852567499417426,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0
+      },
+      "96": {
+        "gained": [],
+        "lost": []
+      },
+      "98": {
+        "gained": [],
+        "lost": []
+      }
+    },
+    "M8014": {
+      "boosted": {
+        "total": 24,
+        "exact_three_s": 32.576,
+        "joint96": 14,
+        "joint98": 8,
+        "worst_all_voices": 0.13823787690737066,
+        "quiet_p10": 0.5975560265700881,
+        "quiet_median": 0.9792924838216287,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.922360248447205
+      },
+      "guard": {
+        "total": 24,
+        "exact_three_s": 32.576,
+        "joint96": 14,
+        "joint98": 8,
+        "worst_all_voices": 0.39323385931523125,
+        "quiet_p10": 0.7888539871645975,
+        "quiet_median": 0.9792924834361745,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.8695652173913043
+      },
+      "96": {
+        "gained": [],
+        "lost": []
+      },
+      "98": {
+        "gained": [],
+        "lost": []
+      }
+    }
+  },
+  "conclusion": "No default promotion. The frozen bass guard reduced the weak-channel tail in two fresh sessions while costing a 96% and a 98% pass in M8008. Phase cancellation variants and spectral dictionary did not qualify on development."
+}

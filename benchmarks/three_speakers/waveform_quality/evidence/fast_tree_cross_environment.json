@@ -1,0 +1,32 @@
+{
+  "R8004_M8005": {
+    "clips": 32,
+    "bit_equal": 0,
+    "maximum_sample_difference": 5.960464477539063e-08,
+    "wall_s": 11.009525608999866
+  },
+  "R8005_M8008": {
+    "clips": 53,
+    "bit_equal": 0,
+    "maximum_sample_difference": 2.9802322387695312e-08,
+    "wall_s": 15.004191858999548
+  },
+  "R8006_M8012": {
+    "clips": 71,
+    "bit_equal": 0,
+    "maximum_sample_difference": 2.9802322387695312e-08,
+    "wall_s": 21.718343467000523
+  },
+  "R8002_M8002": {
+    "clips": 51,
+    "bit_equal": 0,
+    "maximum_sample_difference": 5.960464477539063e-08,
+    "wall_s": 14.331388051999966
+  },
+  "R8002_M8003": {
+    "clips": 37,
+    "bit_equal": 0,
+    "maximum_sample_difference": 5.960464477539063e-08,
+    "wall_s": 10.175396620000356
+  }
+}

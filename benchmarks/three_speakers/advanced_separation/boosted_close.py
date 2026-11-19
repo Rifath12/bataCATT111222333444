@@ -3,6 +3,7 @@
 from dataclasses import dataclass
 import json
 from pathlib import Path
+from typing import Callable
 
 import numpy as np
 from scipy import signal
@@ -104,9 +105,10 @@ class BoostedMask:
 
     intercept: float
     trees: tuple[Tree, ...]
+    fast_predict: Callable | None = None
 
     @classmethod
-    def load(cls, path=MODEL_PATH):
+    def load(cls, path=MODEL_PATH, *, fast=False):
         document = json.loads(path.read_text(encoding="utf-8"))
         if document.get("format") != 1 or document.get("features") != 22:
             raise ValueError("Unsupported close-mic correction model")
@@ -134,9 +136,18 @@ class BoostedMask:
                 raise ValueError("Invalid branch in close-mic correction tree")
             trees.append(Tree(columns.astype(np.int32), thresholds, left.astype(np.int32),
                               right.astype(np.int32), outputs))
-        return cls(intercept, tuple(trees))
+        predictor = None
+        if fast:
+            try:
+                from boosted_fast import compile_predictor
+            except ImportError as exc:
+                raise RuntimeError("Install numba to enable --fast-trees") from exc
+            predictor = compile_predictor(trees, intercept)
+        return cls(intercept, tuple(trees), predictor)
 
     def predict(self, features):
+        if self.fast_predict is not None:
+            return self.fast_predict(features)
         prediction = np.full(len(features), self.intercept, dtype=np.float64)
         for tree in self.trees:
             prediction += tree.predict(features)

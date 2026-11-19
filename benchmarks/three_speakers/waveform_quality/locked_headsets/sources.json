@@ -1,0 +1,81 @@
+{
+  "rooms": {
+    "R8004_M8005": [
+      8017,
+      8018,
+      8020
+    ],
+    "R8005_M8008": [
+      8039,
+      8040,
+      8041
+    ],
+    "R8006_M8012": [
+      8070,
+      8071,
+      8072
+    ]
+  },
+  "sources": [
+    {
+      "file": "R8004_M8005/room.rttm",
+      "sha256": "8b1561320c50a513a9ddc44d6fe0bc173686787b8540a0ea847df3e9c9b353f6",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8004_M8005.rttm"
+    },
+    {
+      "file": "R8004_M8005/audio/8017.wav",
+      "sha256": "a82428c65ffae158a1f2ba28eed266c30ca546fc6810c99dedf2d0eff8d03ad4",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8005_N_SPK8017.wav"
+    },
+    {
+      "file": "R8004_M8005/audio/8018.wav",
+      "sha256": "b6961ebadc76dab057ffbc9d4a2621a36f4dbc0e5b04ca81d745298c75547e11",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8005_N_SPK8018.wav"
+    },
+    {
+      "file": "R8004_M8005/audio/8020.wav",
+      "sha256": "ff9500e4b3d9a10b08f628245b473cbd10826fe218d207098cf35c58a2db01c8",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8005_N_SPK8020.wav"
+    },
+    {
+      "file": "R8005_M8008/room.rttm",
+      "sha256": "2c29cada272c1a473f7354ee1d65a802c955538b3eb818df765a8d503e240287",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8005_M8008.rttm"
+    },
+    {
+      "file": "R8005_M8008/audio/8039.wav",
+      "sha256": "0cec22ffdad09e80d6d7b9bac66bd0857d6f6416356d1376f7ddcaf0ad5bf578",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8008_N_SPK8039.wav"
+    },
+    {
+      "file": "R8005_M8008/audio/8040.wav",
+      "sha256": "4d3a6a4ae25484d7280ad127056c39abd2724f946fcd72f4c082cd4c673dcd21",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8008_N_SPK8040.wav"
+    },
+    {
+      "file": "R8005_M8008/audio/8041.wav",
+      "sha256": "e1c49cf0c077e383fe69e52ece34b4f8ae7d052ba75d22ed77826102be4c121c",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8008_N_SPK8041.wav"
+    },
+    {
+      "file": "R8006_M8012/room.rttm",
+      "sha256": "981a44fe97fc9c6343a6148466adb0dcf004b32caea5d543b2a52988d48e080d",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8006_M8012.rttm"
+    },
+    {
+      "file": "R8006_M8012/audio/8070.wav",
+      "sha256": "754cb6980e94d7ad47f34d1f7bb739cb2d2a16cf71d65acc1c99317162c2212c",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8006_M8012_N_SPK8070.wav"
+    },
+    {
+      "file": "R8006_M8012/audio/8071.wav",
+      "sha256": "f6f784330fbbd72e13edc9ebcb9f641f7a23ea3d5d32bcbb6b67b9f8339856f4",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8006_M8012_N_SPK8071.wav"
+    },
+    {
+      "file": "R8006_M8012/audio/8072.wav",
+      "sha256": "66c1bb2a8a4f6b7f20673573740e3ba8b54ba53ac2a8237cc8b45da9422138ad",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8006_M8012_N_SPK8072.wav"
+    }
+  ]
+}

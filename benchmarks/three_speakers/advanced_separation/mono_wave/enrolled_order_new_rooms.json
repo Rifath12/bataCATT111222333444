@@ -1,0 +1,243 @@
+{
+  "protocol": "Three independent physical room trials after fixing feature extractor and enrollment procedure. First four pre-registered controlled remixes per room, after 45% cutoff; 4th speaker screened from donors and enrollment. The same pinned mono ReCorrNet guard is used on all. A/B/C by minimum total cepstral distance across the six permutations. Best reference order measured on full clip; fallback identity not scored.",
+  "rooms": [
+    {
+      "room": "R8004_M8005",
+      "eligible": 0,
+      "total": 4,
+      "enrollment_samples_by_speaker": {
+        "8017": 262144,
+        "8018": 262144,
+        "8020": 262144
+      },
+      "total_exact_three_s": 3.2640000000000002,
+      "scored_exact_three_s": 0,
+      "raw_matched_voice_slots": 0,
+      "enrolled_matched_voice_slots": 0,
+      "raw_all_correct": 0,
+      "enrolled_all_correct": 0,
+      "cases": [
+        {
+          "id": "r8004_m8005_001",
+          "choice": "baseline",
+          "overlap_s": 0.672
+        },
+        {
+          "id": "r8004_m8005_002",
+          "choice": "baseline",
+          "overlap_s": 0.928
+        },
+        {
+          "id": "r8004_m8005_003",
+          "choice": "baseline",
+          "overlap_s": 0.864
+        },
+        {
+          "id": "r8004_m8005_004",
+          "choice": "baseline",
+          "overlap_s": 0.8
+        }
+      ]
+    },
+    {
+      "room": "R8005_M8008",
+      "eligible": 4,
+      "total": 4,
+      "enrollment_samples_by_speaker": {
+        "8039": 262144,
+        "8040": 262144,
+        "8041": 262144
+      },
+      "total_exact_three_s": 3.104,
+      "scored_exact_three_s": 3.104,
+      "raw_matched_voice_slots": 4,
+      "enrolled_matched_voice_slots": 12,
+      "raw_all_correct": 1,
+      "enrolled_all_correct": 4,
+      "cases": [
+        {
+          "id": "r8005_m8008_001",
+          "choice": "second_pass",
+          "overlap_s": 0.832,
+          "enrolled_order": [
+            2,
+            0,
+            1
+          ],
+          "oracle_order": [
+            2,
+            0,
+            1
+          ],
+          "num_enrolled_matches": 3,
+          "num_raw_matches": 0,
+          "cli_assignment_cost_margin": 2.6660515999842254,
+          "cli_copies_byte_identical": true
+        },
+        {
+          "id": "r8005_m8008_002",
+          "choice": "second_pass",
+          "overlap_s": 0.736,
+          "enrolled_order": [
+            1,
+            0,
+            2
+          ],
+          "oracle_order": [
+            1,
+            0,
+            2
+          ],
+          "num_enrolled_matches": 3,
+          "num_raw_matches": 1,
+          "cli_assignment_cost_margin": 1.5430666123999721,
+          "cli_copies_byte_identical": true
+        },
+        {
+          "id": "r8005_m8008_003",
+          "choice": "second_pass",
+          "overlap_s": 0.736,
+          "enrolled_order": [
+            0,
+            1,
+            2
+          ],
+          "oracle_order": [
+            0,
+            1,
+            2
+          ],
+          "num_enrolled_matches": 3,
+          "num_raw_matches": 3,
+          "cli_assignment_cost_margin": 0.8787692134795648,
+          "cli_copies_byte_identical": true
+        },
+        {
+          "id": "r8005_m8008_004",
+          "choice": "second_pass",
+          "overlap_s": 0.8,
+          "enrolled_order": [
+            2,
+            0,
+            1
+          ],
+          "oracle_order": [
+            2,
+            0,
+            1
+          ],
+          "num_enrolled_matches": 3,
+          "num_raw_matches": 0,
+          "cli_assignment_cost_margin": 1.1438801367611617,
+          "cli_copies_byte_identical": true
+        }
+      ]
+    },
+    {
+      "room": "R8006_M8012",
+      "eligible": 4,
+      "total": 4,
+      "enrollment_samples_by_speaker": {
+        "8070": 262144,
+        "8071": 262144,
+        "8072": 262144
+      },
+      "total_exact_three_s": 2.912,
+      "scored_exact_three_s": 2.912,
+      "raw_matched_voice_slots": 5,
+      "enrolled_matched_voice_slots": 10,
+      "raw_all_correct": 1,
+      "enrolled_all_correct": 3,
+      "cases": [
+        {
+          "id": "r8006_m8012_001",
+          "choice": "second_pass",
+          "overlap_s": 0.64,
+          "enrolled_order": [
+            2,
+            1,
+            0
+          ],
+          "oracle_order": [
+            2,
+            1,
+            0
+          ],
+          "num_enrolled_matches": 3,
+          "num_raw_matches": 1,
+          "cli_assignment_cost_margin": 2.998360728317273,
+          "cli_copies_byte_identical": true
+        },
+        {
+          "id": "r8006_m8012_002",
+          "choice": "second_pass",
+          "overlap_s": 0.704,
+          "enrolled_order": [
+            2,
+            1,
+            0
+          ],
+          "oracle_order": [
+            1,
+            2,
+            0
+          ],
+          "num_enrolled_matches": 1,
+          "num_raw_matches": 0,
+          "cli_assignment_cost_margin": 0.4671324231691738,
+          "cli_copies_byte_identical": true
+        },
+        {
+          "id": "r8006_m8012_003",
+          "choice": "second_pass",
+          "overlap_s": 0.736,
+          "enrolled_order": [
+            0,
+            1,
+            2
+          ],
+          "oracle_order": [
+            0,
+            1,
+            2
+          ],
+          "num_enrolled_matches": 3,
+          "num_raw_matches": 3,
+          "cli_assignment_cost_margin": 4.65236043130437,
+          "cli_copies_byte_identical": true
+        },
+        {
+          "id": "r8006_m8012_004",
+          "choice": "second_pass",
+          "overlap_s": 0.832,
+          "enrolled_order": [
+            2,
+            1,
+            0
+          ],
+          "oracle_order": [
+            2,
+            1,
+            0
+          ],
+          "num_enrolled_matches": 3,
+          "num_raw_matches": 1,
+          "cli_assignment_cost_margin": 1.0240585126769588,
+          "cli_copies_byte_identical": true
+        }
+      ]
+    }
+  ],
+  "cli_verification": {
+    "checked_clips": 8,
+    "checksummed_WAV_files": 24,
+    "byte_identical": 24,
+    "orders_reproduced": 8,
+    "format_regression_tests": [
+      "PCM_24",
+      "FLOAT",
+      "PCM_16"
+    ],
+    "inference_memory_chunking_check": "Original full-array extractor and 2048-frame blocks agree exactly for a seeded mixed waveform at 512, 8192, 63001, 422931 and 1024000 samples."
+  }
+}

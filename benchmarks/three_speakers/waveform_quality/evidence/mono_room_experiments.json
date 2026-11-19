@@ -1,0 +1,2268 @@
+{
+  "protocol": "Fixed before scoring. The first four manifest clips from each test meeting, including the zero, -6, -12, and -20 dB condition from each. Donors lie strictly after the enrollment cutoff. 16 kHz clean mono remixes summing three separate headset direct references. Every candidate sees only the mixed waveform, plus physically labeled disjoint early enrollment excerpts for the enrollment method. Gold order is a separate diagnostic. No live audio or transcription evaluation.",
+  "model_sha256": "d7f08d69824886ca1300ef0bbfae4f7befec1d3435006bc137de9826e0d59ffd",
+  "rooms": [
+    "R8008_M8016",
+    "R8008_M8017"
+  ],
+  "enrollment_metadata": [
+    {
+      "room": "R8008_M8016",
+      "enrollment_starts": [
+        718240,
+        1197248,
+        1962656
+      ],
+      "fit_max_samples": 13240656,
+      "anchor_length": 8192,
+      "gap_samples": 1024
+    },
+    {
+      "room": "R8008_M8017",
+      "enrollment_starts": [
+        884960,
+        2988864,
+        478208
+      ],
+      "fit_max_samples": 13104374,
+      "anchor_length": 8192,
+      "gap_samples": 1024
+    }
+  ],
+  "total_exact_three_s": 7.5840000000000005,
+  "clip_count": 8,
+  "summary": {
+    "blind_enrolled": {
+      "median_alignment_pct": 92.31834910867215,
+      "minimum_alignment_pct": 51.311805607018755,
+      "median_weakest_clip_alignment_pct": 76.58059382100544,
+      "speaker_96_and_retention": 8,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "blind_best_permutation": {
+      "median_alignment_pct": 92.31834910867215,
+      "minimum_alignment_pct": 51.311805607018755,
+      "median_weakest_clip_alignment_pct": 76.58059382100544,
+      "speaker_96_and_retention": 8,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "prompt_enrolled": {
+      "median_alignment_pct": 58.51396207838776,
+      "minimum_alignment_pct": 0.0010097273645919887,
+      "median_weakest_clip_alignment_pct": 29.724424959417536,
+      "speaker_96_and_retention": 5,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "prompt_best_permutation": {
+      "median_alignment_pct": 85.52964353819534,
+      "minimum_alignment_pct": 24.83443041247208,
+      "median_weakest_clip_alignment_pct": 64.73483462646037,
+      "speaker_96_and_retention": 6,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "high_band": {
+      "median_alignment_pct": 92.37916347451375,
+      "minimum_alignment_pct": 51.3166533618493,
+      "median_weakest_clip_alignment_pct": 76.58299605314187,
+      "speaker_96_and_retention": 8,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "isolated_resample_diagnostic": {
+      "median_alignment_pct": 99.72971221804335,
+      "minimum_alignment_pct": 95.87615499710544,
+      "median_weakest_clip_alignment_pct": 99.12772748819944,
+      "speaker_96_and_retention": 20,
+      "joint96": 4,
+      "joint98": 4
+    }
+  },
+  "identity_diagnostic": {
+    "blind_matched_physical": 24,
+    "prompt_matched_physical": 15
+  },
+  "high_band_vs_blind": {
+    "track_count": 24,
+    "tracks_improved": 23,
+    "median_paired_pp": 0.013751437337347738,
+    "mean_paired_pp": 0.06070639317080554,
+    "minimum_paired_pp": -0.006611119784480479,
+    "maximum_paired_pp": 0.5450318862801993
+  },
+  "cases": [
+    {
+      "case": "m8016_01",
+      "gains_db": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "overlap_seconds": 0.672,
+      "blind_seconds": 11.002876276999814,
+      "seeded_seconds": 29.08446843100046,
+      "blind_matched_physical": 3,
+      "prompt_matched_physical": 1,
+      "blind_order": [
+        2,
+        0,
+        1
+      ],
+      "prompt_order": [
+        0,
+        2,
+        1
+      ],
+      "blind_oracle": [
+        2,
+        0,
+        1
+      ],
+      "prompt_oracle": [
+        2,
+        0,
+        1
+      ],
+      "blind_enrolled": {
+        "alignment_pct": [
+          87.59983854148253,
+          86.96151943470957,
+          77.26266545530032
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "blind_best_permutation": {
+        "alignment_pct": [
+          87.59983854148253,
+          86.96151943470957,
+          77.26266545530032
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_enrolled": {
+        "alignment_pct": [
+          13.003740223697042,
+          37.38298178905565,
+          78.52122385131923
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_best_permutation": {
+        "alignment_pct": [
+          54.20662032753229,
+          24.83443041247208,
+          78.52122385131923
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "high_band": {
+        "alignment_pct": [
+          87.6132872995921,
+          86.97024428335567,
+          77.2651991342727
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "isolated_resample_diagnostic": {
+        "alignment_pct": [
+          99.8065351085366,
+          99.90076996060057,
+          99.9693264655841
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": true,
+        "joint98": true
+      }
+    },
+    {
+      "case": "m8016_02",
+      "gains_db": [
+        0.0,
+        -6.0,
+        0.0
+      ],
+      "overlap_seconds": 0.704,
+      "blind_seconds": 9.467836204000378,
+      "seeded_seconds": 29.076072705000115,
+      "blind_matched_physical": 3,
+      "prompt_matched_physical": 3,
+      "blind_order": [
+        0,
+        2,
+        1
+      ],
+      "prompt_order": [
+        0,
+        2,
+        1
+      ],
+      "blind_oracle": [
+        0,
+        2,
+        1
+      ],
+      "prompt_oracle": [
+        0,
+        2,
+        1
+      ],
+      "blind_enrolled": {
+        "alignment_pct": [
+          95.59092997968132,
+          89.9055885608552,
+          98.7629145333768
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "blind_best_permutation": {
+        "alignment_pct": [
+          95.59092997968132,
+          89.9055885608552,
+          98.7629145333768
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_enrolled": {
+        "alignment_pct": [
+          95.33789999297271,
+          91.17136560986307,
+          98.94601043316008
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_best_permutation": {
+        "alignment_pct": [
+          95.33789999297271,
+          91.17136560986307,
+          98.94601043316008
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "high_band": {
+        "alignment_pct": [
+          95.85318782293325,
+          89.91964267742031,
+          98.75630341359232
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "isolated_resample_diagnostic": {
+        "alignment_pct": [
+          96.92343590570471,
+          99.3039791285814,
+          99.98676710784547
+        ],
+        "retention": [
+          0.9147727272727273,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "case": "m8016_03",
+      "gains_db": [
+        0.0,
+        0.0,
+        -12.0
+      ],
+      "overlap_seconds": 0.672,
+      "blind_seconds": 10.097950827999739,
+      "seeded_seconds": 33.85825125100018,
+      "blind_matched_physical": 3,
+      "prompt_matched_physical": 0,
+      "blind_order": [
+        1,
+        0,
+        2
+      ],
+      "prompt_order": [
+        0,
+        2,
+        1
+      ],
+      "blind_oracle": [
+        1,
+        0,
+        2
+      ],
+      "prompt_oracle": [
+        1,
+        0,
+        2
+      ],
+      "blind_enrolled": {
+        "alignment_pct": [
+          98.76003104901957,
+          99.1932947328371,
+          94.89384261920003
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "blind_best_permutation": {
+        "alignment_pct": [
+          98.76003104901957,
+          99.1932947328371,
+          94.89384261920003
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_enrolled": {
+        "alignment_pct": [
+          31.866164106450867,
+          4.119022271556209,
+          0.0010097273645919887
+        ],
+        "retention": [
+          1.0,
+          0.654320987654321,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_best_permutation": {
+        "alignment_pct": [
+          45.00157039181939,
+          44.496261310067105,
+          83.40859711199803
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "high_band": {
+        "alignment_pct": [
+          98.80959956554777,
+          99.21762015578251,
+          94.89418105635177
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "isolated_resample_diagnostic": {
+        "alignment_pct": [
+          99.42187634062051,
+          99.79884661113438,
+          99.96336844818427
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": true,
+        "joint98": true
+      }
+    },
+    {
+      "case": "m8016_04",
+      "gains_db": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "overlap_seconds": 0.64,
+      "blind_seconds": 26.537376749000032,
+      "seeded_seconds": 44.6133550429995,
+      "blind_matched_physical": 3,
+      "prompt_matched_physical": 1,
+      "blind_order": [
+        2,
+        0,
+        1
+      ],
+      "prompt_order": [
+        0,
+        2,
+        1
+      ],
+      "blind_oracle": [
+        2,
+        0,
+        1
+      ],
+      "prompt_oracle": [
+        2,
+        0,
+        1
+      ],
+      "blind_enrolled": {
+        "alignment_pct": [
+          75.89852218671057,
+          97.41062847842734,
+          98.77953377524581
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "blind_best_permutation": {
+        "alignment_pct": [
+          75.89852218671057,
+          97.41062847842734,
+          98.77953377524581
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_enrolled": {
+        "alignment_pct": [
+          0.09712430897356283,
+          0.28877553886263363,
+          98.8042893938678
+        ],
+        "retention": [
+          1.0,
+          0.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_best_permutation": {
+        "alignment_pct": [
+          78.03422245413378,
+          97.43242136980987,
+          98.8042893938678
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "high_band": {
+        "alignment_pct": [
+          75.90079297201105,
+          97.43372373045268,
+          98.78511924484928
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "isolated_resample_diagnostic": {
+        "alignment_pct": [
+          99.66057782495231,
+          99.86351539202207,
+          99.89133460056995
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": true,
+        "joint98": true
+      }
+    },
+    {
+      "case": "m8017_01",
+      "gains_db": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "overlap_seconds": 1.12,
+      "blind_seconds": 18.154053082000246,
+      "seeded_seconds": 37.371222812999804,
+      "blind_matched_physical": 3,
+      "prompt_matched_physical": 3,
+      "blind_order": [
+        2,
+        1,
+        0
+      ],
+      "prompt_order": [
+        2,
+        0,
+        1
+      ],
+      "blind_oracle": [
+        2,
+        1,
+        0
+      ],
+      "prompt_oracle": [
+        2,
+        0,
+        1
+      ],
+      "blind_enrolled": {
+        "alignment_pct": [
+          86.00942374803444,
+          96.55864111252781,
+          74.07450668439215
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "blind_best_permutation": {
+        "alignment_pct": [
+          86.00942374803444,
+          96.55864111252781,
+          74.07450668439215
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_enrolled": {
+        "alignment_pct": [
+          54.90877383480783,
+          46.44510969513803,
+          62.119150321967695
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_best_permutation": {
+        "alignment_pct": [
+          54.90877383480783,
+          46.44510969513803,
+          62.119150321967695
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "high_band": {
+        "alignment_pct": [
+          86.01947895182572,
+          96.56172596349323,
+          74.61953857067235
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "isolated_resample_diagnostic": {
+        "alignment_pct": [
+          99.8947496376745,
+          99.86806411797112,
+          95.87615499710544
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "case": "m8017_02",
+      "gains_db": [
+        0.0,
+        -6.0,
+        0.0
+      ],
+      "overlap_seconds": 1.088,
+      "blind_seconds": 18.07702651999989,
+      "seeded_seconds": 41.029066527000396,
+      "blind_matched_physical": 3,
+      "prompt_matched_physical": 3,
+      "blind_order": [
+        2,
+        1,
+        0
+      ],
+      "prompt_order": [
+        1,
+        2,
+        0
+      ],
+      "blind_oracle": [
+        2,
+        1,
+        0
+      ],
+      "prompt_oracle": [
+        1,
+        2,
+        0
+      ],
+      "blind_enrolled": {
+        "alignment_pct": [
+          90.52060898465368,
+          66.68146095323223,
+          94.02196619420762
+        ],
+        "retention": [
+          1.0,
+          0.9154411764705882,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "blind_best_permutation": {
+        "alignment_pct": [
+          90.52060898465368,
+          66.68146095323223,
+          94.02196619420762
+        ],
+        "retention": [
+          1.0,
+          0.9154411764705882,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_enrolled": {
+        "alignment_pct": [
+          95.37507920948913,
+          81.94596802046526,
+          97.57095492437264
+        ],
+        "retention": [
+          1.0,
+          0.9154411764705882,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_best_permutation": {
+        "alignment_pct": [
+          95.37507920948913,
+          81.94596802046526,
+          97.57095492437264
+        ],
+        "retention": [
+          1.0,
+          0.9154411764705882,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "high_band": {
+        "alignment_pct": [
+          90.53344011129879,
+          66.69489253031897,
+          94.03604463294995
+        ],
+        "retention": [
+          1.0,
+          0.9154411764705882,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "isolated_resample_diagnostic": {
+        "alignment_pct": [
+          99.80485385103567,
+          99.47316013993057,
+          99.89990760563818
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": true,
+        "joint98": true
+      }
+    },
+    {
+      "case": "m8017_03",
+      "gains_db": [
+        0.0,
+        0.0,
+        -12.0
+      ],
+      "overlap_seconds": 1.184,
+      "blind_seconds": 34.52133912999943,
+      "seeded_seconds": 117.41045537500031,
+      "blind_matched_physical": 3,
+      "prompt_matched_physical": 1,
+      "blind_order": [
+        0,
+        2,
+        1
+      ],
+      "prompt_order": [
+        2,
+        1,
+        0
+      ],
+      "blind_oracle": [
+        0,
+        2,
+        1
+      ],
+      "prompt_oracle": [
+        0,
+        1,
+        2
+      ],
+      "blind_enrolled": {
+        "alignment_pct": [
+          90.61473202313668,
+          95.54596216232963,
+          90.08449105497895
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "blind_best_permutation": {
+        "alignment_pct": [
+          90.61473202313668,
+          95.54596216232963,
+          90.08449105497895
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_enrolled": {
+        "alignment_pct": [
+          0.003041040126417279,
+          94.7249630192891,
+          0.04907428219244826
+        ],
+        "retention": [
+          0.07903780068728522,
+          1.0,
+          0.9415807560137457
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_best_permutation": {
+        "alignment_pct": [
+          90.74441289300148,
+          94.7249630192891,
+          87.65068996439265
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "high_band": {
+        "alignment_pct": [
+          90.72228231607754,
+          95.59796451767664,
+          90.15538730501497
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "isolated_resample_diagnostic": {
+        "alignment_pct": [
+          99.12805091688249,
+          98.83357863577838,
+          98.98520292773031
+        ],
+        "retention": [
+          1.0,
+          0.9381443298969072,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "case": "m8017_04",
+      "gains_db": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "overlap_seconds": 1.504,
+      "blind_seconds": 29.11471259800055,
+      "seeded_seconds": 45.52063282600011,
+      "blind_matched_physical": 3,
+      "prompt_matched_physical": 3,
+      "blind_order": [
+        2,
+        1,
+        0
+      ],
+      "prompt_order": [
+        2,
+        1,
+        0
+      ],
+      "blind_oracle": [
+        2,
+        1,
+        0
+      ],
+      "prompt_oracle": [
+        2,
+        1,
+        0
+      ],
+      "blind_enrolled": {
+        "alignment_pct": [
+          51.311805607018755,
+          97.61950420265121,
+          96.44132415913346
+        ],
+        "retention": [
+          0.8257372654155496,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "blind_best_permutation": {
+        "alignment_pct": [
+          51.311805607018755,
+          97.61950420265121,
+          96.44132415913346
+        ],
+        "retention": [
+          0.8257372654155496,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_enrolled": {
+        "alignment_pct": [
+          51.435446798786955,
+          97.39111498052733,
+          97.02188982881327
+        ],
+        "retention": [
+          0.9329758713136729,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "prompt_best_permutation": {
+        "alignment_pct": [
+          51.435446798786955,
+          97.39111498052733,
+          97.02188982881327
+        ],
+        "retention": [
+          0.9329758713136729,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "high_band": {
+        "alignment_pct": [
+          51.3166533618493,
+          97.6401909103317,
+          96.64418914157153
+        ],
+        "retention": [
+          0.8257372654155496,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "isolated_resample_diagnostic": {
+        "alignment_pct": [
+          97.51000711851641,
+          99.02184941910251,
+          98.62998696288969
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          0.9463806970509383
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    }
+  ],
+  "calibrated_high_band": {
+    "cases": 8,
+    "admitted": 8,
+    "tested_overlap_s": 7.2,
+    "scored_overlap_s": 7.2,
+    "baseline": {
+      "median_alignment_pct": 90.28986794968628,
+      "worst_alignment_pct": 40.30227217084339,
+      "individual96_with_retention": 6,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "candidate": {
+      "median_alignment_pct": 90.7378575957404,
+      "worst_alignment_pct": 40.54120354945943,
+      "individual96_with_retention": 6,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "n_voice_tracks": 24,
+    "paired_improved_voices": 13,
+    "paired_worse_voices": 11,
+    "median_paired_pp": 0.006125978673541255,
+    "mean_paired_pp": 0.2422481337440443,
+    "min_paired_pp": -0.8690630539875173,
+    "max_paired_pp": 2.635875964973664,
+    "cases_detail": [
+      {
+        "id": "m8016_05",
+        "gains_db": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.672,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9897888287321418
+        },
+        "baseline": {
+          "alignment_pct": [
+            53.38015133490585,
+            48.40261705020627,
+            94.72074827932165
+          ],
+          "retention": [
+            0.8758169934640523,
+            0.8366013071895425,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "extended": {
+          "alignment_pct": [
+            53.71415282256679,
+            48.38964883503561,
+            94.68319675121674
+          ],
+          "retention": [
+            0.8758169934640523,
+            0.8366013071895425,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_oracle_order": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "m8016_06",
+        "gains_db": [
+          0.0,
+          0.0,
+          -6.0
+        ],
+        "overlap_s": 0.704,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9768122485130257
+        },
+        "baseline": {
+          "alignment_pct": [
+            40.30227217084339,
+            41.47186436351639,
+            96.9324317932878
+          ],
+          "retention": [
+            0.6588235294117647,
+            0.6235294117647059,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "extended": {
+          "alignment_pct": [
+            40.54120354945943,
+            41.19307621600721,
+            96.9198480285828
+          ],
+          "retention": [
+            0.6588235294117647,
+            0.6235294117647059,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_oracle_order": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "m8016_07",
+        "gains_db": [
+          -12.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.512,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9914001350524131
+        },
+        "baseline": {
+          "alignment_pct": [
+            93.55303216311547,
+            99.15600210229137,
+            97.89845276026841
+          ],
+          "retention": [
+            0.9296875,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "extended": {
+          "alignment_pct": [
+            93.66083204840983,
+            99.53549148078564,
+            97.88582228792706
+          ],
+          "retention": [
+            0.9296875,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_oracle_order": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "m8016_08",
+        "gains_db": [
+          0.0,
+          -20.0,
+          0.0
+        ],
+        "overlap_s": 0.768,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9916164899000848
+        },
+        "baseline": {
+          "alignment_pct": [
+            98.90118701655982,
+            88.50073073020019,
+            98.08300353975933
+          ],
+          "retention": [
+            1.0,
+            0.8020833333333334,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "extended": {
+          "alignment_pct": [
+            99.099182483832,
+            88.51182011759573,
+            98.0439246097203
+          ],
+          "retention": [
+            1.0,
+            0.8020833333333334,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_oracle_order": [
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "id": "m8017_05",
+        "gains_db": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 1.152,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9787597620751881
+        },
+        "baseline": {
+          "alignment_pct": [
+            75.09449051485014,
+            92.80135231145744,
+            73.26174934133309
+          ],
+          "retention": [
+            1.0,
+            0.6056338028169014,
+            0.823943661971831
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "extended": {
+          "alignment_pct": [
+            75.67646903180228,
+            91.93228925746992,
+            73.58628912823583
+          ],
+          "retention": [
+            1.0,
+            0.6056338028169014,
+            0.823943661971831
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_oracle_order": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "m8017_06",
+        "gains_db": [
+          0.0,
+          0.0,
+          -6.0
+        ],
+        "overlap_s": 1.056,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9805330201922113
+        },
+        "baseline": {
+          "alignment_pct": [
+            88.47901381661107,
+            95.83858805519203,
+            83.24201227700945
+          ],
+          "retention": [
+            1.0,
+            0.9688715953307393,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "extended": {
+          "alignment_pct": [
+            88.67829438122047,
+            95.80438735037401,
+            83.08904330244943
+          ],
+          "retention": [
+            1.0,
+            0.9688715953307393,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_oracle_order": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "id": "m8017_07",
+        "gains_db": [
+          -12.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 1.28,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.976046416440016
+        },
+        "baseline": {
+          "alignment_pct": [
+            54.35606548698456,
+            97.71380684466303,
+            91.92673672291227
+          ],
+          "retention": [
+            0.8207547169811321,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "extended": {
+          "alignment_pct": [
+            54.3572280569361,
+            97.913270650513,
+            94.09416213465815
+          ],
+          "retention": [
+            0.8207547169811321,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_oracle_order": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "id": "m8017_08",
+        "gains_db": [
+          0.0,
+          -20.0,
+          0.0
+        ],
+        "overlap_s": 1.056,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9706780862128752
+        },
+        "baseline": {
+          "alignment_pct": [
+            89.6561801352356,
+            82.40496984712966,
+            90.92355576413696
+          ],
+          "retention": [
+            1.0,
+            0.6487603305785123,
+            0.78099173553719
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "extended": {
+          "alignment_pct": [
+            89.54342593401086,
+            82.40247944372848,
+            93.55943172911063
+          ],
+          "retention": [
+            1.0,
+            0.6487603305785123,
+            0.8842975206611571
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_oracle_order": [
+          1,
+          2,
+          0
+        ]
+      }
+    ]
+  },
+  "polarity_shift_ensemble": {
+    "cases": 16,
+    "admitted": 12,
+    "tested_overlap_s": 13.536,
+    "scored_overlap_s": 10.272,
+    "baseline": {
+      "median_alignment_pct": 91.5352346373821,
+      "worst_alignment_pct": 11.995457807424978,
+      "individual96_with_retention": 10,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "candidate": {
+      "median_alignment_pct": 91.28640269616047,
+      "worst_alignment_pct": 11.995457807424978,
+      "individual96_with_retention": 9,
+      "joint96": 0,
+      "joint98": 0
+    },
+    "n_voice_tracks": 36,
+    "paired_improved_voices": 24,
+    "paired_worse_voices": 11,
+    "median_paired_pp": 0.0854175521606848,
+    "mean_paired_pp": 0.07683658269163789,
+    "min_paired_pp": -10.910266813515449,
+    "max_paired_pp": 5.836400470093224,
+    "cases_detail": [
+      {
+        "id": "r8004_m8005_001",
+        "gains_db": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.672,
+        "choice": "baseline",
+        "fit": {
+          "second_pass": 0.0,
+          "first_pass": 0.0
+        },
+        "baseline_s": 11.327097272000174,
+        "extra_s": 6.415000007109484e-05
+      },
+      {
+        "id": "r8004_m8005_002",
+        "gains_db": [
+          0.0,
+          -6.0,
+          0.0
+        ],
+        "overlap_s": 0.928,
+        "choice": "baseline",
+        "fit": {
+          "second_pass": 0.04561261592632093,
+          "first_pass": 0.0446767070071471
+        },
+        "baseline_s": 10.186759132000589,
+        "extra_s": 2.836299972841516e-05
+      },
+      {
+        "id": "r8004_m8005_003",
+        "gains_db": [
+          0.0,
+          0.0,
+          -12.0
+        ],
+        "overlap_s": 0.864,
+        "choice": "baseline",
+        "fit": {
+          "second_pass": 0.5931164509837421,
+          "first_pass": 0.593211366244567
+        },
+        "baseline_s": 10.122627155000373,
+        "extra_s": 2.5909000214596745e-05
+      },
+      {
+        "id": "r8004_m8005_004",
+        "gains_db": [
+          -20.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.8,
+        "choice": "baseline",
+        "fit": {
+          "second_pass": 0.9925306009284922,
+          "first_pass": 0.9925381812894379
+        },
+        "baseline_s": 10.060925904000214,
+        "extra_s": 3.008699968631845e-05
+      },
+      {
+        "id": "r8005_m8008_001",
+        "gains_db": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.832,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9868213670672077
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9811225316442509
+        },
+        "agreement": [
+          0.9803463816642761,
+          0.9934456944465637,
+          0.967531144618988
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            42.8946006537158,
+            53.63624104471118,
+            91.64366680731189
+          ],
+          "retention": [
+            0.6237623762376238,
+            0.7079207920792079,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            47.49282746339745,
+            54.414249301398776,
+            91.10951532252443
+          ],
+          "retention": [
+            0.7079207920792079,
+            0.7079207920792079,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          2,
+          0,
+          1
+        ],
+        "baseline_s": 14.266171532000044,
+        "extra_s": 13.27703361299973
+      },
+      {
+        "id": "r8005_m8008_002",
+        "gains_db": [
+          0.0,
+          -6.0,
+          0.0
+        ],
+        "overlap_s": 0.736,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9925761291559485
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9957854369991699
+        },
+        "agreement": [
+          0.9927884936332703,
+          0.996025562286377,
+          0.9937905669212341
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            97.47140505186927,
+            93.84047042592933,
+            97.14471809785692
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            97.89170170401815,
+            94.01176195672082,
+            97.80444930780912
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          1,
+          0,
+          2
+        ],
+        "baseline_s": 12.637070644999767,
+        "extra_s": 11.83708241900058
+      },
+      {
+        "id": "r8005_m8008_003",
+        "gains_db": [
+          0.0,
+          0.0,
+          -12.0
+        ],
+        "overlap_s": 0.736,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9852765724258733
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9870368288140343
+        },
+        "agreement": [
+          0.9878386855125427,
+          0.9880930185317993,
+          0.974965512752533
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            87.35374441427686,
+            91.42680246745233,
+            77.43895580810452
+          ],
+          "retention": [
+            1.0,
+            0.9184782608695652,
+            0.8532608695652174
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            88.54344368997104,
+            91.4632900697965,
+            80.62080004254271
+          ],
+          "retention": [
+            1.0,
+            0.9184782608695652,
+            0.9184782608695652
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          0,
+          1,
+          2
+        ],
+        "baseline_s": 10.093554127000061,
+        "extra_s": 10.959690646999661
+      },
+      {
+        "id": "r8005_m8008_004",
+        "gains_db": [
+          -20.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.8,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9812922999020666
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9668334145061425
+        },
+        "agreement": [
+          0.839601993560791,
+          0.8915296196937561,
+          0.6182823777198792
+        ],
+        "combined": [
+          true,
+          true,
+          false
+        ],
+        "baseline": {
+          "alignment_pct": [
+            11.995457807424978,
+            95.09622763666567,
+            96.63117224331093
+          ],
+          "retention": [
+            0.2964824120603015,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            11.995457807424978,
+            84.18596082315022,
+            88.29652247966669
+          ],
+          "retention": [
+            0.2964824120603015,
+            0.8291457286432161,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          2,
+          0,
+          1
+        ],
+        "baseline_s": 10.496701062000284,
+        "extra_s": 9.579649010999674
+      },
+      {
+        "id": "r8006_m8012_001",
+        "gains_db": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.64,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9915637330018388
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.991220437941067
+        },
+        "agreement": [
+          0.9564464688301086,
+          0.9938477873802185,
+          0.9565179944038391
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            88.57693184660968,
+            93.51294942520626,
+            90.10878316495122
+          ],
+          "retention": [
+            0.935064935064935,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            94.4133323167029,
+            94.45011170203283,
+            95.9077093382097
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          2,
+          1,
+          0
+        ],
+        "baseline_s": 11.32724869499998,
+        "extra_s": 9.722360191000007
+      },
+      {
+        "id": "r8006_m8012_002",
+        "gains_db": [
+          0.0,
+          -6.0,
+          0.0
+        ],
+        "overlap_s": 0.704,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9930412584978617
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9906438100828617
+        },
+        "agreement": [
+          0.9944204092025757,
+          0.9958915710449219,
+          0.9862374663352966
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            97.58610976057197,
+            95.31920948378612,
+            98.96794511530732
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            97.3662654084337,
+            94.70343984315805,
+            98.9449471025441
+          ],
+          "retention": [
+            1.0,
+            0.8636363636363636,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          1,
+          2,
+          0
+        ],
+        "baseline_s": 10.14657575000001,
+        "extra_s": 9.879368842000076
+      },
+      {
+        "id": "r8006_m8012_003",
+        "gains_db": [
+          0.0,
+          0.0,
+          -12.0
+        ],
+        "overlap_s": 0.736,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9930173379650048
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9948765494923906
+        },
+        "agreement": [
+          0.9967733025550842,
+          0.9983739852905273,
+          0.9846740961074829
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            97.76055730226003,
+            98.66607652365424,
+            78.90043771159128
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            0.7282608695652174
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            98.27592857365072,
+            98.7092708117877,
+            79.87310936520491
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            0.7282608695652174
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          0,
+          1,
+          2
+        ],
+        "baseline_s": 10.22671726199951,
+        "extra_s": 12.27988975900007
+      },
+      {
+        "id": "r8006_m8012_004",
+        "gains_db": [
+          -20.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.832,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.99131320951234
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9883765565689184
+        },
+        "agreement": [
+          0.9970674514770508,
+          0.9981644749641418,
+          0.9585908651351929
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            67.50762204322108,
+            98.6354909467976,
+            97.68167122362124
+          ],
+          "retention": [
+            0.7326732673267327,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            67.58646403524786,
+            98.68889139550573,
+            97.4591750143056
+          ],
+          "retention": [
+            0.7326732673267327,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          2,
+          1,
+          0
+        ],
+        "baseline_s": 11.69254577599986,
+        "extra_s": 11.852347438999459
+      },
+      {
+        "id": "m8017_09",
+        "gains_db": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 0.992,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9785076775548323
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.977448602686653
+        },
+        "agreement": [
+          0.9914955496788025,
+          0.9961605668067932,
+          0.9947149157524109
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            95.78583795407546,
+            95.08869098511406,
+            93.37579874757333
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            0.9590163934426229
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            95.87783106637005,
+            95.09931109727998,
+            93.71197535003718
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            0.9590163934426229
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          2,
+          1,
+          0
+        ],
+        "baseline_s": 35.7726811550001,
+        "extra_s": 23.701717218999875
+      },
+      {
+        "id": "m8017_10",
+        "gains_db": [
+          -6.0,
+          0.0,
+          0.0
+        ],
+        "overlap_s": 1.12,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9724695558143085
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9716930172886744
+        },
+        "agreement": [
+          0.9968836307525635,
+          0.9965069890022278,
+          0.976762056350708
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            52.69888010123902,
+            97.08537899553065,
+            83.43255478293095
+          ],
+          "retention": [
+            0.8981818181818182,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            53.5455954156433,
+            97.4484788678561,
+            83.58428562255055
+          ],
+          "retention": [
+            0.9672727272727273,
+            1.0,
+            1.0
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          2,
+          1,
+          0
+        ],
+        "baseline_s": 21.102501186000154,
+        "extra_s": 18.99247374800052
+      },
+      {
+        "id": "m8017_11",
+        "gains_db": [
+          0.0,
+          -12.0,
+          0.0
+        ],
+        "overlap_s": 1.152,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9591986530919802
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9549732422239066
+        },
+        "agreement": [
+          0.9894548654556274,
+          0.9931427240371704,
+          0.9503733515739441
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            52.418872707388445,
+            86.056706381746,
+            52.28103976168092
+          ],
+          "retention": [
+            1.0,
+            0.9513888888888888,
+            0.84375
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            52.66914881254151,
+            83.29652200700933,
+            52.27574328736794
+          ],
+          "retention": [
+            1.0,
+            0.9513888888888888,
+            0.84375
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          1,
+          2,
+          0
+        ],
+        "baseline_s": 17.89455819200066,
+        "extra_s": 18.545211519000077
+      },
+      {
+        "id": "m8017_12",
+        "gains_db": [
+          0.0,
+          0.0,
+          -20.0
+        ],
+        "overlap_s": 0.992,
+        "choice": "second_pass",
+        "fit": {
+          "second_pass": 0.9782829187248908
+        },
+        "perturbed_choice": "second_pass",
+        "perturbed_fit": {
+          "second_pass": 0.9755926490587815
+        },
+        "agreement": [
+          0.9789479374885559,
+          0.9811186194419861,
+          0.9757847189903259
+        ],
+        "combined": [
+          true,
+          true,
+          true
+        ],
+        "baseline": {
+          "alignment_pct": [
+            88.18714949778388,
+            86.8480022732948,
+            41.96446207759049
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            0.5122950819672131
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "ensemble": {
+          "alignment_pct": [
+            87.76386117953533,
+            86.33697471645851,
+            41.96838595120019
+          ],
+          "retention": [
+            1.0,
+            1.0,
+            0.430327868852459
+          ],
+          "joint96": false,
+          "joint98": false
+        },
+        "fixed_eval_order": [
+          0,
+          2,
+          1
+        ],
+        "baseline_s": 18.190101013999993,
+        "extra_s": 17.925250512000275
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "complex_cancellation": {
+    "boosted": {
+      "joint96": 15,
+      "joint98": 7,
+      "weak_p10": 0.30326097,
+      "weakest": 0.0349493,
+      "median": 0.9917396,
+      "lost96": 0,
+      "lost98": 0
+    },
+    "0.25": {
+      "joint96": 15,
+      "joint98": 7,
+      "weak_p10": 0.30309452,
+      "weakest": 0.0350616,
+      "median": 0.9913781500000001,
+      "lost96": 0,
+      "lost98": 0
+    },
+    "0.5": {
+      "joint96": 15,
+      "joint98": 7,
+      "weak_p10": 0.30215897999999997,
+      "weakest": 0.035152,
+      "median": 0.9910034,
+      "lost96": 0,
+      "lost98": 0
+    },
+    "0.75": {
+      "joint96": 15,
+      "joint98": 7,
+      "weak_p10": 0.30045382000000004,
+      "weakest": 0.03522,
+      "median": 0.9909008,
+      "lost96": 0,
+      "lost98": 0
+    },
+    "1.0": {
+      "joint96": 15,
+      "joint98": 7,
+      "weak_p10": 0.29799053000000003,
+      "weakest": 0.0352654,
+      "median": 0.99074475,
+      "lost96": 0,
+      "lost98": 0
+    }
+  },
+  "mask_floor_sweep": {
+    "stats": {
+      "boosted": {
+        "joint96": 19,
+        "joint98": 9,
+        "weak_p10": 0.3219970630566788,
+        "weakest": 0.03541573141626815,
+        "median": 0.9857869791302025,
+        "lost96": 0,
+        "lost98": 0
+      },
+      "floor30": {
+        "joint96": 19,
+        "joint98": 9,
+        "weak_p10": 0.3214239089889002,
+        "weakest": 0.03540112834416184,
+        "median": 0.9857987188137185,
+        "lost96": 0,
+        "lost98": 0
+      },
+      "floor12": {
+        "joint96": 19,
+        "joint98": 8,
+        "weak_p10": 0.3210203591437029,
+        "weakest": 0.035391640146317314,
+        "median": 0.9857428453267579,
+        "lost96": 0,
+        "lost98": 1
+      },
+      "cross18": {
+        "joint96": 19,
+        "joint98": 8,
+        "weak_p10": 0.3210180775183995,
+        "weakest": 0.03520169456615746,
+        "median": 0.9857179045125097,
+        "lost96": 0,
+        "lost98": 1
+      },
+      "cross3": {
+        "joint96": 19,
+        "joint98": 8,
+        "weak_p10": 0.3211824881285574,
+        "weakest": 0.034897676410556557,
+        "median": 0.9853548549518201,
+        "lost96": 0,
+        "lost98": 1
+      }
+    },
+    "chosen": null
+  },
+  "decision": "Both screened on early M8014 calibration only. No enhancement was promoted. The local complex subtraction did not improve the weak-voice lower decile; lowering the physical gain floor cost a 98% pass."
+}

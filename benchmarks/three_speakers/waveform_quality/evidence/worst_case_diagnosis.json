@@ -1,0 +1,42 @@
+{
+  "case": "p3_047",
+  "quiet_speaker": "C",
+  "anchor_sample": 18981280,
+  "nominal_quiet_db": -20,
+  "exact_three_s": 2.73,
+  "other_source_images_db_relative_to_target_in_quiet_mic": 10.476442921622573,
+  "raw_peak": 0.6956908702850342,
+  "individual_leak_to_intended_target_in_quiet_mic_db": {
+    "A": 10.467087848454067,
+    "B": -18.684593489648623
+  },
+  "levels_by_mode": {
+    "raw": {
+      "target_aligned_fraction": 0.08422086285028677,
+      "si_sdr_db": -10.363710589184958,
+      "target_gain_db": 0.11256964548617644
+    },
+    "standard": {
+      "target_aligned_fraction": 0.08088148264382612,
+      "si_sdr_db": -10.555224121270474,
+      "target_gain_db": -0.11555683349345015
+    },
+    "gentle": {
+      "target_aligned_fraction": 0.0825636730525078,
+      "si_sdr_db": -10.457869271319083,
+      "target_gain_db": -0.6310106878593786
+    }
+  },
+  "A_donor_headset_consistency": {
+    "A_B": {
+      "max_corr_abs_lags_under_100ms": 0.15424703061580658,
+      "lag_samples": 46,
+      "spectrum_power_weighted_coherence_100to7500Hz": 0.11860352754592896
+    },
+    "A_C": {
+      "max_corr_abs_lags_under_100ms": 0.039079297333955765,
+      "lag_samples": 72,
+      "spectrum_power_weighted_coherence_100to7500Hz": 0.01007638406008482
+    }
+  }
+}

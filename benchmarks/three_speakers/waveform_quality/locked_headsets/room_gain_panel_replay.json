@@ -1,0 +1,48 @@
+{
+  "R8002_M8002": {
+    "cases": 51,
+    "exact_three_s": 38.784,
+    "table_sha_matches": true,
+    "replay": {
+      "boosted": {
+        "same_pass_decision_for_every_case": true,
+        "alignment_max_abs": 8.624773117915652e-10,
+        "retention_max_abs": 0.0,
+        "quiet_alignment_max_abs": 8.624773117915652e-10,
+        "joint96": 31,
+        "joint98": 19
+      },
+      "room_calibrated": {
+        "same_pass_decision_for_every_case": true,
+        "alignment_max_abs": 7.097261667254884e-10,
+        "retention_max_abs": 0.0,
+        "quiet_alignment_max_abs": 7.097261667254884e-10,
+        "joint96": 31,
+        "joint98": 21
+      }
+    }
+  },
+  "R8002_M8003": {
+    "cases": 37,
+    "exact_three_s": 29.024,
+    "table_sha_matches": true,
+    "replay": {
+      "boosted": {
+        "same_pass_decision_for_every_case": true,
+        "alignment_max_abs": 9.582322713086455e-10,
+        "retention_max_abs": 0.0,
+        "quiet_alignment_max_abs": 9.582322713086455e-10,
+        "joint96": 18,
+        "joint98": 8
+      },
+      "room_calibrated": {
+        "same_pass_decision_for_every_case": true,
+        "alignment_max_abs": 8.627477621203639e-10,
+        "retention_max_abs": 0.0,
+        "quiet_alignment_max_abs": 8.627477621203639e-10,
+        "joint96": 18,
+        "joint98": 8
+      }
+    }
+  }
+}

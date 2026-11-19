@@ -1,0 +1,542 @@
+{
+  "all": {
+    "clips": 88,
+    "exact_three_s": 67.808,
+    "raw": {
+      "pass96": 45,
+      "pass98": 21,
+      "worst_voice": 0.0790133655107771,
+      "median_quiet": 0.9694974354837553,
+      "p10_quiet": 0.6062001043270973,
+      "retention_fail_voices": 1
+    },
+    "standard": {
+      "pass96": 49,
+      "pass98": 28,
+      "worst_voice": 0.07418934222746162,
+      "median_quiet": 0.9753703439965827,
+      "p10_quiet": 0.6594357585337055,
+      "retention_fail_voices": 2
+    },
+    "gentle": {
+      "pass96": 49,
+      "pass98": 29,
+      "worst_voice": 0.07303987574483002,
+      "median_quiet": 0.9755470662327571,
+      "p10_quiet": 0.6659839183382873,
+      "retention_fail_voices": 2
+    },
+    "boosted": {
+      "pass96": 49,
+      "pass98": 27,
+      "worst_voice": 0.07220163169120448,
+      "median_quiet": 0.9748913419865138,
+      "p10_quiet": 0.6736182534798332,
+      "retention_fail_voices": 2
+    }
+  },
+  "R8002_M8002": {
+    "clips": 51,
+    "exact_three_s": 38.784,
+    "raw": {
+      "pass96": 30,
+      "pass98": 14,
+      "worst_voice": 0.08573099718778682,
+      "median_quiet": 0.9739923155505307,
+      "p10_quiet": 0.6267692654551313,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 31,
+      "pass98": 19,
+      "worst_voice": 0.07418934222746162,
+      "median_quiet": 0.9774698471747911,
+      "p10_quiet": 0.6760040882574349,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 31,
+      "pass98": 20,
+      "worst_voice": 0.07303987574483002,
+      "median_quiet": 0.9775279477099398,
+      "p10_quiet": 0.6756766131649088,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 31,
+      "pass98": 19,
+      "worst_voice": 0.07220163169120448,
+      "median_quiet": 0.9783976733321756,
+      "p10_quiet": 0.6838943532326048,
+      "retention_fail_voices": 0
+    }
+  },
+  "0.0": {
+    "clips": 23,
+    "exact_three_s": 18.176,
+    "raw": {
+      "pass96": 19,
+      "pass98": 9,
+      "worst_voice": 0.6393334941533055,
+      "median_quiet": 0.9927326302995904,
+      "p10_quiet": 0.9677944590404748,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 20,
+      "pass98": 14,
+      "worst_voice": 0.6391371229277467,
+      "median_quiet": 0.9930041195470298,
+      "p10_quiet": 0.9715154505586083,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 20,
+      "pass98": 15,
+      "worst_voice": 0.6394498521565943,
+      "median_quiet": 0.9930284025080762,
+      "p10_quiet": 0.9721452365326758,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 20,
+      "pass98": 12,
+      "worst_voice": 0.6571359738463727,
+      "median_quiet": 0.9929229147843492,
+      "p10_quiet": 0.9726479422714694,
+      "retention_fail_voices": 0
+    }
+  },
+  "R8002_M8002_0.0": {
+    "clips": 13,
+    "exact_three_s": 10.048,
+    "raw": {
+      "pass96": 11,
+      "pass98": 6,
+      "worst_voice": 0.9393819714693933,
+      "median_quiet": 0.9927326302995904,
+      "p10_quiet": 0.9762054404784071,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 12,
+      "pass98": 9,
+      "worst_voice": 0.945667278460371,
+      "median_quiet": 0.9930593618674849,
+      "p10_quiet": 0.9807695667185945,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 12,
+      "pass98": 10,
+      "worst_voice": 0.9499396871168313,
+      "median_quiet": 0.9930374842623491,
+      "p10_quiet": 0.9802141749664028,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 12,
+      "pass98": 8,
+      "worst_voice": 0.9589536506616971,
+      "median_quiet": 0.9932406481428789,
+      "p10_quiet": 0.9784861001098037,
+      "retention_fail_voices": 0
+    }
+  },
+  "-6.0": {
+    "clips": 22,
+    "exact_three_s": 16.0,
+    "raw": {
+      "pass96": 15,
+      "pass98": 8,
+      "worst_voice": 0.625409753824284,
+      "median_quiet": 0.9793713983860948,
+      "p10_quiet": 0.9185654088685317,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 16,
+      "pass98": 9,
+      "worst_voice": 0.6373827161678871,
+      "median_quiet": 0.9822919628301009,
+      "p10_quiet": 0.9357772730833916,
+      "retention_fail_voices": 1
+    },
+    "gentle": {
+      "pass96": 16,
+      "pass98": 9,
+      "worst_voice": 0.6427693605488276,
+      "median_quiet": 0.9822942703710232,
+      "p10_quiet": 0.9350685936329116,
+      "retention_fail_voices": 1
+    },
+    "boosted": {
+      "pass96": 16,
+      "pass98": 9,
+      "worst_voice": 0.704658450710106,
+      "median_quiet": 0.9806418492035265,
+      "p10_quiet": 0.9399575087154597,
+      "retention_fail_voices": 1
+    }
+  },
+  "R8002_M8002_-6.0": {
+    "clips": 13,
+    "exact_three_s": 9.408,
+    "raw": {
+      "pass96": 10,
+      "pass98": 5,
+      "worst_voice": 0.9160636291402954,
+      "median_quiet": 0.9778047411125877,
+      "p10_quiet": 0.9219791969616443,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 10,
+      "pass98": 6,
+      "worst_voice": 0.930319710098395,
+      "median_quiet": 0.9816066848431889,
+      "p10_quiet": 0.9380042477295757,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 10,
+      "pass98": 6,
+      "worst_voice": 0.9297493170539455,
+      "median_quiet": 0.9815966065595124,
+      "p10_quiet": 0.9368495797058548,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 10,
+      "pass98": 6,
+      "worst_voice": 0.9343075448526439,
+      "median_quiet": 0.9818551826196319,
+      "p10_quiet": 0.9413004596831592,
+      "retention_fail_voices": 0
+    }
+  },
+  "-12.0": {
+    "clips": 22,
+    "exact_three_s": 17.408,
+    "raw": {
+      "pass96": 7,
+      "pass98": 3,
+      "worst_voice": 0.6135506436209692,
+      "median_quiet": 0.9264556958973171,
+      "p10_quiet": 0.7220653758309036,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 8,
+      "pass98": 3,
+      "worst_voice": 0.6607673545893094,
+      "median_quiet": 0.937691407628821,
+      "p10_quiet": 0.7545078122263338,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 8,
+      "pass98": 3,
+      "worst_voice": 0.6639469018809956,
+      "median_quiet": 0.9403797788648879,
+      "p10_quiet": 0.7675243171626369,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 8,
+      "pass98": 4,
+      "worst_voice": 0.6838943532326048,
+      "median_quiet": 0.9421303784337015,
+      "p10_quiet": 0.7818787136502013,
+      "retention_fail_voices": 0
+    }
+  },
+  "R8002_M8002_-12.0": {
+    "clips": 13,
+    "exact_three_s": 10.336,
+    "raw": {
+      "pass96": 5,
+      "pass98": 2,
+      "worst_voice": 0.6267692654551313,
+      "median_quiet": 0.9329691380464522,
+      "p10_quiet": 0.7235315837878127,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 5,
+      "pass98": 2,
+      "worst_voice": 0.6760040882574349,
+      "median_quiet": 0.9363630611857623,
+      "p10_quiet": 0.7571191452649673,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 5,
+      "pass98": 2,
+      "worst_voice": 0.6756766131649088,
+      "median_quiet": 0.9362349812251491,
+      "p10_quiet": 0.7688659860253528,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 5,
+      "pass98": 3,
+      "worst_voice": 0.6838943532326048,
+      "median_quiet": 0.9382254091018072,
+      "p10_quiet": 0.7824621750914403,
+      "retention_fail_voices": 0
+    }
+  },
+  "-20.0": {
+    "clips": 21,
+    "exact_three_s": 16.224,
+    "raw": {
+      "pass96": 4,
+      "pass98": 1,
+      "worst_voice": 0.0790133655107771,
+      "median_quiet": 0.7294356988623728,
+      "p10_quiet": 0.36514504506554635,
+      "retention_fail_voices": 1
+    },
+    "standard": {
+      "pass96": 5,
+      "pass98": 2,
+      "worst_voice": 0.07418934222746162,
+      "median_quiet": 0.8080655786338327,
+      "p10_quiet": 0.4608942543386932,
+      "retention_fail_voices": 1
+    },
+    "gentle": {
+      "pass96": 5,
+      "pass98": 2,
+      "worst_voice": 0.07303987574483002,
+      "median_quiet": 0.8161934728943787,
+      "p10_quiet": 0.4480022837575721,
+      "retention_fail_voices": 1
+    },
+    "boosted": {
+      "pass96": 5,
+      "pass98": 2,
+      "worst_voice": 0.07220163169120448,
+      "median_quiet": 0.8346949326814106,
+      "p10_quiet": 0.4548777808403977,
+      "retention_fail_voices": 1
+    }
+  },
+  "R8002_M8002_-20.0": {
+    "clips": 12,
+    "exact_three_s": 8.992,
+    "raw": {
+      "pass96": 4,
+      "pass98": 1,
+      "worst_voice": 0.08573099718778682,
+      "median_quiet": 0.7747728940727409,
+      "p10_quiet": 0.3711767045059071,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 4,
+      "pass98": 2,
+      "worst_voice": 0.07418934222746162,
+      "median_quiet": 0.8328008181055653,
+      "p10_quiet": 0.46937051890385223,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 4,
+      "pass98": 2,
+      "worst_voice": 0.07303987574483002,
+      "median_quiet": 0.8333536680898023,
+      "p10_quiet": 0.4580083262565379,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 4,
+      "pass98": 2,
+      "worst_voice": 0.07220163169120448,
+      "median_quiet": 0.8451162221638302,
+      "p10_quiet": 0.46587872602922964,
+      "retention_fail_voices": 0
+    }
+  },
+  "R8002_M8003": {
+    "clips": 37,
+    "exact_three_s": 29.024,
+    "raw": {
+      "pass96": 15,
+      "pass98": 7,
+      "worst_voice": 0.0790133655107771,
+      "median_quiet": 0.9515213129180019,
+      "p10_quiet": 0.6037499245624731,
+      "retention_fail_voices": 1
+    },
+    "standard": {
+      "pass96": 18,
+      "pass98": 9,
+      "worst_voice": 0.07480549688979807,
+      "median_quiet": 0.9663522090591895,
+      "p10_quiet": 0.6589918931818375,
+      "retention_fail_voices": 2
+    },
+    "gentle": {
+      "pass96": 18,
+      "pass98": 9,
+      "worst_voice": 0.07715906768370538,
+      "median_quiet": 0.9668047196676123,
+      "p10_quiet": 0.6656929159872456,
+      "retention_fail_voices": 2
+    },
+    "boosted": {
+      "pass96": 18,
+      "pass98": 8,
+      "worst_voice": 0.10250485407738537,
+      "median_quiet": 0.9703024926718271,
+      "p10_quiet": 0.6698163264392706,
+      "retention_fail_voices": 2
+    }
+  },
+  "R8002_M8003_0.0": {
+    "clips": 10,
+    "exact_three_s": 8.128,
+    "raw": {
+      "pass96": 8,
+      "pass98": 3,
+      "worst_voice": 0.6393334941533055,
+      "median_quiet": 0.9900767823883407,
+      "p10_quiet": 0.9576725022137107,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 8,
+      "pass98": 5,
+      "worst_voice": 0.6391371229277467,
+      "median_quiet": 0.9917940144406867,
+      "p10_quiet": 0.9610251031707004,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 8,
+      "pass98": 5,
+      "worst_voice": 0.6394498521565943,
+      "median_quiet": 0.9916887095421493,
+      "p10_quiet": 0.9622280081602462,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 8,
+      "pass98": 4,
+      "worst_voice": 0.6571359738463727,
+      "median_quiet": 0.988698448140924,
+      "p10_quiet": 0.9644699198736895,
+      "retention_fail_voices": 0
+    }
+  },
+  "R8002_M8003_-6.0": {
+    "clips": 9,
+    "exact_three_s": 6.592,
+    "raw": {
+      "pass96": 5,
+      "pass98": 3,
+      "worst_voice": 0.625409753824284,
+      "median_quiet": 0.9809380556596019,
+      "p10_quiet": 0.8765648252841088,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 6,
+      "pass98": 3,
+      "worst_voice": 0.6373827161678871,
+      "median_quiet": 0.9829772408170129,
+      "p10_quiet": 0.8912388889599976,
+      "retention_fail_voices": 1
+    },
+    "gentle": {
+      "pass96": 6,
+      "pass98": 3,
+      "worst_voice": 0.6427693605488276,
+      "median_quiet": 0.982991934182534,
+      "p10_quiet": 0.8943301164399171,
+      "retention_fail_voices": 1
+    },
+    "boosted": {
+      "pass96": 6,
+      "pass98": 3,
+      "worst_voice": 0.704658450710106,
+      "median_quiet": 0.979428515787421,
+      "p10_quiet": 0.9034064634647148,
+      "retention_fail_voices": 1
+    }
+  },
+  "R8002_M8003_-12.0": {
+    "clips": 9,
+    "exact_three_s": 7.072,
+    "raw": {
+      "pass96": 2,
+      "pass98": 1,
+      "worst_voice": 0.6135506436209692,
+      "median_quiet": 0.9199422537481822,
+      "p10_quiet": 0.7575380336179586,
+      "retention_fail_voices": 0
+    },
+    "standard": {
+      "pass96": 3,
+      "pass98": 1,
+      "worst_voice": 0.6607673545893094,
+      "median_quiet": 0.9390197540718797,
+      "p10_quiet": 0.7933592543119178,
+      "retention_fail_voices": 0
+    },
+    "gentle": {
+      "pass96": 3,
+      "pass98": 1,
+      "worst_voice": 0.6639469018809956,
+      "median_quiet": 0.9445245765046266,
+      "p10_quiet": 0.8019392666240405,
+      "retention_fail_voices": 0
+    },
+    "boosted": {
+      "pass96": 3,
+      "pass98": 1,
+      "worst_voice": 0.684916479274363,
+      "median_quiet": 0.9460353477655958,
+      "p10_quiet": 0.8239658793647424,
+      "retention_fail_voices": 0
+    }
+  },
+  "R8002_M8003_-20.0": {
+    "clips": 9,
+    "exact_three_s": 7.232,
+    "raw": {
+      "pass96": 0,
+      "pass98": 0,
+      "worst_voice": 0.0790133655107771,
+      "median_quiet": 0.7294356988623728,
+      "p10_quiet": 0.3214705699147643,
+      "retention_fail_voices": 1
+    },
+    "standard": {
+      "pass96": 1,
+      "pass98": 0,
+      "worst_voice": 0.07480549688979807,
+      "median_quiet": 0.8080655786338327,
+      "p10_quiet": 0.3941004194671538,
+      "retention_fail_voices": 1
+    },
+    "gentle": {
+      "pass96": 1,
+      "pass98": 0,
+      "worst_voice": 0.07715906768370538,
+      "median_quiet": 0.8161934728943787,
+      "p10_quiet": 0.38921930473356553,
+      "retention_fail_voices": 1
+    },
+    "boosted": {
+      "pass96": 1,
+      "pass98": 0,
+      "worst_voice": 0.10250485407738537,
+      "median_quiet": 0.8346949326814106,
+      "p10_quiet": 0.41207167936394207,
+      "retention_fail_voices": 1
+    }
+  }
+}

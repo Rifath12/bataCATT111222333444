@@ -6,6 +6,9 @@ import argparse
 from contextlib import ExitStack
 from dataclasses import asdict, dataclass
 import json
+import errno
+import hashlib
+import os
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from time import perf_counter
@@ -56,6 +59,34 @@ class MaskProfile:
     cross_share: float = 1.0
 
 
+def fit_spectral_paths(spectra, source, matrices):
+    """Fit cross-microphone power curves from this speaker's selected solo spectra."""
+    percentiles = tuple(matrices)
+    signal_power = np.abs(spectra) ** 2
+    # Broad spectral bins by absolute frequency. Higher bins generally have fewer useful frames.
+    signal_power = gaussian_filter1d(signal_power, 1.1, axis=1, mode="nearest")
+    direct = signal_power[source]
+    voice = direct > np.maximum(np.quantile(direct, .50, axis=1), 1e-8)[:, None]
+    paths = {}
+    for output in range(3):
+        if output == source:
+            continue
+        ratio = np.where(voice, signal_power[output] / np.maximum(direct, 1e-9), np.nan)
+        valid = voice.any(axis=1)
+        values = np.zeros((len(percentiles), FFT // 2 + 1))
+        values[:, valid] = np.nanquantile(ratio[valid], percentiles, axis=1)
+        for p, curve in zip(percentiles, values, strict=True):
+            curve = np.nan_to_num(curve, nan=0.0, posinf=0.0, neginf=0.0)
+            matrices[p][:, output, source] = np.clip(
+                gaussian_filter1d(curve, 1.8, mode="nearest"), 0.0, 0.14
+            )
+        paths[NAMES[output]] = {
+            str(p): round(float(10 * np.log10(max(1e-15, np.median(matrices[p][:, output, source])))), 2)
+            for p in percentiles
+        }
+    return paths
+
+
 def fit_power_transfer(paths, power, posterior, *, fit_fraction=0.45, percentiles=(0.40, 0.70)):
     """Predict cross-channel energy from each dominant source's own microphone."""
     if power.shape != posterior.shape or power.ndim != 2 or len(power) != 3:
@@ -83,28 +114,10 @@ def fit_power_transfer(paths, power, posterior, *, fit_fraction=0.45, percentile
             continue
         fit_choices = np.linspace(0, len(frames) - 1, min(2800, len(frames)), dtype=int)
         spectra = frame_spectra(paths, frames[fit_choices])
-        signal_power = np.abs(spectra) ** 2
-        # Broad spectral bins by absolute frequency. Higher bins generally have fewer useful frames.
-        signal_power = gaussian_filter1d(signal_power, 1.1, axis=1, mode="nearest")
-        direct = signal_power[source]
-        voice = direct > np.maximum(np.quantile(direct, .50, axis=1), 1e-8)[:, None]
-        stats = {"source": NAMES[source], "selected_dominant": int(len(fit_choices)), "paths": {}}
-        for output in range(3):
-            if output == source:
-                continue
-            ratio = np.where(voice, signal_power[output] / np.maximum(direct, 1e-9), np.nan)
-            valid = voice.any(axis=1)
-            values = np.zeros((len(percentiles), FFT // 2 + 1))
-            values[:, valid] = np.nanquantile(ratio[valid], percentiles, axis=1)
-            for p, curve in zip(percentiles, values, strict=True):
-                curve = np.nan_to_num(curve, nan=0.0, posinf=0.0, neginf=0.0)
-                matrices[p][:, output, source] = np.clip(
-                    gaussian_filter1d(curve, 1.8, mode="nearest"), 0.0, 0.14
-                )
-            stats["paths"][NAMES[output]] = {
-                str(p): round(float(10 * np.log10(max(1e-15, np.median(matrices[p][:, output, source])))), 2)
-                for p in percentiles
-            }
+        stats = {
+            "source": NAMES[source], "selected_dominant": int(len(fit_choices)),
+            "paths": fit_spectral_paths(spectra, source, matrices),
+        }
         evidence.append(stats)
     return matrices, evidence
 
@@ -157,17 +170,73 @@ def validate_inputs(paths):
     return lengths.pop()
 
 
+def calibrated_receivers(power_transfer):
+    """A receiver needs a nonzero measured incoming path before altering its audio."""
+    incoming = np.any(power_transfer > 0, axis=0)
+    np.fill_diagonal(incoming, False)
+    return incoming.any(axis=1)
+
+
+class MicrophoneSignals:
+    """Check independent input channels across a streamed sequence of physical samples."""
+    pairs = ((0, 1), (0, 2), (1, 2))
+
+    def __init__(self):
+        self.identical = [True] * len(self.pairs)
+        self.inverted = [True] * len(self.pairs)
+        self.minimum = np.full(3, np.inf)
+        self.maximum = np.full(3, -np.inf)
+
+    def observe(self, block):
+        self.minimum = np.minimum(self.minimum, block.min(axis=1))
+        self.maximum = np.maximum(self.maximum, block.max(axis=1))
+        for pair, (i, j) in enumerate(self.pairs):
+            if self.identical[pair]:
+                self.identical[pair] = np.array_equal(block[i], block[j])
+            if self.inverted[pair]:
+                self.inverted[pair] = np.array_equal(block[i], -block[j])
+
+    def validate(self, samples):
+        for pair, (i, j) in enumerate(self.pairs):
+            if samples >= ACTIVITY_HOP and self.maximum[i] > self.minimum[i] and (self.identical[pair] or self.inverted[pair]):
+                raise ValueError(
+                    f"Microphones {NAMES[i]} and {NAMES[j]} contain copies of the same signal. "
+                    "Supply independent headset channels, or use the single-microphone separator."
+                )
+
+
+def publish_new(staged, target):
+    """Publish a complete staged file without overwriting an existing result."""
+    try:
+        os.link(staged, target)
+        return
+    except OSError as exc:
+        if exc.errno not in {errno.EPERM, errno.EOPNOTSUPP, errno.ENOSYS}:
+            raise
+    # FAT and some network shares do not support hard links. Reserve exclusively
+    # there and then replace our own reservation on the same filesystem.
+    with target.open("xb"):
+        pass
+    try:
+        os.replace(staged, target)
+    except BaseException:
+        target.unlink(missing_ok=True)
+        raise
+
+
 def render(
     paths, output, power_transfer, profile=FROZEN_PROFILE, *,
     refinement=None, context_samples=CONTEXT_SAMPLES,
 ):
     """Write aligned float WAVs in bounded blocks with enough transform context."""
     samples = validate_inputs(paths)
+    receivers = calibrated_receivers(power_transfer)
     output.mkdir(exist_ok=True, parents=True)
     output_paths = [output / f"speaker_{speaker}.wav" for speaker in NAMES]
     if any(path.exists() for path in output_paths):
         raise FileExistsError("The selected output directory already contains A/B/C waveform files")
 
+    signals = MicrophoneSignals()
     with TemporaryDirectory(prefix=".close-cleanup-", dir=output) as staging:
         temporary = Path(staging)
         with ExitStack() as stack:
@@ -188,17 +257,50 @@ def render(
                 audio = np.array([reader.read(end - start, dtype="float32") for reader in readers])
                 if not np.isfinite(audio).all():
                     raise ValueError("Microphone signal contains nonfinite samples")
-                cleaned = suppress(audio, power_transfer, profile)
-                if refinement is not None:
-                    cleaned = refinement(audio, cleaned)
+                # Look at each original sample once, including across render block boundaries.
+                block_audio = audio[:, first - start:last - start]
+                signals.observe(block_audio)
+                cleaned = audio
+                if receivers.any():
+                    cleaned = suppress(audio, power_transfer, profile)
+                    if refinement is not None:
+                        cleaned = refinement(audio, cleaned)
+                    if cleaned.shape != audio.shape or not np.isfinite(cleaned).all():
+                        raise ValueError("Waveform correction returned shortened or nonfinite audio")
+                    # A zero incoming row is also the fallback when solo calibration is missing.
+                    # Keep the measured waveform in that case, including in learned modes.
+                    cleaned[~receivers] = audio[~receivers]
                 for writer, row in zip(writers, cleaned, strict=True):
                     writer.write(row[first - start:last - start])
-        for path in output_paths:
-            (temporary / path.name).replace(path)
+        signals.validate(samples)
+        # A concurrent export can finish after the initial existence check.
+        # Link each complete file without replacing another recording.
+        published = []
+        try:
+            for path in output_paths:
+                publish_new(temporary / path.name, path)
+                published.append(path)
+        except BaseException:
+            for path in published:
+                path.unlink(missing_ok=True)
+            raise
 
 
 def stored_transfer(path):
-    matrix = np.load(path, allow_pickle=False)
+    path = Path(path)
+    with path.open("rb") as stream:
+        sidecar = path.with_suffix(".json")
+        if sidecar.is_file():
+            try:
+                metadata = json.loads(sidecar.read_text(encoding="utf-8"))
+            except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+                raise ValueError("Unreadable JSON beside the microphone calibration") from exc
+            if isinstance(metadata, dict) and metadata.get("method") == "three_labeled_solo_takes":
+                actual = hashlib.file_digest(stream, "sha256").hexdigest()
+                if actual != metadata.get("transfer_sha256") or metadata.get("microphone_order") != list(NAMES):
+                    raise ValueError("Solo calibration matrix does not match its saved A/B/C setup report")
+                stream.seek(0)
+        matrix = np.load(stream, allow_pickle=False)
     if (
         not isinstance(matrix, np.ndarray)
         or matrix.shape != (FFT // 2 + 1, 3, 3)
@@ -226,7 +328,11 @@ def main():
         "--refinement", choices=("gentle", "boosted"),
         help="Apply an optional room-trained waveform correction",
     )
+    parser.add_argument("--fast-trees", action="store_true",
+                        help="Use the optional single-threaded Numba evaluator for the boosted trees")
     args = parser.parse_args()
+    if args.fast_trees and args.refinement != "boosted":
+        parser.error("--fast-trees requires --refinement boosted")
     samples = validate_inputs(args.microphones)
     started = perf_counter()
     if args.power_transfer:
@@ -256,7 +362,7 @@ def main():
     elif args.refinement == "boosted":
         from boosted_close import BoostedMask, SHARE as strength
 
-        model = BoostedMask.load()
+        model = BoostedMask.load(fast=args.fast_trees)
         context_samples = max(context_samples, model.context_samples)
 
         def refinement(audio, baseline):
@@ -273,6 +379,9 @@ def main():
         "fitting_fraction": FITTING_FRACTION,
         "profile": asdict(FROZEN_PROFILE),
         "calibration": evidence,
+        "direct_passthrough": [name for name, known in zip(
+            NAMES, calibrated_receivers(power_transfer), strict=True
+        ) if not known],
         "speech_detection_s": after_features - started,
         "calibration_s": after_fit - after_features,
         "render_s": perf_counter() - after_fit,
@@ -286,6 +395,7 @@ def main():
             "model": args.refinement,
             "training_room": "R8008_M8014",
             "blend": strength,
+            "fast_trees": args.fast_trees,
         }
     (args.out / "close_waveform.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote three {samples}-sample tracks in {report['processing_s']:.2f} seconds")

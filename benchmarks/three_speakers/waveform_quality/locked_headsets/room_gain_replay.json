@@ -1,0 +1,56 @@
+{
+  "verified_case": "r8002_m8002_021",
+  "room": "R8002_M8002",
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "n_donors_ABC": [
+    66,
+    27,
+    30
+  ],
+  "frozen_table_matches": true,
+  "errors": {
+    "boosted_alignment_max_abs": 5.4627968815168515e-11,
+    "boosted_retention_max_abs": 0.0,
+    "room_calibrated_alignment_max_abs": 3.5351721550114235e-11,
+    "room_calibrated_retention_max_abs": 0.0
+  },
+  "summary": {
+    "boosted": {
+      "joint96": 1,
+      "joint98": 0,
+      "weakest_voice": 0.9783976733868036,
+      "quiet_voice_p10": 0.9783976733868036,
+      "mean_retention": 1.0,
+      "retention_failures": 0
+    },
+    "room_calibrated": {
+      "joint96": 1,
+      "joint98": 1,
+      "weakest_voice": 0.9808390238982071,
+      "quiet_voice_p10": 0.9808390238982071,
+      "mean_retention": 1.0,
+      "retention_failures": 0
+    }
+  },
+  "output_files": {
+    "speaker_A.wav": {
+      "sample_rate": 16000,
+      "samples": 16384,
+      "dtype": "float32",
+      "all_finite": true
+    },
+    "speaker_B.wav": {
+      "sample_rate": 16000,
+      "samples": 16384,
+      "dtype": "float32",
+      "all_finite": true
+    },
+    "speaker_C.wav": {
+      "sample_rate": 16000,
+      "samples": 16384,
+      "dtype": "float32",
+      "all_finite": true
+    }
+  }
+}

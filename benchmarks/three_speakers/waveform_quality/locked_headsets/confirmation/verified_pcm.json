@@ -1,0 +1,12 @@
+[
+  {
+    "room": "R8002_M8002",
+    "cases": 51,
+    "verified_nonreused_source_images": 153
+  },
+  {
+    "room": "R8002_M8003",
+    "cases": 37,
+    "verified_nonreused_source_images": 111
+  }
+]

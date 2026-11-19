@@ -1,0 +1,384 @@
+{
+  "assumptions": "Fixed microphone order, representative solo takes and synchronized inputs. Uncorrelated talkers, sufficiently stable physical transfer, contemporaneous power. No direct phase gate, as coherent leakage was often weak. When calibration overestimates low-band foreign power, legitimate bass can still be damaged.",
+  "algorithm": "Limit the original learned bass correction by the predicted same-frequency foreign/observed power fraction after subtracting a 0.03 dead band. For each target, apply calibrated nonnegative transfer from each other mic to its current band power. A negligible projection gives zero attenuation.",
+  "selection": {
+    "selection": "1.0",
+    "criteria": "zero prior pass loss at both levels on early M8014, no added retention failure and better quiet p10. Rank sum of counts then quiet p10.",
+    "sha256": "f9f7763a4b040a669f8ba366d88fbb75941d97b3232fc476649b5b1e15f81a72",
+    "dev_summary": {
+      "boosted": {
+        "total": 24,
+        "exact_three_s": 31.68,
+        "joint96": 10,
+        "joint98": 6,
+        "worst_all_voices": 0.028812514003699104,
+        "quiet_p10": 0.367645750584358,
+        "quiet_median": 0.9392257800124433,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "0.25": {
+        "total": 24,
+        "exact_three_s": 31.68,
+        "joint96": 10,
+        "joint98": 6,
+        "worst_all_voices": 0.0288124371701169,
+        "quiet_p10": 0.3761631005799391,
+        "quiet_median": 0.9392257800578145,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "0.5": {
+        "total": 24,
+        "exact_three_s": 31.68,
+        "joint96": 10,
+        "joint98": 6,
+        "worst_all_voices": 0.028812471430986555,
+        "quiet_p10": 0.3807645197288595,
+        "quiet_median": 0.9392257800578145,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "1.0": {
+        "total": 24,
+        "exact_three_s": 31.68,
+        "joint96": 10,
+        "joint98": 6,
+        "worst_all_voices": 0.028812548516482656,
+        "quiet_p10": 0.3873147585668205,
+        "quiet_median": 0.9392257800578145,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      }
+    }
+  },
+  "one_shot_confirmation": {
+    "groups": {
+      "M8002": {
+        "boosted": {
+          "total": 51,
+          "exact_three_s": 38.784,
+          "joint96": 31,
+          "joint98": 19,
+          "worst_all_voices": 0.07220163169120448,
+          "quiet_p10": 0.6838943532326048,
+          "quiet_median": 0.9783976733321756,
+          "retention_below_96_tracks": 0,
+          "worst_retention": 1.0,
+          "lost96": [],
+          "gained96": [],
+          "lost98": [],
+          "gained98": []
+        },
+        "1.0": {
+          "total": 51,
+          "exact_three_s": 38.784,
+          "joint96": 30,
+          "joint98": 19,
+          "worst_all_voices": 0.07220162836017827,
+          "quiet_p10": 0.6838943530995878,
+          "quiet_median": 0.9783976735605678,
+          "retention_below_96_tracks": 0,
+          "worst_retention": 1.0,
+          "lost96": [
+            "r8002_m8002_040"
+          ],
+          "gained96": [],
+          "lost98": [],
+          "gained98": []
+        }
+      },
+      "M8003": {
+        "boosted": {
+          "total": 37,
+          "exact_three_s": 29.024,
+          "joint96": 18,
+          "joint98": 8,
+          "worst_all_voices": 0.10250485407738537,
+          "quiet_p10": 0.6698163264392706,
+          "quiet_median": 0.9703024926718271,
+          "retention_below_96_tracks": 2,
+          "worst_retention": 0.9247787610619469,
+          "lost96": [],
+          "gained96": [],
+          "lost98": [],
+          "gained98": []
+        },
+        "1.0": {
+          "total": 37,
+          "exact_three_s": 29.024,
+          "joint96": 18,
+          "joint98": 8,
+          "worst_all_voices": 0.11200543397671181,
+          "quiet_p10": 0.6711081581186845,
+          "quiet_median": 0.9703024937092917,
+          "retention_below_96_tracks": 2,
+          "worst_retention": 0.9247787610619469,
+          "lost96": [],
+          "gained96": [],
+          "lost98": [],
+          "gained98": []
+        }
+      }
+    },
+    "combined": {
+      "boosted": {
+        "total": 88,
+        "exact_three_s": 67.808,
+        "joint96": 49,
+        "joint98": 27,
+        "worst_all_voices": 0.07220163169120448,
+        "quiet_p10": 0.6736182534798332,
+        "quiet_median": 0.9748913419865138,
+        "retention_below_96_tracks": 2,
+        "worst_retention": 0.9247787610619469,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "1.0": {
+        "total": 88,
+        "exact_three_s": 67.808,
+        "joint96": 48,
+        "joint98": 27,
+        "worst_all_voices": 0.07220162836017827,
+        "quiet_p10": 0.6736182547925147,
+        "quiet_median": 0.9748913420556065,
+        "retention_below_96_tracks": 2,
+        "worst_retention": 0.9247787610619469,
+        "lost96": [
+          "r8002_m8002_040"
+        ],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      }
+    }
+  },
+  "previously_inspected_secondary_rooms": {
+    "M8005": {
+      "boosted": {
+        "total": 32,
+        "exact_three_s": 22.56,
+        "joint96": 21,
+        "joint98": 19,
+        "worst_all_voices": 0.10202932051412766,
+        "quiet_p10": 0.6965889016503328,
+        "quiet_median": 0.9884674212495232,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.8896103896103896,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "1.0": {
+        "total": 32,
+        "exact_three_s": 22.56,
+        "joint96": 21,
+        "joint98": 19,
+        "worst_all_voices": 0.10202932158867505,
+        "quiet_p10": 0.6965889010355049,
+        "quiet_median": 0.9884674211088427,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.8896103896103896,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      }
+    },
+    "M8008": {
+      "boosted": {
+        "total": 53,
+        "exact_three_s": 39.648,
+        "joint96": 38,
+        "joint98": 34,
+        "worst_all_voices": 0.07144697050728825,
+        "quiet_p10": 0.747552187376616,
+        "quiet_median": 0.9950083771509728,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "1.0": {
+        "total": 53,
+        "exact_three_s": 39.648,
+        "joint96": 38,
+        "joint98": 34,
+        "worst_all_voices": 0.07144643594481029,
+        "quiet_p10": 0.7476943314826952,
+        "quiet_median": 0.9950083768278962,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      }
+    },
+    "M8012": {
+      "boosted": {
+        "total": 71,
+        "exact_three_s": 52.256,
+        "joint96": 63,
+        "joint98": 55,
+        "worst_all_voices": 0.19682147073027229,
+        "quiet_p10": 0.9545361947300254,
+        "quiet_median": 0.9963571682900074,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "1.0": {
+        "total": 71,
+        "exact_three_s": 52.256,
+        "joint96": 63,
+        "joint98": 55,
+        "worst_all_voices": 0.19682741962516076,
+        "quiet_p10": 0.9545361952669289,
+        "quiet_median": 0.996357168393987,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      }
+    },
+    "M8014": {
+      "boosted": {
+        "total": 24,
+        "exact_three_s": 32.576,
+        "joint96": 14,
+        "joint98": 8,
+        "worst_all_voices": 0.13823787690737066,
+        "quiet_p10": 0.5975560265700881,
+        "quiet_median": 0.9792924838216287,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.922360248447205,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "1.0": {
+        "total": 24,
+        "exact_three_s": 32.576,
+        "joint96": 14,
+        "joint98": 8,
+        "worst_all_voices": 0.1509665177827257,
+        "quiet_p10": 0.6026797321973374,
+        "quiet_median": 0.9792924834361745,
+        "retention_below_96_tracks": 1,
+        "worst_retention": 0.922360248447205,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      }
+    },
+    "M8016": {
+      "boosted": {
+        "total": 8,
+        "exact_three_s": 5.344,
+        "joint96": 5,
+        "joint98": 4,
+        "worst_all_voices": 0.6546757030509147,
+        "quiet_p10": 0.7399791922374837,
+        "quiet_median": 0.9852567500892228,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "1.0": {
+        "total": 8,
+        "exact_three_s": 5.344,
+        "joint96": 5,
+        "joint98": 4,
+        "worst_all_voices": 0.6546757027049718,
+        "quiet_p10": 0.7399791923779724,
+        "quiet_median": 0.9852567499417426,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      }
+    },
+    "M8017": {
+      "boosted": {
+        "total": 24,
+        "exact_three_s": 27.264,
+        "joint96": 18,
+        "joint98": 12,
+        "worst_all_voices": 0.8017807755209493,
+        "quiet_p10": 0.8633651080408065,
+        "quiet_median": 0.9857495008641732,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      },
+      "1.0": {
+        "total": 24,
+        "exact_three_s": 27.264,
+        "joint96": 18,
+        "joint98": 12,
+        "worst_all_voices": 0.8017807780506736,
+        "quiet_p10": 0.8652914832335218,
+        "quiet_median": 0.9857752866086225,
+        "retention_below_96_tracks": 0,
+        "worst_retention": 1.0,
+        "lost96": [],
+        "gained96": [],
+        "lost98": [],
+        "gained98": []
+      }
+    }
+  },
+  "diagnostic": {
+    "original_M8008_C": {
+      "boosted": 0.993068562,
+      "first_guard": 0.8749,
+      "capped_guard": 0.993067033,
+      "retention": 1
+    },
+    "new_M8002_A": {
+      "case": "r8002_m8002_040",
+      "boosted": 0.971399001,
+      "capped_guard": 0.944517484,
+      "retention": 1
+    }
+  },
+  "conclusion": "The cap repaired the prior M8008 regression and recovered prior joint pass counts across the six secondary sessions. It failed independent confirmation across two sessions. See paired counts and case IDs. Do not promote."
+}

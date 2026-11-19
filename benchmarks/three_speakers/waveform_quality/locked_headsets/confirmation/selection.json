@@ -1,0 +1,31 @@
+{
+  "selection": "three highest late phase solo donor counts, before opening source waveforms or learning any model outputs; ties by ascending source ID",
+  "rooms": {
+    "R8002_M8002": {
+      "annotated_eligible_counts_before_energy_filter": {
+        "8005": 176,
+        "8006": 51,
+        "8007": 109,
+        "8008": 39
+      },
+      "target_speakers": [
+        8005,
+        8006,
+        8007
+      ]
+    },
+    "R8002_M8003": {
+      "annotated_eligible_counts_before_energy_filter": {
+        "8009": 37,
+        "8010": 10,
+        "8011": 102,
+        "8012": 72
+      },
+      "target_speakers": [
+        8009,
+        8011,
+        8012
+      ]
+    }
+  }
+}

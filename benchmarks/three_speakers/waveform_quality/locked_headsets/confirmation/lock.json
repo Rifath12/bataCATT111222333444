@@ -1,0 +1,28 @@
+{
+  "generator_sha256": "3646e00c9b9d97a0844f0f73ae0d04a330f614831873ddc56c77faac6e8f2328",
+  "source_list_sha256": "6b7d0ab3843c6c487166112c130cdc977540029807f1d644f91c5c1e87ecf226",
+  "rooms": [
+    {
+      "room_group": "R8002_M8002",
+      "case_count": 51,
+      "donor_eligible_counts": [
+        172,
+        51,
+        106
+      ],
+      "duration_exact_three_s": 38.784,
+      "manifest_sha256": "b66d9067a8eb895b1998d1b16515a163698fb2ccb5569229c682dff478df63fe"
+    },
+    {
+      "room_group": "R8002_M8003",
+      "case_count": 37,
+      "donor_eligible_counts": [
+        37,
+        94,
+        70
+      ],
+      "duration_exact_three_s": 29.024,
+      "manifest_sha256": "bdf5df9771c95e5c2070bfc47e96c4922cec695837edce3c7a1bd66767a5dc72"
+    }
+  ]
+}
