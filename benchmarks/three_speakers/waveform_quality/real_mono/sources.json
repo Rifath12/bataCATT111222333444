@@ -1,0 +1,74 @@
+{
+  "rooms": {
+    "R8004_M8006": [
+      8031,
+      8032,
+      8033
+    ],
+    "R8005_M8007": [
+      8035,
+      8036,
+      8037
+    ]
+  },
+  "sources": [
+    {
+      "file": "R8004_M8006/room.rttm",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8004_M8006.rttm",
+      "sha256": "ab47b3daf266230f650762a691885cec303fbe46f7ddb2a1a828009b917ad5e5"
+    },
+    {
+      "file": "R8004_M8006/array.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/far/R8004_M8006_MS805.wav",
+      "sha256": "8c747b5a085bcac7c0e10deb6d881189b5d6e2e2f713e149b382cc363d5da59e",
+      "size": 503095120
+    },
+    {
+      "file": "R8004_M8006/8031.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8006_N_SPK8031.wav",
+      "sha256": "f864d49b03eef1fd93c3a29efb35d2b07e83cd3a1b82b5183d0e58ea16abf3c9",
+      "size": 62893292
+    },
+    {
+      "file": "R8004_M8006/8032.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8006_N_SPK8032.wav",
+      "sha256": "c26ea0d85a8cae7ada6938736ec7d4d79492a6f908ebe7d99441d3e930c9aee9",
+      "size": 62893292
+    },
+    {
+      "file": "R8004_M8006/8033.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8006_N_SPK8033.wav",
+      "sha256": "3b45864c3520ddaa30e4131051ec884f925452dcaf0428f1d16f489fb06447ad",
+      "size": 62893292
+    },
+    {
+      "file": "R8005_M8007/room.rttm",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8005_M8007.rttm",
+      "sha256": "2391915891e2aea72e615016bfaf2738458354fd7dbba91a506e43eba0bd0824"
+    },
+    {
+      "file": "R8005_M8007/array.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/far/R8005_M8007_MS806.wav",
+      "sha256": "339f92983e7c0db778b70598d86ae0d3a212bf2c765792c3e7d82b83bfaf9516",
+      "size": 478635360
+    },
+    {
+      "file": "R8005_M8007/8035.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8007_N_SPK8035.wav",
+      "sha256": "32a5992c9a6d8146a10d1f8ecfa14e68f7c27ee8925d16efa6556c958a6f7c23",
+      "size": 60101676
+    },
+    {
+      "file": "R8005_M8007/8036.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8007_N_SPK8036.wav",
+      "sha256": "5d3374ca107452b786196cfa679fd2c7c364c7f6490dc1ecad317ce6a224e160",
+      "size": 60101676
+    },
+    {
+      "file": "R8005_M8007/8037.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8007_N_SPK8037.wav",
+      "sha256": "0f761c6b50cfc7c7138b69b8d34f88e429c8dcc585177dc0212100013a5a963c",
+      "size": 60101676
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "conditions": {
+    "legacy_forced": "Base fe21b33, --speakers 3. No enrollment. Default voiceprint embedding enabled.",
+    "revised_forced": "Revised app --participants 3 --speakers 3. No enrollment. Default voiceprint embedding enabled.",
+    "revised_auto": "Revised process_meeting.py, --participants 3. No enrollment. Default voiceprint embedding enabled."
+  },
+  "model": "Same tuned DPRNN; real verified Sherpa embedding model, one CPU thread. No manual voice example or test labels at inference.",
+  "voiceprint_sha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+  "method": "One permutation per whole clip, maximising the number of correct solo loudest frames, tie-broken by balanced active and inactive audibility over solo and double blocks per person. Assigned names are a post hoc diagnostic. The 18 dB count distribution uses every output, including extras, without label matching. Histogram entry j is the number of blocks with exactly j audible output tracks. Timings reflect shared host load and exclude ASR.",
+  "cases": {
+    "REAL_T_01": {
+      "legacy_forced": {
+        "duration_s": 15.66,
+        "labels": [
+          "Speaker_A",
+          "Speaker_B",
+          "Speaker_C",
+          "Speaker_D"
+        ],
+        "aligned_waveform_probes": 24,
+        "fixed_global_order_using_scoring_labels": [
+          "Speaker_D",
+          "Speaker_A",
+          "Speaker_B"
+        ],
+        "eligible_solo_per_physical_speaker": [
+          20,
+          0,
+          0
+        ],
+        "global_permutations_tied_on_primary_solo_hits": 6,
+        "global_permutations_tied_after_activity_tiebreak": 1,
+        "solo_correct_loudest": 11,
+        "eligible_solo": 20,
+        "double_both_named_outputs_audible": 0,
+        "eligible_double": 80,
+        "triple_three_named_outputs_audible": 0,
+        "eligible_triple": 45,
+        "count_of_eligible_blocks_by_actual_then_number_of_audible_outputs": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "1": [
+            0,
+            4,
+            1,
+            15,
+            0
+          ],
+          "2": [
+            0,
+            29,
+            30,
+            21,
+            0
+          ],
+          "3": [
+            1,
+            12,
+            21,
+            11,
+            0
+          ]
+        },
+        "audio_export_wall_seconds": 26.734404904998883,
+        "output_sha256": {
+          "Speaker_A.wav": "7f6cdf6b529af1311300f89ba2a7a3859289d0a7a041510d3df28f8c684415d1",
+          "Speaker_B.wav": "b276278f2cfe5fb8c1597ca02cd0b857a84a500e9922016ff1fdead8e28c05e6",
+          "Speaker_C.wav": "cad748588120f3680fe326a0c69899e4a9345a623b622d8e4c4ea3b5e2bab3b7",
+          "Speaker_D.wav": "6996ada87aad5c8b549ba3da87cd0d37072479c0695b883ee16f1d6d1059a266"
+        }
+      },
+      "revised_auto": {
+        "duration_s": 15.66,
+        "labels": [
+          "Speaker_A",
+          "Speaker_B",
+          "Speaker_C"
+        ],
+        "aligned_waveform_probes": 24,
+        "fixed_global_order_using_scoring_labels": [
+          "Speaker_A",
+          "Speaker_B",
+          "Speaker_C"
+        ],
+        "eligible_solo_per_physical_speaker": [
+          20,
+          0,
+          0
+        ],
+        "global_permutations_tied_on_primary_solo_hits": 2,
+        "global_permutations_tied_after_activity_tiebreak": 2,
+        "solo_correct_loudest": 20,
+        "eligible_solo": 20,
+        "double_both_named_outputs_audible": 0,
+        "eligible_double": 80,
+        "triple_three_named_outputs_audible": 0,
+        "eligible_triple": 45,
+        "count_of_eligible_blocks_by_actual_then_number_of_audible_outputs": {
+          "0": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "1": [
+            0,
+            20,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            80,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            45,
+            0,
+            0
+          ]
+        },
+        "audio_export_wall_seconds": 21.38744876799865,
+        "output_sha256": {
+          "Speaker_A.wav": "e8cdf37420b9a08ec29e576655e5c47bfddd9b361c12ed26142cebd2c42ecb10",
+          "Speaker_B.wav": "492d4219596870b55ac4bf912c3ff97b395274d71deb724e289dcffc5960802e",
+          "Speaker_C.wav": "492d4219596870b55ac4bf912c3ff97b395274d71deb724e289dcffc5960802e"
+        }
+      }
+    },
+    "M8009": {
+      "revised_auto": {
+        "duration_s": 20.0,
+        "labels": [
+          "Speaker_A",
+          "Speaker_B",
+          "Speaker_C"
+        ],
+        "aligned_waveform_probes": 24,
+        "fixed_global_order_using_scoring_labels": [
+          "Speaker_A",
+          "Speaker_C",
+          "Speaker_B"
+        ],
+        "eligible_solo_per_physical_speaker": [
+          11,
+          9,
+          17
+        ],
+        "global_permutations_tied_on_primary_solo_hits": 1,
+        "global_permutations_tied_after_activity_tiebreak": 1,
+        "solo_correct_loudest": 28,
+        "eligible_solo": 37,
+        "double_both_named_outputs_audible": 6,
+        "eligible_double": 87,
+        "triple_three_named_outputs_audible": 0,
+        "eligible_triple": 33,
+        "count_of_eligible_blocks_by_actual_then_number_of_audible_outputs": {
+          "0": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "1": [
+            1,
+            35,
+            1,
+            0
+          ],
+          "2": [
+            0,
+            73,
+            14,
+            0
+          ],
+          "3": [
+            0,
+            29,
+            4,
+            0
+          ]
+        },
+        "audio_export_wall_seconds": 30.079039447999094,
+        "output_sha256": {
+          "Speaker_A.wav": "83a0fde7f69bb7b00eccfa69cdb6d16d5b0c24667eb913ad671674014f941140",
+          "Speaker_B.wav": "b85be86a66b095d50697681dbe77b77d0c151fc0abb3177ab78ec5b6d5c1d241",
+          "Speaker_C.wav": "22ba0c1f547386149a649161c87b245ed0f1a5636876faa1ec1cc98fe163c61a"
+        }
+      }
+    }
+  }
+}

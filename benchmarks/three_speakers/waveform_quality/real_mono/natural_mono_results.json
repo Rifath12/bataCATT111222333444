@@ -1,0 +1,1527 @@
+{
+ "protocol": "physical mono, fixed three roster, natural overlap, normal application WAVs; all outputs scored at their 8 kHz clock against 10 ms timing annotations. Different excerpts can share speakers and a meeting. The best-permutation diagnostic uses scoring labels; main physical ABC never permutes. Waveform purity cannot be inferred from energy or from the far/near microphone pairs.",
+ "scoring_script_sha256": "059aa2bf0ebad43272ca0476d475b299a5c88870de4552223624c1bfff00ce6b",
+ "conditions": {
+  "legacy_forced": "Pre-change process_meeting.py --speakers 3 --no-embeddings (anonymous)",
+  "enrolled_auto": "Revised app --participants 3 --enroll A B C --no-embeddings",
+  "enrolled_forced": "Revised app --participants 3 --speakers 3 --enroll A B C --no-embeddings"
+ },
+ "cases": {
+  "M8014": {
+   "audio_seconds": 60.0,
+   "room": "R8008_M8014",
+   "seconds_by_number_of_annotated_speakers": [
+    6.75,
+    47.44,
+    4.66,
+    1.15
+   ],
+   "modes": {
+    "legacy_forced": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C",
+      "Speaker_D"
+     ],
+     "audio_export_wall_seconds": 127.9105387540003,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 346,
+        "largest_output_on_correct_track": 139,
+        "median_own_to_loudest_other_db": -3.6013722127784242,
+        "median_target_rms_vs_mixture_db": -11.084641962175557
+       },
+       "B": {
+        "eligible_100ms_blocks": 1,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -8.799719273233395,
+        "median_target_rms_vs_mixture_db": -17.945056876807232
+       },
+       "C": {
+        "eligible_100ms_blocks": 78,
+        "largest_output_on_correct_track": 54,
+        "median_own_to_loudest_other_db": 2.555677904555653,
+        "median_target_rms_vs_mixture_db": -7.0012439350862135
+       }
+      },
+      "solo_blocks_correct_loudest": 193,
+      "eligible_solo_blocks": 425,
+      "eligible_double_blocks": 34,
+      "eligible_triple_blocks": 9,
+      "solo_intended_to_all_other_output_energy_db": -0.3499544906718552,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 3,
+        "false_active_outputs_on_solo_blocks": 354,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 354
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 13,
+        "false_active_outputs_on_solo_blocks": 564,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 564
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 17,
+        "false_active_outputs_on_solo_blocks": 704,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 704
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 346,
+        "largest_output_on_correct_track": 139,
+        "median_own_to_loudest_other_db": -3.6013722127784242,
+        "median_target_rms_vs_mixture_db": -11.084641962175557
+       },
+       "B": {
+        "eligible_100ms_blocks": 1,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -8.799719273233395,
+        "median_target_rms_vs_mixture_db": -17.945056876807232
+       },
+       "C": {
+        "eligible_100ms_blocks": 78,
+        "largest_output_on_correct_track": 54,
+        "median_own_to_loudest_other_db": 2.555677904555653,
+        "median_target_rms_vs_mixture_db": -7.0012439350862135
+       }
+      },
+      "solo_blocks_correct_loudest": 193,
+      "eligible_solo_blocks": 425,
+      "eligible_double_blocks": 34,
+      "eligible_triple_blocks": 9,
+      "solo_intended_to_all_other_output_energy_db": -0.3499544906718552,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 3,
+        "false_active_outputs_on_solo_blocks": 354,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 354
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 13,
+        "false_active_outputs_on_solo_blocks": 564,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 564
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 17,
+        "false_active_outputs_on_solo_blocks": 704,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 704
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "6361f61a58ea4f84385cae187b1be1f899eea7cb4cf088ac4310f42455e251b6",
+      "Speaker_B.wav": "6af51d4dc92950d40dd094810348e90a84d958026f4cf28fd5477fdfc154ce68",
+      "Speaker_C.wav": "efac5e2f12cc6a60b39506d3d7f840f306f6f80799981cfc632e3dd65be2f19e",
+      "Speaker_D.wav": "75c93ad8dc5295706e4df3d145ed02283958ef49d12efbc5dbf03fb95dee16bf"
+     }
+    },
+    "enrolled_auto": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C"
+     ],
+     "audio_export_wall_seconds": 105.94424489499943,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 346,
+        "largest_output_on_correct_track": 232,
+        "median_own_to_loudest_other_db": 188.6617331954566,
+        "median_target_rms_vs_mixture_db": 0.0
+       },
+       "B": {
+        "eligible_100ms_blocks": 1,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -186.7713752195404,
+        "median_target_rms_vs_mixture_db": -186.7713752195404
+       },
+       "C": {
+        "eligible_100ms_blocks": 78,
+        "largest_output_on_correct_track": 48,
+        "median_own_to_loudest_other_db": 5.349652539128892,
+        "median_target_rms_vs_mixture_db": -5.560908970838368
+       }
+      },
+      "solo_blocks_correct_loudest": 280,
+      "eligible_solo_blocks": 425,
+      "eligible_double_blocks": 34,
+      "eligible_triple_blocks": 9,
+      "solo_intended_to_all_other_output_energy_db": 6.630134933838874,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 173,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 173
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 4,
+        "false_active_outputs_on_solo_blocks": 220,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 220
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 10,
+        "false_active_outputs_on_solo_blocks": 245,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 245
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 346,
+        "largest_output_on_correct_track": 232,
+        "median_own_to_loudest_other_db": 188.6617331954566,
+        "median_target_rms_vs_mixture_db": 0.0
+       },
+       "B": {
+        "eligible_100ms_blocks": 1,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -186.7713752195404,
+        "median_target_rms_vs_mixture_db": -186.7713752195404
+       },
+       "C": {
+        "eligible_100ms_blocks": 78,
+        "largest_output_on_correct_track": 48,
+        "median_own_to_loudest_other_db": 5.349652539128892,
+        "median_target_rms_vs_mixture_db": -5.560908970838368
+       }
+      },
+      "solo_blocks_correct_loudest": 280,
+      "eligible_solo_blocks": 425,
+      "eligible_double_blocks": 34,
+      "eligible_triple_blocks": 9,
+      "solo_intended_to_all_other_output_energy_db": 6.630134933838874,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 173,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 173
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 4,
+        "false_active_outputs_on_solo_blocks": 220,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 220
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 10,
+        "false_active_outputs_on_solo_blocks": 245,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 245
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "123c192e3bb8024598d1f0927a67531bf49172e5c853976b6a4b72099af5d4ac",
+      "Speaker_B.wav": "5c72b414e63666639db085d42437ca052d8811432463cb177cad143104a5e846",
+      "Speaker_C.wav": "f1d73487077f25560fb29bc14b3cfff3bf3867d9d6b2a5eb7e87b69b52189048"
+     }
+    },
+    "enrolled_forced": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C"
+     ],
+     "audio_export_wall_seconds": 103.12837114499962,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 346,
+        "largest_output_on_correct_track": 167,
+        "median_own_to_loudest_other_db": -0.6256067512984409,
+        "median_target_rms_vs_mixture_db": -9.36172783041082
+       },
+       "B": {
+        "eligible_100ms_blocks": 1,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -5.030753005888333,
+        "median_target_rms_vs_mixture_db": -14.176090609462172
+       },
+       "C": {
+        "eligible_100ms_blocks": 78,
+        "largest_output_on_correct_track": 45,
+        "median_own_to_loudest_other_db": 1.3209343008783019,
+        "median_target_rms_vs_mixture_db": -7.484534742342149
+       }
+      },
+      "solo_blocks_correct_loudest": 212,
+      "eligible_solo_blocks": 425,
+      "eligible_double_blocks": 34,
+      "eligible_triple_blocks": 9,
+      "solo_intended_to_all_other_output_energy_db": 1.7305441221411613,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 12,
+        "false_active_outputs_on_solo_blocks": 335,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 335
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 22,
+        "false_active_outputs_on_solo_blocks": 538,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 538
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 5,
+        "double_blocks_with_both_active_above_floor": 32,
+        "false_active_outputs_on_solo_blocks": 691,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 691
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 346,
+        "largest_output_on_correct_track": 167,
+        "median_own_to_loudest_other_db": -0.6256067512984409,
+        "median_target_rms_vs_mixture_db": -9.36172783041082
+       },
+       "B": {
+        "eligible_100ms_blocks": 1,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -5.030753005888333,
+        "median_target_rms_vs_mixture_db": -14.176090609462172
+       },
+       "C": {
+        "eligible_100ms_blocks": 78,
+        "largest_output_on_correct_track": 45,
+        "median_own_to_loudest_other_db": 1.3209343008783019,
+        "median_target_rms_vs_mixture_db": -7.484534742342149
+       }
+      },
+      "solo_blocks_correct_loudest": 212,
+      "eligible_solo_blocks": 425,
+      "eligible_double_blocks": 34,
+      "eligible_triple_blocks": 9,
+      "solo_intended_to_all_other_output_energy_db": 1.7305441221411613,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 12,
+        "false_active_outputs_on_solo_blocks": 335,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 335
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 22,
+        "false_active_outputs_on_solo_blocks": 538,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 538
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 5,
+        "double_blocks_with_both_active_above_floor": 32,
+        "false_active_outputs_on_solo_blocks": 691,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 691
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "f0418517b94ac91ed38ec48fb7db590ea1168ccd19563df4589f38fcac01e699",
+      "Speaker_B.wav": "35dd3503d0881546df16c294efec78628f54d7469b987f52df18199b056f1107",
+      "Speaker_C.wav": "77e4fa9c3bd100c00bfc39fd5c74e93bba7134328bfc8aed71e2420ea5d1602f"
+     }
+    }
+   }
+  },
+  "M8009": {
+   "audio_seconds": 20.0,
+   "room": "R8005_M8009",
+   "seconds_by_number_of_annotated_speakers": [
+    0.13,
+    4.99,
+    10.63,
+    4.25
+   ],
+   "modes": {
+    "legacy_forced": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C",
+      "Speaker_D"
+     ],
+     "audio_export_wall_seconds": 43.176918377999755,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 11,
+        "largest_output_on_correct_track": 10,
+        "median_own_to_loudest_other_db": 15.099506415468444,
+        "median_target_rms_vs_mixture_db": -1.3552815250936638
+       },
+       "B": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 4,
+        "median_own_to_loudest_other_db": -0.9812705592125325,
+        "median_target_rms_vs_mixture_db": -10.413030275336572
+       },
+       "C": {
+        "eligible_100ms_blocks": 17,
+        "largest_output_on_correct_track": 4,
+        "median_own_to_loudest_other_db": -7.895251785200417,
+        "median_target_rms_vs_mixture_db": -10.810449114244252
+       }
+      },
+      "solo_blocks_correct_loudest": 18,
+      "eligible_solo_blocks": 37,
+      "eligible_double_blocks": 87,
+      "eligible_triple_blocks": 33,
+      "solo_intended_to_all_other_output_energy_db": 5.1921289687092775,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 18,
+        "false_active_outputs_on_solo_blocks": 24,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 24
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 13,
+        "double_blocks_with_both_active_above_floor": 45,
+        "false_active_outputs_on_solo_blocks": 31,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 31
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 26,
+        "double_blocks_with_both_active_above_floor": 65,
+        "false_active_outputs_on_solo_blocks": 44,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 44
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_C",
+       "Speaker_B"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 11,
+        "largest_output_on_correct_track": 10,
+        "median_own_to_loudest_other_db": 15.099506415468444,
+        "median_target_rms_vs_mixture_db": -1.3552815250936638
+       },
+       "B": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 5,
+        "median_own_to_loudest_other_db": 0.981270559212533,
+        "median_target_rms_vs_mixture_db": -9.612684356216727
+       },
+       "C": {
+        "eligible_100ms_blocks": 17,
+        "largest_output_on_correct_track": 13,
+        "median_own_to_loudest_other_db": 7.895251785200416,
+        "median_target_rms_vs_mixture_db": -5.769631287530089
+       }
+      },
+      "solo_blocks_correct_loudest": 28,
+      "eligible_solo_blocks": 37,
+      "eligible_double_blocks": 87,
+      "eligible_triple_blocks": 33,
+      "solo_intended_to_all_other_output_energy_db": 9.45952489344893,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 17,
+        "false_active_outputs_on_solo_blocks": 18,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 18
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 13,
+        "double_blocks_with_both_active_above_floor": 53,
+        "false_active_outputs_on_solo_blocks": 32,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 32
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 26,
+        "double_blocks_with_both_active_above_floor": 74,
+        "false_active_outputs_on_solo_blocks": 44,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 44
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "f539ff508015c26b2d70a23b87580836cd39f97dba63f5ba23bbbd2a51d23633",
+      "Speaker_B.wav": "8299da1b3559a19a33bcc2ac5c3eee5e2171f8be2802e4266fbef3404ab38bc6",
+      "Speaker_C.wav": "19204639f936e25f58ab31132a2ac9230344339cdb36b50d22a515aeb7d3e92f",
+      "Speaker_D.wav": "f03c5f3d6b1c2838903900baa5e646f41acd75bb272b048c28d6d7e05a0c04e0"
+     }
+    },
+    "enrolled_auto": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C"
+     ],
+     "audio_export_wall_seconds": 74.00270228499903,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 11,
+        "largest_output_on_correct_track": 7,
+        "median_own_to_loudest_other_db": 33.159843363759826,
+        "median_target_rms_vs_mixture_db": -0.618184341414371
+       },
+       "B": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 3,
+        "median_own_to_loudest_other_db": -209.44684896873935,
+        "median_target_rms_vs_mixture_db": -216.73953952808307
+       },
+       "C": {
+        "eligible_100ms_blocks": 17,
+        "largest_output_on_correct_track": 17,
+        "median_own_to_loudest_other_db": 31.4113659735534,
+        "median_target_rms_vs_mixture_db": -3.949101024818493
+       }
+      },
+      "solo_blocks_correct_loudest": 27,
+      "eligible_solo_blocks": 37,
+      "eligible_double_blocks": 87,
+      "eligible_triple_blocks": 33,
+      "solo_intended_to_all_other_output_energy_db": 0.9344776848811015,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 6,
+        "false_active_outputs_on_solo_blocks": 10,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 10
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 6,
+        "false_active_outputs_on_solo_blocks": 10,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 10
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 7,
+        "false_active_outputs_on_solo_blocks": 13,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 13
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 11,
+        "largest_output_on_correct_track": 7,
+        "median_own_to_loudest_other_db": 33.159843363759826,
+        "median_target_rms_vs_mixture_db": -0.618184341414371
+       },
+       "B": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 3,
+        "median_own_to_loudest_other_db": -209.44684896873935,
+        "median_target_rms_vs_mixture_db": -216.73953952808307
+       },
+       "C": {
+        "eligible_100ms_blocks": 17,
+        "largest_output_on_correct_track": 17,
+        "median_own_to_loudest_other_db": 31.4113659735534,
+        "median_target_rms_vs_mixture_db": -3.949101024818493
+       }
+      },
+      "solo_blocks_correct_loudest": 27,
+      "eligible_solo_blocks": 37,
+      "eligible_double_blocks": 87,
+      "eligible_triple_blocks": 33,
+      "solo_intended_to_all_other_output_energy_db": 0.9344776848811015,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 6,
+        "false_active_outputs_on_solo_blocks": 10,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 10
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 6,
+        "false_active_outputs_on_solo_blocks": 10,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 10
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 7,
+        "false_active_outputs_on_solo_blocks": 13,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 13
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "a0ae8edac812958215a4d4ab03f72dc3edf70157be3dd70bc3e7a138f7605ff2",
+      "Speaker_B.wav": "1b7bd15375534e88577cc1f0a467d0891c2bba2f07786b7e3d10f161a8f8d5ee",
+      "Speaker_C.wav": "063787c5415ed52e0af954a0f68ca59ee08ca096e9be35bda264dc34082363cd"
+     }
+    },
+    "enrolled_forced": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C"
+     ],
+     "audio_export_wall_seconds": 38.17797580600018,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 11,
+        "largest_output_on_correct_track": 3,
+        "median_own_to_loudest_other_db": -14.621995759524047,
+        "median_target_rms_vs_mixture_db": -18.42029859065757
+       },
+       "B": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 3,
+        "median_own_to_loudest_other_db": -2.9335470112637134,
+        "median_target_rms_vs_mixture_db": -10.413030275336572
+       },
+       "C": {
+        "eligible_100ms_blocks": 17,
+        "largest_output_on_correct_track": 4,
+        "median_own_to_loudest_other_db": -7.862594574878204,
+        "median_target_rms_vs_mixture_db": -10.810449114244252
+       }
+      },
+      "solo_blocks_correct_loudest": 10,
+      "eligible_solo_blocks": 37,
+      "eligible_double_blocks": 87,
+      "eligible_triple_blocks": 33,
+      "solo_intended_to_all_other_output_energy_db": -3.0011632231123775,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 15,
+        "false_active_outputs_on_solo_blocks": 32,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 32
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 15,
+        "double_blocks_with_both_active_above_floor": 41,
+        "false_active_outputs_on_solo_blocks": 38,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 38
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 26,
+        "double_blocks_with_both_active_above_floor": 61,
+        "false_active_outputs_on_solo_blocks": 45,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 45
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_C",
+       "Speaker_B"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 11,
+        "largest_output_on_correct_track": 3,
+        "median_own_to_loudest_other_db": -14.621995759524047,
+        "median_target_rms_vs_mixture_db": -18.42029859065757
+       },
+       "B": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 4,
+        "median_own_to_loudest_other_db": -3.541645952325764,
+        "median_target_rms_vs_mixture_db": -9.612684356216727
+       },
+       "C": {
+        "eligible_100ms_blocks": 17,
+        "largest_output_on_correct_track": 7,
+        "median_own_to_loudest_other_db": -1.441335599590746,
+        "median_target_rms_vs_mixture_db": -8.66718919960302
+       }
+      },
+      "solo_blocks_correct_loudest": 14,
+      "eligible_solo_blocks": 37,
+      "eligible_double_blocks": 87,
+      "eligible_triple_blocks": 33,
+      "solo_intended_to_all_other_output_energy_db": -1.1248443633474838,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 10,
+        "false_active_outputs_on_solo_blocks": 32,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 32
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 15,
+        "double_blocks_with_both_active_above_floor": 35,
+        "false_active_outputs_on_solo_blocks": 44,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 44
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 26,
+        "double_blocks_with_both_active_above_floor": 60,
+        "false_active_outputs_on_solo_blocks": 54,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 54
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "7fa55ae93e42db5a77ff2ba7163cd3f1eb070285fa843237728ddb1da291f5f1",
+      "Speaker_B.wav": "9a5739b5367cf2463a9401c5f580e1a1160bcda1c3e92efe1f0cb36cef36ded4",
+      "Speaker_C.wav": "c53771b90ac65f047645cda3804d33d1c244d605b5b489da92a23431dd76e2e6"
+     }
+    }
+   }
+  },
+  "REAL_T_01": {
+   "audio_seconds": 15.66,
+   "room": "EVAL2-Meeting-CN-260413-2-H2",
+   "seconds_by_number_of_annotated_speakers": [
+    0.0,
+    2.39,
+    8.3,
+    4.97
+   ],
+   "modes": {
+    "legacy_forced": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C",
+      "Speaker_D"
+     ],
+     "audio_export_wall_seconds": 33.36298071999954,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 20,
+        "largest_output_on_correct_track": 18,
+        "median_own_to_loudest_other_db": 6.18129693379578,
+        "median_target_rms_vs_mixture_db": -8.022735716668006
+       },
+       "B": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       },
+       "C": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       }
+      },
+      "solo_blocks_correct_loudest": 18,
+      "eligible_solo_blocks": 20,
+      "eligible_double_blocks": 80,
+      "eligible_triple_blocks": 45,
+      "solo_intended_to_all_other_output_energy_db": 3.8715602877142565,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 4,
+        "double_blocks_with_both_active_above_floor": 4,
+        "false_active_outputs_on_solo_blocks": 12,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 12
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 11,
+        "double_blocks_with_both_active_above_floor": 25,
+        "false_active_outputs_on_solo_blocks": 31,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 31
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 19,
+        "double_blocks_with_both_active_above_floor": 54,
+        "false_active_outputs_on_solo_blocks": 37,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 37
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 20,
+        "largest_output_on_correct_track": 18,
+        "median_own_to_loudest_other_db": 6.18129693379578,
+        "median_target_rms_vs_mixture_db": -8.022735716668006
+       },
+       "B": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       },
+       "C": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       }
+      },
+      "solo_blocks_correct_loudest": 18,
+      "eligible_solo_blocks": 20,
+      "eligible_double_blocks": 80,
+      "eligible_triple_blocks": 45,
+      "solo_intended_to_all_other_output_energy_db": 3.8715602877142565,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 4,
+        "double_blocks_with_both_active_above_floor": 4,
+        "false_active_outputs_on_solo_blocks": 12,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 12
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 11,
+        "double_blocks_with_both_active_above_floor": 25,
+        "false_active_outputs_on_solo_blocks": 31,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 31
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 19,
+        "double_blocks_with_both_active_above_floor": 54,
+        "false_active_outputs_on_solo_blocks": 37,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 37
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "ed1ad74e7705dbcd1ded50ca878db6c12f75b43353e94f46b1e1362b29004172",
+      "Speaker_B.wav": "ac07ede636944456667a6bb219045717f81b84718a3be9c7dde48b8a6783af69",
+      "Speaker_C.wav": "c22d6f051355929547e88c01b8694a61c1e33945eb9e44a995408c8cfb709ed5",
+      "Speaker_D.wav": "3177eb379c647e1445f946248d01665f3c707c1833c58785045b0520cfbda48a"
+     }
+    },
+    "enrolled_auto": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C"
+     ],
+     "audio_export_wall_seconds": 22.872829979000016,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 20,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -200.60715890410873,
+        "median_target_rms_vs_mixture_db": -200.60715890410873
+       },
+       "B": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       },
+       "C": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       }
+      },
+      "solo_blocks_correct_loudest": 0,
+      "eligible_solo_blocks": 20,
+      "eligible_double_blocks": 80,
+      "eligible_triple_blocks": 45,
+      "solo_intended_to_all_other_output_energy_db": -124.54965506255826,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 3,
+        "false_active_outputs_on_solo_blocks": 20,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 20
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 4,
+        "false_active_outputs_on_solo_blocks": 20,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 20
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 4,
+        "false_active_outputs_on_solo_blocks": 20,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 20
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_C",
+       "Speaker_A",
+       "Speaker_B"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 20,
+        "largest_output_on_correct_track": 13,
+        "median_own_to_loudest_other_db": 198.002149144091,
+        "median_target_rms_vs_mixture_db": 0.0
+       },
+       "B": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       },
+       "C": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       }
+      },
+      "solo_blocks_correct_loudest": 13,
+      "eligible_solo_blocks": 20,
+      "eligible_double_blocks": 80,
+      "eligible_triple_blocks": 45,
+      "solo_intended_to_all_other_output_energy_db": 3.8364373230150752,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 7,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 7
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 7,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 7
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 7,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 7
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "1c75d597ccb55b8bb9cb6f058177cf223171eb0b4e8f48aa0b1f51320610d82d",
+      "Speaker_B.wav": "91bb0f8f22c842f22c2f01204db75f6bfd6023a695972d6653fc266bf4b84a4f",
+      "Speaker_C.wav": "fc90c64819af8c3865adfdb8454ac6366c07b68ee0a78d28e5ffc83e4ea63e52"
+     }
+    },
+    "enrolled_forced": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C"
+     ],
+     "audio_export_wall_seconds": 61.98548562399992,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 20,
+        "largest_output_on_correct_track": 18,
+        "median_own_to_loudest_other_db": 6.18129693379578,
+        "median_target_rms_vs_mixture_db": -8.022735716668006
+       },
+       "B": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       },
+       "C": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       }
+      },
+      "solo_blocks_correct_loudest": 18,
+      "eligible_solo_blocks": 20,
+      "eligible_double_blocks": 80,
+      "eligible_triple_blocks": 45,
+      "solo_intended_to_all_other_output_energy_db": 3.871576493771957,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 4,
+        "double_blocks_with_both_active_above_floor": 25,
+        "false_active_outputs_on_solo_blocks": 12,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 12
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 11,
+        "double_blocks_with_both_active_above_floor": 43,
+        "false_active_outputs_on_solo_blocks": 31,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 31
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 25,
+        "double_blocks_with_both_active_above_floor": 54,
+        "false_active_outputs_on_solo_blocks": 37,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 37
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 20,
+        "largest_output_on_correct_track": 18,
+        "median_own_to_loudest_other_db": 6.18129693379578,
+        "median_target_rms_vs_mixture_db": -8.022735716668006
+       },
+       "B": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       },
+       "C": {
+        "eligible_100ms_blocks": 0,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": null,
+        "median_target_rms_vs_mixture_db": null
+       }
+      },
+      "solo_blocks_correct_loudest": 18,
+      "eligible_solo_blocks": 20,
+      "eligible_double_blocks": 80,
+      "eligible_triple_blocks": 45,
+      "solo_intended_to_all_other_output_energy_db": 3.871576493771957,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 4,
+        "double_blocks_with_both_active_above_floor": 25,
+        "false_active_outputs_on_solo_blocks": 12,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 12
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 11,
+        "double_blocks_with_both_active_above_floor": 43,
+        "false_active_outputs_on_solo_blocks": 31,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 31
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 25,
+        "double_blocks_with_both_active_above_floor": 54,
+        "false_active_outputs_on_solo_blocks": 37,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 37
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "7b96b480cfb5db38abb4520ef045cf03b974f356bf3f720f2a6fbed4e4187f5f",
+      "Speaker_B.wav": "fa5ad0aa48038d7d867147e85c8586508d976a4305b5952918fcb220affd6cc8",
+      "Speaker_C.wav": "f93900b77229af0b0170b092d9fc085ae0b742f6641d2932461205fa995c490d"
+     }
+    }
+   }
+  },
+  "REAL_T_03": {
+   "audio_seconds": 18.01,
+   "room": "EVAL2-Meeting-CN-260413-2-H2",
+   "seconds_by_number_of_annotated_speakers": [
+    0.0,
+    8.25,
+    4.89,
+    4.87
+   ],
+   "modes": {
+    "legacy_forced": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C",
+      "Speaker_D"
+     ],
+     "audio_export_wall_seconds": 30.752611740001157,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 5,
+        "median_own_to_loudest_other_db": 0.7850995225612454,
+        "median_target_rms_vs_mixture_db": -7.726983340800491
+       },
+       "B": {
+        "eligible_100ms_blocks": 16,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -9.641581541022548,
+        "median_target_rms_vs_mixture_db": -19.883072820833092
+       },
+       "C": {
+        "eligible_100ms_blocks": 50,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -22.80770421016637,
+        "median_target_rms_vs_mixture_db": -29.225038628802054
+       }
+      },
+      "solo_blocks_correct_loudest": 5,
+      "eligible_solo_blocks": 75,
+      "eligible_double_blocks": 36,
+      "eligible_triple_blocks": 47,
+      "solo_intended_to_all_other_output_energy_db": -12.564365366685662,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 0,
+        "double_blocks_with_both_active_above_floor": 4,
+        "false_active_outputs_on_solo_blocks": 88,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 94
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 16,
+        "false_active_outputs_on_solo_blocks": 125,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 152
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 24,
+        "false_active_outputs_on_solo_blocks": 139,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 166
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_B",
+       "Speaker_D",
+       "Speaker_A"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 3,
+        "median_own_to_loudest_other_db": -3.036851975094201,
+        "median_target_rms_vs_mixture_db": -11.097896855735101
+       },
+       "B": {
+        "eligible_100ms_blocks": 16,
+        "largest_output_on_correct_track": 4,
+        "median_own_to_loudest_other_db": -180.75514429665736,
+        "median_target_rms_vs_mixture_db": -191.6508657059291
+       },
+       "C": {
+        "eligible_100ms_blocks": 50,
+        "largest_output_on_correct_track": 40,
+        "median_own_to_loudest_other_db": 2.5010235335503737,
+        "median_target_rms_vs_mixture_db": -6.952408421097113
+       }
+      },
+      "solo_blocks_correct_loudest": 47,
+      "eligible_solo_blocks": 75,
+      "eligible_double_blocks": 36,
+      "eligible_triple_blocks": 47,
+      "solo_intended_to_all_other_output_energy_db": 0.4543147834091531,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 8,
+        "false_active_outputs_on_solo_blocks": 52,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 56
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 19,
+        "double_blocks_with_both_active_above_floor": 13,
+        "false_active_outputs_on_solo_blocks": 96,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 105
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 19,
+        "double_blocks_with_both_active_above_floor": 16,
+        "false_active_outputs_on_solo_blocks": 105,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 136
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "2af9649cfe50c8c1fe9e79c8c5c491622313bf770153226898cd29c49dcbadc6",
+      "Speaker_B.wav": "21574ac62ae091839545c82acc6a2fd2d608d760f51bb18c54d425f0a202826c",
+      "Speaker_C.wav": "0efe38586f779676ae210c7e66c0e0a68ed6a6f4fd736420d172eff2ae967809",
+      "Speaker_D.wav": "d6b6c02064ff26330fc1c836dba378759af85f42177cdd699a897c498484a31e"
+     }
+    },
+    "enrolled_auto": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C"
+     ],
+     "audio_export_wall_seconds": 28.92720298600034,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -198.0631526116801,
+        "median_target_rms_vs_mixture_db": -198.0631526116801
+       },
+       "B": {
+        "eligible_100ms_blocks": 16,
+        "largest_output_on_correct_track": 16,
+        "median_own_to_loudest_other_db": 193.8642819784662,
+        "median_target_rms_vs_mixture_db": 0.0
+       },
+       "C": {
+        "eligible_100ms_blocks": 50,
+        "largest_output_on_correct_track": 25,
+        "median_own_to_loudest_other_db": -1.6307881307520873,
+        "median_target_rms_vs_mixture_db": -12.923783401791717
+       }
+      },
+      "solo_blocks_correct_loudest": 41,
+      "eligible_solo_blocks": 75,
+      "eligible_double_blocks": 36,
+      "eligible_triple_blocks": 47,
+      "solo_intended_to_all_other_output_energy_db": -0.3598460182748894,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 39,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 39
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 9,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 63,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 63
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 9,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 66,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 66
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 0,
+        "median_own_to_loudest_other_db": -198.0631526116801,
+        "median_target_rms_vs_mixture_db": -198.0631526116801
+       },
+       "B": {
+        "eligible_100ms_blocks": 16,
+        "largest_output_on_correct_track": 16,
+        "median_own_to_loudest_other_db": 193.8642819784662,
+        "median_target_rms_vs_mixture_db": 0.0
+       },
+       "C": {
+        "eligible_100ms_blocks": 50,
+        "largest_output_on_correct_track": 25,
+        "median_own_to_loudest_other_db": -1.6307881307520873,
+        "median_target_rms_vs_mixture_db": -12.923783401791717
+       }
+      },
+      "solo_blocks_correct_loudest": 41,
+      "eligible_solo_blocks": 75,
+      "eligible_double_blocks": 36,
+      "eligible_triple_blocks": 47,
+      "solo_intended_to_all_other_output_energy_db": -0.3598460182748894,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 39,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 39
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 9,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 63,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 63
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 9,
+        "double_blocks_with_both_active_above_floor": 1,
+        "false_active_outputs_on_solo_blocks": 66,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 66
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "afab7b4796d48f28d9d128b0dc2eff9d21904d61f5a833f9ed87aba632eb43eb",
+      "Speaker_B.wav": "e6ab3af109a4e93606b646f666d77a0d24a08a791c9ca2bdcf7218e6f78a6a80",
+      "Speaker_C.wav": "6114fe63712a8bea9d6162c2b73e540af7efc55f5a291862f0f6ad7872c0b465"
+     }
+    },
+    "enrolled_forced": {
+     "tracks": [
+      "Speaker_A",
+      "Speaker_B",
+      "Speaker_C"
+     ],
+     "audio_export_wall_seconds": 31.282010636999985,
+     "verified_mixture_probes": 24,
+     "physical_ABC": {
+      "assigned_outputs": [
+       "Speaker_A",
+       "Speaker_B",
+       "Speaker_C"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 3,
+        "median_own_to_loudest_other_db": -3.036851975094201,
+        "median_target_rms_vs_mixture_db": -11.097896855735101
+       },
+       "B": {
+        "eligible_100ms_blocks": 16,
+        "largest_output_on_correct_track": 14,
+        "median_own_to_loudest_other_db": 8.425172447941655,
+        "median_target_rms_vs_mixture_db": -10.756023412774388
+       },
+       "C": {
+        "eligible_100ms_blocks": 50,
+        "largest_output_on_correct_track": 16,
+        "median_own_to_loudest_other_db": -12.665771858943597,
+        "median_target_rms_vs_mixture_db": -18.754582698998654
+       }
+      },
+      "solo_blocks_correct_loudest": 33,
+      "eligible_solo_blocks": 75,
+      "eligible_double_blocks": 36,
+      "eligible_triple_blocks": 47,
+      "solo_intended_to_all_other_output_energy_db": -2.8602801538196907,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 11,
+        "false_active_outputs_on_solo_blocks": 71,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 71
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 22,
+        "double_blocks_with_both_active_above_floor": 26,
+        "false_active_outputs_on_solo_blocks": 122,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 122
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 22,
+        "double_blocks_with_both_active_above_floor": 32,
+        "false_active_outputs_on_solo_blocks": 140,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 140
+       }
+      }
+     },
+     "diagnostic_oracle_permutation": {
+      "assigned_outputs": [
+       "Speaker_C",
+       "Speaker_B",
+       "Speaker_A"
+      ],
+      "per_speaker": {
+       "A": {
+        "eligible_100ms_blocks": 9,
+        "largest_output_on_correct_track": 5,
+        "median_own_to_loudest_other_db": 0.7850995225612454,
+        "median_target_rms_vs_mixture_db": -7.726983340800491
+       },
+       "B": {
+        "eligible_100ms_blocks": 16,
+        "largest_output_on_correct_track": 14,
+        "median_own_to_loudest_other_db": 8.425172447941655,
+        "median_target_rms_vs_mixture_db": -10.756023412774388
+       },
+       "C": {
+        "eligible_100ms_blocks": 50,
+        "largest_output_on_correct_track": 28,
+        "median_own_to_loudest_other_db": 0.9075465814717756,
+        "median_target_rms_vs_mixture_db": -7.119244371789348
+       }
+      },
+      "solo_blocks_correct_loudest": 47,
+      "eligible_solo_blocks": 75,
+      "eligible_double_blocks": 36,
+      "eligible_triple_blocks": 47,
+      "solo_intended_to_all_other_output_energy_db": -0.303434055775117,
+      "levels_relative_to_mixed_input_db": {
+       "12": {
+        "triple_blocks_with_three_outputs_above_floor": 2,
+        "double_blocks_with_both_active_above_floor": 12,
+        "false_active_outputs_on_solo_blocks": 49,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 49
+       },
+       "18": {
+        "triple_blocks_with_three_outputs_above_floor": 22,
+        "double_blocks_with_both_active_above_floor": 23,
+        "false_active_outputs_on_solo_blocks": 98,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 98
+       },
+       "24": {
+        "triple_blocks_with_three_outputs_above_floor": 22,
+        "double_blocks_with_both_active_above_floor": 31,
+        "false_active_outputs_on_solo_blocks": 126,
+        "false_active_outputs_including_extra_tracks_on_solo_blocks": 126
+       }
+      }
+     },
+     "output_sha256": {
+      "Speaker_A.wav": "f0a0937277de8738ef4d43f8bdd34a651338d6a270e9846616e873fdd2dbf81d",
+      "Speaker_B.wav": "134b100d9393fb6b143639a5d89dc40187bc2d780cbb0fbdc23f834ddb15f879",
+      "Speaker_C.wav": "4642b89ccf378f497c38f5fb9ac84c1b46a2474d027b0cb74e947ace3612553a"
+     }
+    }
+   }
+  }
+ },
+ "M8014_headset_timing_diagnostic": {
+  "N_SPK8051": {
+   "score_window_excluded": true,
+   "number": 60,
+   "qualified_peaks": 59,
+   "earlier_qualified": 35,
+   "median_abs_peak": 0.33276762213338196,
+   "prior_lag_samples": 946,
+   "prior_lag_ms": 59.125,
+   "lag_q10_q90": [
+    558.8000000000001,
+    1873.2
+   ],
+   "lag_drift_samples_per_second": 0.5299531084752114
+  },
+  "N_SPK8052": {
+   "score_window_excluded": true,
+   "number": 60,
+   "qualified_peaks": 60,
+   "earlier_qualified": 44,
+   "median_abs_peak": 0.36245927504886544,
+   "prior_lag_samples": 960,
+   "prior_lag_ms": 60.0,
+   "lag_q10_q90": [
+    382.90000000000003,
+    1777.6000000000001
+   ],
+   "lag_drift_samples_per_second": 0.4844543308888638
+  },
+  "N_SPK8053": {
+   "score_window_excluded": true,
+   "number": 60,
+   "qualified_peaks": 60,
+   "earlier_qualified": 37,
+   "median_abs_peak": 0.39573662632479606,
+   "prior_lag_samples": 997,
+   "prior_lag_ms": 62.3125,
+   "lag_q10_q90": [
+    711.9,
+    1764.4
+   ],
+   "lag_drift_samples_per_second": 0.6430017158265676
+  }
+ }
+}

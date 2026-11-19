@@ -1,0 +1,67 @@
+{
+  "sources_sha256": "bac44502b40395506578f11baaf2cc8be450eeee5b16bb4b115d68d879ea52e1",
+  "build_sha256": "1242fb81755c3aaba8fb2cdf4b1b83521ea4c0d70d389acb217675537bb9e36c",
+  "sync_sha256": "10f24613c78bf531c957a4c1a7723d5677b148dd531cf29ba8a2b8e292e05c7c",
+  "rooms": [
+    {
+      "room": "R8004_M8006",
+      "speakers": [
+        8031,
+        8032,
+        8033
+      ],
+      "distinct_source_intervals": 75,
+      "enrollment_intervals": 24,
+      "evaluated_source_intervals": 51,
+      "events": 21,
+      "common_active_people_seconds": [
+        11.826,
+        5.806,
+        7.964,
+        7.684
+      ],
+      "maximum_reference_reconstruction_absolute_difference": 0,
+      "streams": {
+        "direct_sum": {
+          "pcm_mixture_sha256": "99d963d400d263a86b92260601f36170ef4ae9194b3f07f9ac8aa33f5d076174",
+          "pcm_reference_sha256": "925b1b7643ba430c65894d8ce251524630a7583758dd74fd0895d61763f2aac1"
+        },
+        "array_channel0": {
+          "pcm_mixture_sha256": "5ff24607f72a58a848e1a05c6ac4436e4026945d0d55084f41abe22be515eae7",
+          "pcm_reference_sha256": "df98b863257c37be6a5bf54e8449fc1750be8eb7103ac7315db51ab7f0c422fd"
+        }
+      },
+      "manifest_sha256": "256dc8977963230ec47a0b693826dfb8b39519d5d9d2a24bbcb152804f84747a"
+    },
+    {
+      "room": "R8005_M8007",
+      "speakers": [
+        8035,
+        8036,
+        8037
+      ],
+      "distinct_source_intervals": 75,
+      "enrollment_intervals": 24,
+      "evaluated_source_intervals": 51,
+      "events": 21,
+      "common_active_people_seconds": [
+        11.772,
+        5.589,
+        8.26,
+        7.659
+      ],
+      "maximum_reference_reconstruction_absolute_difference": 0,
+      "streams": {
+        "direct_sum": {
+          "pcm_mixture_sha256": "3721e397b91149fc762624aefeb28bb85c4a5281c1f8d36089900087e48131f9",
+          "pcm_reference_sha256": "2831a7bb96b6ade48a7eac074a0e136b36c3e7a6a08362098a7d2a93e63c3b7f"
+        },
+        "array_channel0": {
+          "pcm_mixture_sha256": "9fb86e27a28f5d6d3e18990fa4906cd21300f00d7639a56c73aa421a2942d0fa",
+          "pcm_reference_sha256": "b8cd11729206fbc318d1fd4e69381049ed40110f80785a4528536519737100ea"
+        }
+      },
+      "manifest_sha256": "a39440202b0af7a6a27eb449be5664ee3b4416fbcee940be2ea9a42e60d77566"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "case": "First 4 seconds of natural AliMeeting M8009 excerpt, mono compared with a two-channel duplicate in opposite polarity",
+  "pcm_and_transcript_parity_sha256": {
+    "Speaker_A.wav": "0ddfd4165cb8ff29a3c7188d20a9731d2fd7c909821b39050f9a0bb5c241edb8",
+    "Speaker_B.wav": "6aecb557517e8ed2956522202361518dd14f844be231ceab9b582bbc8287f23f",
+    "Speaker_C.wav": "51049484b908ad987b7fa2dbf26b04b7cb4f116353fe72385e8b7e03a61fe786",
+    "mixed.wav": "2ddaba332754ae12ed4bc8bdab1555f998ced0682c8dfddd415e531f2472e752",
+    "transcript.jsonl": "f96c20205d811284632e432a341579d5d9a6ae1e431a0d3ed45882834b14c749"
+  }
+}

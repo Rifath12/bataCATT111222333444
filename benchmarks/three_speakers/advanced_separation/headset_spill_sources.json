@@ -1,0 +1,87 @@
+{
+  "rooms": {
+    "R8004_M8006": [
+      8031,
+      8032,
+      8033
+    ],
+    "R8005_M8007": [
+      8035,
+      8036,
+      8037
+    ],
+    "R8005_M8009": [
+      8043,
+      8045,
+      8046
+    ]
+  },
+  "sources": [
+    {
+      "file": "R8004_M8006/room.rttm",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8004_M8006.rttm",
+      "sha256": "ab47b3daf266230f650762a691885cec303fbe46f7ddb2a1a828009b917ad5e5"
+    },
+    {
+      "file": "R8004_M8006/audio/8031.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8006_N_SPK8031.wav",
+      "sha256": "f864d49b03eef1fd93c3a29efb35d2b07e83cd3a1b82b5183d0e58ea16abf3c9",
+      "size": 62893292
+    },
+    {
+      "file": "R8004_M8006/audio/8032.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8006_N_SPK8032.wav",
+      "sha256": "c26ea0d85a8cae7ada6938736ec7d4d79492a6f908ebe7d99441d3e930c9aee9",
+      "size": 62893292
+    },
+    {
+      "file": "R8004_M8006/audio/8033.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8004_M8006_N_SPK8033.wav",
+      "sha256": "3b45864c3520ddaa30e4131051ec884f925452dcaf0428f1d16f489fb06447ad",
+      "size": 62893292
+    },
+    {
+      "file": "R8005_M8007/room.rttm",
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8005_M8007.rttm",
+      "sha256": "2391915891e2aea72e615016bfaf2738458354fd7dbba91a506e43eba0bd0824"
+    },
+    {
+      "file": "R8005_M8007/audio/8035.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8007_N_SPK8035.wav",
+      "sha256": "32a5992c9a6d8146a10d1f8ecfa14e68f7c27ee8925d16efa6556c958a6f7c23",
+      "size": 60101676
+    },
+    {
+      "file": "R8005_M8007/audio/8036.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8007_N_SPK8036.wav",
+      "sha256": "5d3374ca107452b786196cfa679fd2c7c364c7f6490dc1ecad317ce6a224e160",
+      "size": 60101676
+    },
+    {
+      "file": "R8005_M8007/audio/8037.wav",
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8007_N_SPK8037.wav",
+      "sha256": "0f761c6b50cfc7c7138b69b8d34f88e429c8dcc585177dc0212100013a5a963c",
+      "size": 60101676
+    },
+    {
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8009_N_SPK8043.wav",
+      "file": "R8005_M8009/audio/8043.wav",
+      "sha256": "f4c796ad7be9a37e6d6574afc0124f2c33f7b776b94a0c7edcfa91baeb69623b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8009_N_SPK8045.wav",
+      "file": "R8005_M8009/audio/8045.wav",
+      "sha256": "bff1d5f8a802f42db2f895f82b522947c7ec1af41e9603614addbe7d7f088df6"
+    },
+    {
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/near/R8005_M8009_N_SPK8046.wav",
+      "file": "R8005_M8009/audio/8046.wav",
+      "sha256": "2e2c5edaef9b2589a3132b0f1c362851ac424185ca9a490022b0d7bcd8ce58fd"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8005_M8009.rttm",
+      "file": "R8005_M8009/room.rttm",
+      "sha256": "ff23db5f6b54e1194c0c4d9a8af87261c1adabdc8857269bc1c9f41de1f5a0ec"
+    }
+  ]
+}

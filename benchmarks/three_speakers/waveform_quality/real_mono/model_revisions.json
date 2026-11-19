@@ -1,0 +1,62 @@
+{
+  "libri3mix": {
+    "source": "speechbrain/sepformer-libri3mix",
+    "revision": "1f2d824e2333aec9e60d0030fb144885c1afc426",
+    "files": {
+      "encoder.ckpt": "e949e80c1a96965b723460209bb155eac1fdb2f6d2cf4e7b3e1d3152716f38d0",
+      "masknet.ckpt": "416af7b09d912c486261dd824788dd92d3b21373c8ec4d029209792522f4dbcb",
+      "decoder.ckpt": "9afdda4e4ecb9eefb5d49329193c7a9215ae7443aab206f2fe4eb0f50988ca53",
+      "hyperparams.yaml": "4f0ae05600c66d7f8cf1269f54fd32dad576d4d473ad7169ef6ab26190658233"
+    }
+  },
+  "sepformer-tcc300-3spks-16k": {
+    "source": "AlvinLo62/sepformer-tcc300-3spks-16k",
+    "revision": "0dcf7602a92cbb65e38d6d85c0e873daeae665af",
+    "files": {
+      "encoder.ckpt": "cfc34c3fbd062f2df545597d42a28e5a609776de601794fbab4a87526efa5a89",
+      "masknet.ckpt": "9f8c1783721da5a28b2eeb98fc604a7e18b3ceef64dcf4552eb4c1ecb3cf3d32",
+      "decoder.ckpt": "fb8b076933bd9d5612269c5fb49eb959b2e03253572c38cbe9a334e1e95d55c2",
+      "config.json": "4f3d456087b16fd7d6a343547ace1d05ad2b0ae77de9df95620874f9076b0eff",
+      "hyperparams.yaml": "c0d5d504561efbac780dc53d0bad7b81b63a9ec5fed50b46c52e2f3d8dfe8eed",
+      "hyperparams_train.yaml": "16b27a43ec03545f98292f835eeb9513c468ba80e202a3991a0ec7e8b9b186ed"
+    }
+  },
+  "sepformer-tcc300-3spks-16k-noisy": {
+    "source": "AlvinLo62/sepformer-tcc300-3spks-16k-noisy",
+    "revision": "c018c2ca7d6e384c3963ddbb551665c7c4fa51bb",
+    "files": {
+      "encoder.ckpt": "341993bdc0cfc4e0411e05789c5e6209aeed05f05025befe6dcaa37b11958ced",
+      "masknet.ckpt": "f80104b11065a24401e355c59bdb1ee1902baec155eef974e0f7924637723244",
+      "decoder.ckpt": "25a65ebf66040572b12ae02e04a50f1c3cabcf2ab7801f8bc5bac07f75dbdbd1",
+      "config.json": "4f3d456087b16fd7d6a343547ace1d05ad2b0ae77de9df95620874f9076b0eff",
+      "hyperparams.yaml": "3f8bc00071a001a0a468fd09287939589da447d49adc02a9e5f9e0e88bb12831",
+      "hyperparams_train.yaml": "ba214583d9a13f7c06028cbcca491f32c4f3577394471e4d9388e7525d08993a"
+    }
+  },
+  "mossformer2-wsj0mix-3spk": {
+    "source": "alibabasglab/mossformer2-wsj0mix-3spk",
+    "revision": "692a242d7e83aa8fc63c6a4b18153335a465cc1c",
+    "files": {
+      "encoder.ckpt": "7a220724794baed750e0766e5112d1763a3afabc2156e07942c1d3e2ab77740b",
+      "masknet.ckpt": "64fcad30db301d24aba695232637d134ca56569a16f7db20cabcb789a22b869a",
+      "decoder.ckpt": "afe83c79bf392e1e0bdba5c97951b4b8fca62f521ef495fce245611065fb5923",
+      "config.json": "ca8257d8d45f68caa6ec0aa0efd94a5705f2b8d366b2d14081204ee83eb53600"
+    },
+    "code": {
+      "source": "alibabasglab/MossFormer2",
+      "revision": "5727f739947605f884da8d7a1448c64f32d37b9d",
+      "git_blobs": {
+        "MossFormer2_standalone/inference.py": "398f80e0ed1043832433bd1272172fa531664957",
+        "MossFormer2_standalone/model/__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "MossFormer2_standalone/model/mossformer2.py": "ca644a0826608c2dd3e8fc4534b496656f59e6a3",
+        "MossFormer2_standalone/model/mossformer2_configs.py": "b17aa7348415864afd64de1d653d9dd7e4695df6",
+        "MossFormer2_standalone/model/utils/Transformer.py": "8c0a937b116c7ed3fe65fbb1970c2b171729126b",
+        "MossFormer2_standalone/model/utils/__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "MossFormer2_standalone/model/utils/conv_module.py": "e34e4dc127b2b0a2b874bea7527fef37a5b26526",
+        "MossFormer2_standalone/model/utils/fsmn.py": "19a34605b4b2cab306bc06acb4fb4710145ba4cf",
+        "MossFormer2_standalone/model/utils/normalization.py": "ad2d4cf1498006e0bfa6ce483365557da701bc07",
+        "MossFormer2_standalone/model/utils/one_path_flash_fsmn.py": "9a205f9dcac1a9dff2f6f650fa4c5e3a3315a4b1"
+      }
+    }
+  }
+}

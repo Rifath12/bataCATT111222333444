@@ -1,0 +1,94 @@
+{
+  "recognizer": "Native application Mandarin Zipformer CTC int8, from the pinned project setup; one CPU thread. Separated PCM16 8 kHz WAVs were decoded with the production active-spans/CTC path. Letters are fixed if enrolled; anonymous baseline is also scored with the best single global permutation per excerpt, including every character on any fourth track as insertions. Character differences are simplified Chinese Levenshtein, including insertions. Reference boundaries are given in natural_mono_cases.json.",
+  "cases": {
+    "M8009_legacy": {
+      "reference_characters": 193,
+      "fixed_edits": 122,
+      "best_global_edits": 122,
+      "best_global_order": "ABC"
+    },
+    "M8009_auto": {
+      "reference_characters": 193,
+      "fixed_edits": 167,
+      "best_global_edits": 163,
+      "best_global_order": "ACB"
+    },
+    "M8009_forced": {
+      "reference_characters": 193,
+      "fixed_edits": 171,
+      "best_global_edits": 152,
+      "best_global_order": "CAB"
+    },
+    "M8014_legacy": {
+      "reference_characters": 327,
+      "fixed_edits": 406,
+      "best_global_edits": 406,
+      "best_global_order": "ABC"
+    },
+    "M8014_auto": {
+      "reference_characters": 327,
+      "fixed_edits": 222,
+      "best_global_edits": 212,
+      "best_global_order": "ACB"
+    },
+    "M8014_forced": {
+      "reference_characters": 327,
+      "fixed_edits": 422,
+      "best_global_edits": 402,
+      "best_global_order": "BAC"
+    },
+    "clip_01_legacy": {
+      "reference_characters": 125,
+      "fixed_edits": 106,
+      "best_global_edits": 104,
+      "best_global_order": "ACB"
+    },
+    "clip_01_auto": {
+      "reference_characters": 125,
+      "fixed_edits": 120,
+      "best_global_edits": 108,
+      "best_global_order": "CAB"
+    },
+    "clip_01_forced": {
+      "reference_characters": 125,
+      "fixed_edits": 109,
+      "best_global_edits": 106,
+      "best_global_order": "BCA"
+    },
+    "clip_03_legacy": {
+      "reference_characters": 97,
+      "fixed_edits": 114,
+      "best_global_edits": 91,
+      "best_global_order": "ADB"
+    },
+    "clip_03_auto": {
+      "reference_characters": 97,
+      "fixed_edits": 86,
+      "best_global_edits": 75,
+      "best_global_order": "CAB"
+    },
+    "clip_03_forced": {
+      "reference_characters": 97,
+      "fixed_edits": 91,
+      "best_global_edits": 79,
+      "best_global_order": "CAB"
+    }
+  },
+  "pooled": {
+    "legacy": {
+      "reference_characters": 742,
+      "fixed_edits": 748,
+      "best_global_edits": 723
+    },
+    "auto": {
+      "reference_characters": 742,
+      "fixed_edits": 595,
+      "best_global_edits": 558
+    },
+    "forced": {
+      "reference_characters": 742,
+      "fixed_edits": 793,
+      "best_global_edits": 739
+    }
+  }
+}

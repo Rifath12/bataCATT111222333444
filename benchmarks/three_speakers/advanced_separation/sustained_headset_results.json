@@ -1,0 +1,631 @@
+{
+  "setup": "Three synchronized 16-kHz physical close microphones and earlier three labeled solo pilots, one speaker at a time with all mics recording. The output is the fixed standard waveform multiplied by a bounded time-varying gain. No reordering. Frozen filter has 1.024 s centered speech hold and limits reduction to 6.02 dB. The method cannot consume a single mixed microphone for these scores.",
+  "chronology": "The M8014 early development panel selected the preliminary presence threshold. The original 244 fixtures form a secondary reused comparison. M8006/M8007 showed a regression under a predecessor. A sustained hold and gentler amplitude floor were fixed before all M8009 comparisons. Donors in every evaluated case occur after the first 45% cut and are disjoint from calibration. The lower-count companions remove one or two source images from each original trial and use the same donors, so they are paired controls. The 17 M8009 clips come from a new group of three original speakers in a previously studied physical room.",
+  "metric": "All three fixed targets must pass alignment and the existing speech-retention criterion. In constructed one/two talker controls, evaluate mean-square absent-microphone output in intervals where all selected talkers are active; positive dB means less output. Levels include captured room noise. Each inactive receiver is a separate observation. An energy drop does not prove improved intelligibility.",
+  "groups": {
+    "all": {
+      "clip_count": 316,
+      "standard": {
+        "pass96": 218,
+        "pass98": 180,
+        "retention_failures": 5
+      },
+      "activity": {
+        "pass96": 218,
+        "pass98": 180,
+        "retention_failures": 5
+      },
+      "1_active": {
+        "cases": 161,
+        "absent_receiver_measurements": 322,
+        "median_spill_reduction_db": 3.022786021232605,
+        "mean_spill_reduction_db": 3.1111858245659865,
+        "at_least_3db_reduction": 161,
+        "worst_active_level_change_db": 0.0
+      },
+      "2_active": {
+        "cases": 155,
+        "absent_receiver_measurements": 155,
+        "median_spill_reduction_db": 5.6924896240234375,
+        "mean_spill_reduction_db": 3.7762011536983255,
+        "at_least_3db_reduction": 96,
+        "worst_active_level_change_db": -0.00992643740028143
+      },
+      "triple_max_alignment_increase_percentage_points": 0.0,
+      "triple_max_alignment_drop_percentage_points": 0.19090745270148313
+    },
+    "initial five meetings": {
+      "clip_count": 244,
+      "standard": {
+        "pass96": 164,
+        "pass98": 134,
+        "retention_failures": 3
+      },
+      "activity": {
+        "pass96": 164,
+        "pass98": 134,
+        "retention_failures": 3
+      },
+      "1_active": {
+        "cases": 124,
+        "absent_receiver_measurements": 248,
+        "median_spill_reduction_db": 2.852467656135559,
+        "mean_spill_reduction_db": 3.004679805558633,
+        "at_least_3db_reduction": 118,
+        "worst_active_level_change_db": 0.0
+      },
+      "2_active": {
+        "cases": 120,
+        "absent_receiver_measurements": 120,
+        "median_spill_reduction_db": 5.557919502258301,
+        "mean_spill_reduction_db": 3.665817609874527,
+        "at_least_3db_reduction": 74,
+        "worst_active_level_change_db": 0.0
+      },
+      "triple_max_alignment_increase_percentage_points": 0.0,
+      "triple_max_alignment_drop_percentage_points": 0.19090745270148313
+    },
+    "new M8006 and M8007": {
+      "clip_count": 55,
+      "standard": {
+        "pass96": 42,
+        "pass98": 35,
+        "retention_failures": 0
+      },
+      "activity": {
+        "pass96": 42,
+        "pass98": 35,
+        "retention_failures": 0
+      },
+      "1_active": {
+        "cases": 28,
+        "absent_receiver_measurements": 56,
+        "median_spill_reduction_db": 3.1139713525772095,
+        "mean_spill_reduction_db": 3.1916252275280255,
+        "at_least_3db_reduction": 30,
+        "worst_active_level_change_db": 0.0
+      },
+      "2_active": {
+        "cases": 27,
+        "absent_receiver_measurements": 27,
+        "median_spill_reduction_db": 5.7847113609313965,
+        "mean_spill_reduction_db": 4.423349999098314,
+        "at_least_3db_reduction": 18,
+        "worst_active_level_change_db": -0.00992643740028143
+      },
+      "triple_max_alignment_increase_percentage_points": 0.0,
+      "triple_max_alignment_drop_percentage_points": -0.0
+    },
+    "final M8009": {
+      "clip_count": 17,
+      "standard": {
+        "pass96": 12,
+        "pass98": 11,
+        "retention_failures": 2
+      },
+      "activity": {
+        "pass96": 12,
+        "pass98": 11,
+        "retention_failures": 2
+      },
+      "1_active": {
+        "cases": 9,
+        "absent_receiver_measurements": 18,
+        "median_spill_reduction_db": 6.020600318908691,
+        "mean_spill_reduction_db": 4.328346166118738,
+        "at_least_3db_reduction": 13,
+        "worst_active_level_change_db": 0.0
+      },
+      "2_active": {
+        "cases": 8,
+        "absent_receiver_measurements": 8,
+        "median_spill_reduction_db": 3.951025605201721,
+        "mean_spill_reduction_db": 3.247826957830334,
+        "at_least_3db_reduction": 4,
+        "worst_active_level_change_db": 0.0
+      },
+      "triple_max_alignment_increase_percentage_points": 0.0,
+      "triple_max_alignment_drop_percentage_points": -0.0
+    }
+  },
+  "per_room": [
+    {
+      "meeting": "M8002",
+      "clips": 51,
+      "standard": {
+        "pass96": 31,
+        "pass98": 19,
+        "worst_voice": 0.07418934222746162,
+        "q10": 0.6760040882574349,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "with_sustained": {
+        "pass96": 31,
+        "pass98": 19,
+        "worst_voice": 0.07418934222746162,
+        "q10": 0.6760040882574349,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "lost96": [],
+      "lost98": []
+    },
+    {
+      "meeting": "M8003",
+      "clips": 37,
+      "standard": {
+        "pass96": 18,
+        "pass98": 9,
+        "worst_voice": 0.07480549688979807,
+        "q10": 0.6384353602238029,
+        "retained_mean": 0.9987347871149334,
+        "retention_failures": 2
+      },
+      "with_sustained": {
+        "pass96": 18,
+        "pass98": 9,
+        "worst_voice": 0.07381759313238725,
+        "q10": 0.6384353602238029,
+        "retained_mean": 0.9987347871149334,
+        "retention_failures": 2
+      },
+      "lost96": [],
+      "lost98": []
+    },
+    {
+      "meeting": "M8005",
+      "clips": 32,
+      "standard": {
+        "pass96": 21,
+        "pass98": 19,
+        "worst_voice": 0.10136715130093214,
+        "q10": 0.6736845538928173,
+        "retained_mean": 0.9988501082251083,
+        "retention_failures": 1
+      },
+      "with_sustained": {
+        "pass96": 21,
+        "pass98": 19,
+        "worst_voice": 0.10136715130093214,
+        "q10": 0.6736845538928173,
+        "retained_mean": 0.9988501082251083,
+        "retention_failures": 1
+      },
+      "lost96": [],
+      "lost98": []
+    },
+    {
+      "meeting": "M8006",
+      "clips": 16,
+      "standard": {
+        "pass96": 10,
+        "pass98": 10,
+        "worst_voice": 0.6977784509862259,
+        "q10": 0.8335032156561339,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "with_sustained": {
+        "pass96": 10,
+        "pass98": 10,
+        "worst_voice": 0.6977784509862259,
+        "q10": 0.8335032156561339,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "lost96": [],
+      "lost98": []
+    },
+    {
+      "meeting": "M8007",
+      "clips": 39,
+      "standard": {
+        "pass96": 32,
+        "pass98": 25,
+        "worst_voice": 0.6681906185711343,
+        "q10": 0.9295910867575322,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "with_sustained": {
+        "pass96": 32,
+        "pass98": 25,
+        "worst_voice": 0.6681906185711343,
+        "q10": 0.9295910867575322,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "lost96": [],
+      "lost98": []
+    },
+    {
+      "meeting": "M8008",
+      "clips": 53,
+      "standard": {
+        "pass96": 36,
+        "pass98": 33,
+        "worst_voice": 0.07002837956008665,
+        "q10": 0.685986953847978,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "with_sustained": {
+        "pass96": 36,
+        "pass98": 33,
+        "worst_voice": 0.07002837956008665,
+        "q10": 0.685986953847978,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "lost96": [],
+      "lost98": []
+    },
+    {
+      "meeting": "M8009",
+      "clips": 17,
+      "standard": {
+        "pass96": 12,
+        "pass98": 11,
+        "worst_voice": 0.02249552471732415,
+        "q10": 0.5170251910870982,
+        "retained_mean": 0.996330535937284,
+        "retention_failures": 2
+      },
+      "with_sustained": {
+        "pass96": 12,
+        "pass98": 11,
+        "worst_voice": 0.02249552471732415,
+        "q10": 0.5170251910870982,
+        "retained_mean": 0.996330535937284,
+        "retention_failures": 2
+      },
+      "lost96": [],
+      "lost98": []
+    },
+    {
+      "meeting": "M8012",
+      "clips": 71,
+      "standard": {
+        "pass96": 58,
+        "pass98": 54,
+        "worst_voice": 0.1591741736677699,
+        "q10": 0.9448101181579623,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "with_sustained": {
+        "pass96": 58,
+        "pass98": 54,
+        "worst_voice": 0.1591741736677699,
+        "q10": 0.9448101181579623,
+        "retained_mean": 1.0,
+        "retention_failures": 0
+      },
+      "lost96": [],
+      "lost98": []
+    }
+  ],
+  "frozen_source_sha256": {
+    "headset_activity.py": "f7749dfdcdafc3b5e2af8797805f9684536126b5c4115fabba03eeda99491aa3",
+    "guarded_headset.py": "f03446889fb3462abbcd5bd73e7849b61778e47cf2aee6504eda6a457b76447a",
+    "sustained_headset.py": "755a1eed104dd350eb9fd4bcf8e733103c2b78be96f246b0496d46d5d3a224d2"
+  },
+  "pilot_m8017_samples": [
+    [
+      [
+        16480,
+        18880
+      ],
+      [
+        43520,
+        57760
+      ],
+      [
+        68480,
+        74080
+      ],
+      [
+        85920,
+        139040
+      ],
+      [
+        151520,
+        168640
+      ],
+      [
+        180480,
+        184960
+      ],
+      [
+        196480,
+        234240
+      ],
+      [
+        244640,
+        279680
+      ],
+      [
+        292480,
+        297440
+      ],
+      [
+        522400,
+        526240
+      ],
+      [
+        681920,
+        694560
+      ]
+    ],
+    [
+      [
+        560480,
+        628160
+      ],
+      [
+        640640,
+        663040
+      ]
+    ],
+    [
+      [
+        316640,
+        380480
+      ],
+      [
+        398720,
+        402560
+      ],
+      [
+        414720,
+        430720
+      ],
+      [
+        445440,
+        498080
+      ],
+      [
+        1528960,
+        1568960
+      ],
+      [
+        1581600,
+        1597280
+      ]
+    ]
+  ],
+  "long_recording": {
+    "natural_before": {
+      "room": "R8008_M8017",
+      "samples": 29120833,
+      "seconds": 1820.0520625,
+      "active_speakers_reference_seconds": [
+        461.2420625,
+        1313.24,
+        44.44,
+        1.1300000000000001
+      ],
+      "definition": "100 ms non-overlapping windows 200 ms inside singly annotated turns with raw own-channel RMS above 0.005 full scale. Other microphone energy includes background. All exact natural overlaps lack isolated waveform references.",
+      "speakers": {
+        "A": {
+          "eligible_seconds": 416.1,
+          "own_level_db": -0.0006091597342057011,
+          "median_projected_gain_db": -7.743348855019042e-06,
+          "retained_100ms_fraction": 1.0,
+          "other_mics_total_energy_reduction_db": 0.2701338895009438
+        },
+        "B": {
+          "eligible_seconds": 184.1,
+          "own_level_db": -4.5584494818037804e-07,
+          "median_projected_gain_db": -3.35127027883717e-07,
+          "retained_100ms_fraction": 1.0,
+          "other_mics_total_energy_reduction_db": 1.4038797488402175
+        },
+        "C": {
+          "eligible_seconds": 309.1,
+          "own_level_db": -0.00023080138131395116,
+          "median_projected_gain_db": -1.999280230784312e-05,
+          "retained_100ms_fraction": 1.0,
+          "other_mics_total_energy_reduction_db": 0.11813407042303975
+        }
+      }
+    },
+    "natural_after": {
+      "room": "R8008_M8017",
+      "samples": 29120833,
+      "seconds": 1820.0520625,
+      "active_speakers_reference_seconds": [
+        461.2420625,
+        1313.24,
+        44.44,
+        1.1300000000000001
+      ],
+      "definition": "100 ms non-overlapping windows 200 ms inside singly annotated turns with raw own-channel RMS above 0.005 full scale. Other microphone energy includes background. All exact natural overlaps lack isolated waveform references.",
+      "speakers": {
+        "A": {
+          "eligible_seconds": 416.1,
+          "own_level_db": -0.0006091597342057011,
+          "median_projected_gain_db": -7.743348855019042e-06,
+          "retained_100ms_fraction": 1.0,
+          "other_mics_total_energy_reduction_db": 0.33561707257313084
+        },
+        "B": {
+          "eligible_seconds": 184.1,
+          "own_level_db": -4.5584494818037804e-07,
+          "median_projected_gain_db": -3.35127027883717e-07,
+          "retained_100ms_fraction": 1.0,
+          "other_mics_total_energy_reduction_db": 2.469479851193907
+        },
+        "C": {
+          "eligible_seconds": 309.1,
+          "own_level_db": -0.00023080138131395116,
+          "median_projected_gain_db": -1.999280230784312e-05,
+          "retained_100ms_fraction": 1.0,
+          "other_mics_total_energy_reduction_db": 0.14491117776940526
+        }
+      }
+    },
+    "timing": {
+      "seconds": 148.72735131300033
+    }
+  },
+  "hybrid": {
+    "standard": {
+      "cases": 72,
+      "exact_three_s": 87.065,
+      "joint_96": 50,
+      "joint_98": 32,
+      "weakest_track_min_p10_median": [
+        0.08088148,
+        0.720600196,
+        0.97876949
+      ],
+      "all_three_time_fraction_in_eligible_250ms_windows": {
+        "96": 0.65704487986237,
+        "98": 0.5304298629472685
+      },
+      "solo_and_dual_cases": {
+        "1": {
+          "cases": 20,
+          "joint_active_96": 20,
+          "joint_active_98": 20,
+          "median_inactive_output_relative_to_active_reference_db": -30.32318112311512
+        },
+        "2": {
+          "cases": 87,
+          "joint_active_96": 71,
+          "joint_active_98": 60,
+          "median_inactive_output_relative_to_active_reference_db": -22.064171209509034
+        }
+      }
+    },
+    "sustained": {
+      "cases": 72,
+      "exact_three_s": 87.065,
+      "joint_96": 50,
+      "joint_98": 32,
+      "weakest_track_min_p10_median": [
+        0.08088148,
+        0.720600196,
+        0.97876949
+      ],
+      "all_three_time_fraction_in_eligible_250ms_windows": {
+        "96": 0.65704487986237,
+        "98": 0.5304298629472685
+      },
+      "solo_and_dual_cases": {
+        "1": {
+          "cases": 20,
+          "joint_active_96": 20,
+          "joint_active_98": 20,
+          "median_inactive_output_relative_to_active_reference_db": -30.42179947614875
+        },
+        "2": {
+          "cases": 87,
+          "joint_active_96": 71,
+          "joint_active_98": 60,
+          "median_inactive_output_relative_to_active_reference_db": -22.064171209509034
+        }
+      }
+    }
+  },
+  "hybrid_timing": {
+    "seconds": 149.05689886300024
+  },
+  "first_aggressive_candidate": {
+    "held_30m_triple_pass96": 47,
+    "combined_capped_predecessor": {
+      "pass96": 203,
+      "pass98": 168
+    }
+  },
+  "verification": {
+    "frozen_vs_portable_max_difference": 0.0,
+    "normal_cli_vs_frozen_max_difference": 0.0,
+    "tests": 3
+  },
+  "additional_natural_solo_evaluation": {
+    "protocol": "Up to 24 random nonoverlapping 2 s annotated solo windows per target, after the 45% cutoff and 200 ms inside the sole speaker RTTM. All four source participants included when finding solo spans. Include only 100 ms blocks above .005 RMS on wearer headset; report energy differences vs standard; bleed includes background. No isolated true reference exists in natural simultaneous speech.",
+    "sessions": [
+      {
+        "session": "R8004_M8006",
+        "speakers": {
+          "A": {
+            "windows": 11,
+            "sec": 19.5,
+            "off_energy_reduction_db": 0.07136317220036431,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          },
+          "B": {
+            "windows": 2,
+            "sec": 3.3,
+            "off_energy_reduction_db": 0.07246867712642732,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          },
+          "C": {
+            "windows": 16,
+            "sec": 23.499999999999996,
+            "off_energy_reduction_db": 0.5404314884039942,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          }
+        }
+      },
+      {
+        "session": "R8005_M8007",
+        "speakers": {
+          "A": {
+            "windows": 12,
+            "sec": 22.399999999999995,
+            "off_energy_reduction_db": 2.5633540221840607,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          },
+          "B": {
+            "windows": 22,
+            "sec": 39.39999999999999,
+            "off_energy_reduction_db": 0.043850131264049,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          },
+          "C": {
+            "windows": 9,
+            "sec": 15.799999999999999,
+            "off_energy_reduction_db": 1.6536688662360208,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          }
+        }
+      },
+      {
+        "session": "R8005_M8009",
+        "speakers": {
+          "A": {
+            "windows": 17,
+            "sec": 31.8,
+            "off_energy_reduction_db": 0.005353892689377523,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          },
+          "B": {
+            "windows": 2,
+            "sec": 3.9,
+            "off_energy_reduction_db": 0.1831699544284559,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          },
+          "C": {
+            "windows": 8,
+            "sec": 16.0,
+            "off_energy_reduction_db": 0.2148159149693711,
+            "own_level_change_db": 0.0,
+            "worst_100ms_own_level_change_db": 0.0
+          }
+        }
+      }
+    ]
+  }
+}

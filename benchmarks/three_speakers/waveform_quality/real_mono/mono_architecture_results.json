@@ -1,0 +1,1623 @@
+{
+  "test": "Fixed-window separation of Mandarin three-way overlaps at one far-field microphone, followed by enrollment-based A/B/C labeling.",
+  "interpretation": "Energy alignment is squared waveform correlation over the reference three-way activity. The strict test requires each speaker to meet the stated alignment threshold AND preserve target gain over at least 96% of active time. The window and the presence of three voices are given to the separator. These results do not measure diarization, transcription, naturally simultaneous speech, or end-to-end meeting performance.",
+  "data": "AliMeeting disjoint turn replay captured on array channel zero; one development and one confirmation physical room. Each clip spans 1.536 s with disjoint donor utterances. Four nominal levels (0,-6,-12,-20 dB) repeat twice; identities rotate.",
+  "selection": {
+    "development_room": "R8004_M8006",
+    "confirmation_room": "R8005_M8007",
+    "arm": "array_channel0",
+    "ids": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ],
+    "models": [
+      "moss",
+      "clean",
+      "noisy"
+    ],
+    "method": "blend_noisy",
+    "manifest_sha256": "256dc8977963230ec47a0b693826dfb8b39519d5d9d2a24bbcb152804f84747a",
+    "protocol_sha256": "74376fc3b825381711a5030fef2f7605043688e7b6c1f2563854cf92b54d9556",
+    "score_sha256": "38521836861b6e5a0ad5362c9325b9504b40189e674cc2baa30a6382dbb06851",
+    "freeze_sha256": "14e5f95b25ae837f3ac626069b3c3d64bff9527a74d950febe05a0d49ff915b9",
+    "development_results_sha256": "cd505ba8da5cd99e5a2207bf6d15d6511e06964fce565c5141875a9046b32e4d"
+  },
+  "model_revisions": {
+    "libri3mix": {
+      "source": "speechbrain/sepformer-libri3mix",
+      "revision": "1f2d824e2333aec9e60d0030fb144885c1afc426",
+      "files": {
+        "encoder.ckpt": "e949e80c1a96965b723460209bb155eac1fdb2f6d2cf4e7b3e1d3152716f38d0",
+        "masknet.ckpt": "416af7b09d912c486261dd824788dd92d3b21373c8ec4d029209792522f4dbcb",
+        "decoder.ckpt": "9afdda4e4ecb9eefb5d49329193c7a9215ae7443aab206f2fe4eb0f50988ca53",
+        "hyperparams.yaml": "4f0ae05600c66d7f8cf1269f54fd32dad576d4d473ad7169ef6ab26190658233"
+      }
+    },
+    "sepformer-tcc300-3spks-16k": {
+      "source": "AlvinLo62/sepformer-tcc300-3spks-16k",
+      "revision": "0dcf7602a92cbb65e38d6d85c0e873daeae665af",
+      "files": {
+        "encoder.ckpt": "cfc34c3fbd062f2df545597d42a28e5a609776de601794fbab4a87526efa5a89",
+        "masknet.ckpt": "9f8c1783721da5a28b2eeb98fc604a7e18b3ceef64dcf4552eb4c1ecb3cf3d32",
+        "decoder.ckpt": "fb8b076933bd9d5612269c5fb49eb959b2e03253572c38cbe9a334e1e95d55c2",
+        "config.json": "4f3d456087b16fd7d6a343547ace1d05ad2b0ae77de9df95620874f9076b0eff",
+        "hyperparams.yaml": "c0d5d504561efbac780dc53d0bad7b81b63a9ec5fed50b46c52e2f3d8dfe8eed",
+        "hyperparams_train.yaml": "16b27a43ec03545f98292f835eeb9513c468ba80e202a3991a0ec7e8b9b186ed"
+      }
+    },
+    "sepformer-tcc300-3spks-16k-noisy": {
+      "source": "AlvinLo62/sepformer-tcc300-3spks-16k-noisy",
+      "revision": "c018c2ca7d6e384c3963ddbb551665c7c4fa51bb",
+      "files": {
+        "encoder.ckpt": "341993bdc0cfc4e0411e05789c5e6209aeed05f05025befe6dcaa37b11958ced",
+        "masknet.ckpt": "f80104b11065a24401e355c59bdb1ee1902baec155eef974e0f7924637723244",
+        "decoder.ckpt": "25a65ebf66040572b12ae02e04a50f1c3cabcf2ab7801f8bc5bac07f75dbdbd1",
+        "config.json": "4f3d456087b16fd7d6a343547ace1d05ad2b0ae77de9df95620874f9076b0eff",
+        "hyperparams.yaml": "3f8bc00071a001a0a468fd09287939589da447d49adc02a9e5f9e0e88bb12831",
+        "hyperparams_train.yaml": "ba214583d9a13f7c06028cbcca491f32c4f3577394471e4d9388e7525d08993a"
+      }
+    },
+    "mossformer2-wsj0mix-3spk": {
+      "source": "alibabasglab/mossformer2-wsj0mix-3spk",
+      "revision": "692a242d7e83aa8fc63c6a4b18153335a465cc1c",
+      "files": {
+        "encoder.ckpt": "7a220724794baed750e0766e5112d1763a3afabc2156e07942c1d3e2ab77740b",
+        "masknet.ckpt": "64fcad30db301d24aba695232637d134ca56569a16f7db20cabcb789a22b869a",
+        "decoder.ckpt": "afe83c79bf392e1e0bdba5c97951b4b8fca62f521ef495fce245611065fb5923",
+        "config.json": "ca8257d8d45f68caa6ec0aa0efd94a5705f2b8d366b2d14081204ee83eb53600"
+      },
+      "code": {
+        "source": "alibabasglab/MossFormer2",
+        "revision": "5727f739947605f884da8d7a1448c64f32d37b9d",
+        "git_blobs": {
+          "MossFormer2_standalone/inference.py": "398f80e0ed1043832433bd1272172fa531664957",
+          "MossFormer2_standalone/model/__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "MossFormer2_standalone/model/mossformer2.py": "ca644a0826608c2dd3e8fc4534b496656f59e6a3",
+          "MossFormer2_standalone/model/mossformer2_configs.py": "b17aa7348415864afd64de1d653d9dd7e4695df6",
+          "MossFormer2_standalone/model/utils/Transformer.py": "8c0a937b116c7ed3fe65fbb1970c2b171729126b",
+          "MossFormer2_standalone/model/utils/__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "MossFormer2_standalone/model/utils/conv_module.py": "e34e4dc127b2b0a2b874bea7527fef37a5b26526",
+          "MossFormer2_standalone/model/utils/fsmn.py": "19a34605b4b2cab306bc06acb4fb4710145ba4cf",
+          "MossFormer2_standalone/model/utils/normalization.py": "ad2d4cf1498006e0bfa6ce483365557da701bc07",
+          "MossFormer2_standalone/model/utils/one_path_flash_fsmn.py": "9a205f9dcac1a9dff2f6f650fa4c5e3a3315a4b1"
+        }
+      }
+    }
+  },
+  "development": {
+    "clips": 8,
+    "exact_three_seconds": 4.834,
+    "summary": {
+      "blend_clean": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6759897970973754,
+          "median_quiet": 0.3194665431396373,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6840625076771865,
+          "median_quiet": 0.3053711108233106,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        }
+      },
+      "blend_moss": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6388627293945226,
+          "median_quiet": 0.3249675675115634,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.651233335490673,
+          "median_quiet": 0.3249675675115634,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        }
+      },
+      "blend_noisy": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6703865624630273,
+          "median_quiet": 0.33595045340304885,
+          "worst": 0.00018717691625315164,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6708105280627035,
+          "median_quiet": 0.33595045340304885,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        }
+      },
+      "clean": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.5455098087079262,
+          "median_quiet": 0.25064928325746844,
+          "worst": 0.0011068402157782635,
+          "min_retention": 0.2636363636363636
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.5579749736233919,
+          "median_quiet": 0.25064928325746844,
+          "worst": 0.001574155284312352,
+          "min_retention": 0.2636363636363636
+        }
+      },
+      "incumbent": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6124388080539305,
+          "median_quiet": 0.29725828636569873,
+          "worst": 0.00016960935161631753,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6277814062981119,
+          "median_quiet": 0.27169462677484446,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        }
+      },
+      "medoid": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6056232425047012,
+          "median_quiet": 0.31440713855537195,
+          "worst": 0.00016960935161631753,
+          "min_retention": 0.36904761904761907
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6230652234674258,
+          "median_quiet": 0.31440713855537195,
+          "worst": 0.001574155284312352,
+          "min_retention": 0.30357142857142855
+        }
+      },
+      "moss": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.4927959065741674,
+          "median_quiet": 0.20224647187689326,
+          "worst": 0.0007606569422264275,
+          "min_retention": 0.12142857142857143
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.5225464856614687,
+          "median_quiet": 0.20224647187689326,
+          "worst": 0.0005535467474390691,
+          "min_retention": 0.0
+        }
+      },
+      "noisy": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.4683636429918362,
+          "median_quiet": 0.18004495262490447,
+          "worst": 0.0007093993696033254,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.5200125295398409,
+          "median_quiet": 0.19576589022427843,
+          "worst": 0.00018470591839085974,
+          "min_retention": 0.0
+        }
+      },
+      "rescue_clean": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6124388080539305,
+          "median_quiet": 0.29725828636569873,
+          "worst": 0.00016960935161631753,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6277814062981119,
+          "median_quiet": 0.27169462677484446,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        }
+      },
+      "rescue_moss": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6124388080539305,
+          "median_quiet": 0.29725828636569873,
+          "worst": 0.00016960935161631753,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6277814062981119,
+          "median_quiet": 0.27169462677484446,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        }
+      },
+      "rescue_noisy": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6124388080539305,
+          "median_quiet": 0.29725828636569873,
+          "worst": 0.00016960935161631753,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.6277814062981119,
+          "median_quiet": 0.27169462677484446,
+          "worst": 0.0005363351395156827,
+          "min_retention": 0.0
+        }
+      }
+    },
+    "cases": [
+      {
+        "id": "t01",
+        "exact_three_seconds": 0.539,
+        "incumbent_gate": "second_pass",
+        "quietest": "A",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              0,
+              2,
+              1
+            ],
+            "diagnostic_assignment": [
+              0,
+              2,
+              1
+            ],
+            "fixed_alignment": [
+              0.5798911579727956,
+              0.710545245689264,
+              0.6066702092045116
+            ],
+            "fixed_retention": [
+              0.7328385899814471,
+              0.9183673469387755,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.5798911579727956,
+              0.710545245689264,
+              0.6066702092045116
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              0,
+              2,
+              1
+            ],
+            "diagnostic_assignment": [
+              0,
+              2,
+              1
+            ],
+            "fixed_alignment": [
+              0.7438335853168372,
+              0.7665574364967562,
+              0.6710536176311094
+            ],
+            "fixed_retention": [
+              0.8144712430426716,
+              0.9183673469387755,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.7438335853168372,
+              0.7665574364967562,
+              0.6710536176311094
+            ]
+          }
+        }
+      },
+      {
+        "id": "t02",
+        "exact_three_seconds": 0.694,
+        "incumbent_gate": "second_pass",
+        "quietest": "B",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              0,
+              2,
+              1
+            ],
+            "diagnostic_assignment": [
+              0,
+              2,
+              1
+            ],
+            "fixed_alignment": [
+              0.7109258938013002,
+              0.5237949458290669,
+              0.4170688846131822
+            ],
+            "fixed_retention": [
+              0.9149855907780979,
+              0.5115273775216138,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.7109258938013002,
+              0.5237949458290669,
+              0.4170688846131822
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              0,
+              2,
+              1
+            ],
+            "diagnostic_assignment": [
+              0,
+              2,
+              1
+            ],
+            "fixed_alignment": [
+              0.8967321860281932,
+              0.6705674384942975,
+              0.5133437059685693
+            ],
+            "fixed_retention": [
+              1.0,
+              0.8559077809798271,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.8967321860281932,
+              0.6705674384942975,
+              0.5133437059685693
+            ]
+          }
+        }
+      },
+      {
+        "id": "t03",
+        "exact_three_seconds": 0.48,
+        "incumbent_gate": "baseline",
+        "quietest": "C",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              1,
+              0,
+              2
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.4424786669118907,
+              0.25079919103093506,
+              0.008265197446929226
+            ],
+            "fixed_retention": [
+              0.7454545454545455,
+              0.5454545454545454,
+              0.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.4424786669118907,
+              0.25079919103093506,
+              0.008265197446929226
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              1,
+              0,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.38289465884277935,
+              0.36396109288122425,
+              0.008265197446929226
+            ],
+            "fixed_retention": [
+              0.6636363636363637,
+              0.7454545454545455,
+              0.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.3843634857128985,
+              0.409253218555175,
+              0.008265197446929226
+            ]
+          }
+        }
+      },
+      {
+        "id": "t04",
+        "exact_three_seconds": 0.672,
+        "incumbent_gate": "baseline",
+        "quietest": "A",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              0,
+              1,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.0005363351395156827,
+              0.8026847117136332,
+              0.8374112561473551
+            ],
+            "fixed_retention": [
+              0.0,
+              1.0,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.0005363351395156827,
+              0.8026847117136332,
+              0.8374112561473551
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              0,
+              1,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.0005363351395156827,
+              0.7989531119012663,
+              0.7880707910816688
+            ],
+            "fixed_retention": [
+              0.0,
+              1.0,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.0005363351395156827,
+              0.7989531119012663,
+              0.7880707910816688
+            ]
+          }
+        }
+      },
+      {
+        "id": "t05",
+        "exact_three_seconds": 0.667,
+        "incumbent_gate": "second_pass",
+        "quietest": "C",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              0,
+              2,
+              1
+            ],
+            "diagnostic_assignment": [
+              0,
+              2,
+              1
+            ],
+            "fixed_alignment": [
+              0.6944726122641528,
+              0.8096070329295763,
+              0.6436157764810134
+            ],
+            "fixed_retention": [
+              0.6416791604197901,
+              0.9415292353823088,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.6944726122641528,
+              0.8096070329295763,
+              0.6436157764810134
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              0,
+              2,
+              1
+            ],
+            "diagnostic_assignment": [
+              0,
+              2,
+              1
+            ],
+            "fixed_alignment": [
+              0.6702056864317572,
+              0.7226398169826744,
+              0.634995498085723
+            ],
+            "fixed_retention": [
+              0.7916041979010495,
+              0.9415292353823088,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.6702056864317572,
+              0.7226398169826744,
+              0.634995498085723
+            ]
+          }
+        }
+      },
+      {
+        "id": "t06",
+        "exact_three_seconds": 0.475,
+        "incumbent_gate": "baseline",
+        "quietest": "C",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              0,
+              1,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.844150942294218,
+              0.8111041565366308,
+              0.6119470361152103
+            ],
+            "fixed_retention": [
+              0.8761061946902655,
+              1.0,
+              0.9026548672566371
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.844150942294218,
+              0.8111041565366308,
+              0.6119470361152103
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              0,
+              1,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.8329290424791764,
+              0.822277669987152,
+              0.6029690650658915
+            ],
+            "fixed_retention": [
+              0.8761061946902655,
+              1.0,
+              0.9026548672566371
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.8329290424791764,
+              0.822277669987152,
+              0.6029690650658915
+            ]
+          }
+        }
+      },
+      {
+        "id": "t07",
+        "exact_three_seconds": 0.736,
+        "incumbent_gate": "baseline",
+        "quietest": "A",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              2,
+              1,
+              0
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.07072162690233053,
+              0.7998620191241136,
+              0.6129305799926508
+            ],
+            "fixed_retention": [
+              0.7206703910614525,
+              0.9050279329608939,
+              0.2849162011173184
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.019261336991890032,
+              0.7998620191241136,
+              0.5964138005827395
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              2,
+              1,
+              0
+            ],
+            "diagnostic_assignment": [
+              2,
+              1,
+              0
+            ],
+            "fixed_alignment": [
+              0.06893184174020614,
+              0.7916360861704875,
+              0.6755646266289397
+            ],
+            "fixed_retention": [
+              0.7206703910614525,
+              0.9050279329608939,
+              0.2849162011173184
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.06893184174020614,
+              0.7916360861704875,
+              0.6755646266289397
+            ]
+          }
+        }
+      },
+      {
+        "id": "t08",
+        "exact_three_seconds": 0.571,
+        "incumbent_gate": "baseline",
+        "quietest": "B",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              0,
+              1,
+              2
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.019580856828417304,
+              0.00016960935161631753,
+              0.6859044985370765
+            ],
+            "fixed_retention": [
+              0.0,
+              0.8214285714285714,
+              0.8214285714285714
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.7326148182695803,
+              0.01959430772062199,
+              0.6859044985370765
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              0,
+              1,
+              2
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.019580856828417304,
+              0.00018717691625315164,
+              0.6542857704275452
+            ],
+            "fixed_retention": [
+              0.0,
+              0.6428571428571429,
+              0.8214285714285714
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.7097860861426184,
+              0.01959430772062199,
+              0.6542857704275452
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "confirmation": {
+    "clips": 8,
+    "exact_three_seconds": 4.841,
+    "summary": {
+      "blend_noisy": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.18648583261989504,
+          "median_quiet": 0.16989643163733756,
+          "worst": 0.0009898271060728022,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.5371768239159473,
+          "median_quiet": 0.19424972584182387,
+          "worst": 0.00013048991084262064,
+          "min_retention": 0.0
+        }
+      },
+      "incumbent": {
+        "enrolled": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.15639947585249223,
+          "median_quiet": 0.09579372007803824,
+          "worst": 0.00032576631677049255,
+          "min_retention": 0.0
+        },
+        "oracle": {
+          "j96": 0,
+          "j98": 0,
+          "individual96": 0,
+          "median": 0.5022034210149781,
+          "median_quiet": 0.16054887556257968,
+          "worst": 0.00013048991084262064,
+          "min_retention": 0.0
+        }
+      }
+    },
+    "cases": [
+      {
+        "id": "t01",
+        "exact_three_seconds": 0.598,
+        "incumbent_gate": "second_pass",
+        "quietest": "A",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              1,
+              0,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.1562837705066626,
+              0.3325449740970342,
+              0.4024025558757184
+            ],
+            "fixed_retention": [
+              0.5517241379310345,
+              1.0,
+              0.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.3987352466041281,
+              0.4032296167432791,
+              0.4024025558757184
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              1,
+              0,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.22294541760174416,
+              0.2389278488961023,
+              0.2858917450423602
+            ],
+            "fixed_retention": [
+              0.3121597096188748,
+              1.0,
+              0.3121597096188748
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.5924320618249495,
+              0.3323745393761051,
+              0.2858917450423602
+            ]
+          }
+        }
+      },
+      {
+        "id": "t02",
+        "exact_three_seconds": 0.635,
+        "incumbent_gate": "baseline",
+        "quietest": "B",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              2,
+              1,
+              0
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.03693941721946561,
+              0.03530366964941391,
+              0.33583217827225464
+            ],
+            "fixed_retention": [
+              0.24237560192616373,
+              0.5971107544141252,
+              0.6789727126805778
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.7625615185339043,
+              0.16291939749370657,
+              0.6291186447827242
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              2,
+              0,
+              1
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.03192620171371022,
+              0.19135715559656782,
+              0.0365161569794494
+            ],
+            "fixed_retention": [
+              0.24237560192616373,
+              0.7576243980738363,
+              0.16051364365971107
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.8143973302248791,
+              0.19135715559656782,
+              0.6739178735608794
+            ]
+          }
+        }
+      },
+      {
+        "id": "t03",
+        "exact_three_seconds": 0.699,
+        "incumbent_gate": "second_pass",
+        "quietest": "C",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              0,
+              1,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.9132344884018831,
+              0.9333971085245646,
+              0.15817835363145283
+            ],
+            "fixed_retention": [
+              1.0,
+              1.0,
+              0.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.9132344884018831,
+              0.9333971085245646,
+              0.15817835363145283
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              0,
+              1,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.8917236748377767,
+              0.8902134798331094,
+              0.15817835363145283
+            ],
+            "fixed_retention": [
+              1.0,
+              1.0,
+              0.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.8917236748377767,
+              0.8902134798331094,
+              0.15817835363145283
+            ]
+          }
+        }
+      },
+      {
+        "id": "t04",
+        "exact_three_seconds": 0.603,
+        "incumbent_gate": "second_pass",
+        "quietest": "A",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              1,
+              0,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.00232166791587573,
+              0.011526454684728807,
+              0.4688130727416422
+            ],
+            "fixed_retention": [
+              0.871404399323181,
+              0.0,
+              0.8849407783417935
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.00013048991084262064,
+              0.7237574768123172,
+              0.4688130727416422
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              1,
+              0,
+              2
+            ],
+            "diagnostic_assignment": [
+              0,
+              1,
+              2
+            ],
+            "fixed_alignment": [
+              0.0020116037089804133,
+              0.011526454684728807,
+              0.48537975516378024
+            ],
+            "fixed_retention": [
+              0.7563451776649747,
+              0.0,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.00013048991084262064,
+              0.8012988481535982,
+              0.48537975516378024
+            ]
+          }
+        }
+      },
+      {
+        "id": "t05",
+        "exact_three_seconds": 0.603,
+        "incumbent_gate": "baseline",
+        "quietest": "A",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              0,
+              2,
+              1
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.00032576631677049255,
+              0.1511045720967182,
+              0.05690062633773795
+            ],
+            "fixed_retention": [
+              0.0,
+              0.7478559176672385,
+              0.4236706689536878
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.6381394119328034,
+              0.5160557611657588,
+              0.5279240159586521
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              2,
+              0,
+              1
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.1816145096432223,
+              0.5559394796064512,
+              0.10011365215468805
+            ],
+            "fixed_retention": [
+              0.7478559176672385,
+              0.4854202401372213,
+              0.19039451114922812
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.5572955235655292,
+              0.5559394796064512,
+              0.4253069745152082
+            ]
+          }
+        }
+      },
+      {
+        "id": "t06",
+        "exact_three_seconds": 0.694,
+        "incumbent_gate": "baseline",
+        "quietest": "C",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              1,
+              0,
+              2
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.8581869463612165,
+              0.768578944833131,
+              0.15651518119832186
+            ],
+            "fixed_retention": [
+              1.0,
+              1.0,
+              0.28313253012048195
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.8581869463612165,
+              0.768578944833131,
+              0.15651518119832186
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              1,
+              0,
+              2
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.8661704408439205,
+              0.7728802898009678,
+              0.19714229608707992
+            ],
+            "fixed_retention": [
+              1.0,
+              1.0,
+              0.4939759036144578
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.8661704408439205,
+              0.7728802898009678,
+              0.19714229608707992
+            ]
+          }
+        }
+      },
+      {
+        "id": "t07",
+        "exact_three_seconds": 0.566,
+        "incumbent_gate": "second_pass",
+        "quietest": "A",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              1,
+              2,
+              0
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.276833541760638,
+              0.000528781070397837,
+              0.42336851457746844
+            ],
+            "fixed_retention": [
+              0.33076923076923076,
+              0.0,
+              1.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.276833541760638,
+              0.4883510808641974,
+              0.003681974325904996
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              2,
+              0,
+              1
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.004693125149941972,
+              0.5184141682254434,
+              0.006587005376780253
+            ],
+            "fixed_retention": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.276833541760638,
+              0.5184141682254434,
+              0.003681974325904996
+            ]
+          }
+        }
+      },
+      {
+        "id": "t08",
+        "exact_three_seconds": 0.443,
+        "incumbent_gate": "baseline",
+        "quietest": "B",
+        "measurements": {
+          "incumbent": {
+            "assignment": [
+              2,
+              0,
+              1
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.06062224817204581,
+              0.0009898271060728022,
+              0.12873924961795646
+            ],
+            "fixed_retention": [
+              0.1308411214953271,
+              0.22429906542056074,
+              0.719626168224299
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.669983562896807,
+              0.0009898271060728022,
+              0.6124284326929941
+            ]
+          },
+          "blend_noisy": {
+            "assignment": [
+              2,
+              0,
+              1
+            ],
+            "diagnostic_assignment": [
+              1,
+              0,
+              2
+            ],
+            "fixed_alignment": [
+              0.05783283841585751,
+              0.0009898271060728022,
+              0.08430567319415219
+            ],
+            "fixed_retention": [
+              0.1308411214953271,
+              0.22429906542056074,
+              0.6261682242990654
+            ],
+            "fixed_joint_96": false,
+            "fixed_joint_98": false,
+            "diagnostic_alignment": [
+              0.7204739652940563,
+              0.0009898271060728022,
+              0.5682786199678129
+            ]
+          }
+        }
+      }
+    ],
+    "paired": {
+      "enrolled": {
+        "joint96": {
+          "gained": [],
+          "lost": [],
+          "retained": []
+        },
+        "joint98": {
+          "gained": [],
+          "lost": [],
+          "retained": []
+        },
+        "per_track": {
+          "gained": [
+            [
+              "t01",
+              "A"
+            ],
+            [
+              "t02",
+              "B"
+            ],
+            [
+              "t04",
+              "C"
+            ],
+            [
+              "t05",
+              "A"
+            ],
+            [
+              "t05",
+              "B"
+            ],
+            [
+              "t05",
+              "C"
+            ],
+            [
+              "t06",
+              "A"
+            ],
+            [
+              "t06",
+              "B"
+            ],
+            [
+              "t06",
+              "C"
+            ],
+            [
+              "t07",
+              "B"
+            ]
+          ],
+          "lost": [
+            [
+              "t01",
+              "B"
+            ],
+            [
+              "t01",
+              "C"
+            ],
+            [
+              "t02",
+              "A"
+            ],
+            [
+              "t02",
+              "C"
+            ],
+            [
+              "t03",
+              "A"
+            ],
+            [
+              "t03",
+              "B"
+            ],
+            [
+              "t04",
+              "A"
+            ],
+            [
+              "t07",
+              "A"
+            ],
+            [
+              "t07",
+              "C"
+            ],
+            [
+              "t08",
+              "A"
+            ],
+            [
+              "t08",
+              "C"
+            ]
+          ]
+        }
+      },
+      "oracle": {
+        "joint96": {
+          "gained": [],
+          "lost": [],
+          "retained": []
+        },
+        "joint98": {
+          "gained": [],
+          "lost": [],
+          "retained": []
+        },
+        "per_track": {
+          "gained": [
+            [
+              "t01",
+              "A"
+            ],
+            [
+              "t02",
+              "A"
+            ],
+            [
+              "t02",
+              "B"
+            ],
+            [
+              "t02",
+              "C"
+            ],
+            [
+              "t04",
+              "B"
+            ],
+            [
+              "t04",
+              "C"
+            ],
+            [
+              "t05",
+              "B"
+            ],
+            [
+              "t06",
+              "A"
+            ],
+            [
+              "t06",
+              "B"
+            ],
+            [
+              "t06",
+              "C"
+            ],
+            [
+              "t07",
+              "B"
+            ],
+            [
+              "t08",
+              "A"
+            ]
+          ],
+          "lost": [
+            [
+              "t01",
+              "B"
+            ],
+            [
+              "t01",
+              "C"
+            ],
+            [
+              "t03",
+              "A"
+            ],
+            [
+              "t03",
+              "B"
+            ],
+            [
+              "t05",
+              "A"
+            ],
+            [
+              "t05",
+              "C"
+            ],
+            [
+              "t08",
+              "C"
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

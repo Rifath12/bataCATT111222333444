@@ -1,0 +1,278 @@
+{
+  "R8004_M8006_array_channel0_enrolled": {
+    "fixed_ABC": {
+      "groups": {
+        "1": {
+          "cases": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.7967668283821583
+        },
+        "2": {
+          "cases": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.1870206327452101
+        },
+        "3": {
+          "cases": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.10652760998613682
+        }
+      },
+      "spill_on_other_speakers_db": {
+        "A": -4.033673573534071,
+        "B": -10.131283646619476,
+        "C": -5.058100901408179
+      }
+    },
+    "diagnostic_best_global_order": {
+      "groups": {
+        "1": {
+          "cases": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.7967668283821583
+        },
+        "2": {
+          "cases": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.1870206327452101
+        },
+        "3": {
+          "cases": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.10652760998613682
+        }
+      },
+      "spill_on_other_speakers_db": {
+        "A": -4.033673573534071,
+        "B": -10.131283646619476,
+        "C": -5.058100901408179
+      }
+    },
+    "diagnostic_best_global_slot_order": [
+      0,
+      1,
+      2
+    ],
+    "emitted_hz": 8000,
+    "scoring_hz": 16000
+  },
+  "R8004_M8006_array_channel0_forced": {
+    "fixed_ABC": {
+      "groups": {
+        "1": {
+          "cases": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.6076605738467565
+        },
+        "2": {
+          "cases": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.1737040020069164
+        },
+        "3": {
+          "cases": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.10652760998613682
+        }
+      },
+      "spill_on_other_speakers_db": {
+        "A": -2.129981285541124,
+        "B": -7.457993253931518,
+        "C": -5.12023118566842
+      }
+    },
+    "diagnostic_best_global_order": {
+      "groups": {
+        "1": {
+          "cases": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.6076605738467565
+        },
+        "2": {
+          "cases": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.1737040020069164
+        },
+        "3": {
+          "cases": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.10652760998613682
+        }
+      },
+      "spill_on_other_speakers_db": {
+        "A": -2.129981285541124,
+        "B": -7.457993253931518,
+        "C": -5.12023118566842
+      }
+    },
+    "diagnostic_best_global_slot_order": [
+      0,
+      1,
+      2
+    ],
+    "emitted_hz": 8000,
+    "scoring_hz": 16000
+  },
+  "R8005_M8007_array_channel0_enrolled": {
+    "fixed_ABC": {
+      "groups": {
+        "1": {
+          "cases": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.5838978402950358
+        },
+        "2": {
+          "cases": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.13018944649157846
+        },
+        "3": {
+          "cases": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.07264295911862731
+        }
+      },
+      "spill_on_other_speakers_db": {
+        "A": -4.981483538547873,
+        "B": -2.8124252583337035,
+        "C": -9.795626659052493
+      }
+    },
+    "diagnostic_best_global_order": {
+      "groups": {
+        "1": {
+          "cases": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.43076850356106666
+        },
+        "2": {
+          "cases": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.23061918000074508
+        },
+        "3": {
+          "cases": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.04563285899293595
+        }
+      },
+      "spill_on_other_speakers_db": {
+        "A": -4.981483538547873,
+        "B": -7.525450954314489,
+        "C": -3.9825531073744047
+      }
+    },
+    "diagnostic_best_global_slot_order": [
+      0,
+      2,
+      1
+    ],
+    "emitted_hz": 8000,
+    "scoring_hz": 16000
+  },
+  "R8005_M8007_array_channel0_forced": {
+    "fixed_ABC": {
+      "groups": {
+        "1": {
+          "cases": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.8326965465491153
+        },
+        "2": {
+          "cases": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.13018944649157846
+        },
+        "3": {
+          "cases": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.08020473807672902
+        }
+      },
+      "spill_on_other_speakers_db": {
+        "A": -4.9096519711282,
+        "B": -5.017659872549787,
+        "C": -9.82492417757902
+      }
+    },
+    "diagnostic_best_global_order": {
+      "groups": {
+        "1": {
+          "cases": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.8326965465491153
+        },
+        "2": {
+          "cases": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.13018944649157846
+        },
+        "3": {
+          "cases": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "joint96_with_inactive_quiet": 0,
+          "mean_weakest_target_aligned_fraction": 0.08020473807672902
+        }
+      },
+      "spill_on_other_speakers_db": {
+        "A": -4.9096519711282,
+        "B": -5.017659872549787,
+        "C": -9.82492417757902
+      }
+    },
+    "diagnostic_best_global_slot_order": [
+      0,
+      1,
+      2
+    ],
+    "emitted_hz": 8000,
+    "scoring_hz": 16000
+  }
+}

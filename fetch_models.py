@@ -7,15 +7,25 @@ from pathlib import Path
 import shutil
 import tarfile
 import time
+from tempfile import NamedTemporaryFile
 import urllib.error
 import urllib.request
 
 BASE_URL="https://huggingface.co/JunzheJosephZhu/MultiDecoderDPRNN/resolve/cc9bb5b89e258919fa7893add25113e5552d849e/pytorch_model.bin"
 TUNED_URL="https://huggingface.co/Namadgi/MultiDecoderDPRNN-finetuned/resolve/679e897ad3221b7b14598ce29fe874155cb6a5cc/weights/dprnn_rys_weights.pt"
 RELEASE="https://github.com/k2-fsa/sherpa-onnx/releases/download"
-VOICE_URL=f"{RELEASE}/speaker-recongition-models/3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k.onnx"
+VOICE_FILE="3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k.onnx"
+VOICE_URL=(
+    "https://huggingface.co/Maxkuo/eres2net-base-sv-zh-cn-onnx/resolve/"
+    f"533e660fabc9553c0dc0cb5b395b24eac1ece0ad/{VOICE_FILE}"
+)
 ASR_FOLDER="sherpa-onnx-zipformer-ctc-zh-int8-2025-07-03"
 ASR_URL=f"{RELEASE}/asr-models/{ASR_FOLDER}.tar.bz2"
+ASR_MIRROR=(
+    f"https://huggingface.co/csukuangfj/{ASR_FOLDER}/resolve/"
+    "824c678e9b80f301110e3ea8cee9819a7994c049"
+)
+ASR_ARCHIVE_SHA="f3ad1814fea34c407eab0cc3df6f6b625419ac9a60d8aebd8efe772a8e85ef67"
 MODELS=(
     ("multi_decoder_dprnn.bin", BASE_URL, "ad367460c6641c6cd9441ada692c1e28fd9431525f52071f03851b928f659efb"),
     ("dprnn_rys_weights.pt", TUNED_URL, "6cee4cb59190c6fa67c38ec5f2d077bfce48a0cfca3ed93ab3cbdcc392df5827"),
@@ -40,7 +50,8 @@ def fetch(path, url, expected):
     if check(path,expected):
         print("Verified",path.name,flush=True)
         return
-    partial=path.with_name(path.name+".part")
+    with NamedTemporaryFile(dir=path.parent, prefix=path.name+".", suffix=".part", delete=False) as pending:
+        partial=Path(pending.name)
     try:
         for attempt in range(3):
             try:
@@ -76,21 +87,33 @@ def main():
         print("Verified Mandarin ASR files.",flush=True)
         return
     archive=root/(ASR_FOLDER+".tar.bz2")
-    fetch(archive,ASR_URL,"f3ad1814fea34c407eab0cc3df6f6b625419ac9a60d8aebd8efe772a8e85ef67")
     (root/ASR_FOLDER).mkdir(exist_ok=True)
+    if not check(archive, ASR_ARCHIVE_SHA):
+        try:
+            for name, sha in ASR_FILES.items():
+                fetch(root/ASR_FOLDER/name, f"{ASR_MIRROR}/{name}", sha)
+        except (OSError, ValueError) as error:
+            print(f"Direct ASR download failed ({error}). Trying the verified release archive.", flush=True)
+            fetch(archive, ASR_URL, ASR_ARCHIVE_SHA)
+        else:
+            print("Verified Mandarin ASR files.", flush=True)
+            return
     with tarfile.open(archive,"r:bz2") as source:
         for member in source:
             name=Path(member.name).name
             if not member.isfile() or name not in ASR_FILES:
                 continue
             output=root/ASR_FOLDER/name
-            partial=output.with_name(output.name+".part")
-            with source.extractfile(member) as unpacked, partial.open("wb") as f:
-                shutil.copyfileobj(unpacked,f,1024*1024)
-            if not check(partial,ASR_FILES[name]):
-                partial.unlink()
-                raise ValueError(f"SHA-256 mismatch for {name}")
-            partial.replace(output)
+            with NamedTemporaryFile(dir=output.parent, prefix=name+".", suffix=".part", delete=False) as target:
+                partial=Path(target.name)
+            try:
+                with source.extractfile(member) as unpacked, partial.open("wb") as target:
+                    shutil.copyfileobj(unpacked,target,1024*1024)
+                if not check(partial,ASR_FILES[name]):
+                    raise ValueError(f"SHA-256 mismatch for {name}")
+                partial.replace(output)
+            finally:
+                partial.unlink(missing_ok=True)
     if not all(check(root/ASR_FOLDER/name,sha) for name,sha in ASR_FILES.items()):
         raise ValueError("The download does not contain all required ASR files.")
     print("Verified Mandarin ASR files.",flush=True)

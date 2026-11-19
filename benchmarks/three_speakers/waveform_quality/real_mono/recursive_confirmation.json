@@ -1,0 +1,1021 @@
+{
+  "description": "Frozen recursive 3\u21922 re-extraction on real far-channel solo Mandarin contributions remixed with known active speakers and original far-side waveform references.",
+  "training": "No network weights changed. Tested twelve blend/agreement policies on the first five of 20 prespecified chronological early M8014 mixtures; two CPU-host memory terminations prevented completing the original screening panel. Provisional choice frozen before candidate evaluation on either later group.",
+  "frozen_recipe": "0.15_0.3_False",
+  "source_algorithm_sha256": "dcdb8488a881ac037698d6240294f2eda4b4f8dbd1bd9c54cbe56023520d4e55",
+  "selection_record_sha256": "cc5a2c5395bd1c7690b454d3cdf7b437183c56c7cab998b614dd6ce2cd7937fb",
+  "checkpoint": "ReCorrNet-v2 Mandarin/AliMeeting d7f08d69824886ca1300ef0bbfae4f7befec1d3435006bc137de9826e0d59ffd",
+  "setting": "Use physically labeled early room-microphone solo examples (A/B/C) to set one permutation per window, then preserve it in both arms. Positive-gain guarded second/first ReCorrNet pass, otherwise released Libri3Mix SepFormer, released spectral refiner, gain scaling and 16-kHz resampling. Never modify a rejected case. The oracle reports an evaluation-only reference-based permutation of that same baseline.",
+  "rooms": {
+    "R8004_M8006": {
+      "exact_s": 4.8340000000000005,
+      "changed_cases": 2,
+      "fallback": 5,
+      "enrolled": {
+        "base": {
+          "joint96": 0,
+          "joint98": 0,
+          "voices96": 0,
+          "voices98": 0,
+          "lost96": 0,
+          "lost98": 0,
+          "quiet_p10": 0.04263174031458732,
+          "quiet_mean": 30.486771065480976,
+          "quiet_min": 0.016960935161631753,
+          "mean": 52.06307684523912,
+          "max_loss": 0.0,
+          "median": 61.24388080539305,
+          "retained_mean": 0.7201695467447847
+        },
+        "proposed": {
+          "joint96": 0,
+          "joint98": 0,
+          "voices96": 0,
+          "voices98": 0,
+          "lost96": 0,
+          "lost98": 0,
+          "quiet_p10": 0.04263174031458732,
+          "quiet_mean": 30.48134919553859,
+          "quiet_min": 0.016960935161631753,
+          "mean": 52.03735374783478,
+          "max_loss": -0.8558333296810332,
+          "median": 61.24388080539305,
+          "retained_mean": 0.7201695467447847
+        }
+      },
+      "oracle": {
+        "base": {
+          "joint96": 0,
+          "joint98": 0,
+          "voices96": 0,
+          "voices98": 0,
+          "lost96": 0,
+          "lost98": 0,
+          "quiet_p10": 0.5946538754705164,
+          "quiet_mean": 30.08632617121304,
+          "quiet_min": 0.053633513951568276,
+          "mean": 54.83175013894668,
+          "max_loss": 0.0,
+          "median": 62.77814062981119,
+          "retained_mean": 0.753680786436192
+        },
+        "proposed": {
+          "joint96": 0,
+          "joint98": 0,
+          "voices96": 0,
+          "voices98": 0,
+          "lost96": 0,
+          "lost98": 0,
+          "quiet_p10": 0.5946538754705164,
+          "quiet_mean": 30.080904301270657,
+          "quiet_min": 0.053633513951568276,
+          "mean": 54.80602704154234,
+          "max_loss": -0.8558333296810332,
+          "median": 62.77814062981119,
+          "retained_mean": 0.753680786436192
+        }
+      }
+    },
+    "R8005_M8007": {
+      "exact_s": 4.840999999999999,
+      "changed_cases": 1,
+      "fallback": 4,
+      "enrolled": {
+        "base": {
+          "joint96": 0,
+          "joint98": 0,
+          "voices96": 0,
+          "voices98": 0,
+          "lost96": 0,
+          "lost98": 0,
+          "quiet_p10": 0.07906088692821095,
+          "quiet_mean": 9.834397226065104,
+          "quiet_min": 0.03257663167704926,
+          "mean": 27.78946629570488,
+          "max_loss": 0.0,
+          "median": 15.639947585249223,
+          "retained_mean": 0.5286134619694876
+        },
+        "proposed": {
+          "joint96": 0,
+          "joint98": 0,
+          "voices96": 0,
+          "voices98": 0,
+          "lost96": 0,
+          "lost98": 0,
+          "quiet_p10": 0.07906088692821095,
+          "quiet_mean": 9.862247524156462,
+          "quiet_min": 0.03257663167704926,
+          "mean": 27.81977733378019,
+          "max_loss": 0.0,
+          "median": 15.734676741488734,
+          "retained_mean": 0.5286134619694876
+        }
+      },
+      "oracle": {
+        "base": {
+          "joint96": 0,
+          "joint98": 0,
+          "voices96": 0,
+          "voices98": 0,
+          "lost96": 0,
+          "lost98": 0,
+          "quiet_p10": 0.07320259475037479,
+          "quiet_mean": 22.405518120474575,
+          "quiet_min": 0.013048991084262064,
+          "mean": 47.80894437980276,
+          "max_loss": 0.0,
+          "median": 50.220342101497806,
+          "retained_mean": 0.689654716463323
+        },
+        "proposed": {
+          "joint96": 0,
+          "joint98": 0,
+          "voices96": 0,
+          "voices98": 0,
+          "lost96": 0,
+          "lost98": 0,
+          "quiet_p10": 0.07320259475037479,
+          "quiet_mean": 22.405518120474575,
+          "quiet_min": 0.013048991084262064,
+          "mean": 47.84872053962533,
+          "max_loss": 0.0,
+          "median": 50.220342101497806,
+          "retained_mean": 0.689654716463323
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "clips": 16,
+    "seconds": 9.674999999999999,
+    "fallback": 9,
+    "changed_cases": 3,
+    "enrolled": {
+      "base": {
+        "joint96": 0,
+        "joint98": 0,
+        "voices96": 0,
+        "voices98": 0,
+        "lost96": 0,
+        "lost98": 0,
+        "quiet_p10": 0.04310507281430877,
+        "quiet_mean": 20.16058414577304,
+        "quiet_min": 0.016960935161631753,
+        "mean": 39.926271570472,
+        "max_loss": 0.0,
+        "median": 40.97357202444503,
+        "retained_mean": 0.6243915043571361
+      },
+      "proposed": {
+        "joint96": 0,
+        "joint98": 0,
+        "voices96": 0,
+        "voices98": 0,
+        "lost96": 0,
+        "lost98": 0,
+        "quiet_p10": 0.04310507281430877,
+        "quiet_mean": 20.171798359847525,
+        "quiet_min": 0.016960935161631753,
+        "mean": 39.92856554080748,
+        "max_loss": -0.8558333296810332,
+        "median": 41.22590328898329,
+        "retained_mean": 0.6243915043571361
+      }
+    },
+    "oracle": {
+      "base": {
+        "joint96": 0,
+        "joint98": 0,
+        "voices96": 0,
+        "voices98": 0,
+        "lost96": 0,
+        "lost98": 0,
+        "quiet_p10": 0.07630811227942425,
+        "quiet_mean": 26.24592214584381,
+        "quiet_min": 0.013048991084262064,
+        "mean": 51.32034725937471,
+        "max_loss": 0.0,
+        "median": 60.15420048936256,
+        "retained_mean": 0.7216677514497576
+      },
+      "proposed": {
+        "joint96": 0,
+        "joint98": 0,
+        "voices96": 0,
+        "voices98": 0,
+        "lost96": 0,
+        "lost98": 0,
+        "quiet_p10": 0.07630811227942425,
+        "quiet_mean": 26.243211210872616,
+        "quiet_min": 0.013048991084262064,
+        "mean": 51.32737379058384,
+        "max_loss": -0.8558333296810332,
+        "median": 60.15420048936256,
+        "retained_mean": 0.7216677514497576
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "t01",
+      "choice": "second_pass",
+      "gains_db": [
+        0,
+        0,
+        0
+      ],
+      "quiet": 0,
+      "physical": [
+        0,
+        2,
+        1
+      ],
+      "diagnostic_oracle": [
+        0,
+        2,
+        1
+      ],
+      "changed_samples": 49152,
+      "exact_three_s": 0.539,
+      "before": {
+        "alignment_pct": [
+          57.98911579727955,
+          71.0545245689264,
+          60.667020920451165
+        ],
+        "retention": [
+          0.7328385899814471,
+          0.9183673469387755,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          57.13328246759852,
+          70.650818206604,
+          60.667020920451165
+        ],
+        "retention": [
+          0.7328385899814471,
+          0.9183673469387755,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t02",
+      "choice": "second_pass",
+      "gains_db": [
+        0,
+        -6,
+        0
+      ],
+      "quiet": 1,
+      "physical": [
+        0,
+        2,
+        1
+      ],
+      "diagnostic_oracle": [
+        0,
+        2,
+        1
+      ],
+      "changed_samples": 49152,
+      "exact_three_s": 0.694,
+      "before": {
+        "alignment_pct": [
+          71.09258938013002,
+          52.379494582906695,
+          41.70688846131822
+        ],
+        "retention": [
+          0.9149855907780979,
+          0.5115273775216138,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          70.9223163642875,
+          53.19195295304864,
+          41.70688846131822
+        ],
+        "retention": [
+          0.9149855907780979,
+          0.5115273775216138,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t03",
+      "choice": "baseline",
+      "gains_db": [
+        0,
+        0,
+        -12
+      ],
+      "quiet": 2,
+      "physical": [
+        1,
+        0,
+        2
+      ],
+      "diagnostic_oracle": [
+        1,
+        0,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.48,
+      "before": {
+        "alignment_pct": [
+          44.24786669118907,
+          25.079919103093506,
+          0.8265197446929227
+        ],
+        "retention": [
+          0.7454545454545455,
+          0.5454545454545454,
+          0.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          44.24786669118907,
+          25.079919103093506,
+          0.8265197446929227
+        ],
+        "retention": [
+          0.7454545454545455,
+          0.5454545454545454,
+          0.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t04",
+      "choice": "baseline",
+      "gains_db": [
+        -20,
+        0,
+        0
+      ],
+      "quiet": 0,
+      "physical": [
+        0,
+        1,
+        2
+      ],
+      "diagnostic_oracle": [
+        0,
+        1,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.672,
+      "before": {
+        "alignment_pct": [
+          0.053633513951568276,
+          80.26847117136332,
+          83.74112561473551
+        ],
+        "retention": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          0.053633513951568276,
+          80.26847117136332,
+          83.74112561473551
+        ],
+        "retention": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t05",
+      "choice": "second_pass",
+      "gains_db": [
+        0,
+        0,
+        0
+      ],
+      "quiet": 2,
+      "physical": [
+        0,
+        2,
+        1
+      ],
+      "diagnostic_oracle": [
+        0,
+        2,
+        1
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.667,
+      "before": {
+        "alignment_pct": [
+          69.44726122641528,
+          80.96070329295763,
+          64.36157764810135
+        ],
+        "retention": [
+          0.6416791604197901,
+          0.9415292353823088,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          69.44726122641528,
+          80.96070329295763,
+          64.36157764810135
+        ],
+        "retention": [
+          0.6416791604197901,
+          0.9415292353823088,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t06",
+      "choice": "baseline",
+      "gains_db": [
+        0,
+        0,
+        -6
+      ],
+      "quiet": 2,
+      "physical": [
+        0,
+        1,
+        2
+      ],
+      "diagnostic_oracle": [
+        0,
+        1,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.475,
+      "before": {
+        "alignment_pct": [
+          84.41509422942181,
+          81.11041565366308,
+          61.19470361152103
+        ],
+        "retention": [
+          0.8761061946902655,
+          1.0,
+          0.9026548672566371
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          84.41509422942181,
+          81.11041565366308,
+          61.19470361152103
+        ],
+        "retention": [
+          0.8761061946902655,
+          1.0,
+          0.9026548672566371
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t07",
+      "choice": "baseline",
+      "gains_db": [
+        -12,
+        0,
+        0
+      ],
+      "quiet": 0,
+      "physical": [
+        2,
+        1,
+        0
+      ],
+      "diagnostic_oracle": [
+        0,
+        1,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.736,
+      "before": {
+        "alignment_pct": [
+          7.0721626902330526,
+          79.98620191241136,
+          61.29305799926507
+        ],
+        "retention": [
+          0.7206703910614525,
+          0.9050279329608939,
+          0.2849162011173184
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          7.0721626902330526,
+          79.98620191241136,
+          61.29305799926507
+        ],
+        "retention": [
+          0.7206703910614525,
+          0.9050279329608939,
+          0.2849162011173184
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t08",
+      "choice": "baseline",
+      "gains_db": [
+        0,
+        -20,
+        0
+      ],
+      "quiet": 1,
+      "physical": [
+        0,
+        1,
+        2
+      ],
+      "diagnostic_oracle": [
+        1,
+        0,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.571,
+      "before": {
+        "alignment_pct": [
+          1.9580856828417303,
+          0.016960935161631753,
+          68.59044985370765
+        ],
+        "retention": [
+          0.0,
+          0.8214285714285714,
+          0.8214285714285714
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          1.9580856828417303,
+          0.016960935161631753,
+          68.59044985370765
+        ],
+        "retention": [
+          0.0,
+          0.8214285714285714,
+          0.8214285714285714
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t01",
+      "choice": "second_pass",
+      "gains_db": [
+        0,
+        0,
+        0
+      ],
+      "quiet": 0,
+      "physical": [
+        1,
+        0,
+        2
+      ],
+      "diagnostic_oracle": [
+        0,
+        1,
+        2
+      ],
+      "changed_samples": 49152,
+      "exact_three_s": 0.598,
+      "before": {
+        "alignment_pct": [
+          15.62837705066626,
+          33.25449740970342,
+          40.24025558757184
+        ],
+        "retention": [
+          0.5517241379310345,
+          1.0,
+          0.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          15.85117943539713,
+          33.25449740970342,
+          40.744918116648364
+        ],
+        "retention": [
+          0.5517241379310345,
+          1.0,
+          0.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t02",
+      "choice": "baseline",
+      "gains_db": [
+        0,
+        -6,
+        0
+      ],
+      "quiet": 1,
+      "physical": [
+        2,
+        1,
+        0
+      ],
+      "diagnostic_oracle": [
+        1,
+        0,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.635,
+      "before": {
+        "alignment_pct": [
+          3.693941721946561,
+          3.5303669649413907,
+          33.58321782722547
+        ],
+        "retention": [
+          0.24237560192616373,
+          0.5971107544141252,
+          0.6789727126805778
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          3.693941721946561,
+          3.5303669649413907,
+          33.58321782722547
+        ],
+        "retention": [
+          0.24237560192616373,
+          0.5971107544141252,
+          0.6789727126805778
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t03",
+      "choice": "second_pass",
+      "gains_db": [
+        0,
+        0,
+        -12
+      ],
+      "quiet": 2,
+      "physical": [
+        0,
+        1,
+        2
+      ],
+      "diagnostic_oracle": [
+        0,
+        1,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.699,
+      "before": {
+        "alignment_pct": [
+          91.32344884018832,
+          93.33971085245646,
+          15.817835363145283
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          91.32344884018832,
+          93.33971085245646,
+          15.817835363145283
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t04",
+      "choice": "second_pass",
+      "gains_db": [
+        -20,
+        0,
+        0
+      ],
+      "quiet": 0,
+      "physical": [
+        1,
+        0,
+        2
+      ],
+      "diagnostic_oracle": [
+        0,
+        1,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.603,
+      "before": {
+        "alignment_pct": [
+          0.23216679158757303,
+          1.1526454684728806,
+          46.88130727416422
+        ],
+        "retention": [
+          0.871404399323181,
+          0.0,
+          0.8849407783417935
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          0.23216679158757303,
+          1.1526454684728806,
+          46.88130727416422
+        ],
+        "retention": [
+          0.871404399323181,
+          0.0,
+          0.8849407783417935
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t05",
+      "choice": "baseline",
+      "gains_db": [
+        0,
+        0,
+        0
+      ],
+      "quiet": 0,
+      "physical": [
+        0,
+        2,
+        1
+      ],
+      "diagnostic_oracle": [
+        1,
+        0,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.603,
+      "before": {
+        "alignment_pct": [
+          0.03257663167704926,
+          15.110457209671821,
+          5.690062633773795
+        ],
+        "retention": [
+          0.0,
+          0.7478559176672385,
+          0.4236706689536878
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          0.03257663167704926,
+          15.110457209671821,
+          5.690062633773795
+        ],
+        "retention": [
+          0.0,
+          0.7478559176672385,
+          0.4236706689536878
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t06",
+      "choice": "baseline",
+      "gains_db": [
+        0,
+        0,
+        -6
+      ],
+      "quiet": 2,
+      "physical": [
+        1,
+        0,
+        2
+      ],
+      "diagnostic_oracle": [
+        1,
+        0,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.694,
+      "before": {
+        "alignment_pct": [
+          85.81869463612165,
+          76.8578944833131,
+          15.651518119832186
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          0.28313253012048195
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          85.81869463612165,
+          76.8578944833131,
+          15.651518119832186
+        ],
+        "retention": [
+          1.0,
+          1.0,
+          0.28313253012048195
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t07",
+      "choice": "second_pass",
+      "gains_db": [
+        -12,
+        0,
+        0
+      ],
+      "quiet": 0,
+      "physical": [
+        1,
+        2,
+        0
+      ],
+      "diagnostic_oracle": [
+        1,
+        0,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.566,
+      "before": {
+        "alignment_pct": [
+          27.6833541760638,
+          0.0528781070397837,
+          42.336851457746846
+        ],
+        "retention": [
+          0.33076923076923076,
+          0.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          27.6833541760638,
+          0.0528781070397837,
+          42.336851457746846
+        ],
+        "retention": [
+          0.33076923076923076,
+          0.0,
+          1.0
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    },
+    {
+      "id": "t08",
+      "choice": "baseline",
+      "gains_db": [
+        0,
+        -20,
+        0
+      ],
+      "quiet": 1,
+      "physical": [
+        2,
+        0,
+        1
+      ],
+      "diagnostic_oracle": [
+        1,
+        0,
+        2
+      ],
+      "changed_samples": 0,
+      "exact_three_s": 0.443,
+      "before": {
+        "alignment_pct": [
+          6.062224817204581,
+          0.09898271060728023,
+          12.873924961795646
+        ],
+        "retention": [
+          0.1308411214953271,
+          0.22429906542056074,
+          0.719626168224299
+        ],
+        "joint96": false,
+        "joint98": false
+      },
+      "after": {
+        "alignment_pct": [
+          6.062224817204581,
+          0.09898271060728023,
+          12.873924961795646
+        ],
+        "retention": [
+          0.1308411214953271,
+          0.22429906542056074,
+          0.719626168224299
+        ],
+        "joint96": false,
+        "joint98": false
+      }
+    }
+  ]
+}

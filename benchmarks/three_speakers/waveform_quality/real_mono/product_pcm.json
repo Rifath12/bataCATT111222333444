@@ -1,0 +1,42 @@
+{
+  "R8004_M8006_enrolled": {
+    "samples": 266240,
+    "sample_rate": 8000,
+    "elapsed_s": 0.09442005900018557,
+    "worst_absolute_error_product_PCM_vs_independent_float": 3.0522986506187344e-05,
+    "peak_in_int16_steps": 1.0001772218347469,
+    "input_mixture_exact": true,
+    "playback_gain": 1.0,
+    "subtype": "PCM_16"
+  },
+  "R8004_M8006_forced": {
+    "samples": 266240,
+    "sample_rate": 8000,
+    "elapsed_s": 0.09461809400090715,
+    "worst_absolute_error_product_PCM_vs_independent_float": 3.052308941877552e-05,
+    "peak_in_int16_steps": 1.0001805940744362,
+    "input_mixture_exact": true,
+    "playback_gain": 1.0,
+    "subtype": "PCM_16"
+  },
+  "R8005_M8007_enrolled": {
+    "samples": 266240,
+    "sample_rate": 8000,
+    "elapsed_s": 0.09562375099994824,
+    "worst_absolute_error_product_PCM_vs_independent_float": 3.052344186053879e-05,
+    "peak_in_int16_steps": 1.0001921428861351,
+    "input_mixture_exact": true,
+    "playback_gain": 1.0,
+    "subtype": "PCM_16"
+  },
+  "R8005_M8007_forced": {
+    "samples": 266240,
+    "sample_rate": 8000,
+    "elapsed_s": 0.23502019999978074,
+    "worst_absolute_error_product_PCM_vs_independent_float": 3.052344186053879e-05,
+    "peak_in_int16_steps": 1.0001921428861351,
+    "input_mixture_exact": true,
+    "playback_gain": 1.0,
+    "subtype": "PCM_16"
+  }
+}

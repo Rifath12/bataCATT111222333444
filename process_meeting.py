@@ -8,18 +8,20 @@ import json
 import math
 from pathlib import Path
 import re
+from tempfile import TemporaryDirectory
 import time
 from urllib.parse import quote
 
 import numpy as np
 from scipy.optimize import linear_sum_assignment
 from scipy.signal import resample_poly
-import sherpa_onnx
 import soundfile as sf
 import torch
 from torch.nn.functional import pad
 
-from dprnn_architecture import MultiDecoderDPRNN
+from audio_input import fold_channels
+from transcript_review import attach_separation_evidence
+
 
 
 RATE = 8000
@@ -37,6 +39,8 @@ class _TrainingMetadata:
 
 
 def load_separator(directory, model_name, device):
+    from dprnn_architecture import MultiDecoderDPRNN
+
     prefix = directory / "multi_decoder_dprnn.bin"
     safety = [
         (_TrainingMetadata, "pytorch_lightning.callbacks.model_checkpoint.ModelCheckpoint"),
@@ -65,7 +69,7 @@ def read_audio(path):
     audio, source_rate = sf.read(path, dtype="float32", always_2d=True)
     if audio.shape[0] == 0 or not np.isfinite(audio).all():
         raise ValueError("Expected a non-empty audio recording with finite PCM samples.")
-    return resample(audio.mean(axis=1), source_rate, RATE), source_rate, len(audio)
+    return resample(fold_channels(audio), source_rate, RATE), source_rate, len(audio)
 
 
 def rms(y):
@@ -91,6 +95,8 @@ def track_id(idx):
 
 class VoiceEmbeddings:
     def __init__(self, path):
+        import sherpa_onnx
+
         config = sherpa_onnx.SpeakerEmbeddingExtractorConfig(model=str(path), num_threads=1, provider="cpu")
         if not config.validate():
             raise ValueError(f"Speaker embedding model failed validation: {path}")
@@ -109,11 +115,13 @@ class VoiceEmbeddings:
 
 
 class Separation:
-    def __init__(self, model, device, embeddings=None, overlap_margin=DEFAULT_OVERLAP_MARGIN):
+    def __init__(self, model, device, embeddings=None, overlap_margin=DEFAULT_OVERLAP_MARGIN, *, participants=None, enrollment=None):
         self.model = model
         self.device = device
         self.embeddings = embeddings
         self.overlap_margin = overlap_margin
+        self.participants = participants
+        self.enrollment = enrollment
 
     @torch.inference_mode()
     def infer(self, y, hints):
@@ -129,7 +137,7 @@ class Separation:
         feature = self.model.enc_activation(self.model.encoder(inp))
         final = self.model.masker(feature)[-1]
         heads = self.model.decoder_select
-        options = [n for n in heads.n_srcs if 1 <= n <= SLOTS]
+        options = [n for n in heads.n_srcs if 1 <= n <= (self.participants or SLOTS)]
         def decode(count):
             if count == 1:
                 return y[None].copy()
@@ -161,7 +169,8 @@ class Separation:
         """Run bounded windows. Each committed block is immutable."""
         start = time.perf_counter()
         samples = len(y)
-        estimates = np.zeros((SLOTS, samples), dtype=np.float32)
+        slot_count = self.participants or (3 if hints == 3 else SLOTS)
+        estimates = np.zeros((slot_count, samples), dtype=np.float32)
         features = {}
         seen = set()
         commits = []
@@ -174,67 +183,92 @@ class Separation:
             local, guessed, baseline_count = self.infer(y[visible_left:visible_right], hints)
             core_start = left - visible_left
             core_stop = right - visible_left
-            keys = range(len(local))
-            energy = [rms(local[i, core_start:core_stop]) for i in keys]
-            floor = max(0.00025, (max(energy) if energy else 0.) * 0.065)
-            candidates = [i for i in keys if energy[i] >= floor]
-            if self.embeddings and len(y) > block:
-                representations = {i: self.embeddings(local[i, core_start:core_stop]) for i in candidates}
+            if self.enrollment is not None:
+                ordered, tiles = self.enrollment.route(local, core_start, core_stop)
+                estimates[:, left:right] = ordered
+                active = sorted({slot for tile in tiles for slot in tile["active_slots"]})
+                seen.update(active)
+                uncertain = sorted({track_id(slot) for tile in tiles if tile["identity_needs_review"]
+                                    for slot in tile["active_slots"]})
+                for tile in tiles:
+                    tile["start_sample"] += left
+                    tile["end_sample"] += left
+                    tile["speaker_ids"] = [track_id(i) for i in tile.pop("active_slots")]
             else:
-                representations = {i: None for i in candidates}
-            # Map the candidates one-to-one before committing any samples for this block.
-            old = sorted(seen)
-            matched = {}
-            if old and candidates:
-                score = np.zeros((len(old), len(candidates)), dtype=np.float32)
-                for row, slot in enumerate(old):
-                    for col, source in enumerate(candidates):
-                        prediction = local[source, :core_start]
-                        overlap = estimates[slot, visible_left:left]
-                        corr = normalized_dot(prediction, overlap) if rms(overlap) > 0.001 else 0.
-                        anchor = features.get(slot)
-                        candidate = representations[source]
-                        sim = normalized_dot(anchor, candidate) if anchor is not None and candidate is not None else 0.
-                        score[row, col] = max(abs(corr), sim)
-                rows, cols = linear_sum_assignment(-score)
-                for row, col in zip(rows, cols, strict=True):
-                    if score[row, col] >= 0.48:
-                        matched[candidates[col]] = old[row]
-            remaining = sorted((i for i in candidates if i not in matched), key=lambda i: -energy[i])
-            free = sorted(set(range(SLOTS)) - seen)
-            uncertain = []
-            for source in remaining:
-                if free:
-                    matched[source] = free.pop(0)
-                    continue
-                available = [i for i in old if i not in matched.values()]
-                matched[source] = available[0]
-                uncertain.append(track_id(available[0]))
-            for source, slot in matched.items():
-                wave = local[source, core_start:core_stop]
-                # Resolve possible sign changes against simultaneous estimates.
-                if abs(normalized_dot(local[source, :core_start], estimates[slot, visible_left:left])) > 0.45:
-                    if normalized_dot(local[source, :core_start], estimates[slot, visible_left:left]) < 0:
-                        wave = -wave
-                estimates[slot, left:right] = wave
-                candidate = representations[source]
-                if candidate is not None and track_id(slot) not in uncertain:
-                    previous = features.get(slot)
-                    features[slot] = candidate if previous is None else 0.75 * previous + 0.25 * candidate
-                seen.add(slot)
-            active = sorted(set(matched.values()))
+                tiles = None
+                active, uncertain = self._assign_anonymous(local, estimates, features, seen,
+                                                           visible_left, left, right, slot_count,
+                                                           len(y) > block)
             record = {
                 "sample_start": left, "sample_end": right, "input_available_through": visible_right,
                 "decoded_source_count": guessed, "speaker_ids": [track_id(i) for i in active],
                 "baseline_source_count": baseline_count, "count_review": guessed != baseline_count,
                 "identity_needs_review": uncertain, "commit_elapsed_s": time.perf_counter() - start,
             }
+            if tiles is not None:
+                record["identity_tiles"] = tiles
             if paced:
                 record["delay_from_block_end_s"] = record["commit_elapsed_s"] - right / RATE
             commits.append(record)
             if on_commit is not None:
-                on_commit(record, {track_id(i): estimates[i, left:right].copy() for i in active})
-        return {track_id(i): estimates[i] for i in sorted(seen)}, commits
+                output_slots = range(slot_count) if self.participants is not None else active
+                on_commit(record, {track_id(i): estimates[i, left:right].copy() for i in output_slots})
+        slots = range(slot_count) if self.participants is not None else sorted(seen)
+        return {track_id(i): estimates[i] for i in slots}, commits
+
+    def _assign_anonymous(self, local, estimates, features, seen, visible_left, left, right, slot_count,
+                          use_embeddings):
+        core_start = left - visible_left
+        core_stop = right - visible_left
+        keys = range(len(local))
+        energy = [rms(local[i, core_start:core_stop]) for i in keys]
+        floor = max(0.00025, (max(energy) if energy else 0.) * 0.065)
+        candidates = [i for i in keys if energy[i] >= floor]
+        if self.embeddings and use_embeddings:
+            representations = {i: self.embeddings(local[i, core_start:core_stop]) for i in candidates}
+        else:
+            representations = {i: None for i in candidates}
+        # Map the candidates one-to-one before committing any samples for this block.
+        old = sorted(seen)
+        matched = {}
+        if old and candidates:
+            score = np.zeros((len(old), len(candidates)), dtype=np.float32)
+            for row, slot in enumerate(old):
+                for col, source in enumerate(candidates):
+                    prediction = local[source, :core_start]
+                    overlap = estimates[slot, visible_left:left]
+                    corr = normalized_dot(prediction, overlap) if rms(overlap) > 0.001 else 0.
+                    anchor = features.get(slot)
+                    candidate = representations[source]
+                    sim = normalized_dot(anchor, candidate) if anchor is not None and candidate is not None else 0.
+                    score[row, col] = max(abs(corr), sim)
+            rows, cols = linear_sum_assignment(-score)
+            for row, col in zip(rows, cols, strict=True):
+                if score[row, col] >= 0.48:
+                    matched[candidates[col]] = old[row]
+        remaining = sorted((i for i in candidates if i not in matched), key=lambda i: -energy[i])
+        free = sorted(set(range(slot_count)) - seen)
+        uncertain = []
+        for source in remaining:
+            if free:
+                matched[source] = free.pop(0)
+                continue
+            available = [i for i in old if i not in matched.values()]
+            matched[source] = available[0]
+            uncertain.append(track_id(available[0]))
+        for source, slot in matched.items():
+            wave = local[source, core_start:core_stop]
+            # Resolve possible sign changes against simultaneous estimates.
+            if abs(normalized_dot(local[source, :core_start], estimates[slot, visible_left:left])) > 0.45:
+                if normalized_dot(local[source, :core_start], estimates[slot, visible_left:left]) < 0:
+                    wave = -wave
+            estimates[slot, left:right] = wave
+            candidate = representations[source]
+            if candidate is not None and track_id(slot) not in uncertain:
+                previous = features.get(slot)
+                features[slot] = candidate if previous is None else 0.75 * previous + 0.25 * candidate
+            seen.add(slot)
+        return sorted(set(matched.values())), uncertain
 
 
 def overlap_candidate(scores, baseline, margin):
@@ -307,6 +341,8 @@ def characters(tokens, timestamps, begin_s, end_s):
 
 class Mandarin:
     def __init__(self, directory, threads):
+        import sherpa_onnx
+
         asr = directory / "sherpa-onnx-zipformer-ctc-zh-int8-2025-07-03"
         self.model = sherpa_onnx.OfflineRecognizer.from_zipformer_ctc(
             model=str(asr/"model.int8.onnx"), tokens=str(asr/"tokens.txt"), num_threads=threads,
@@ -334,17 +370,30 @@ class Mandarin:
 
 
 def run(args):
+    if args.mixture_phase and args.mode != "file":
+        raise ValueError("Mixture-phase restoration needs a completed recording in file mode")
+    if not all(math.isfinite(x) for x in (args.block, args.history, args.lookahead)):
+        raise ValueError("Block, history and lookahead durations must be finite.")
     if min(args.block, args.threads) <= 0 or min(args.history, args.lookahead) < 0:
         raise ValueError("Specify a positive block count and nonnegative context.")
     if not math.isfinite(args.overlap_margin) or args.overlap_margin < 0:
         raise ValueError("The overlap margin must be finite and nonnegative.")
-    torch.set_num_threads(args.threads)
+    participants = args.participants or (3 if args.enroll else None)
+    if participants is not None and args.speakers is not None and args.speakers > participants:
+        raise ValueError("The per-window source count cannot exceed the number of session participants")
     started = time.perf_counter()
+    enrollment = None
+    if args.enroll:
+        from meeting_roster import EnrolledRoster
+
+        enrollment = EnrolledRoster(args.enroll)
+    torch.set_num_threads(args.threads)
     y, native_rate, native_samples = read_audio(args.input)
     voice_path = args.models / "voiceprint.onnx"
-    embeddings = VoiceEmbeddings(voice_path) if not args.no_embeddings else None
+    embeddings = VoiceEmbeddings(voice_path) if not args.no_embeddings and enrollment is None else None
     model = load_separator(args.models, args.separator, args.device)
-    engine = Separation(model, args.device, embeddings, args.overlap_margin)
+    engine = Separation(model, args.device, embeddings, args.overlap_margin,
+                        participants=participants, enrollment=enrollment)
     names = json.loads(args.names.read_text(encoding="utf-8")) if args.names else {}
     if not isinstance(names, dict) or any(not isinstance(value, str) for value in names.values()):
         raise ValueError("The names JSON must map speaker IDs to strings.")
@@ -373,7 +422,25 @@ def run(args):
         filename = f"Speaker_{letter}{suffix}.wav"
         sf.write(args.out / filename, wave * playback_gain, RATE, subtype="PCM_16")
         speakers[speaker] = {"display_name": display, "file": filename}
+        if participants is not None:
+            speakers[speaker]["active_blocks"] = sum(speaker in c["speaker_ids"] for c in commits)
+            speakers[speaker]["status"] = ("estimated_activity" if speakers[speaker]["active_blocks"]
+                                           else "no_detected_activity")
     sf.write(args.out/"mixed.wav", y * playback_gain, RATE, subtype="PCM_16")
+    phase_info = None
+    if args.mixture_phase and speakers:
+        from mixture_phase import restore_wavs
+
+        filenames = [speaker["file"] for speaker in speakers.values()]
+        with TemporaryDirectory(dir=args.out) as temporary:
+            stage = Path(temporary)
+            phase_info = restore_wavs(args.out, stage, filenames)
+            for filename in ["mixed.wav", *filenames]:
+                (stage / filename).replace(args.out / filename)
+        playback_gain *= phase_info["playback_gain"]
+        if args.transcribe:
+            for sid, speaker in speakers.items():
+                tracks[sid][:] = sf.read(args.out / speaker["file"], dtype="float32")[0] / playback_gain
     audio_export_s = time.perf_counter() - started
     json_lines(args.out/"commits.jsonl", commits)
     info = {
@@ -386,6 +453,12 @@ def run(args):
         "model_setup_wall_s": model_setup, "audio_export_wall_s": audio_export_s,
         "speakers": speakers, "asr": "pending" if args.transcribe else "disabled",
     }
+    if participants is not None:
+        info["participants"] = participants
+        info["identity_mode"] = "enrolled_ABC" if enrollment is not None else "anonymous_session_slots"
+        info["enrollment_files"] = [p.name for p in args.enroll] if args.enroll else []
+    if phase_info is not None:
+        info["mixture_phase"] = phase_info
     json_write(args.out/"speakers.json", info)
     rows = []
     write_listening_report(args.out, info, rows)
@@ -394,6 +467,7 @@ def run(args):
         rows = [row for sid, wave in tracks.items()
                 for row in recognition.transcribe(sid, speakers[sid]["display_name"], wave)]
         rows.sort(key=lambda row: (row["start_ms"], row["speaker_id"]))
+        attach_separation_evidence(rows, commits, RATE)
         json_lines(args.out/"transcript.jsonl", rows)
         text_lines = [f'[{r["start_ms"]/1000:06.2f}–{r["end_ms"]/1000:06.2f}] {r["speaker"]}  {r["text"]}'
                       for r in rows]
@@ -443,13 +517,19 @@ def main():
     p.add_argument("--lookahead", type=float, default=DEFAULT_LOOKAHEAD)
     p.add_argument("--threads", type=int, default=4)
     p.add_argument("--device", default="cpu")
-    p.add_argument("--speakers", type=int, choices=range(1, 5), help="Optional count override.")
+    p.add_argument("--speakers", type=int, choices=range(1, 5), help="Force the separator to decode this many streams in each non-silent window.")
+    p.add_argument("--participants", type=int, choices=(3,),
+                   help="Keep three A/B/C output tracks; optionally add --speakers 3 to force all three decoder streams.")
+    p.add_argument("--enroll", type=Path, nargs=3, metavar=("SOLO_A", "SOLO_B", "SOLO_C"),
+                   help="Use three solo WAV recordings to identify A/B/C throughout the file (implies --participants 3).")
     p.add_argument("--overlap-margin", type=float, default=DEFAULT_OVERLAP_MARGIN,
                    help="Selector margin for considering one additional voice." )
     p.add_argument("--names", type=Path, help="UTF-8 JSON mapping anonymous speaker IDs to display names.")
     p.add_argument("--write-chunks", action="store_true", help="Save committed blocks as soon as they are ready.")
     p.add_argument("--no-embeddings", action="store_true")
     p.add_argument("--transcribe", action="store_true")
+    p.add_argument("--mixture-phase", action="store_true",
+                   help="Restore the final speaker WAVs with the recorded mixture phase in file mode.")
     run(p.parse_args())
 
 

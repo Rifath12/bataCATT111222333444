@@ -1,0 +1,1898 @@
+{
+  "sample_rate": 16000,
+  "sources": {
+    "R8008_M8014_MS807.wav": {
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/far/R8008_M8014_MS807.wav",
+      "sha256": "ee05cff80668316979976a1ce2b3c69922ed7a14959e51df2b7594a4e97b0323",
+      "channels": 8
+    },
+    "R8005_M8009_MS802.wav": {
+      "url": "https://huggingface.co/datasets/ggfox00000/dia-alimeeting-test/resolve/cef2837c4a1a0762074522c1bbbbb90eb4d1acf5/audio/far/R8005_M8009_MS802.wav",
+      "sha256": "6daf68eaf638aab99edea0cce7676b904b60d3d9f5c122f12e0465ff640b592c",
+      "channels": 8
+    },
+    "EVAL2-Meeting-CN-260413-2-H2_mixture_0.01_15.67.wav": {
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/mixtures/EVAL2-Meeting-CN-260413-2-H2_mixture_0.01_15.67.wav",
+      "sha256": "3ae76cd2b2e5afa061bd6d6637024557968191980ee47269c45f5e5c0c9b4f10",
+      "channels": 1
+    },
+    "EVAL2-Meeting-CN-260413-2-H2_mixture_375.13_394.34.wav": {
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/mixtures/EVAL2-Meeting-CN-260413-2-H2_mixture_375.13_394.34.wav",
+      "sha256": "405f9a87f4934820a6548e87e37aec28a49d497137fe65654dbe9d61003c9980",
+      "channels": 1
+    },
+    "EVAL2-Meeting-CN-260413-2-H2_mixture_394.66_407.72.wav": {
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/mixtures/EVAL2-Meeting-CN-260413-2-H2_mixture_394.66_407.72.wav",
+      "sha256": "1f41821badbf2ac6ffea111355c0d37db3209df1eddd1608db4d9007cd38bf9c",
+      "channels": 1
+    },
+    "EVAL2-Meeting-CN-260413-2-H2_mixture_407.79_430.06.wav": {
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/mixtures/EVAL2-Meeting-CN-260413-2-H2_mixture_407.79_430.06.wav",
+      "sha256": "da601153c24bb52f4d41ec5e22598d1fb30f0dc4722e2f8bba3e1282e9a51f60",
+      "channels": 1
+    },
+    "EVAL2-Meeting-CN-260413-2-H2_mixture_343.03_361.09.wav": {
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/mixtures/EVAL2-Meeting-CN-260413-2-H2_mixture_343.03_361.09.wav",
+      "sha256": "1efbfdfda10c53d7b4972b0fa5ae6981dc169901390b1c6cde858de067c2c502",
+      "channels": 1
+    },
+    "EVAL2-Meeting-CN-260413-2-H2_mixture_430.29_450.64.wav": {
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/mixtures/EVAL2-Meeting-CN-260413-2-H2_mixture_430.29_450.64.wav",
+      "sha256": "d31ece5f620a921c0b02eb0c18f2e2e5d8f8cfa57a8a08644839241b9d8efd4c",
+      "channels": 1
+    },
+    "EVAL2-Meeting-CN-260413-2-H2_mixture_495.41_511.83.wav": {
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/mixtures/EVAL2-Meeting-CN-260413-2-H2_mixture_495.41_511.83.wav",
+      "sha256": "290823028c6ff866be26cd755414ac48f5716b8362d02febeb6c06182004c308",
+      "channels": 1
+    },
+    "EVAL2-Meeting-CN-260413-2-H2_mixture_219.57_237.58.wav": {
+      "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/mixtures/EVAL2-Meeting-CN-260413-2-H2_mixture_219.57_237.58.wav",
+      "sha256": "1e0a4bb786ec80ef11f5243c630b050cf19c865d51df34829984dfccd4561d26",
+      "channels": 1
+    }
+  },
+  "cases": {
+    "M8014": {
+      "room": "R8008_M8014",
+      "all_recording_speakers": [
+        "N_SPK8051",
+        "N_SPK8052",
+        "N_SPK8053"
+      ],
+      "clip_speakers_ABC": [
+        "N_SPK8051",
+        "N_SPK8052",
+        "N_SPK8053"
+      ],
+      "real_dataset": "AliMeeting",
+      "meeting_start_s": 1124.6,
+      "room_file": "R8008_M8014_MS807.wav",
+      "source_channel_zero_based": 0,
+      "clip_start_sample": 17993600,
+      "clip_samples": 960000,
+      "enrollment_ranges": {
+        "A": [
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 28960,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 37152,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 45344,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 53536,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 61728,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 69920,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 78112,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 102880,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 111072,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 119264,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 127456,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 149280,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 181920,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 190112,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 198304,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 227840,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 244224,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 252416,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 260608,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 268800,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 285184,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 316000,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 324192,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 332384,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 361760,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 394240,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 410624,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 432800,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 440992,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 476160,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 780160,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 812480,
+            "samples": 8192
+          }
+        ],
+        "B": [
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1144800,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1152992,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1173440,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1181632,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1189824,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1298400,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1326400,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1350976,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1439072,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1447264,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1679520,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1722880,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 2386400,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 2532960,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3717440,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3725632,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3814720,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3822912,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3863840,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3872032,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3907360,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3915552,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3940128,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3990080,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 4058880,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 4067072,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 5921824,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 6046976,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 6076480,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 6084672,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 6121120,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 6145696,
+            "samples": 8192
+          }
+        ],
+        "C": [
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 562272,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 578656,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 613280,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 648032,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 656224,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 672608,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 688992,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 697184,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 745920,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 844352,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 878240,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 904160,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 912352,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1092800,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1100992,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1768512,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1776704,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1812032,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1820224,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1828416,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1889760,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1897952,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1920640,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 1973440,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 2061920,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 2070112,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 2092640,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 2127040,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 2135232,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 2869792,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3045632,
+            "samples": 8192
+          },
+          {
+            "file": "R8008_M8014_MS807.wav",
+            "channel": 0,
+            "start": 3125184,
+            "samples": 8192
+          }
+        ]
+      },
+      "label_sources": {
+        "labels": {
+          "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8008_M8014.rttm",
+          "sha256": "6418f31b6ea312d98448bb95646a8f655a8a900ba6cefa29909d62758c4d7d26"
+        },
+        "transcript": {
+          "url": "https://huggingface.co/datasets/AudioMarathon/AudioMarathon/resolve/68dd695283723a78d850895466b9a380f630b561/AliMeeting/Test_Ali/Test_Ali_far/textgrid_dir/R8008_M8014.TextGrid",
+          "sha256": "caf8fae43da74bd027b13d77d875cbbcb94093fd7c04cc5c3617531ad899f713"
+        },
+        "timed_characters_A": {
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkBench/resolve/d7188c179603db8566c50b6e43af5c8a1e7678ba/alignments/zh/R8008_M8014_N_SPK8051.json",
+          "sha256": "ae85e4bcd30fc1320bcd3aacf9e45689896ffaa63da6f89710237565eaac2f97"
+        },
+        "timed_characters_B": {
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkBench/resolve/d7188c179603db8566c50b6e43af5c8a1e7678ba/alignments/zh/R8008_M8014_N_SPK8052.json",
+          "sha256": "d76b0a28f1305fc4beb1f3a88f4e9cebe0e8e0515d5784709423ef750a68bbf3"
+        },
+        "timed_characters_C": {
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkBench/resolve/d7188c179603db8566c50b6e43af5c8a1e7678ba/alignments/zh/R8008_M8014_N_SPK8053.json",
+          "sha256": "795cf849cd386933dfce70730d9467ec95e90c9baf78752cd9c403bf57eba952"
+        }
+      },
+      "expected_wave_sha256": {
+        "mixture.wav": "341d2ca13004d1810c850964308dcb6110b5dc37a83ac85e6dff695bb12bd9ca",
+        "solo_A.wav": "b2733cec5fc035b1852d69dfb4395ecd7793eb37dea53611ed188777eff42112",
+        "solo_B.wav": "d5d1e1486c2586899856633cff2e0622c6a4273e843faac8c1c4c0ec42ef9ea8",
+        "solo_C.wav": "8c25b56664ab24ee50f1a7066a3ea880d12501df623ba617c5eedd8d0b37ede0"
+      },
+      "evaluation_only": {
+        "ten_ms_active_ranges": {
+          "A": [
+            [
+              57,
+              244
+            ],
+            [
+              408,
+              811
+            ],
+            [
+              841,
+              1083
+            ],
+            [
+              1115,
+              1628
+            ],
+            [
+              2530,
+              2680
+            ],
+            [
+              2728,
+              3195
+            ],
+            [
+              3221,
+              3348
+            ],
+            [
+              3373,
+              3554
+            ],
+            [
+              3579,
+              3874
+            ],
+            [
+              3963,
+              4136
+            ],
+            [
+              4165,
+              4315
+            ],
+            [
+              4337,
+              4380
+            ],
+            [
+              4409,
+              4618
+            ],
+            [
+              4662,
+              4976
+            ],
+            [
+              5019,
+              5078
+            ],
+            [
+              5116,
+              5652
+            ],
+            [
+              5974,
+              6000
+            ]
+          ],
+          "B": [
+            [
+              275,
+              544
+            ],
+            [
+              863,
+              887
+            ],
+            [
+              3046,
+              3109
+            ],
+            [
+              5666,
+              5728
+            ],
+            [
+              5815,
+              5887
+            ],
+            [
+              5907,
+              6000
+            ]
+          ],
+          "C": [
+            [
+              282,
+              451
+            ],
+            [
+              1640,
+              1815
+            ],
+            [
+              1840,
+              2339
+            ],
+            [
+              2368,
+              2412
+            ],
+            [
+              2441,
+              2548
+            ],
+            [
+              2657,
+              2712
+            ],
+            [
+              3040,
+              3101
+            ],
+            [
+              5708,
+              5785
+            ],
+            [
+              5815,
+              5991
+            ]
+          ]
+        },
+        "transcript": {
+          "A": "以以小带大你们认为怎么样可可以的是吧然后要不既然是我们本来就属于滨江区就以滨江区高教园那几个高校作作为然后是你们你们商量一下认为哪几个高校比较适合选取一两个做几做几场演讲对吧啊然后是我们这边的人然后也要下去对吧然后呢下去下下去这然后是我们到时候先呃是找好几个学校找好几个学校做好专门的试点工作专门做好做好那边那个试点工作然后是具体学校的定的具体要定哪个学校或者是要怎么样的方案你们两个到时候的话就是说找一下其他各部门的部长还有其他各个学校的校长然后是再联系一下行不行嗯",
+          "B": "我觉得这可以啊不错的不错的不错的嗯对对对好行我这边联系一下都",
+          "C": "嗯我觉得是行的嗯我觉得话就是呃本科这方面还有专科这方面都多选几个学校去做几个场演讲这种对对对对是的好这边这边我们会都会安排下去"
+        },
+        "original_seconds_by_number_speaking": [
+          6.75,
+          47.44,
+          4.66,
+          1.15
+        ]
+      }
+    },
+    "M8009": {
+      "room": "R8005_M8009",
+      "all_recording_speakers": [
+        "N_SPK8043",
+        "N_SPK8044",
+        "N_SPK8045",
+        "N_SPK8046"
+      ],
+      "clip_speakers_ABC": [
+        "N_SPK8044",
+        "N_SPK8045",
+        "N_SPK8046"
+      ],
+      "real_dataset": "AliMeeting",
+      "meeting_start_s": 1561.0,
+      "room_file": "R8005_M8009_MS802.wav",
+      "source_channel_zero_based": 0,
+      "clip_start_sample": 24976000,
+      "clip_samples": 320000,
+      "enrollment_ranges": {
+        "A": [
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 644800,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 652992,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 726240,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 734432,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1158240,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1166432,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1590720,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1598912,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1764160,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1772352,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1780544,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2048000,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2103680,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2644800,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2691360,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2699552,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2707744,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2715936,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2724128,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2732320,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2740512,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2764800,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2772992,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2781184,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2874720,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 3960000,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4260800,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4288000,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4296192,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4304384,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4312576,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4320768,
+            "samples": 8192
+          }
+        ],
+        "B": [
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1222400,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1230592,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1249600,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1275680,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1304320,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2361120,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2369312,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2377504,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4859840,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4868032,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7533600,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7541792,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7549984,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7681760,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 9055680,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 10220800,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 12056160,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 12064352,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 12072544,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 12175520,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 13123520,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 15492480,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 15500672,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 15917280,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 16052160,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 16060352,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 16425280,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 17359520,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 17367712,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 17415360,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 17423552,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 17470720,
+            "samples": 8192
+          }
+        ],
+        "C": [
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 527360,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1929760,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 1937952,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 2204800,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4024640,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4032832,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4041024,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4049216,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4057408,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4065600,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 4073792,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 6592320,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 6600512,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 6739040,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7258720,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7266912,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7275104,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7283296,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7291488,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7299680,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7307872,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7316064,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7324256,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7342880,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7477600,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 7485792,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 8486400,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 8564800,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 8572992,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 8581184,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 8589376,
+            "samples": 8192
+          },
+          {
+            "file": "R8005_M8009_MS802.wav",
+            "channel": 0,
+            "start": 8597568,
+            "samples": 8192
+          }
+        ]
+      },
+      "label_sources": {
+        "labels": {
+          "url": "https://raw.githubusercontent.com/nttcslab-sp/diar-forced-alignment/9527b7c64846fb38316a610f32e9d3466bd6d8b7/AliMeeting/Test_Ali_far/R8005_M8009.rttm",
+          "sha256": "ff23db5f6b54e1194c0c4d9a8af87261c1adabdc8857269bc1c9f41de1f5a0ec"
+        },
+        "transcript": {
+          "url": "https://huggingface.co/datasets/AudioMarathon/AudioMarathon/resolve/68dd695283723a78d850895466b9a380f630b561/AliMeeting/Test_Ali/Test_Ali_far/textgrid_dir/R8005_M8009.TextGrid",
+          "sha256": "56eb98b5adaa4355fc16e689641ac103e5edb22ad17918855e646f93ef42660e"
+        },
+        "timed_characters_A": {
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkBench/resolve/d7188c179603db8566c50b6e43af5c8a1e7678ba/alignments/zh/R8005_M8009_N_SPK8044.json",
+          "sha256": "0ba2e05b94a32109a2a5964a982c5e6ef452882594ce658504fa12c55d877c2f"
+        },
+        "timed_characters_B": {
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkBench/resolve/d7188c179603db8566c50b6e43af5c8a1e7678ba/alignments/zh/R8005_M8009_N_SPK8045.json",
+          "sha256": "de06668fe107a8306b5bc9961f41c7d9752a99a6fed86b4bc2b26818647acbb9"
+        },
+        "timed_characters_C": {
+          "url": "https://huggingface.co/datasets/MultiTalk/MultiTalkBench/resolve/d7188c179603db8566c50b6e43af5c8a1e7678ba/alignments/zh/R8005_M8009_N_SPK8046.json",
+          "sha256": "4d6c614e38646f8903173adbfb48e98beebd91534d4898ee5208cb5353a8bde1"
+        }
+      },
+      "expected_wave_sha256": {
+        "mixture.wav": "376118f2fab5e9fb3f0aaad7b5d36286686173b666dd26506644bbc897b88806",
+        "solo_A.wav": "eb2f07cfbfda8e9e0c368afa28196c0c669e57c7bf0fe85233c483d7986f09f5",
+        "solo_B.wav": "97eead71e10183fca1795347063e03fa70c86469b64f37cd3569c14b47deaf6e",
+        "solo_C.wav": "1622512ac631d5c659656b4632f4af85783c2e5c30f10072902c0f2473f60924"
+      },
+      "evaluation_only": {
+        "ten_ms_active_ranges": {
+          "A": [
+            [
+              15,
+              39
+            ],
+            [
+              131,
+              345
+            ],
+            [
+              415,
+              465
+            ],
+            [
+              487,
+              836
+            ],
+            [
+              861,
+              1095
+            ],
+            [
+              1193,
+              1297
+            ],
+            [
+              1339,
+              1463
+            ],
+            [
+              1642,
+              2000
+            ]
+          ],
+          "B": [
+            [
+              0,
+              184
+            ],
+            [
+              231,
+              474
+            ],
+            [
+              499,
+              544
+            ],
+            [
+              597,
+              755
+            ],
+            [
+              776,
+              881
+            ],
+            [
+              1082,
+              1231
+            ],
+            [
+              1287,
+              1352
+            ],
+            [
+              1892,
+              1996
+            ]
+          ],
+          "C": [
+            [
+              0,
+              6
+            ],
+            [
+              46,
+              149
+            ],
+            [
+              201,
+              350
+            ],
+            [
+              577,
+              777
+            ],
+            [
+              809,
+              855
+            ],
+            [
+              941,
+              1296
+            ],
+            [
+              1360,
+              1397
+            ],
+            [
+              1425,
+              1702
+            ],
+            [
+              1726,
+              1895
+            ],
+            [
+              1952,
+              2000
+            ]
+          ]
+        },
+        "transcript": {
+          "A": "唉呃啊前前就就快够您来了这这这这你都现在人啊没有占那便宜的都比都比较自觉了像你想象那东西就很很少了没有那人啦你哪有那人啊你说那都是那都是那都是六十岁五十多岁老太太",
+          "B": "点儿东西啊就这点儿东西呃公司的人也是咱们也都知道是吧啊啊啊啊啊对对对对对对对嗯嗯啊嗯",
+          "C": "对对就领东西哎嗯这个是啊也错不了啊啊对对对啊没有人拿着双份的啊现在没这人嗯啊对对在大约在于说什么只要你收货三十份儿你别收二十九份儿就行了啊你"
+        },
+        "original_seconds_by_number_speaking": [
+          0.13,
+          4.99,
+          10.63,
+          4.25
+        ]
+      }
+    },
+    "REAL_T_01": {
+      "room": "EVAL2-Meeting-CN-260413-2-H2",
+      "all_recording_speakers": null,
+      "clip_speakers_ABC": [
+        "P002",
+        "P006",
+        "P007"
+      ],
+      "real_dataset": "REAL-T EVAL2 unseen_CN",
+      "meeting_start_s": 0.01,
+      "room_file": "EVAL2-Meeting-CN-260413-2-H2_mixture_0.01_15.67.wav",
+      "source_channel_zero_based": 0,
+      "clip_start_sample": 0,
+      "clip_samples": 250560,
+      "enrollment_ranges": {
+        "A": [
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_375.13_394.34.wav",
+            "channel": 0,
+            "start": 269440,
+            "samples": 32768
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_394.66_407.72.wav",
+            "channel": 0,
+            "start": 62080,
+            "samples": 32768
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_394.66_407.72.wav",
+            "channel": 0,
+            "start": 183520,
+            "samples": 16384
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_407.79_430.06.wav",
+            "channel": 0,
+            "start": 179040,
+            "samples": 16384
+          }
+        ],
+        "B": [
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_343.03_361.09.wav",
+            "channel": 0,
+            "start": 219360,
+            "samples": 40960
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_430.29_450.64.wav",
+            "channel": 0,
+            "start": 221440,
+            "samples": 32768
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_343.03_361.09.wav",
+            "channel": 0,
+            "start": 1600,
+            "samples": 24576
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_375.13_394.34.wav",
+            "channel": 0,
+            "start": 182560,
+            "samples": 24576
+          }
+        ],
+        "C": [
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_495.41_511.83.wav",
+            "channel": 0,
+            "start": 90880,
+            "samples": 163840
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_430.29_450.64.wav",
+            "channel": 0,
+            "start": 280640,
+            "samples": 24576
+          }
+        ]
+      },
+      "label_sources": {
+        "labels_and_transcript": {
+          "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/EVAL2/json/unseen_CN/overlap_records.json",
+          "sha256": "ff66a96c5037151f5310fc18e43e97a0dee8de3aa5a37e289b271488a8a5081a"
+        }
+      },
+      "expected_wave_sha256": {
+        "mixture.wav": "3ae76cd2b2e5afa061bd6d6637024557968191980ee47269c45f5e5c0c9b4f10",
+        "solo_A.wav": "7b92b0efb4b651955069813fc1d5889e1f366bd71d7159bc3e7d685ab3f418e9",
+        "solo_B.wav": "ec066ade52dc48f448e045103a0a24831641faad8d3ed02bf569cba6483b0eab",
+        "solo_C.wav": "0cac5c31fcad86a4135d3c4f9e4cf941bdb88ac30c379b38976e8cc61b378443"
+      },
+      "evaluation_only": {
+        "ten_ms_active_ranges": {
+          "A": [
+            [
+              0,
+              319
+            ],
+            [
+              321,
+              1566
+            ]
+          ],
+          "B": [
+            [
+              258,
+              449
+            ],
+            [
+              502,
+              1423
+            ]
+          ],
+          "C": [
+            [
+              96,
+              645
+            ],
+            [
+              1090,
+              1255
+            ]
+          ]
+        },
+        "transcript": {
+          "A": "呀 王姐 世新也来食堂吃饭啦 哎 哎呀 来来来来来 咱们这地儿还挺不错啊 给给你们给你们单独整了个包间儿 可以可以啊 哎 这今儿你吃的啥 我看看",
+          "B": "嗯啊 哎呀嚯 嗯 我是我是 嗯 我是天天在这儿吃 这会儿饭也也不错 嗯 嗯 嘿嘿 他单独包间儿 嗯",
+          "C": "王姐 哎呀 今儿没今儿没带饭 过来食堂吃饭来了 哎呀 挺好挺好"
+        },
+        "original_seconds_by_number_speaking": [
+          0.0,
+          2.39,
+          8.3,
+          4.97
+        ]
+      }
+    },
+    "REAL_T_03": {
+      "room": "EVAL2-Meeting-CN-260413-2-H2",
+      "all_recording_speakers": null,
+      "clip_speakers_ABC": [
+        "P002",
+        "P006",
+        "P007"
+      ],
+      "real_dataset": "REAL-T EVAL2 unseen_CN",
+      "meeting_start_s": 219.57,
+      "room_file": "EVAL2-Meeting-CN-260413-2-H2_mixture_219.57_237.58.wav",
+      "source_channel_zero_based": 0,
+      "clip_start_sample": 0,
+      "clip_samples": 288160,
+      "enrollment_ranges": {
+        "A": [
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_375.13_394.34.wav",
+            "channel": 0,
+            "start": 269440,
+            "samples": 32768
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_394.66_407.72.wav",
+            "channel": 0,
+            "start": 62080,
+            "samples": 32768
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_394.66_407.72.wav",
+            "channel": 0,
+            "start": 183520,
+            "samples": 16384
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_407.79_430.06.wav",
+            "channel": 0,
+            "start": 179040,
+            "samples": 16384
+          }
+        ],
+        "B": [
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_343.03_361.09.wav",
+            "channel": 0,
+            "start": 219360,
+            "samples": 40960
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_430.29_450.64.wav",
+            "channel": 0,
+            "start": 221440,
+            "samples": 32768
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_343.03_361.09.wav",
+            "channel": 0,
+            "start": 1600,
+            "samples": 24576
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_375.13_394.34.wav",
+            "channel": 0,
+            "start": 182560,
+            "samples": 24576
+          }
+        ],
+        "C": [
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_495.41_511.83.wav",
+            "channel": 0,
+            "start": 90880,
+            "samples": 163840
+          },
+          {
+            "file": "EVAL2-Meeting-CN-260413-2-H2_mixture_430.29_450.64.wav",
+            "channel": 0,
+            "start": 280640,
+            "samples": 24576
+          }
+        ]
+      },
+      "label_sources": {
+        "labels_and_transcript": {
+          "url": "https://huggingface.co/datasets/REAL-TSE/REAL-T/resolve/39ca3b88ffd4ce6078c1d045a3e8711fa2bd2f17/REAL-T-eval2/EVAL2/json/unseen_CN/overlap_records.json",
+          "sha256": "ff66a96c5037151f5310fc18e43e97a0dee8de3aa5a37e289b271488a8a5081a"
+        }
+      },
+      "expected_wave_sha256": {
+        "mixture.wav": "1e0a4bb786ec80ef11f5243c630b050cf19c865d51df34829984dfccd4561d26",
+        "solo_A.wav": "7b92b0efb4b651955069813fc1d5889e1f366bd71d7159bc3e7d685ab3f418e9",
+        "solo_B.wav": "ec066ade52dc48f448e045103a0a24831641faad8d3ed02bf569cba6483b0eab",
+        "solo_C.wav": "0cac5c31fcad86a4135d3c4f9e4cf941bdb88ac30c379b38976e8cc61b378443"
+      },
+      "evaluation_only": {
+        "ten_ms_active_ranges": {
+          "A": [
+            [
+              297,
+              649
+            ],
+            [
+              808,
+              1160
+            ],
+            [
+              1341,
+              1540
+            ]
+          ],
+          "B": [
+            [
+              369,
+              512
+            ],
+            [
+              651,
+              1169
+            ],
+            [
+              1347,
+              1741
+            ]
+          ],
+          "C": [
+            [
+              0,
+              339
+            ],
+            [
+              470,
+              544
+            ],
+            [
+              628,
+              700
+            ],
+            [
+              874,
+              1501
+            ],
+            [
+              1535,
+              1633
+            ],
+            [
+              1705,
+              1801
+            ]
+          ]
+        },
+        "transcript": {
+          "A": "投资铜条儿 铜条儿还能投资 是吗 哦 那 那确实 我知道为啥涨 肯定得是工业铜涨吧",
+          "B": "铜条儿 铜价今年这两年涨的也是很猛 啊 嗯嗯 嗯嗯嗯 那你给彩礼钱了吗",
+          "C": "那个叫 呃 投资铜条 对 对 就是铜 铜它也分什么工业铜 什么什么投资铜 不是 没有"
+        },
+        "original_seconds_by_number_speaking": [
+          0.0,
+          8.25,
+          4.89,
+          4.87
+        ]
+      }
+    }
+  }
+}

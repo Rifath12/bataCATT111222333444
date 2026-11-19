@@ -1,0 +1,1661 @@
+{
+  "language": "Chinese (zh)",
+  "asr_model": "Systran/faster-whisper-small@536b0662742c02347bc0e980a01041f333bce120",
+  "measure": "Full exported tracks decoded once each, no VAD, no previous text, temperature 0, beam 3, CPU int8. Character edit counts include unmatched output insertions.",
+  "named_score": "fixed",
+  "anonymous_score": "best_one_permutation_per_excerpt",
+  "cases": {
+    "M8009": {
+      "recording": "R8005_M8009",
+      "start_seconds": 1561.0,
+      "duration_seconds": 20.0,
+      "annotated_three_talker_seconds": 4.25,
+      "speakers_in_ABC_order": [
+        "N_SPK8044",
+        "N_SPK8045",
+        "N_SPK8046"
+      ],
+      "reference_characters": 193,
+      "reference_characters_by_speaker": {
+        "A": 81,
+        "B": 42,
+        "C": 70
+      },
+      "normalized_reference_sha256": {
+        "A": "c695987f1db536709720a788fcdac790e76de46f234c2f82c6c99062632dff92",
+        "B": "c488a35b5929d2731919f666c9fddd433f6895f32194f31e3e6ed34c8ea0abf7",
+        "C": "4079eea3799b4408bc80668f4f0cb29be26741bbf1db62d04800f5f9b2417cad"
+      },
+      "mixture_sha256": "376118f2fab5e9fb3f0aaad7b5d36286686173b666dd26506644bbc897b88806",
+      "routes": {
+        "legacy": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "normalized_output_characters": {
+            "A": 48,
+            "B": 98,
+            "C": 135,
+            "D": 86
+          },
+          "normalized_output_sha256": {
+            "A": "08200bfaa42c5a5193a848848d71071ec01ec8d7c3e5006b5598eb340e4b65bf",
+            "B": "442691a879287494f72ecd077a051df1526f982ed4739de1dcdac79621b613cb",
+            "C": "6c56d080623e6cb17c01c1fb8390374615249b004e34d691025ce7765fbaf21d",
+            "D": "18ea51a03ed42f62f0c3ea28808f6411f3eca04c6d923a9ee47aba22d25ec7ab"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 48,
+              "B": 88,
+              "C": 131,
+              "D": 85
+            },
+            "B": {
+              "A": 47,
+              "B": 93,
+              "C": 132,
+              "D": 83
+            },
+            "C": {
+              "A": 67,
+              "B": 90,
+              "C": 131,
+              "D": 85
+            }
+          },
+          "fixed": {
+            "reference_characters": 193,
+            "edits": 358,
+            "character_error_rate": 1.854922279792746,
+            "insertions": 208,
+            "substitutions": 116,
+            "deletions": 34,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 86,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 81,
+                "hypothesis_characters": 48,
+                "edits": 48,
+                "substitutions": 13,
+                "deletions": 34,
+                "insertions": 1
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 42,
+                "hypothesis_characters": 98,
+                "edits": 93,
+                "substitutions": 37,
+                "deletions": 0,
+                "insertions": 56
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 70,
+                "hypothesis_characters": 135,
+                "edits": 131,
+                "substitutions": 66,
+                "deletions": 0,
+                "insertions": 65
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 193,
+            "edits": 350,
+            "character_error_rate": 1.8134715025906736,
+            "insertions": 174,
+            "substitutions": 176,
+            "deletions": 0,
+            "identified_tracks": [
+              "B",
+              "D",
+              "C"
+            ],
+            "unassigned_track_insertions": 48,
+            "by_speaker": {
+              "A": {
+                "track": "B",
+                "reference_characters": 81,
+                "hypothesis_characters": 98,
+                "edits": 88,
+                "substitutions": 71,
+                "deletions": 0,
+                "insertions": 17
+              },
+              "B": {
+                "track": "D",
+                "reference_characters": 42,
+                "hypothesis_characters": 86,
+                "edits": 83,
+                "substitutions": 39,
+                "deletions": 0,
+                "insertions": 44
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 70,
+                "hypothesis_characters": 135,
+                "edits": 131,
+                "substitutions": 66,
+                "deletions": 0,
+                "insertions": 65
+              }
+            }
+          }
+        },
+        "auto": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C"
+          ],
+          "normalized_output_characters": {
+            "A": 18,
+            "B": 32,
+            "C": 11
+          },
+          "normalized_output_sha256": {
+            "A": "05d2156467abb1682774ff30d47df80034d9b82ae0fabcb1824ec2f93933d7dd",
+            "B": "c05acf9a1f163fb2cc3be8f5d311b2c2acf66dc1cb937711d23648ff3cec89cd",
+            "C": "c8043a601f485b87c2471d8393bd56605403b6ac361376ef9026c2906f9f7886"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 66,
+              "B": 61,
+              "C": 75
+            },
+            "B": {
+              "A": 40,
+              "B": 40,
+              "C": 40
+            },
+            "C": {
+              "A": 67,
+              "B": 62,
+              "C": 69
+            }
+          },
+          "fixed": {
+            "reference_characters": 193,
+            "edits": 175,
+            "character_error_rate": 0.9067357512953368,
+            "insertions": 0,
+            "substitutions": 43,
+            "deletions": 132,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 81,
+                "hypothesis_characters": 18,
+                "edits": 66,
+                "substitutions": 3,
+                "deletions": 63,
+                "insertions": 0
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 42,
+                "hypothesis_characters": 32,
+                "edits": 40,
+                "substitutions": 30,
+                "deletions": 10,
+                "insertions": 0
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 70,
+                "hypothesis_characters": 11,
+                "edits": 69,
+                "substitutions": 10,
+                "deletions": 59,
+                "insertions": 0
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 193,
+            "edits": 168,
+            "character_error_rate": 0.8704663212435233,
+            "insertions": 0,
+            "substitutions": 36,
+            "deletions": 132,
+            "identified_tracks": [
+              "A",
+              "C",
+              "B"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 81,
+                "hypothesis_characters": 18,
+                "edits": 66,
+                "substitutions": 3,
+                "deletions": 63,
+                "insertions": 0
+              },
+              "B": {
+                "track": "C",
+                "reference_characters": 42,
+                "hypothesis_characters": 11,
+                "edits": 40,
+                "substitutions": 9,
+                "deletions": 31,
+                "insertions": 0
+              },
+              "C": {
+                "track": "B",
+                "reference_characters": 70,
+                "hypothesis_characters": 32,
+                "edits": 62,
+                "substitutions": 24,
+                "deletions": 38,
+                "insertions": 0
+              }
+            }
+          }
+        },
+        "forced": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C"
+          ],
+          "normalized_output_characters": {
+            "A": 29,
+            "B": 21,
+            "C": 40
+          },
+          "normalized_output_sha256": {
+            "A": "4f4f94d5811bf63ad59985115268170c7fad6a56746cf5471f08ca23388daa15",
+            "B": "cf7579f9c52d78dcebf054a772de3e4d404b95ec7f4f53e63937df5b1afa60cd",
+            "C": "2dcf066469fe67ced55dc60cfc4c4d927debe8fa9317928b0db8553b92d00553"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 72,
+              "B": 67,
+              "C": 63
+            },
+            "B": {
+              "A": 41,
+              "B": 41,
+              "C": 41
+            },
+            "C": {
+              "A": 65,
+              "B": 67,
+              "C": 64
+            }
+          },
+          "fixed": {
+            "reference_characters": 193,
+            "edits": 177,
+            "character_error_rate": 0.917098445595855,
+            "insertions": 0,
+            "substitutions": 74,
+            "deletions": 103,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 81,
+                "hypothesis_characters": 29,
+                "edits": 72,
+                "substitutions": 20,
+                "deletions": 52,
+                "insertions": 0
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 42,
+                "hypothesis_characters": 21,
+                "edits": 41,
+                "substitutions": 20,
+                "deletions": 21,
+                "insertions": 0
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 70,
+                "hypothesis_characters": 40,
+                "edits": 64,
+                "substitutions": 34,
+                "deletions": 30,
+                "insertions": 0
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 193,
+            "edits": 169,
+            "character_error_rate": 0.8756476683937824,
+            "insertions": 0,
+            "substitutions": 66,
+            "deletions": 103,
+            "identified_tracks": [
+              "C",
+              "B",
+              "A"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "C",
+                "reference_characters": 81,
+                "hypothesis_characters": 40,
+                "edits": 63,
+                "substitutions": 22,
+                "deletions": 41,
+                "insertions": 0
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 42,
+                "hypothesis_characters": 21,
+                "edits": 41,
+                "substitutions": 20,
+                "deletions": 21,
+                "insertions": 0
+              },
+              "C": {
+                "track": "A",
+                "reference_characters": 70,
+                "hypothesis_characters": 29,
+                "edits": 65,
+                "substitutions": 24,
+                "deletions": 41,
+                "insertions": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "M8014": {
+      "recording": "R8008_M8014",
+      "start_seconds": 1124.6,
+      "duration_seconds": 60.0,
+      "annotated_three_talker_seconds": 1.15,
+      "speakers_in_ABC_order": [
+        "N_SPK8051",
+        "N_SPK8052",
+        "N_SPK8053"
+      ],
+      "reference_characters": 327,
+      "reference_characters_by_speaker": {
+        "A": 234,
+        "B": 30,
+        "C": 63
+      },
+      "normalized_reference_sha256": {
+        "A": "8bbbea91fb3f01569a2be2a0b241555b53c5321c166cd28d944ac9812000c865",
+        "B": "8bff7e07ed1c25522358c07b4d47b7d51f5718c3c03356984ee1108484843a7f",
+        "C": "dbecaf2935f84d3feb95dd1d29f080d284d90fd7f9a433ee083f90a9323a271e"
+      },
+      "mixture_sha256": "341d2ca13004d1810c850964308dcb6110b5dc37a83ac85e6dff695bb12bd9ca",
+      "routes": {
+        "legacy": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "normalized_output_characters": {
+            "A": 235,
+            "B": 191,
+            "C": 227,
+            "D": 140
+          },
+          "normalized_output_sha256": {
+            "A": "e8871775953e823cd4e03a67149d1490b46d854d15f6486f3aad81996f8a91c0",
+            "B": "8894d56428aa11abfc52fb2a1bd3266187e327cc366bb7564ff4635c931bfcb9",
+            "C": "b5796f0ac5bfe5d93b4be41ca664c99016fdf9971911608663c3674fb0cfe605",
+            "D": "fb108b34b04b601be2c88a070367dc838db9ff4e78b7db5f5f7adafc6ecbca7d"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 181,
+              "B": 163,
+              "C": 164,
+              "D": 220
+            },
+            "B": {
+              "A": 226,
+              "B": 182,
+              "C": 216,
+              "D": 137
+            },
+            "C": {
+              "A": 206,
+              "B": 172,
+              "C": 203,
+              "D": 135
+            }
+          },
+          "fixed": {
+            "reference_characters": 327,
+            "edits": 706,
+            "character_error_rate": 2.159021406727829,
+            "insertions": 490,
+            "substitutions": 192,
+            "deletions": 24,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 140,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 234,
+                "hypothesis_characters": 235,
+                "edits": 181,
+                "substitutions": 136,
+                "deletions": 22,
+                "insertions": 23
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 191,
+                "edits": 182,
+                "substitutions": 21,
+                "deletions": 0,
+                "insertions": 161
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 63,
+                "hypothesis_characters": 227,
+                "edits": 203,
+                "substitutions": 35,
+                "deletions": 2,
+                "insertions": 166
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 327,
+            "edits": 692,
+            "character_error_rate": 2.1162079510703364,
+            "insertions": 513,
+            "substitutions": 132,
+            "deletions": 47,
+            "identified_tracks": [
+              "C",
+              "B",
+              "A"
+            ],
+            "unassigned_track_insertions": 140,
+            "by_speaker": {
+              "A": {
+                "track": "C",
+                "reference_characters": 234,
+                "hypothesis_characters": 227,
+                "edits": 164,
+                "substitutions": 81,
+                "deletions": 45,
+                "insertions": 38
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 191,
+                "edits": 182,
+                "substitutions": 21,
+                "deletions": 0,
+                "insertions": 161
+              },
+              "C": {
+                "track": "A",
+                "reference_characters": 63,
+                "hypothesis_characters": 235,
+                "edits": 206,
+                "substitutions": 30,
+                "deletions": 2,
+                "insertions": 174
+              }
+            }
+          }
+        },
+        "auto": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C"
+          ],
+          "normalized_output_characters": {
+            "A": 184,
+            "B": 124,
+            "C": 223
+          },
+          "normalized_output_sha256": {
+            "A": "f596a71a955426c8be9500a07ddc7abaa9d1fee8c8d8b59651e80d7cb3c2ba41",
+            "B": "158432ffd98bd623ae14a4f92b0c66836a8fefa2fe6d2e651e1e40dec4b5d6ec",
+            "C": "3782da8e15ca944630338fd3328f3295f43139049fe330fdd5fc85a7c0af9ef7"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 173,
+              "B": 207,
+              "C": 228
+            },
+            "B": {
+              "A": 176,
+              "B": 117,
+              "C": 222
+            },
+            "C": {
+              "A": 172,
+              "B": 108,
+              "C": 220
+            }
+          },
+          "fixed": {
+            "reference_characters": 327,
+            "edits": 510,
+            "character_error_rate": 1.5596330275229358,
+            "insertions": 277,
+            "substitutions": 160,
+            "deletions": 73,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 234,
+                "hypothesis_characters": 184,
+                "edits": 173,
+                "substitutions": 77,
+                "deletions": 73,
+                "insertions": 23
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 124,
+                "edits": 117,
+                "substitutions": 23,
+                "deletions": 0,
+                "insertions": 94
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 63,
+                "hypothesis_characters": 223,
+                "edits": 220,
+                "substitutions": 60,
+                "deletions": 0,
+                "insertions": 160
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 327,
+            "edits": 503,
+            "character_error_rate": 1.5382262996941896,
+            "insertions": 277,
+            "substitutions": 153,
+            "deletions": 73,
+            "identified_tracks": [
+              "A",
+              "C",
+              "B"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 234,
+                "hypothesis_characters": 184,
+                "edits": 173,
+                "substitutions": 77,
+                "deletions": 73,
+                "insertions": 23
+              },
+              "B": {
+                "track": "C",
+                "reference_characters": 30,
+                "hypothesis_characters": 223,
+                "edits": 222,
+                "substitutions": 29,
+                "deletions": 0,
+                "insertions": 193
+              },
+              "C": {
+                "track": "B",
+                "reference_characters": 63,
+                "hypothesis_characters": 124,
+                "edits": 108,
+                "substitutions": 47,
+                "deletions": 0,
+                "insertions": 61
+              }
+            }
+          }
+        },
+        "forced": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C"
+          ],
+          "normalized_output_characters": {
+            "A": 228,
+            "B": 242,
+            "C": 226
+          },
+          "normalized_output_sha256": {
+            "A": "fc7fc603bebd0fb6e14a920c88f42f87e93930dca2591f86ff865a639de26523",
+            "B": "6c42d3b7f48606d8f4912440d761f1eb53bc8e906bddfb6d838d320c0411bb59",
+            "C": "f8cc027b6e47a9c43ded83467b8596b59beb444956fc8fb3fda1a945f7af5946"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 184,
+              "B": 163,
+              "C": 176
+            },
+            "B": {
+              "A": 216,
+              "B": 232,
+              "C": 218
+            },
+            "C": {
+              "A": 208,
+              "B": 218,
+              "C": 208
+            }
+          },
+          "fixed": {
+            "reference_characters": 327,
+            "edits": 624,
+            "character_error_rate": 1.908256880733945,
+            "insertions": 407,
+            "substitutions": 179,
+            "deletions": 38,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 234,
+                "hypothesis_characters": 228,
+                "edits": 184,
+                "substitutions": 120,
+                "deletions": 35,
+                "insertions": 29
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 242,
+                "edits": 232,
+                "substitutions": 20,
+                "deletions": 0,
+                "insertions": 212
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 63,
+                "hypothesis_characters": 226,
+                "edits": 208,
+                "substitutions": 39,
+                "deletions": 3,
+                "insertions": 166
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 327,
+            "edits": 587,
+            "character_error_rate": 1.7951070336391437,
+            "insertions": 388,
+            "substitutions": 180,
+            "deletions": 19,
+            "identified_tracks": [
+              "B",
+              "A",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "B",
+                "reference_characters": 234,
+                "hypothesis_characters": 242,
+                "edits": 163,
+                "substitutions": 123,
+                "deletions": 16,
+                "insertions": 24
+              },
+              "B": {
+                "track": "A",
+                "reference_characters": 30,
+                "hypothesis_characters": 228,
+                "edits": 216,
+                "substitutions": 18,
+                "deletions": 0,
+                "insertions": 198
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 63,
+                "hypothesis_characters": 226,
+                "edits": 208,
+                "substitutions": 39,
+                "deletions": 3,
+                "insertions": 166
+              }
+            }
+          }
+        }
+      }
+    },
+    "REAL-T 01": {
+      "recording": "EVAL2-Meeting-CN-260413-2-H2",
+      "start_seconds": 0.01,
+      "duration_seconds": 15.66,
+      "annotated_three_talker_seconds": 4.97,
+      "speakers_in_ABC_order": [
+        "P002",
+        "P006",
+        "P007"
+      ],
+      "reference_characters": 125,
+      "reference_characters_by_speaker": {
+        "A": 61,
+        "B": 38,
+        "C": 26
+      },
+      "normalized_reference_sha256": {
+        "A": "8b97e45876620f4a4a41dbca436863c1ba46ad466545cf7921cb87282305df0f",
+        "B": "84e1409637c7684f4900aa2b2f548d7fd7a3f47bcea64d72f01e0290547ec2e8",
+        "C": "bff701225c2fc6f4447672404d8d4f2bffe269822c75d94d47f72fe6494c7817"
+      },
+      "mixture_sha256": "3ae76cd2b2e5afa061bd6d6637024557968191980ee47269c45f5e5c0c9b4f10",
+      "routes": {
+        "legacy": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "normalized_output_characters": {
+            "A": 56,
+            "B": 68,
+            "C": 27,
+            "D": 154
+          },
+          "normalized_output_sha256": {
+            "A": "8fdefa6583f0fea5c642f54f673c8298d063ddc8916f476f6d01bb692f3c7df1",
+            "B": "b1de7b03efd3e1028cebdc7800329268cbe0fdcb8851c940e501fa6d6265697e",
+            "C": "0d678ddcca13517d54aceed376eda926abc0a8f4cdee5e41f5149f99f0c42ea9",
+            "D": "97f0762771c92e14a763ceee4d76a44fe88ea2b3ceeb8d8a769eb7e8ff395916"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 55,
+              "B": 58,
+              "C": 54,
+              "D": 149
+            },
+            "B": {
+              "A": 52,
+              "B": 61,
+              "C": 34,
+              "D": 148
+            },
+            "C": {
+              "A": 54,
+              "B": 64,
+              "C": 26,
+              "D": 154
+            }
+          },
+          "fixed": {
+            "reference_characters": 125,
+            "edits": 296,
+            "character_error_rate": 2.368,
+            "insertions": 187,
+            "substitutions": 102,
+            "deletions": 7,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 154,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 61,
+                "hypothesis_characters": 56,
+                "edits": 55,
+                "substitutions": 50,
+                "deletions": 5,
+                "insertions": 0
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 38,
+                "hypothesis_characters": 68,
+                "edits": 61,
+                "substitutions": 31,
+                "deletions": 0,
+                "insertions": 30
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 26,
+                "hypothesis_characters": 27,
+                "edits": 26,
+                "substitutions": 21,
+                "deletions": 2,
+                "insertions": 3
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 125,
+            "edits": 287,
+            "character_error_rate": 2.296,
+            "insertions": 180,
+            "substitutions": 107,
+            "deletions": 0,
+            "identified_tracks": [
+              "B",
+              "D",
+              "A"
+            ],
+            "unassigned_track_insertions": 27,
+            "by_speaker": {
+              "A": {
+                "track": "B",
+                "reference_characters": 61,
+                "hypothesis_characters": 68,
+                "edits": 58,
+                "substitutions": 51,
+                "deletions": 0,
+                "insertions": 7
+              },
+              "B": {
+                "track": "D",
+                "reference_characters": 38,
+                "hypothesis_characters": 154,
+                "edits": 148,
+                "substitutions": 32,
+                "deletions": 0,
+                "insertions": 116
+              },
+              "C": {
+                "track": "A",
+                "reference_characters": 26,
+                "hypothesis_characters": 56,
+                "edits": 54,
+                "substitutions": 24,
+                "deletions": 0,
+                "insertions": 30
+              }
+            }
+          }
+        },
+        "auto": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C"
+          ],
+          "normalized_output_characters": {
+            "A": 97,
+            "B": 0,
+            "C": 42
+          },
+          "normalized_output_sha256": {
+            "A": "03b84bce66bf34be619a7204a73605b1cefbc57335f570e21e2f038b456f4acc",
+            "B": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "C": "9de45c9806159fc6261356f6f487ea59c72e58a792b0472bc77e070fa9cd0f9a"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 90,
+              "B": 61,
+              "C": 58
+            },
+            "B": {
+              "A": 96,
+              "B": 38,
+              "C": 39
+            },
+            "C": {
+              "A": 95,
+              "B": 26,
+              "C": 41
+            }
+          },
+          "fixed": {
+            "reference_characters": 125,
+            "edits": 169,
+            "character_error_rate": 1.352,
+            "insertions": 52,
+            "substitutions": 79,
+            "deletions": 38,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 61,
+                "hypothesis_characters": 97,
+                "edits": 90,
+                "substitutions": 54,
+                "deletions": 0,
+                "insertions": 36
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 38,
+                "hypothesis_characters": 0,
+                "edits": 38,
+                "substitutions": 0,
+                "deletions": 38,
+                "insertions": 0
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 26,
+                "hypothesis_characters": 42,
+                "edits": 41,
+                "substitutions": 25,
+                "deletions": 0,
+                "insertions": 16
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 125,
+            "edits": 155,
+            "character_error_rate": 1.24,
+            "insertions": 40,
+            "substitutions": 89,
+            "deletions": 26,
+            "identified_tracks": [
+              "A",
+              "C",
+              "B"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 61,
+                "hypothesis_characters": 97,
+                "edits": 90,
+                "substitutions": 54,
+                "deletions": 0,
+                "insertions": 36
+              },
+              "B": {
+                "track": "C",
+                "reference_characters": 38,
+                "hypothesis_characters": 42,
+                "edits": 39,
+                "substitutions": 35,
+                "deletions": 0,
+                "insertions": 4
+              },
+              "C": {
+                "track": "B",
+                "reference_characters": 26,
+                "hypothesis_characters": 0,
+                "edits": 26,
+                "substitutions": 0,
+                "deletions": 26,
+                "insertions": 0
+              }
+            }
+          }
+        },
+        "forced": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C"
+          ],
+          "normalized_output_characters": {
+            "A": 138,
+            "B": 45,
+            "C": 163
+          },
+          "normalized_output_sha256": {
+            "A": "615ebd3179a267e932761f6e5e07b5aee5b9723a662c712cf0cd79d337a72280",
+            "B": "5a793ae9d73781ada848a651e298a52b02dab3b419411c894bd710c78fd86a75",
+            "C": "aad4b36c05d47ad0ff920b18cbae1f0a941b17365aa1e8c94880f43a6a037546"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 134,
+              "B": 52,
+              "C": 162
+            },
+            "B": {
+              "A": 133,
+              "B": 43,
+              "C": 159
+            },
+            "C": {
+              "A": 134,
+              "B": 41,
+              "C": 163
+            }
+          },
+          "fixed": {
+            "reference_characters": 125,
+            "edits": 340,
+            "character_error_rate": 2.72,
+            "insertions": 221,
+            "substitutions": 119,
+            "deletions": 0,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 61,
+                "hypothesis_characters": 138,
+                "edits": 134,
+                "substitutions": 57,
+                "deletions": 0,
+                "insertions": 77
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 38,
+                "hypothesis_characters": 45,
+                "edits": 43,
+                "substitutions": 36,
+                "deletions": 0,
+                "insertions": 7
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 26,
+                "hypothesis_characters": 163,
+                "edits": 163,
+                "substitutions": 26,
+                "deletions": 0,
+                "insertions": 137
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 125,
+            "edits": 334,
+            "character_error_rate": 2.672,
+            "insertions": 221,
+            "substitutions": 113,
+            "deletions": 0,
+            "identified_tracks": [
+              "A",
+              "C",
+              "B"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 61,
+                "hypothesis_characters": 138,
+                "edits": 134,
+                "substitutions": 57,
+                "deletions": 0,
+                "insertions": 77
+              },
+              "B": {
+                "track": "C",
+                "reference_characters": 38,
+                "hypothesis_characters": 163,
+                "edits": 159,
+                "substitutions": 34,
+                "deletions": 0,
+                "insertions": 125
+              },
+              "C": {
+                "track": "B",
+                "reference_characters": 26,
+                "hypothesis_characters": 45,
+                "edits": 41,
+                "substitutions": 22,
+                "deletions": 0,
+                "insertions": 19
+              }
+            }
+          }
+        }
+      }
+    },
+    "REAL-T 03": {
+      "recording": "EVAL2-Meeting-CN-260413-2-H2",
+      "start_seconds": 219.57,
+      "duration_seconds": 18.01,
+      "annotated_three_talker_seconds": 4.87,
+      "speakers_in_ABC_order": [
+        "P002",
+        "P006",
+        "P007"
+      ],
+      "reference_characters": 97,
+      "reference_characters_by_speaker": {
+        "A": 34,
+        "B": 30,
+        "C": 33
+      },
+      "normalized_reference_sha256": {
+        "A": "a1ee6cb6f6e849717765d2734f91b28ff72c87897950de5145ddddd0f6746892",
+        "B": "c91f98d434eec1eebf8b5b3a51cc066183c5351dfaa9620ac30d0a276fb2444f",
+        "C": "e5123fb9a067d773bf0e36948c54c058205a0002701bfae2703a13789e76a4cb"
+      },
+      "mixture_sha256": "1e0a4bb786ec80ef11f5243c630b050cf19c865d51df34829984dfccd4561d26",
+      "routes": {
+        "legacy": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "normalized_output_characters": {
+            "A": 38,
+            "B": 20,
+            "C": 0,
+            "D": 143
+          },
+          "normalized_output_sha256": {
+            "A": "8072b553b77f17fa5e42e00ad3a6097e7d7effb19ba5e588896807afb8b60ffe",
+            "B": "34619d734b1c9af5beffcced378b9f9eace41ca80a1be1aa971ee3c162b8bf1e",
+            "C": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "D": "d6a8d8a6754d25ed59eb10234df94df521a76715c5fd8f07c1f6f8fb2ccac6d9"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 35,
+              "B": 31,
+              "C": 34,
+              "D": 140
+            },
+            "B": {
+              "A": 37,
+              "B": 30,
+              "C": 30,
+              "D": 141
+            },
+            "C": {
+              "A": 26,
+              "B": 22,
+              "C": 33,
+              "D": 141
+            }
+          },
+          "fixed": {
+            "reference_characters": 97,
+            "edits": 241,
+            "character_error_rate": 2.484536082474227,
+            "insertions": 150,
+            "substitutions": 45,
+            "deletions": 46,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 143,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 34,
+                "hypothesis_characters": 38,
+                "edits": 35,
+                "substitutions": 25,
+                "deletions": 3,
+                "insertions": 7
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 20,
+                "edits": 30,
+                "substitutions": 20,
+                "deletions": 10,
+                "insertions": 0
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 33,
+                "hypothesis_characters": 0,
+                "edits": 33,
+                "substitutions": 0,
+                "deletions": 33,
+                "insertions": 0
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 97,
+            "edits": 196,
+            "character_error_rate": 2.020618556701031,
+            "insertions": 114,
+            "substitutions": 72,
+            "deletions": 10,
+            "identified_tracks": [
+              "D",
+              "B",
+              "A"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "D",
+                "reference_characters": 34,
+                "hypothesis_characters": 143,
+                "edits": 140,
+                "substitutions": 31,
+                "deletions": 0,
+                "insertions": 109
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 20,
+                "edits": 30,
+                "substitutions": 20,
+                "deletions": 10,
+                "insertions": 0
+              },
+              "C": {
+                "track": "A",
+                "reference_characters": 33,
+                "hypothesis_characters": 38,
+                "edits": 26,
+                "substitutions": 21,
+                "deletions": 0,
+                "insertions": 5
+              }
+            }
+          }
+        },
+        "auto": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C"
+          ],
+          "normalized_output_characters": {
+            "A": 6,
+            "B": 106,
+            "C": 34
+          },
+          "normalized_output_sha256": {
+            "A": "40451765f5193febfba7922e98dbe75b4fcd62a90700e80d04843787506743f2",
+            "B": "89c2e8a70c1f75e51ad781c86afce51c69f3b4ab5371400328339b959031f06c",
+            "C": "e2e712a0f599872c22e2d3fa590d76548310c268c224c1896bcc66a1408478fd"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 31,
+              "B": 103,
+              "C": 32
+            },
+            "B": {
+              "A": 28,
+              "B": 103,
+              "C": 34
+            },
+            "C": {
+              "A": 31,
+              "B": 94,
+              "C": 30
+            }
+          },
+          "fixed": {
+            "reference_characters": 97,
+            "edits": 164,
+            "character_error_rate": 1.690721649484536,
+            "insertions": 77,
+            "substitutions": 59,
+            "deletions": 28,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 34,
+                "hypothesis_characters": 6,
+                "edits": 31,
+                "substitutions": 3,
+                "deletions": 28,
+                "insertions": 0
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 106,
+                "edits": 103,
+                "substitutions": 27,
+                "deletions": 0,
+                "insertions": 76
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 33,
+                "hypothesis_characters": 34,
+                "edits": 30,
+                "substitutions": 29,
+                "deletions": 0,
+                "insertions": 1
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 97,
+            "edits": 154,
+            "character_error_rate": 1.5876288659793814,
+            "insertions": 73,
+            "substitutions": 57,
+            "deletions": 24,
+            "identified_tracks": [
+              "C",
+              "A",
+              "B"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "C",
+                "reference_characters": 34,
+                "hypothesis_characters": 34,
+                "edits": 32,
+                "substitutions": 32,
+                "deletions": 0,
+                "insertions": 0
+              },
+              "B": {
+                "track": "A",
+                "reference_characters": 30,
+                "hypothesis_characters": 6,
+                "edits": 28,
+                "substitutions": 4,
+                "deletions": 24,
+                "insertions": 0
+              },
+              "C": {
+                "track": "B",
+                "reference_characters": 33,
+                "hypothesis_characters": 106,
+                "edits": 94,
+                "substitutions": 21,
+                "deletions": 0,
+                "insertions": 73
+              }
+            }
+          }
+        },
+        "forced": {
+          "export_tracks": [
+            "A",
+            "B",
+            "C"
+          ],
+          "normalized_output_characters": {
+            "A": 39,
+            "B": 25,
+            "C": 113
+          },
+          "normalized_output_sha256": {
+            "A": "788cb117629166dbdeb252a785c12f32edd7704146e9f4cbf9774681b7c396fb",
+            "B": "d51ffe1aa488aa25c682ba7db75587908641fbc43b9ba6717706e7ff431ad5b0",
+            "C": "e1a80503c56ceaa504092077c45dc34d62daec9b6bd7eafe6394fbd886899fd7"
+          },
+          "distance_by_reference_and_track": {
+            "A": {
+              "A": 34,
+              "B": 32,
+              "C": 109
+            },
+            "B": {
+              "A": 38,
+              "B": 30,
+              "C": 112
+            },
+            "C": {
+              "A": 24,
+              "B": 26,
+              "C": 105
+            }
+          },
+          "fixed": {
+            "reference_characters": 97,
+            "edits": 169,
+            "character_error_rate": 1.7422680412371134,
+            "insertions": 86,
+            "substitutions": 77,
+            "deletions": 6,
+            "identified_tracks": [
+              "A",
+              "B",
+              "C"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "A",
+                "reference_characters": 34,
+                "hypothesis_characters": 39,
+                "edits": 34,
+                "substitutions": 27,
+                "deletions": 1,
+                "insertions": 6
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 25,
+                "edits": 30,
+                "substitutions": 25,
+                "deletions": 5,
+                "insertions": 0
+              },
+              "C": {
+                "track": "C",
+                "reference_characters": 33,
+                "hypothesis_characters": 113,
+                "edits": 105,
+                "substitutions": 25,
+                "deletions": 0,
+                "insertions": 80
+              }
+            }
+          },
+          "best_one_permutation_per_excerpt": {
+            "reference_characters": 97,
+            "edits": 163,
+            "character_error_rate": 1.6804123711340206,
+            "insertions": 86,
+            "substitutions": 71,
+            "deletions": 6,
+            "identified_tracks": [
+              "C",
+              "B",
+              "A"
+            ],
+            "unassigned_track_insertions": 0,
+            "by_speaker": {
+              "A": {
+                "track": "C",
+                "reference_characters": 34,
+                "hypothesis_characters": 113,
+                "edits": 109,
+                "substitutions": 30,
+                "deletions": 0,
+                "insertions": 79
+              },
+              "B": {
+                "track": "B",
+                "reference_characters": 30,
+                "hypothesis_characters": 25,
+                "edits": 30,
+                "substitutions": 25,
+                "deletions": 5,
+                "insertions": 0
+              },
+              "C": {
+                "track": "A",
+                "reference_characters": 33,
+                "hypothesis_characters": 39,
+                "edits": 24,
+                "substitutions": 16,
+                "deletions": 1,
+                "insertions": 7
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "micro_totals": {
+    "legacy": {
+      "fixed": {
+        "edits": 1601,
+        "substitutions": 455,
+        "deletions": 111,
+        "insertions": 1035,
+        "reference_characters": 742,
+        "character_error_rate": 2.1576819407008085
+      },
+      "best_one_permutation_per_excerpt": {
+        "edits": 1525,
+        "substitutions": 487,
+        "deletions": 57,
+        "insertions": 981,
+        "reference_characters": 742,
+        "character_error_rate": 2.055256064690027
+      }
+    },
+    "auto": {
+      "fixed": {
+        "edits": 1018,
+        "substitutions": 341,
+        "deletions": 271,
+        "insertions": 406,
+        "reference_characters": 742,
+        "character_error_rate": 1.371967654986523
+      },
+      "best_one_permutation_per_excerpt": {
+        "edits": 980,
+        "substitutions": 335,
+        "deletions": 255,
+        "insertions": 390,
+        "reference_characters": 742,
+        "character_error_rate": 1.320754716981132
+      }
+    },
+    "forced": {
+      "fixed": {
+        "edits": 1310,
+        "substitutions": 449,
+        "deletions": 147,
+        "insertions": 714,
+        "reference_characters": 742,
+        "character_error_rate": 1.7654986522911051
+      },
+      "best_one_permutation_per_excerpt": {
+        "edits": 1253,
+        "substitutions": 430,
+        "deletions": 128,
+        "insertions": 695,
+        "reference_characters": 742,
+        "character_error_rate": 1.6886792452830188
+      }
+    }
+  },
+  "real_t_one_permutation_both_excerpts": {
+    "legacy": {
+      "identified_tracks": [
+        "B",
+        "D",
+        "A"
+      ],
+      "reference_characters": 222,
+      "edits": 485,
+      "character_error_rate": 2.184684684684685
+    },
+    "auto": {
+      "identified_tracks": [
+        "A",
+        "C",
+        "B"
+      ],
+      "reference_characters": 222,
+      "edits": 314,
+      "character_error_rate": 1.4144144144144144
+    },
+    "forced": {
+      "identified_tracks": [
+        "C",
+        "B",
+        "A"
+      ],
+      "reference_characters": 222,
+      "edits": 502,
+      "character_error_rate": 2.2612612612612613
+    }
+  }
+}

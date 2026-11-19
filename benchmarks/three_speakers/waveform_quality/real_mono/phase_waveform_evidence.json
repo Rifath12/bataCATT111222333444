@@ -1,0 +1,485 @@
+{
+  "development_room": "R8004_M8006",
+  "confirmation_room": "R8005_M8007",
+  "protocol": "Fixed A/B/C measured from reloaded PCM_16 speaker WAVs. Only the listed development room compared alternate masks. Natural 100 ms overlap indicators measure output energy relative to the original mixture and can include other voices.",
+  "natural": [
+    {
+      "room": "M8009",
+      "mode": "enrolled",
+      "corpus": "AliMeeting",
+      "before": {
+        "solo_blocks_correct_loudest": 27,
+        "eligible_solo_blocks": 37,
+        "eligible_double_blocks": 87,
+        "eligible_triple_blocks": 33,
+        "solo_intended_to_all_other_output_energy_db": 0.9344776848811015,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 0,
+          "double_blocks_with_both_active_above_floor": 6,
+          "false_active_outputs_on_solo_blocks": 10
+        }
+      },
+      "restored": {
+        "solo_blocks_correct_loudest": 27,
+        "eligible_solo_blocks": 37,
+        "eligible_double_blocks": 87,
+        "eligible_triple_blocks": 33,
+        "solo_intended_to_all_other_output_energy_db": 1.863559625009543,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 1,
+          "double_blocks_with_both_active_above_floor": 6,
+          "false_active_outputs_on_solo_blocks": 14
+        }
+      }
+    },
+    {
+      "room": "M8014",
+      "mode": "enrolled",
+      "corpus": "AliMeeting",
+      "before": {
+        "solo_blocks_correct_loudest": 280,
+        "eligible_solo_blocks": 425,
+        "eligible_double_blocks": 34,
+        "eligible_triple_blocks": 9,
+        "solo_intended_to_all_other_output_energy_db": 6.630134933838874,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 0,
+          "double_blocks_with_both_active_above_floor": 4,
+          "false_active_outputs_on_solo_blocks": 220
+        }
+      },
+      "restored": {
+        "solo_blocks_correct_loudest": 283,
+        "eligible_solo_blocks": 425,
+        "eligible_double_blocks": 34,
+        "eligible_triple_blocks": 9,
+        "solo_intended_to_all_other_output_energy_db": 6.605061845583425,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 0,
+          "double_blocks_with_both_active_above_floor": 9,
+          "false_active_outputs_on_solo_blocks": 240
+        }
+      }
+    },
+    {
+      "room": "M8009",
+      "mode": "forced",
+      "corpus": "AliMeeting",
+      "before": {
+        "solo_blocks_correct_loudest": 10,
+        "eligible_solo_blocks": 37,
+        "eligible_double_blocks": 87,
+        "eligible_triple_blocks": 33,
+        "solo_intended_to_all_other_output_energy_db": -3.0011632231123775,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 15,
+          "double_blocks_with_both_active_above_floor": 41,
+          "false_active_outputs_on_solo_blocks": 38
+        }
+      },
+      "restored": {
+        "solo_blocks_correct_loudest": 11,
+        "eligible_solo_blocks": 37,
+        "eligible_double_blocks": 87,
+        "eligible_triple_blocks": 33,
+        "solo_intended_to_all_other_output_energy_db": -2.790675649462147,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 17,
+          "double_blocks_with_both_active_above_floor": 41,
+          "false_active_outputs_on_solo_blocks": 41
+        }
+      }
+    },
+    {
+      "room": "M8014",
+      "mode": "forced",
+      "corpus": "AliMeeting",
+      "before": {
+        "solo_blocks_correct_loudest": 212,
+        "eligible_solo_blocks": 425,
+        "eligible_double_blocks": 34,
+        "eligible_triple_blocks": 9,
+        "solo_intended_to_all_other_output_energy_db": 1.7305441221411613,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 0,
+          "double_blocks_with_both_active_above_floor": 22,
+          "false_active_outputs_on_solo_blocks": 538
+        }
+      },
+      "restored": {
+        "solo_blocks_correct_loudest": 220,
+        "eligible_solo_blocks": 425,
+        "eligible_double_blocks": 34,
+        "eligible_triple_blocks": 9,
+        "solo_intended_to_all_other_output_energy_db": 2.5245618246895827,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 3,
+          "double_blocks_with_both_active_above_floor": 27,
+          "false_active_outputs_on_solo_blocks": 604
+        }
+      }
+    },
+    {
+      "room": "clip_01",
+      "mode": "auto",
+      "corpus": "REAL-T",
+      "before": {
+        "solo_blocks_correct_loudest": 0,
+        "eligible_solo_blocks": 20,
+        "eligible_double_blocks": 80,
+        "eligible_triple_blocks": 45,
+        "solo_intended_to_all_other_output_energy_db": -124.54965506255826,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 0,
+          "double_blocks_with_both_active_above_floor": 4,
+          "false_active_outputs_on_solo_blocks": 20
+        }
+      },
+      "restored": {
+        "solo_blocks_correct_loudest": 0,
+        "eligible_solo_blocks": 20,
+        "eligible_double_blocks": 80,
+        "eligible_triple_blocks": 45,
+        "solo_intended_to_all_other_output_energy_db": -124.54866585356942,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 0,
+          "double_blocks_with_both_active_above_floor": 4,
+          "false_active_outputs_on_solo_blocks": 20
+        }
+      }
+    },
+    {
+      "room": "clip_03",
+      "mode": "auto",
+      "corpus": "REAL-T",
+      "before": {
+        "solo_blocks_correct_loudest": 41,
+        "eligible_solo_blocks": 75,
+        "eligible_double_blocks": 36,
+        "eligible_triple_blocks": 47,
+        "solo_intended_to_all_other_output_energy_db": -0.3598460182748894,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 9,
+          "double_blocks_with_both_active_above_floor": 1,
+          "false_active_outputs_on_solo_blocks": 63
+        }
+      },
+      "restored": {
+        "solo_blocks_correct_loudest": 39,
+        "eligible_solo_blocks": 75,
+        "eligible_double_blocks": 36,
+        "eligible_triple_blocks": 47,
+        "solo_intended_to_all_other_output_energy_db": -0.4310922966127909,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 9,
+          "double_blocks_with_both_active_above_floor": 1,
+          "false_active_outputs_on_solo_blocks": 66
+        }
+      }
+    },
+    {
+      "room": "clip_01",
+      "mode": "enrolled_forced",
+      "corpus": "REAL-T",
+      "before": {
+        "solo_blocks_correct_loudest": 18,
+        "eligible_solo_blocks": 20,
+        "eligible_double_blocks": 80,
+        "eligible_triple_blocks": 45,
+        "solo_intended_to_all_other_output_energy_db": 3.871576493771957,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 11,
+          "double_blocks_with_both_active_above_floor": 43,
+          "false_active_outputs_on_solo_blocks": 31
+        }
+      },
+      "restored": {
+        "solo_blocks_correct_loudest": 18,
+        "eligible_solo_blocks": 20,
+        "eligible_double_blocks": 80,
+        "eligible_triple_blocks": 45,
+        "solo_intended_to_all_other_output_energy_db": 3.5970312339323947,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 19,
+          "double_blocks_with_both_active_above_floor": 48,
+          "false_active_outputs_on_solo_blocks": 38
+        }
+      }
+    },
+    {
+      "room": "clip_03",
+      "mode": "enrolled_forced",
+      "corpus": "REAL-T",
+      "before": {
+        "solo_blocks_correct_loudest": 33,
+        "eligible_solo_blocks": 75,
+        "eligible_double_blocks": 36,
+        "eligible_triple_blocks": 47,
+        "solo_intended_to_all_other_output_energy_db": -2.8602801538196907,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 22,
+          "double_blocks_with_both_active_above_floor": 26,
+          "false_active_outputs_on_solo_blocks": 122
+        }
+      },
+      "restored": {
+        "solo_blocks_correct_loudest": 32,
+        "eligible_solo_blocks": 75,
+        "eligible_double_blocks": 36,
+        "eligible_triple_blocks": 47,
+        "solo_intended_to_all_other_output_energy_db": -2.894318937401434,
+        "floor_minus18_db": {
+          "triple_blocks_with_three_outputs_above_floor": 24,
+          "double_blocks_with_both_active_above_floor": 33,
+          "false_active_outputs_on_solo_blocks": 140
+        }
+      }
+    }
+  ],
+  "known_sources": [
+    {
+      "room": "R8004_M8006",
+      "mode": "enrolled",
+      "corpus": "known",
+      "before": {
+        "1": {
+          "events": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 79.6767,
+          "mean_weakest_retention_percent": 58.5057
+        },
+        "2": {
+          "events": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 18.7021,
+          "mean_weakest_retention_percent": 22.4823
+        },
+        "3": {
+          "events": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 10.6528,
+          "mean_weakest_retention_percent": 30.9496
+        },
+        "spill_db": {
+          "A": -4.033673573534071,
+          "B": -10.131283646619476,
+          "C": -5.058100901408179
+        }
+      },
+      "restored": {
+        "1": {
+          "events": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 85.0391,
+          "mean_weakest_retention_percent": 64.8642
+        },
+        "2": {
+          "events": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 22.9753,
+          "mean_weakest_retention_percent": 30.3532
+        },
+        "3": {
+          "events": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 11.635,
+          "mean_weakest_retention_percent": 35.6994
+        },
+        "spill_db": {
+          "A": -3.9091839569160913,
+          "B": -10.353534364106114,
+          "C": -5.409883595843273
+        }
+      }
+    },
+    {
+      "room": "R8004_M8006",
+      "mode": "forced",
+      "corpus": "known",
+      "before": {
+        "1": {
+          "events": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 60.7661,
+          "mean_weakest_retention_percent": 28.5668
+        },
+        "2": {
+          "events": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 17.3704,
+          "mean_weakest_retention_percent": 17.4409
+        },
+        "3": {
+          "events": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 10.6528,
+          "mean_weakest_retention_percent": 30.9496
+        },
+        "spill_db": {
+          "A": -2.129981285541124,
+          "B": -7.457993253931518,
+          "C": -5.12023118566842
+        }
+      },
+      "restored": {
+        "1": {
+          "events": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 69.3903,
+          "mean_weakest_retention_percent": 34.9253
+        },
+        "2": {
+          "events": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 21.4184,
+          "mean_weakest_retention_percent": 26.591
+        },
+        "3": {
+          "events": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 11.635,
+          "mean_weakest_retention_percent": 35.6994
+        },
+        "spill_db": {
+          "A": -2.0234001390075678,
+          "B": -7.619436867898271,
+          "C": -5.4601486207155485
+        }
+      }
+    },
+    {
+      "room": "R8005_M8007",
+      "mode": "enrolled",
+      "corpus": "known",
+      "before": {
+        "1": {
+          "events": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 58.3898,
+          "mean_weakest_retention_percent": 39.7989
+        },
+        "2": {
+          "events": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 13.0189,
+          "mean_weakest_retention_percent": 36.5221
+        },
+        "3": {
+          "events": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 7.2643,
+          "mean_weakest_retention_percent": 31.0486
+        },
+        "spill_db": {
+          "A": -4.981483538547873,
+          "B": -2.8124252583337035,
+          "C": -9.795626659052493
+        }
+      },
+      "restored": {
+        "1": {
+          "events": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 61.6861,
+          "mean_weakest_retention_percent": 47.0948
+        },
+        "2": {
+          "events": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 13.9645,
+          "mean_weakest_retention_percent": 41.3123
+        },
+        "3": {
+          "events": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 9.3798,
+          "mean_weakest_retention_percent": 39.9248
+        },
+        "spill_db": {
+          "A": -4.8480333737117975,
+          "B": -2.9466752115809247,
+          "C": -10.256738182751118
+        }
+      }
+    },
+    {
+      "room": "R8005_M8007",
+      "mode": "forced",
+      "corpus": "known",
+      "before": {
+        "1": {
+          "events": 3,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 83.2697,
+          "mean_weakest_retention_percent": 50.2508
+        },
+        "2": {
+          "events": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 13.0189,
+          "mean_weakest_retention_percent": 36.5221
+        },
+        "3": {
+          "events": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 8.0205,
+          "mean_weakest_retention_percent": 31.0486
+        },
+        "spill_db": {
+          "A": -4.9096519711282,
+          "B": -5.017659872549787,
+          "C": -9.82492417757902
+        }
+      },
+      "restored": {
+        "1": {
+          "events": 3,
+          "joint96": 1,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 85.556,
+          "mean_weakest_retention_percent": 57.5467
+        },
+        "2": {
+          "events": 6,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 13.9645,
+          "mean_weakest_retention_percent": 41.3123
+        },
+        "3": {
+          "events": 12,
+          "joint96": 0,
+          "joint98": 0,
+          "mean_weakest_alignment_percent": 10.5134,
+          "mean_weakest_retention_percent": 41.9211
+        },
+        "spill_db": {
+          "A": -4.682087789873048,
+          "B": -5.27217594563398,
+          "C": -10.243306976463671
+        }
+      }
+    }
+  ]
+}
