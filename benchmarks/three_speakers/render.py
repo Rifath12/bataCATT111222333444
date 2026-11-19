@@ -87,6 +87,7 @@ def output_tracks(y, activity, method, args):
     ]
     initialized = time.perf_counter()
     three_voice_separator = None
+    refiner = None
     if method == "target":
         from target_extract import TargetExtractor
 
@@ -110,6 +111,10 @@ def output_tracks(y, activity, method, args):
             from sepformer_three import SepFormer
 
             three_voice_separator = SepFormer(sepformer_weights)
+            if getattr(args, "refine_three", False):
+                from refine_three import SpectralRefiner
+
+                refiner = SpectralRefiner()
     started = time.perf_counter()
     lengths = []
 
@@ -132,7 +137,10 @@ def output_tracks(y, activity, method, args):
             )
         mixture = resample(fragment, RATE, 8000)
         if use_three_voice_model:
-            return scale_sources(three_voice_separator(mixture), mixture)
+            tracks = three_voice_separator(mixture)
+            if refiner is not None:
+                tracks = refiner(mixture, tracks)
+            return scale_sources(tracks, mixture)
         return separator.infer(mixture, len(speakers))[0]
 
     jobs = [prepare(lo, hi) for lo, hi in overlap_chunks]
@@ -186,6 +194,8 @@ def output_tracks(y, activity, method, args):
         workers=workers,
         sepformer_three_windows=sum(bool(job[-1]) for job in jobs),
     )
+    if refiner is not None:
+        prefix["refined_three_voice_windows"] = prefix["sepformer_three_windows"]
     return outputs, prefix
 
 
@@ -207,7 +217,14 @@ def main():
     p.add_argument(
         "--sepformer-three", type=Path, help="Optional three-voice checkpoint directory"
     )
+    p.add_argument(
+        "--refine-three",
+        action="store_true",
+        help="Apply the experimental spectral gain filter to three-voice SepFormer windows",
+    )
     args = p.parse_args()
+    if args.refine_three and not args.sepformer_three:
+        p.error("--refine-three requires --sepformer-three")
     if args.threads < 1 or args.workers < 1:
         p.error("Thread and worker counts must be positive")
     if args.sepformer_three and args.method != "dprnn":

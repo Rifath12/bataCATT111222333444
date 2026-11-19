@@ -129,10 +129,17 @@ def transcribe(
     batch_size=1,
     character_fn=None,
     target_rms=None,
+    backend="zipformer",
 ):
-    decoder = sx.OfflineRecognizer.from_zipformer_ctc(
-        model=str(asr), tokens=str(tokenizer), num_threads=threads
-    )
+    options = dict(model=str(asr), tokens=str(tokenizer), num_threads=threads)
+    if backend == "sensevoice":
+        decoder = sx.OfflineRecognizer.from_sense_voice(
+            language="zh", use_itn=False, **options
+        )
+    elif backend == "zipformer":
+        decoder = sx.OfflineRecognizer.from_zipformer_ctc(**options)
+    else:
+        raise ValueError(f"Unknown ASR backend {backend}")
     results = []
     started = time.perf_counter()
     for speaker, path in sorted(wav_paths.items()):
@@ -191,6 +198,9 @@ def main():
         "--reference", type=Path, help="Optional TextGrid for character error scoring"
     )
     p.add_argument("--asr", type=Path, required=True)
+    p.add_argument(
+        "--backend", choices=("zipformer", "sensevoice"), default="zipformer"
+    )
     p.add_argument("--project", type=Path)
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--threads", type=int, default=4)
@@ -227,7 +237,7 @@ def main():
     if len(paths) != 3:
         p.error("The audio directory must contain three speaker files")
     export_characters = None
-    if args.project:
+    if args.project and args.backend == "zipformer":
         sys.path.insert(0, str(args.project))
         from process_meeting import characters
 
@@ -241,22 +251,32 @@ def main():
         args.batch,
         export_characters,
         args.target_rms,
+        backend=args.backend,
     )
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "transcript.jsonl").write_text(
         "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in results),
         encoding="utf-8",
     )
-    (args.out / "transcript.txt").write_text(
-        "".join(
+
+    def transcript_lines(rows):
+        return "".join(
             f"[{x['start']:.2f}–{x['end']:.2f}] {x['speaker']}  {x['text']}\n"
-            for x in results
-        ),
-        encoding="utf-8",
+            for x in rows
+        )
+
+    (args.out / "transcript.txt").write_text(
+        transcript_lines(results), encoding="utf-8"
     )
+    for speaker in paths:
+        rows = (x for x in results if x["speaker"] == speaker)
+        (args.out / f"speaker_{speaker}.txt").write_text(
+            transcript_lines(rows), encoding="utf-8"
+        )
     evaluation = {
         "headset_oracle_timing": args.headsets,
         "asr_wall_s": wall,
+        "backend": args.backend,
         "speakers_decoded": len(paths),
     }
     if args.target_rms:

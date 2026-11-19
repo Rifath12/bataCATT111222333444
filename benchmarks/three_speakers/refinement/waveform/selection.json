@@ -1,0 +1,11 @@
+{
+  "method": "frequency",
+  "script_sha256": "ed357a7c3c83b868a8f694ec40b7da8ef131f1d3457be18060ec4573e72b4213",
+  "objective": {
+    "single_pass": 41.900409639291766,
+    "residual_half": 41.8823415641843,
+    "frequency": 41.911872445005216,
+    "frequency_half": 41.910737207093675,
+    "frequency_full": 41.88644951390357
+  }
+}

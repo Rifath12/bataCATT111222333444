@@ -1,0 +1,124 @@
+{
+  "session": "R8008_M8016",
+  "reference_revision": "68dd695283723a78d850895466b9a380f630b561",
+  "source": "https://huggingface.co/datasets/AudioMarathon/AudioMarathon",
+  "reference_file": "AliMeeting/Test_Ali/Test_Ali_far/textgrid_dir/R8008_M8016.TextGrid",
+  "zipformer": {
+    "backend": "zipformer",
+    "target_rms": 0.035,
+    "threads": 2,
+    "inference_s": 235.35471329400025,
+    "cpCER": 0.3166774821544452,
+    "correct_reference_characters": 0.6860480207657366,
+    "totals": {
+      "reference_chars": 7705,
+      "recognized_chars": 5977,
+      "correct_reference_chars": 5286,
+      "substitutions": 670,
+      "deletions": 1749,
+      "insertions": 21,
+      "errors": 2440
+    },
+    "speaker_scores": [
+      {
+        "reference": "N_SPK8060",
+        "system": "A",
+        "reference_chars": 3380,
+        "recognized_chars": 2866,
+        "correct_reference_chars": 2691,
+        "substitutions": 169,
+        "deletions": 520,
+        "insertions": 6
+      },
+      {
+        "reference": "N_SPK8061",
+        "system": "B",
+        "reference_chars": 2745,
+        "recognized_chars": 2373,
+        "correct_reference_chars": 2215,
+        "substitutions": 149,
+        "deletions": 381,
+        "insertions": 9
+      },
+      {
+        "reference": "N_SPK8062",
+        "system": "C",
+        "reference_chars": 1580,
+        "recognized_chars": 738,
+        "correct_reference_chars": 380,
+        "substitutions": 352,
+        "deletions": 848,
+        "insertions": 6
+      }
+    ]
+  },
+  "sensevoice": {
+    "backend": "sensevoice",
+    "target_rms": 0.035,
+    "threads": 2,
+    "inference_s": 218.4765537140047,
+    "cpCER": 0.28397144711226474,
+    "correct_reference_characters": 0.72809863724854,
+    "totals": {
+      "reference_chars": 7705,
+      "recognized_chars": 6927,
+      "correct_reference_chars": 5610,
+      "substitutions": 1224,
+      "deletions": 871,
+      "insertions": 93,
+      "errors": 2188
+    },
+    "speaker_scores": [
+      {
+        "reference": "N_SPK8060",
+        "system": "A",
+        "reference_chars": 3380,
+        "recognized_chars": 3211,
+        "correct_reference_chars": 2862,
+        "substitutions": 308,
+        "deletions": 210,
+        "insertions": 41
+      },
+      {
+        "reference": "N_SPK8061",
+        "system": "B",
+        "reference_chars": 2745,
+        "recognized_chars": 2647,
+        "correct_reference_chars": 2271,
+        "substitutions": 332,
+        "deletions": 142,
+        "insertions": 44
+      },
+      {
+        "reference": "N_SPK8062",
+        "system": "C",
+        "reference_chars": 1580,
+        "recognized_chars": 1069,
+        "correct_reference_chars": 477,
+        "substitutions": 584,
+        "deletions": 519,
+        "insertions": 8
+      }
+    ]
+  },
+  "render": {
+    "method": "dprnn",
+    "overlap_regions": 277,
+    "overlap_windows": 277,
+    "processed_core_s": 128.2,
+    "initialize_s": 10.913696774994605,
+    "overlap_inference_s": 257.02505557599943,
+    "workers": 2,
+    "sepformer_three_windows": 15,
+    "refined_three_voice_windows": 15,
+    "audio_wall_s": 272.211294386012,
+    "speaker_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "sample_rate": 16000,
+    "sample_count": 29423682,
+    "detected_overlap_seconds": 127.28
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "cache_only": [
+    {
+      "name": "test_1_clean",
+      "input_s": 3.4,
+      "portable_s": 0.50734179400024
+    },
+    {
+      "name": "test_1_room",
+      "input_s": 3.4,
+      "portable_s": 0.4320018629950937
+    },
+    {
+      "name": "test_2_clean",
+      "input_s": 3.4,
+      "portable_s": 0.4722893969883444
+    },
+    {
+      "name": "test_2_room",
+      "input_s": 3.4,
+      "portable_s": 0.6966979220014764
+    },
+    {
+      "name": "test_3_clean",
+      "input_s": 3.4,
+      "portable_s": 0.5013316169934114
+    },
+    {
+      "name": "test_3_room",
+      "input_s": 3.4,
+      "portable_s": 0.5040787420002744
+    },
+    {
+      "name": "test_4_clean",
+      "input_s": 3.4,
+      "portable_s": 0.39280409799539484
+    },
+    {
+      "name": "test_4_room",
+      "input_s": 3.4,
+      "portable_s": 0.6993902179965517
+    },
+    {
+      "name": "test_5_clean",
+      "input_s": 3.4,
+      "portable_s": 0.4137021970091155
+    },
+    {
+      "name": "test_5_room",
+      "input_s": 3.4,
+      "portable_s": 0.363314227986848
+    },
+    {
+      "name": "test_6_clean",
+      "input_s": 3.4,
+      "portable_s": 0.4405107749917079
+    },
+    {
+      "name": "test_6_room",
+      "input_s": 3.4,
+      "portable_s": 0.45781048499338794
+    },
+    {
+      "name": "fresh_1_clean",
+      "input_s": 3.4,
+      "portable_s": 0.5635144590050913
+    },
+    {
+      "name": "fresh_1_room",
+      "input_s": 3.4,
+      "portable_s": 0.51691526499053
+    },
+    {
+      "name": "fresh_2_clean",
+      "input_s": 3.4,
+      "portable_s": 0.4980572870117612
+    },
+    {
+      "name": "fresh_2_room",
+      "input_s": 3.4,
+      "portable_s": 0.5997851520078257
+    },
+    {
+      "name": "fresh_3_clean",
+      "input_s": 3.4,
+      "portable_s": 0.5624191889946815
+    },
+    {
+      "name": "fresh_3_room",
+      "input_s": 3.4,
+      "portable_s": 0.414553791997605
+    }
+  ],
+  "matched": [
+    {
+      "name": "fresh_1_clean",
+      "neural_s": 27.299385718011763,
+      "portable_s": 0.4378561630001059,
+      "input_s": 3.4
+    },
+    {
+      "name": "fresh_1_room",
+      "neural_s": 10.092213012001594,
+      "portable_s": 0.20516261499142274,
+      "input_s": 3.4
+    },
+    {
+      "name": "fresh_2_clean",
+      "neural_s": 9.591451337008039,
+      "portable_s": 0.18106768099823967,
+      "input_s": 3.4
+    },
+    {
+      "name": "fresh_2_room",
+      "neural_s": 15.732806990999961,
+      "portable_s": 0.4454749380092835,
+      "input_s": 3.4
+    }
+  ],
+  "matched_relative_cost": 0.020243068604237066
+}

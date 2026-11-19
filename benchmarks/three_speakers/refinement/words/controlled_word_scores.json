@@ -1,0 +1,1330 @@
+{
+  "aishell3_revision": "f20d5db4a31fe779ef07bb1af4ea92da5c786622",
+  "data_split": "test",
+  "text_sha256": "3cd4504905becdbe4efb90b530fad0eb38e5ef7a7b2d09cf136d1ee22f53917f",
+  "filter_sha256": "af578c7735e7464887a0331ba2932f608eb46b5153d07b40e6b2bcb66a7bb753",
+  "summary": {
+    "isolated_dry": {
+      "reference_chars": 24,
+      "substitutions": 6,
+      "deletions": 0,
+      "insertions": 0,
+      "errors": 6,
+      "correct_reference_chars": 18,
+      "cpCER": 0.25
+    },
+    "zipformer_on_isolated_dry": {
+      "reference_chars": 24,
+      "substitutions": 6,
+      "deletions": 1,
+      "insertions": 0,
+      "errors": 7,
+      "correct_reference_chars": 17,
+      "cpCER": 0.2916666666666667
+    },
+    "sepformer": {
+      "reference_chars": 24,
+      "substitutions": 18,
+      "deletions": 3,
+      "insertions": 8,
+      "errors": 29,
+      "correct_reference_chars": 3,
+      "cpCER": 1.2083333333333333
+    },
+    "zipformer_on_sepformer": {
+      "reference_chars": 24,
+      "substitutions": 11,
+      "deletions": 7,
+      "insertions": 1,
+      "errors": 19,
+      "correct_reference_chars": 6,
+      "cpCER": 0.7916666666666666
+    },
+    "refined": {
+      "reference_chars": 24,
+      "substitutions": 18,
+      "deletions": 3,
+      "insertions": 8,
+      "errors": 29,
+      "correct_reference_chars": 3,
+      "cpCER": 1.2083333333333333
+    },
+    "zipformer_on_refined": {
+      "reference_chars": 24,
+      "substitutions": 11,
+      "deletions": 7,
+      "insertions": 3,
+      "errors": 21,
+      "correct_reference_chars": 6,
+      "cpCER": 0.875
+    }
+  },
+  "cases": [
+    {
+      "name": "fresh_1_room",
+      "files": [
+        [
+          "SSB00090030.wav",
+          "82521b2c22489f43ca8353065dbe3fd75c4695d49e0dddda01fa98338e6d120f"
+        ],
+        [
+          "SSB00110049.wav",
+          "2d4a973bf27442d240673e73dbb7ef601511cdecfdd75cdbc8deb45d960ba841"
+        ],
+        [
+          "SSB00120013.wav",
+          "679048aa40cb8a273935c83c1bdc8ae3fb9c572f3788b67acf50aefe2a1a68bf"
+        ]
+      ],
+      "truth": [
+        {
+          "speaker": "0",
+          "start": 0.0,
+          "text": "碗碗香"
+        },
+        {
+          "speaker": "1",
+          "start": 0.0,
+          "text": "搁浅"
+        },
+        {
+          "speaker": "2",
+          "start": 0.0,
+          "text": "停车场"
+        }
+      ],
+      "levels_dB": [
+        -8.0,
+        0.0,
+        -4.0
+      ],
+      "delay_s": [
+        0.24,
+        0.0,
+        0.12
+      ],
+      "audio_s": 1.95375,
+      "exact_triple_s": 0.48,
+      "separator_s": 4.683642244999646,
+      "spectral_filter_s": 0.08111577400995884,
+      "arms": {
+        "isolated_dry": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "晚碗香"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "搁浅"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "停车场"
+            }
+          ],
+          "cpCER": 0.125,
+          "correct_reference_characters": 0.875,
+          "totals": {
+            "reference_chars": 8,
+            "recognized_chars": 8,
+            "correct_reference_chars": 7,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "errors": 1
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 3,
+              "recognized_chars": 3,
+              "correct_reference_chars": 2,
+              "substitutions": 1,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 3,
+              "correct_reference_chars": 3,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "zipformer_on_isolated_dry": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "晚婉香"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "搁浅"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "停车场"
+            }
+          ],
+          "cpCER": 0.25,
+          "correct_reference_characters": 0.75,
+          "totals": {
+            "reference_chars": 8,
+            "recognized_chars": 8,
+            "correct_reference_chars": 6,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "errors": 2
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 3,
+              "recognized_chars": 3,
+              "correct_reference_chars": 1,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 3,
+              "correct_reference_chars": 3,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "sepformer": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "杨"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "可开"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "歌谁"
+            }
+          ],
+          "cpCER": 1.0,
+          "correct_reference_characters": 0.0,
+          "totals": {
+            "reference_chars": 8,
+            "recognized_chars": 5,
+            "correct_reference_chars": 0,
+            "substitutions": 5,
+            "deletions": 3,
+            "insertions": 0,
+            "errors": 8
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 3,
+              "recognized_chars": 1,
+              "correct_reference_chars": 0,
+              "substitutions": 1,
+              "deletions": 2,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 1,
+              "insertions": 0
+            }
+          ]
+        },
+        "zipformer_on_sepformer": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": ""
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "喝点"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "歌子"
+            }
+          ],
+          "cpCER": 1.0,
+          "correct_reference_characters": 0.0,
+          "totals": {
+            "reference_chars": 8,
+            "recognized_chars": 4,
+            "correct_reference_chars": 0,
+            "substitutions": 4,
+            "deletions": 4,
+            "insertions": 0,
+            "errors": 8
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 3,
+              "recognized_chars": 0,
+              "correct_reference_chars": 0,
+              "substitutions": 0,
+              "deletions": 3,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 1,
+              "insertions": 0
+            }
+          ]
+        },
+        "refined": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "杨好"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "你开"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "歌"
+            }
+          ],
+          "cpCER": 1.0,
+          "correct_reference_characters": 0.0,
+          "totals": {
+            "reference_chars": 8,
+            "recognized_chars": 5,
+            "correct_reference_chars": 0,
+            "substitutions": 5,
+            "deletions": 3,
+            "insertions": 0,
+            "errors": 8
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 3,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 1,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 1,
+              "correct_reference_chars": 0,
+              "substitutions": 1,
+              "deletions": 2,
+              "insertions": 0
+            }
+          ]
+        },
+        "zipformer_on_refined": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "王"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "喝"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "歌"
+            }
+          ],
+          "cpCER": 1.0,
+          "correct_reference_characters": 0.0,
+          "totals": {
+            "reference_chars": 8,
+            "recognized_chars": 3,
+            "correct_reference_chars": 0,
+            "substitutions": 3,
+            "deletions": 5,
+            "insertions": 0,
+            "errors": 8
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 3,
+              "recognized_chars": 1,
+              "correct_reference_chars": 0,
+              "substitutions": 1,
+              "deletions": 2,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 1,
+              "correct_reference_chars": 0,
+              "substitutions": 1,
+              "deletions": 1,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 1,
+              "correct_reference_chars": 0,
+              "substitutions": 1,
+              "deletions": 2,
+              "insertions": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "fresh_2_room",
+      "files": [
+        [
+          "SSB00160056.wav",
+          "ea715ec224800fe98b4bc63f7396b5eaaaacd845662bf35d0eebcc454ad5cac0"
+        ],
+        [
+          "SSB00330114.wav",
+          "4cf20c9a71c802b68b1e2a42c5f16e3a0f4a08078cac12bff34134e636f7dc93"
+        ],
+        [
+          "SSB00430010.wav",
+          "78366a894278bdf26842b1d4d85d283f4856826207db4dd9929eba8d64a40de9"
+        ]
+      ],
+      "truth": [
+        {
+          "speaker": "0",
+          "start": 0.0,
+          "text": "见集"
+        },
+        {
+          "speaker": "1",
+          "start": 0.0,
+          "text": "烤鸭"
+        },
+        {
+          "speaker": "2",
+          "start": 0.0,
+          "text": "野山茶"
+        }
+      ],
+      "levels_dB": [
+        -4.0,
+        -8.0,
+        0.0
+      ],
+      "delay_s": [
+        0.12,
+        0.24,
+        0.0
+      ],
+      "audio_s": 1.746875,
+      "exact_triple_s": 0.3,
+      "separator_s": 3.6576803420030046,
+      "spectral_filter_s": 0.07204609000473283,
+      "arms": {
+        "isolated_dry": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "电极"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "烤鸭"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "野山茶"
+            }
+          ],
+          "cpCER": 0.2857142857142857,
+          "correct_reference_characters": 0.7142857142857143,
+          "totals": {
+            "reference_chars": 7,
+            "recognized_chars": 7,
+            "correct_reference_chars": 5,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "errors": 2
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 3,
+              "correct_reference_chars": 3,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "zipformer_on_isolated_dry": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "剑集"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "烤鸭"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "野山茶"
+            }
+          ],
+          "cpCER": 0.14285714285714285,
+          "correct_reference_characters": 0.8571428571428571,
+          "totals": {
+            "reference_chars": 7,
+            "recognized_chars": 7,
+            "correct_reference_chars": 6,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "errors": 1
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 1,
+              "substitutions": 1,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 3,
+              "correct_reference_chars": 3,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "sepformer": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "你先查"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "一三两没有"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "你在哪呢"
+            }
+          ],
+          "cpCER": 1.7142857142857142,
+          "correct_reference_characters": 0.0,
+          "totals": {
+            "reference_chars": 7,
+            "recognized_chars": 12,
+            "correct_reference_chars": 0,
+            "substitutions": 7,
+            "deletions": 0,
+            "insertions": 5,
+            "errors": 12
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 2,
+              "recognized_chars": 3,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 1
+            },
+            {
+              "reference": "1",
+              "system": "2",
+              "reference_chars": 2,
+              "recognized_chars": 4,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 2
+            },
+            {
+              "reference": "2",
+              "system": "1",
+              "reference_chars": 3,
+              "recognized_chars": 5,
+              "correct_reference_chars": 0,
+              "substitutions": 3,
+              "deletions": 0,
+              "insertions": 2
+            }
+          ]
+        },
+        "zipformer_on_sepformer": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "饎山茶"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "下"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "三宝"
+            }
+          ],
+          "cpCER": 0.7142857142857143,
+          "correct_reference_characters": 0.2857142857142857,
+          "totals": {
+            "reference_chars": 7,
+            "recognized_chars": 6,
+            "correct_reference_chars": 2,
+            "substitutions": 4,
+            "deletions": 1,
+            "insertions": 0,
+            "errors": 5
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 1,
+              "correct_reference_chars": 0,
+              "substitutions": 1,
+              "deletions": 1,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "2",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "0",
+              "reference_chars": 3,
+              "recognized_chars": 3,
+              "correct_reference_chars": 2,
+              "substitutions": 1,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "refined": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "你先查"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "一在没有"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "你在哪里呀"
+            }
+          ],
+          "cpCER": 1.7142857142857142,
+          "correct_reference_characters": 0.0,
+          "totals": {
+            "reference_chars": 7,
+            "recognized_chars": 12,
+            "correct_reference_chars": 0,
+            "substitutions": 7,
+            "deletions": 0,
+            "insertions": 5,
+            "errors": 12
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 2,
+              "recognized_chars": 3,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 1
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 4,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 2
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 3,
+              "recognized_chars": 5,
+              "correct_reference_chars": 0,
+              "substitutions": 3,
+              "deletions": 0,
+              "insertions": 2
+            }
+          ]
+        },
+        "zipformer_on_refined": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "山茶"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "接线"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "天宝"
+            }
+          ],
+          "cpCER": 0.7142857142857143,
+          "correct_reference_characters": 0.2857142857142857,
+          "totals": {
+            "reference_chars": 7,
+            "recognized_chars": 6,
+            "correct_reference_chars": 2,
+            "substitutions": 4,
+            "deletions": 1,
+            "insertions": 0,
+            "errors": 5
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "2",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "0",
+              "reference_chars": 3,
+              "recognized_chars": 2,
+              "correct_reference_chars": 2,
+              "substitutions": 0,
+              "deletions": 1,
+              "insertions": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "fresh_3_room",
+      "files": [
+        [
+          "SSB00570074.wav",
+          "6b3d707deadc68602a2069a2b137d349515cfa41e26871ace783f9171fe073a7"
+        ],
+        [
+          "SSB00800163.wav",
+          "978fe7483546897cff361f8a1212112f54a82cf2977ff9883b41f7bfbb639755"
+        ],
+        [
+          "SSB01120005.wav",
+          "42b7d89e09e6c85323c534d95fd358334e492e7064f5e2e85bd54627e7ab561b"
+        ]
+      ],
+      "truth": [
+        {
+          "speaker": "0",
+          "start": 0.0,
+          "text": "广亮"
+        },
+        {
+          "speaker": "1",
+          "start": 0.0,
+          "text": "惊兆"
+        },
+        {
+          "speaker": "2",
+          "start": 0.0,
+          "text": "来一首萍聚"
+        }
+      ],
+      "levels_dB": [
+        0.0,
+        -4.0,
+        -8.0
+      ],
+      "delay_s": [
+        0.0,
+        0.12,
+        0.24
+      ],
+      "audio_s": 1.89975,
+      "exact_triple_s": 0.36,
+      "separator_s": 5.199295284997788,
+      "spectral_filter_s": 0.09023849199002143,
+      "arms": {
+        "isolated_dry": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "广亮"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "今兆"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "来一首评剧"
+            }
+          ],
+          "cpCER": 0.3333333333333333,
+          "correct_reference_characters": 0.6666666666666666,
+          "totals": {
+            "reference_chars": 9,
+            "recognized_chars": 9,
+            "correct_reference_chars": 6,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "errors": 3
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 1,
+              "substitutions": 1,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 5,
+              "recognized_chars": 5,
+              "correct_reference_chars": 3,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "zipformer_on_isolated_dry": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "广亮"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "今"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "来一首评剧"
+            }
+          ],
+          "cpCER": 0.4444444444444444,
+          "correct_reference_characters": 0.5555555555555556,
+          "totals": {
+            "reference_chars": 9,
+            "recognized_chars": 8,
+            "correct_reference_chars": 5,
+            "substitutions": 3,
+            "deletions": 1,
+            "insertions": 0,
+            "errors": 4
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "0",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 1,
+              "correct_reference_chars": 0,
+              "substitutions": 1,
+              "deletions": 1,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "2",
+              "reference_chars": 5,
+              "recognized_chars": 5,
+              "correct_reference_chars": 3,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "sepformer": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "来一首腾讯"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "在你手机"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "黄亚旭"
+            }
+          ],
+          "cpCER": 1.0,
+          "correct_reference_characters": 0.3333333333333333,
+          "totals": {
+            "reference_chars": 9,
+            "recognized_chars": 12,
+            "correct_reference_chars": 3,
+            "substitutions": 6,
+            "deletions": 0,
+            "insertions": 3,
+            "errors": 9
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "2",
+              "reference_chars": 2,
+              "recognized_chars": 3,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 1
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 4,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 2
+            },
+            {
+              "reference": "2",
+              "system": "0",
+              "reference_chars": 5,
+              "recognized_chars": 5,
+              "correct_reference_chars": 3,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "zipformer_on_sepformer": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "来一首"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "你首"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "广电剧"
+            }
+          ],
+          "cpCER": 0.6666666666666666,
+          "correct_reference_characters": 0.4444444444444444,
+          "totals": {
+            "reference_chars": 9,
+            "recognized_chars": 8,
+            "correct_reference_chars": 4,
+            "substitutions": 3,
+            "deletions": 2,
+            "insertions": 1,
+            "errors": 6
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "2",
+              "reference_chars": 2,
+              "recognized_chars": 3,
+              "correct_reference_chars": 1,
+              "substitutions": 1,
+              "deletions": 0,
+              "insertions": 1
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 2,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            },
+            {
+              "reference": "2",
+              "system": "0",
+              "reference_chars": 5,
+              "recognized_chars": 3,
+              "correct_reference_chars": 3,
+              "substitutions": 0,
+              "deletions": 2,
+              "insertions": 0
+            }
+          ]
+        },
+        "refined": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "来一首腾讯"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "美体手机"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "黄亚旭"
+            }
+          ],
+          "cpCER": 1.0,
+          "correct_reference_characters": 0.3333333333333333,
+          "totals": {
+            "reference_chars": 9,
+            "recognized_chars": 12,
+            "correct_reference_chars": 3,
+            "substitutions": 6,
+            "deletions": 0,
+            "insertions": 3,
+            "errors": 9
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "2",
+              "reference_chars": 2,
+              "recognized_chars": 3,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 1
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 4,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 2
+            },
+            {
+              "reference": "2",
+              "system": "0",
+              "reference_chars": 5,
+              "recognized_chars": 5,
+              "correct_reference_chars": 3,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0
+            }
+          ]
+        },
+        "zipformer_on_refined": {
+          "hypotheses": [
+            {
+              "speaker": "0",
+              "start": 0.0,
+              "text": "来一首剧"
+            },
+            {
+              "speaker": "1",
+              "start": 0.0,
+              "text": "来一首歌"
+            },
+            {
+              "speaker": "2",
+              "start": 0.0,
+              "text": "广电剧"
+            }
+          ],
+          "cpCER": 0.8888888888888888,
+          "correct_reference_characters": 0.4444444444444444,
+          "totals": {
+            "reference_chars": 9,
+            "recognized_chars": 11,
+            "correct_reference_chars": 4,
+            "substitutions": 4,
+            "deletions": 1,
+            "insertions": 3,
+            "errors": 8
+          },
+          "speaker_scores": [
+            {
+              "reference": "0",
+              "system": "2",
+              "reference_chars": 2,
+              "recognized_chars": 3,
+              "correct_reference_chars": 1,
+              "substitutions": 1,
+              "deletions": 0,
+              "insertions": 1
+            },
+            {
+              "reference": "1",
+              "system": "1",
+              "reference_chars": 2,
+              "recognized_chars": 4,
+              "correct_reference_chars": 0,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 2
+            },
+            {
+              "reference": "2",
+              "system": "0",
+              "reference_chars": 5,
+              "recognized_chars": 4,
+              "correct_reference_chars": 3,
+              "substitutions": 1,
+              "deletions": 1,
+              "insertions": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

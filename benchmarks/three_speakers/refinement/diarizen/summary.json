@@ -1,0 +1,309 @@
+{
+  "checkpoint_sha256": "2f65bc7772c92f90b6ff2ef1d7bdd068584828ed4578e6e48754380220aae979",
+  "source_commit": "844f5555b0a98acd0931511fc641a8c5b8ba92c7",
+  "development": {
+    "same_model_control": {
+      "threshold": 0.13,
+      "out_of_fold": {
+        "speaker_recall": 0.5346329960347904,
+        "speaker_precision": 0.8868437621401493,
+        "DER": 0.5151299797297842,
+        "three_way_speaker_recall": 0.5191560734463276,
+        "exact_three_precision": 0.2306998556998557,
+        "exact_three_recall": 0.3387182203389831,
+        "exact_three_F1": 0.2744635193133047,
+        "seconds": 869.2,
+        "reference_three_s": 37.76,
+        "predicted_three_s": 55.44,
+        "false_three_s": 42.65,
+        "exact_three_true_positive_s": 12.79
+      }
+    },
+    "independent_verifier": {
+      "threshold": 0.13999999999999999,
+      "out_of_fold": {
+        "speaker_recall": 0.5565425957182197,
+        "speaker_precision": 0.8582191780821918,
+        "DER": 0.5189498251592948,
+        "three_way_speaker_recall": 0.5600282485875706,
+        "exact_three_precision": 0.18621700879765396,
+        "exact_three_recall": 0.4036016949152542,
+        "exact_three_F1": 0.2548494983277592,
+        "seconds": 869.2,
+        "reference_three_s": 37.76,
+        "predicted_three_s": 81.84,
+        "false_three_s": 66.6,
+        "exact_three_true_positive_s": 15.24
+      }
+    }
+  },
+  "natural_tests": {
+    "realt": {
+      "clip_count": 26,
+      "pooled": {
+        "previous": {
+          "speaker_recall": 0.7192683345889008,
+          "speaker_precision": 0.9285446169595633,
+          "DER": 0.32301124724105573,
+          "three_way_speaker_recall": 0.6681266676735639,
+          "exact_three_precision": 0.4984561093956771,
+          "exact_three_recall": 0.3413381664401148,
+          "exact_three_F1": 0.4051994621246078,
+          "seconds": 431.13,
+          "reference_three_s": 66.21,
+          "predicted_three_s": 45.34,
+          "false_three_s": 22.74,
+          "exact_three_true_positive_s": 22.6
+        },
+        "same_model_control": {
+          "speaker_recall": 0.7632660613509906,
+          "speaker_precision": 0.9020352060978086,
+          "DER": 0.3116714906889761,
+          "three_way_speaker_recall": 0.7471177566329356,
+          "exact_three_precision": 0.42117884639656694,
+          "exact_three_recall": 0.5040024165533907,
+          "exact_three_F1": 0.4588833883388339,
+          "seconds": 431.13,
+          "reference_three_s": 66.21,
+          "predicted_three_s": 79.23,
+          "false_three_s": 45.86,
+          "exact_three_true_positive_s": 33.37
+        },
+        "independent_verifier": {
+          "speaker_recall": 0.7800774486869407,
+          "speaker_precision": 0.8830622839958707,
+          "DER": 0.3147377185678601,
+          "three_way_speaker_recall": 0.7946433066505563,
+          "exact_three_precision": 0.3966019905499146,
+          "exact_three_recall": 0.5958314454009969,
+          "exact_three_F1": 0.4762192177691936,
+          "seconds": 431.13,
+          "reference_three_s": 66.21,
+          "predicted_three_s": 99.47,
+          "false_three_s": 60.02,
+          "exact_three_true_positive_s": 39.45
+        },
+        "independent_full_count": {
+          "speaker_recall": 0.8431333676962319,
+          "speaker_precision": 0.8720984278879016,
+          "DER": 0.26645784597491506,
+          "three_way_speaker_recall": 0.8261591904546141,
+          "exact_three_precision": 0.3966019905499146,
+          "exact_three_recall": 0.5958314454009969,
+          "exact_three_F1": 0.4762192177691936,
+          "seconds": 431.13,
+          "reference_three_s": 66.21,
+          "predicted_three_s": 99.47,
+          "false_three_s": 60.02,
+          "exact_three_true_positive_s": 39.45
+        },
+        "two_pass": {
+          "speaker_recall": 0.9180180537382869,
+          "speaker_precision": 0.8531283008671301,
+          "DER": 0.2277202860050487,
+          "three_way_speaker_recall": 0.8749937068922117,
+          "exact_three_precision": 0.37849222040746155,
+          "exact_three_recall": 0.6650052862105422,
+          "exact_three_F1": 0.4824148131916292,
+          "seconds": 431.13,
+          "reference_three_s": 66.21,
+          "predicted_three_s": 116.33,
+          "false_three_s": 72.3,
+          "exact_three_true_positive_s": 44.03
+        },
+        "two_pass_confirmed": {
+          "speaker_recall": 0.8919022507698611,
+          "speaker_precision": 0.8805438484322603,
+          "DER": 0.20621704135442687,
+          "three_way_speaker_recall": 0.815788148819413,
+          "exact_three_precision": 0.47081995914794283,
+          "exact_three_recall": 0.4873886119921462,
+          "exact_three_F1": 0.478961038961039,
+          "seconds": 431.13,
+          "reference_three_s": 66.21,
+          "predicted_three_s": 68.54,
+          "false_three_s": 36.27,
+          "exact_three_true_positive_s": 32.27
+        }
+      }
+    },
+    "fresh": {
+      "clip_count": 81,
+      "pooled": {
+        "previous": {
+          "speaker_recall": 0.874403906923298,
+          "speaker_precision": 0.824674425465558,
+          "DER": 0.2873950652749848,
+          "three_way_speaker_recall": 0.8984261676820423,
+          "exact_three_precision": 0.36837484911664653,
+          "exact_three_recall": 0.7304177545691906,
+          "exact_three_F1": 0.4897512582974688,
+          "seconds": 1116.28,
+          "reference_three_s": 91.92,
+          "predicted_three_s": 182.26,
+          "false_three_s": 115.12,
+          "exact_three_true_positive_s": 67.14
+        },
+        "same_model_control": {
+          "speaker_recall": 0.8996393118197198,
+          "speaker_precision": 0.7812964318186858,
+          "DER": 0.34060455169331927,
+          "three_way_speaker_recall": 0.9337104728749638,
+          "exact_three_precision": 0.27277273701507465,
+          "exact_three_recall": 0.8307223672758921,
+          "exact_three_F1": 0.4106921959877373,
+          "seconds": 1116.28,
+          "reference_three_s": 91.92,
+          "predicted_three_s": 279.94,
+          "false_three_s": 203.58,
+          "exact_three_true_positive_s": 76.36
+        },
+        "independent_verifier": {
+          "speaker_recall": 0.9169714960579655,
+          "speaker_precision": 0.7416075503650238,
+          "DER": 0.39452903061061634,
+          "three_way_speaker_recall": 0.9656222802436901,
+          "exact_three_precision": 0.2196510656080234,
+          "exact_three_recall": 0.9149260226283725,
+          "exact_three_F1": 0.35425442291491155,
+          "seconds": 1116.28,
+          "reference_three_s": 91.92,
+          "predicted_three_s": 382.88,
+          "false_three_s": 298.78,
+          "exact_three_true_positive_s": 84.1
+        },
+        "independent_full_count": {
+          "speaker_recall": 0.9686999265855917,
+          "speaker_precision": 0.7279295010481778,
+          "DER": 0.386102333301414,
+          "three_way_speaker_recall": 0.9688859878154917,
+          "exact_three_precision": 0.2196510656080234,
+          "exact_three_recall": 0.9149260226283725,
+          "exact_three_F1": 0.35425442291491155,
+          "seconds": 1116.28,
+          "reference_three_s": 91.92,
+          "predicted_three_s": 382.88,
+          "false_three_s": 298.78,
+          "exact_three_true_positive_s": 84.1
+        },
+        "two_pass": {
+          "speaker_recall": 0.9738261674486897,
+          "speaker_precision": 0.6841932937440571,
+          "DER": 0.46789236809345974,
+          "three_way_speaker_recall": 0.9552872062663186,
+          "exact_three_precision": 0.22104570143194163,
+          "exact_three_recall": 0.8766318537859008,
+          "exact_three_F1": 0.35306489068045394,
+          "seconds": 1116.28,
+          "reference_three_s": 91.92,
+          "predicted_three_s": 364.54,
+          "false_three_s": 283.96,
+          "exact_three_true_positive_s": 80.58
+        },
+        "two_pass_confirmed": {
+          "speaker_recall": 0.9682785917201315,
+          "speaker_precision": 0.7061529293455995,
+          "DER": 0.4233202464170577,
+          "three_way_speaker_recall": 0.943936756599942,
+          "exact_three_precision": 0.2737716507599859,
+          "exact_three_recall": 0.8425805047867712,
+          "exact_three_F1": 0.41326503388293045,
+          "seconds": 1116.28,
+          "reference_three_s": 91.92,
+          "predicted_three_s": 282.9,
+          "false_three_s": 205.45,
+          "exact_three_true_positive_s": 77.45
+        }
+      }
+    },
+    "ali": {
+      "clip_count": 83,
+      "pooled": {
+        "previous": {
+          "speaker_recall": 0.9146620264529206,
+          "speaker_precision": 0.8845377526953424,
+          "DER": 0.19127923658611082,
+          "three_way_speaker_recall": 0.9178724178724179,
+          "exact_three_precision": 0.4751051303616484,
+          "exact_three_recall": 0.7710892710892711,
+          "exact_three_F1": 0.587947543713572,
+          "seconds": 1902.32,
+          "reference_three_s": 73.26,
+          "predicted_three_s": 118.9,
+          "false_three_s": 62.41,
+          "exact_three_true_positive_s": 56.49
+        },
+        "same_model_control": {
+          "speaker_recall": 0.9251487861089771,
+          "speaker_precision": 0.8521409237196018,
+          "DER": 0.22716376190520265,
+          "three_way_speaker_recall": 0.9505414505414506,
+          "exact_three_precision": 0.33849675290109654,
+          "exact_three_recall": 0.868004368004368,
+          "exact_three_F1": 0.4870557598039216,
+          "seconds": 1902.32,
+          "reference_three_s": 73.26,
+          "predicted_three_s": 187.86,
+          "false_three_s": 124.27,
+          "exact_three_true_positive_s": 63.59
+        },
+        "independent_verifier": {
+          "speaker_recall": 0.9283235068168566,
+          "speaker_precision": 0.8437643278076193,
+          "DER": 0.23635471719069612,
+          "three_way_speaker_recall": 0.9635999635999636,
+          "exact_three_precision": 0.3017500683620454,
+          "exact_three_recall": 0.9037674037674037,
+          "exact_three_F1": 0.45243952439524393,
+          "seconds": 1902.32,
+          "reference_three_s": 73.26,
+          "predicted_three_s": 219.42,
+          "false_three_s": 153.21,
+          "exact_three_true_positive_s": 66.21
+        },
+        "independent_full_count": {
+          "speaker_recall": 0.9733341972029137,
+          "speaker_precision": 0.8127178440873927,
+          "DER": 0.24603159911515074,
+          "three_way_speaker_recall": 0.9642824642824643,
+          "exact_three_precision": 0.3017500683620454,
+          "exact_three_recall": 0.9037674037674037,
+          "exact_three_F1": 0.45243952439524393,
+          "seconds": 1902.32,
+          "reference_three_s": 73.26,
+          "predicted_three_s": 219.42,
+          "false_three_s": 153.21,
+          "exact_three_true_positive_s": 66.21
+        },
+        "two_pass": {
+          "speaker_recall": 0.9791051545246712,
+          "speaker_precision": 0.7472749878142683,
+          "DER": 0.3467850167991781,
+          "three_way_speaker_recall": 0.9231049231049231,
+          "exact_three_precision": 0.25709687513970225,
+          "exact_three_recall": 0.785012285012285,
+          "exact_three_F1": 0.38733793567940733,
+          "seconds": 1902.32,
+          "reference_three_s": 73.26,
+          "predicted_three_s": 223.69,
+          "false_three_s": 166.18,
+          "exact_three_true_positive_s": 57.51
+        },
+        "two_pass_confirmed": {
+          "speaker_recall": 0.9765181736562971,
+          "speaker_precision": 0.765386959171237,
+          "DER": 0.31591247767051395,
+          "three_way_speaker_recall": 0.914004914004914,
+          "exact_three_precision": 0.3715777495146931,
+          "exact_three_recall": 0.7577122577122577,
+          "exact_three_F1": 0.4986301369863014,
+          "seconds": 1902.32,
+          "reference_three_s": 73.26,
+          "predicted_three_s": 149.39,
+          "false_three_s": 93.88,
+          "exact_three_true_positive_s": 55.51
+        }
+      }
+    }
+  }
+}

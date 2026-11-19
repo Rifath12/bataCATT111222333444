@@ -1,0 +1,185 @@
+{
+  "recognizer": "csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17",
+  "revision": "2365baeacb507f821a0c8120fcee3d484dba7a07",
+  "model_sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+  "tokens_sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc",
+  "complete_meeting": {
+    "session": "R8008_M8013",
+    "zipformer": {
+      "reference_chars": 8943,
+      "substitutions": 579,
+      "deletions": 3048,
+      "insertions": 24,
+      "errors": 3651,
+      "cpCER": 0.40825226434082523,
+      "inference_s": 178.89954118400055
+    },
+    "sensevoice": {
+      "reference_chars": 8943,
+      "substitutions": 1601,
+      "deletions": 1279,
+      "insertions": 105,
+      "errors": 2985,
+      "cpCER": 0.33378061053337804,
+      "inference_s": 386.29688482399797
+    }
+  },
+  "excerpts": [
+    {
+      "session": "R8001_M8004",
+      "source": "R8001_M8004_105260_110720",
+      "crop_start_s": 1059.05,
+      "crop_end_s": 1107.2,
+      "duration_s": 48.15,
+      "reference_speakers": 3,
+      "system_speakers": 3,
+      "render": "routing",
+      "zipformer": {
+        "reference_chars": 298,
+        "substitutions": 66,
+        "deletions": 69,
+        "insertions": 4,
+        "errors": 139,
+        "cpCER": 0.4664429530201342,
+        "inference_s": 25.421600950998254
+      },
+      "sensevoice": {
+        "reference_chars": 298,
+        "substitutions": 82,
+        "deletions": 26,
+        "insertions": 12,
+        "errors": 120,
+        "cpCER": 0.40268456375838924,
+        "inference_s": 25.059839441993972
+      }
+    },
+    {
+      "session": "R8003_M8001",
+      "source": "R8003_M8001_145670_159450",
+      "crop_start_s": 1459.67,
+      "crop_end_s": 1594.17,
+      "duration_s": 134.5,
+      "reference_speakers": 3,
+      "system_speakers": 3,
+      "render": "dprnn",
+      "zipformer": {
+        "reference_chars": 634,
+        "substitutions": 42,
+        "deletions": 48,
+        "insertions": 3,
+        "errors": 93,
+        "cpCER": 0.14668769716088328,
+        "inference_s": 43.22120917199936
+      },
+      "sensevoice": {
+        "reference_chars": 634,
+        "substitutions": 54,
+        "deletions": 27,
+        "insertions": 13,
+        "errors": 94,
+        "cpCER": 0.14826498422712933,
+        "inference_s": 26.711336025997298
+      }
+    },
+    {
+      "session": "R8007_M8010",
+      "source": "R8007_M8010_119724_123864",
+      "crop_start_s": 1200.08,
+      "crop_end_s": 1238.64,
+      "duration_s": 38.56,
+      "reference_speakers": 3,
+      "system_speakers": 3,
+      "render": "routing",
+      "zipformer": {
+        "reference_chars": 262,
+        "substitutions": 66,
+        "deletions": 22,
+        "insertions": 3,
+        "errors": 91,
+        "cpCER": 0.3473282442748092,
+        "inference_s": 17.426569135001046
+      },
+      "sensevoice": {
+        "reference_chars": 262,
+        "substitutions": 77,
+        "deletions": 21,
+        "insertions": 7,
+        "errors": 105,
+        "cpCER": 0.40076335877862596,
+        "inference_s": 17.443667882005684
+      }
+    },
+    {
+      "session": "R8007_M8011",
+      "source": "R8007_M8011_062424_069144",
+      "crop_start_s": 636.97,
+      "crop_end_s": 688.66,
+      "duration_s": 51.69,
+      "reference_speakers": 3,
+      "system_speakers": 3,
+      "render": "dprnn",
+      "zipformer": {
+        "reference_chars": 298,
+        "substitutions": 23,
+        "deletions": 23,
+        "insertions": 1,
+        "errors": 47,
+        "cpCER": 0.15771812080536912,
+        "inference_s": 11.472837150999112
+      },
+      "sensevoice": {
+        "reference_chars": 298,
+        "substitutions": 33,
+        "deletions": 13,
+        "insertions": 3,
+        "errors": 49,
+        "cpCER": 0.1644295302013423,
+        "inference_s": 14.648293196005397
+      }
+    }
+  ],
+  "excerpt_totals": {
+    "zipformer": {
+      "reference_chars": 1492,
+      "substitutions": 197,
+      "deletions": 162,
+      "insertions": 11,
+      "errors": 370,
+      "inference_s": 97.54221640899777,
+      "cpCER": 0.2479892761394102
+    },
+    "sensevoice": {
+      "reference_chars": 1492,
+      "substitutions": 246,
+      "deletions": 87,
+      "insertions": 35,
+      "errors": 368,
+      "inference_s": 83.86313654600235,
+      "cpCER": 0.24664879356568364
+    }
+  },
+  "spectral_filter_exploratory": {
+    "session": "R8003_M8001",
+    "input_sec": 134.5,
+    "evaluated_with": "sensevoice",
+    "sepformer": {
+      "reference_chars": 634,
+      "substitutions": 47,
+      "deletions": 29,
+      "insertions": 15,
+      "errors": 91,
+      "cpCER": 0.14353312302839116,
+      "inference_s": 25.202126628006226
+    },
+    "refined": {
+      "reference_chars": 634,
+      "substitutions": 47,
+      "deletions": 32,
+      "insertions": 13,
+      "errors": 92,
+      "cpCER": 0.14511041009463724,
+      "inference_s": 44.78812402000767
+    },
+    "sepformer_windows": 3
+  }
+}

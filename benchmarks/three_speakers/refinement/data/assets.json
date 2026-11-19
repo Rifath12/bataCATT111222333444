@@ -1,0 +1,54 @@
+{
+  "dataset": "ggfox00000/dia-alimeeting-test",
+  "revision": "cef2837c4a1a0762074522c1bbbbb90eb4d1acf5",
+  "assets": [
+    {
+      "type": "file",
+      "oid": "c7b4bab9add28e2152b12ff28b82be243509eabe",
+      "size": 503095120,
+      "lfs": {
+        "oid": "8c747b5a085bcac7c0e10deb6d881189b5d6e2e2f713e149b382cc363d5da59e",
+        "size": 503095120,
+        "pointerSize": 134
+      },
+      "xetHash": "8895d92d2947f6c1bdf7c87c63627480bb6f426c01de3301c5a252a74745212a",
+      "path": "audio/far/R8004_M8006_MS805.wav"
+    },
+    {
+      "type": "file",
+      "oid": "df768cfaa05dda7c97c4803bd6016d6542627cde",
+      "size": 454909520,
+      "lfs": {
+        "oid": "6daf68eaf638aab99edea0cce7676b904b60d3d9f5c122f12e0465ff640b592c",
+        "size": 454909520,
+        "pointerSize": 134
+      },
+      "xetHash": "019088a8cd62fb33f86d0ead48345eaa8fb46037e0c3fe4e7aa5880f9c420257",
+      "path": "audio/far/R8005_M8009_MS802.wav"
+    },
+    {
+      "type": "file",
+      "oid": "818323ad4c95b2cc4a97cd05446dae538319d47e",
+      "size": 470778992,
+      "lfs": {
+        "oid": "982daa191414f983b5b0e6d49555ecbe7a291f3fb45b4a749966f9a2ce561d79",
+        "size": 470778992,
+        "pointerSize": 134
+      },
+      "xetHash": "f25e79d82198d1a9019b6e9783f0b73f714d12040da942907bd28e7801017dfe",
+      "path": "audio/far/R8008_M8016_MS808.wav"
+    },
+    {
+      "type": "file",
+      "oid": "1f8fbbcf9d91adfa5b34c41e093f3cb151c92b70",
+      "size": 465933392,
+      "lfs": {
+        "oid": "b04ed29cb8c56d87cd183522f8bbe04cc32570ca1d143d500629c28e06cad7a8",
+        "size": 465933392,
+        "pointerSize": 134
+      },
+      "xetHash": "ace2db0b0ae6cb900332f865ba153c15495acf595f8f202001e2b6d23946f993",
+      "path": "audio/far/R8008_M8017_MS808.wav"
+    }
+  ]
+}

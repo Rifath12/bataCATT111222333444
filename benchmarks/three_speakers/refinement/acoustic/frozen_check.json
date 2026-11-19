@@ -1,0 +1,9 @@
+{
+  "recording": "R8008_M8016",
+  "duration_s": 1838.980125,
+  "proposals": 5260,
+  "numeric_features": 42,
+  "number_of_trees": 70,
+  "max_abs_probability_difference": 0.0,
+  "all_probabilities_identical": true
+}

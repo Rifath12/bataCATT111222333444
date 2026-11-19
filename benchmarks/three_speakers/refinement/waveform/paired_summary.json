@@ -1,0 +1,422 @@
+{
+  "test": {
+    "frequency_fit": {
+      "room": {
+        "si_sdri_db": {
+          "baseline": 3.5233195049253436,
+          "candidate": 3.539836468441644,
+          "delta": 0.016516963516300276,
+          "triplet_bootstrap_95": [
+            -0.05691522056950937,
+            0.10403933252182362
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 4.937844826244883,
+          "candidate": 4.965657601446392,
+          "delta": 0.027812775201508266,
+          "triplet_bootstrap_95": [
+            -0.06573281603652958,
+            0.07734030068218312
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 4.365779412101887,
+          "candidate": 4.37557820424453,
+          "delta": 0.009798792142643009,
+          "triplet_bootstrap_95": [
+            -0.04652347437004867,
+            0.08365068817951293
+          ]
+        },
+        "base_s": 50.59394978400087,
+        "post_s": 0.15647682898270432,
+        "reference_triple_s": 6.2,
+        "input_s": 20.4,
+        "clip_medians_improved": 3
+      },
+      "clean": {
+        "si_sdri_db": {
+          "baseline": 11.483622188825539,
+          "candidate": 11.486440822749366,
+          "delta": 0.002818633923826752,
+          "triplet_bootstrap_95": [
+            -0.008588690995228632,
+            0.0333708292493462
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 14.412895486536906,
+          "candidate": 14.418624114463501,
+          "delta": 0.005728627926595564,
+          "triplet_bootstrap_95": [
+            -0.017438472577760322,
+            0.009882193628554248
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 10.63371063573536,
+          "candidate": 10.62891040237905,
+          "delta": -0.004800233356309747,
+          "triplet_bootstrap_95": [
+            -0.006873468894239565,
+            0.033920675934320244
+          ]
+        },
+        "base_s": 51.87705552802072,
+        "post_s": 0.2203293649945408,
+        "reference_triple_s": 6.140000000000001,
+        "input_s": 20.4,
+        "clip_medians_improved": 5
+      },
+      "pooled": {
+        "si_sdri_db": {
+          "baseline": 7.2087343526947105,
+          "candidate": 7.259103664839922,
+          "delta": 0.050369312145211786,
+          "triplet_bootstrap_95": [
+            -0.06573281603652958,
+            0.0869147672418773
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 11.82286690890908,
+          "candidate": 11.816105504773429,
+          "delta": -0.0067614041356520715,
+          "triplet_bootstrap_95": [
+            -0.041585644307144065,
+            0.004255197402748934
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 7.610424157284081,
+          "candidate": 7.6495581582510095,
+          "delta": 0.03913400096692854,
+          "triplet_bootstrap_95": [
+            -0.050446582333884216,
+            0.04440885427469787
+          ]
+        },
+        "base_s": 102.47100531202159,
+        "post_s": 0.37680619397724513,
+        "reference_triple_s": 12.34,
+        "input_s": 40.8,
+        "clip_medians_improved": 8
+      }
+    },
+    "spectral_shrinkage": {
+      "room": {
+        "si_sdri_db": {
+          "baseline": 3.5233195049253436,
+          "candidate": 3.4656105470601384,
+          "delta": -0.057708957865205246,
+          "triplet_bootstrap_95": [
+            -0.5830007240497941,
+            0.46392351116767916
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 4.937844826244883,
+          "candidate": 5.2152937640088375,
+          "delta": 0.2774489377639542,
+          "triplet_bootstrap_95": [
+            0.19822639460123526,
+            0.5248465429678806
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 4.365779412101887,
+          "candidate": 4.992818584989939,
+          "delta": 0.6270391728880522,
+          "triplet_bootstrap_95": [
+            -0.13070491008004037,
+            0.777033685193814
+          ]
+        },
+        "base_s": 50.59394978400087,
+        "post_s": 3.1520052710111486,
+        "reference_triple_s": 6.2,
+        "input_s": 20.4,
+        "clip_medians_improved": 3
+      },
+      "clean": {
+        "si_sdri_db": {
+          "baseline": 11.483622188825539,
+          "candidate": 11.431875130795627,
+          "delta": -0.051747058029912196,
+          "triplet_bootstrap_95": [
+            -0.2847948006509675,
+            0.09349526465035396
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 14.412895486536906,
+          "candidate": 14.38712299666271,
+          "delta": -0.025772489874196225,
+          "triplet_bootstrap_95": [
+            -0.3932645008932063,
+            0.3429297410821537
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 10.63371063573536,
+          "candidate": 10.950816769222376,
+          "delta": 0.317106133487016,
+          "triplet_bootstrap_95": [
+            -0.24828973340439475,
+            0.6100906046622203
+          ]
+        },
+        "base_s": 51.87705552802072,
+        "post_s": 2.9975149189995136,
+        "reference_triple_s": 6.140000000000001,
+        "input_s": 20.4,
+        "clip_medians_improved": 1
+      },
+      "pooled": {
+        "si_sdri_db": {
+          "baseline": 7.2087343526947105,
+          "candidate": 7.470099534263168,
+          "delta": 0.26136518156845767,
+          "triplet_bootstrap_95": [
+            -0.6791699887249631,
+            0.8823438884946695
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 11.82286690890908,
+          "candidate": 11.922298706562241,
+          "delta": 0.09943179765316046,
+          "triplet_bootstrap_95": [
+            -0.01896213852785067,
+            0.3491349824598302
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 7.610424157284081,
+          "candidate": 8.156900898573916,
+          "delta": 0.546476741289835,
+          "triplet_bootstrap_95": [
+            -0.12072873298565945,
+            1.0641818580055293
+          ]
+        },
+        "base_s": 102.47100531202159,
+        "post_s": 6.149520190010662,
+        "reference_triple_s": 12.34,
+        "input_s": 40.8,
+        "clip_medians_improved": 4
+      }
+    }
+  },
+  "fresh": {
+    "frequency_fit": {
+      "room": {
+        "si_sdri_db": {
+          "baseline": 3.1070488595145713,
+          "candidate": 3.150444944616022,
+          "delta": 0.043396085101450765,
+          "triplet_bootstrap_95": [
+            -0.11069235583665193,
+            0.043396085101450765
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 5.266392796176106,
+          "candidate": 5.2314631546757475,
+          "delta": -0.0349296415003586,
+          "triplet_bootstrap_95": [
+            -0.0349296415003586,
+            0.02262734784618381
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 4.060820401557416,
+          "candidate": 4.162431413281336,
+          "delta": 0.10161101172391973,
+          "triplet_bootstrap_95": [
+            -0.10063664355859903,
+            0.10161101172391973
+          ]
+        },
+        "base_s": 30.65673132498341,
+        "post_s": 0.09584910298872273,
+        "reference_triple_s": 2.7,
+        "input_s": 10.2,
+        "clip_medians_improved": 1
+      },
+      "clean": {
+        "si_sdri_db": {
+          "baseline": 6.901120176610982,
+          "candidate": 6.920107764415787,
+          "delta": 0.018987587804804917,
+          "triplet_bootstrap_95": [
+            -0.008619143977641741,
+            0.037836423523527785
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 7.165116746717341,
+          "candidate": 7.16515683144143,
+          "delta": 4.008472408933983e-05,
+          "triplet_bootstrap_95": [
+            4.008472408933983e-05,
+            0.014999509262192845
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 6.8885437741754405,
+          "candidate": 6.899003404774409,
+          "delta": 0.010459630598968594,
+          "triplet_bootstrap_95": [
+            0.010459630598968594,
+            0.02591164997842821
+          ]
+        },
+        "base_s": 35.51973287299916,
+        "post_s": 0.13198730000294745,
+        "reference_triple_s": 2.54,
+        "input_s": 10.2,
+        "clip_medians_improved": 2
+      },
+      "pooled": {
+        "si_sdri_db": {
+          "baseline": 5.735816295472531,
+          "candidate": 5.720419533676669,
+          "delta": -0.015396761795861913,
+          "triplet_bootstrap_95": [
+            -0.015396761795861913,
+            0.03855455787651074
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 6.6851782707431475,
+          "candidate": 6.68726637205951,
+          "delta": 0.0020881013163620565,
+          "triplet_bootstrap_95": [
+            -0.015396761795861913,
+            0.018813428554188327
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 5.021249499859064,
+          "candidate": 5.031264160219146,
+          "delta": 0.010014660360081251,
+          "triplet_bootstrap_95": [
+            -0.02584479943198481,
+            0.07275474113759461
+          ]
+        },
+        "base_s": 66.17646419798257,
+        "post_s": 0.22783640299167018,
+        "reference_triple_s": 5.24,
+        "input_s": 20.4,
+        "clip_medians_improved": 3
+      }
+    },
+    "spectral_shrinkage": {
+      "room": {
+        "si_sdri_db": {
+          "baseline": 3.1070488595145713,
+          "candidate": 3.0454354957124936,
+          "delta": -0.061613363802077714,
+          "triplet_bootstrap_95": [
+            -0.9658318510433741,
+            1.1693330297832656
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 5.266392796176106,
+          "candidate": 6.435725825959372,
+          "delta": 1.1693330297832656,
+          "triplet_bootstrap_95": [
+            -0.9658318510433741,
+            1.1693330297832656
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 4.060820401557416,
+          "candidate": 3.689199687726758,
+          "delta": -0.3716207138306582,
+          "triplet_bootstrap_95": [
+            -0.7024288651943564,
+            0.28362154425596664
+          ]
+        },
+        "base_s": 30.65673132498341,
+        "post_s": 2.605585229001008,
+        "reference_triple_s": 2.7,
+        "input_s": 10.2,
+        "clip_medians_improved": 1
+      },
+      "clean": {
+        "si_sdri_db": {
+          "baseline": 6.901120176610982,
+          "candidate": 7.15491110625778,
+          "delta": 0.2537909296467973,
+          "triplet_bootstrap_95": [
+            -0.6326195147760387,
+            0.3840828012393196
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 7.165116746717341,
+          "candidate": 7.15491110625778,
+          "delta": -0.01020564045956096,
+          "triplet_bootstrap_95": [
+            -0.01020564045956096,
+            0.4467464003286157
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 6.8885437741754405,
+          "candidate": 6.984775331470635,
+          "delta": 0.09623155729519439,
+          "triplet_bootstrap_95": [
+            -0.3601985004503314,
+            0.6116474468088651
+          ]
+        },
+        "base_s": 35.51973287299916,
+        "post_s": 1.8829344719852088,
+        "reference_triple_s": 2.54,
+        "input_s": 10.2,
+        "clip_medians_improved": 2
+      },
+      "pooled": {
+        "si_sdri_db": {
+          "baseline": 5.735816295472531,
+          "candidate": 6.371677788287118,
+          "delta": 0.6358614928145876,
+          "triplet_bootstrap_95": [
+            -0.9658318510433741,
+            0.6358614928145876
+          ]
+        },
+        "weakest_si_sdri_db": {
+          "baseline": 6.6851782707431475,
+          "candidate": 6.795318466108576,
+          "delta": 0.11014019536542818,
+          "triplet_bootstrap_95": [
+            -0.2595427253573792,
+            0.6358614928145876
+          ]
+        },
+        "whole_si_sdri_db": {
+          "baseline": 5.021249499859064,
+          "candidate": 5.525078801187263,
+          "delta": 0.5038293013281985,
+          "triplet_bootstrap_95": [
+            -0.2393535987043438,
+            1.2855911821369412
+          ]
+        },
+        "base_s": 66.17646419798257,
+        "post_s": 4.488519700986217,
+        "reference_triple_s": 5.24,
+        "input_s": 20.4,
+        "clip_medians_improved": 3
+      }
+    }
+  }
+}

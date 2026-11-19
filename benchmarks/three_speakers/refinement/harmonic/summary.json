@@ -1,0 +1,726 @@
+{
+  "selection": {
+    "False": {
+      "threshold": 0.14990179252983596,
+      "guard_thresholds": [
+        0.0,
+        1.01
+      ]
+    },
+    "True": {
+      "threshold": 0.11826029203824001,
+      "guard_thresholds": [
+        0.0,
+        0.85
+      ]
+    }
+  },
+  "pooled": {
+    "real": {
+      "previous": {
+        "speaker_recall": 0.7192683345889008,
+        "speaker_precision": 0.9285446169595633,
+        "DER": 0.32301124724105573,
+        "three_way_speaker_recall": 0.6681266676735639,
+        "exact_three_precision": 0.4984561093956771,
+        "exact_three_recall": 0.3413381664401148,
+        "exact_three_F1": 0.4051994621246078,
+        "seconds": 431.13,
+        "reference_three_s": 66.21,
+        "predicted_three_s": 45.34,
+        "false_three_s": 22.74,
+        "exact_three_true_positive_s": 22.6
+      },
+      "native": {
+        "speaker_recall": 0.7555608421553467,
+        "speaker_precision": 0.9681614957322856,
+        "DER": 0.26214926714510395,
+        "three_way_speaker_recall": 0.6505059658661834,
+        "exact_three_precision": 0.7531769305962854,
+        "exact_three_recall": 0.23274429844434374,
+        "exact_three_F1": 0.35560170762662974,
+        "seconds": 431.13,
+        "reference_three_s": 66.21,
+        "predicted_three_s": 20.46,
+        "false_three_s": 5.05,
+        "exact_three_true_positive_s": 15.41
+      },
+      "posterior": {
+        "speaker_recall": 0.8116648824392372,
+        "speaker_precision": 0.8626148270921707,
+        "DER": 0.3152531620475001,
+        "three_way_speaker_recall": 0.8433267885012334,
+        "exact_three_precision": 0.37038815526210483,
+        "exact_three_recall": 0.6989880682676333,
+        "exact_three_F1": 0.48420171584013394,
+        "seconds": 431.13,
+        "reference_three_s": 66.21,
+        "predicted_three_s": 124.95,
+        "false_three_s": 78.67,
+        "exact_three_true_positive_s": 46.28
+      },
+      "posterior_guarded": {
+        "speaker_recall": 0.7192683345889008,
+        "speaker_precision": 0.9285446169595633,
+        "DER": 0.32301124724105573,
+        "three_way_speaker_recall": 0.6681266676735639,
+        "exact_three_precision": 0.4984561093956771,
+        "exact_three_recall": 0.3413381664401148,
+        "exact_three_F1": 0.4051994621246078,
+        "seconds": 431.13,
+        "reference_three_s": 66.21,
+        "predicted_three_s": 45.34,
+        "false_three_s": 22.74,
+        "exact_three_true_positive_s": 22.6
+      },
+      "posterior_and_pitch": {
+        "speaker_recall": 0.830088682711497,
+        "speaker_precision": 0.8470034523681087,
+        "DER": 0.31879518390759026,
+        "three_way_speaker_recall": 0.8754468106529729,
+        "exact_three_precision": 0.35318462401795736,
+        "exact_three_recall": 0.7604591451442381,
+        "exact_three_F1": 0.482348996503329,
+        "seconds": 431.13,
+        "reference_three_s": 66.21,
+        "predicted_three_s": 142.56,
+        "false_three_s": 92.21,
+        "exact_three_true_positive_s": 50.35
+      },
+      "posterior_and_pitch_guarded": {
+        "speaker_recall": 0.7192683345889008,
+        "speaker_precision": 0.9285446169595633,
+        "DER": 0.32301124724105573,
+        "three_way_speaker_recall": 0.6681266676735639,
+        "exact_three_precision": 0.4984561093956771,
+        "exact_three_recall": 0.3413381664401148,
+        "exact_three_F1": 0.4051994621246078,
+        "seconds": 431.13,
+        "reference_three_s": 66.21,
+        "predicted_three_s": 45.34,
+        "false_three_s": 22.74,
+        "exact_three_true_positive_s": 22.6
+      }
+    },
+    "ali": {
+      "previous": {
+        "speaker_recall": 0.9146620264529206,
+        "speaker_precision": 0.8845377526953424,
+        "DER": 0.19127923658611082,
+        "three_way_speaker_recall": 0.9178724178724179,
+        "exact_three_precision": 0.4751051303616484,
+        "exact_three_recall": 0.7710892710892711,
+        "exact_three_F1": 0.587947543713572,
+        "seconds": 1902.32,
+        "reference_three_s": 73.26,
+        "predicted_three_s": 118.9,
+        "false_three_s": 62.41,
+        "exact_three_true_positive_s": 56.49
+      },
+      "native": {
+        "speaker_recall": 0.9184800214733295,
+        "speaker_precision": 0.8485339512770742,
+        "DER": 0.23412408252422692,
+        "three_way_speaker_recall": 0.8142688142688143,
+        "exact_three_precision": 0.5784888325677174,
+        "exact_three_recall": 0.4984984984984985,
+        "exact_three_F1": 0.5355231321944424,
+        "seconds": 1902.32,
+        "reference_three_s": 73.26,
+        "predicted_three_s": 63.13,
+        "false_three_s": 26.61,
+        "exact_three_true_positive_s": 36.52
+      },
+      "posterior": {
+        "speaker_recall": 0.9310076730130228,
+        "speaker_precision": 0.839025570231596,
+        "DER": 0.24147314445442009,
+        "three_way_speaker_recall": 0.9443079443079443,
+        "exact_three_precision": 0.26806174067188376,
+        "exact_three_recall": 0.8463008463008463,
+        "exact_three_F1": 0.40715810211787884,
+        "seconds": 1902.32,
+        "reference_three_s": 73.26,
+        "predicted_three_s": 231.29,
+        "false_three_s": 169.29,
+        "exact_three_true_positive_s": 62.0
+      },
+      "posterior_guarded": {
+        "speaker_recall": 0.9146620264529206,
+        "speaker_precision": 0.8845377526953424,
+        "DER": 0.19127923658611082,
+        "three_way_speaker_recall": 0.9178724178724179,
+        "exact_three_precision": 0.4751051303616484,
+        "exact_three_recall": 0.7710892710892711,
+        "exact_three_F1": 0.587947543713572,
+        "seconds": 1902.32,
+        "reference_three_s": 73.26,
+        "predicted_three_s": 118.9,
+        "false_three_s": 62.41,
+        "exact_three_true_positive_s": 56.49
+      },
+      "posterior_and_pitch": {
+        "speaker_recall": 0.9315630177432641,
+        "speaker_precision": 0.8308080912306479,
+        "DER": 0.25220518136633313,
+        "three_way_speaker_recall": 0.9520429520429521,
+        "exact_three_precision": 0.25304890160092164,
+        "exact_three_recall": 0.8695058695058695,
+        "exact_three_F1": 0.3920120619095972,
+        "seconds": 1902.32,
+        "reference_three_s": 73.26,
+        "predicted_three_s": 251.73,
+        "false_three_s": 188.03,
+        "exact_three_true_positive_s": 63.7
+      },
+      "posterior_and_pitch_guarded": {
+        "speaker_recall": 0.9146620264529206,
+        "speaker_precision": 0.8845377526953424,
+        "DER": 0.19127923658611082,
+        "three_way_speaker_recall": 0.9178724178724179,
+        "exact_three_precision": 0.4751051303616484,
+        "exact_three_recall": 0.7710892710892711,
+        "exact_three_F1": 0.587947543713572,
+        "seconds": 1902.32,
+        "reference_three_s": 73.26,
+        "predicted_three_s": 118.9,
+        "false_three_s": 62.41,
+        "exact_three_true_positive_s": 56.49
+      }
+    },
+    "long": {
+      "previous": {
+        "speaker_recall": 0.9710557996749534,
+        "speaker_precision": 0.9184441477626938,
+        "DER": 0.11000421356768796,
+        "three_way_speaker_recall": 0.8681626928471248,
+        "exact_three_precision": 0.1635150166852058,
+        "exact_three_recall": 0.6185133239831697,
+        "exact_three_F1": 0.2586510263929619,
+        "seconds": 3833.29,
+        "reference_three_s": 7.13,
+        "predicted_three_s": 26.97,
+        "false_three_s": 22.56,
+        "exact_three_true_positive_s": 4.41
+      },
+      "native": {
+        "speaker_recall": 0.9729338469872991,
+        "speaker_precision": 0.8325594092937847,
+        "DER": 0.2161500030096912,
+        "three_way_speaker_recall": 0.788218793828892,
+        "exact_three_precision": 0.2509157509157509,
+        "exact_three_recall": 0.38429172510518933,
+        "exact_three_F1": 0.303601108033241,
+        "seconds": 3833.29,
+        "reference_three_s": 7.13,
+        "predicted_three_s": 10.92,
+        "false_three_s": 8.18,
+        "exact_three_true_positive_s": 2.74
+      },
+      "posterior": {
+        "speaker_recall": 0.9742942274122675,
+        "speaker_precision": 0.9027804116236265,
+        "DER": 0.1270812014687293,
+        "three_way_speaker_recall": 0.9219261337073399,
+        "exact_three_precision": 0.07347597900686315,
+        "exact_three_recall": 0.7657784011220197,
+        "exact_three_F1": 0.13408644400785855,
+        "seconds": 3833.29,
+        "reference_three_s": 7.13,
+        "predicted_three_s": 74.31,
+        "false_three_s": 68.85,
+        "exact_three_true_positive_s": 5.46
+      },
+      "posterior_guarded": {
+        "speaker_recall": 0.9710557996749534,
+        "speaker_precision": 0.9184441477626938,
+        "DER": 0.11000421356768796,
+        "three_way_speaker_recall": 0.8681626928471248,
+        "exact_three_precision": 0.1635150166852058,
+        "exact_three_recall": 0.6185133239831697,
+        "exact_three_F1": 0.2586510263929619,
+        "seconds": 3833.29,
+        "reference_three_s": 7.13,
+        "predicted_three_s": 26.97,
+        "false_three_s": 22.56,
+        "exact_three_true_positive_s": 4.41
+      },
+      "posterior_and_pitch": {
+        "speaker_recall": 0.9744928670318426,
+        "speaker_precision": 0.9022549057855108,
+        "DER": 0.12775537229880216,
+        "three_way_speaker_recall": 0.9233286582515194,
+        "exact_three_precision": 0.06873669713284086,
+        "exact_three_recall": 0.7699859747545582,
+        "exact_three_F1": 0.12620689655172415,
+        "seconds": 3833.29,
+        "reference_three_s": 7.13,
+        "predicted_three_s": 79.87,
+        "false_three_s": 74.38,
+        "exact_three_true_positive_s": 5.49
+      },
+      "posterior_and_pitch_guarded": {
+        "speaker_recall": 0.9710557996749534,
+        "speaker_precision": 0.9184441477626938,
+        "DER": 0.11000421356768796,
+        "three_way_speaker_recall": 0.8681626928471248,
+        "exact_three_precision": 0.1635150166852058,
+        "exact_three_recall": 0.6185133239831697,
+        "exact_three_F1": 0.2586510263929619,
+        "seconds": 3833.29,
+        "reference_three_s": 7.13,
+        "predicted_three_s": 26.97,
+        "false_three_s": 22.56,
+        "exact_three_true_positive_s": 4.41
+      }
+    },
+    "fresh": {
+      "previous": {
+        "speaker_recall": 0.874403906923298,
+        "speaker_precision": 0.824674425465558,
+        "DER": 0.2873950652749848,
+        "three_way_speaker_recall": 0.8984261676820423,
+        "exact_three_precision": 0.36837484911664653,
+        "exact_three_recall": 0.7304177545691906,
+        "exact_three_F1": 0.4897512582974688,
+        "seconds": 1116.28,
+        "reference_three_s": 91.92,
+        "predicted_three_s": 182.26,
+        "false_three_s": 115.12,
+        "exact_three_true_positive_s": 67.14
+      },
+      "native": {
+        "speaker_recall": 0.8682626320661369,
+        "speaker_precision": 0.8195781862006628,
+        "DER": 0.3006351942289891,
+        "three_way_speaker_recall": 0.7927908326080649,
+        "exact_three_precision": 0.44391534391534393,
+        "exact_three_recall": 0.4563751087902524,
+        "exact_three_F1": 0.4500590065443622,
+        "seconds": 1116.28,
+        "reference_three_s": 91.92,
+        "predicted_three_s": 94.5,
+        "false_three_s": 52.55,
+        "exact_three_true_positive_s": 41.95
+      },
+      "posterior": {
+        "speaker_recall": 0.9298668964856842,
+        "speaker_precision": 0.7336912995078805,
+        "DER": 0.4031919307989403,
+        "three_way_speaker_recall": 0.9659849144183348,
+        "exact_three_precision": 0.20949957591178966,
+        "exact_three_recall": 0.9136205395996518,
+        "exact_three_F1": 0.34084175494135316,
+        "seconds": 1116.28,
+        "reference_three_s": 91.92,
+        "predicted_three_s": 400.86,
+        "false_three_s": 316.88,
+        "exact_three_true_positive_s": 83.98
+      },
+      "posterior_guarded": {
+        "speaker_recall": 0.874403906923298,
+        "speaker_precision": 0.824674425465558,
+        "DER": 0.2873950652749848,
+        "three_way_speaker_recall": 0.8984261676820423,
+        "exact_three_precision": 0.36837484911664653,
+        "exact_three_recall": 0.7304177545691906,
+        "exact_three_F1": 0.4897512582974688,
+        "seconds": 1116.28,
+        "reference_three_s": 91.92,
+        "predicted_three_s": 182.26,
+        "false_three_s": 115.12,
+        "exact_three_true_positive_s": 67.14
+      },
+      "posterior_and_pitch": {
+        "speaker_recall": 0.9327587857895241,
+        "speaker_precision": 0.7172654842494367,
+        "DER": 0.43121069935203804,
+        "three_way_speaker_recall": 0.9710617928633595,
+        "exact_three_precision": 0.19469591590085056,
+        "exact_three_recall": 0.9288511749347258,
+        "exact_three_F1": 0.3219153548873598,
+        "seconds": 1116.28,
+        "reference_three_s": 91.92,
+        "predicted_three_s": 438.53,
+        "false_three_s": 353.15,
+        "exact_three_true_positive_s": 85.38
+      },
+      "posterior_and_pitch_guarded": {
+        "speaker_recall": 0.874403906923298,
+        "speaker_precision": 0.824674425465558,
+        "DER": 0.2873950652749848,
+        "three_way_speaker_recall": 0.8984261676820423,
+        "exact_three_precision": 0.36837484911664653,
+        "exact_three_recall": 0.7304177545691906,
+        "exact_three_F1": 0.4897512582974688,
+        "seconds": 1116.28,
+        "reference_three_s": 91.92,
+        "predicted_three_s": 182.26,
+        "false_three_s": 115.12,
+        "exact_three_true_positive_s": 67.14
+      }
+    },
+    "fresh_long": {
+      "previous": {
+        "speaker_recall": 0.9718542933609365,
+        "speaker_precision": 0.9283038014206542,
+        "DER": 0.10140762583167055,
+        "three_way_speaker_recall": 0.8888888888888888,
+        "exact_three_precision": 0.18409090909090908,
+        "exact_three_recall": 0.6666666666666666,
+        "exact_three_F1": 0.28851291184327693,
+        "seconds": 3659.05,
+        "reference_three_s": 2.43,
+        "predicted_three_s": 8.8,
+        "false_three_s": 7.18,
+        "exact_three_true_positive_s": 1.62
+      },
+      "native": {
+        "speaker_recall": 0.976801754254544,
+        "speaker_precision": 0.8352078026057209,
+        "DER": 0.21068760512928775,
+        "three_way_speaker_recall": 0.7928669410150891,
+        "exact_three_precision": 0.2817258883248731,
+        "exact_three_recall": 0.4567901234567901,
+        "exact_three_F1": 0.34850863422291994,
+        "seconds": 3659.05,
+        "reference_three_s": 2.43,
+        "predicted_three_s": 3.94,
+        "false_three_s": 2.83,
+        "exact_three_true_positive_s": 1.11
+      },
+      "posterior": {
+        "speaker_recall": 0.9727055426543996,
+        "speaker_precision": 0.9205006090055488,
+        "DER": 0.10995416873803995,
+        "three_way_speaker_recall": 0.9026063100137174,
+        "exact_three_precision": 0.06910405785456006,
+        "exact_three_recall": 0.7078189300411523,
+        "exact_three_F1": 0.1259150805270864,
+        "seconds": 3659.05,
+        "reference_three_s": 2.43,
+        "predicted_three_s": 24.89,
+        "false_three_s": 23.17,
+        "exact_three_true_positive_s": 1.72
+      },
+      "posterior_guarded": {
+        "speaker_recall": 0.9718542933609365,
+        "speaker_precision": 0.9283038014206542,
+        "DER": 0.10140762583167055,
+        "three_way_speaker_recall": 0.8888888888888888,
+        "exact_three_precision": 0.18409090909090908,
+        "exact_three_recall": 0.6666666666666666,
+        "exact_three_F1": 0.28851291184327693,
+        "seconds": 3659.05,
+        "reference_three_s": 2.43,
+        "predicted_three_s": 8.8,
+        "false_three_s": 7.18,
+        "exact_three_true_positive_s": 1.62
+      },
+      "posterior_and_pitch": {
+        "speaker_recall": 0.972834932547006,
+        "speaker_precision": 0.918722506624135,
+        "DER": 0.1119222571045266,
+        "three_way_speaker_recall": 0.9080932784636488,
+        "exact_three_precision": 0.06004776526782668,
+        "exact_three_recall": 0.7242798353909465,
+        "exact_three_F1": 0.11090107120352867,
+        "seconds": 3659.05,
+        "reference_three_s": 2.43,
+        "predicted_three_s": 29.31,
+        "false_three_s": 27.55,
+        "exact_three_true_positive_s": 1.76
+      },
+      "posterior_and_pitch_guarded": {
+        "speaker_recall": 0.9718542933609365,
+        "speaker_precision": 0.9283038014206542,
+        "DER": 0.10140762583167055,
+        "three_way_speaker_recall": 0.8888888888888888,
+        "exact_three_precision": 0.18409090909090908,
+        "exact_three_recall": 0.6666666666666666,
+        "exact_three_F1": 0.28851291184327693,
+        "seconds": 3659.05,
+        "reference_three_s": 2.43,
+        "predicted_three_s": 8.8,
+        "false_three_s": 7.18,
+        "exact_three_true_positive_s": 1.62
+      }
+    }
+  },
+  "fresh_session_counts": {
+    "R8004_M8006": {
+      "previous": [
+        56512,
+        59642,
+        49182,
+        16063,
+        3813,
+        7273,
+        3078,
+        10596,
+        40527
+      ],
+      "native": [
+        56512,
+        58622,
+        48405,
+        17169,
+        3813,
+        4947,
+        2467,
+        9852,
+        40527
+      ],
+      "posterior": [
+        56512,
+        71996,
+        52972,
+        22413,
+        3813,
+        15290,
+        3713,
+        11281,
+        40527
+      ],
+      "posterior_guarded": [
+        56512,
+        59642,
+        49182,
+        16063,
+        3813,
+        7273,
+        3078,
+        10596,
+        40527
+      ],
+      "posterior_and_pitch": [
+        56512,
+        73135,
+        52997,
+        23521,
+        3813,
+        16094,
+        3729,
+        11281,
+        40527
+      ],
+      "posterior_and_pitch_guarded": [
+        56512,
+        59642,
+        49182,
+        16063,
+        3813,
+        7273,
+        3078,
+        10596,
+        40527
+      ]
+    },
+    "R8005_M8009": {
+      "previous": [
+        100133,
+        106449,
+        87789,
+        28956,
+        5379,
+        10953,
+        3636,
+        14179,
+        71101
+      ],
+      "native": [
+        100133,
+        107328,
+        87604,
+        29924,
+        5379,
+        4503,
+        1728,
+        12010,
+        71101
+      ],
+      "posterior": [
+        100133,
+        126533,
+        92687,
+        40745,
+        5379,
+        24796,
+        4685,
+        15357,
+        71101
+      ],
+      "posterior_guarded": [
+        100133,
+        106449,
+        87789,
+        28956,
+        5379,
+        10953,
+        3636,
+        14179,
+        71101
+      ],
+      "posterior_and_pitch": [
+        100133,
+        130572,
+        93115,
+        44026,
+        5379,
+        27759,
+        4809,
+        15497,
+        71101
+      ],
+      "posterior_and_pitch_guarded": [
+        100133,
+        106449,
+        87789,
+        28956,
+        5379,
+        10953,
+        3636,
+        14179,
+        71101
+      ]
+    }
+  },
+  "fresh_long_session_counts": {
+    "R8008_M8016": {
+      "previous": [
+        153135,
+        161861,
+        148600,
+        17510,
+        130,
+        534,
+        115,
+        375,
+        183899
+      ],
+      "native": [
+        153135,
+        181615,
+        149111,
+        35572,
+        130,
+        294,
+        71,
+        312,
+        183899
+      ],
+      "posterior": [
+        153135,
+        164305,
+        148776,
+        19667,
+        130,
+        1878,
+        125,
+        385,
+        183899
+      ],
+      "posterior_guarded": [
+        153135,
+        161861,
+        148600,
+        17510,
+        130,
+        534,
+        115,
+        375,
+        183899
+      ],
+      "posterior_and_pitch": [
+        153135,
+        164808,
+        148798,
+        20135,
+        130,
+        2211,
+        129,
+        389,
+        183899
+      ],
+      "posterior_and_pitch_guarded": [
+        153135,
+        161861,
+        148600,
+        17510,
+        130,
+        534,
+        115,
+        375,
+        183899
+      ]
+    },
+    "R8008_M8017": {
+      "previous": [
+        140551,
+        145603,
+        136820,
+        12272,
+        113,
+        346,
+        47,
+        273,
+        182006
+      ],
+      "native": [
+        140551,
+        161860,
+        137762,
+        26304,
+        113,
+        100,
+        40,
+        266,
+        182006
+      ],
+      "posterior": [
+        140551,
+        146037,
+        136894,
+        12625,
+        113,
+        611,
+        47,
+        273,
+        182006
+      ],
+      "posterior_guarded": [
+        140551,
+        145603,
+        136820,
+        12272,
+        113,
+        346,
+        47,
+        273,
+        182006
+      ],
+      "posterior_and_pitch": [
+        140551,
+        146176,
+        136910,
+        12735,
+        113,
+        720,
+        47,
+        273,
+        182006
+      ],
+      "posterior_and_pitch_guarded": [
+        140551,
+        145603,
+        136820,
+        12272,
+        113,
+        346,
+        47,
+        273,
+        182006
+      ]
+    }
+  }
+}

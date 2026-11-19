@@ -1,0 +1,115 @@
+{
+  "previous_scored_alimeeting_sessions": [
+    "R8001_M8004",
+    "R8003_M8001",
+    "R8007_M8010",
+    "R8007_M8011",
+    "R8008_M8013",
+    "R8008_M8014",
+    "R8008_M8015"
+  ],
+  "preceding_speaker_ids": [
+    "N_SPK8001",
+    "N_SPK8002",
+    "N_SPK8003",
+    "N_SPK8004",
+    "N_SPK8013",
+    "N_SPK8014",
+    "N_SPK8015",
+    "N_SPK8016",
+    "N_SPK8047",
+    "N_SPK8048",
+    "N_SPK8049",
+    "N_SPK8050",
+    "N_SPK8051",
+    "N_SPK8052",
+    "N_SPK8053",
+    "N_SPK8054",
+    "N_SPK8055",
+    "N_SPK8056",
+    "N_SPK8057",
+    "N_SPK8058",
+    "N_SPK8059",
+    "N_SPK8066",
+    "N_SPK8067",
+    "N_SPK8068",
+    "N_SPK8069"
+  ],
+  "new_speaker_ids": [
+    "N_SPK8031",
+    "N_SPK8032",
+    "N_SPK8033",
+    "N_SPK8034",
+    "N_SPK8043",
+    "N_SPK8044",
+    "N_SPK8045",
+    "N_SPK8046",
+    "N_SPK8060",
+    "N_SPK8061",
+    "N_SPK8062",
+    "N_SPK8063",
+    "N_SPK8064",
+    "N_SPK8065"
+  ],
+  "known_shared_labeled_speaker_ids": [],
+  "full_meetings": [
+    {
+      "session": "R8008_M8016",
+      "source_session": "R8008_M8016",
+      "audio": "R8008_M8016/mono.wav",
+      "ref": "R8008_M8016/reference.rttm",
+      "duration_s": 1838.980125,
+      "exact_three_s": 1.3,
+      "speaker_ids": [
+        "N_SPK8060",
+        "N_SPK8061",
+        "N_SPK8062"
+      ],
+      "array_sha256": "982daa191414f983b5b0e6d49555ecbe7a291f3fb45b4a749966f9a2ce561d79",
+      "wav_sha256": "3d287e5f0edac72481236ff8928f2b43274687fb766a1f9bc269f3be81fe75e0",
+      "rttm_sha256": "956bb96575ff7058f0f9d16cea6413af8d42294f62314a3585ce1f6a6b82499d"
+    },
+    {
+      "session": "R8008_M8017",
+      "source_session": "R8008_M8017",
+      "audio": "R8008_M8017/mono.wav",
+      "ref": "R8008_M8017/reference.rttm",
+      "duration_s": 1820.052,
+      "exact_three_s": 1.13,
+      "speaker_ids": [
+        "N_SPK8063",
+        "N_SPK8064",
+        "N_SPK8065"
+      ],
+      "array_sha256": "b04ed29cb8c56d87cd183522f8bbe04cc32570ca1d143d500629c28e06cad7a8",
+      "wav_sha256": "0d3d89c6b0d8826ddfa2e7ce0df55c3e094637d384e4c7aa4db22f1bdb806b12",
+      "rttm_sha256": "e5cd37b9ed81cc7af5fc3b15b120e2b8db41a17fbfc37aedd145b6fae1025c86"
+    }
+  ],
+  "new_excerpt_sessions": {
+    "R8004_M8006": {
+      "ids": [
+        "N_SPK8031",
+        "N_SPK8032",
+        "N_SPK8033",
+        "N_SPK8034"
+      ],
+      "clips": 37,
+      "audio_s": 405.26,
+      "three_s": 38.13
+    },
+    "R8005_M8009": {
+      "ids": [
+        "N_SPK8043",
+        "N_SPK8044",
+        "N_SPK8045",
+        "N_SPK8046"
+      ],
+      "clips": 44,
+      "audio_s": 711.01,
+      "three_s": 53.79
+    }
+  },
+  "selection": "Both previously unevaluated three-participant test meetings. Two previously unevaluated four-participant Test source meetings with high triple-overlap duration supplied three-person-only excerpts. Intervals and speaker count selected before candidate output from published RTTM only. All disjoint intervals from the frozen protocol were retained. No test labels enter the diarizer.",
+  "limitations": "Both full recordings use room R8008 as did the preceding long benchmark, with different meeting and participant IDs. Excerpts emphasize natural overlaps. Training exposure of third-party checkpoints is unknown."
+}
