@@ -1,0 +1,75 @@
+{
+  "M8017": {
+    "clips": 24,
+    "exact_three_seconds": 27.264,
+    "published": {
+      "joint_96": 16,
+      "joint_98": 12,
+      "trials": 24,
+      "tracks_96": 64,
+      "tracks_98": 60,
+      "p10": 0.95913694,
+      "median": 0.99903405,
+      "minimum": 0.7651706,
+      "quiet_p10": 0.84420967,
+      "quiet_median": 0.99156775
+    },
+    "refinement": {
+      "joint_96": 17,
+      "joint_98": 12,
+      "trials": 24,
+      "tracks_96": 65,
+      "tracks_98": 60,
+      "p10": 0.9611319300000001,
+      "median": 0.99881515,
+      "minimum": 0.7765277,
+      "quiet_p10": 0.8440754100000001,
+      "quiet_median": 0.9910844000000001
+    },
+    "lost_passing_cases": {
+      "96": [],
+      "98": []
+    },
+    "input_fixture_manifest_sha256": "46da150c2d014061c7e8191545907a3aabb2714f7809c24c75f5ee23165e9637"
+  },
+  "M8016": {
+    "clips": 8,
+    "exact_three_seconds": 5.344,
+    "published": {
+      "joint_96": 5,
+      "joint_98": 4,
+      "trials": 8,
+      "tracks_96": 21,
+      "tracks_98": 19,
+      "p10": 0.96127454,
+      "median": 0.9981263499999999,
+      "minimum": 0.6547615,
+      "quiet_p10": 0.70588229,
+      "quiet_median": 0.9839507
+    },
+    "refinement": {
+      "joint_96": 5,
+      "joint_98": 4,
+      "trials": 8,
+      "tracks_96": 21,
+      "tracks_98": 19,
+      "p10": 0.96212699,
+      "median": 0.9971143,
+      "minimum": 0.6377924,
+      "quiet_p10": 0.70176708,
+      "quiet_median": 0.9852814999999999
+    },
+    "lost_passing_cases": {
+      "96": [],
+      "98": []
+    },
+    "input_fixture_manifest_sha256": "17b162bd25402e8b1ea70f670c35ed26a5ddacccd81c99d14cce8588894070ed"
+  },
+  "weights": {
+    "source_checkpoint_sha256": "d3e8a465ac5f81460feea79158a95f894ea9152dfea841c48c727863fbfc38ac",
+    "bundled_parameters_sha256": "fea6044cd732ded69453dd0a7315121c22b21d883b1bd621204e3aef7b0c5131",
+    "training_room": "R8008_M8014",
+    "training_method": "complex spectral correction trained on known-source remixes from earlier room audio",
+    "published_blend": 0.25
+  }
+}

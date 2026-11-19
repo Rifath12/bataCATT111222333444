@@ -1,0 +1,48 @@
+{
+  "checkpoint": "SepRQ/SepRQ",
+  "revision": "d14e1cb744e5f3a7a3a3ccae2b9599ae5e60eae8",
+  "head_sha256": "2b7fa0efc12f643dc1802f3f0fc742c96f6a1dd4abf37d3e9006b65d0f33c7f9",
+  "encoder_sha256": "136a3e720c04f2c77bf7a4dc6a3868b14d5a2c145a988114b733cb1a8428be98",
+  "pytorch": "2.6.0+cpu",
+  "torchaudio": "2.6.0+cpu",
+  "example": "One_Mixed_Track_Example",
+  "sample_rate": 8000,
+  "clip_seconds": 2.8,
+  "triple_overlap_seconds": 1.56,
+  "new_output_permutation_evaluation_only": [
+    0,
+    2,
+    1
+  ],
+  "guarded": {
+    "fixed_target_alignment": [
+      90.33192784693685,
+      66.3819408789835,
+      95.84862814343319
+    ],
+    "speech_retention": [
+      0.9594594594594594,
+      1.0,
+      1.0
+    ],
+    "all_96": false,
+    "all_98": false
+  },
+  "wavlm_seprq": {
+    "fixed_target_alignment": [
+      26.3952727212647,
+      4.10631453688271,
+      54.82479510762685
+    ],
+    "speech_retention": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "all_96": false,
+    "all_98": false
+  },
+  "load_encode_separate_seconds": 5.85835717899954,
+  "head_only_seconds": 2.967617467999844,
+  "peak_process_rss_mib": 984.7890625
+}

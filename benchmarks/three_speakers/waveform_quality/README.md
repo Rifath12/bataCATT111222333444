@@ -4,6 +4,35 @@ This evaluation measures how well the separated audio tracks preserve their inte
 
 A track's target alignment is the fraction of centered output energy explained by the sample-aligned target waveform. The 96% and 98% targets correspond to absolute SI-SDR thresholds of +13.80 and +16.90 dB. A trial passes only if all three tracks reach the threshold and retain at least 96% of the eligible target speech time above the minimum projected level. The level guard is −12 dB in 100 ms blocks. A muted or swapped output cannot pass. These measurements describe waveform alignment and retained speech, independently of transcription accuracy. [Scoring details](SCORING.md) · [SI-SDR reference](https://research.google/pubs/sdr-half-baked-or-well-done/)
 
+## Optional learned close-mic refinements
+
+The close-mic exporter accepts `--refinement gentle` or `--refinement boosted`. Both require three synchronized 16 kHz mono recordings in physical A/B/C order. The profiles were calibrated before testing. Their supervised model data comes from earlier M8014 audio. The baseline transfer for each test room was fitted using only that recording's first 45%.
+
+| Close-mic waveform processing | All three at 96%, independent rooms | All three at 98%, independent rooms |
+| --- | ---: | ---: |
+| Standard | 21/32 | 16/32 |
+| Gentle | 22/32 | 16/32 |
+| Boosted | **23/32** | 16/32 |
+
+The 32 control clips are disjoint three-source remixes from two separate meetings (24 M8017, 8 M8016), with 32.608 seconds of exact three-way overlap. Both profiles preserved all 96% and 98% passes in these two rooms. On that room, the weakest output rose from 76.52% to 80.18% with boosted filtering, while median track quality moved from 99.90% to 99.36%. On later M8014 controls, boosted gained two all-three 98% passes and lost one. Gentle reduced the weakest M8016 track from 65.48% to 63.78%. Sustained natural overlap and consistent 96–98% performance remain unverified.
+
+Use a voice activity model, or a stored power transfer array from the same setup, channel order and levels:
+
+```bash
+PYTHONPATH=benchmarks/three_speakers \
+python benchmarks/three_speakers/advanced_separation/close_waveform.py \
+  close_A.wav close_B.wav close_C.wav --power-transfer /calibration/power_transfer.npy \
+  --out clean_tracks --refinement boosted
+```
+
+A power transfer is a float32 array of shape `(513, 3, 3)` from `fit_power_transfer`. Save the 0.55 quantile array to a `.npy` file with `numpy.save`. For fresh VAD calibration use `--vad /models/silero_vad.onnx` in place of `--power-transfer`. Omit `--refinement` for the standard profile.
+
+The gentle profile exported three aligned WAVs from the full 30:20 M8017 recording in 124 seconds on one CPU thread, using its stored power transfer. Boosted processing retained sample alignment in a 19.712-second block-boundary test, matching the whole-array calculation. Its extra filtering took about 38.5 seconds over 43.0 seconds of controlled input on one CPU thread. These times cover waveform output under the stated conditions.
+
+Two more mono checkpoints were tested on the same short archived clip. The existing guarded track for the weakest voice scored 66.38%. The AISHELL-only ReCorrNet checkpoint lowered that to 58.63%, despite reconstructing 99.09% of the mixture; WavLM SepRQ scored 4.11% for the same voice. Neither alternative was promoted. The benchmark compares known source waveforms on about 1.56 seconds of simultaneous speech, distinct from the close-mic benchmark.
+
+[Gentle scores](evidence/learned_refinement_cross_room.json) · [Boosted scores](evidence/boosted_refinement_cross_room.json) · [Full gentle export](evidence/gentle_refinement_full_export.json) · [AliMeeting dataset](https://www.openslr.org/119/)
+
 ## Independent follow-up and capture fix
 
 A newly tested three-person AliMeeting session (R8008_M8014) supplied 24 disjoint solo-derived mixtures and 32.576 seconds of exact three-way overlap. Fixed labels match the physical A/B/C microphone channels. Each source segment occurs after the first 45% used for unannotated room calibration. The 24 cases vary which person is quieter, up to 20 dB lower than the others, and come from one room and one group of speakers.

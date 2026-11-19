@@ -1,0 +1,112 @@
+{
+  "checkpoint": "playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7",
+  "revision": "6cb13ca2303d5b901c794d820985070b0edc8b9c",
+  "model_sha256": "73c47162dc41e23ba85997a28ac0e5d461cb1bbc70c0c99a69bc6738d41a941e",
+  "config_sha256": "535a25ed1a90163fa43d5adc64dbb6493d77468e2d0b9b95c92c24bc7e60a4e6",
+  "adapter_source_revision": "5dc71a5c783c118d191288306132626364f97819",
+  "pytorch": "2.6.0+cpu",
+  "example": "One_Mixed_Track_Example",
+  "sample_rate": 8000,
+  "clip_seconds": 2.8,
+  "triple_overlap_seconds": 1.56,
+  "guarded": {
+    "fixed_target_alignment": [
+      90.33192784693685,
+      66.3819408789835,
+      95.84862814343319
+    ],
+    "speech_retention": [
+      0.9594594594594594,
+      1.0,
+      1.0
+    ],
+    "all_96": false,
+    "all_98": false
+  },
+  "first_pass": {
+    "fixed_target_alignment": [
+      88.05013477031339,
+      58.95034100956289,
+      95.2212212447579
+    ],
+    "speech_retention": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "all_96": false,
+    "all_98": false
+  },
+  "second_pass": {
+    "fixed_target_alignment": [
+      88.06178095843521,
+      58.63294552470287,
+      95.22697080334005
+    ],
+    "speech_retention": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "all_96": false,
+    "all_98": false
+  },
+  "first_pass_reference_assignment_diagnostic": {
+    "fixed_target_alignment": [
+      88.05013477031339,
+      58.95034100956289,
+      95.2212212447579
+    ],
+    "speech_retention": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "all_96": false,
+    "all_98": false
+  },
+  "second_pass_reference_assignment_diagnostic": {
+    "fixed_target_alignment": [
+      88.06178095843521,
+      58.63294552470287,
+      95.22697080334005
+    ],
+    "speech_retention": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "all_96": false,
+    "all_98": false
+  },
+  "first_matched_guarded_track_order": [
+    2,
+    1,
+    0
+  ],
+  "second_matched_guarded_track_order": [
+    2,
+    1,
+    0
+  ],
+  "first_pass_fit": 0.9909757682547644,
+  "second_pass_fit": 0.9908818935962693,
+  "selected": "second_pass",
+  "selected_score": {
+    "fixed_target_alignment": [
+      88.06163806968293,
+      58.63279100487096,
+      95.22703390619672
+    ],
+    "speech_retention": [
+      0.9054054054054054,
+      0.918918918918919,
+      1.0
+    ],
+    "all_96": false,
+    "all_98": false
+  },
+  "load_seconds": 3.1010596380001516,
+  "inference_seconds": 31.06835932099966,
+  "peak_process_rss_mib": 772.25
+}

@@ -143,6 +143,7 @@ FROZEN_PROFILE = MaskProfile(0.55, 0.90, 0.55, 5)
 FITTING_FRACTION = 0.45
 CORE_SAMPLES = 1 << 18
 CONTEXT_SAMPLES = 8 * HOP
+REFINED_CORE_SAMPLES = 1 << 16
 
 
 def validate_inputs(paths):
@@ -156,7 +157,10 @@ def validate_inputs(paths):
     return lengths.pop()
 
 
-def render(paths, output, power_transfer, profile=FROZEN_PROFILE):
+def render(
+    paths, output, power_transfer, profile=FROZEN_PROFILE, *,
+    refinement=None, context_samples=CONTEXT_SAMPLES,
+):
     """Write aligned float WAVs in bounded blocks with enough transform context."""
     samples = validate_inputs(paths)
     output.mkdir(exist_ok=True, parents=True)
@@ -174,42 +178,94 @@ def render(paths, output, power_transfer, profile=FROZEN_PROFILE):
                 ))
                 for path in output_paths
             ]
-            for first in range(0, samples, CORE_SAMPLES):
-                last = min(first + CORE_SAMPLES, samples)
-                start = max(0, first - CONTEXT_SAMPLES)
-                end = min(samples, last + CONTEXT_SAMPLES)
+            block = CORE_SAMPLES if refinement is None else REFINED_CORE_SAMPLES
+            for first in range(0, samples, block):
+                last = min(first + block, samples)
+                start = max(0, first - context_samples)
+                end = min(samples, last + context_samples)
                 for reader in readers:
                     reader.seek(start)
                 audio = np.array([reader.read(end - start, dtype="float32") for reader in readers])
                 if not np.isfinite(audio).all():
                     raise ValueError("Microphone signal contains nonfinite samples")
                 cleaned = suppress(audio, power_transfer, profile)
+                if refinement is not None:
+                    cleaned = refinement(audio, cleaned)
                 for writer, row in zip(writers, cleaned, strict=True):
                     writer.write(row[first - start:last - start])
         for path in output_paths:
             (temporary / path.name).replace(path)
 
 
-def main():
-    from direct_microphones import calculate_features
+def stored_transfer(path):
+    matrix = np.load(path, allow_pickle=False)
+    if (
+        not isinstance(matrix, np.ndarray)
+        or matrix.shape != (FFT // 2 + 1, 3, 3)
+        or matrix.dtype.kind != "f"
+        or not np.isfinite(matrix).all()
+        or np.any(matrix < 0)
+        or not np.allclose(matrix.diagonal(axis1=-2, axis2=-1), 1.0)
+        or np.any((matrix - np.eye(3)) > 0.14 + 1e-7)
+    ):
+        raise ValueError("Invalid .npy close-microphone power transfer")
+    return matrix.astype(np.float32, copy=False)
 
+
+def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("microphones", nargs=3, type=Path, metavar="MIC_WAV")
-    parser.add_argument("--vad", required=True, type=Path, help="Silero VAD ONNX model")
+    calibration = parser.add_mutually_exclusive_group(required=True)
+    calibration.add_argument("--vad", type=Path, help="Silero VAD ONNX model")
+    calibration.add_argument(
+        "--power-transfer", type=Path,
+        help="Reuse a .npy calibration from the same recording setup and microphone order",
+    )
     parser.add_argument("--out", required=True, type=Path, help="Output directory for the aligned WAVs")
+    parser.add_argument(
+        "--refinement", choices=("gentle", "boosted"),
+        help="Apply an optional room-trained waveform correction",
+    )
     args = parser.parse_args()
     samples = validate_inputs(args.microphones)
     started = perf_counter()
-    power, posterior, feature_samples = calculate_features(args.microphones, args.vad)
-    after_features = perf_counter()
-    if samples != feature_samples:
-        raise ValueError("Audio changed while estimating speech activity")
-    transfer, evidence = fit_power_transfer(
-        args.microphones, power, posterior, fit_fraction=FITTING_FRACTION,
-        percentiles=(FROZEN_PROFILE.spectral_transfer_percentile,)
-    )
+    if args.power_transfer:
+        power_transfer = stored_transfer(args.power_transfer)
+        evidence = None
+        after_features = started
+    else:
+        from direct_microphones import calculate_features
+
+        power, posterior, feature_samples = calculate_features(args.microphones, args.vad)
+        after_features = perf_counter()
+        if samples != feature_samples:
+            raise ValueError("Audio changed while estimating speech activity")
+        transfer, evidence = fit_power_transfer(
+            args.microphones, power, posterior, fit_fraction=FITTING_FRACTION,
+            percentiles=(FROZEN_PROFILE.spectral_transfer_percentile,)
+        )
+        power_transfer = transfer[FROZEN_PROFILE.spectral_transfer_percentile]
     after_fit = perf_counter()
-    render(args.microphones, args.out, transfer[FROZEN_PROFILE.spectral_transfer_percentile])
+    refinement = None
+    context_samples = CONTEXT_SAMPLES
+    if args.refinement == "gentle":
+        from functools import partial
+        from close_refinement import BLEND as strength, load_parameters, refine
+
+        refinement = partial(refine, parameters=load_parameters())
+    elif args.refinement == "boosted":
+        from boosted_close import BoostedMask, SHARE as strength
+
+        model = BoostedMask.load()
+        context_samples = max(context_samples, model.context_samples)
+
+        def refinement(audio, baseline):
+            return model.refine(audio, power_transfer, baseline)
+
+    render(
+        args.microphones, args.out, power_transfer,
+        refinement=refinement, context_samples=context_samples,
+    )
     report = {
         "samples": samples,
         "sample_rate": RATE,
@@ -222,6 +278,15 @@ def main():
         "render_s": perf_counter() - after_fit,
         "processing_s": perf_counter() - started,
     }
+    if args.power_transfer:
+        report["fitting_fraction"] = None
+        report["calibration_source"] = "stored_power_transfer"
+    if args.refinement:
+        report["learned_refinement"] = {
+            "model": args.refinement,
+            "training_room": "R8008_M8014",
+            "blend": strength,
+        }
     (args.out / "close_waveform.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote three {samples}-sample tracks in {report['processing_s']:.2f} seconds")
 

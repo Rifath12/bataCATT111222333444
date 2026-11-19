@@ -1,0 +1,14 @@
+{
+  "provenance": "R8008_M8017",
+  "input_samples": 29120833,
+  "output_rate": 16000,
+  "wavs": 3,
+  "cpu_render_wall_seconds": 123.87917524999921,
+  "peak_amplitudes": {
+    "A": 0.7345467805862427,
+    "B": 0.7451472282409668,
+    "C": 0.8325791358947754
+  },
+  "calibration_already_available": true,
+  "full_room_fidelity_validation": false
+}
