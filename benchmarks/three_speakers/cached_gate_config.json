@@ -1,0 +1,126 @@
+{
+  "tree": {
+    "feature": 10,
+    "cut": 0.011111111380159855,
+    "left": {
+      "feature": 12,
+      "cut": 0.02351351361721754,
+      "left": {
+        "feature": 0,
+        "cut": 0.7899999916553497,
+        "left": {
+          "feature": 5,
+          "cut": 1.5,
+          "left": {
+            "gain": 0.16129032258064516
+          },
+          "right": {
+            "gain": -0.6363636363636364
+          }
+        },
+        "right": {
+          "feature": 4,
+          "cut": 5.5,
+          "left": {
+            "gain": 1.65
+          },
+          "right": {
+            "gain": 0.5737704918032787
+          }
+        }
+      },
+      "right": {
+        "feature": 4,
+        "cut": 5.5,
+        "left": {
+          "feature": 1,
+          "cut": 0.854285717010498,
+          "left": {
+            "gain": -0.5202702702702703
+          },
+          "right": {
+            "gain": 0.09322033898305085
+          }
+        },
+        "right": {
+          "feature": 12,
+          "cut": 0.2153846174478531,
+          "left": {
+            "gain": -0.5
+          },
+          "right": {
+            "gain": -3.3043478260869565
+          }
+        }
+      }
+    },
+    "right": {
+      "feature": 12,
+      "cut": 0.060661764815449715,
+      "left": {
+        "feature": 10,
+        "cut": 0.26491229236125946,
+        "left": {
+          "feature": 13,
+          "cut": 0.7231800556182861,
+          "left": {
+            "gain": 0.3157894736842105
+          },
+          "right": {
+            "gain": -0.5064102564102564
+          }
+        },
+        "right": {
+          "feature": 4,
+          "cut": 3.5,
+          "left": {
+            "gain": -0.5080645161290323
+          },
+          "right": {
+            "gain": -1.709090909090909
+          }
+        }
+      },
+      "right": {
+        "feature": 1,
+        "cut": 0.7333989143371582,
+        "left": {
+          "feature": 10,
+          "cut": 0.2679425925016403,
+          "left": {
+            "gain": -2.3846153846153846
+          },
+          "right": {
+            "gain": -3.9767441860465116
+          }
+        },
+        "right": {
+          "gain": -0.4666666666666667
+        }
+      }
+    }
+  },
+  "margin": 0.15,
+  "features": [
+    "duration",
+    "fraction_overlap",
+    "baseline_empty",
+    "candidate_empty",
+    "baseline_len",
+    "candidate_len",
+    "baseline_rate",
+    "candidate_rate",
+    "candidate_relative_gain",
+    "difference_fraction",
+    "replacement_fraction",
+    "insertion_fraction",
+    "deletion_fraction",
+    "equal_fraction",
+    "support_from_stem",
+    "support_from_context",
+    "option_stem",
+    "option_continuous",
+    "option_continuous_with_stem_edges",
+    "option_stem_with_continuous_edges"
+  ]
+}

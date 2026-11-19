@@ -1,0 +1,40 @@
+{
+  "previous": {
+    "all": {
+      "reference_chars": 342,
+      "recognized_chars": 300,
+      "correct_reference_chars": 223,
+      "substitutions": 68,
+      "deletions": 51,
+      "insertions": 9,
+      "errors": 128
+    },
+    "triple": {
+      "substitutions": 20,
+      "reference_chars": 88,
+      "supplied_reference_char_times": 88,
+      "deletions": 19,
+      "correct": 49,
+      "insertions": 5
+    }
+  },
+  "structured": {
+    "all": {
+      "reference_chars": 342,
+      "recognized_chars": 318,
+      "correct_reference_chars": 236,
+      "substitutions": 71,
+      "deletions": 35,
+      "insertions": 11,
+      "errors": 117
+    },
+    "triple": {
+      "deletions": 12,
+      "reference_chars": 88,
+      "supplied_reference_char_times": 88,
+      "correct": 52,
+      "substitutions": 24,
+      "insertions": 4
+    }
+  }
+}

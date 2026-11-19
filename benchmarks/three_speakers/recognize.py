@@ -217,6 +217,11 @@ def main():
         help="Retain longer stem text that contains the continuous decoded words",
     )
     p.add_argument(
+        "--refine-context",
+        action="store_true",
+        help="Use cached cropped and continuous readings to recover missing text",
+    )
+    p.add_argument(
         "--context-mix",
         type=Path,
         help="Add a continuous mono SenseVoice pass to recover short fragments",
@@ -237,6 +242,13 @@ def main():
         help="Optional per-utterance gain with peak limiting",
     )
     args = p.parse_args()
+    if args.refine_context:
+        if not args.context_mix:
+            p.error("--refine-context requires --context-mix")
+        # Apply the prior contextual configuration before evaluating alternate readings.
+        args.restore_supported_text = True
+        args.protect_long_turns = True
+        args.suppress_duplicates = True
     if args.protect_long_turns and not (
         args.context_mix and args.restore_supported_text
     ):
@@ -326,6 +338,18 @@ def main():
         )
         results = apply(results, encounters(results, args.audio), settings)
         wall += time.perf_counter() - duplicate_start
+    context_changes = None
+    if args.refine_context:
+        from cached_gate import apply_cached_gate
+
+        gate_start = time.perf_counter()
+        gate = json.loads(
+            Path(__file__).with_name("cached_gate_config.json").read_text()
+        )
+        results, context_changes = apply_cached_gate(
+            pairs, results, gate, args.audio, settings
+        )
+        wall += time.perf_counter() - gate_start
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "transcript.jsonl").write_text(
         "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in results),
@@ -360,6 +384,8 @@ def main():
         evaluation["restore_supported_text"] = True
     if args.suppress_duplicates:
         evaluation["suppress_duplicates"] = True
+    if context_changes is not None:
+        evaluation["context_refinements"] = context_changes
     if args.target_rms:
         evaluation["target_rms"] = args.target_rms
     if refs:

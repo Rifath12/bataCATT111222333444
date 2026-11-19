@@ -1,0 +1,106 @@
+{
+  "number_source_meetings": 3,
+  "unique_speakers": 12,
+  "total_duration_s": 424.97,
+  "exact_three_s": 26.25,
+  "true_triple_characters": 392,
+  "alignment_audit_source_totals": {
+    "official_chars": 38733,
+    "timed_chars": 38733,
+    "edits": 0
+  },
+  "clips": 18,
+  "characters": 2888,
+  "full_source_speakers": {
+    "R8002_M8002": {
+      "N_SPK8005": {
+        "official_chars": 5266,
+        "timed_chars": 5266,
+        "edits": 0,
+        "source_word_intervals": 5266,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8006": {
+        "official_chars": 2405,
+        "timed_chars": 2405,
+        "edits": 0,
+        "source_word_intervals": 2405,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8007": {
+        "official_chars": 2488,
+        "timed_chars": 2488,
+        "edits": 0,
+        "source_word_intervals": 2488,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8008": {
+        "official_chars": 2655,
+        "timed_chars": 2655,
+        "edits": 0,
+        "source_word_intervals": 2654,
+        "timed_text_markup_stripped": true
+      }
+    },
+    "R8005_M8007": {
+      "N_SPK8035": {
+        "official_chars": 3479,
+        "timed_chars": 3479,
+        "edits": 0,
+        "source_word_intervals": 3479,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8036": {
+        "official_chars": 3132,
+        "timed_chars": 3132,
+        "edits": 0,
+        "source_word_intervals": 3132,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8037": {
+        "official_chars": 3945,
+        "timed_chars": 3945,
+        "edits": 0,
+        "source_word_intervals": 3945,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8038": {
+        "official_chars": 3159,
+        "timed_chars": 3159,
+        "edits": 0,
+        "source_word_intervals": 3156,
+        "timed_text_markup_stripped": true
+      }
+    },
+    "R8005_M8008": {
+      "N_SPK8039": {
+        "official_chars": 2674,
+        "timed_chars": 2674,
+        "edits": 0,
+        "source_word_intervals": 2674,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8040": {
+        "official_chars": 3689,
+        "timed_chars": 3689,
+        "edits": 0,
+        "source_word_intervals": 3689,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8041": {
+        "official_chars": 3642,
+        "timed_chars": 3642,
+        "edits": 0,
+        "source_word_intervals": 3642,
+        "timed_text_markup_stripped": true
+      },
+      "N_SPK8042": {
+        "official_chars": 2199,
+        "timed_chars": 2199,
+        "edits": 0,
+        "source_word_intervals": 2199,
+        "timed_text_markup_stripped": true
+      }
+    }
+  }
+}

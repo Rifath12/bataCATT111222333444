@@ -1,0 +1,89 @@
+{
+  "revision": "f20d5db4a31fe779ef07bb1af4ea92da5c786622",
+  "sha256": {
+    "SSB03540018.wav": "9d771bdbae2bb4d7a346a51ae56d15e6f7cb79c9d50deed66683cd4b6708f392",
+    "SSB03540124.wav": "274fbe2bffdf5b799bac5ba03faad7f1025b4044a5508355fcee3199d44714d8",
+    "SSB03790038.wav": "fac4c0610bf1dfe2cc7d3d108971ba90b0095804d2de138ff1b013494e0acded",
+    "SSB03790438.wav": "d01eada81787457e095581894b3cf57c0cec9448c9ef1743ebdcad2f84a986e1",
+    "SSB03820195.wav": "1d6f248a31087dc43607b99ac21faa94f84468270487e45ee7b5aa1de3e6b056",
+    "SSB03820212.wav": "a2ad104da2a1bb2b4d85185683ab37b2c8ef102c18ca8e4103cc15dfaba40299",
+    "SSB04820034.wav": "e16443f36876796ed895c938a1a4154d5aa2d18efd3134969ab92963f77c39de",
+    "SSB04820104.wav": "52547a794786478944faa211aafda22e044d49dcfa1a8ecf75502f86c1599d25",
+    "SSB05390027.wav": "8fab5e19a3190c65c97f23dff8bdbc3cefe50d86e4afbb0e65bdc60fe015a1e7",
+    "SSB05390268.wav": "a6a9f27c7d436913df8f02a0531d92cc7bbba27161a52387d15e54d0c83e241e",
+    "SSB05900043.wav": "2221b680b93436f174dc6d0b3cfd83d7b477305f59ddbf8092bcb709b1cebf07",
+    "SSB05900401.wav": "26eb0fdecad49763bcc59e4f2be617f6f580f7b4fe21738c048ebb43183a9881",
+    "SSB06710228.wav": "644f39982836d1ea5a55e101ff51f7e3f2b11e07784911e3bb7784e6647f9bbf",
+    "SSB06710415.wav": "3d8b508a7ce2e33630ef80857c8e414163d95632cf261009d2d6288bd0697bd9",
+    "SSB07000003.wav": "7b578dcd962f18ca32b9491547f6f7f91ca8f83e047fdfc47ad43b1702653a85",
+    "SSB07000265.wav": "3636d16033370733d764f671642606216517b862f57d00e6fc1d9366bb072a08",
+    "SSB07510111.wav": "be192abaa1f452b6b8539f1421fc812246f8c112de2725041f9d7ba737d89f27",
+    "SSB07510330.wav": "c125d9baf95be046cf35b3eccf219bd7e44578d90c177fd71f47ffa182f46b64"
+  },
+  "groups": {
+    "heldout": [
+      [
+        {
+          "id": "0751",
+          "target": "SSB07510111.wav",
+          "enroll": "SSB07510330.wav",
+          "text": "话反而讲得非常多"
+        },
+        {
+          "id": "0379",
+          "target": "SSB03790438.wav",
+          "enroll": "SSB03790038.wav",
+          "text": "信阳市的道路有什么"
+        },
+        {
+          "id": "0539",
+          "target": "SSB05390268.wav",
+          "enroll": "SSB05390027.wav",
+          "text": "十三公分的身材劣势似乎完全起不到任何影响"
+        }
+      ],
+      [
+        {
+          "id": "0671",
+          "target": "SSB06710228.wav",
+          "enroll": "SSB06710415.wav",
+          "text": "在终点门前用麦克风大声宣读每一位选手的名字国籍"
+        },
+        {
+          "id": "0700",
+          "target": "SSB07000265.wav",
+          "enroll": "SSB07000003.wav",
+          "text": "副省长何报翔立即要求省旅游局督促张家界市一查到底"
+        },
+        {
+          "id": "0590",
+          "target": "SSB05900401.wav",
+          "enroll": "SSB05900043.wav",
+          "text": "较二零一三年同期增长二十一万约百分之零九一"
+        }
+      ],
+      [
+        {
+          "id": "0354",
+          "target": "SSB03540124.wav",
+          "enroll": "SSB03540018.wav",
+          "text": "你还好吗嗯我没问题谢谢"
+        },
+        {
+          "id": "0382",
+          "target": "SSB03820195.wav",
+          "enroll": "SSB03820212.wav",
+          "text": "天庭五公主青儿"
+        },
+        {
+          "id": "0482",
+          "target": "SSB04820104.wav",
+          "enroll": "SSB04820034.wav",
+          "text": "但即便没有奖牌进账"
+        }
+      ]
+    ]
+  },
+  "speakers_disjoint_from_current_development": true,
+  "speakers_also_seen_in_previous_experiments": []
+}

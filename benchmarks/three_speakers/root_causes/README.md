@@ -1,5 +1,7 @@
 # Three-speaker Mandarin audio
 
+[Latest three-speaker timing and recognition results](../further_overlap/README.md).
+
 This release repairs a failure that duplicated voices across mono tracks, adds an optional spatial separator for recordings made with a microphone array, and measures how much speech is lost at each stage. All examples are audio only. A, B and C are stable anonymous labels within a recording.
 
 ## Run on an audio file

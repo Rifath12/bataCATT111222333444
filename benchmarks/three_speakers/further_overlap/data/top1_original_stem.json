@@ -1,0 +1,358 @@
+{
+  "variant": "stem",
+  "cpCER": 0.38011695906432746,
+  "totals": {
+    "reference_chars": 342,
+    "recognized_chars": 309,
+    "correct_reference_chars": 224,
+    "substitutions": 73,
+    "deletions": 45,
+    "insertions": 12,
+    "errors": 130
+  },
+  "files": [
+    {
+      "id": "R8002_M8002_153879_154906",
+      "session": "R8002_M8002",
+      "cpCER": 0.5909090909090909,
+      "correct_reference_characters": 0.4318181818181818,
+      "totals": {
+        "reference_chars": 88,
+        "recognized_chars": 63,
+        "correct_reference_chars": 38,
+        "substitutions": 23,
+        "deletions": 27,
+        "insertions": 2,
+        "errors": 52
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8005",
+          "system": "C",
+          "reference_chars": 33,
+          "recognized_chars": 13,
+          "correct_reference_chars": 5,
+          "substitutions": 8,
+          "deletions": 20,
+          "insertions": 0
+        },
+        {
+          "reference": "N_SPK8006",
+          "system": "A",
+          "reference_chars": 21,
+          "recognized_chars": 21,
+          "correct_reference_chars": 17,
+          "substitutions": 3,
+          "deletions": 1,
+          "insertions": 1
+        },
+        {
+          "reference": "N_SPK8008",
+          "system": "B",
+          "reference_chars": 34,
+          "recognized_chars": 29,
+          "correct_reference_chars": 16,
+          "substitutions": 12,
+          "deletions": 6,
+          "insertions": 1
+        }
+      ]
+    },
+    {
+      "id": "R8005_M8007_125513_127280",
+      "session": "R8005_M8007",
+      "cpCER": 0.3252032520325203,
+      "correct_reference_characters": 0.7154471544715447,
+      "totals": {
+        "reference_chars": 123,
+        "recognized_chars": 121,
+        "correct_reference_chars": 88,
+        "substitutions": 28,
+        "deletions": 7,
+        "insertions": 5,
+        "errors": 40
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8035",
+          "system": "B",
+          "reference_chars": 76,
+          "recognized_chars": 75,
+          "correct_reference_chars": 74,
+          "substitutions": 1,
+          "deletions": 1,
+          "insertions": 0
+        },
+        {
+          "reference": "N_SPK8037",
+          "system": "C",
+          "reference_chars": 26,
+          "recognized_chars": 21,
+          "correct_reference_chars": 3,
+          "substitutions": 17,
+          "deletions": 6,
+          "insertions": 1
+        },
+        {
+          "reference": "N_SPK8038",
+          "system": "A",
+          "reference_chars": 21,
+          "recognized_chars": 25,
+          "correct_reference_chars": 11,
+          "substitutions": 10,
+          "deletions": 0,
+          "insertions": 4
+        }
+      ]
+    },
+    {
+      "id": "R8005_M8008_055326_057099",
+      "session": "R8005_M8008",
+      "cpCER": 0.2900763358778626,
+      "correct_reference_characters": 0.7480916030534351,
+      "totals": {
+        "reference_chars": 131,
+        "recognized_chars": 125,
+        "correct_reference_chars": 98,
+        "substitutions": 22,
+        "deletions": 11,
+        "insertions": 5,
+        "errors": 38
+      },
+      "speaker_scores": [
+        {
+          "reference": "N_SPK8039",
+          "system": "B",
+          "reference_chars": 73,
+          "recognized_chars": 71,
+          "correct_reference_chars": 66,
+          "substitutions": 4,
+          "deletions": 3,
+          "insertions": 1
+        },
+        {
+          "reference": "N_SPK8040",
+          "system": "A",
+          "reference_chars": 39,
+          "recognized_chars": 39,
+          "correct_reference_chars": 25,
+          "substitutions": 10,
+          "deletions": 4,
+          "insertions": 4
+        },
+        {
+          "reference": "N_SPK8042",
+          "system": "C",
+          "reference_chars": 19,
+          "recognized_chars": 15,
+          "correct_reference_chars": 7,
+          "substitutions": 8,
+          "deletions": 4,
+          "insertions": 0
+        }
+      ]
+    }
+  ],
+  "time_constrained": {
+    "time_collar_seconds": 1.0,
+    "convention": "Character midpoints are uniformly interpolated within the utterance unless actual token times are present. Fixed global mapping per recording.",
+    "midpoint": {
+      "0": {
+        "insertions": 1,
+        "errors": 1,
+        "CER": null
+      },
+      "1": {
+        "substitutions": 23,
+        "reference_chars": 144,
+        "supplied_reference_char_times": 144,
+        "deletions": 21,
+        "correct": 100,
+        "insertions": 7,
+        "errors": 51,
+        "CER": 0.3541666666666667
+      },
+      "2": {
+        "substitutions": 33,
+        "reference_chars": 110,
+        "supplied_reference_char_times": 110,
+        "deletions": 17,
+        "correct": 60,
+        "insertions": 9,
+        "errors": 59,
+        "CER": 0.5363636363636364
+      },
+      "3": {
+        "substitutions": 21,
+        "reference_chars": 88,
+        "supplied_reference_char_times": 88,
+        "deletions": 18,
+        "correct": 49,
+        "insertions": 6,
+        "errors": 45,
+        "CER": 0.5113636363636364
+      }
+    },
+    "strict_triple": {
+      "deletions": 15,
+      "reference_chars": 65,
+      "correct": 35,
+      "substitutions": 15,
+      "errors": 30,
+      "CER": 0.46153846153846156
+    },
+    "files": [
+      {
+        "id": "R8002_M8002_153879_154906",
+        "mapping": [
+          [
+            "N_SPK8005",
+            "C"
+          ],
+          [
+            "N_SPK8006",
+            "A"
+          ],
+          [
+            "N_SPK8008",
+            "B"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "substitutions": 9,
+            "reference_chars": 31,
+            "supplied_reference_char_times": 31,
+            "deletions": 11,
+            "correct": 11
+          },
+          "2": {
+            "substitutions": 8,
+            "reference_chars": 28,
+            "supplied_reference_char_times": 28,
+            "deletions": 11,
+            "correct": 9,
+            "insertions": 2
+          },
+          "3": {
+            "substitutions": 6,
+            "reference_chars": 29,
+            "supplied_reference_char_times": 29,
+            "deletions": 6,
+            "correct": 17,
+            "insertions": 1
+          }
+        },
+        "strict_triple": {
+          "deletions": 5,
+          "reference_chars": 21,
+          "correct": 11,
+          "substitutions": 5
+        }
+      },
+      {
+        "id": "R8005_M8007_125513_127280",
+        "mapping": [
+          [
+            "N_SPK8035",
+            "B"
+          ],
+          [
+            "N_SPK8037",
+            "C"
+          ],
+          [
+            "N_SPK8038",
+            "A"
+          ]
+        ],
+        "midpoint": {
+          "0": {
+            "insertions": 1
+          },
+          "1": {
+            "correct": 42,
+            "reference_chars": 47,
+            "supplied_reference_char_times": 47,
+            "deletions": 2,
+            "substitutions": 3,
+            "insertions": 3
+          },
+          "2": {
+            "correct": 27,
+            "reference_chars": 45,
+            "supplied_reference_char_times": 45,
+            "substitutions": 15,
+            "deletions": 3,
+            "insertions": 5
+          },
+          "3": {
+            "correct": 15,
+            "reference_chars": 31,
+            "supplied_reference_char_times": 31,
+            "deletions": 9,
+            "substitutions": 7,
+            "insertions": 3
+          }
+        },
+        "strict_triple": {
+          "correct": 12,
+          "reference_chars": 23,
+          "deletions": 8,
+          "substitutions": 3
+        }
+      },
+      {
+        "id": "R8005_M8008_055326_057099",
+        "mapping": [
+          [
+            "N_SPK8039",
+            "B"
+          ],
+          [
+            "N_SPK8040",
+            "A"
+          ],
+          [
+            "N_SPK8042",
+            "C"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "correct": 47,
+            "reference_chars": 66,
+            "supplied_reference_char_times": 66,
+            "substitutions": 11,
+            "insertions": 4,
+            "deletions": 8
+          },
+          "2": {
+            "correct": 24,
+            "reference_chars": 37,
+            "supplied_reference_char_times": 37,
+            "substitutions": 10,
+            "deletions": 3,
+            "insertions": 2
+          },
+          "3": {
+            "correct": 17,
+            "reference_chars": 28,
+            "supplied_reference_char_times": 28,
+            "substitutions": 8,
+            "insertions": 2,
+            "deletions": 3
+          }
+        },
+        "strict_triple": {
+          "correct": 12,
+          "reference_chars": 21,
+          "substitutions": 7,
+          "deletions": 2
+        }
+      }
+    ]
+  }
+}

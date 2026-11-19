@@ -1,0 +1,20 @@
+{
+  "real_t": {
+    "reference_silence_s": 37.45,
+    "speaking_clock_s_during_silence": 37.45,
+    "false_speaker_time_s_during_silence": 48.91,
+    "short_three_way_s_under_300ms": 5.71,
+    "short_three_way_found_s": 3.76,
+    "long_three_way_s": 20.54,
+    "long_three_way_found_s": 18.71
+  },
+  "ali": {
+    "reference_silence_s": 37.45,
+    "speaking_clock_s_during_silence": 6.35,
+    "false_speaker_time_s_during_silence": 6.67,
+    "short_three_way_s_under_300ms": 5.71,
+    "short_three_way_found_s": 2.72,
+    "long_three_way_s": 20.54,
+    "long_three_way_found_s": 16.25
+  }
+}

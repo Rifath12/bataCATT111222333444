@@ -1,0 +1,27 @@
+{
+  "test_meetings": [
+    "R8002_M8002",
+    "R8005_M8007",
+    "R8005_M8008"
+  ],
+  "test_speakers": [
+    "N_SPK8005",
+    "N_SPK8006",
+    "N_SPK8007",
+    "N_SPK8008",
+    "N_SPK8035",
+    "N_SPK8036",
+    "N_SPK8037",
+    "N_SPK8038",
+    "N_SPK8039",
+    "N_SPK8040",
+    "N_SPK8041",
+    "N_SPK8042"
+  ],
+  "prior_manifests": [
+    "trial_next_fresh/full_manifest.json",
+    "trial_next_fresh/clips_manifest.json",
+    "next_root_fresh/new_excerpts/manifest.json"
+  ],
+  "conflicts": []
+}

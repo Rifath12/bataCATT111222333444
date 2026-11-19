@@ -1,0 +1,282 @@
+{
+  "transcription": {
+    "previous": {
+      "stem": {
+        "cpCER": 0.2785418763278542,
+        "correct_reference_characters": 0.7432628871743263,
+        "totals": {
+          "reference_chars": 8943,
+          "recognized_chars": 8472,
+          "correct_reference_chars": 6647,
+          "substitutions": 1630,
+          "deletions": 666,
+          "insertions": 195,
+          "errors": 2491
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8047",
+            "system": "1",
+            "reference_chars": 3167,
+            "recognized_chars": 3026,
+            "correct_reference_chars": 2376,
+            "substitutions": 566,
+            "deletions": 225,
+            "insertions": 84
+          },
+          {
+            "reference": "N_SPK8048",
+            "system": "2",
+            "reference_chars": 3375,
+            "recognized_chars": 3285,
+            "correct_reference_chars": 2866,
+            "substitutions": 347,
+            "deletions": 162,
+            "insertions": 72
+          },
+          {
+            "reference": "N_SPK8049",
+            "system": "0",
+            "reference_chars": 2401,
+            "recognized_chars": 2161,
+            "correct_reference_chars": 1405,
+            "substitutions": 717,
+            "deletions": 279,
+            "insertions": 39
+          }
+        ]
+      },
+      "full": {
+        "cpCER": 0.26534719892653474,
+        "correct_reference_characters": 0.7475120205747512,
+        "totals": {
+          "reference_chars": 8943,
+          "recognized_chars": 7938,
+          "correct_reference_chars": 6685,
+          "substitutions": 1138,
+          "deletions": 1120,
+          "insertions": 115,
+          "errors": 2373
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8047",
+            "system": "1",
+            "reference_chars": 3167,
+            "recognized_chars": 2853,
+            "correct_reference_chars": 2379,
+            "substitutions": 429,
+            "deletions": 359,
+            "insertions": 45
+          },
+          {
+            "reference": "N_SPK8048",
+            "system": "2",
+            "reference_chars": 3375,
+            "recognized_chars": 3175,
+            "correct_reference_chars": 2867,
+            "substitutions": 252,
+            "deletions": 256,
+            "insertions": 56
+          },
+          {
+            "reference": "N_SPK8049",
+            "system": "0",
+            "reference_chars": 2401,
+            "recognized_chars": 1910,
+            "correct_reference_chars": 1439,
+            "substitutions": 457,
+            "deletions": 505,
+            "insertions": 14
+          }
+        ]
+      }
+    },
+    "projected": {
+      "stem": {
+        "cpCER": 0.28178463602817844,
+        "correct_reference_characters": 0.7375601028737561,
+        "totals": {
+          "reference_chars": 8943,
+          "recognized_chars": 8422,
+          "correct_reference_chars": 6596,
+          "substitutions": 1653,
+          "deletions": 694,
+          "insertions": 173,
+          "errors": 2520
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8047",
+            "system": "1",
+            "reference_chars": 3167,
+            "recognized_chars": 3015,
+            "correct_reference_chars": 2357,
+            "substitutions": 584,
+            "deletions": 226,
+            "insertions": 74
+          },
+          {
+            "reference": "N_SPK8048",
+            "system": "2",
+            "reference_chars": 3375,
+            "recognized_chars": 3268,
+            "correct_reference_chars": 2843,
+            "substitutions": 363,
+            "deletions": 169,
+            "insertions": 62
+          },
+          {
+            "reference": "N_SPK8049",
+            "system": "0",
+            "reference_chars": 2401,
+            "recognized_chars": 2139,
+            "correct_reference_chars": 1396,
+            "substitutions": 706,
+            "deletions": 299,
+            "insertions": 37
+          }
+        ]
+      },
+      "full": {
+        "cpCER": 0.2680308621268031,
+        "correct_reference_characters": 0.7442692608744269,
+        "totals": {
+          "reference_chars": 8943,
+          "recognized_chars": 7893,
+          "correct_reference_chars": 6656,
+          "substitutions": 1127,
+          "deletions": 1160,
+          "insertions": 110,
+          "errors": 2397
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8047",
+            "system": "1",
+            "reference_chars": 3167,
+            "recognized_chars": 2837,
+            "correct_reference_chars": 2378,
+            "substitutions": 415,
+            "deletions": 374,
+            "insertions": 44
+          },
+          {
+            "reference": "N_SPK8048",
+            "system": "2",
+            "reference_chars": 3375,
+            "recognized_chars": 3163,
+            "correct_reference_chars": 2855,
+            "substitutions": 255,
+            "deletions": 265,
+            "insertions": 53
+          },
+          {
+            "reference": "N_SPK8049",
+            "system": "0",
+            "reference_chars": 2401,
+            "recognized_chars": 1893,
+            "correct_reference_chars": 1423,
+            "substitutions": 457,
+            "deletions": 521,
+            "insertions": 13
+          }
+        ]
+      }
+    },
+    "phase_adaptive": {
+      "stem": {
+        "cpCER": 0.2791009728279101,
+        "correct_reference_characters": 0.7395728502739572,
+        "totals": {
+          "reference_chars": 8943,
+          "recognized_chars": 8416,
+          "correct_reference_chars": 6614,
+          "substitutions": 1635,
+          "deletions": 694,
+          "insertions": 167,
+          "errors": 2496
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8047",
+            "system": "1",
+            "reference_chars": 3167,
+            "recognized_chars": 2998,
+            "correct_reference_chars": 2362,
+            "substitutions": 573,
+            "deletions": 232,
+            "insertions": 63
+          },
+          {
+            "reference": "N_SPK8048",
+            "system": "2",
+            "reference_chars": 3375,
+            "recognized_chars": 3273,
+            "correct_reference_chars": 2847,
+            "substitutions": 367,
+            "deletions": 161,
+            "insertions": 59
+          },
+          {
+            "reference": "N_SPK8049",
+            "system": "0",
+            "reference_chars": 2401,
+            "recognized_chars": 2145,
+            "correct_reference_chars": 1405,
+            "substitutions": 695,
+            "deletions": 301,
+            "insertions": 45
+          }
+        ]
+      },
+      "full": {
+        "cpCER": 0.2679190428267919,
+        "correct_reference_characters": 0.744940176674494,
+        "totals": {
+          "reference_chars": 8943,
+          "recognized_chars": 7910,
+          "correct_reference_chars": 6662,
+          "substitutions": 1133,
+          "deletions": 1148,
+          "insertions": 115,
+          "errors": 2396
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8047",
+            "system": "1",
+            "reference_chars": 3167,
+            "recognized_chars": 2841,
+            "correct_reference_chars": 2377,
+            "substitutions": 418,
+            "deletions": 372,
+            "insertions": 46
+          },
+          {
+            "reference": "N_SPK8048",
+            "system": "2",
+            "reference_chars": 3375,
+            "recognized_chars": 3171,
+            "correct_reference_chars": 2855,
+            "substitutions": 266,
+            "deletions": 254,
+            "insertions": 50
+          },
+          {
+            "reference": "N_SPK8049",
+            "system": "0",
+            "reference_chars": 2401,
+            "recognized_chars": 1898,
+            "correct_reference_chars": 1430,
+            "substitutions": 449,
+            "deletions": 522,
+            "insertions": 19
+          }
+        ]
+      }
+    }
+  },
+  "render_seconds": 64.03922220499953,
+  "total_seconds": 853.4927339679998
+}

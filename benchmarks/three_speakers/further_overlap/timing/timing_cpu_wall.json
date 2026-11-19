@@ -1,0 +1,18 @@
+{
+  "benchmark": "AliMeeting fresh 18",
+  "cpu_threads": 1,
+  "wall_s": 3.304215331983869,
+  "median_s": 0.16142043199943146,
+  "clips": 18,
+  "seconds_wave": 424.97,
+  "includes": [
+    "short-time waveform feature extraction",
+    "load cached posterior files",
+    "frozen independent model prediction",
+    "clock-state decoding"
+  ],
+  "excludes": [
+    "neural diarization forward passes",
+    "offline model JSON load time"
+  ]
+}

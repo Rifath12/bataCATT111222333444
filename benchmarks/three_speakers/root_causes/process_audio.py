@@ -230,6 +230,7 @@ def main():
                         args.audio,
                         "--restore-supported-text",
                         "--protect-long-turns",
+                        "--refine-context",
                     ]
                 )
             run(BENCH / "recognize.py", decode, env)
