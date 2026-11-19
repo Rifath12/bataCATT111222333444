@@ -1,0 +1,104 @@
+{
+  "R8002_M8002_153879_154906": {
+    "1": {
+      "seconds": 4.1645,
+      "inference_seconds": 2.3473761240020394,
+      "identical_to_batch_1": true
+    },
+    "2": {
+      "seconds": 4.6387,
+      "inference_seconds": 2.9850500780012226,
+      "identical_to_batch_1": false
+    },
+    "4": {
+      "seconds": 5.1151,
+      "inference_seconds": 3.6483159420022275,
+      "identical_to_batch_1": false
+    }
+  },
+  "R8002_M8002_177331_183415": {
+    "1": {
+      "seconds": 10.8868,
+      "inference_seconds": 9.55661155100097,
+      "identical_to_batch_1": true
+    },
+    "2": {
+      "seconds": 15.3296,
+      "inference_seconds": 13.607706039998448,
+      "identical_to_batch_1": false
+    },
+    "4": {
+      "seconds": 18.9465,
+      "inference_seconds": 17.330698926001787,
+      "identical_to_batch_1": false
+    }
+  },
+  "R8005_M8007_125513_127280": {
+    "1": {
+      "seconds": 5.8493,
+      "inference_seconds": 4.167506579004112,
+      "identical_to_batch_1": true
+    },
+    "2": {
+      "seconds": 8.6558,
+      "inference_seconds": 6.833553270989796,
+      "identical_to_batch_1": false
+    },
+    "4": {
+      "seconds": 9.7287,
+      "inference_seconds": 8.338733682991005,
+      "identical_to_batch_1": false
+    }
+  },
+  "R8005_M8007_031447_034112": {
+    "1": {
+      "seconds": 8.1483,
+      "inference_seconds": 6.347021491004853,
+      "identical_to_batch_1": true
+    },
+    "2": {
+      "seconds": 10.4557,
+      "inference_seconds": 8.897208028996829,
+      "identical_to_batch_1": false
+    },
+    "4": {
+      "seconds": 12.8538,
+      "inference_seconds": 11.086956572005874,
+      "identical_to_batch_1": false
+    }
+  },
+  "R8005_M8008_055326_057099": {
+    "1": {
+      "seconds": 5.3533,
+      "inference_seconds": 3.655332449998241,
+      "identical_to_batch_1": true
+    },
+    "2": {
+      "seconds": 7.7098,
+      "inference_seconds": 5.819281499003409,
+      "identical_to_batch_1": false
+    },
+    "4": {
+      "seconds": 8.6174,
+      "inference_seconds": 6.942610363999847,
+      "identical_to_batch_1": false
+    }
+  },
+  "R8005_M8008_043075_046235": {
+    "1": {
+      "seconds": 7.2859,
+      "inference_seconds": 5.742977006986621,
+      "identical_to_batch_1": true
+    },
+    "2": {
+      "seconds": 10.4444,
+      "inference_seconds": 8.863493619996007,
+      "identical_to_batch_1": false
+    },
+    "4": {
+      "seconds": 15.0621,
+      "inference_seconds": 13.890846346999751,
+      "identical_to_batch_1": false
+    }
+  }
+}

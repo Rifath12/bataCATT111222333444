@@ -1,0 +1,64 @@
+{
+  "config": [
+    0.6,
+    "real",
+    "broad",
+    0.4,
+    0,
+    0
+  ],
+  "deltas": {
+    "all": {
+      "all_whole": null,
+      "all_exact_three": 0.2795222047629746,
+      "quiet_whole": null,
+      "quiet_exact_three": 0.01630808226638436,
+      "worst_whole": null,
+      "worst_exact_three": 0.047614026635159235
+    },
+    "clean": {
+      "all_whole": null,
+      "all_exact_three": -0.007722889990732895,
+      "quiet_whole": null,
+      "quiet_exact_three": -0.02420821983305288,
+      "worst_whole": null,
+      "worst_exact_three": -0.022326596086044148
+    },
+    "room": {
+      "all_whole": 0.11474237856005143,
+      "all_exact_three": 0.09795166033382952,
+      "quiet_whole": -0.06105857703746409,
+      "quiet_exact_three": 0.06693454367646945,
+      "worst_whole": 0.3431469767135642,
+      "worst_exact_three": 0.06693454367646945
+    }
+  },
+  "text": {
+    "sense": {
+      "reference_chars": 103,
+      "recognized_chars": 83,
+      "correct_reference_chars": 46,
+      "substitutions": 35,
+      "deletions": 22,
+      "insertions": 2,
+      "errors": 59,
+      "fixed_assignment_edits": 63
+    },
+    "zipformer": {
+      "reference_chars": 103,
+      "recognized_chars": 90,
+      "correct_reference_chars": 58,
+      "substitutions": 31,
+      "deletions": 14,
+      "insertions": 1,
+      "errors": 46,
+      "fixed_assignment_edits": 51
+    }
+  },
+  "gains": {
+    "sense": -1,
+    "zipformer": 2
+  },
+  "worst": null,
+  "passes": false
+}

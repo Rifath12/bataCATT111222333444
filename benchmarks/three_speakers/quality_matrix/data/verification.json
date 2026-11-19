@@ -1,0 +1,54 @@
+{
+  "audited_files": 36,
+  "clips": [
+    {
+      "id": "L_R003S03C02_140966_143166",
+      "exact_three_frames": 178
+    },
+    {
+      "id": "L_R003S03C02_143735_145935",
+      "exact_three_frames": 170
+    },
+    {
+      "id": "L_R003S03C02_155295_157495",
+      "exact_three_frames": 161
+    },
+    {
+      "id": "L_R003S03C02_209104_211304",
+      "exact_three_frames": 207
+    },
+    {
+      "id": "M_R003S02C01_098328_100528",
+      "exact_three_frames": 259
+    },
+    {
+      "id": "M_R003S02C01_128692_130892",
+      "exact_three_frames": 166
+    },
+    {
+      "id": "M_R003S02C01_155696_157896",
+      "exact_three_frames": 127
+    },
+    {
+      "id": "M_R003S02C01_197200_199400",
+      "exact_three_frames": 86
+    },
+    {
+      "id": "S_R003S04C01_058687_060887",
+      "exact_three_frames": 119
+    },
+    {
+      "id": "S_R003S04C01_131060_133260",
+      "exact_three_frames": 92
+    },
+    {
+      "id": "S_R003S04C01_224114_226314",
+      "exact_three_frames": 135
+    },
+    {
+      "id": "S_R003S04C01_237242_238295",
+      "exact_three_frames": 139
+    }
+  ],
+  "reference_three_seconds": 18.39
+}

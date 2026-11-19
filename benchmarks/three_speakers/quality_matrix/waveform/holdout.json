@@ -1,0 +1,37 @@
+{
+  "revision": "f20d5db4a31fe779ef07bb1af4ea92da5c786622",
+  "sha256": {
+    "SSB04270035.wav": "52227d6a6f92b6994dbcc1116b22d86292f89b6845166314f9e29f6526b9f189",
+    "SSB04270111.wav": "edba4c23d93fce3bcf2083230f0946d87a09365af03ea29a083e0f9d683a5127",
+    "SSB06320205.wav": "e894474b118c0bd77bb5103a1c32c72428652f3c7de7d1204386978cca3c8248",
+    "SSB06320250.wav": "5b152ade5ee1fe102b5adf67219d8a78c1958442dca372492ea08b018dd11a9b",
+    "SSB06860018.wav": "8f9f921e0ef1efc10e37cae4f635eeffcd310b84ae3653f0605c4d4d9a688b11",
+    "SSB06860390.wav": "7e150cb237b859d10fb707e355e4c9259db2f0a184bb4f183f7da62cfe8764b3"
+  },
+  "groups": {
+    "heldout": [
+      [
+        {
+          "id": "0632",
+          "target": "SSB06320250.wav",
+          "enroll": "SSB06320205.wav",
+          "text": "并不肯定智能手机战略是否将被用于笔记本"
+        },
+        {
+          "id": "0686",
+          "target": "SSB06860390.wav",
+          "enroll": "SSB06860018.wav",
+          "text": "我们这儿不要冒险"
+        },
+        {
+          "id": "0427",
+          "target": "SSB04270111.wav",
+          "enroll": "SSB04270035.wav",
+          "text": "河南平顶山化工厂氨气泄漏小孩儿咳血动物瘫倒"
+        }
+      ]
+    ]
+  },
+  "speakers_disjoint_from_current_development": true,
+  "speakers_also_seen_in_previous_experiments": []
+}

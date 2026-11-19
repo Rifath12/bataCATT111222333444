@@ -1,0 +1,632 @@
+{
+  "cases": [
+    {
+      "id": "M8013",
+      "split": "development",
+      "recorded_turns": 1085,
+      "selected_turns": 405,
+      "selected_seconds": 1168.6299999999987,
+      "all_seconds": 2175.9999999999973,
+      "candidate_seconds": 0.14317764599400107,
+      "changes": {
+        "replace": 88,
+        "delete": 2,
+        "insert": 6
+      },
+      "baseline": {
+        "cpCER": 0.25472436542547244,
+        "correct_reference_characters": 0.7650676506765067,
+        "totals": {
+          "reference_chars": 8943,
+          "recognized_chars": 8366,
+          "correct_reference_chars": 6842,
+          "substitutions": 1347,
+          "deletions": 754,
+          "insertions": 177,
+          "errors": 2278
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8047",
+            "system": "1",
+            "reference_chars": 3167,
+            "recognized_chars": 2990,
+            "correct_reference_chars": 2426,
+            "substitutions": 488,
+            "deletions": 253,
+            "insertions": 76
+          },
+          {
+            "reference": "N_SPK8048",
+            "system": "2",
+            "reference_chars": 3375,
+            "recognized_chars": 3289,
+            "correct_reference_chars": 2918,
+            "substitutions": 300,
+            "deletions": 157,
+            "insertions": 71
+          },
+          {
+            "reference": "N_SPK8049",
+            "system": "0",
+            "reference_chars": 2401,
+            "recognized_chars": 2087,
+            "correct_reference_chars": 1498,
+            "substitutions": 559,
+            "deletions": 344,
+            "insertions": 30
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.2506988706250699,
+        "correct_reference_characters": 0.7690931454769093,
+        "totals": {
+          "reference_chars": 8943,
+          "recognized_chars": 8372,
+          "correct_reference_chars": 6878,
+          "substitutions": 1317,
+          "deletions": 748,
+          "insertions": 177,
+          "errors": 2242
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8047",
+            "system": "1",
+            "reference_chars": 3167,
+            "recognized_chars": 2993,
+            "correct_reference_chars": 2442,
+            "substitutions": 476,
+            "deletions": 249,
+            "insertions": 75
+          },
+          {
+            "reference": "N_SPK8048",
+            "system": "2",
+            "reference_chars": 3375,
+            "recognized_chars": 3290,
+            "correct_reference_chars": 2922,
+            "substitutions": 296,
+            "deletions": 157,
+            "insertions": 72
+          },
+          {
+            "reference": "N_SPK8049",
+            "system": "0",
+            "reference_chars": 2401,
+            "recognized_chars": 2089,
+            "correct_reference_chars": 1514,
+            "substitutions": 545,
+            "deletions": 342,
+            "insertions": 30
+          }
+        ]
+      },
+      "archived_full_zipformer_seconds": 396.3682227130048
+    },
+    {
+      "id": "M8016",
+      "split": "full",
+      "recorded_turns": 855,
+      "selected_turns": 279,
+      "selected_seconds": 763.4400000000016,
+      "all_seconds": 1661.160000000003,
+      "candidate_seconds": 0.13188050099415705,
+      "changes": {
+        "replace": 82,
+        "insert": 13,
+        "delete": 5
+      },
+      "baseline": {
+        "cpCER": 0.23854639844256975,
+        "correct_reference_characters": 0.78105126541207,
+        "totals": {
+          "reference_chars": 7705,
+          "recognized_chars": 7162,
+          "correct_reference_chars": 6018,
+          "substitutions": 993,
+          "deletions": 694,
+          "insertions": 151,
+          "errors": 1838
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8060",
+            "system": "A",
+            "reference_chars": 3380,
+            "recognized_chars": 3365,
+            "correct_reference_chars": 3061,
+            "substitutions": 234,
+            "deletions": 85,
+            "insertions": 70
+          },
+          {
+            "reference": "N_SPK8061",
+            "system": "B",
+            "reference_chars": 2745,
+            "recognized_chars": 2736,
+            "correct_reference_chars": 2399,
+            "substitutions": 266,
+            "deletions": 80,
+            "insertions": 71
+          },
+          {
+            "reference": "N_SPK8062",
+            "system": "C",
+            "reference_chars": 1580,
+            "recognized_chars": 1061,
+            "correct_reference_chars": 558,
+            "substitutions": 493,
+            "deletions": 529,
+            "insertions": 10
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.23595068137573005,
+        "correct_reference_characters": 0.7835171966255678,
+        "totals": {
+          "reference_chars": 7705,
+          "recognized_chars": 7170,
+          "correct_reference_chars": 6037,
+          "substitutions": 983,
+          "deletions": 685,
+          "insertions": 150,
+          "errors": 1818
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8060",
+            "system": "A",
+            "reference_chars": 3380,
+            "recognized_chars": 3366,
+            "correct_reference_chars": 3070,
+            "substitutions": 228,
+            "deletions": 82,
+            "insertions": 68
+          },
+          {
+            "reference": "N_SPK8061",
+            "system": "B",
+            "reference_chars": 2745,
+            "recognized_chars": 2741,
+            "correct_reference_chars": 2408,
+            "substitutions": 261,
+            "deletions": 76,
+            "insertions": 72
+          },
+          {
+            "reference": "N_SPK8062",
+            "system": "C",
+            "reference_chars": 1580,
+            "recognized_chars": 1063,
+            "correct_reference_chars": 559,
+            "substitutions": 494,
+            "deletions": 527,
+            "insertions": 10
+          }
+        ]
+      },
+      "archived_full_zipformer_seconds": 271.0040845750045
+    },
+    {
+      "id": "M8017",
+      "split": "full",
+      "recorded_turns": 533,
+      "selected_turns": 196,
+      "selected_seconds": 710.0800000000002,
+      "all_seconds": 1498.3899999999996,
+      "candidate_seconds": 0.10972040599153843,
+      "changes": {
+        "replace": 95,
+        "delete": 9,
+        "insert": 5
+      },
+      "baseline": {
+        "cpCER": 0.11687515329899435,
+        "correct_reference_characters": 0.8917095903850871,
+        "totals": {
+          "reference_chars": 8154,
+          "recognized_chars": 7876,
+          "correct_reference_chars": 7271,
+          "substitutions": 535,
+          "deletions": 348,
+          "insertions": 70,
+          "errors": 953
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8063",
+            "system": "A",
+            "reference_chars": 3735,
+            "recognized_chars": 3661,
+            "correct_reference_chars": 3389,
+            "substitutions": 240,
+            "deletions": 106,
+            "insertions": 32
+          },
+          {
+            "reference": "N_SPK8064",
+            "system": "C",
+            "reference_chars": 1713,
+            "recognized_chars": 1527,
+            "correct_reference_chars": 1311,
+            "substitutions": 197,
+            "deletions": 205,
+            "insertions": 19
+          },
+          {
+            "reference": "N_SPK8065",
+            "system": "B",
+            "reference_chars": 2706,
+            "recognized_chars": 2688,
+            "correct_reference_chars": 2571,
+            "substitutions": 98,
+            "deletions": 37,
+            "insertions": 19
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.11344125582536178,
+        "correct_reference_characters": 0.8942850134903115,
+        "totals": {
+          "reference_chars": 8154,
+          "recognized_chars": 7872,
+          "correct_reference_chars": 7292,
+          "substitutions": 517,
+          "deletions": 345,
+          "insertions": 63,
+          "errors": 925
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8063",
+            "system": "A",
+            "reference_chars": 3735,
+            "recognized_chars": 3661,
+            "correct_reference_chars": 3406,
+            "substitutions": 224,
+            "deletions": 105,
+            "insertions": 31
+          },
+          {
+            "reference": "N_SPK8064",
+            "system": "C",
+            "reference_chars": 1713,
+            "recognized_chars": 1526,
+            "correct_reference_chars": 1313,
+            "substitutions": 197,
+            "deletions": 203,
+            "insertions": 16
+          },
+          {
+            "reference": "N_SPK8065",
+            "system": "B",
+            "reference_chars": 2706,
+            "recognized_chars": 2685,
+            "correct_reference_chars": 2573,
+            "substitutions": 96,
+            "deletions": 37,
+            "insertions": 16
+          }
+        ]
+      },
+      "archived_full_zipformer_seconds": 189.95053775500855
+    },
+    {
+      "id": "R8002_M8003_027646_031931",
+      "split": "excerpt",
+      "recorded_turns": 34,
+      "selected_turns": 8,
+      "selected_seconds": 15.57,
+      "all_seconds": 52.299999999999976,
+      "candidate_seconds": 0.002566780007327907,
+      "changes": {
+        "replace": 2
+      },
+      "baseline": {
+        "cpCER": 0.3474178403755869,
+        "correct_reference_characters": 0.7230046948356808,
+        "totals": {
+          "reference_chars": 213,
+          "recognized_chars": 217,
+          "correct_reference_chars": 154,
+          "substitutions": 48,
+          "deletions": 11,
+          "insertions": 15,
+          "errors": 74
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8009",
+            "system": "C",
+            "reference_chars": 25,
+            "recognized_chars": 27,
+            "correct_reference_chars": 15,
+            "substitutions": 10,
+            "deletions": 0,
+            "insertions": 2
+          },
+          {
+            "reference": "N_SPK8010",
+            "system": "B",
+            "reference_chars": 46,
+            "recognized_chars": 49,
+            "correct_reference_chars": 10,
+            "substitutions": 30,
+            "deletions": 6,
+            "insertions": 9
+          },
+          {
+            "reference": "N_SPK8011",
+            "system": "A",
+            "reference_chars": 142,
+            "recognized_chars": 141,
+            "correct_reference_chars": 129,
+            "substitutions": 8,
+            "deletions": 5,
+            "insertions": 4
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.3427230046948357,
+        "correct_reference_characters": 0.7276995305164319,
+        "totals": {
+          "reference_chars": 213,
+          "recognized_chars": 217,
+          "correct_reference_chars": 155,
+          "substitutions": 47,
+          "deletions": 11,
+          "insertions": 15,
+          "errors": 73
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8009",
+            "system": "C",
+            "reference_chars": 25,
+            "recognized_chars": 27,
+            "correct_reference_chars": 15,
+            "substitutions": 10,
+            "deletions": 0,
+            "insertions": 2
+          },
+          {
+            "reference": "N_SPK8010",
+            "system": "B",
+            "reference_chars": 46,
+            "recognized_chars": 49,
+            "correct_reference_chars": 10,
+            "substitutions": 30,
+            "deletions": 6,
+            "insertions": 9
+          },
+          {
+            "reference": "N_SPK8011",
+            "system": "A",
+            "reference_chars": 142,
+            "recognized_chars": 141,
+            "correct_reference_chars": 130,
+            "substitutions": 7,
+            "deletions": 5,
+            "insertions": 4
+          }
+        ]
+      },
+      "archived_full_zipformer_seconds": 6.706852057002834
+    },
+    {
+      "id": "R8004_M8005_160952_168387",
+      "split": "excerpt",
+      "recorded_turns": 27,
+      "selected_turns": 16,
+      "selected_seconds": 62.94,
+      "all_seconds": 78.72,
+      "candidate_seconds": 0.0020565430022543296,
+      "changes": {
+        "replace": 7,
+        "delete": 1,
+        "insert": 1
+      },
+      "baseline": {
+        "cpCER": 0.26692456479690524,
+        "correct_reference_characters": 0.7524177949709865,
+        "totals": {
+          "reference_chars": 517,
+          "recognized_chars": 468,
+          "correct_reference_chars": 389,
+          "substitutions": 69,
+          "deletions": 59,
+          "insertions": 10,
+          "errors": 138
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8017",
+            "system": "B",
+            "reference_chars": 271,
+            "recognized_chars": 251,
+            "correct_reference_chars": 225,
+            "substitutions": 20,
+            "deletions": 26,
+            "insertions": 6
+          },
+          {
+            "reference": "N_SPK8019",
+            "system": "C",
+            "reference_chars": 45,
+            "recognized_chars": 22,
+            "correct_reference_chars": 9,
+            "substitutions": 13,
+            "deletions": 23,
+            "insertions": 0
+          },
+          {
+            "reference": "N_SPK8020",
+            "system": "A",
+            "reference_chars": 201,
+            "recognized_chars": 195,
+            "correct_reference_chars": 155,
+            "substitutions": 36,
+            "deletions": 10,
+            "insertions": 4
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.2688588007736944,
+        "correct_reference_characters": 0.7485493230174082,
+        "totals": {
+          "reference_chars": 517,
+          "recognized_chars": 468,
+          "correct_reference_chars": 387,
+          "substitutions": 72,
+          "deletions": 58,
+          "insertions": 9,
+          "errors": 139
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8017",
+            "system": "B",
+            "reference_chars": 271,
+            "recognized_chars": 251,
+            "correct_reference_chars": 224,
+            "substitutions": 21,
+            "deletions": 26,
+            "insertions": 6
+          },
+          {
+            "reference": "N_SPK8019",
+            "system": "C",
+            "reference_chars": 45,
+            "recognized_chars": 22,
+            "correct_reference_chars": 9,
+            "substitutions": 13,
+            "deletions": 23,
+            "insertions": 0
+          },
+          {
+            "reference": "N_SPK8020",
+            "system": "A",
+            "reference_chars": 201,
+            "recognized_chars": 195,
+            "correct_reference_chars": 154,
+            "substitutions": 38,
+            "deletions": 9,
+            "insertions": 3
+          }
+        ]
+      },
+      "archived_full_zipformer_seconds": 8.710389547006343
+    },
+    {
+      "id": "R8006_M8012_017727_024396",
+      "split": "excerpt",
+      "recorded_turns": 32,
+      "selected_turns": 15,
+      "selected_seconds": 60.88,
+      "all_seconds": 84.31,
+      "candidate_seconds": 0.0020951350015820935,
+      "changes": {
+        "replace": 15,
+        "insert": 1
+      },
+      "baseline": {
+        "cpCER": 0.32914572864321606,
+        "correct_reference_characters": 0.7211055276381909,
+        "totals": {
+          "reference_chars": 398,
+          "recognized_chars": 372,
+          "correct_reference_chars": 287,
+          "substitutions": 65,
+          "deletions": 46,
+          "insertions": 20,
+          "errors": 131
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8071",
+            "system": "A",
+            "reference_chars": 184,
+            "recognized_chars": 172,
+            "correct_reference_chars": 147,
+            "substitutions": 21,
+            "deletions": 16,
+            "insertions": 4
+          },
+          {
+            "reference": "N_SPK8072",
+            "system": "B",
+            "reference_chars": 148,
+            "recognized_chars": 143,
+            "correct_reference_chars": 97,
+            "substitutions": 32,
+            "deletions": 19,
+            "insertions": 14
+          },
+          {
+            "reference": "N_SPK8073",
+            "system": "C",
+            "reference_chars": 66,
+            "recognized_chars": 57,
+            "correct_reference_chars": 43,
+            "substitutions": 12,
+            "deletions": 11,
+            "insertions": 2
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.31909547738693467,
+        "correct_reference_characters": 0.7336683417085427,
+        "totals": {
+          "reference_chars": 398,
+          "recognized_chars": 373,
+          "correct_reference_chars": 292,
+          "substitutions": 60,
+          "deletions": 46,
+          "insertions": 21,
+          "errors": 127
+        },
+        "speaker_scores": [
+          {
+            "reference": "N_SPK8071",
+            "system": "A",
+            "reference_chars": 184,
+            "recognized_chars": 173,
+            "correct_reference_chars": 155,
+            "substitutions": 13,
+            "deletions": 16,
+            "insertions": 5
+          },
+          {
+            "reference": "N_SPK8072",
+            "system": "B",
+            "reference_chars": 148,
+            "recognized_chars": 143,
+            "correct_reference_chars": 95,
+            "substitutions": 34,
+            "deletions": 19,
+            "insertions": 14
+          },
+          {
+            "reference": "N_SPK8073",
+            "system": "C",
+            "reference_chars": 66,
+            "recognized_chars": 57,
+            "correct_reference_chars": 42,
+            "substitutions": 13,
+            "deletions": 11,
+            "insertions": 2
+          }
+        ]
+      },
+      "archived_full_zipformer_seconds": 9.902054307996877
+    }
+  ],
+  "exhaustive_pruned_inputs": 497
+}

@@ -1,0 +1,56 @@
+{
+  "calibration": {
+    "knobs": [
+      0.2,
+      0.38,
+      3,
+      1
+    ],
+    "development": {
+      "dictionary_narrow": {
+        "speaker_recall": 0.8752142989372919,
+        "speaker_precision": 0.8857849619446126,
+        "DER": 0.22075406396638828,
+        "three_way_speaker_recall": 0.8982322315050248,
+        "exact_three_precision": 0.4250468457214241,
+        "exact_three_recall": 0.741554667635307,
+        "exact_three_F1": 0.5403652726310217,
+        "seconds": 3018.57,
+        "reference_three_s": 165.18,
+        "predicted_three_s": 288.18,
+        "false_three_s": 165.69,
+        "exact_three_true_positive_s": 122.49
+      },
+      "structured": {
+        "speaker_recall": 0.9225062847606962,
+        "speaker_precision": 0.9237007884592137,
+        "DER": 0.14250107987883895,
+        "three_way_speaker_recall": 0.8611212011139363,
+        "exact_three_precision": 0.6002953337271116,
+        "exact_three_recall": 0.6152681922750939,
+        "exact_three_F1": 0.6076895479550347,
+        "seconds": 3018.57,
+        "reference_three_s": 165.18,
+        "predicted_three_s": 169.3,
+        "false_three_s": 67.67,
+        "exact_three_true_positive_s": 101.63
+      },
+      "candidate": {
+        "speaker_recall": 0.9260423849090621,
+        "speaker_precision": 0.9176738646092001,
+        "DER": 0.1461149849621841,
+        "three_way_speaker_recall": 0.8855995479678734,
+        "exact_three_precision": 0.5467390781948382,
+        "exact_three_recall": 0.6887032328369052,
+        "exact_three_F1": 0.6095646349631614,
+        "seconds": 3018.57,
+        "reference_three_s": 165.18,
+        "predicted_three_s": 208.07,
+        "false_three_s": 94.31,
+        "exact_three_true_positive_s": 113.76
+      }
+    },
+    "minimum_gain": -0.05355625553227339,
+    "search_size": 252
+  }
+}

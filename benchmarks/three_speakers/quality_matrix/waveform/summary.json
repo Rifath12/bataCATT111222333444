@@ -1,0 +1,592 @@
+{
+  "renderer_recommendation": "retain_released_renderer",
+  "models_selected_before_wave_validation": {
+    "harmonic": {
+      "config": [
+        "harmonic",
+        0.25,
+        1.5,
+        true
+      ],
+      "deltas": {
+        "all": {
+          "all_whole": 0.02139156683987231,
+          "all_exact_three": 0.029129135794441652,
+          "quiet_whole": -0.004428120426219095,
+          "quiet_exact_three": 0.014634123663443077,
+          "worst_whole": 0.05409996722972643,
+          "worst_exact_three": 0.05693973193618973
+        },
+        "clean": {
+          "all_whole": -0.003114726379312316,
+          "all_exact_three": -0.007630561461329677,
+          "quiet_whole": -0.043944194604929265,
+          "quiet_exact_three": -0.03629635710574419,
+          "worst_whole": 0.0014108042084970407,
+          "worst_exact_three": -0.026806453858556623
+        },
+        "room": {
+          "all_whole": 0.05319480786185604,
+          "all_exact_three": 0.06654233089664974,
+          "quiet_whole": 0.02139156683987231,
+          "quiet_exact_three": 0.01803777521389094,
+          "worst_whole": 0.035187151309041376,
+          "worst_exact_three": 0.01803777521389094
+        }
+      },
+      "text": {
+        "sense": {
+          "reference_chars": 103,
+          "recognized_chars": 85,
+          "correct_reference_chars": 48,
+          "substitutions": 35,
+          "deletions": 20,
+          "insertions": 2,
+          "errors": 57,
+          "fixed_assignment_edits": 61
+        },
+        "zipformer": {
+          "reference_chars": 103,
+          "recognized_chars": 93,
+          "correct_reference_chars": 59,
+          "substitutions": 34,
+          "deletions": 10,
+          "insertions": 0,
+          "errors": 44,
+          "fixed_assignment_edits": 48
+        }
+      },
+      "gains": {
+        "sense": 1,
+        "zipformer": 4
+      },
+      "worst": -0.043944194604929265,
+      "passes": false
+    },
+    "debleed": {
+      "config": [
+        0.6,
+        "real",
+        "broad",
+        0,
+        0,
+        0.15
+      ],
+      "deltas": {
+        "all": {
+          "all_whole": 0.009087252078977315,
+          "all_exact_three": 0.003970484376283778,
+          "quiet_whole": 0.1368812062685354,
+          "quiet_exact_three": -0.0006524850861708842,
+          "worst_whole": 0.040462698169436706,
+          "worst_exact_three": 0.003994872114194692
+        },
+        "clean": {
+          "all_whole": -0.030094692060700368,
+          "all_exact_three": -0.014291104730542514,
+          "quiet_whole": 0.001506212938608087,
+          "quiet_exact_three": -0.002051671390493226,
+          "worst_whole": -0.011195315188855304,
+          "worst_exact_three": -0.016627827394094297
+        },
+        "room": {
+          "all_whole": 0.07842260390599698,
+          "all_exact_three": 0.012497295960961274,
+          "quiet_whole": 0.009087252078977315,
+          "quiet_exact_three": -0.0021132236452312547,
+          "worst_whole": 0.002759173937411319,
+          "worst_exact_three": -0.0021132236452312547
+        }
+      },
+      "passes": false,
+      "reason": "No trial met the six-metric non-regression gate for both acoustic conditions"
+    },
+    "multiview": {
+      "params": [
+        "consensus",
+        0.25
+      ],
+      "improvements": {
+        "all": {
+          "all_whole": 0.0004257917547469958,
+          "all_exact_three": -0.0013928294906779826,
+          "quiet_whole": -0.02027335621842319,
+          "quiet_exact_three": -0.017153795028618024,
+          "worst_whole": -0.02027335621842319,
+          "worst_exact_three": -0.017153795028618024
+        },
+        "room": {
+          "all_whole": 0.0004257917547469958,
+          "all_exact_three": -0.0013928294906779826,
+          "quiet_whole": -0.02027335621842319,
+          "quiet_exact_three": -0.017153795028618024,
+          "worst_whole": -0.02027335621842319,
+          "worst_exact_three": -0.017153795028618024
+        }
+      },
+      "edits": {
+        "sense": {
+          "reference_chars": 103,
+          "recognized_chars": 91,
+          "correct_reference_chars": 47,
+          "substitutions": 41,
+          "deletions": 15,
+          "insertions": 3,
+          "errors": 59,
+          "fixed_assignment_edits": 62
+        },
+        "zipformer": {
+          "reference_chars": 103,
+          "recognized_chars": 101,
+          "correct_reference_chars": 60,
+          "substitutions": 39,
+          "deletions": 4,
+          "insertions": 2,
+          "errors": 45,
+          "fixed_assignment_edits": 48
+        }
+      },
+      "gain": {
+        "sense": -1,
+        "zipformer": 3
+      },
+      "minimum_gain": -0.02027335621842319,
+      "passes": false
+    }
+  },
+  "distinct_speaker_counts": {
+    "development": 15,
+    "legacy_test": 18,
+    "legacy_fresh": 9,
+    "room_new": 9,
+    "room_heldout": 9,
+    "entirely_unseen": 3
+  },
+  "speaker_overlap_with_development": {
+    "legacy_test": [],
+    "legacy_fresh": [],
+    "room_new": [],
+    "room_heldout": [],
+    "entirely_unseen": []
+  },
+  "project_disjoint_speakers": [
+    "0427",
+    "0632",
+    "0686"
+  ],
+  "validation": {
+    "legacy_test": {
+      "number_of_clips": 12,
+      "total_seconds": 40.8,
+      "exact_three_seconds": 12.34,
+      "baseline": {
+        "all": {
+          "all_whole": 8.156900898573912,
+          "all_exact_three": 7.4700995342631025,
+          "quiet_whole": 11.616378616767065,
+          "quiet_exact_three": 11.922298706562216,
+          "worst_whole": 3.4462051263069777,
+          "worst_exact_three": 3.0503723546948094
+        },
+        "clean": {
+          "all_whole": 10.950816769222502,
+          "all_exact_three": 11.431875130795785,
+          "quiet_whole": 15.03289048881308,
+          "quiet_exact_three": 14.387122996662647,
+          "worst_whole": 8.564450848171568,
+          "worst_exact_three": 8.016265645736464
+        },
+        "room": {
+          "all_whole": 4.992818584989896,
+          "all_exact_three": 3.4656105470601863,
+          "quiet_whole": 6.381612203803185,
+          "quiet_exact_three": 5.215293764008862,
+          "worst_whole": 1.4780037885684756,
+          "worst_exact_three": 1.699632841817742
+        }
+      },
+      "changes": {
+        "harmonic": {
+          "all": {
+            "all_whole": 0.008773653172148954,
+            "all_exact_three": 0.016028285769693618,
+            "quiet_whole": 7.809707708616997e-05,
+            "quiet_exact_three": -0.02320598540410046,
+            "worst_whole": 0.02619238546733893,
+            "worst_exact_three": 0.022778123513301107
+          },
+          "clean": {
+            "all_whole": -0.0019958333731899813,
+            "all_exact_three": 0.009660762037913884,
+            "quiet_whole": 0.004242362915586995,
+            "quiet_exact_three": 0.0120579901466904,
+            "worst_whole": -0.012224981605356788,
+            "worst_exact_three": -0.02467731658396577
+          },
+          "room": {
+            "all_whole": 0.05355590506016661,
+            "all_exact_three": -0.0014449749878648888,
+            "quiet_whole": -0.0052215905128729645,
+            "quiet_exact_three": 0.01475198821595125,
+            "worst_whole": -0.020205063613424112,
+            "worst_exact_three": -0.012081999129977206
+          }
+        },
+        "debleed": {
+          "all": {
+            "all_whole": 0.005616037968813714,
+            "all_exact_three": -0.004512685340725575,
+            "quiet_whole": 0.024171613282142346,
+            "quiet_exact_three": -0.006661650576489819,
+            "worst_whole": 0.028232706553738218,
+            "worst_exact_three": 0.004093308873285739
+          },
+          "clean": {
+            "all_whole": -0.002310751286412227,
+            "all_exact_three": -0.00526286245088059,
+            "quiet_whole": -0.008877000050377504,
+            "quiet_exact_three": -0.005844927230526764,
+            "worst_whole": -0.004985457122918646,
+            "worst_exact_three": -0.002320584472752074
+          },
+          "room": {
+            "all_whole": 0.023067667826547122,
+            "all_exact_three": 0.006978712151918032,
+            "quiet_whole": -0.003890329615921395,
+            "quiet_exact_three": -0.023735439174945583,
+            "worst_whole": 0.016854837330488426,
+            "worst_exact_three": 0.011083570806855292
+          }
+        }
+      }
+    },
+    "legacy_fresh": {
+      "number_of_clips": 6,
+      "total_seconds": 20.4,
+      "exact_three_seconds": 5.24,
+      "baseline": {
+        "all": {
+          "all_whole": 5.5250788011872425,
+          "all_exact_three": 6.371677788287116,
+          "quiet_whole": 6.949016534449118,
+          "quiet_exact_three": 6.795318466108567,
+          "worst_whole": 2.996642275523654,
+          "worst_exact_three": 3.1924029526443465
+        },
+        "clean": {
+          "all_whole": 6.9847753314704715,
+          "all_exact_three": 7.154911106257796,
+          "quiet_whole": 7.13202367041555,
+          "quiet_exact_three": 7.154911106257796,
+          "worst_whole": 4.734784289668409,
+          "worst_exact_three": 6.307629750614893
+        },
+        "room": {
+          "all_whole": 3.6891996877267412,
+          "all_exact_three": 3.0454354957124865,
+          "quiet_whole": 6.62290885889499,
+          "quiet_exact_three": 6.435725825959339,
+          "worst_whole": 0.5248539597042301,
+          "worst_exact_three": 0.33741627306732536
+        }
+      },
+      "changes": {
+        "harmonic": {
+          "all": {
+            "all_whole": 0.03342888909204955,
+            "all_exact_three": -0.0005295598195109719,
+            "quiet_whole": -0.009825924330419511,
+            "quiet_exact_three": -0.0035787630437287277,
+            "worst_whole": -0.00692840658573024,
+            "worst_exact_three": 0.011235671588476048
+          },
+          "clean": {
+            "all_whole": 0.02176945985200618,
+            "all_exact_three": -0.014200317444196031,
+            "quiet_whole": -0.004690189672852618,
+            "quiet_exact_three": -0.014200317444196031,
+            "worst_whole": -0.013868021325343705,
+            "worst_exact_three": -0.00810191099576052
+          },
+          "room": {
+            "all_whole": 0.013778994817705836,
+            "all_exact_three": 0.030630739722900646,
+            "quiet_whole": 0.00689654899896297,
+            "quiet_exact_three": 0.007042791356737688,
+            "worst_whole": -0.06600645248125492,
+            "worst_exact_three": -0.02247564162877458
+          }
+        },
+        "debleed": {
+          "all": {
+            "all_whole": -0.001220959874485672,
+            "all_exact_three": -0.0015222448634411023,
+            "quiet_whole": -0.014221858149523925,
+            "quiet_exact_three": -0.0036561261165690695,
+            "worst_whole": 0.028113954594092938,
+            "worst_exact_three": 0.007640925792988806
+          },
+          "clean": {
+            "all_whole": -0.00030141408745443243,
+            "all_exact_three": -0.008511716824129323,
+            "quiet_whole": -0.012412832819852504,
+            "quiet_exact_three": -0.008511716824129323,
+            "worst_whole": -0.014168530997926254,
+            "worst_exact_three": -0.004243954317875165
+          },
+          "room": {
+            "all_whole": 0.024106091447714473,
+            "all_exact_three": 0.000784002928828631,
+            "quiet_whole": 0.010526506761193488,
+            "quiet_exact_three": 0.0011994645909911839,
+            "worst_whole": 0.04362637985798834,
+            "worst_exact_three": -0.01645866724956857
+          }
+        }
+      }
+    },
+    "room_new": {
+      "number_of_clips": 3,
+      "total_seconds": 14.9485,
+      "exact_three_seconds": 4.62,
+      "baseline": {
+        "all": {
+          "all_whole": 3.6449196907275363,
+          "all_exact_three": 3.0564518144272097,
+          "quiet_whole": -1.123531311009895,
+          "quiet_exact_three": -3.426549836730345,
+          "worst_whole": -1.123531311009895,
+          "worst_exact_three": -3.426549836730345
+        },
+        "room": {
+          "all_whole": 3.6449196907275363,
+          "all_exact_three": 3.0564518144272097,
+          "quiet_whole": -1.123531311009895,
+          "quiet_exact_three": -3.426549836730345,
+          "worst_whole": -1.123531311009895,
+          "worst_exact_three": -3.426549836730345
+        }
+      },
+      "changes": {
+        "harmonic": {
+          "all": {
+            "all_whole": 0.003468187616863183,
+            "all_exact_three": 0.011400092632567471,
+            "quiet_whole": -0.1733569204646166,
+            "quiet_exact_three": -0.1623467360268087,
+            "worst_whole": -0.1733569204646166,
+            "worst_exact_three": -0.1623467360268087
+          },
+          "room": {
+            "all_whole": 0.003468187616863183,
+            "all_exact_three": 0.011400092632567471,
+            "quiet_whole": -0.1733569204646166,
+            "quiet_exact_three": -0.1623467360268087,
+            "worst_whole": -0.1733569204646166,
+            "worst_exact_three": -0.1623467360268087
+          }
+        },
+        "debleed": {
+          "all": {
+            "all_whole": 0.03608550164091717,
+            "all_exact_three": 0.0007260839851710443,
+            "quiet_whole": -0.013702544752401735,
+            "quiet_exact_three": -0.031660991238345204,
+            "worst_whole": -0.013702544752401735,
+            "worst_exact_three": -0.031660991238345204
+          },
+          "room": {
+            "all_whole": 0.03608550164091717,
+            "all_exact_three": 0.0007260839851710443,
+            "quiet_whole": -0.013702544752401735,
+            "quiet_exact_three": -0.031660991238345204,
+            "worst_whole": -0.013702544752401735,
+            "worst_exact_three": -0.031660991238345204
+          }
+        },
+        "multiview": {
+          "all": {
+            "all_whole": 0.0026882353346007193,
+            "all_exact_three": -9.595607510659576e-05,
+            "quiet_whole": 0.0015036636523717561,
+            "quiet_exact_three": -0.007549523066256114,
+            "worst_whole": 0.0015036636523717561,
+            "worst_exact_three": -0.007549523066256114
+          },
+          "room": {
+            "all_whole": 0.0026882353346007193,
+            "all_exact_three": -9.595607510659576e-05,
+            "quiet_whole": 0.0015036636523717561,
+            "quiet_exact_three": -0.007549523066256114,
+            "worst_whole": 0.0015036636523717561,
+            "worst_exact_three": -0.007549523066256114
+          }
+        }
+      }
+    },
+    "room_heldout": {
+      "number_of_clips": 3,
+      "total_seconds": 25.60375,
+      "exact_three_seconds": 2.58,
+      "baseline": {
+        "all": {
+          "all_whole": 6.0237515167789315,
+          "all_exact_three": 4.4494998657628395,
+          "quiet_whole": 8.051693285580402,
+          "quiet_exact_three": 8.043738762479574,
+          "worst_whole": 0.25311570361087377,
+          "worst_exact_three": -4.458830822875617
+        },
+        "room": {
+          "all_whole": 6.0237515167789315,
+          "all_exact_three": 4.4494998657628395,
+          "quiet_whole": 8.051693285580402,
+          "quiet_exact_three": 8.043738762479574,
+          "worst_whole": 0.25311570361087377,
+          "worst_exact_three": -4.458830822875617
+        }
+      },
+      "changes": {
+        "harmonic": {
+          "all": {
+            "all_whole": 0.006750371662448629,
+            "all_exact_three": 0.0071267206976939335,
+            "quiet_whole": -0.01072116113935806,
+            "quiet_exact_three": 0.0076039506411724744,
+            "worst_whole": -0.018121582546296366,
+            "worst_exact_three": -0.09013394517335627
+          },
+          "room": {
+            "all_whole": 0.006750371662448629,
+            "all_exact_three": 0.0071267206976939335,
+            "quiet_whole": -0.01072116113935806,
+            "quiet_exact_three": 0.0076039506411724744,
+            "worst_whole": -0.018121582546296366,
+            "worst_exact_three": -0.09013394517335627
+          }
+        },
+        "debleed": {
+          "all": {
+            "all_whole": 0.020909394853283914,
+            "all_exact_three": -0.00010092522234295132,
+            "quiet_whole": -0.01848405621785254,
+            "quiet_exact_three": -0.0013626065481240346,
+            "worst_whole": -0.010720831967917732,
+            "worst_exact_three": -0.12015936343008882
+          },
+          "room": {
+            "all_whole": 0.020909394853283914,
+            "all_exact_three": -0.00010092522234295132,
+            "quiet_whole": -0.01848405621785254,
+            "quiet_exact_three": -0.0013626065481240346,
+            "worst_whole": -0.010720831967917732,
+            "worst_exact_three": -0.12015936343008882
+          }
+        },
+        "multiview": {
+          "all": {
+            "all_whole": 0.0009992501541908894,
+            "all_exact_three": -0.001767387752696692,
+            "quiet_whole": -0.002639571529970297,
+            "quiet_exact_three": 0.0032419889078774133,
+            "worst_whole": -0.00513103710055951,
+            "worst_exact_three": -0.013787456672210041
+          },
+          "room": {
+            "all_whole": 0.0009992501541908894,
+            "all_exact_three": -0.001767387752696692,
+            "quiet_whole": -0.002639571529970297,
+            "quiet_exact_three": 0.0032419889078774133,
+            "worst_whole": -0.00513103710055951,
+            "worst_exact_three": -0.013787456672210041
+          }
+        }
+      }
+    },
+    "entirely_unseen": {
+      "number_of_clips": 2,
+      "total_seconds": 12.29225,
+      "exact_three_seconds": 0.68,
+      "baseline": {
+        "all": {
+          "all_whole": 12.593690771382509,
+          "all_exact_three": 11.910890598305809,
+          "quiet_whole": 13.514076887981362,
+          "quiet_exact_three": 11.109067882051175,
+          "worst_whole": 11.768021914362487,
+          "worst_exact_three": 9.767681152891672
+        },
+        "clean": {
+          "all_whole": 18.139287921481994,
+          "all_exact_three": 13.575873500439698,
+          "quiet_whole": 19.31894276296865,
+          "quiet_exact_three": 15.95826266231606,
+          "worst_whole": 15.869228505720608,
+          "worst_exact_three": 13.275489203997054
+        },
+        "room": {
+          "all_whole": 7.709211012994075,
+          "all_exact_three": 6.815861201394992,
+          "quiet_whole": 7.709211012994075,
+          "quiet_exact_three": 6.259873101786292,
+          "worst_whole": 7.666815323004365,
+          "worst_exact_three": 6.259873101786292
+        }
+      },
+      "changes": {
+        "0.6": {
+          "all": {
+            "all_whole": 0.053721488305608744,
+            "all_exact_three": -0.007281601983670782,
+            "quiet_whole": -0.003938234162093934,
+            "quiet_exact_three": 0.016319667183161357,
+            "worst_whole": -0.02273271810120825,
+            "worst_exact_three": 0.020356209936606362
+          },
+          "clean": {
+            "all_whole": -0.011819330481927182,
+            "all_exact_three": -0.015455858829989566,
+            "quiet_whole": -0.02228534263454307,
+            "quiet_exact_three": -0.012918106653817318,
+            "worst_whole": -0.024589640905993804,
+            "worst_exact_three": -0.0048450211469273086
+          },
+          "room": {
+            "all_whole": 0.014408874310356978,
+            "all_exact_three": 0.009054863755697085,
+            "quiet_whole": 0.014408874310356978,
+            "quiet_exact_three": 0.045557441020138256,
+            "worst_whole": -0.020875795296423583,
+            "worst_exact_three": 0.045557441020138256
+          }
+        },
+        "harmonic": {
+          "all": {
+            "all_whole": 0.024962176291923655,
+            "all_exact_three": -0.07332229913113508,
+            "quiet_whole": 0.020190535614235117,
+            "quiet_exact_three": 0.06823147686765907,
+            "worst_whole": -0.04048389216774417,
+            "worst_exact_three": -0.011861024103145823
+          },
+          "clean": {
+            "all_whole": -0.049863355314606395,
+            "all_exact_three": -0.0952466589193488,
+            "quiet_whole": 0.019622681327842173,
+            "quiet_exact_three": -0.011278570182412295,
+            "worst_whole": -0.06261684817702395,
+            "worst_exact_three": -0.1714635721240203
+          },
+          "room": {
+            "all_whole": 0.02075838990062895,
+            "all_exact_three": 0.19282699524074065,
+            "quiet_whole": 0.02075838990062895,
+            "quiet_exact_three": 0.14774152391772688,
+            "worst_whole": -0.01835093615846528,
+            "worst_exact_three": 0.14774152391772688
+          }
+        }
+      }
+    }
+  }
+}

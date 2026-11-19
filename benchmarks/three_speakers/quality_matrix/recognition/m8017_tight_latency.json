@@ -1,0 +1,14 @@
+{
+  "selective": {
+    "elapsed_seconds": 84.52883157400356,
+    "decoder_seconds": 77.38857941399328,
+    "selected_turns": 196,
+    "all_turns": 533,
+    "preprocessing_seconds": 0.08539184200344607,
+    "changes": {
+      "replace": 95,
+      "delete": 9,
+      "insert": 5
+    }
+  }
+}

@@ -130,6 +130,7 @@ def transcribe(
     character_fn=None,
     target_rms=None,
     backend="zipformer",
+    selected_keys=None,
 ):
     options = dict(model=str(asr), tokens=str(tokenizer), num_threads=threads)
     if backend == "sensevoice":
@@ -143,48 +144,65 @@ def transcribe(
     results = []
     started = time.perf_counter()
     for speaker, path in sorted(wav_paths.items()):
-        y, sr = sf.read(path, dtype="float32")
-        if sr != 16000 or y.ndim != 1:
-            raise ValueError(f"Expected a mono 16 kHz input in {path}")
-        spans = list(
-            inference_spans(
-                [s for s in times if str(s["speaker"]) == speaker], len(y) / sr
-            )
-        )
-        for offset in range(0, len(spans), batch_size):
-            section = spans[offset : offset + batch_size]
-            streams = []
-            for a, b in section:
-                stream = decoder.create_stream()
-                # Pad the ends without importing adjacent speakers' words.
-                speech = y[round(a * sr) : round(b * sr)]
-                if target_rms:
-                    rms = max(float(np.sqrt(np.mean(np.square(speech)))), 1e-7)
-                    peak = max(float(np.abs(speech).max()), 1e-7)
-                    speech = speech * min(target_rms / rms, 0.98 / peak, 20.0)
-                stream.accept_waveform(sr, np.pad(speech, (800, 1280)))
-                streams.append(stream)
-            decoder.decode_streams(streams)
-            for (a, b), stream in zip(section, streams):
-                result = stream.result
-                text = result.text.strip()
-                if not text:
-                    continue
-                row = {"speaker": speaker, "start": a, "end": b, "text": text}
-                if character_fn is not None:
-                    chars = character_fn(result.tokens, result.timestamps, a - 0.05, b)
-                    known_text = re.sub(r"<(?:unk|blk|sos/eos)>", "", text)
-                    if "".join(x["text"] for x in chars) == "".join(known_text.split()):
-                        for ch in chars:
-                            ch["start_ms"] = max(round(a * 1000), ch["start_ms"])
-                            ch["end_ms"] = max(ch["start_ms"], ch["end_ms"])
-                        row["characters"] = chars
-                results.append(row)
-            if offset // batch_size % 30 == 0:
-                print(
-                    f"ASR {speaker} {min(offset + batch_size, len(spans))}/{len(spans)}",
-                    flush=True,
+        if selected_keys is not None and not any(
+            key[0] == speaker for key in selected_keys
+        ):
+            continue
+        with sf.SoundFile(path) as source:
+            sr = source.samplerate
+            if sr != 16000 or source.channels != 1:
+                raise ValueError(f"Expected a mono 16 kHz input in {path}")
+            spans = list(
+                inference_spans(
+                    [s for s in times if str(s["speaker"]) == speaker], len(source) / sr
                 )
+            )
+            if selected_keys is not None:
+                spans = [
+                    (a, b)
+                    for a, b in spans
+                    if (speaker, round(a, 3), round(b, 3)) in selected_keys
+                ]
+            for offset in range(0, len(spans), batch_size):
+                section = spans[offset : offset + batch_size]
+                streams = []
+                for a, b in section:
+                    stream = decoder.create_stream()
+                    # Pad the ends without importing adjacent speakers' words.
+                    first, last = round(a * sr), round(b * sr)
+                    source.seek(first)
+                    speech = source.read(last - first, dtype="float32")
+                    if target_rms:
+                        rms = max(float(np.sqrt(np.mean(np.square(speech)))), 1e-7)
+                        peak = max(float(np.abs(speech).max()), 1e-7)
+                        speech = speech * min(target_rms / rms, 0.98 / peak, 20.0)
+                    stream.accept_waveform(sr, np.pad(speech, (800, 1280)))
+                    streams.append(stream)
+                decoder.decode_streams(streams)
+                for (a, b), stream in zip(section, streams):
+                    result = stream.result
+                    text = result.text.strip()
+                    if not text:
+                        continue
+                    row = {"speaker": speaker, "start": a, "end": b, "text": text}
+                    if character_fn is not None:
+                        chars = character_fn(
+                            result.tokens, result.timestamps, a - 0.05, b
+                        )
+                        known_text = re.sub(r"<(?:unk|blk|sos/eos)>", "", text)
+                        if "".join(x["text"] for x in chars) == "".join(
+                            known_text.split()
+                        ):
+                            for ch in chars:
+                                ch["start_ms"] = max(round(a * 1000), ch["start_ms"])
+                                ch["end_ms"] = max(ch["start_ms"], ch["end_ms"])
+                            row["characters"] = chars
+                    results.append(row)
+                if offset // batch_size % 30 == 0:
+                    print(
+                        f"ASR {speaker} {min(offset + batch_size, len(spans))}/{len(spans)}",
+                        flush=True,
+                    )
     return sorted(
         results, key=lambda t: (t["start"], t["speaker"])
     ), time.perf_counter() - started
@@ -226,6 +244,11 @@ def main():
         type=Path,
         help="Add a continuous mono SenseVoice pass to recover short fragments",
     )
+    p.add_argument(
+        "--consensus-zipformer",
+        type=Path,
+        help="Optional Chinese Zipformer directory for targeted character consensus",
+    )
     p.add_argument("--project", type=Path)
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--threads", type=int, default=4)
@@ -242,6 +265,17 @@ def main():
         help="Optional per-utterance gain with peak limiting",
     )
     args = p.parse_args()
+    if args.consensus_zipformer:
+        if args.backend != "sensevoice" or not args.context_mix or args.headsets:
+            p.error(
+                "--consensus-zipformer requires SenseVoice tracks and --context-mix"
+            )
+        model = args.consensus_zipformer
+        if not all(
+            (model / name).is_file() for name in ("model.int8.onnx", "tokens.txt")
+        ):
+            p.error("--consensus-zipformer needs model.int8.onnx and tokens.txt")
+        args.refine_context = True
     if args.refine_context:
         if not args.context_mix:
             p.error("--refine-context requires --context-mix")
@@ -350,6 +384,34 @@ def main():
             pairs, results, gate, args.audio, settings
         )
         wall += time.perf_counter() - gate_start
+    consensus = None
+    if args.consensus_zipformer:
+        from character_consensus import apply as apply_consensus, decoder_keys, prepare
+
+        started = time.perf_counter()
+        entries = prepare(pairs, results)
+        eligible_keys = decoder_keys(entries)
+        extra_rows = []
+        if eligible_keys:
+            extra_rows, _ = transcribe(
+                paths,
+                timing,
+                args.consensus_zipformer / "model.int8.onnx",
+                args.consensus_zipformer / "tokens.txt",
+                args.threads,
+                target_rms=args.target_rms,
+                backend="zipformer",
+                selected_keys=eligible_keys,
+            )
+        results, changes = apply_consensus(entries, extra_rows)
+        elapsed = time.perf_counter() - started
+        wall += elapsed
+        consensus = {
+            "decoded_turns": len(eligible_keys),
+            "all_turns": len(entries),
+            "additional_seconds": elapsed,
+            "changes": changes,
+        }
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "transcript.jsonl").write_text(
         "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in results),
@@ -374,6 +436,7 @@ def main():
         "headset_oracle_timing": args.headsets,
         "asr_wall_s": wall,
         "backend": args.backend,
+        **({"character_consensus": consensus} if consensus is not None else {}),
         "speakers_decoded": len(paths),
     }
     if args.context_mix:

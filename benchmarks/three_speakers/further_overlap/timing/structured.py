@@ -498,7 +498,11 @@ def main():
         for row in rows:
             row["speaker"] = "ABC"[int(row["speaker"])]
         timing.write_text(
-            json.dumps({"duration_s": duration, "segments": rows}, indent=2) + "\n"
+            json.dumps(
+                {"duration_s": duration, "speaker_ids": list("ABC"), "segments": rows},
+                indent=2,
+            )
+            + "\n"
         )
 
 

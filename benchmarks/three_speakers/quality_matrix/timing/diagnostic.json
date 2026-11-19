@@ -1,0 +1,27 @@
+{
+  "reference_triple_seconds": {
+    "both_missed": 4.4,
+    "dictionary_only": 2.88,
+    "structured_only": 0.55,
+    "both_found": 18.42
+  },
+  "false_triple_seconds": {
+    "both_missed": 378.08,
+    "dictionary_only": 13.54,
+    "structured_only": 1.03,
+    "both_found": 6.07
+  },
+  "reference_event_duration": {
+    "at_least_300_ms": {
+      "events": 28,
+      "reference_frames": 2054,
+      "both_miss_frames": 275
+    },
+    "under_300_ms": {
+      "events": 34,
+      "reference_frames": 571,
+      "both_miss_frames": 165
+    }
+  },
+  "oracle_union_recall_ceiling": 0.8323809523809523
+}

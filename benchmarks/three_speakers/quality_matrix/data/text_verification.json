@@ -1,0 +1,14 @@
+{
+  "audited_files": 6,
+  "clips": [
+    {
+      "id": "ASR_L_R003S03C02_209104_211304_0294_1925",
+      "exact_three_frames": 207
+    },
+    {
+      "id": "ASR_S_R003S04C01_237242_238295_0051_1053",
+      "exact_three_frames": 139
+    }
+  ],
+  "reference_three_seconds": 3.46
+}

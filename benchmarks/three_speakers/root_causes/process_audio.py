@@ -22,6 +22,42 @@ def run(script, arguments, env):
     )
 
 
+def prepare_timing(data, duration, allow_silent):
+    """Preserve declared speaker identities through clips with absent speakers."""
+    segments = data["segments"]
+    observed = set()
+    for row in segments:
+        if row["start"] == row["end"] == 0 and allow_silent:
+            continue
+        if not 0 <= row["start"] < row["end"] <= duration + 0.02:
+            raise ValueError("Timing lies outside the recording")
+        observed.add(str(row["speaker"]))
+
+    present = {str(row["speaker"]) for row in segments}
+    raw = data.get("speaker_ids") if allow_silent else None
+    if raw is not None and not isinstance(raw, list):
+        raise ValueError("Expected a list of speaker IDs")
+    labels = sorted(present) if raw is None else [str(name) for name in raw]
+    if len(labels) != 3 or len(set(labels)) != 3 or not present.issubset(labels):
+        raise ValueError("Expected three distinct speaker IDs in the timing")
+    names = dict(zip(labels, "ABC"))
+    mapped = [
+        dict(row, speaker=names[str(row["speaker"])])
+        for row in segments
+        if row["end"] > row["start"]
+    ]
+    mapped.extend(
+        dict(speaker=names[label], start=0, end=0)
+        for label in labels
+        if label not in observed
+    )
+    return {
+        "segments": mapped,
+        "speaker_ids": list("ABC"),
+        "input_to_output_ids": names,
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -29,6 +65,11 @@ def main():
     )
     parser.add_argument("--out", type=Path, required=True, help="New output directory")
     parser.add_argument("--sensevoice", type=Path, required=True)
+    parser.add_argument(
+        "--consensus-zipformer",
+        type=Path,
+        help="Optional Zipformer directory for selected-turn text reconciliation",
+    )
     parser.add_argument(
         "--native-library", type=Path, help="Nemotron native runtime library"
     )
@@ -74,6 +115,8 @@ def main():
     info = sf.info(args.audio)
     if info.samplerate != 16000 or info.frames == 0:
         parser.error("Please supply a nonempty 16 kHz recording")
+    if args.consensus_zipformer and (info.channels > 1 or args.fast_transcript):
+        parser.error("--consensus-zipformer requires contextual mono transcription")
     if info.channels > 1 and args.mask_for_asr:
         parser.error("--mask-for-asr applies only to mono input")
     if info.channels == 1 and not args.models:
@@ -145,19 +188,11 @@ def main():
                 env,
             )
             data = json.loads(timing.read_text(encoding="utf-8"))
-        segments = data["segments"]
-        labels = sorted({str(row["speaker"]) for row in segments})
-        if len(labels) != 3:
-            raise ValueError(
-                f"Expected three detected speaker IDs, found {len(labels)}"
-            )
-        names = dict(zip(labels, "ABC"))
-        for row in segments:
-            if not (0 <= row["start"] < row["end"] <= info.duration + 0.02):
-                raise ValueError("Timing lies outside the recording")
-            row["speaker"] = names[str(row["speaker"])]
         timing.write_text(
-            json.dumps({"segments": segments, "input_to_output_ids": names}, indent=2)
+            json.dumps(
+                prepare_timing(data, info.duration, allow_silent=info.channels == 1),
+                indent=2,
+            )
             + "\n",
             encoding="utf-8",
         )
@@ -233,6 +268,8 @@ def main():
                         "--refine-context",
                     ]
                 )
+            if args.consensus_zipformer:
+                decode.extend(["--consensus-zipformer", args.consensus_zipformer])
             run(BENCH / "recognize.py", decode, env)
         else:
             raw = work / "raw_text"

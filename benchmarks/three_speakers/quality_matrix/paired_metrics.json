@@ -1,0 +1,821 @@
+[
+  {
+    "dataset": "M8016",
+    "baseline": "Original mask",
+    "candidate": "Sparse mask",
+    "metrics": [
+      {
+        "metric": "mask_wall_seconds",
+        "baseline": 13.136925393991987,
+        "candidate": 3.3116060199972708,
+        "better": "lower",
+        "unit": "seconds"
+      },
+      {
+        "metric": "sample_count_deviation",
+        "baseline": 0,
+        "candidate": 0,
+        "better": "lower",
+        "unit": "samples"
+      },
+      {
+        "metric": "bit_identical_track_count",
+        "baseline": 3,
+        "candidate": 3,
+        "better": "higher",
+        "unit": "tracks"
+      }
+    ]
+  },
+  {
+    "dataset": "M8017",
+    "baseline": "Original mask",
+    "candidate": "Sparse mask",
+    "metrics": [
+      {
+        "metric": "mask_wall_seconds",
+        "baseline": 8.133875799001544,
+        "candidate": 3.371623845989234,
+        "better": "lower",
+        "unit": "seconds"
+      },
+      {
+        "metric": "sample_count_deviation",
+        "baseline": 0,
+        "candidate": 0,
+        "better": "lower",
+        "unit": "samples"
+      },
+      {
+        "metric": "bit_identical_track_count",
+        "baseline": 3,
+        "candidate": 3,
+        "better": "higher",
+        "unit": "tracks"
+      }
+    ]
+  },
+  {
+    "dataset": "Six AliMeeting excerpts",
+    "baseline": "SenseVoice batch size 1",
+    "candidate": "SenseVoice batch size 2",
+    "metrics": [
+      {
+        "metric": "ASR_wall_seconds",
+        "baseline": 41.6881,
+        "candidate": 57.234,
+        "better": "lower",
+        "unit": "seconds"
+      },
+      {
+        "metric": "identical_transcript_count",
+        "baseline": 6,
+        "candidate": 0,
+        "better": "higher",
+        "unit": "clips"
+      }
+    ]
+  },
+  {
+    "dataset": "Six AliMeeting excerpts",
+    "baseline": "SenseVoice batch size 1",
+    "candidate": "SenseVoice batch size 4",
+    "metrics": [
+      {
+        "metric": "ASR_wall_seconds",
+        "baseline": 41.6881,
+        "candidate": 70.3236,
+        "better": "lower",
+        "unit": "seconds"
+      },
+      {
+        "metric": "identical_transcript_count",
+        "baseline": 6,
+        "candidate": 0,
+        "better": "higher",
+        "unit": "clips"
+      }
+    ]
+  },
+  {
+    "dataset": "M8016",
+    "baseline": "Published refined-context transcript",
+    "candidate": "Frozen per-character Zipformer and SenseVoice consensus",
+    "metrics": [
+      {
+        "metric": "substitutions",
+        "baseline": 993,
+        "candidate": 983,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "deletions",
+        "baseline": 694,
+        "candidate": 685,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "insertions",
+        "baseline": 151,
+        "candidate": 150,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "errors",
+        "baseline": 1838,
+        "candidate": 1818,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_A_errors",
+        "baseline": 389,
+        "candidate": 378,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_A_substitutions",
+        "baseline": 234,
+        "candidate": 228,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_A_deletions",
+        "baseline": 85,
+        "candidate": 82,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_A_insertions",
+        "baseline": 70,
+        "candidate": 68,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_B_errors",
+        "baseline": 417,
+        "candidate": 409,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_B_substitutions",
+        "baseline": 266,
+        "candidate": 261,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_B_deletions",
+        "baseline": 80,
+        "candidate": 76,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_B_insertions",
+        "baseline": 71,
+        "candidate": 72,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_C_errors",
+        "baseline": 1032,
+        "candidate": 1031,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_C_substitutions",
+        "baseline": 493,
+        "candidate": 494,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_C_deletions",
+        "baseline": 529,
+        "candidate": 527,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_C_insertions",
+        "baseline": 10,
+        "candidate": 10,
+        "better": "lower",
+        "unit": "characters"
+      }
+    ]
+  },
+  {
+    "dataset": "M8017",
+    "baseline": "Published refined-context transcript",
+    "candidate": "Frozen per-character Zipformer and SenseVoice consensus",
+    "metrics": [
+      {
+        "metric": "substitutions",
+        "baseline": 535,
+        "candidate": 517,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "deletions",
+        "baseline": 348,
+        "candidate": 345,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "insertions",
+        "baseline": 70,
+        "candidate": 63,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "errors",
+        "baseline": 953,
+        "candidate": 925,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_A_errors",
+        "baseline": 378,
+        "candidate": 360,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_A_substitutions",
+        "baseline": 240,
+        "candidate": 224,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_A_deletions",
+        "baseline": 106,
+        "candidate": 105,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_A_insertions",
+        "baseline": 32,
+        "candidate": 31,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_C_errors",
+        "baseline": 421,
+        "candidate": 416,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_C_substitutions",
+        "baseline": 197,
+        "candidate": 197,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_C_deletions",
+        "baseline": 205,
+        "candidate": 203,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_C_insertions",
+        "baseline": 19,
+        "candidate": 16,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_B_errors",
+        "baseline": 154,
+        "candidate": 149,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_B_substitutions",
+        "baseline": 98,
+        "candidate": 96,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_B_deletions",
+        "baseline": 37,
+        "candidate": 37,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "speaker_B_insertions",
+        "baseline": 19,
+        "candidate": 16,
+        "better": "lower",
+        "unit": "characters"
+      }
+    ]
+  },
+  {
+    "dataset": "Two complete mono AliMeeting meetings",
+    "baseline": "Published refined-context transcript",
+    "candidate": "Frozen per-character Zipformer and SenseVoice consensus",
+    "metrics": [
+      {
+        "metric": "substitutions",
+        "baseline": 1528,
+        "candidate": 1500,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "deletions",
+        "baseline": 1042,
+        "candidate": 1030,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "insertions",
+        "baseline": 221,
+        "candidate": 213,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "errors",
+        "baseline": 2791,
+        "candidate": 2743,
+        "better": "lower",
+        "unit": "characters"
+      }
+    ]
+  },
+  {
+    "dataset": "M8017, 30:20",
+    "baseline": "Existing recognition passes",
+    "candidate": "Optional Zipformer consensus",
+    "metrics": [
+      {
+        "metric": "extra_recognition_seconds",
+        "baseline": 0.0,
+        "candidate": 84.53,
+        "better": "lower",
+        "unit": "seconds"
+      }
+    ]
+  },
+  {
+    "dataset": "Two independent AISHELL-4 transcription excerpts, 147 chars",
+    "baseline": "Published refined context",
+    "candidate": "Optional Zipformer consensus",
+    "metrics": [
+      {
+        "metric": "substitutions",
+        "baseline": 31,
+        "candidate": 31,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "deletions",
+        "baseline": 25,
+        "candidate": 25,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "insertions",
+        "baseline": 12,
+        "candidate": 12,
+        "better": "lower",
+        "unit": "characters"
+      },
+      {
+        "metric": "errors",
+        "baseline": 68,
+        "candidate": 68,
+        "better": "lower",
+        "unit": "characters"
+      }
+    ]
+  },
+  {
+    "dataset": "18 previously scored AliMeeting excerpts, 26.25 s triple activity",
+    "baseline": "dictionary_narrow",
+    "candidate": "Targeted triple recovery",
+    "metrics": [
+      {
+        "metric": "exact_three_precision",
+        "baseline": 52.06550965534099,
+        "candidate": 65.78189958426607,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "exact_three_recall",
+        "baseline": 81.14285714285714,
+        "candidate": 78.36190476190477,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "exact_three_F1",
+        "baseline": 63.43061346039309,
+        "candidate": 71.52294853963839,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "three_way_speaker_recall",
+        "baseline": 92.68571428571428,
+        "candidate": 92.12698412698413,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "speaker_precision",
+        "baseline": 90.56635960423064,
+        "candidate": 93.67620802856649,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "speaker_recall",
+        "baseline": 91.45739223642906,
+        "candidate": 93.39828497052292,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "DER",
+        "baseline": 16.589464818926576,
+        "candidate": 12.255952836689382,
+        "better": "lower",
+        "unit": "%"
+      },
+      {
+        "metric": "false_three_s",
+        "baseline": 19.61,
+        "candidate": 10.7,
+        "better": "lower",
+        "unit": "seconds"
+      }
+    ]
+  },
+  {
+    "dataset": "18 previously scored AliMeeting excerpts, 26.25 s triple activity",
+    "baseline": "structured",
+    "candidate": "Targeted triple recovery",
+    "metrics": [
+      {
+        "metric": "exact_three_precision",
+        "baseline": 72.76563099347909,
+        "candidate": 65.78189958426607,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "exact_three_recall",
+        "baseline": 72.26666666666667,
+        "candidate": 78.36190476190477,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "exact_three_F1",
+        "baseline": 72.51529051987767,
+        "candidate": 71.52294853963839,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "three_way_speaker_recall",
+        "baseline": 90.0952380952381,
+        "candidate": 92.12698412698413,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "speaker_precision",
+        "baseline": 94.31635284764103,
+        "candidate": 93.67620802856649,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "speaker_recall",
+        "baseline": 93.09777199295613,
+        "candidate": 93.39828497052292,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "DER",
+        "baseline": 11.867391470790905,
+        "candidate": 12.255952836689382,
+        "better": "lower",
+        "unit": "%"
+      },
+      {
+        "metric": "false_three_s",
+        "baseline": 7.1,
+        "candidate": 10.7,
+        "better": "lower",
+        "unit": "seconds"
+      }
+    ]
+  },
+  {
+    "dataset": "12 independent AISHELL-4 excerpts, 18.39 s triple activity",
+    "baseline": "dictionary_narrow",
+    "candidate": "Targeted triple recovery",
+    "metrics": [
+      {
+        "metric": "exact_three_precision",
+        "baseline": 35.86734693877551,
+        "candidate": 49.05802562170309,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "exact_three_recall",
+        "baseline": 38.227297444263186,
+        "candidate": 35.39967373572594,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "exact_three_F1",
+        "baseline": 37.00973940510661,
+        "candidate": 41.124447252053066,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "three_way_speaker_recall",
+        "baseline": 70.94435381547942,
+        "candidate": 71.03498278049665,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "speaker_precision",
+        "baseline": 91.90388052080674,
+        "candidate": 94.32510015456926,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "speaker_recall",
+        "baseline": 80.86880826687633,
+        "candidate": 83.96607884982589,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "DER",
+        "baseline": 24.202516005840728,
+        "candidate": 19.294058182635066,
+        "better": "lower",
+        "unit": "%"
+      },
+      {
+        "metric": "false_three_s",
+        "baseline": 12.57,
+        "candidate": 6.76,
+        "better": "lower",
+        "unit": "seconds"
+      }
+    ]
+  },
+  {
+    "dataset": "12 independent AISHELL-4 excerpts, 18.39 s triple activity",
+    "baseline": "structured",
+    "candidate": "Targeted triple recovery",
+    "metrics": [
+      {
+        "metric": "exact_three_precision",
+        "baseline": 55.24752475247525,
+        "candidate": 49.05802562170309,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "exact_three_recall",
+        "baseline": 30.342577487765087,
+        "candidate": 35.39967373572594,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "exact_three_F1",
+        "baseline": 39.17163917163917,
+        "candidate": 41.124447252053066,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "three_way_speaker_recall",
+        "baseline": 69.34928403117637,
+        "candidate": 71.03498278049665,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "speaker_precision",
+        "baseline": 94.82538873311242,
+        "candidate": 94.32510015456926,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "speaker_recall",
+        "baseline": 83.56733685274627,
+        "candidate": 83.96607884982589,
+        "better": "higher",
+        "unit": "%"
+      },
+      {
+        "metric": "DER",
+        "baseline": 19.06379871953274,
+        "candidate": 19.294058182635066,
+        "better": "lower",
+        "unit": "%"
+      },
+      {
+        "metric": "false_three_s",
+        "baseline": 4.52,
+        "candidate": 6.76,
+        "better": "lower",
+        "unit": "seconds"
+      }
+    ]
+  },
+  {
+    "dataset": "Controlled waveform development, all",
+    "baseline": "Published separator",
+    "candidate": "Conservative harmonic suppression",
+    "metrics": [
+      {
+        "metric": "all_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": null,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "all_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": 0.2795222047629746,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "quiet_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": null,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "quiet_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": 0.01630808226638436,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "worst_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": null,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "worst_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": 0.047614026635159235,
+        "better": "higher",
+        "unit": "dB"
+      }
+    ]
+  },
+  {
+    "dataset": "Controlled waveform development, clean",
+    "baseline": "Published separator",
+    "candidate": "Conservative harmonic suppression",
+    "metrics": [
+      {
+        "metric": "all_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": null,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "all_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": -0.007722889990732895,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "quiet_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": null,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "quiet_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": -0.02420821983305288,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "worst_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": null,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "worst_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": -0.022326596086044148,
+        "better": "higher",
+        "unit": "dB"
+      }
+    ]
+  },
+  {
+    "dataset": "Controlled waveform development, room",
+    "baseline": "Published separator",
+    "candidate": "Conservative harmonic suppression",
+    "metrics": [
+      {
+        "metric": "all_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": 0.11474237856005143,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "all_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": 0.09795166033382952,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "quiet_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": -0.06105857703746409,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "quiet_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": 0.06693454367646945,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "worst_whole_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": 0.3431469767135642,
+        "better": "higher",
+        "unit": "dB"
+      },
+      {
+        "metric": "worst_exact_three_SI_SDR_change_db",
+        "baseline": 0.0,
+        "candidate": 0.06693454367646945,
+        "better": "higher",
+        "unit": "dB"
+      }
+    ]
+  }
+]

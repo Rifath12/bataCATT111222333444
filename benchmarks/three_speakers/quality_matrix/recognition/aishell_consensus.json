@@ -1,0 +1,740 @@
+[
+  {
+    "id": "ASR_L_R003S03C02_209104_211304_0294_1925",
+    "duration": 16.31,
+    "exact_three_seconds": 2.07,
+    "extra_decode_seconds": 10.478847970007337,
+    "selected_turns": 7,
+    "all_turns": 13,
+    "release": {
+      "baseline": {
+        "cpCER": 0.5445544554455446,
+        "correct_reference_characters": 0.5544554455445545,
+        "totals": {
+          "reference_chars": 101,
+          "recognized_chars": 96,
+          "correct_reference_chars": 56,
+          "substitutions": 30,
+          "deletions": 15,
+          "insertions": 10,
+          "errors": 55
+        },
+        "speaker_scores": [
+          {
+            "reference": "002-F",
+            "system": "B",
+            "reference_chars": 37,
+            "recognized_chars": 36,
+            "correct_reference_chars": 23,
+            "substitutions": 9,
+            "deletions": 5,
+            "insertions": 4
+          },
+          {
+            "reference": "003-F",
+            "system": "C",
+            "reference_chars": 13,
+            "recognized_chars": 13,
+            "correct_reference_chars": 2,
+            "substitutions": 10,
+            "deletions": 1,
+            "insertions": 1
+          },
+          {
+            "reference": "006-M",
+            "system": "A",
+            "reference_chars": 51,
+            "recognized_chars": 47,
+            "correct_reference_chars": 31,
+            "substitutions": 11,
+            "deletions": 9,
+            "insertions": 5
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.5445544554455446,
+        "correct_reference_characters": 0.5544554455445545,
+        "totals": {
+          "reference_chars": 101,
+          "recognized_chars": 96,
+          "correct_reference_chars": 56,
+          "substitutions": 30,
+          "deletions": 15,
+          "insertions": 10,
+          "errors": 55
+        },
+        "speaker_scores": [
+          {
+            "reference": "002-F",
+            "system": "B",
+            "reference_chars": 37,
+            "recognized_chars": 36,
+            "correct_reference_chars": 23,
+            "substitutions": 9,
+            "deletions": 5,
+            "insertions": 4
+          },
+          {
+            "reference": "003-F",
+            "system": "C",
+            "reference_chars": 13,
+            "recognized_chars": 13,
+            "correct_reference_chars": 2,
+            "substitutions": 10,
+            "deletions": 1,
+            "insertions": 1
+          },
+          {
+            "reference": "006-M",
+            "system": "A",
+            "reference_chars": 51,
+            "recognized_chars": 47,
+            "correct_reference_chars": 31,
+            "substitutions": 11,
+            "deletions": 9,
+            "insertions": 5
+          }
+        ]
+      },
+      "timed_baseline": {
+        "mapping": [
+          [
+            "002-F",
+            "B"
+          ],
+          [
+            "003-F",
+            "C"
+          ],
+          [
+            "006-M",
+            "A"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "correct": 23,
+            "reference_chars": 32,
+            "supplied_reference_char_times": 0,
+            "deletions": 5,
+            "insertions": 2,
+            "substitutions": 4
+          },
+          "2": {
+            "correct": 23,
+            "reference_chars": 49,
+            "supplied_reference_char_times": 0,
+            "substitutions": 13,
+            "deletions": 13,
+            "insertions": 13
+          },
+          "3": {
+            "correct": 8,
+            "reference_chars": 20,
+            "supplied_reference_char_times": 0,
+            "deletions": 6,
+            "substitutions": 6,
+            "insertions": 4
+          }
+        },
+        "strict_triple": {}
+      },
+      "timed_candidate": {
+        "mapping": [
+          [
+            "002-F",
+            "B"
+          ],
+          [
+            "003-F",
+            "C"
+          ],
+          [
+            "006-M",
+            "A"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "correct": 23,
+            "reference_chars": 32,
+            "supplied_reference_char_times": 0,
+            "deletions": 5,
+            "insertions": 2,
+            "substitutions": 4
+          },
+          "2": {
+            "correct": 23,
+            "reference_chars": 49,
+            "supplied_reference_char_times": 0,
+            "substitutions": 13,
+            "deletions": 13,
+            "insertions": 13
+          },
+          "3": {
+            "correct": 8,
+            "reference_chars": 20,
+            "supplied_reference_char_times": 0,
+            "deletions": 6,
+            "substitutions": 6,
+            "insertions": 4
+          }
+        },
+        "strict_triple": {}
+      },
+      "eligible": 7,
+      "changes": {}
+    },
+    "direct": {
+      "baseline": {
+        "cpCER": 0.5544554455445545,
+        "correct_reference_characters": 0.5148514851485149,
+        "totals": {
+          "reference_chars": 101,
+          "recognized_chars": 94,
+          "correct_reference_chars": 52,
+          "substitutions": 35,
+          "deletions": 14,
+          "insertions": 7,
+          "errors": 56
+        },
+        "speaker_scores": [
+          {
+            "reference": "002-F",
+            "system": "B",
+            "reference_chars": 37,
+            "recognized_chars": 35,
+            "correct_reference_chars": 24,
+            "substitutions": 7,
+            "deletions": 6,
+            "insertions": 4
+          },
+          {
+            "reference": "003-F",
+            "system": "C",
+            "reference_chars": 13,
+            "recognized_chars": 12,
+            "correct_reference_chars": 1,
+            "substitutions": 11,
+            "deletions": 1,
+            "insertions": 0
+          },
+          {
+            "reference": "006-M",
+            "system": "A",
+            "reference_chars": 51,
+            "recognized_chars": 47,
+            "correct_reference_chars": 27,
+            "substitutions": 17,
+            "deletions": 7,
+            "insertions": 3
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.5346534653465347,
+        "correct_reference_characters": 0.5544554455445545,
+        "totals": {
+          "reference_chars": 101,
+          "recognized_chars": 94,
+          "correct_reference_chars": 56,
+          "substitutions": 29,
+          "deletions": 16,
+          "insertions": 9,
+          "errors": 54
+        },
+        "speaker_scores": [
+          {
+            "reference": "002-F",
+            "system": "B",
+            "reference_chars": 37,
+            "recognized_chars": 35,
+            "correct_reference_chars": 24,
+            "substitutions": 7,
+            "deletions": 6,
+            "insertions": 4
+          },
+          {
+            "reference": "003-F",
+            "system": "C",
+            "reference_chars": 13,
+            "recognized_chars": 12,
+            "correct_reference_chars": 1,
+            "substitutions": 11,
+            "deletions": 1,
+            "insertions": 0
+          },
+          {
+            "reference": "006-M",
+            "system": "A",
+            "reference_chars": 51,
+            "recognized_chars": 47,
+            "correct_reference_chars": 31,
+            "substitutions": 11,
+            "deletions": 9,
+            "insertions": 5
+          }
+        ]
+      },
+      "timed_baseline": {
+        "mapping": [
+          [
+            "002-F",
+            "B"
+          ],
+          [
+            "003-F",
+            "C"
+          ],
+          [
+            "006-M",
+            "A"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "correct": 21,
+            "reference_chars": 32,
+            "supplied_reference_char_times": 0,
+            "deletions": 7,
+            "insertions": 2,
+            "substitutions": 4
+          },
+          "2": {
+            "correct": 26,
+            "reference_chars": 49,
+            "supplied_reference_char_times": 0,
+            "substitutions": 9,
+            "deletions": 14,
+            "insertions": 13
+          },
+          "3": {
+            "correct": 6,
+            "reference_chars": 20,
+            "supplied_reference_char_times": 0,
+            "deletions": 5,
+            "substitutions": 9,
+            "insertions": 4
+          }
+        },
+        "strict_triple": {}
+      },
+      "timed_candidate": {
+        "mapping": [
+          [
+            "002-F",
+            "B"
+          ],
+          [
+            "003-F",
+            "C"
+          ],
+          [
+            "006-M",
+            "A"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "correct": 21,
+            "reference_chars": 32,
+            "supplied_reference_char_times": 0,
+            "deletions": 7,
+            "insertions": 2,
+            "substitutions": 4
+          },
+          "2": {
+            "correct": 26,
+            "reference_chars": 49,
+            "supplied_reference_char_times": 0,
+            "substitutions": 9,
+            "deletions": 14,
+            "insertions": 13
+          },
+          "3": {
+            "correct": 8,
+            "reference_chars": 20,
+            "supplied_reference_char_times": 0,
+            "deletions": 5,
+            "substitutions": 7,
+            "insertions": 4
+          }
+        },
+        "strict_triple": {}
+      },
+      "eligible": 7,
+      "changes": {
+        "replace": 2
+      }
+    }
+  },
+  {
+    "id": "ASR_S_R003S04C01_237242_238295_0051_1053",
+    "duration": 10.02,
+    "exact_three_seconds": 1.39,
+    "extra_decode_seconds": 6.549973005996435,
+    "selected_turns": 1,
+    "all_turns": 5,
+    "release": {
+      "baseline": {
+        "cpCER": 0.2826086956521739,
+        "correct_reference_characters": 0.7608695652173914,
+        "totals": {
+          "reference_chars": 46,
+          "recognized_chars": 38,
+          "correct_reference_chars": 35,
+          "substitutions": 1,
+          "deletions": 10,
+          "insertions": 2,
+          "errors": 13
+        },
+        "speaker_scores": [
+          {
+            "reference": "001-M",
+            "system": "A",
+            "reference_chars": 34,
+            "recognized_chars": 35,
+            "correct_reference_chars": 33,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 2
+          },
+          {
+            "reference": "002-F",
+            "system": "B",
+            "reference_chars": 7,
+            "recognized_chars": 1,
+            "correct_reference_chars": 1,
+            "substitutions": 0,
+            "deletions": 6,
+            "insertions": 0
+          },
+          {
+            "reference": "005-M",
+            "system": "C",
+            "reference_chars": 5,
+            "recognized_chars": 2,
+            "correct_reference_chars": 1,
+            "substitutions": 1,
+            "deletions": 3,
+            "insertions": 0
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.2826086956521739,
+        "correct_reference_characters": 0.7608695652173914,
+        "totals": {
+          "reference_chars": 46,
+          "recognized_chars": 38,
+          "correct_reference_chars": 35,
+          "substitutions": 1,
+          "deletions": 10,
+          "insertions": 2,
+          "errors": 13
+        },
+        "speaker_scores": [
+          {
+            "reference": "001-M",
+            "system": "A",
+            "reference_chars": 34,
+            "recognized_chars": 35,
+            "correct_reference_chars": 33,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 2
+          },
+          {
+            "reference": "002-F",
+            "system": "B",
+            "reference_chars": 7,
+            "recognized_chars": 1,
+            "correct_reference_chars": 1,
+            "substitutions": 0,
+            "deletions": 6,
+            "insertions": 0
+          },
+          {
+            "reference": "005-M",
+            "system": "C",
+            "reference_chars": 5,
+            "recognized_chars": 2,
+            "correct_reference_chars": 1,
+            "substitutions": 1,
+            "deletions": 3,
+            "insertions": 0
+          }
+        ]
+      },
+      "timed_baseline": {
+        "mapping": [
+          [
+            "001-M",
+            "A"
+          ],
+          [
+            "002-F",
+            "B"
+          ],
+          [
+            "005-M",
+            "C"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "substitutions": 11,
+            "reference_chars": 21,
+            "supplied_reference_char_times": 0,
+            "insertions": 4,
+            "correct": 9,
+            "deletions": 1
+          },
+          "2": {
+            "deletions": 6,
+            "reference_chars": 13,
+            "supplied_reference_char_times": 0,
+            "substitutions": 3,
+            "correct": 4
+          },
+          "3": {
+            "substitutions": 2,
+            "reference_chars": 12,
+            "supplied_reference_char_times": 0,
+            "correct": 5,
+            "deletions": 5
+          }
+        },
+        "strict_triple": {}
+      },
+      "timed_candidate": {
+        "mapping": [
+          [
+            "001-M",
+            "A"
+          ],
+          [
+            "002-F",
+            "B"
+          ],
+          [
+            "005-M",
+            "C"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "substitutions": 11,
+            "reference_chars": 21,
+            "supplied_reference_char_times": 0,
+            "insertions": 4,
+            "correct": 9,
+            "deletions": 1
+          },
+          "2": {
+            "deletions": 6,
+            "reference_chars": 13,
+            "supplied_reference_char_times": 0,
+            "substitutions": 3,
+            "correct": 4
+          },
+          "3": {
+            "substitutions": 2,
+            "reference_chars": 12,
+            "supplied_reference_char_times": 0,
+            "correct": 5,
+            "deletions": 5
+          }
+        },
+        "strict_triple": {}
+      },
+      "eligible": 1,
+      "changes": {}
+    },
+    "direct": {
+      "baseline": {
+        "cpCER": 0.2608695652173913,
+        "correct_reference_characters": 0.782608695652174,
+        "totals": {
+          "reference_chars": 46,
+          "recognized_chars": 40,
+          "correct_reference_chars": 36,
+          "substitutions": 2,
+          "deletions": 8,
+          "insertions": 2,
+          "errors": 12
+        },
+        "speaker_scores": [
+          {
+            "reference": "001-M",
+            "system": "A",
+            "reference_chars": 34,
+            "recognized_chars": 35,
+            "correct_reference_chars": 33,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 2
+          },
+          {
+            "reference": "002-F",
+            "system": "C",
+            "reference_chars": 7,
+            "recognized_chars": 2,
+            "correct_reference_chars": 2,
+            "substitutions": 0,
+            "deletions": 5,
+            "insertions": 0
+          },
+          {
+            "reference": "005-M",
+            "system": "B",
+            "reference_chars": 5,
+            "recognized_chars": 3,
+            "correct_reference_chars": 1,
+            "substitutions": 2,
+            "deletions": 2,
+            "insertions": 0
+          }
+        ]
+      },
+      "candidate": {
+        "cpCER": 0.2608695652173913,
+        "correct_reference_characters": 0.782608695652174,
+        "totals": {
+          "reference_chars": 46,
+          "recognized_chars": 40,
+          "correct_reference_chars": 36,
+          "substitutions": 2,
+          "deletions": 8,
+          "insertions": 2,
+          "errors": 12
+        },
+        "speaker_scores": [
+          {
+            "reference": "001-M",
+            "system": "A",
+            "reference_chars": 34,
+            "recognized_chars": 35,
+            "correct_reference_chars": 33,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 2
+          },
+          {
+            "reference": "002-F",
+            "system": "C",
+            "reference_chars": 7,
+            "recognized_chars": 2,
+            "correct_reference_chars": 2,
+            "substitutions": 0,
+            "deletions": 5,
+            "insertions": 0
+          },
+          {
+            "reference": "005-M",
+            "system": "B",
+            "reference_chars": 5,
+            "recognized_chars": 3,
+            "correct_reference_chars": 1,
+            "substitutions": 2,
+            "deletions": 2,
+            "insertions": 0
+          }
+        ]
+      },
+      "timed_baseline": {
+        "mapping": [
+          [
+            "001-M",
+            "A"
+          ],
+          [
+            "002-F",
+            "C"
+          ],
+          [
+            "005-M",
+            "B"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "substitutions": 11,
+            "reference_chars": 21,
+            "supplied_reference_char_times": 0,
+            "insertions": 4,
+            "correct": 9,
+            "deletions": 1
+          },
+          "2": {
+            "deletions": 6,
+            "reference_chars": 13,
+            "supplied_reference_char_times": 0,
+            "substitutions": 3,
+            "correct": 4
+          },
+          "3": {
+            "substitutions": 3,
+            "reference_chars": 12,
+            "supplied_reference_char_times": 0,
+            "correct": 6,
+            "deletions": 3
+          }
+        },
+        "strict_triple": {}
+      },
+      "timed_candidate": {
+        "mapping": [
+          [
+            "001-M",
+            "A"
+          ],
+          [
+            "002-F",
+            "C"
+          ],
+          [
+            "005-M",
+            "B"
+          ]
+        ],
+        "midpoint": {
+          "0": {},
+          "1": {
+            "substitutions": 11,
+            "reference_chars": 21,
+            "supplied_reference_char_times": 0,
+            "insertions": 4,
+            "correct": 9,
+            "deletions": 1
+          },
+          "2": {
+            "deletions": 6,
+            "reference_chars": 13,
+            "supplied_reference_char_times": 0,
+            "substitutions": 3,
+            "correct": 4
+          },
+          "3": {
+            "substitutions": 3,
+            "reference_chars": 12,
+            "supplied_reference_char_times": 0,
+            "correct": 6,
+            "deletions": 3
+          }
+        },
+        "strict_triple": {}
+      },
+      "eligible": 1,
+      "changes": {}
+    }
+  }
+]

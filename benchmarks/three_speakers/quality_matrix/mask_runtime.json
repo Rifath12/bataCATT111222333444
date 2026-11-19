@@ -1,0 +1,68 @@
+{
+  "M8016": {
+    "timing_wall_seconds": {
+      "previous": [
+        13.136925393991987,
+        12.850672601009137,
+        14.553460764000192
+      ],
+      "sparse": [
+        3.3116060199972708,
+        2.9570969810010865,
+        4.293786344002001
+      ]
+    },
+    "medians_seconds": {
+      "previous": 13.136925393991987,
+      "sparse": 3.3116060199972708
+    },
+    "exact_wav_sha256": {
+      "speaker_A.wav": "82a5146193eed56e115ff1b65c6ce8ea75bc1fb69244f6a4999fca6c0d11507e",
+      "speaker_B.wav": "0e5848d8b27f294553e2d0806819a59aa927144e6a89767b56e2efc3019f0ab0",
+      "speaker_C.wav": "0bd7ed93e3b90f43a9dda32f7630311afa0c7ee5c3b332c4d37727cf7ec767cf"
+    },
+    "audio_info": {
+      "speaker_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "sample_rate": 16000,
+      "sample_count": 29423682,
+      "gain": 1.0
+    }
+  },
+  "M8017": {
+    "timing_wall_seconds": {
+      "previous": [
+        8.133875799001544,
+        8.675756098004058,
+        7.3389723310101544
+      ],
+      "sparse": [
+        3.371623845989234,
+        3.754119997000089,
+        3.088464831991587
+      ]
+    },
+    "medians_seconds": {
+      "previous": 8.133875799001544,
+      "sparse": 3.371623845989234
+    },
+    "exact_wav_sha256": {
+      "speaker_A.wav": "746004d8a1d3d8a175c6fd554fb5686d901c962f5ceeda0a849f7125f33211b4",
+      "speaker_B.wav": "fc551598e1e431eecae098e3e1babd53cbc4f3e656dc67533d42a80072d480eb",
+      "speaker_C.wav": "78ad5ec9ff311684289ed50496e42a3e4292c4f929a9c58f865e0a241e9c5e8e"
+    },
+    "audio_info": {
+      "speaker_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "sample_rate": 16000,
+      "sample_count": 29120832,
+      "gain": 1.0
+    }
+  }
+}

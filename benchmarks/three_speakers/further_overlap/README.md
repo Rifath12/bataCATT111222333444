@@ -1,5 +1,7 @@
 # Three-speaker Mandarin overlap follow-up
 
+[Latest no-regression checks, runtime improvements and optional recognition](../quality_matrix/README.md).
+
 The offline mono pipeline now compares already-computed contextual recognition against the isolated-speaker reading at the same time. It can retain a stronger reading or restore short leading or trailing phrases where both readings share a character anchor. A frozen selector estimates likely benefit from the turn length, overlap, speech rate, character agreement and the type of change. The same duplicate check rejects newly imported copies from quieter tracks.
 
 | Verified comparison | Reference characters | Previous edits | Refined edits |
