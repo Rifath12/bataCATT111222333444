@@ -1,0 +1,620 @@
+{
+  "method": "Controlled digital overlap of disjoint labeled solo headsets with three wired channels.",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "corpus": "AliMeeting Eval, OpenSLR 119",
+  "corpus_url": "https://www.openslr.org/119/",
+  "session": "R8008_M8014",
+  "room_group_count": 1,
+  "source_speaker_count": 3,
+  "disjoint_source_triple_count": 24,
+  "source_material_used_for_fit": false,
+  "switch_to_smaller_donors_if_insufficient_count": true,
+  "reference_rttm": "three_speaker_work/independent_3speaker/references/Test_Ali_far/R8008_M8014.rttm",
+  "reference_rttm_sha256": "6418f31b6ea312d98448bb95646a8f655a8a900ba6cefa29909d62758c4d7d26",
+  "sources": [
+    {
+      "label": "A",
+      "speaker": "N_SPK8051",
+      "path": "solve_wave/fresh/M8014_audio/R8008_M8014_N_SPK8051.wav",
+      "samples": 30993467,
+      "sha256": "c26ab0c41b6ffaccc67f6b821d40aff82d838772d393d789a450a32b6f7addbc"
+    },
+    {
+      "label": "B",
+      "speaker": "N_SPK8052",
+      "path": "solve_wave/fresh/M8014_audio/R8008_M8014_N_SPK8052.wav",
+      "samples": 30993467,
+      "sha256": "533b8ebe019879daa81ecefc0c42d9e05e001004f8512e2b979302b28d89edfa"
+    },
+    {
+      "label": "C",
+      "speaker": "N_SPK8053",
+      "path": "solve_wave/fresh/M8014_audio/R8008_M8014_N_SPK8053.wav",
+      "samples": 30993467,
+      "sha256": "719cc642bcb2292811227d39c2090018e6f411515333d93f21cddf65a170c30e"
+    }
+  ],
+  "sample_rate": 16000,
+  "overlap_seconds": 32.576,
+  "calibration_first_fraction": 0.45,
+  "source_seed": 617118067,
+  "trials": [
+    {
+      "id": "m8018_01",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_01.npz",
+      "sha256": "75388602259c80b76bf8e0d4b9cf959d5c03d26fa5526d06177fd33b94978e0e",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 22528,
+      "quiet_speaker": "A",
+      "nominal_gains_db": [
+        -12.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        21023680,
+        16932480,
+        16536800
+      ],
+      "donor_start_seconds": [
+        1313.98,
+        1058.28,
+        1033.55
+      ]
+    },
+    {
+      "id": "m8018_02",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_02.npz",
+      "sha256": "716ff1012cbb9f01128b4b7213fe90fb58de972c8e716c31704cfa1743760822",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 24576,
+      "quiet_speaker": "B",
+      "nominal_gains_db": [
+        0.0,
+        -20.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        16846880,
+        14010880,
+        29374880
+      ],
+      "donor_start_seconds": [
+        1052.93,
+        875.68,
+        1835.93
+      ]
+    },
+    {
+      "id": "m8018_03",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_03.npz",
+      "sha256": "bc1c60507e001fa6f5e8d0b041e5ef0bb132a77925337aafd9aa6277ef28433e",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 20480,
+      "quiet_speaker": "A",
+      "nominal_gains_db": [
+        -12.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        18844352,
+        15634112,
+        18320192
+      ],
+      "donor_start_seconds": [
+        1177.772,
+        977.132,
+        1145.012
+      ]
+    },
+    {
+      "id": "m8018_04",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_04.npz",
+      "sha256": "8c5902fbdfc4a84f1f0f238e79f0c34c5198af493c32e702329de14f25d8ec0f",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 15872,
+      "quiet_speaker": "C",
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        -6.0
+      ],
+      "donor_start_samples": [
+        25457920,
+        20708480,
+        25153120
+      ],
+      "donor_start_seconds": [
+        1591.12,
+        1294.28,
+        1572.07
+      ]
+    },
+    {
+      "id": "m8018_05",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_05.npz",
+      "sha256": "c7671c011e7d2d866339c6a4191cb6af601e76d6086024ad7badfb466a5a9657",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 22016,
+      "quiet_speaker": "C",
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        -12.0
+      ],
+      "donor_start_samples": [
+        18569760,
+        14093280,
+        25395200
+      ],
+      "donor_start_seconds": [
+        1160.61,
+        880.83,
+        1587.2
+      ]
+    },
+    {
+      "id": "m8018_06",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_06.npz",
+      "sha256": "4011935a44f01da0225a8c9a79d0c96387b81c8af24b8b3331667985459ef021",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 21504,
+      "quiet_speaker": "C",
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        -12.0
+      ],
+      "donor_start_samples": [
+        21086880,
+        15700640,
+        30097920
+      ],
+      "donor_start_seconds": [
+        1317.93,
+        981.29,
+        1881.12
+      ]
+    },
+    {
+      "id": "m8018_07",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_07.npz",
+      "sha256": "188aca787ecc1962ff2e892f190cfd91ad2e9a1d2fe1c1b97735d5d4aaf9b438",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 24064,
+      "quiet_speaker": null,
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        19261120,
+        15605440,
+        27193120
+      ],
+      "donor_start_seconds": [
+        1203.82,
+        975.34,
+        1699.57
+      ]
+    },
+    {
+      "id": "m8018_08",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_08.npz",
+      "sha256": "231bf9d5fbc665446e190e7e2fcdf8b2f5bcfe9724d49c7be874a3a8d562df24",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 21504,
+      "quiet_speaker": null,
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        30435840,
+        17046720,
+        18291520
+      ],
+      "donor_start_seconds": [
+        1902.24,
+        1065.42,
+        1143.22
+      ]
+    },
+    {
+      "id": "m8018_09",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_09.npz",
+      "sha256": "a9ab89414eacfe259a170672f27fa6dcdce210e44c3d741801c8b812fe17c3ed",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 24064,
+      "quiet_speaker": "A",
+      "nominal_gains_db": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        18084160,
+        26291520,
+        27955392
+      ],
+      "donor_start_seconds": [
+        1130.26,
+        1643.22,
+        1747.212
+      ]
+    },
+    {
+      "id": "m8018_10",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_10.npz",
+      "sha256": "d28db3d7a75e8347441e55515c1ea80f76a30bc363dae12b70c8c5a54426c322",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 20992,
+      "quiet_speaker": "C",
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        -20.0
+      ],
+      "donor_start_samples": [
+        29956960,
+        14039552,
+        23028320
+      ],
+      "donor_start_seconds": [
+        1872.31,
+        877.472,
+        1439.27
+      ]
+    },
+    {
+      "id": "m8018_11",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_11.npz",
+      "sha256": "ee53b92643c029257b181e1e8d549ec22119809c5bfed491def962d50e4d3bbf",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 26112,
+      "quiet_speaker": "A",
+      "nominal_gains_db": [
+        -6.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        18433600,
+        20780640,
+        26443680
+      ],
+      "donor_start_seconds": [
+        1152.1,
+        1298.79,
+        1652.73
+      ]
+    },
+    {
+      "id": "m8018_12",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_12.npz",
+      "sha256": "b39e3976aaec7f9a08d57b30501fa9b1a044b74112032f0320a44c253df89547",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 22016,
+      "quiet_speaker": "C",
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        -6.0
+      ],
+      "donor_start_samples": [
+        25900320,
+        23988320,
+        15155680
+      ],
+      "donor_start_seconds": [
+        1618.77,
+        1499.27,
+        947.23
+      ]
+    },
+    {
+      "id": "m8018_13",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_13.npz",
+      "sha256": "ff595c3e4c2219bb764c801c50bc5cf778069d5e9826828a3d6c079547c49315",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 21504,
+      "quiet_speaker": "C",
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        -20.0
+      ],
+      "donor_start_samples": [
+        14674464,
+        26135072,
+        28136160
+      ],
+      "donor_start_seconds": [
+        917.154,
+        1633.442,
+        1758.51
+      ]
+    },
+    {
+      "id": "m8018_14",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_14.npz",
+      "sha256": "d8ecf13495fa14b2339917333cd377ba25d9df91adebab2e5c288b141525688b",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 23040,
+      "quiet_speaker": "A",
+      "nominal_gains_db": [
+        -6.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        17383200,
+        26106400,
+        21291520
+      ],
+      "donor_start_seconds": [
+        1086.45,
+        1631.65,
+        1330.72
+      ]
+    },
+    {
+      "id": "m8018_15",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_15.npz",
+      "sha256": "9be5f203ee9275a14aa0e3dbeb1d267bce8fb48fc916b3d9adb383a1e0bbb45d",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 24064,
+      "quiet_speaker": null,
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        28728480,
+        28958720,
+        16565472
+      ],
+      "donor_start_seconds": [
+        1795.53,
+        1809.92,
+        1035.342
+      ]
+    },
+    {
+      "id": "m8018_16",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_16.npz",
+      "sha256": "77c3066d582937613b1779d63672213e690eba2c3a14b7fc1791ad05c0a13738",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 20992,
+      "quiet_speaker": "B",
+      "nominal_gains_db": [
+        0.0,
+        -20.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        21413760,
+        15812960,
+        22373600
+      ],
+      "donor_start_seconds": [
+        1338.36,
+        988.31,
+        1398.35
+      ]
+    },
+    {
+      "id": "m8018_17",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_17.npz",
+      "sha256": "f2e7b28e31bfa9ca4e3e09ecd46d2b1bfe00997891f0ae699ae4508fba20c0c8",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 17408,
+      "quiet_speaker": "A",
+      "nominal_gains_db": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        26797952,
+        20934880,
+        20197600
+      ],
+      "donor_start_seconds": [
+        1674.872,
+        1308.43,
+        1262.35
+      ]
+    },
+    {
+      "id": "m8018_18",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_18.npz",
+      "sha256": "a9188acf2c5e3c482ab7a59b709677727cc08a3393189791b2b5cac90bbe001b",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 25088,
+      "quiet_speaker": null,
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        16776000,
+        28987392,
+        25624480
+      ],
+      "donor_start_seconds": [
+        1048.5,
+        1811.712,
+        1601.53
+      ]
+    },
+    {
+      "id": "m8018_19",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_19.npz",
+      "sha256": "d4247c41001fe69f5ee47185ef9134ae32e6eddd63f1bd2c9e32d1b81c47e1ac",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 23040,
+      "quiet_speaker": null,
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        17332672,
+        26320192,
+        27826880
+      ],
+      "donor_start_seconds": [
+        1083.292,
+        1645.012,
+        1739.18
+      ]
+    },
+    {
+      "id": "m8018_20",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_20.npz",
+      "sha256": "22729106e7d6c1b57c4fd895332ddc4716a019f3f28636378d3a93df3c506e73",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 19968,
+      "quiet_speaker": "B",
+      "nominal_gains_db": [
+        0.0,
+        -12.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        23625440,
+        30590560,
+        20026400
+      ],
+      "donor_start_seconds": [
+        1476.59,
+        1911.91,
+        1251.65
+      ]
+    },
+    {
+      "id": "m8018_21",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_21.npz",
+      "sha256": "9785675a990de3ae69d6784fa1b0480eeab859ed124f3aa274b49bfbcf3074ab",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 18432,
+      "quiet_speaker": "B",
+      "nominal_gains_db": [
+        0.0,
+        -6.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        14765280,
+        16984320,
+        23863200
+      ],
+      "donor_start_seconds": [
+        922.83,
+        1061.52,
+        1491.45
+      ]
+    },
+    {
+      "id": "m8018_22",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_22.npz",
+      "sha256": "4e8a95cb803c37278370d03b3eafc66f37ee40882186297cf2e789fccd3186e9",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 19968,
+      "quiet_speaker": null,
+      "nominal_gains_db": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        14617120,
+        16208320,
+        17633664
+      ],
+      "donor_start_seconds": [
+        913.57,
+        1013.02,
+        1102.104
+      ]
+    },
+    {
+      "id": "m8018_23",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_23.npz",
+      "sha256": "a8e6cd4f704da8398383d5191e9f15b4043b7bb2fe17518ec760c770378fb481",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 17920,
+      "quiet_speaker": "B",
+      "nominal_gains_db": [
+        0.0,
+        -6.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        27683584,
+        20856960,
+        28164832
+      ],
+      "donor_start_seconds": [
+        1730.224,
+        1303.56,
+        1760.302
+      ]
+    },
+    {
+      "id": "m8018_24",
+      "file": "solve_wave/fresh/M8014/fixtures/m8018_24.npz",
+      "sha256": "e9d30c978753c5d24f973f51e9d2af0b9c17d71c111d55a2a47e6072b6fc1fd5",
+      "room_group": "R8008_M8014",
+      "samples": 28672,
+      "exact_three_samples": 24064,
+      "quiet_speaker": "B",
+      "nominal_gains_db": [
+        0.0,
+        -12.0,
+        0.0
+      ],
+      "donor_start_samples": [
+        17229920,
+        29149280,
+        25261792
+      ],
+      "donor_start_seconds": [
+        1076.87,
+        1821.83,
+        1578.862
+      ]
+    }
+  ]
+}

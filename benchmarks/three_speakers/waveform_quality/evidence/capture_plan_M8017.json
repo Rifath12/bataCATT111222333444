@@ -1,0 +1,486 @@
+{
+  "sample_rate": 16000,
+  "anti_leakage_db_by_mic": {
+    "96": {
+      "A": 8.218117862408196,
+      "B": 9.974743232638643,
+      "C": 0.0
+    },
+    "98": {
+      "A": 11.317111442088576,
+      "B": 13.074454991195347,
+      "C": 1.6690537258919576
+    }
+  },
+  "phase_conservative_db_by_mic": {
+    "96": {
+      "A": 8.780287528399915,
+      "B": 12.418616603098462,
+      "C": 1.5843362698285224
+    },
+    "98": {
+      "A": 11.79058748503973,
+      "B": 15.428916559738274,
+      "C": 4.594636226468335
+    }
+  },
+  "source_to_microphone_db": {
+    "A": {
+      "A": 0.0,
+      "B": -24.333027050874826,
+      "C": -37.47876626088052
+    },
+    "B": {
+      "A": -51.88599879111781,
+      "B": 0.0,
+      "C": -39.62232275850981
+    },
+    "C": {
+      "A": -23.964057718348872,
+      "B": -33.486663448049825,
+      "C": 0.0
+    }
+  },
+  "calibration_cases": [
+    {
+      "case": "balanced",
+      "quiet_speaker": null,
+      "gap_db": 0.0,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.9972445613337326,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "B": {
+          "measured_fraction": 0.9958748790055139,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "C": {
+          "measured_fraction": 0.9996992090330735,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "A_quiet_6dB",
+      "quiet_speaker": "A",
+      "gap_db": 6,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.9891179635560643,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "B": {
+          "measured_fraction": 0.9985318068489162,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "C": {
+          "measured_fraction": 0.999844506435261,
+          "strongest_leak_from": "B",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "B_quiet_6dB",
+      "quiet_speaker": "B",
+      "gap_db": 6,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.997247908161076,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "B": {
+          "measured_fraction": 0.9837765701936828,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 1.4289165597382811
+          }
+        },
+        "C": {
+          "measured_fraction": 0.9997807296038551,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "C_quiet_6dB",
+      "quiet_speaker": "C",
+      "gap_db": 6,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.9993026077660441,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "B": {
+          "measured_fraction": 0.9963041967327215,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "C": {
+          "measured_fraction": 0.998804239479087,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "A_quiet_12dB",
+      "quiet_speaker": "A",
+      "gap_db": 12,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.9580255623811732,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.21811786240819997,
+            "98": 3.3171114420885806
+          },
+          "phase_margin_db": {
+            "96": 0.7802875283999182,
+            "98": 3.7905874850397314
+          }
+        },
+        "B": {
+          "measured_fraction": 0.9992028085543583,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "C": {
+          "measured_fraction": 0.9998818505774089,
+          "strongest_leak_from": "B",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "B_quiet_12dB",
+      "quiet_speaker": "B",
+      "gap_db": 12,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.9972484819980972,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "B": {
+          "measured_fraction": 0.9383890862235766,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 1.9747432326386418,
+            "98": 5.0744549911953465
+          },
+          "phase_margin_db": {
+            "96": 4.418616603098461,
+            "98": 7.4289165597382745
+          }
+        },
+        "C": {
+          "measured_fraction": 0.9998020438198489,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "C_quiet_12dB",
+      "quiet_speaker": "C",
+      "gap_db": 12,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.9998205808334105,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "B": {
+          "measured_fraction": 0.9964134811310951,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "C": {
+          "measured_fraction": 0.9952615193337256,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "A_quiet_20dB",
+      "quiet_speaker": "A",
+      "gap_db": 20,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.7832535751470145,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 8.218117862408196,
+            "98": 11.317111442088576
+          },
+          "phase_margin_db": {
+            "96": 8.780287528399915,
+            "98": 11.79058748503973
+          }
+        },
+        "B": {
+          "measured_fraction": 0.9993932811386941,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "C": {
+          "measured_fraction": 0.9998929328960313,
+          "strongest_leak_from": "B",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "B_quiet_20dB",
+      "quiet_speaker": "B",
+      "gap_db": 20,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.9972484714786202,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "B": {
+          "measured_fraction": 0.7070415470284233,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 9.974743232638643,
+            "98": 13.074454991195347
+          },
+          "phase_margin_db": {
+            "96": 12.418616603098462,
+            "98": 15.428916559738274
+          }
+        },
+        "C": {
+          "measured_fraction": 0.9998085992462135,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        }
+      }
+    },
+    {
+      "case": "C_quiet_20dB",
+      "quiet_speaker": "C",
+      "gap_db": 20,
+      "voices": {
+        "A": {
+          "measured_fraction": 0.9999667076083192,
+          "strongest_leak_from": "C",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "B": {
+          "measured_fraction": 0.996445231889724,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 0.0
+          },
+          "phase_margin_db": {
+            "96": 0.0,
+            "98": 0.0
+          }
+        },
+        "C": {
+          "measured_fraction": 0.9709269985467059,
+          "strongest_leak_from": "A",
+          "additional_isolation_db": {
+            "96": 0.0,
+            "98": 1.6690537258919576
+          },
+          "phase_margin_db": {
+            "96": 1.5843362698285224,
+            "98": 4.594636226468335
+          }
+        }
+      }
+    }
+  ],
+  "simulation_hypothetical_bleed_reduction": {
+    "96": {
+      "trials_passing": 10,
+      "trials": 10
+    },
+    "98": {
+      "trials_passing": 10,
+      "trials": 10
+    }
+  }
+}

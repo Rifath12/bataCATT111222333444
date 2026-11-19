@@ -1,0 +1,27 @@
+{
+  "M8016": {
+    "status": "exclusion",
+    "detail": "('M8016', 'not enough independently qualified', [12, 12, 0])"
+  },
+  "M8017": {
+    "status": "completed",
+    "prior": {
+      "episodes": 12,
+      "waveform_med": 0.9988318853004508,
+      "waveform_low": 0.8924302579611865,
+      "worst": 0.6750513117638929,
+      "accepted_96": 6,
+      "accepted_98": 6,
+      "overlap_seconds": 6.368
+    },
+    "validated_inverse": {
+      "episodes": 12,
+      "waveform_med": 0.9990516011200878,
+      "waveform_low": 0.9232076751368143,
+      "worst": 0.6752148504439807,
+      "accepted_96": 6,
+      "accepted_98": 6,
+      "overlap_seconds": 6.368
+    }
+  }
+}

@@ -1,0 +1,1025 @@
+{
+  "dev": {
+    "old": {
+      "profile": null,
+      "exact_three_s": 14.75,
+      "scored_voice_rows": 24,
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        }
+      },
+      "median_render_wall_seconds": 3.4755240805025096,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.03615305567832279,
+          "p10": 0.07667012255476953,
+          "median": 0.29587323690755785,
+          "p90": 0.6245779603176318,
+          "max": 0.7540290522642054
+        },
+        "competing_voice_fraction": {
+          "min": 0.07389282061584293,
+          "p10": 0.08464513390251314,
+          "median": 0.3720567667601745,
+          "p90": 0.5194224122199551,
+          "max": 0.538559121817284
+        },
+        "other_error_fraction": {
+          "min": 0.15276893132087335,
+          "p10": 0.28001878245474937,
+          "median": 0.3330274520131741,
+          "p90": 0.426774116833769,
+          "max": 0.4570139255168525
+        },
+        "retained_active_fraction": {
+          "min": 0.511864406779661,
+          "p10": 0.6620338983050847,
+          "median": 0.9457627118644067,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.258630648470172,
+          "p10": -10.808525301052754,
+          "median": -3.775363810941373,
+          "p90": 2.215741064503101,
+          "max": 4.865042647958086
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.03615305567832279,
+          "p10": 0.05534109580320451,
+          "median": 0.10578525859886992,
+          "p90": 0.16697030578178582,
+          "max": 0.19927397066412844
+        },
+        "competing_voice_fraction": {
+          "min": 0.4106487251364021,
+          "p10": 0.4372053606992901,
+          "median": 0.49923138310533777,
+          "p90": 0.5275013268390167,
+          "max": 0.538559121817284
+        },
+        "other_error_fraction": {
+          "min": 0.3451396686291674,
+          "p10": 0.3460740947022901,
+          "median": 0.4156294991584477,
+          "p90": 0.44246195547702694,
+          "max": 0.4570139255168525
+        },
+        "retained_active_fraction": {
+          "min": 0.511864406779661,
+          "p10": 0.5996610169491525,
+          "median": 0.7627118644067796,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.258630648470172,
+          "p10": -12.455429710422377,
+          "median": -9.406971824132318,
+          "p90": -7.011492009214595,
+          "max": -6.0403337193074025
+        }
+      },
+      "median_by_recording_group": {
+        "8013": {
+          "target_aligned_fraction": 0.29587323690755785,
+          "competing_voice_fraction": 0.3720567667601745,
+          "other_error_fraction": 0.3330274520131741,
+          "retained_active_fraction": 0.9457627118644067,
+          "si_sdr_db": -3.775363810941373
+        }
+      }
+    },
+    "local2": {
+      "profile": {
+        "parts": 2,
+        "local_weight": 0.25,
+        "preference": 0.4,
+        "iterations": 6
+      },
+      "exact_three_s": 14.75,
+      "scored_voice_rows": 24,
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        }
+      },
+      "median_render_wall_seconds": 3.21481762950134,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.036045285992794655,
+          "p10": 0.07776614684318073,
+          "median": 0.2959197778037468,
+          "p90": 0.624647596382333,
+          "max": 0.75159323825496
+        },
+        "competing_voice_fraction": {
+          "min": 0.0783034589586035,
+          "p10": 0.08978299055103649,
+          "median": 0.38464994489163884,
+          "p90": 0.5318056521081893,
+          "max": 0.5503085809702315
+        },
+        "other_error_fraction": {
+          "min": 0.15265198156573748,
+          "p10": 0.2706021571959493,
+          "median": 0.3178990222468941,
+          "p90": 0.4157719338432493,
+          "max": 0.4448952511097789
+        },
+        "retained_active_fraction": {
+          "min": 0.5661016949152542,
+          "p10": 0.6620338983050847,
+          "median": 0.9457627118644067,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.272081558174056,
+          "p10": -10.744141319325692,
+          "median": -3.7723774046042022,
+          "p90": 2.2149827770219073,
+          "max": 4.80819450935909
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.036045285992794655,
+          "p10": 0.0556766121885575,
+          "median": 0.10692497853847546,
+          "p90": 0.16313216754518117,
+          "max": 0.19356491183683416
+        },
+        "competing_voice_fraction": {
+          "min": 0.43282656246658047,
+          "p10": 0.46679223692856403,
+          "median": 0.5147018084357489,
+          "p90": 0.5414947149673849,
+          "max": 0.5503085809702315
+        },
+        "other_error_fraction": {
+          "min": 0.32508613360803845,
+          "p10": 0.32572290941702686,
+          "median": 0.4024481600732833,
+          "p90": 0.42542728761219617,
+          "max": 0.4448952511097789
+        },
+        "retained_active_fraction": {
+          "min": 0.5661016949152542,
+          "p10": 0.6159322033898305,
+          "median": 0.7627118644067796,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.272081558174056,
+          "p10": -12.432729269100829,
+          "median": -9.33089768189829,
+          "p90": -7.130387034039938,
+          "max": -6.197427816740672
+        }
+      },
+      "median_by_recording_group": {
+        "8013": {
+          "target_aligned_fraction": 0.2959197778037468,
+          "competing_voice_fraction": 0.38464994489163884,
+          "other_error_fraction": 0.3178990222468941,
+          "retained_active_fraction": 0.9457627118644067,
+          "si_sdr_db": -3.7723774046042022
+        }
+      }
+    },
+    "local2_strong": {
+      "profile": {
+        "parts": 2,
+        "local_weight": 0.65,
+        "preference": 0.4,
+        "iterations": 6
+      },
+      "exact_three_s": 14.75,
+      "scored_voice_rows": 24,
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        }
+      },
+      "median_render_wall_seconds": 3.3517129754982307,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.036228999603355405,
+          "p10": 0.07753484293188742,
+          "median": 0.30263545565485106,
+          "p90": 0.626004801544478,
+          "max": 0.7559339611708656
+        },
+        "competing_voice_fraction": {
+          "min": 0.0813690577996652,
+          "p10": 0.09243442612031152,
+          "median": 0.39247818379319743,
+          "p90": 0.5454618214937998,
+          "max": 0.5586834157930913
+        },
+        "other_error_fraction": {
+          "min": 0.14858962087769273,
+          "p10": 0.2620997119921404,
+          "median": 0.30223738826762847,
+          "p90": 0.40431400216500013,
+          "max": 0.43692330393734297
+        },
+        "retained_active_fraction": {
+          "min": 0.5661016949152542,
+          "p10": 0.6620338983050847,
+          "median": 0.9271186440677965,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.249175123974142,
+          "p10": -10.76040634893466,
+          "median": -3.627996010066564,
+          "p90": 2.238467169262434,
+          "max": 4.909765042961025
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.036228999603355405,
+          "p10": 0.05843783636349255,
+          "median": 0.10769999529911409,
+          "p90": 0.15919529250970182,
+          "max": 0.18950116110482
+        },
+        "competing_voice_fraction": {
+          "min": 0.4511785010222276,
+          "p10": 0.4819381010680428,
+          "median": 0.52709202240898,
+          "p90": 0.5507683540262934,
+          "max": 0.5586834157930913
+        },
+        "other_error_fraction": {
+          "min": 0.2991422491713097,
+          "p10": 0.30598731461031625,
+          "median": 0.3924703725917091,
+          "p90": 0.41463830040369026,
+          "max": 0.43692330393734297
+        },
+        "retained_active_fraction": {
+          "min": 0.5661016949152542,
+          "p10": 0.6159322033898305,
+          "median": 0.7627118644067796,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.249175123974142,
+          "p10": -12.23521714403166,
+          "median": -9.290974498643845,
+          "p90": -7.2581109951157305,
+          "max": -6.311405217171288
+        }
+      },
+      "median_by_recording_group": {
+        "8013": {
+          "target_aligned_fraction": 0.30263545565485106,
+          "competing_voice_fraction": 0.39247818379319743,
+          "other_error_fraction": 0.30223738826762847,
+          "retained_active_fraction": 0.9271186440677965,
+          "si_sdr_db": -3.627996010066564
+        }
+      }
+    },
+    "local3": {
+      "profile": {
+        "parts": 3,
+        "local_weight": 0.4,
+        "preference": 0.55,
+        "iterations": 6
+      },
+      "exact_three_s": 14.75,
+      "scored_voice_rows": 24,
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        }
+      },
+      "median_render_wall_seconds": 3.7753238219956984,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.034620849680782294,
+          "p10": 0.07772849543419705,
+          "median": 0.29916916258061255,
+          "p90": 0.6211975851450576,
+          "max": 0.7546097663411363
+        },
+        "competing_voice_fraction": {
+          "min": 0.08172421360056518,
+          "p10": 0.09066996351990264,
+          "median": 0.3948910648026671,
+          "p90": 0.5435338154646415,
+          "max": 0.5574573158539352
+        },
+        "other_error_fraction": {
+          "min": 0.14691667198465452,
+          "p10": 0.2623724134331279,
+          "median": 0.3062075212477822,
+          "p90": 0.40753746753245695,
+          "max": 0.44086846464824536
+        },
+        "retained_active_fraction": {
+          "min": 0.511864406779661,
+          "p10": 0.652542372881356,
+          "median": 0.9271186440677965,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.453601926271432,
+          "p10": -10.751766840737949,
+          "median": -3.704165470561972,
+          "p90": 2.1499571999212725,
+          "max": 4.878651474939085
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.034620849680782294,
+          "p10": 0.055240813645200657,
+          "median": 0.1072436849373011,
+          "p90": 0.1623582061541035,
+          "max": 0.19297977229351246
+        },
+        "competing_voice_fraction": {
+          "min": 0.444124710835491,
+          "p10": 0.4797749292559097,
+          "median": 0.5228612658862901,
+          "p90": 0.5565394156065606,
+          "max": 0.5574573158539352
+        },
+        "other_error_fraction": {
+          "min": 0.30503027929417437,
+          "p10": 0.30834702423032173,
+          "median": 0.39563536946653277,
+          "p90": 0.41907345351613146,
+          "max": 0.44086846464824536
+        },
+        "retained_active_fraction": {
+          "min": 0.511864406779661,
+          "p10": 0.5711864406779661,
+          "median": 0.7627118644067796,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.453601926271432,
+          "p10": -12.487798521128841,
+          "median": -9.2932268853008,
+          "p90": -7.1556980820263,
+          "max": -6.213726306914142
+        }
+      },
+      "median_by_recording_group": {
+        "8013": {
+          "target_aligned_fraction": 0.29916916258061255,
+          "competing_voice_fraction": 0.3948910648026671,
+          "other_error_fraction": 0.3062075212477822,
+          "retained_active_fraction": 0.9271186440677965,
+          "si_sdr_db": -3.704165470561972
+        }
+      }
+    },
+    "local3_sharp": {
+      "profile": {
+        "parts": 3,
+        "local_weight": 0.7,
+        "preference": 0.75,
+        "iterations": 6
+      },
+      "exact_three_s": 14.75,
+      "scored_voice_rows": 24,
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        }
+      },
+      "median_render_wall_seconds": 3.7756909739982802,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.03405273659972185,
+          "p10": 0.07693746252788568,
+          "median": 0.3035205567956707,
+          "p90": 0.6191311103668363,
+          "max": 0.7564821050147192
+        },
+        "competing_voice_fraction": {
+          "min": 0.0851637176281225,
+          "p10": 0.09361856569735727,
+          "median": 0.40625815938207954,
+          "p90": 0.5583788311056629,
+          "max": 0.5749167757033302
+        },
+        "other_error_fraction": {
+          "min": 0.14281453710203668,
+          "p10": 0.25421460487766795,
+          "median": 0.2974160661710149,
+          "p90": 0.39735796157285846,
+          "max": 0.4358748343481187
+        },
+        "retained_active_fraction": {
+          "min": 0.511864406779661,
+          "p10": 0.6349152542372881,
+          "median": 0.9271186440677965,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.5280139732742,
+          "p10": -10.807385166896175,
+          "median": -3.610798863773348,
+          "p90": 2.1109255913781917,
+          "max": 4.922677780313803
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.03405273659972185,
+          "p10": 0.0560931196023078,
+          "median": 0.10606076880723479,
+          "p90": 0.15752274566779464,
+          "max": 0.18900711028870826
+        },
+        "competing_voice_fraction": {
+          "min": 0.4614065788810573,
+          "p10": 0.48743229099824303,
+          "median": 0.541390442018018,
+          "p90": 0.5696493478906542,
+          "max": 0.5749167757033302
+        },
+        "other_error_fraction": {
+          "min": 0.2814428503921979,
+          "p10": 0.2916481156781679,
+          "median": 0.38444993861293536,
+          "p90": 0.4132873001823533,
+          "max": 0.4358748343481187
+        },
+        "retained_active_fraction": {
+          "min": 0.511864406779661,
+          "p10": 0.5332203389830509,
+          "median": 0.7372881355932204,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.5280139732742,
+          "p10": -12.436833880336746,
+          "median": -9.324522800526342,
+          "p90": -7.315669442356547,
+          "max": -6.325389043258243
+        }
+      },
+      "median_by_recording_group": {
+        "8013": {
+          "target_aligned_fraction": 0.3035205567956707,
+          "competing_voice_fraction": 0.40625815938207954,
+          "other_error_fraction": 0.2974160661710149,
+          "retained_active_fraction": 0.9271186440677965,
+          "si_sdr_db": -3.610798863773348
+        }
+      }
+    },
+    "local3_soft": {
+      "profile": {
+        "parts": 3,
+        "local_weight": 0.33,
+        "preference": 0.2,
+        "iterations": 8
+      },
+      "exact_three_s": 14.75,
+      "scored_voice_rows": 24,
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 24,
+          "cases_passed": 0,
+          "cases_eligible": 8,
+          "groups_passed": 0,
+          "groups_eligible": 1,
+          "independent_group_interval_95": null
+        }
+      },
+      "median_render_wall_seconds": 5.055112043497502,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.03529282278486346,
+          "p10": 0.07778604237198646,
+          "median": 0.3008966466756867,
+          "p90": 0.6209364387245084,
+          "max": 0.7562778853085396
+        },
+        "competing_voice_fraction": {
+          "min": 0.07797783958985303,
+          "p10": 0.08714735749385712,
+          "median": 0.38363653774972084,
+          "p90": 0.5300905052847805,
+          "max": 0.5464305824440132
+        },
+        "other_error_fraction": {
+          "min": 0.1476345267491521,
+          "p10": 0.2719760159037186,
+          "median": 0.31669029924820397,
+          "p90": 0.41749573194141326,
+          "max": 0.44943811211760454
+        },
+        "retained_active_fraction": {
+          "min": 0.511864406779661,
+          "p10": 0.6620338983050847,
+          "median": 0.9457627118644067,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.367091141739683,
+          "p10": -10.74242623310128,
+          "median": -3.6697041971817104,
+          "p90": 2.1456639150259837,
+          "max": 4.917864634745169
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.03529282278486346,
+          "p10": 0.05512787136857593,
+          "median": 0.10674785519995972,
+          "p90": 0.16555858662285547,
+          "max": 0.19589874343766803
+        },
+        "competing_voice_fraction": {
+          "min": 0.4279439590451936,
+          "p10": 0.46820274224753333,
+          "median": 0.5153033764596042,
+          "p90": 0.5431497884663236,
+          "max": 0.5464305824440132
+        },
+        "other_error_fraction": {
+          "min": 0.31864475008522597,
+          "p10": 0.320274776632608,
+          "median": 0.405603889995961,
+          "p90": 0.4284816987120901,
+          "max": 0.44943811211760454
+        },
+        "retained_active_fraction": {
+          "min": 0.511864406779661,
+          "p10": 0.5996610169491525,
+          "median": 0.7627118644067796,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -14.367091141739683,
+          "p10": -12.48469742088216,
+          "median": -9.340940074885324,
+          "p90": -7.052617226088624,
+          "max": -6.1327909049640885
+        }
+      },
+      "median_by_recording_group": {
+        "8013": {
+          "target_aligned_fraction": 0.3008966466756867,
+          "competing_voice_fraction": 0.38363653774972084,
+          "other_error_fraction": 0.31669029924820397,
+          "retained_active_fraction": 0.9457627118644067,
+          "si_sdr_db": -3.6697041971817104
+        }
+      }
+    }
+  },
+  "locked": {
+    "old": {
+      "profile": null,
+      "exact_three_s": 11.0625,
+      "scored_voice_rows": 18,
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 18,
+          "cases_passed": 0,
+          "cases_eligible": 6,
+          "groups_passed": 0,
+          "groups_eligible": 2,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 18,
+          "cases_passed": 0,
+          "cases_eligible": 6,
+          "groups_passed": 0,
+          "groups_eligible": 2,
+          "independent_group_interval_95": null
+        }
+      },
+      "median_render_wall_seconds": 3.123608254500141,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.06127511516148602,
+          "p10": 0.13480372986376887,
+          "median": 0.4212394557552859,
+          "p90": 0.747557737670744,
+          "max": 0.8280106093928868
+        },
+        "competing_voice_fraction": {
+          "min": 0.0387158574249837,
+          "p10": 0.047282883795124325,
+          "median": 0.22952820849713162,
+          "p90": 0.4531909194579468,
+          "max": 0.5039652218945075
+        },
+        "other_error_fraction": {
+          "min": 0.1302821520522519,
+          "p10": 0.18579405523556136,
+          "median": 0.3412600717520898,
+          "p90": 0.4486555939848153,
+          "max": 0.5050835733446238
+        },
+        "retained_active_fraction": {
+          "min": 0.6508474576271186,
+          "p10": 0.792542372881356,
+          "median": 0.9457627118644067,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -11.852541946691385,
+          "p10": -8.155554906147458,
+          "median": -1.3839022632357882,
+          "p90": 4.758203086268223,
+          "max": 6.825342437798208
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.06127511516148602,
+          "p10": 0.07919944483331173,
+          "median": 0.1841160639724575,
+          "p90": 0.24989349333635646,
+          "max": 0.2531094489256478
+        },
+        "competing_voice_fraction": {
+          "min": 0.24180697772972579,
+          "p10": 0.2976383139514114,
+          "median": 0.39853700005561143,
+          "p90": 0.4590830743855452,
+          "max": 0.47381346170454103
+        },
+        "other_error_fraction": {
+          "min": 0.3998528120798382,
+          "p10": 0.4050690707961745,
+          "median": 0.42673565311083633,
+          "p90": 0.49972788555829434,
+          "max": 0.5050835733446238
+        },
+        "retained_active_fraction": {
+          "min": 0.6508474576271186,
+          "p10": 0.6694915254237288,
+          "median": 0.8711864406779661,
+          "p90": 0.9728813559322034,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -11.852541946691385,
+          "p10": -10.767784300211543,
+          "median": -6.466184775147422,
+          "p90": -4.77399959687488,
+          "max": -4.6994860693196525
+        }
+      },
+      "median_by_recording_group": {
+        "8016": {
+          "target_aligned_fraction": 0.3942554878689301,
+          "competing_voice_fraction": 0.26830686457205893,
+          "other_error_fraction": 0.3374376475590129,
+          "retained_active_fraction": 0.9457627118644067,
+          "si_sdr_db": -1.865117410080619
+        },
+        "8017": {
+          "target_aligned_fraction": 0.5648286812552381,
+          "competing_voice_fraction": 0.19736597788789823,
+          "other_error_fraction": 0.3501560734763344,
+          "retained_active_fraction": 0.9050847457627119,
+          "si_sdr_db": 1.1325647733585644
+        }
+      }
+    },
+    "local3_soft": {
+      "profile": {
+        "parts": 3,
+        "local_weight": 0.33,
+        "preference": 0.2,
+        "iterations": 8
+      },
+      "exact_three_s": 11.0625,
+      "scored_voice_rows": 18,
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 18,
+          "cases_passed": 0,
+          "cases_eligible": 6,
+          "groups_passed": 0,
+          "groups_eligible": 2,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 18,
+          "cases_passed": 0,
+          "cases_eligible": 6,
+          "groups_passed": 0,
+          "groups_eligible": 2,
+          "independent_group_interval_95": null
+        }
+      },
+      "median_render_wall_seconds": 4.786776160995942,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.06188309539528387,
+          "p10": 0.14116352223213924,
+          "median": 0.43048572688450176,
+          "p90": 0.7599604805396357,
+          "max": 0.8275739624454469
+        },
+        "competing_voice_fraction": {
+          "min": 0.04105234076010134,
+          "p10": 0.04774747191799957,
+          "median": 0.2403836759435341,
+          "p90": 0.47372298191767376,
+          "max": 0.5252931838785632
+        },
+        "other_error_fraction": {
+          "min": 0.12938576967729556,
+          "p10": 0.17260601901315664,
+          "median": 0.3264387384438976,
+          "p90": 0.4340544384540084,
+          "max": 0.4891631451116788
+        },
+        "retained_active_fraction": {
+          "min": 0.6338983050847458,
+          "p10": 0.792542372881356,
+          "median": 0.9457627118644067,
+          "p90": 1.0,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -11.806849328977705,
+          "p10": -7.915007228976094,
+          "median": -1.219118077626736,
+          "p90": 5.036199478886595,
+          "max": 6.812039702262018
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.06188309539528387,
+          "p10": 0.08272923027742562,
+          "median": 0.18528680650736587,
+          "p90": 0.24889687139236263,
+          "max": 0.2540975887998588
+        },
+        "competing_voice_fraction": {
+          "min": 0.25673926608846026,
+          "p10": 0.310075713723074,
+          "median": 0.40437301301623985,
+          "p90": 0.47843107829640535,
+          "max": 0.49020131924323435
+        },
+        "other_error_fraction": {
+          "min": 0.3928916846574445,
+          "p10": 0.39777343832121226,
+          "median": 0.412124242282504,
+          "p90": 0.4803096061834091,
+          "max": 0.4891631451116788
+        },
+        "retained_active_fraction": {
+          "min": 0.6338983050847458,
+          "p10": 0.6610169491525424,
+          "median": 0.8711864406779661,
+          "p90": 0.9728813559322034,
+          "max": 1.0
+        },
+        "si_sdr_db": {
+          "min": -11.806849328977705,
+          "p10": -10.589711213841765,
+          "median": -6.435389683649685,
+          "p90": -4.797645504149483,
+          "max": -4.676814671190623
+        }
+      },
+      "median_by_recording_group": {
+        "8016": {
+          "target_aligned_fraction": 0.40353464190110977,
+          "competing_voice_fraction": 0.262122983544596,
+          "other_error_fraction": 0.3185351023334984,
+          "retained_active_fraction": 0.9457627118644067,
+          "si_sdr_db": -1.697044023289504
+        },
+        "8017": {
+          "target_aligned_fraction": 0.5587693540242872,
+          "competing_voice_fraction": 0.20558330767350894,
+          "other_error_fraction": 0.3392539196872701,
+          "retained_active_fraction": 0.9457627118644067,
+          "si_sdr_db": 1.025669099687681
+        }
+      }
+    }
+  },
+  "fixed_filter_probe": {
+    "development": {
+      "fixed_solo_trained_0.0003": {
+        "median_fidelity": 0.22796882234263288,
+        "median_si_sdr_db": -5.301101830998771,
+        "minimum_fidelity": 0.03279000706850165,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 24
+      },
+      "fixed_solo_trained_0.003": {
+        "median_fidelity": 0.22844138164302236,
+        "median_si_sdr_db": -5.287756876862401,
+        "minimum_fidelity": 0.03176379573890442,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 24
+      },
+      "fixed_solo_trained_0.03": {
+        "median_fidelity": 0.23793881988542515,
+        "median_si_sdr_db": -5.060950673705206,
+        "minimum_fidelity": 0.03344641522407207,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 24
+      },
+      "oracle_overlap_first_half_trained_0.0003": {
+        "median_fidelity": 0.3519809203850409,
+        "median_si_sdr_db": -2.6529587596270825,
+        "minimum_fidelity": 0.0168505927696623,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 24
+      },
+      "oracle_overlap_first_half_trained_0.003": {
+        "median_fidelity": 0.35987304030177786,
+        "median_si_sdr_db": -2.503618653521022,
+        "minimum_fidelity": 0.01823868804685659,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 24
+      },
+      "oracle_overlap_first_half_trained_0.03": {
+        "median_fidelity": 0.35726470485267825,
+        "median_si_sdr_db": -2.5531445387255105,
+        "minimum_fidelity": 0.018402495310701948,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 24
+      }
+    },
+    "previous_held_rooms": {
+      "fixed_solo_trained_0.0003": {
+        "median_fidelity": 0.3293587570042976,
+        "median_si_sdr_db": -3.099554283516876,
+        "minimum_fidelity": 0.01736617891387741,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 18
+      },
+      "fixed_solo_trained_0.003": {
+        "median_fidelity": 0.32824522170849446,
+        "median_si_sdr_db": -3.1350510986753717,
+        "minimum_fidelity": 0.017842025533418814,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 18
+      },
+      "fixed_solo_trained_0.03": {
+        "median_fidelity": 0.3270542829139335,
+        "median_si_sdr_db": -3.171975885029818,
+        "minimum_fidelity": 0.015568422601443624,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 18
+      },
+      "oracle_overlap_first_half_trained_0.0003": {
+        "median_fidelity": 0.31815742644303946,
+        "median_si_sdr_db": -3.3104881459666498,
+        "minimum_fidelity": 0.01848360993464626,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 18
+      },
+      "oracle_overlap_first_half_trained_0.003": {
+        "median_fidelity": 0.30771949991616354,
+        "median_si_sdr_db": -3.5213033754106897,
+        "minimum_fidelity": 0.016341395650906535,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 18
+      },
+      "oracle_overlap_first_half_trained_0.03": {
+        "median_fidelity": 0.29137208747606125,
+        "median_si_sdr_db": -3.8618220188502344,
+        "minimum_fidelity": 0.011368960427192034,
+        "n_ge96": 0,
+        "n_ge98": 0,
+        "n_tracks": 18
+      }
+    },
+    "notes": "Same-overlap oracle uses known source images for calibration on the first exact-three half and is scored on a disjoint later half with FFT guards. It is a diagnostic for fixed filters. The solo-supervised comparator uses only separate enrollment tracks."
+  }
+}

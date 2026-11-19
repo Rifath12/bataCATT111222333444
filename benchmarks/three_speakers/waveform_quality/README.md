@@ -4,6 +4,38 @@ This evaluation measures how well the separated audio tracks preserve their inte
 
 A track's target alignment is the fraction of centered output energy explained by the sample-aligned target waveform. The 96% and 98% targets correspond to absolute SI-SDR thresholds of +13.80 and +16.90 dB. A trial passes only if all three tracks reach the threshold and retain at least 96% of the eligible target speech time above the minimum projected level. The level guard is −12 dB in 100 ms blocks. A muted or swapped output cannot pass. These measurements describe waveform alignment and retained speech, independently of transcription accuracy. [Scoring details](SCORING.md) · [SI-SDR reference](https://research.google/pubs/sdr-half-baked-or-well-done/)
 
+## Independent follow-up and capture fix
+
+A newly tested three-person AliMeeting session (R8008_M8014) supplied 24 disjoint solo-derived mixtures and 32.576 seconds of exact three-way overlap. Fixed labels match the physical A/B/C microphone channels. Each source segment occurs after the first 45% used for unannotated room calibration. The 24 cases vary which person is quieter, up to 20 dB lower than the others, and come from one room and one group of speakers.
+
+| Result on the new room | All three at 96% | All three at 98% |
+| --- | ---: | ---: |
+| Original physical close-mic captures digitally remixed | 13/24 | 5/24 |
+| Treated with the released close-mic filter | 14/24 | 7/24 |
+| Experimental per-speaker low-frequency cleaner | 14/24 | 4/24 |
+| Matched captures with 24 dB less bleed simulated before mixing | 24/24 | 23/24 |
+| Matched captures with 30 dB less bleed simulated before mixing | 24/24 | 24/24 |
+
+The last two rows modify the known acoustic bleed component of each source image before digital mixing and keep each intended microphone waveform intact. They isolate how improved capture would help these controlled trials. They do not describe processing of an already mixed recording or results from new physical hardware. The worst case remained at 10.30% with the released filter. The two competing voices on C's own microphone contributed about 9.16 dB more energy than C on the exact overlap samples. C would need about **23 dB** more isolation for the 96% goal and **26 dB** for the 98% goal on that particular control. Other mic arrangements have different requirements.
+
+[Independent benchmark](evidence/compact_evidence.json) · [Fixed fixture manifest](evidence/new_room_manifest.json) · [Capture sensitivity](evidence/new_room_capture_sensitivity.json)
+
+The waveform profile remains the same after these tests. The new conditional mono extractor scored 30.19% median waveform alignment versus the incumbent's 90.31% on the same four locked reference clips, and the guard rejected all four replacements. The competing array profile made a small median gain while adding cross-talk. Nearby solo calibration with phase-sensitive inversion improved the lower decile on a small M8017 replay without changing the number of complete passes. There were no eligible long solo pilots for C on the chosen M8016 partition. Interval-local phase and sparse time-delay cancellation did not improve the fixed development acceptance counts. For implementation background, see [calibrated acoustic transfer estimation](https://aes.org/publications/elibrary/elibrary-page/?id=21148) and [adaptive headset interference reduction](https://link.springer.com/article/10.1186/s13636-020-00180-6).
+
+### Use a measured microphone setup
+
+Route each person to their own close mic, with all three microphones on the same recorder or synchronized audio interface. Keep level controls fixed while recording the A, B, and C solo takes described below. Move the weakest track's microphone closer to the speaker's mouth and use the headset position and seating to reduce bleed from the other two speakers. Re-test after a physical change. Turning up a recorded track raises both the desired voice and the existing bleed.
+
+```bash
+python benchmarks/three_speakers/waveform_quality/plan_capture.py \
+  solo_A.wav solo_B.wav solo_C.wav --quiet-db 6 12 20 \
+  --out capture_plan.json
+```
+
+Each solo WAV has all three channels in physical A/B/C order. The JSON identifies the strongest competing microphone source and estimates how much extra isolation each target mic needs, for the measured samples and selected louder-versus-quieter gaps. It reports a second, phase-conservative estimate for the same measured component magnitudes. The simulation changes the modeled physical bleed. The tool does not rewrite any inputs. The prepared demo poses M8016 and M8017 needed up to about 10 dB more isolation for the 96% target or 13 dB for 98% at the tested gaps. The independent M8014 weak cases show why the measurement must be repeated for the actual room and setup.
+
+[Measured capture plan for M8016](evidence/capture_plan_M8016.json) · [Measured capture plan for M8017](evidence/capture_plan_M8017.json)
+
 ## Benchmarks
 
 | Audio setup | Previous → reviewed result | All A/B/C at ≥96% | All A/B/C at ≥98% |

@@ -1,0 +1,40 @@
+{
+  "baseline": {
+    "episodes": 18,
+    "waveform_med": 0.9965898762397847,
+    "waveform_low": 0.7365668394784097,
+    "worst": 0.4325841823296514,
+    "accepted_96": 6,
+    "accepted_98": 4,
+    "overlap_seconds": 16.096
+  },
+  "candidate": {
+    "0.12": {
+      "episodes": 18,
+      "waveform_med": 0.9965898760996985,
+      "waveform_low": 0.7365668396965677,
+      "worst": 0.4325841869187856,
+      "accepted_96": 6,
+      "accepted_98": 4,
+      "overlap_seconds": 16.096
+    },
+    "0.25": {
+      "episodes": 18,
+      "waveform_med": 0.9965898760996985,
+      "waveform_low": 0.7365668396965677,
+      "worst": 0.4325841869187856,
+      "accepted_96": 6,
+      "accepted_98": 4,
+      "overlap_seconds": 16.096
+    },
+    "0.4": {
+      "episodes": 18,
+      "waveform_med": 0.9965898760996985,
+      "waveform_low": 0.7365668396965677,
+      "worst": 0.4325841869187856,
+      "accepted_96": 6,
+      "accepted_98": 4,
+      "overlap_seconds": 16.096
+    }
+  }
+}

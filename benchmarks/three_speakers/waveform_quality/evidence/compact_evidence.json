@@ -1,0 +1,227 @@
+{
+  "session": "R8008_M8014",
+  "source_speakers": [
+    "N_SPK8051",
+    "N_SPK8052",
+    "N_SPK8053"
+  ],
+  "room_group_count": 1,
+  "trial_count": 24,
+  "distinct_donors_per_speaker": 24,
+  "source_conditions_db": [
+    0,
+    -6,
+    -12,
+    -20
+  ],
+  "exact_three_s": 32.576,
+  "minimum_trial_exact_three_s": 0.992,
+  "duration_seconds": 1937.0916875,
+  "manifest_sha256": "7ccda36735669876f442c826fa7a1e4ab72bc3eb259d6044cd3e51c5b51eb901",
+  "results": {
+    "unprocessed": {
+      "pooled": {
+        "clips_pass_96": 13,
+        "clips_pass_98": 5,
+        "total_clips": 24,
+        "tracks_pass_96": 56,
+        "tracks_pass_98": 48,
+        "total_tracks": 72,
+        "alignment": {
+          "min": 0.09894865270551424,
+          "p10": 0.8848294600520836,
+          "median": 0.9874882788674142
+        },
+        "quietest_alignment": {
+          "min": 0.09894865270551424,
+          "p10": 0.4861258619103999,
+          "median": 0.9734958601944248
+        }
+      },
+      "-20": {
+        "clips_pass_96": 3,
+        "clips_pass_98": 0,
+        "total_clips": 6,
+        "tracks_pass_96": 14,
+        "tracks_pass_98": 11,
+        "total_tracks": 18,
+        "alignment": {
+          "min": 0.09894865270551424,
+          "p10": 0.8857005200348855,
+          "median": 0.9931548831697742
+        },
+        "quietest_alignment": {
+          "min": 0.09894865270551424,
+          "p10": 0.45988658935035703,
+          "median": 0.9667604458014618
+        }
+      },
+      "-12": {
+        "clips_pass_96": 2,
+        "clips_pass_98": 1,
+        "total_clips": 6,
+        "tracks_pass_96": 12,
+        "tracks_pass_98": 11,
+        "total_tracks": 18,
+        "alignment": {
+          "min": 0.3720706606632186,
+          "p10": 0.6197327743306124,
+          "median": 0.9908420775904249
+        },
+        "quietest_alignment": {
+          "min": 0.3720706606632186,
+          "p10": 0.37899566912922955,
+          "median": 0.7402242360218445
+        }
+      },
+      "-6": {
+        "clips_pass_96": 4,
+        "clips_pass_98": 2,
+        "total_clips": 6,
+        "tracks_pass_96": 15,
+        "tracks_pass_98": 13,
+        "total_tracks": 18,
+        "alignment": {
+          "min": 0.8816433425600412,
+          "p10": 0.9407015418318369,
+          "median": 0.9860146589886669
+        },
+        "quietest_alignment": {
+          "min": 0.8816433425600412,
+          "p10": 0.9269506859189725,
+          "median": 0.982558955479389
+        }
+      },
+      "0": {
+        "clips_pass_96": 4,
+        "clips_pass_98": 2,
+        "total_clips": 6,
+        "tracks_pass_96": 15,
+        "tracks_pass_98": 13,
+        "total_tracks": 18,
+        "alignment": {
+          "min": 0.8224583352676915,
+          "p10": 0.9468288044548256,
+          "median": 0.9858302427433194
+        },
+        "quietest_alignment": {
+          "min": 0.8224583352676915,
+          "p10": 0.8964080471932698,
+          "median": 0.9833344514281936
+        }
+      }
+    },
+    "frozen_v1": {
+      "pooled": {
+        "clips_pass_96": 14,
+        "clips_pass_98": 7,
+        "total_clips": 24,
+        "tracks_pass_96": 57,
+        "tracks_pass_98": 50,
+        "total_tracks": 72,
+        "alignment": {
+          "min": 0.10301010209532804,
+          "p10": 0.8902040883823562,
+          "median": 0.9879706423004364
+        },
+        "quietest_alignment": {
+          "min": 0.10301010209532804,
+          "p10": 0.5055767874165028,
+          "median": 0.978543264348336
+        }
+      },
+      "-20": {
+        "clips_pass_96": 4,
+        "clips_pass_98": 2,
+        "total_clips": 6,
+        "tracks_pass_96": 15,
+        "tracks_pass_98": 13,
+        "total_tracks": 18,
+        "alignment": {
+          "min": 0.10301010209532804,
+          "p10": 0.8907487197398696,
+          "median": 0.9923596564368903
+        },
+        "quietest_alignment": {
+          "min": 0.10301010209532804,
+          "p10": 0.46853856192533766,
+          "median": 0.9745414123873491
+        }
+      },
+      "-12": {
+        "clips_pass_96": 2,
+        "clips_pass_98": 0,
+        "total_clips": 6,
+        "tracks_pass_96": 12,
+        "tracks_pass_98": 10,
+        "total_tracks": 18,
+        "alignment": {
+          "min": 0.371635389243648,
+          "p10": 0.6494844392301077,
+          "median": 0.9916537811405567
+        },
+        "quietest_alignment": {
+          "min": 0.371635389243648,
+          "p10": 0.38464071889997353,
+          "median": 0.7647928327299802
+        }
+      },
+      "-6": {
+        "clips_pass_96": 4,
+        "clips_pass_98": 2,
+        "total_clips": 6,
+        "tracks_pass_96": 15,
+        "tracks_pass_98": 13,
+        "total_tracks": 18,
+        "alignment": {
+          "min": 0.8874444453116235,
+          "p10": 0.9410717002393638,
+          "median": 0.9877217043367224
+        },
+        "quietest_alignment": {
+          "min": 0.8874444453116235,
+          "p10": 0.9324164264974113,
+          "median": 0.9830672645499405
+        }
+      },
+      "0": {
+        "clips_pass_96": 4,
+        "clips_pass_98": 3,
+        "total_clips": 6,
+        "tracks_pass_96": 15,
+        "tracks_pass_98": 14,
+        "total_tracks": 18,
+        "alignment": {
+          "min": 0.8231772664164381,
+          "p10": 0.9484192114041841,
+          "median": 0.985726955645227
+        },
+        "quietest_alignment": {
+          "min": 0.8231772664164381,
+          "p10": 0.8987952947261707,
+          "median": 0.9834810780197354
+        }
+      }
+    }
+  },
+  "hardest_track": {
+    "case": "m8018_10",
+    "speaker": "C",
+    "nominal_gains_db": [
+      0.0,
+      0.0,
+      -20.0
+    ],
+    "fidelity_fraction": 0.0989486527055141,
+    "actual_interference_db_relative_to_target": 9.160380897938097,
+    "required_ideal_interference_attenuation_db": {
+      "96": 22.991309953642066,
+      "98": 26.08214388269475
+    },
+    "source_image_leakage_into_mic_db_relative_to_own_mic": {
+      "A": -15.358350041432836,
+      "B": -13.930372724158369,
+      "C": 0.0
+    }
+  }
+}

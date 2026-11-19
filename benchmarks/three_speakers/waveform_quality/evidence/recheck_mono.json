@@ -1,0 +1,74 @@
+{
+  "cases": 4,
+  "complete_audio_s": 11.2,
+  "exact_three_s": 5.82,
+  "new_extractor_enrollment": "independent source WAV per voice, fixed A/B/C",
+  "seconds_per_2_8s_clip": [
+    15.137481266006944,
+    15.219388151002931,
+    14.970818702000543,
+    14.39382382799522
+  ],
+  "max_resident_mib": 657.6796875,
+  "native_gate_acceptance": 0,
+  "lowband_gate_acceptance": 0,
+  "native": {
+    "guarded_previous": {
+      "median_alignment_pct": 90.30629377782343,
+      "worst_alignment_pct": 17.25845346955871,
+      "pass_96_tracks": 1,
+      "pass_98_tracks": 0,
+      "pass_96_clips": 0,
+      "pass_98_clips": 0
+    },
+    "enrolled_direct": {
+      "median_alignment_pct": 30.188683008923977,
+      "worst_alignment_pct": 4.728694952323594,
+      "pass_96_tracks": 0,
+      "pass_98_tracks": 0,
+      "pass_96_clips": 0,
+      "pass_98_clips": 0
+    },
+    "enrolled_with_gate": {
+      "median_alignment_pct": 90.30629377782343,
+      "worst_alignment_pct": 17.25845346955871,
+      "pass_96_tracks": 1,
+      "pass_98_tracks": 0,
+      "pass_96_clips": 0,
+      "pass_98_clips": 0
+    }
+  },
+  "lowband": {
+    "guarded_previous": {
+      "median_alignment_pct": 91.04695596430918,
+      "worst_alignment_pct": 17.767245934864057,
+      "pass_96_tracks": 3,
+      "pass_98_tracks": 0,
+      "pass_96_clips": 0,
+      "pass_98_clips": 0
+    },
+    "enrolled_direct": {
+      "median_alignment_pct": 30.50286101697918,
+      "worst_alignment_pct": 4.744699942639594,
+      "pass_96_tracks": 0,
+      "pass_98_tracks": 0,
+      "pass_96_clips": 0,
+      "pass_98_clips": 0
+    },
+    "enrolled_with_gate": {
+      "median_alignment_pct": 91.04695596430918,
+      "worst_alignment_pct": 17.767245934864057,
+      "pass_96_tracks": 3,
+      "pass_98_tracks": 0,
+      "pass_96_clips": 0,
+      "pass_98_clips": 0
+    }
+  },
+  "native_band_addition": {
+    "median_change_pp": -0.1556260810540111,
+    "maximum_change_pp": 0.3164947835009646,
+    "minimum_change_pp": -1.4594237854731573,
+    "fallback_cases": 0,
+    "changed_improved_96_clips": 0
+  }
+}
