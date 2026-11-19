@@ -161,10 +161,9 @@ def write_continuous_beams(source, weights, frame_count, temp, overlap_mask=None
         for start in range(0, frame_count, block_size):
             stop = min(frame_count, start + block_size)
             if overlap_mask is not None:
-                # A likelihood window of three frames needs one neighboring frame
-                # on each side so its result is independent of the FFT block boundary.
-                context_start = max(0, start - 1)
-                context_stop = min(frame_count, stop + 1)
+                halo = getattr(overlap_mask, "context_frames", 1)
+                context_start = max(0, start - halo)
+                context_stop = min(frame_count, stop + halo)
                 context = spectra(source, context_start, context_stop)
                 x = context[start - context_start : stop - context_start]
             else:
@@ -238,8 +237,8 @@ def separate(args):
     ):
         if f.samplerate != 16000 or f.channels < 2 or len(f) == 0:
             raise ValueError("Expected nonempty synchronized multichannel 16 kHz audio")
-        if profile == "overlap-mask" and f.channels != 8:
-            raise ValueError("The overlap-mask profile expects eight synchronized microphone channels")
+        if profile in {"overlap-mask", "adaptive-covariance"} and f.channels != 8:
+            raise ValueError("The overlap-only profiles expect eight synchronized microphone channels")
         size = len(f)
         names, activity = masks(segments, size / 16000)
         if len(names) != 3:
@@ -248,7 +247,11 @@ def separate(args):
             raise ValueError("Invalid speaker ID")
         cov = covariances(f, activity)
         weights = filters(cov)
-        overlap = SpatialOverlapMask(cov, activity) if profile == "overlap-mask" else None
+        overlap = SpatialOverlapMask(cov, activity) if profile != "mvdr" else None
+        if profile == "adaptive-covariance":
+            from array_covariance import AdaptiveArrayMask
+
+            overlap = AdaptiveArrayMask(cov, activity, overlap)
         temp = Path(work) / "continuous.wav"
         gain = write_continuous_beams(
             f, weights, activity.shape[1], temp, overlap_mask=overlap
@@ -257,7 +260,7 @@ def separate(args):
     (args.out / "render.json").write_text(
         json.dumps(
             dict(
-                method="spatial_overlap_mask" if profile == "overlap-mask" else "spatial_mvdr",
+                method="spatial_" + profile.replace("-", "_"),
                 speaker_ids=names,
                 sample_count=size,
                 array_channels=weights.shape[-1],
@@ -275,7 +278,7 @@ if __name__ == "__main__":
     p.add_argument("--audio", type=Path, required=True)
     p.add_argument("--timing", type=Path, required=True)
     p.add_argument("--out", type=Path, required=True)
-    p.add_argument("--profile", choices=["mvdr", "overlap-mask"], default="mvdr")
+    p.add_argument("--profile", choices=["mvdr", "overlap-mask", "adaptive-covariance"], default="mvdr")
     p.add_argument(
         "--ungated",
         action="store_true",

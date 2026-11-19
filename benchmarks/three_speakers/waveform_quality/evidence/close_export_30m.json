@@ -1,0 +1,55 @@
+{
+  "samples": 29423682,
+  "sample_rate": 16000,
+  "direct_mic_order": "ABC",
+  "fitting_fraction": 0.45,
+  "profile": {
+    "spectral_transfer_percentile": 0.55,
+    "exponent": 0.9,
+    "lower_gain": 0.55,
+    "time_smoothing": 5,
+    "cross_share": 1.0
+  },
+  "calibration": [
+    {
+      "source": "A",
+      "selected_dominant": 2800,
+      "paths": {
+        "B": {
+          "0.55": -20.99
+        },
+        "C": {
+          "0.55": -33.03
+        }
+      }
+    },
+    {
+      "source": "B",
+      "selected_dominant": 2800,
+      "paths": {
+        "A": {
+          "0.55": -35.82
+        },
+        "C": {
+          "0.55": -37.48
+        }
+      }
+    },
+    {
+      "source": "C",
+      "selected_dominant": 2194,
+      "paths": {
+        "A": {
+          "0.55": -27.95
+        },
+        "B": {
+          "0.55": -19.0
+        }
+      }
+    }
+  ],
+  "speech_detection_s": 20.315491108005517,
+  "calibration_s": 1.459697001002496,
+  "render_s": 15.929355075000785,
+  "processing_s": 37.70454339501157
+}

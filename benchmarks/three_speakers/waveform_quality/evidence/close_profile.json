@@ -1,0 +1,7 @@
+{
+  "spectral_transfer_percentile": 0.55,
+  "exponent": 0.9,
+  "lower_gain": 0.55,
+  "time_smoothing": 5,
+  "cross_share": 1.0
+}

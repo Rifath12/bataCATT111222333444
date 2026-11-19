@@ -1,0 +1,47 @@
+# Three-speaker Mandarin waveform quality
+
+This evaluation measures how well the separated audio tracks preserve their intended speaker during three-way overlap. It uses the reference waveform for the same microphone image and clock. It assigns each track a fixed A/B/C label. It never relabels a poor result locally.
+
+A track's target alignment is the fraction of centered output energy explained by the sample-aligned target waveform. The 96% and 98% targets correspond to absolute SI-SDR thresholds of +13.80 and +16.90 dB. A trial passes only if all three tracks reach the threshold and retain at least 96% of the eligible target speech time above the minimum projected level. The level guard is −12 dB in 100 ms blocks. A muted or swapped output cannot pass. These measurements describe waveform alignment and retained speech, independently of transcription accuracy. [Scoring details](SCORING.md) · [SI-SDR reference](https://research.google/pubs/sdr-half-baked-or-well-done/)
+
+## Benchmarks
+
+| Audio setup | Previous → reviewed result | All A/B/C at ≥96% | All A/B/C at ≥98% |
+| --- | --- | ---: | ---: |
+| One mixed track, guarded RecorrNet | 86.72% median target alignment on three prior controls. No candidate replaced it. | 0/3 controls | 0/3 controls |
+| Eight synchronized array channels | Median target alignment 38.98% → 42.12%. Median competing-voice energy 30.91% → 22.95%. | 0/6 controls | 0/6 controls |
+| One synchronized close mic per speaker | All three tracks at ≥96% increased from 19 to 22 cases and at ≥98% from 15 to 17. | **22/36 controls** | **17/36 controls** |
+
+The setup rows use separate control panels. They characterize each route and cannot be used as a paired hardware comparison. The close-mic controls remix independently selected real solo captures from two AliMeeting meetings into labeled overlap. The 36 controls contain 23.744 seconds of counted exact-three activity, including variants at different voice levels on the same material. The worst close-mic track improved from 47.99% to 48.31%. The median for the quietest voice per clip went from 97.95% to 98.77%. These medians leave significant failure cases. Sustained natural three-way overlap at 96–98% remains unverified.
+
+The array's median other waveform error increased from 27.61% to 34.15%, and 5 of 18 tracks lost some target alignment. This keeps the array candidate optional. On the full 30:20 M8017 array file, it exported three aligned tracks in 76.28 seconds on one CPU thread, given existing speaker timing. The recording confirms runtime and alignment. The controlled trials supply the waveform quality scores.
+
+The mono reverse-pass and enrollment-based spectral alternatives did not surpass the current guard. Cross-stem subtraction had a negligible or negative median change on independent rooms. As a diagnostic, even an oracle 0–1 real-valued spectral mask supplied with the references gave a median of 89.87% on the three earlier clips and had zero of nine outputs above 96%. This result is specific to the tested mask family. The three guarded mono results include one whole-clip evaluation-only label assignment per case, as documented in the scoring evidence.
+
+[Close-mic scores](evidence/close_scores.json) · [Array benchmark](evidence/array.md) · [Mono trials](evidence/mono.md)
+
+## Run the waveform-only close-mic cleanup
+
+Put the three 16 kHz mono WAVs in physical speaker order A/B/C. They need a shared start and sample clock. The profile estimates frequency-dependent leakage from confident solo speech in the first part of the recording. It only attenuates components supported by the measured bleed profile, with a minimum gain that protects quiet target speech. It writes `speaker_A.wav`, `speaker_B.wav`, and `speaker_C.wav` on the same sample clock. The complete 30:39 M8016 export took 37.70 seconds on CPU, including speech detection, calibration, and WAV rendering. The full recording verifies export and alignment. It has no isolated simultaneous references for scoring. Save the raw three captures for comparison. [Full-length runtime and sample count](evidence/close_export_30m.json)
+
+From the repository root:
+
+```bash
+PYTHONPATH=benchmarks/three_speakers \
+python benchmarks/three_speakers/advanced_separation/close_waveform.py \
+  close_A.wav close_B.wav close_C.wav \
+  --vad /models/silero_vad.onnx --out cleaned
+```
+
+For the eight-channel recording route, the normal offline CLI accepts `--array-profile adaptive-covariance`. The existing default and `--array-overlap-mask` shortcut still run the prior profiles. To export only the three WAVs with existing timing, call the [array renderer](evidence/array.md) directly.
+
+## Check your microphone setup
+
+Record three separate solo takes, with everyone quiet except A, then B, then C. Each take is a **three-channel file** containing all three synchronized close microphones in A/B/C order. Keep hardware gains and positioning fixed. Use a few seconds of speech in each take. The tool digitally combines the captured contributions at equal levels and with each speaker in turn quieter by 6, 12, and 20 dB. It reports the measured bleed matrix and the target alignment and held speech in each output. It uses the direct mic of each solo take as that take's reference, including any device coloration, and requires distinct speech and a common active interval.
+
+```bash
+python benchmarks/three_speakers/waveform_quality/calibrate_wiring.py \
+  solo_A.wav solo_B.wav solo_C.wav --out waveform_calibration.json
+```
+
+This bench checks the recording setup under the acoustic source positions used for the takes. The included M8016 and M8017 setup checks passed 98% on all three tracks in the balanced trial. Once a voice was made 20 dB quieter, the worst track in each room fell below 71%. All three people speaking naturally can differ from the remix. [Setup check data](evidence/solo_setup_check.json) · [AliMeeting corpus and license](https://www.openslr.org/119/)

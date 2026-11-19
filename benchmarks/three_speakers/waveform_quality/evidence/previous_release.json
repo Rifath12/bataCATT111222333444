@@ -1,0 +1,160 @@
+{
+  "threshold_si_sdr_db": {
+    "96": 13.802112417116057,
+    "98": 16.90196080028513
+  },
+  "families": {
+    "mono": {
+      "mixture": {
+        "clips": 3,
+        "episode_groups": 3,
+        "voices": 9,
+        "overlap_seconds": 5.48,
+        "target_percent_median": 29.9636,
+        "target_percent_worst": 5.9839,
+        "target_percent_quietest_median": 7.7975,
+        "median_si_sdr_db": -3.6873,
+        "median_si_sdri_db": 0.0,
+        "min_retained_active_pct": 82.9268,
+        "passes_96": [
+          0,
+          0
+        ],
+        "passes_98": [
+          0,
+          0
+        ],
+        "window_time_share_passing_all": {
+          "96": 0.0,
+          "98": 0.0
+        }
+      },
+      "released": {
+        "clips": 3,
+        "episode_groups": 3,
+        "voices": 9,
+        "overlap_seconds": 5.48,
+        "target_percent_median": 39.412,
+        "target_percent_worst": 1.8621,
+        "target_percent_quietest_median": 17.7676,
+        "median_si_sdr_db": -1.8676,
+        "median_si_sdri_db": -1.1896,
+        "min_retained_active_pct": 26.8041,
+        "passes_96": [
+          0,
+          0
+        ],
+        "passes_98": [
+          0,
+          0
+        ],
+        "window_time_share_passing_all": {
+          "96": 0.0,
+          "98": 0.0
+        }
+      },
+      "guarded": {
+        "clips": 3,
+        "episode_groups": 3,
+        "voices": 9,
+        "overlap_seconds": 5.48,
+        "target_percent_median": 86.7249,
+        "target_percent_worst": 17.7676,
+        "target_percent_quietest_median": 63.9578,
+        "median_si_sdr_db": 8.1511,
+        "median_si_sdri_db": 12.9954,
+        "min_retained_active_pct": 26.8041,
+        "passes_96": [
+          3,
+          0
+        ],
+        "passes_98": [
+          0,
+          0
+        ],
+        "window_time_share_passing_all": {
+          "96": 0.0,
+          "98": 0.0
+        }
+      }
+    },
+    "array": {
+      "mixture": {
+        "clips": 6,
+        "episode_groups": 2,
+        "voices": 18,
+        "overlap_seconds": 11.0625,
+        "target_percent_median": 21.2803,
+        "target_percent_worst": 3.6953,
+        "target_percent_quietest_median": 5.8882,
+        "median_si_sdr_db": -5.6907,
+        "median_si_sdri_db": 0.0,
+        "min_retained_active_pct": 94.5763,
+        "passes_96": [
+          0,
+          0
+        ],
+        "passes_98": [
+          0,
+          0
+        ],
+        "window_time_share_passing_all": {
+          "96": 0.0,
+          "98": 0.0
+        }
+      },
+      "mvdr": {
+        "clips": 6,
+        "episode_groups": 2,
+        "voices": 18,
+        "overlap_seconds": 11.0625,
+        "target_percent_median": 20.363,
+        "target_percent_worst": 1.9868,
+        "target_percent_quietest_median": 7.5664,
+        "median_si_sdr_db": -5.9231,
+        "median_si_sdri_db": -1.7781,
+        "min_retained_active_pct": 63.3898,
+        "passes_96": [
+          0,
+          0
+        ],
+        "passes_98": [
+          0,
+          0
+        ],
+        "window_time_share_passing_all": {
+          "96": 0.0,
+          "98": 0.0
+        }
+      },
+      "reviewed_overlap_mask": {
+        "clips": 6,
+        "episode_groups": 2,
+        "voices": 18,
+        "overlap_seconds": 11.0625,
+        "target_percent_median": 38.9847,
+        "target_percent_worst": 4.9844,
+        "target_percent_quietest_median": 15.6532,
+        "median_si_sdr_db": -1.9485,
+        "median_si_sdri_db": 2.2429,
+        "min_retained_active_pct": 45.7627,
+        "passes_96": [
+          0,
+          0
+        ],
+        "passes_98": [
+          0,
+          0
+        ],
+        "window_time_share_passing_all": {
+          "96": 0.0,
+          "98": 0.0
+        }
+      }
+    }
+  },
+  "counts_order": [
+    "speaker_count",
+    "all_three_clip_count"
+  ]
+}

@@ -80,8 +80,14 @@ def main():
         "--array-context", action="store_true",
         help="Decode contextual speech from the synchronized microphone array beams",
     )
-    parser.add_argument(
-        "--array-overlap-mask", action="store_true",
+    profile_options = parser.add_mutually_exclusive_group()
+    profile_options.add_argument(
+        "--array-profile", choices=("mvdr", "overlap-mask", "adaptive-covariance"),
+        default="mvdr",
+        help="Spatial waveform profile for array recordings",
+    )
+    profile_options.add_argument(
+        "--array-overlap-mask", dest="array_profile", action="store_const", const="overlap-mask",
         help="Use the optional spatial overlap mask on eight physical microphones",
     )
     parser.add_argument(
@@ -139,8 +145,8 @@ def main():
         parser.error("--quality-paraformer needs model.int8.onnx and tokens.txt")
     if args.array_context and info.channels < 2:
         parser.error("--array-context requires synchronized multichannel audio")
-    if args.array_overlap_mask and info.channels != 8:
-        parser.error("--array-overlap-mask requires eight synchronized physical channels")
+    if args.array_profile != "mvdr" and info.channels != 8:
+        parser.error("The selected array waveform profile requires eight synchronized physical channels")
     if info.channels > 1 and args.mask_for_asr:
         parser.error("--mask-for-asr applies only to mono input")
     if info.channels == 1 and not args.models:
@@ -245,8 +251,8 @@ def main():
             spatial_options = ["--audio", args.audio, "--timing", timing, "--out", product]
             if args.array_context:
                 spatial_options.append("--ungated")
-            if args.array_overlap_mask:
-                spatial_options.extend(["--profile", "overlap-mask"])
+            if args.array_profile != "mvdr":
+                spatial_options.extend(["--profile", args.array_profile])
             run(HERE / "spatial_render.py", spatial_options, env)
         decode_audio = product
         if info.channels == 1 and args.mask_for_asr is not False:

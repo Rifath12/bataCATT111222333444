@@ -1,0 +1,635 @@
+{
+  "training": "Screened on eight controlled M8013 mixtures. Fixed variant before the six M8016/M8017 controls.",
+  "selection_profile": {
+    "lifetime_floor": 0.02,
+    "updates": 8,
+    "prior_blend": 0.025,
+    "output_blend": 1.0,
+    "steering_strength": 0.0,
+    "smooth": 3
+  },
+  "development_median": {
+    "released": {
+      "si_sdr_db": -3.95663378087888,
+      "si_sdri_db": 0.41884902714388117,
+      "sir_db": -1.9407642725634857,
+      "target_energy_fraction": 0.28688733915593045,
+      "target_gain": 0.43384989529538953,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.731147325518236,
+      "quietest_gain": 0.3638449214792293
+    },
+    "static": {
+      "si_sdr_db": -5.549613634823466,
+      "si_sdri_db": -0.27445773057718537,
+      "sir_db": -4.884346259338514,
+      "target_energy_fraction": 0.2185200432103953,
+      "target_gain": 0.32368181700085813,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -10.341302049810318,
+      "quietest_gain": 0.3196911029276047
+    },
+    "static_blend": {
+      "si_sdr_db": -4.241092373889156,
+      "si_sdri_db": 0.6517006938050987,
+      "sir_db": -3.552474070775422,
+      "target_energy_fraction": 0.2738339324909569,
+      "target_gain": 0.36375525013400506,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.508206848012389,
+      "quietest_gain": 0.3307220037101477
+    },
+    "nn_spatial": {
+      "si_sdr_db": -4.447188713226813,
+      "si_sdri_db": 0.17138895284464173,
+      "sir_db": -2.0435095681505824,
+      "target_energy_fraction": 0.26502495036384793,
+      "target_gain": 0.4114397232458348,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.531055074962126,
+      "quietest_gain": 0.3603469398414136
+    },
+    "ml": {
+      "si_sdr_db": -4.146611306886982,
+      "si_sdri_db": 0.3469241328456407,
+      "sir_db": -1.5370083510759365,
+      "target_energy_fraction": 0.27848831801484875,
+      "target_gain": 0.41110704017802757,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.32884815939617,
+      "quietest_gain": 0.37906644578183124
+    },
+    "ml_blend": {
+      "si_sdr_db": -3.8666982722307917,
+      "si_sdri_db": 0.600916023778514,
+      "sir_db": -1.745493472197043,
+      "target_energy_fraction": 0.2913140617422446,
+      "target_gain": 0.42831418401644283,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.258650418028665,
+      "quietest_gain": 0.37568168212998687
+    },
+    "ml_strong": {
+      "si_sdr_db": -3.772471364907276,
+      "si_sdri_db": 0.76881298336765,
+      "sir_db": -1.085399292108554,
+      "target_energy_fraction": 0.2960178472696997,
+      "target_gain": 0.4197013358881758,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.406571072887026,
+      "quietest_gain": 0.39191711931321127
+    },
+    "ml_rank": {
+      "si_sdr_db": -5.48875144643506,
+      "si_sdri_db": -0.6348429837472023,
+      "sir_db": -1.1796036339029208,
+      "target_energy_fraction": 0.22074401990917636,
+      "target_gain": 0.43787092866386884,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.931059435716312,
+      "quietest_gain": 0.41977170406652353
+    },
+    "ml_floor": {
+      "si_sdr_db": -3.933316151080543,
+      "si_sdri_db": 0.45378616494928226,
+      "sir_db": -1.17303408047313,
+      "target_energy_fraction": 0.28848292678451426,
+      "target_gain": 0.415712068647205,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.294425383208388,
+      "quietest_gain": 0.38461826233163887
+    },
+    "ml_sharp": {
+      "si_sdr_db": -5.040576709603866,
+      "si_sdri_db": -0.3189315843634466,
+      "sir_db": -1.055682283001318,
+      "target_energy_fraction": 0.23910699748315836,
+      "target_gain": 0.4271035082655771,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.713857088721618,
+      "quietest_gain": 0.41406155908885034
+    },
+    "lcmv1": {
+      "si_sdr_db": -6.7173554616402935,
+      "si_sdri_db": -1.933458146138551,
+      "sir_db": -3.9748458093746404,
+      "target_energy_fraction": 0.17556608096185963,
+      "target_gain": 0.6260310497407452,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -11.296459569820668,
+      "quietest_gain": 0.6361748384943879
+    },
+    "lcmv2": {
+      "si_sdr_db": -6.295391377082526,
+      "si_sdri_db": -0.9295569529231607,
+      "sir_db": -4.739217753464182,
+      "target_energy_fraction": 0.19009858391828366,
+      "target_gain": 0.7506846033381458,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -10.990344988683429,
+      "quietest_gain": 0.7753570829931635
+    },
+    "lcmv2_blend": {
+      "si_sdr_db": -4.911597038675506,
+      "si_sdri_db": 0.22186049856257117,
+      "sir_db": -3.886556895426178,
+      "target_energy_fraction": 0.24411471800320267,
+      "target_gain": 0.5588027193532923,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.946925092103363,
+      "quietest_gain": 0.5223554752852066
+    },
+    "lcmv3": {
+      "si_sdr_db": -5.491368055124193,
+      "si_sdri_db": -0.0629497100088916,
+      "sir_db": -5.106102083274763,
+      "target_energy_fraction": 0.22022825751045627,
+      "target_gain": 0.9324824938260328,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -11.161713175440019,
+      "quietest_gain": 0.9354440122447836
+    },
+    "iva": {
+      "si_sdr_db": -7.059552612952565,
+      "si_sdri_db": -2.5259686584754304,
+      "sir_db": -0.9723157944344062,
+      "target_energy_fraction": 0.16462760257531972,
+      "target_gain": 0.4002520414561309,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -12.239521919335981,
+      "quietest_gain": 0.4002520414561309
+    },
+    "iva_sharp": {
+      "si_sdr_db": -7.124161614412321,
+      "si_sdri_db": -2.494508433608225,
+      "sir_db": -1.4004261532478832,
+      "target_energy_fraction": 0.16244447547150895,
+      "target_gain": 0.3926822374180352,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -12.31231319552439,
+      "quietest_gain": 0.3941770422129541
+    },
+    "iva_soft": {
+      "si_sdr_db": -4.2674936567009905,
+      "si_sdri_db": 0.1638215013085258,
+      "sir_db": -2.4124790951594086,
+      "target_energy_fraction": 0.27318461550315964,
+      "target_gain": 0.3961745801179679,
+      "above_96_percent": 0,
+      "above_98_percent": 0,
+      "speakers": 24,
+      "quietest_si_sdr_db": -9.824919858241477,
+      "quietest_gain": 0.35954824093720916
+    }
+  },
+  "held_recordings": {
+    "released": {
+      "exact_three_s": 11.0625,
+      "scored_voice_rows": 18,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.04984401685336712,
+          "p10": 0.12348358261171864,
+          "median": 0.38984703882520627,
+          "p90": 0.7628326485844125,
+          "max": 0.8029210495082441
+        },
+        "competing_voice_fraction": {
+          "min": 0.038792559731060924,
+          "p10": 0.0747071249573058,
+          "median": 0.3090751777573441,
+          "p90": 0.6049645266083195,
+          "max": 0.6369121377519823
+        },
+        "other_error_fraction": {
+          "min": 0.12125802482208897,
+          "p10": 0.15858851280417513,
+          "median": 0.27610184720110004,
+          "p90": 0.3843931279072989,
+          "max": 0.4294093661441582
+        },
+        "si_sdr_db": {
+          "min": -12.801818732642731,
+          "p10": -8.615909213923343,
+          "median": -1.9485051900812191,
+          "p90": 5.08123577340658,
+          "max": 6.100326027467771
+        },
+        "si_sdri_db": {
+          "min": -2.530509081938277,
+          "p10": -0.24284761133356583,
+          "median": 2.24294495838271,
+          "p90": 5.657989618931873,
+          "max": 7.028228455513027
+        },
+        "target_gain_db": {
+          "min": -11.436415505553112,
+          "p10": -8.048060572761752,
+          "median": -6.30265397188049,
+          "p90": -3.775746329575283,
+          "max": -2.7951036379145533
+        },
+        "retained_active_fraction": {
+          "min": 0.4576271186440678,
+          "p10": 0.6986440677966101,
+          "median": 0.8983050847457628,
+          "p90": 1.0,
+          "max": 1.0
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.04984401685336712,
+          "p10": 0.0673616236947234,
+          "median": 0.15653234061795973,
+          "p90": 0.19710901244956325,
+          "max": 0.20434567581036764
+        },
+        "competing_voice_fraction": {
+          "min": 0.3662449580454742,
+          "p10": 0.3812424936191859,
+          "median": 0.4801712535514041,
+          "p90": 0.6163471936629444,
+          "max": 0.6369121377519823
+        },
+        "other_error_fraction": {
+          "min": 0.2782086317119401,
+          "p10": 0.31629118264233247,
+          "median": 0.3632964058306368,
+          "p90": 0.4216484939312503,
+          "max": 0.4294093661441582
+        },
+        "si_sdr_db": {
+          "min": -12.801818732642731,
+          "p10": -11.56429425779838,
+          "median": -7.338086601383625,
+          "p90": -6.102253537546906,
+          "max": -5.9035897543271485
+        },
+        "si_sdri_db": {
+          "min": -0.1319420978313648,
+          "p10": 0.3159140665911231,
+          "median": 3.909943468470844,
+          "p90": 5.696860303221317,
+          "max": 5.8481653757720355
+        },
+        "target_gain_db": {
+          "min": -11.436415505553112,
+          "p10": -9.775533538010638,
+          "median": -7.844127845742162,
+          "p90": -6.053276038416693,
+          "max": -5.314916644398849
+        },
+        "retained_active_fraction": {
+          "min": 0.4576271186440678,
+          "p10": 0.5271186440677966,
+          "median": 0.7423728813559322,
+          "p90": 0.952542372881356,
+          "max": 1.0
+        }
+      },
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 18,
+          "cases_passed": 0,
+          "cases_eligible": 6,
+          "groups_passed": 0,
+          "groups_eligible": 2,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 18,
+          "cases_passed": 0,
+          "cases_eligible": 6,
+          "groups_passed": 0,
+          "groups_eligible": 2,
+          "independent_group_interval_95": null
+        }
+      },
+      "exact_three_windows": 48,
+      "exact_three_scored_window_seconds": 10.9125,
+      "exact_three_scored_window_fraction_meeting_all_targets": {
+        "96": 0.0,
+        "98": 0.0
+      },
+      "by_meeting": {
+        "8016": {
+          "target_aligned_fraction": 0.37083779969243263,
+          "competing_voice_fraction": 0.3329612496463435,
+          "other_error_fraction": 0.2782086317119401,
+          "si_sdr_db": -2.295786269854739,
+          "si_sdri_db": 0.763770231013611,
+          "target_gain_db": -6.906163739749132,
+          "retained_active_fraction": 0.8542372881355932
+        },
+        "8017": {
+          "target_aligned_fraction": 0.5548412109236349,
+          "competing_voice_fraction": 0.17116372638610575,
+          "other_error_fraction": 0.27399506269025997,
+          "si_sdr_db": 0.956537585227823,
+          "si_sdri_db": 3.9866892146463284,
+          "target_gain_db": -5.266607735037075,
+          "retained_active_fraction": 0.9050847457627119
+        }
+      }
+    },
+    "covariance_adaptive": {
+      "exact_three_s": 11.0625,
+      "scored_voice_rows": 18,
+      "score_by_voice": {
+        "target_aligned_fraction": {
+          "min": 0.061275598466252086,
+          "p10": 0.13478252272171434,
+          "median": 0.4212439978397421,
+          "p90": 0.7475486233670763,
+          "max": 0.8280115124871659
+        },
+        "competing_voice_fraction": {
+          "min": 0.03871603542753234,
+          "p10": 0.0473045828383706,
+          "median": 0.22952937672590445,
+          "p90": 0.4531844376366268,
+          "max": 0.5035265053228133
+        },
+        "other_error_fraction": {
+          "min": 0.13028166622855214,
+          "p10": 0.18579368551665437,
+          "median": 0.3414914088927198,
+          "p90": 0.44867394569298963,
+          "max": 0.505081833507167
+        },
+        "si_sdr_db": {
+          "min": -11.852505456064753,
+          "p10": -8.156317550008831,
+          "median": -1.3838211942173884,
+          "p90": 4.757958081650843,
+          "max": 6.825369978864247
+        },
+        "si_sdri_db": {
+          "min": -3.1459674117511933,
+          "p10": -0.34719374906043665,
+          "median": 2.5634606795429145,
+          "p90": 6.2548116629185495,
+          "max": 7.204219628532143
+        },
+        "target_gain_db": {
+          "min": -10.488674185963804,
+          "p10": -7.626077877011173,
+          "median": -5.917498748993422,
+          "p90": -3.634681577893073,
+          "max": -2.206114980692679
+        },
+        "retained_active_fraction": {
+          "min": 0.6508474576271186,
+          "p10": 0.792542372881356,
+          "median": 0.9457627118644067,
+          "p90": 1.0,
+          "max": 1.0
+        }
+      },
+      "score_by_quietest_voice": {
+        "target_aligned_fraction": {
+          "min": 0.061275598466252086,
+          "p10": 0.07919499977803535,
+          "median": 0.1840818654061931,
+          "p90": 0.24989408761270038,
+          "max": 0.25310950117039055
+        },
+        "competing_voice_fraction": {
+          "min": 0.24180866532244358,
+          "p10": 0.29763801067357176,
+          "median": 0.39847935102083193,
+          "p90": 0.4590738658204445,
+          "max": 0.4737974362799889
+        },
+        "other_error_fraction": {
+          "min": 0.3998539699202885,
+          "p10": 0.4051620783063352,
+          "median": 0.42674777154188204,
+          "p90": 0.49972796984000717,
+          "max": 0.505081833507167
+        },
+        "si_sdr_db": {
+          "min": -11.852505456064753,
+          "p10": -10.767998177329037,
+          "median": -6.46715799403383,
+          "p90": -4.773985718565195,
+          "max": -4.699484869097735
+        },
+        "si_sdri_db": {
+          "min": 0.8173711787466136,
+          "p10": 1.4458261459233577,
+          "median": 5.03229913648566,
+          "p90": 6.440085062675115,
+          "max": 6.90326856206653
+        },
+        "target_gain_db": {
+          "min": -10.488674185963804,
+          "p10": -8.981916773272602,
+          "median": -7.132493315139067,
+          "p90": -5.0025259592066895,
+          "max": -4.639660437459367
+        },
+        "retained_active_fraction": {
+          "min": 0.6508474576271186,
+          "p10": 0.6694915254237288,
+          "median": 0.8711864406779661,
+          "p90": 0.9728813559322034,
+          "max": 1.0
+        }
+      },
+      "passes_at_fidelity_target_pct": {
+        "96": {
+          "voices_passed": 0,
+          "voices_eligible": 18,
+          "cases_passed": 0,
+          "cases_eligible": 6,
+          "groups_passed": 0,
+          "groups_eligible": 2,
+          "independent_group_interval_95": null
+        },
+        "98": {
+          "voices_passed": 0,
+          "voices_eligible": 18,
+          "cases_passed": 0,
+          "cases_eligible": 6,
+          "groups_passed": 0,
+          "groups_eligible": 2,
+          "independent_group_interval_95": null
+        }
+      },
+      "exact_three_windows": 48,
+      "exact_three_scored_window_seconds": 10.9125,
+      "exact_three_scored_window_fraction_meeting_all_targets": {
+        "96": 0.0,
+        "98": 0.0
+      },
+      "by_meeting": {
+        "8016": {
+          "target_aligned_fraction": 0.39425967859623634,
+          "competing_voice_fraction": 0.2683049948744154,
+          "other_error_fraction": 0.33743532652935054,
+          "si_sdr_db": -1.865041201184342,
+          "si_sdri_db": 0.8173711787466136,
+          "target_gain_db": -6.077745506222322,
+          "retained_active_fraction": 0.9457627118644067
+        },
+        "8017": {
+          "target_aligned_fraction": 0.5648266429102351,
+          "competing_voice_fraction": 0.19736769130934914,
+          "other_error_fraction": 0.3501560489558724,
+          "si_sdr_db": 1.1325287582469385,
+          "si_sdri_db": 5.5881216663152555,
+          "target_gain_db": -5.365391480954012,
+          "retained_active_fraction": 0.9050847457627119
+        }
+      }
+    }
+  },
+  "paired_target_fraction": {
+    "improved": 13,
+    "worsened": 5,
+    "minimum_delta": -0.030493711023931724,
+    "maximum_delta": 0.06323715208163169
+  },
+  "held_controls_runtime_seconds": {
+    "array_8016_1": 3.598940306008444,
+    "array_8016_2": 3.2223524100118084,
+    "array_8016_3": 3.0809225690027233,
+    "array_8017_1": 3.527136471995618,
+    "array_8017_2": 3.4718131130066467,
+    "array_8017_3": 3.4806677569868043
+  },
+  "steering_diagnostic": {
+    "8013": {
+      "0-500_Hz": {
+        "median_enrolled_steering_condition": 21.018075942993164,
+        "power_fraction_of_all_solo_refs": 0.5868632197380066,
+        "own_steering_nearest_weighted_fraction": 0.6164596080780029,
+        "own_steering_weighted_mean_similarity": 0.9600492715835571,
+        "leading_eigenspace_weighted_mean_share": 0.8124812245368958
+      },
+      "500-2000_Hz": {
+        "median_enrolled_steering_condition": 7.39937162399292,
+        "power_fraction_of_all_solo_refs": 0.3863718509674072,
+        "own_steering_nearest_weighted_fraction": 0.6227988600730896,
+        "own_steering_weighted_mean_similarity": 0.9022837281227112,
+        "leading_eigenspace_weighted_mean_share": 0.7269492745399475
+      },
+      "2000-8001_Hz": {
+        "median_enrolled_steering_condition": 2.5476949214935303,
+        "power_fraction_of_all_solo_refs": 0.02676503360271454,
+        "own_steering_nearest_weighted_fraction": 0.5112394094467163,
+        "own_steering_weighted_mean_similarity": 0.6597174406051636,
+        "leading_eigenspace_weighted_mean_share": 0.5805932879447937
+      }
+    },
+    "8016": {
+      "0-500_Hz": {
+        "median_enrolled_steering_condition": 15.199760437011719,
+        "power_fraction_of_all_solo_refs": 0.43313106894493103,
+        "own_steering_nearest_weighted_fraction": 0.7029503583908081,
+        "own_steering_weighted_mean_similarity": 0.9614419341087341,
+        "leading_eigenspace_weighted_mean_share": 0.8207167387008667
+      },
+      "500-2000_Hz": {
+        "median_enrolled_steering_condition": 7.9564924240112305,
+        "power_fraction_of_all_solo_refs": 0.53290855884552,
+        "own_steering_nearest_weighted_fraction": 0.4757194221019745,
+        "own_steering_weighted_mean_similarity": 0.8624809980392456,
+        "leading_eigenspace_weighted_mean_share": 0.7001887559890747
+      },
+      "2000-8001_Hz": {
+        "median_enrolled_steering_condition": 2.0881152153015137,
+        "power_fraction_of_all_solo_refs": 0.033960409462451935,
+        "own_steering_nearest_weighted_fraction": 0.4729243814945221,
+        "own_steering_weighted_mean_similarity": 0.6417736411094666,
+        "leading_eigenspace_weighted_mean_share": 0.5801387429237366
+      }
+    },
+    "8017": {
+      "0-500_Hz": {
+        "median_enrolled_steering_condition": 12.452701568603516,
+        "power_fraction_of_all_solo_refs": 0.4357171654701233,
+        "own_steering_nearest_weighted_fraction": 0.913640558719635,
+        "own_steering_weighted_mean_similarity": 0.9786454439163208,
+        "leading_eigenspace_weighted_mean_share": 0.7990676164627075
+      },
+      "500-2000_Hz": {
+        "median_enrolled_steering_condition": 6.738137245178223,
+        "power_fraction_of_all_solo_refs": 0.5356835126876831,
+        "own_steering_nearest_weighted_fraction": 0.8346443176269531,
+        "own_steering_weighted_mean_similarity": 0.9459540247917175,
+        "leading_eigenspace_weighted_mean_share": 0.7296204566955566
+      },
+      "2000-8001_Hz": {
+        "median_enrolled_steering_condition": 2.5142359733581543,
+        "power_fraction_of_all_solo_refs": 0.028599480167031288,
+        "own_steering_nearest_weighted_fraction": 0.7551959753036499,
+        "own_steering_weighted_mean_similarity": 0.793390691280365,
+        "leading_eigenspace_weighted_mean_share": 0.5994325876235962
+      }
+    }
+  },
+  "full_m8017_profile": {
+    "method": "spatial_adaptive_covariance",
+    "speaker_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "sample_count": 29120832,
+    "array_channels": 8,
+    "gain": 1.0,
+    "render_wall_s": 76.27939972000604
+  },
+  "full_m8017_previous_profile_global_gain": 1.0,
+  "validated_interior_solo": {
+    "A": {
+      "interior_labeled_solo_samples": 9796160,
+      "changed": 0
+    },
+    "B": {
+      "interior_labeled_solo_samples": 7726240,
+      "changed": 0
+    },
+    "C": {
+      "interior_labeled_solo_samples": 4011200,
+      "changed": 0
+    }
+  }
+}

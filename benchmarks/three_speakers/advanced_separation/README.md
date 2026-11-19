@@ -2,6 +2,8 @@
 
 This audio-only release provides an optional transcript refinement for the original room microphone, a context-aware recognizer for synchronized eight-microphone beams, and a pipeline for three synchronized close microphones. It also includes a guarded single-microphone waveform model for short controlled overlap clips.
 
+[Waveform separation tests and microphone setup calibration](../waveform_quality/README.md)
+
 ## Audited release
 
 | Audio setup | Previous edits | Reviewed edits | Reviewed 1 − cpCER |
