@@ -9,6 +9,8 @@ The four excerpts contain 113.67 seconds of naturally recorded conversation from
 | REAL_T_01 | REAL-T EVAL2 Mandarin, H2 recording, session 260413-2 | 15.66 s | 8.30 s | 4.97 s |
 | REAL_T_03 | Same REAL-T H2 recording, different time interval | 18.01 s | 4.89 s | 4.87 s |
 
+AliMeeting activity uses NTT-CSL’s Mandarin Montreal Forced Aligner labels derived from the manual corpus transcript. Original manual TextGrid turn spans are coarser and may include within-turn pauses. The complete M8014 session has 5.37 s of triple activity by forced alignment and 14.30 s of triple turn-span overlap by the manual boundaries. Both references agree that the fourth M8009 participant is absent throughout the selected excerpt.
+
 AliMeeting selection covered the four three-person test meetings. These contained 5.37, 1.76, 1.30 and 1.13 seconds of annotated triple speech in total. We chose the 60 seconds with the most triple speech in M8014, then added a fourth-speaker-silent 20-second window in another meeting to cover more overlap. Among four initial REAL-T candidates, two supplied nonoverlapping, separately annotated, same-device example audio for all three people. This sample favors overlap and feasible enrollment. It does not estimate prevalence or accuracy in random meetings.
 
 ## Ordinary recording without enrollment
@@ -57,10 +59,16 @@ The scorer verifies 24 distributed sample-aligned probes against the source. It 
 
 The manifest identifies original recordings, microphone, sample offsets, every enrollment range, human reference text, annotation sources, hashes and labeled time intervals. AliMeeting references use normalized manual TextGrid contents. Partial utterances at crop boundaries use timed character midpoints. All seven affected entire utterances exactly matched the corresponding normalized manual text. REAL-T supplies its own per-person transcripts and timings. AliMeeting enrollment uses prior same-device solo speech. REAL-T enrollment can fall later in the original session and represents an independently available voice example for this offline test.
 
-Source recordings and derived transcript/activity labels in the manifest are provided under CC BY-SA 4.0. Attribution is to Fan Yu et al. for AliMeeting/M2MeT, and Shaole Li, Shuai Wang, Jiangyu Han, Ke Zhang, Wupeng Wang and Haizhou Li for their newly recorded REAL-T EVAL2 corpus. The manifest records the pinned audio, annotation, and time-alignment mirrors. Source audio is downloaded on demand.
+AliMeeting and REAL-T state CC BY-SA 4.0 for their source recordings and transcripts. The generated excerpt transcripts adapt those releases. Attribution is to Fan Yu et al. for AliMeeting/M2MeT, and Shaole Li, Shuai Wang, Jiangyu Han, Ke Zhang, Wupeng Wang and Haizhou Li for their newly recorded REAL-T EVAL2 corpus. The manifest records the pinned audio, annotation, and time-alignment mirrors. Source audio is downloaded on demand.
 
 - [AliMeeting, OpenSLR 119](https://openslr.org/119/)
 - [REAL-T dataset card and EVAL2 provenance](https://huggingface.co/datasets/REAL-TSE/REAL-T)
 - [AliMeeting timing annotations](https://github.com/nttcslab-sp/diar-forced-alignment)
 - [MultiTalk character alignments](https://huggingface.co/datasets/MultiTalk/MultiTalkBench)
 - [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+For whole-session Mandarin ASR evaluation, generate the held-out reference with the command below. The result includes the normalized A/B/C text, segment timestamps and a version excluding the one A utterance crossing the cutoff. The partial-utterance version has 6,972 characters, including 3,771 for A, 1,232 for B and 1,969 for C.
+
+```sh
+python full_mandarin_reference.py --cache cache --out full_reference_text.json --start 484.3
+```

@@ -2,19 +2,30 @@
 from argparse import ArgumentParser
 from itertools import permutations
 import json
+import math
 from pathlib import Path
 
 import numpy as np
+import soundfile as sf
 
-from score_natural import read_levels
+from score_natural import full_activity, read_levels
 
 
-def evaluate(input_dir, output_dir):
-    levels, names, duration, gain, probes = read_levels(output_dir,input_dir/'mixture.wav',0)
+def evaluate(input_dir, output_dir, full_case=None, cache=None, exclude_start_fraction=0):
+    if not 0 <= exclude_start_fraction < 1:
+        raise ValueError('Start exclusion fraction must be in [0, 1)')
+    if full_case is None:
+        source = input_dir/'mixture.wav'
+        ticks = np.load(input_dir/'score_activity_ticks.npy',allow_pickle=False)
+    else:
+        if cache is None:
+            raise ValueError('Full-meeting scoring needs a cache for the pinned RTTM')
+        source, ticks = full_activity(full_case,input_dir,cache)
+    first_frame = math.ceil(sf.info(source).duration*10*exclude_start_fraction)
+    levels, names, duration, gain, probes = read_levels(output_dir,source,first_frame)
     mixed = levels[0]
     outputs = levels[1:]
-    ticks = np.load(input_dir/'score_activity_ticks.npy',allow_pickle=False)
-    truth = ticks[:,:10*len(mixed)].reshape(3,len(mixed),10)
+    truth = ticks[:,10*first_frame:10*(first_frame+len(mixed))].reshape(3,len(mixed),10)
     every = truth.all(2)
     stable = (every | (~truth).all(2)).all(0)
     eligible = stable & (mixed/gain >= .00178)
@@ -48,7 +59,7 @@ def evaluate(input_dir, output_dir):
     # Lexicographic enumeration breaks any remaining exact tie deterministically.
     best_order,best_values = max(candidates,key=lambda pair:pair[1])
     best = high[list(best_order)]
-    case = dict(duration_s=duration, labels=names, aligned_waveform_probes=probes,
+    case = dict(duration_s=duration, scored_start_s=first_frame/10, scored_end_s=(first_frame+len(mixed))/10, labels=names, aligned_waveform_probes=probes,
         fixed_global_order_using_scoring_labels=[names[i] for i in best_order],
         eligible_solo_per_physical_speaker=[int((each[1] & row).sum()) for row in every],
         global_permutations_tied_on_primary_solo_hits=sum(v[0]==best_values[0] for _,v in candidates),
@@ -66,8 +77,12 @@ def main():
     parser.add_argument('input_dir',type=Path)
     parser.add_argument('output_dir',type=Path)
     parser.add_argument('report',type=Path)
+    parser.add_argument('--full-case',choices=['M8014'])
+    parser.add_argument('--cache',type=Path)
+    parser.add_argument('--exclude-start-fraction',type=float,default=0)
     args = parser.parse_args()
-    args.report.write_text(json.dumps(evaluate(args.input_dir,args.output_dir),indent=2)+'\n',encoding='utf-8')
+    result = evaluate(args.input_dir,args.output_dir,args.full_case,args.cache,args.exclude_start_fraction)
+    args.report.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
 
 
 if __name__=='__main__':

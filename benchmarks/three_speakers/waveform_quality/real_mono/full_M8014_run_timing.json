@@ -1,0 +1,83 @@
+{
+  "original_recording": "AliMeeting R8008_M8014, physical microphone 1, mono 16 kHz. Full duration 1937.0916875 s.",
+  "protocol": "Shared Linux CPU, AMD EPYC 7763, no GPU or live stream. Four independent single-thread CPU decoder processes computed or reused the same deterministic acoustic windows, including history and lookahead. Speaker assignment remains sequential. The enrollment-free tracker uses the released voiceprint model, with no reference labels. Both routes share the same window calculations. The stopwatch begins at the successful checkpointed run and excludes an earlier interrupted attempt, model download, and packaging. Times are specific to this shared host.",
+  "unique_acoustic_window_entries": 692,
+  "aggregate_window_compute_wall_s": 2568.6050765279997,
+  "anonymous_reuse": {
+    "cached_blocks": 692,
+    "wait_for_shared_acoustic_decoder_s": 307.74512146596317,
+    "shared": "Identical per-window decoded audio for automatic 3-person roster; anonymous path uses the released speaker embedder, no solo samples or annotations."
+  },
+  "measurements": {
+    "enrolled_uncorrected": {
+      "file_mode": "three ordered enrollment samples",
+      "frames": 15496734,
+      "rate_hz": 8000,
+      "speaker_peak": {
+        "spk_A": 0.0933837890625,
+        "spk_B": 0.315155029296875,
+        "spk_C": 0.19659423828125
+      },
+      "audio_export_reported_wall_s": 809.7877397640004,
+      "setup_wall_s": 1.725589564000984,
+      "phase_processing_s": 0.0,
+      "output_complete_unix_s": 1795119364.8908083,
+      "output_sha256": {
+        "Speaker_A.wav": "8f3a6837ba0ed97238eebf9abd09ef424e39a72cc45de2eb920f1280bc18ba8e",
+        "Speaker_B.wav": "443777b172dbb08f51ac116c298228644758c2ccefd71041475752d8b9dda4f1",
+        "Speaker_C.wav": "d1f57145fd47cffc0547851e04d0cd8d329afa08fdc3a99034353cc2e030b7b8",
+        "mixed.wav": "b40bf347ea562b755ce875b03c8e57f4e55e04f625d6fa15d99533fc21e862ca"
+      },
+      "ordered_commits": 692,
+      "approx_elapsed_from_start_of_shared_acoustic_run_s": 809.7877397537231
+    },
+    "enrolled_corrected": {
+      "file_mode": "three ordered enrollment samples",
+      "frames": 15496734,
+      "rate_hz": 8000,
+      "speaker_peak": {
+        "spk_A": 0.0933837890625,
+        "spk_B": 0.315155029296875,
+        "spk_C": 0.19659423828125
+      },
+      "audio_export_reported_wall_s": 817.6922343290007,
+      "setup_wall_s": 1.725589564000984,
+      "phase_processing_s": 7.904494565000277,
+      "output_complete_unix_s": 1795119378.4908457,
+      "output_sha256": {
+        "Speaker_A.wav": "c0dc41139fb9230ca7f4c651e9f001faad247893a152747ca891866bf5fdce09",
+        "Speaker_B.wav": "619bf1027c615fea9d2380fc9d96a47ea409d6fa883c078033c9b7e462106343",
+        "Speaker_C.wav": "0d38048c2544871d99becb3eca97edc438b901717a8fd67f36aa067a772e3e5c",
+        "mixed.wav": "b40bf347ea562b755ce875b03c8e57f4e55e04f625d6fa15d99533fc21e862ca"
+      },
+      "ordered_commits": 692,
+      "approx_elapsed_from_start_of_shared_acoustic_run_s": 823.3877770900726,
+      "subsequent_ASR_wall_s": 165.35301297800106,
+      "transcript_segments": 673
+    },
+    "anonymous_corrected": {
+      "file_mode": "one original mono recording only",
+      "frames": 15496734,
+      "rate_hz": 8000,
+      "speaker_peak": {
+        "spk_A": 0.129974365234375,
+        "spk_B": 0.0933837890625,
+        "spk_C": 0.315155029296875
+      },
+      "audio_export_reported_wall_s": 484.39929529800065,
+      "setup_wall_s": 0.9198468840004352,
+      "phase_processing_s": 6.7253980669993325,
+      "output_complete_unix_s": 1795119415.7869534,
+      "output_sha256": {
+        "Speaker_A.wav": "60e490c6555ea4ed666acd2a6beddb91854e658079f2b70a8f0ccbc7390d74bf",
+        "Speaker_B.wav": "55316afad9db5f7336cba3cd9cf8d22af7e7bd4538a0a4d86875923a26f74ad9",
+        "Speaker_C.wav": "d8443e5f68b2dc534839545c3a068f0b8da150b564adc279a5fcd3b57fab74b7",
+        "mixed.wav": "b40bf347ea562b755ce875b03c8e57f4e55e04f625d6fa15d99533fc21e862ca"
+      },
+      "ordered_commits": 692,
+      "approx_elapsed_from_start_of_shared_acoustic_run_s": 860.6838848590851,
+      "subsequent_ASR_wall_s": 177.2110975529995,
+      "transcript_segments": 437
+    }
+  }
+}

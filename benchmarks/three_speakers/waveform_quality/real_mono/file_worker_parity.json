@@ -1,0 +1,34 @@
+{
+  "case": "4.00 seconds of real microphone audio from AliMeeting R8005_M8009",
+  "model": "tuned project DPRNN, enrolled in fixed A/B/C order, 2.8 s blocks with original context, --mixture-phase --transcribe",
+  "test": "CPU file workers 1 versus 2, one PyTorch computation thread per worker; shared host, separate CLI processes",
+  "identical_sha256": {
+    "Speaker_A.wav": "cb316f66c8f544f73c7d14f83e112c60ac4320e7d8b369f4335fdc4a7c243c8c",
+    "Speaker_B.wav": "bbcff1a8e4f3eeec5d02c0ed00a4597cafc5dfeb04c5f346391a42db6aa7c38b",
+    "Speaker_C.wav": "58a4f106c2fe1c61408af9e79c108f97c44be9b7cd2882b08d4feceaca56499c",
+    "mixed.wav": "2ddaba332754ae12ed4bc8bdab1555f998ced0682c8dfddd415e531f2472e752",
+    "transcript.jsonl": "cf7ab1ae822c6475a0694a674db76585f0afb970aa9f6d3d38c0c581529083ef"
+  },
+  "identical_complete_commit_metadata_except_wall_clock": true,
+  "window_count": 2,
+  "measured_s_including_setup": {
+    "serial_audio_export": 6.208165689000452,
+    "two_workers_audio_export": 4.5892479310005,
+    "serial_complete": 12.912951746000545,
+    "two_workers_complete": 11.428864125000473
+  },
+  "speed_caveat": "Very short input and changing host contention. No speedup estimate for long audio is inferred.",
+  "longer_check": {
+    "input": "AliMeeting M8009, twenty seconds, 4.25 seconds annotated three-speaker overlap",
+    "file_workers": 2,
+    "n_windows": 8,
+    "all_samples_and_deterministic_commit_fields_match_serial": true,
+    "identical_sha256": {
+      "mixed.wav": "724364ca551dd91c255337c4e65f6265b721fdb5260e0697a28445b344762dae",
+      "Speaker_A.wav": "a0ae8edac812958215a4d4ab03f72dc3edf70157be3dd70bc3e7a138f7605ff2",
+      "Speaker_B.wav": "1b7bd15375534e88577cc1f0a467d0891c2bba2f07786b7e3d10f161a8f8d5ee",
+      "Speaker_C.wav": "063787c5415ed52e0af954a0f68ca59ee08ca096e9be35bda264dc34082363cd"
+    },
+    "audio_export_wall_seconds": 17.644236825999542
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "fixture": "Four seconds of single-channel Mandarin conversation, AliMeeting R8005_M8009, 1561\u20131565 s",
+  "command": "process_meeting.py true_mono.wav --participants 3 --enroll solo_A.wav solo_B.wav solo_C.wav --threads 1 --mixture-phase --transcribe",
+  "sample_source_rate": 16000,
+  "sample_source_frames": 64000,
+  "waves": {
+    "mixed.wav": {
+      "frames": 32000,
+      "strict_no_clipping": true,
+      "integer_min": -31785,
+      "integer_max": 24645,
+      "sha256": "2ddaba332754ae12ed4bc8bdab1555f998ced0682c8dfddd415e531f2472e752",
+      "identical_standalone_wav": true
+    },
+    "Speaker_A.wav": {
+      "frames": 32000,
+      "strict_no_clipping": true,
+      "integer_min": -7033,
+      "integer_max": 6898,
+      "sha256": "cb316f66c8f544f73c7d14f83e112c60ac4320e7d8b369f4335fdc4a7c243c8c",
+      "identical_standalone_wav": true
+    },
+    "Speaker_B.wav": {
+      "frames": 32000,
+      "strict_no_clipping": true,
+      "integer_min": -31785,
+      "integer_max": 24645,
+      "sha256": "bbcff1a8e4f3eeec5d02c0ed00a4597cafc5dfeb04c5f346391a42db6aa7c38b",
+      "identical_standalone_wav": true
+    },
+    "Speaker_C.wav": {
+      "frames": 32000,
+      "strict_no_clipping": true,
+      "integer_min": -25422,
+      "integer_max": 22155,
+      "sha256": "58a4f106c2fe1c61408af9e79c108f97c44be9b7cd2882b08d4feceaca56499c",
+      "identical_standalone_wav": true
+    }
+  },
+  "frames_covered_by_contiguous_commits": 32000,
+  "native_chinese_segments": 3,
+  "native_segments_flagged": 2,
+  "source_to_export_including_setup_s": 6.208165689000452,
+  "complete_including_asr_s": 12.912951746000545,
+  "output_subtype": "PCM_16",
+  "output_rate_hz": 8000,
+  "standalone_excludes_stale_transcripts": true,
+  "identity_mode": "enrolled_ABC"
+}

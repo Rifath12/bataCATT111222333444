@@ -1,0 +1,155 @@
+{
+  "scope": "Four excerpts from three natural Mandarin meetings; 113.67 seconds, with 15.24 seconds of three-way overlap.",
+  "comparison": "Same audio, solo enrollment, decoder, estimated active speaker count and export gain. Compare native separated PCM16 against optional mixture-phase correction.",
+  "recognizer": "Product Mandarin Zipformer CTC int8, sherpa-onnx 2.0.1, one CPU thread. Active-span recognition on exported 8 kHz WAVs resampled to 16 kHz.",
+  "measure": "Speaker-attributed Levenshtein character errors on normalized simplified Chinese and alphanumeric characters. Labels A/B/C fixed in the primary metric. An additional diagnostic picks one reference-assisted speaker permutation per entire clip.",
+  "cases": [
+    {
+      "recording": "M8009",
+      "reference_characters": 193,
+      "before_fixed_edits": 167,
+      "corrected_fixed_edits": 162,
+      "before_best_edits": 163,
+      "corrected_best_edits": 156,
+      "before_best_order": "ACB",
+      "corrected_best_order": "BAC",
+      "wav_sha256": {
+        "mixed.wav": {
+          "before": "724364ca551dd91c255337c4e65f6265b721fdb5260e0697a28445b344762dae",
+          "after": "724364ca551dd91c255337c4e65f6265b721fdb5260e0697a28445b344762dae"
+        },
+        "Speaker_A.wav": {
+          "before": "a0ae8edac812958215a4d4ab03f72dc3edf70157be3dd70bc3e7a138f7605ff2",
+          "after": "57c94659bb8b68985eebed20908537a4ecc740918bf8567ad748cb3c5421c0b1"
+        },
+        "Speaker_B.wav": {
+          "before": "1b7bd15375534e88577cc1f0a467d0891c2bba2f07786b7e3d10f161a8f8d5ee",
+          "after": "3cd323423116c6898f4e78a1eb8c7f313e2b796fb7f2718726898d2582e1d8be"
+        },
+        "Speaker_C.wav": {
+          "before": "063787c5415ed52e0af954a0f68ca59ee08ca096e9be35bda264dc34082363cd",
+          "after": "23807c44643cb0758e6127df9cf7d098dc2073e5f8da8755612ad823b998617a"
+        }
+      },
+      "hypotheses_sha256": {
+        "before": "863ab6873b0e77dce9e67d20e0192bf17535c70fbb67aa0709d68fc488bd7163",
+        "corrected": "16facc016654bc99d94375683ac09e75592d2ed5708e248cf832456c06be343d"
+      }
+    },
+    {
+      "recording": "M8014",
+      "reference_characters": 327,
+      "before_fixed_edits": 222,
+      "corrected_fixed_edits": 195,
+      "before_best_edits": 212,
+      "corrected_best_edits": 195,
+      "before_best_order": "ACB",
+      "corrected_best_order": "ABC",
+      "wav_sha256": {
+        "mixed.wav": {
+          "before": "39b2d9819bf821ed32fc081616f777c01d3ef3d2d886ce0bda5760b8361a35d0",
+          "after": "39b2d9819bf821ed32fc081616f777c01d3ef3d2d886ce0bda5760b8361a35d0"
+        },
+        "Speaker_A.wav": {
+          "before": "123c192e3bb8024598d1f0927a67531bf49172e5c853976b6a4b72099af5d4ac",
+          "after": "2d75c4cbf78aa06dfa3c133c774e77770b312d05a68e8e39c0f4761e04cedba4"
+        },
+        "Speaker_B.wav": {
+          "before": "5c72b414e63666639db085d42437ca052d8811432463cb177cad143104a5e846",
+          "after": "71c1576f315feb78f1a76bcc8fa99abf55663662afeaa25fa8d72b438ea67819"
+        },
+        "Speaker_C.wav": {
+          "before": "f1d73487077f25560fb29bc14b3cfff3bf3867d9d6b2a5eb7e87b69b52189048",
+          "after": "4a263e0c1e664bb67356798a7acc9d62bf7545d1183bb5c7790dec0239da588a"
+        }
+      },
+      "hypotheses_sha256": {
+        "before": "fc935072e31e4b7d91900aa693a58a3c15769e51bc2a5fdd3597159a3c889bdd",
+        "corrected": "0bf38f80ba8a69c992b9c557b124d5a20f5335bf2b891efcf29f3564f5c8e746"
+      }
+    },
+    {
+      "recording": "clip_01",
+      "reference_characters": 125,
+      "before_fixed_edits": 120,
+      "corrected_fixed_edits": 119,
+      "before_best_edits": 108,
+      "corrected_best_edits": 107,
+      "before_best_order": "CAB",
+      "corrected_best_order": "CAB",
+      "wav_sha256": {
+        "mixed.wav": {
+          "before": "e8cdf37420b9a08ec29e576655e5c47bfddd9b361c12ed26142cebd2c42ecb10",
+          "after": "e8cdf37420b9a08ec29e576655e5c47bfddd9b361c12ed26142cebd2c42ecb10"
+        },
+        "Speaker_A.wav": {
+          "before": "1c75d597ccb55b8bb9cb6f058177cf223171eb0b4e8f48aa0b1f51320610d82d",
+          "after": "af4a9ea5339764a908a7f9b87f8ae663652756facca58f978ed59fa92f3d5eb7"
+        },
+        "Speaker_B.wav": {
+          "before": "91bb0f8f22c842f22c2f01204db75f6bfd6023a695972d6653fc266bf4b84a4f",
+          "after": "745c6dac56ad6f683dc83a0842b09dbacdbab96e5c146bbd5feb8eb2e0848c9a"
+        },
+        "Speaker_C.wav": {
+          "before": "fc90c64819af8c3865adfdb8454ac6366c07b68ee0a78d28e5ffc83e4ea63e52",
+          "after": "531994dd3c4fccf4069adf24232f7882d9cf53a1dcf5cfb8ecb2bf5f7fd0f90f"
+        }
+      },
+      "hypotheses_sha256": {
+        "before": "11359bc298ea413d09ce419e3a414df890efe6fc346526bf8a80b3869a27ec51",
+        "corrected": "f4f603b400ff704f34f9cbba3d3fe0672615db01950331f8b0f37db21f5fa485"
+      }
+    },
+    {
+      "recording": "clip_03",
+      "reference_characters": 97,
+      "before_fixed_edits": 86,
+      "corrected_fixed_edits": 79,
+      "before_best_edits": 75,
+      "corrected_best_edits": 75,
+      "before_best_order": "CAB",
+      "corrected_best_order": "CAB",
+      "wav_sha256": {
+        "mixed.wav": {
+          "before": "29e162df553ae1784412aa8e2be74d168893ba06b4b34b643b9a6cfd3c8013fc",
+          "after": "29e162df553ae1784412aa8e2be74d168893ba06b4b34b643b9a6cfd3c8013fc"
+        },
+        "Speaker_A.wav": {
+          "before": "afab7b4796d48f28d9d128b0dc2eff9d21904d61f5a833f9ed87aba632eb43eb",
+          "after": "67b068df7e6a3badb7d0c886e17f98a946e51e05f27e212be983b6f2ae897a87"
+        },
+        "Speaker_B.wav": {
+          "before": "e6ab3af109a4e93606b646f666d77a0d24a08a791c9ca2bdcf7218e6f78a6a80",
+          "after": "7bd04cdb6eae877e8b360d56589f0d31df6d35bc3286203d49e56968dbad3782"
+        },
+        "Speaker_C.wav": {
+          "before": "6114fe63712a8bea9d6162c2b73e540af7efc55f5a291862f0f6ad7872c0b465",
+          "after": "7c3c4aeacd6008c84e7c11022b7f060efd7257e21472a4277c8bc402f8e2116d"
+        }
+      },
+      "hypotheses_sha256": {
+        "before": "243b9a9f236a97e8907fa5ce691ca7002f120f4bc4c9cd58e304fe99ea5b32fa",
+        "corrected": "23cdcfea537b55e6d45b8849e1e22da8a95c131b42cbbe7296a8dd16c141e96f"
+      }
+    }
+  ],
+  "pooled": {
+    "reference_characters": 742,
+    "before_fixed_edits": 595,
+    "corrected_fixed_edits": 555,
+    "before_best_edits": 558,
+    "corrected_best_edits": 533,
+    "before_fixed_CER": 0.8018867924528302,
+    "corrected_fixed_CER": 0.7479784366576819,
+    "relative_reduction_in_fixed_edits": 0.0672268907563025
+  },
+  "interpretation": "Every tested excerpt had fewer native ASR character errors after correction. The remaining 555 character edits include separation, speaker assignment and recognizer errors. This small recording-level panel cannot establish a general accuracy rate, and has no isolated acoustic references during overlap.",
+  "external_recognizer_spot_check": {
+    "recording": "M8009",
+    "model": "Systran/faster-whisper-small@536b0662742c02347bc0e980a01041f333bce120",
+    "reference_characters": 193,
+    "before_fixed_edits": 175,
+    "corrected_fixed_edits": 287,
+    "scope": "One available external-recognizer comparison. Applying the same correction to these WAVs worsened this recognizer’s result on this excerpt."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "output": "M8014_phase",
+  "scored_start_s": 484.3,
+  "scored_end_s": 1937.0,
+  "annotated_seconds_by_talker_count": [
+    222.44,
+    1136.05,
+    89.47,
+    4.74
+  ],
+  "named_solo_loudest": [
+    5230,
+    9996
+  ],
+  "both_audible_during_dual": [
+    244,
+    661
+  ],
+  "three_audible_during_triple": [
+    6,
+    28
+  ],
+  "unintended_audible_output_occurrences_during_solo": 9293,
+  "per_speaker": {
+    "A": [
+      2707,
+      5242
+    ],
+    "B": [
+      922,
+      1522
+    ],
+    "C": [
+      1601,
+      3232
+    ]
+  }
+}

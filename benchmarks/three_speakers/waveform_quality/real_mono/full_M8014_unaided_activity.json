@@ -1,0 +1,55 @@
+{
+  "duration_s": 1937.0916875,
+  "scored_start_s": 484.3,
+  "scored_end_s": 1937.0,
+  "labels": [
+    "Speaker_A",
+    "Speaker_B",
+    "Speaker_C"
+  ],
+  "aligned_waveform_probes": 24,
+  "fixed_global_order_using_scoring_labels": [
+    "Speaker_B",
+    "Speaker_C",
+    "Speaker_A"
+  ],
+  "eligible_solo_per_physical_speaker": [
+    5242,
+    1522,
+    3232
+  ],
+  "global_permutations_tied_on_primary_solo_hits": 1,
+  "global_permutations_tied_after_activity_tiebreak": 1,
+  "solo_correct_loudest": 4100,
+  "eligible_solo": 9996,
+  "double_both_named_outputs_audible": 215,
+  "eligible_double": 661,
+  "triple_three_named_outputs_audible": 6,
+  "eligible_triple": 28,
+  "count_of_eligible_blocks_by_actual_then_number_of_audible_outputs": {
+    "0": [
+      0,
+      293,
+      130,
+      46
+    ],
+    "1": [
+      0,
+      5288,
+      2840,
+      1868
+    ],
+    "2": [
+      0,
+      342,
+      154,
+      165
+    ],
+    "3": [
+      0,
+      15,
+      7,
+      6
+    ]
+  }
+}

@@ -24,6 +24,12 @@ For one mixed recording containing three people, use a session roster. It writes
 process_meeting.bat "meeting.wav" --participants 3 --out "results\three_people"
 ```
 
+For a complete audio-only run with the tested waveform correction and Mandarin transcript, this command accepts a single recording and assumes three participants. It uses anonymous speaker letters.
+
+```bat
+process_meeting.bat "meeting.wav" --participants 3 --mixture-phase --transcribe --out "results\three_people_corrected"
+```
+
 To keep known identities, supply one independently recorded solo WAV for each speaker. Mono and stereo WAVs at ordinary recording rates, including 16, 44.1 and 48 kHz, are converted automatically. A few representative utterances from the same room and microphone per person are preferable. The enrollment method uses up to 32 audible 0.512 s windows per person. Give the files in A/B/C order. Natural interruptions and substantial overlap can still produce uncertain assignments.
 
 ```bat
@@ -45,6 +51,12 @@ python mixture_phase.py results/three_people --out results/three_people_restored
 Each transcribed segment in `transcript.jsonl` includes how much of its audio was assigned to that speaker, how much came directly from a window classified as one voice, and how much had an ambiguous identity. The review flag covers both timing and separation warnings. A quiet background talker can still go undetected.
 
 [Single-microphone Mandarin results, including overlap and meeting runtime](benchmarks/three_speakers/waveform_quality/real_mono/RESULTS.md)
+
+For offline processing on a multicore CPU, `--file-workers 2 --threads 1` runs two acoustic windows concurrently with shared model weights. The app assigns speaker identities and commits samples in recording order. One worker is the default. Each additional worker uses working memory. Recorded voice overlap, file length and CPU load affect elapsed time.
+
+```bat
+process_meeting.bat "meeting.wav" --participants 3 --file-workers 2 --threads 1 --out "results\meeting_parallel"
+```
 
 ## Overlap and replay
 

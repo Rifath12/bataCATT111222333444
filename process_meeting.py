@@ -3,7 +3,10 @@ from __future__ import annotations
 
 import argparse
 import codecs
+from collections import deque
+from concurrent.futures import ThreadPoolExecutor
 from html import escape
+from itertools import islice
 import json
 import math
 from pathlib import Path
@@ -114,6 +117,25 @@ class VoiceEmbeddings:
         return speaker / max(float(np.linalg.norm(speaker)), 1e-8)
 
 
+def ordered_inference(function, windows, workers):
+    """Keep at most one outstanding acoustic window per CPU worker."""
+    if workers == 1:
+        yield from map(function, windows)
+        return
+    queue = iter(windows)
+    with ThreadPoolExecutor(max_workers=workers, initializer=torch.init_num_threads) as pool:
+        pending = deque(pool.submit(function, window) for window in islice(queue, workers))
+        try:
+            while pending:
+                oldest = pending.popleft().result()
+                for window in islice(queue, 1):
+                    pending.append(pool.submit(function, window))
+                yield oldest
+        finally:
+            for future in pending:
+                future.cancel()
+
+
 class Separation:
     def __init__(self, model, device, embeddings=None, overlap_margin=DEFAULT_OVERLAP_MARGIN, *, participants=None, enrollment=None):
         self.model = model
@@ -165,8 +187,10 @@ class Separation:
                 return candidate, guess, baseline
         return decode(baseline), baseline, baseline
 
-    def separate(self, y, block, history, lookahead, paced, hints=None, on_commit=None):
+    def separate(self, y, block, history, lookahead, paced, hints=None, on_commit=None, *, file_workers=1):
         """Run bounded windows. Each committed block is immutable."""
+        if not 1 <= file_workers <= 4 or (file_workers > 1 and (paced or torch.device(self.device).type != "cpu")):
+            raise ValueError("Use one to four file workers; parallel windows require offline CPU processing")
         start = time.perf_counter()
         samples = len(y)
         slot_count = self.participants or (3 if hints == 3 else SLOTS)
@@ -174,13 +198,18 @@ class Separation:
         features = {}
         seen = set()
         commits = []
-        for left in range(0, samples, block):
+
+        def infer_window(left):
             right = min(left + block, samples)
             visible_right = min(right + lookahead, samples)
             visible_left = max(0, left - history)
             if paced:
                 time.sleep(max(0., visible_right / RATE - (time.perf_counter() - start)))
-            local, guessed, baseline_count = self.infer(y[visible_left:visible_right], hints)
+            return left, right, visible_left, visible_right, self.infer(y[visible_left:visible_right], hints)
+
+        windows = ordered_inference(infer_window, range(0, samples, block), file_workers)
+        for left, right, visible_left, visible_right, inference in windows:
+            local, guessed, baseline_count = inference
             core_start = left - visible_left
             core_stop = right - visible_left
             if self.enrollment is not None:
@@ -370,6 +399,9 @@ class Mandarin:
 
 
 def run(args):
+    file_workers = getattr(args, "file_workers", 1)
+    if file_workers > 1 and (args.mode != "file" or torch.device(args.device).type != "cpu"):
+        raise ValueError("Parallel file workers require offline CPU processing")
     if args.mixture_phase and args.mode != "file":
         raise ValueError("Mixture-phase restoration needs a completed recording in file mode")
     if not all(math.isfinite(x) for x in (args.block, args.history, args.lookahead)):
@@ -410,7 +442,7 @@ def run(args):
     model_setup = time.perf_counter() - started
     tracks, commits = engine.separate(y, max(1, round(args.block*RATE)), round(args.history*RATE),
                                      round(args.lookahead*RATE), args.mode == "replay",
-                                     args.speakers, export_chunk)
+                                     args.speakers, export_chunk, file_workers=file_workers)
     speakers = {}
     largest_peak = max(float(np.max(np.abs(wave))) for wave in (y, *tracks.values()))
     playback_gain = min(1.0, 0.97 / largest_peak) if largest_peak else 1.0
@@ -448,6 +480,7 @@ def run(args):
         "mode": args.mode, "speaker_count_hint": args.speakers, "input_samples": native_samples,
         "input_sample_rate": native_rate, "output_samples": len(y), "output_sample_rate": RATE,
         "block_s": args.block, "history_s": args.history, "lookahead_s": args.lookahead,
+        "file_workers": file_workers,
         "overlap_margin": args.overlap_margin, "wav_playback_gain": playback_gain,
         "review_windows": sum(bool(c["identity_needs_review"] or c["count_review"]) for c in commits),
         "model_setup_wall_s": model_setup, "audio_export_wall_s": audio_export_s,
@@ -469,8 +502,11 @@ def run(args):
         rows.sort(key=lambda row: (row["start_ms"], row["speaker_id"]))
         attach_separation_evidence(rows, commits, RATE)
         json_lines(args.out/"transcript.jsonl", rows)
-        text_lines = [f'[{r["start_ms"]/1000:06.2f}–{r["end_ms"]/1000:06.2f}] {r["speaker"]}  {r["text"]}'
-                      for r in rows]
+        text_lines = [
+            f'[{r["start_ms"]/1000:06.2f}–{r["end_ms"]/1000:06.2f}] {r["speaker"]}'
+            f'{" [review]" if r.get("review_required") else ""}  {r["text"]}'
+            for r in rows
+        ]
         (args.out/"transcript.txt").write_text("\n".join(text_lines)+"\n", encoding="utf-8")
         info["asr"] = "Zipformer CTC Mandarin, per-speaker file pass"
         info["complete_wall_s"] = time.perf_counter() - started
@@ -488,10 +524,11 @@ def write_listening_report(directory, info, rows):
     tracks += "".join(audio(s["display_name"], s["file"]) for s in info["speakers"].values())
     text_rows = "".join(
         f'<tr><td>{escape(row["speaker"])}</td><td>{row["start_ms"]/1000:.2f}–{row["end_ms"]/1000:.2f}</td>'
-        f'<td lang="zh">{escape(row["text"])}</td></tr>' for row in rows
+        f'<td lang="zh">{escape(row["text"])}</td>'
+        f'<td>{"Review" if row.get("review_required") else ""}</td></tr>' for row in rows
     )
     transcript = (
-        f"<h2>Mandarin transcript</h2><table><tr><th>Speaker</th><th>Seconds</th><th>Text</th></tr>"
+        f"<h2>Mandarin transcript</h2><table><tr><th>Speaker</th><th>Seconds</th><th>Text</th><th>Review flag</th></tr>"
         f"{text_rows}</table>" if rows else ""
     )
     html = f"""<!doctype html>
@@ -516,6 +553,8 @@ def main():
     p.add_argument("--history", type=float, default=DEFAULT_HISTORY)
     p.add_argument("--lookahead", type=float, default=DEFAULT_LOOKAHEAD)
     p.add_argument("--threads", type=int, default=4)
+    p.add_argument("--file-workers", type=int, choices=range(1, 5), default=1,
+                   help="Number of concurrent CPU windows in file mode (default 1, maximum 4).")
     p.add_argument("--device", default="cpu")
     p.add_argument("--speakers", type=int, choices=range(1, 5), help="Force the separator to decode this many streams in each non-silent window.")
     p.add_argument("--participants", type=int, choices=(3,),

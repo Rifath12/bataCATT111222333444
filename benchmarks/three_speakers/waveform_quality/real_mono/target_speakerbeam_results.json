@@ -1,0 +1,1836 @@
+{
+  "description": "Three independent audio-enrollment-conditioned passes through pinned TD-SpeakerBeam, one for each physical A/B/C target. Inference uses no isolated test voices. Eight fixed evaluation regions per room; each region supplied with its three-voice count.",
+  "policy": {
+    "condition": "actual AliMeeting array-channel-0 solo-turn remix, 3 active separated targets; fixed prior per-speaker enrollment taken only from the early labeled nonoverlapping excerpts",
+    "development": "R8004_M8006 t01\u2013t08 with frozen options",
+    "confirmation": "R8005_M8007 t01\u2013t08, different room/identities; incumbent and previous unrelated models already known, all direct target-extraction predictions previously unseen; optionally reserve t09\u2013t12 for extra untouched donors",
+    "extractor": "espnet/Wangyou_Zhang_librimix_train_enh_tse_td_speakerbeam_raw, official 99epoch.pth, LibriMix two-person English training, native 8k; run three separate extractions conditioned on separate enrolled waveforms. Use the same encoder on mixture and target enrollment as training. For each enrollment take up to 6s of sequential 32ms blocks with RMS above max(-45 dBFS, 2% of that enrollment\u2019s maximum RMS), skipping inserted silence. Explicit A/B/C output follows the corresponding enrollment WAV in every case.",
+    "direct_arm": "Three target-specific outputs directly; no isolated test stems, enrollment remapping, or clean reference passed to inference. Positive amplitude fit only for an auxiliary diagnostic.",
+    "hybrids": [
+      "map_only: compute full 3x3 squared correlations of directly conditioned TSE and incumbent streams. Find best one-to-one assignment. Accept TSE-assisted mapping when average assigned squared correlation >=0.30, average best minus runner-up assignment score >=0.10 and each chosen squared correlation >=0.15. Else preserve original enrollment mapping. Existing audio untouched.",
+      "blend: first apply map_only, then average the direct target estimate and incumbent after polarity alignment on each stream with squared agreement >=0.25. Preserve incumbent waveform on unsupported streams."
+    ],
+    "selection": "Count joint 96+98 in development; tie break by fixed enrolled median quiet target fraction then median per-target fraction. Report direct conditioned architecture, chosen hybrid and incumbent. Do not recommend a method with severe individual regressions. Upstream checkpoint has only trained for two voices; performance on three is experimental."
+  },
+  "choice": {
+    "selected": "incumbent",
+    "cases": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ],
+    "plan_sha256": "e6932f0b71b5264ccb0e6213ae44997c2444f27540743bdd80515c671934d7d4",
+    "score_sha256": "76c276d4e1e44bf19f7301fc84a63c45af9eb29c12adafff86f097e62c8d0e80"
+  },
+  "source": {
+    "repository": "espnet/Wangyou_Zhang_librimix_train_enh_tse_td_speakerbeam_raw",
+    "revision": "0c7e30518719f3208c81042a869fea6b886a9871",
+    "weights": {
+      "rfilename": "exp/enh_train_raw/99epoch.pth",
+      "blobId": "efbf64d46bb5aeb6ce933aa813670606f9f27748",
+      "size": 65038857,
+      "lfs": {
+        "sha256": "7e1d6831d0df187ae8b23ed4d6804d07d0ec314336266e99f7da41a2f8ad055f",
+        "size": 65038857,
+        "pointerSize": 133
+      }
+    },
+    "configuration_sha256": "8f73655ebb6c26fbe065d98ca3479efd27a8830eb2589bc0ecf8c6930809e7fb",
+    "espnet_source_distribution": "espnet==202402",
+    "espnet_source_wheel_sha256": "3a1055c92679213b59eba54df7d255f52c8d9428c82bb1e5c9d5bfb8201b4bed",
+    "research_inference_sha256": "a23951dbe6ae3a6f35e92768f86273dd2966d1fda995807e0d8c841667c58a4c"
+  },
+  "stages": {
+    "dev": {
+      "room": "R8004_M8006",
+      "events": 8,
+      "exact_three_seconds": 4.834,
+      "summary": {
+        "blend": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.5873212259512471,
+            "median_quiet": 0.23773288123789574,
+            "worst": 0.0005363351395156827,
+            "min_retention": 0.0
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.609308622659861,
+            "median_quiet": 0.21216922164704147,
+            "worst": 0.0005363351395156827,
+            "min_retention": 0.0
+          }
+        },
+        "direct": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.17938919395472863,
+            "median_quiet": 0.004204083655698372,
+            "worst": 2.101057032917213e-05,
+            "min_retention": 0.17146974063400577
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.17424822658871209,
+            "median_quiet": 0.002480231253268763,
+            "worst": 2.101057032917213e-05,
+            "min_retention": 0.17146974063400577
+          }
+        },
+        "incumbent": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.6124388080539305,
+            "median_quiet": 0.29725828636569873,
+            "worst": 0.00016960935161631753,
+            "min_retention": 0.0
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.6277814062981119,
+            "median_quiet": 0.27169462677484446,
+            "worst": 0.0005363351395156827,
+            "min_retention": 0.0
+          }
+        },
+        "map_only": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.6124388080539305,
+            "median_quiet": 0.29725828636569873,
+            "worst": 0.00016960935161631753,
+            "min_retention": 0.0
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.6277814062981119,
+            "median_quiet": 0.27169462677484446,
+            "worst": 0.0005363351395156827,
+            "min_retention": 0.0
+          }
+        },
+        "positive_fit": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.17938919395472863,
+            "median_quiet": 0.004204083658330146,
+            "worst": 2.101057032917213e-05,
+            "min_retention": 0.0
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.17424822658871209,
+            "median_quiet": 0.002480231253268763,
+            "worst": 2.101057032917213e-05,
+            "min_retention": 0.0
+          }
+        }
+      },
+      "cases": [
+        {
+          "id": "t01",
+          "seconds": 0.539,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              0,
+              2,
+              1
+            ],
+            "proposed_mapping": [
+              0,
+              1,
+              2
+            ],
+            "mean_agreement": 0.2671933861851363,
+            "assignment_margin": 0.005127842923601134
+          },
+          "quiet": "A",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.5798911579727956,
+                0.710545245689264,
+                0.6066702092045116
+              ],
+              "retention": [
+                0.7328385899814471,
+                0.9183673469387755,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.16533297534800237,
+                0.17561491008003546,
+                0.19371300692609308
+              ],
+              "retention": [
+                0.4582560296846011,
+                0.5844155844155844,
+                0.7328385899814471
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                2,
+                1
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.5798911579727956,
+                0.710545245689264,
+                0.6066702092045116
+              ],
+              "retention": [
+                0.7328385899814471,
+                0.9183673469387755,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.40474413557346095,
+                0.710545245689264,
+                0.6066702092045116
+              ],
+              "retention": [
+                0.5844155844155844,
+                0.9183673469387755,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t02",
+          "seconds": 0.694,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              0,
+              2,
+              1
+            ],
+            "proposed_mapping": [
+              2,
+              0,
+              1
+            ],
+            "mean_agreement": 0.15224289099474567,
+            "assignment_margin": 0.005981697096175187
+          },
+          "quiet": "B",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.7109258938013002,
+                0.5237949458290669,
+                0.4170688846131822
+              ],
+              "retention": [
+                0.9149855907780979,
+                0.5115273775216138,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.024032995843144084,
+                0.004590146126038454,
+                0.18316347782942177
+              ],
+              "retention": [
+                0.17146974063400577,
+                0.22334293948126802,
+                0.17146974063400577
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.7109258938013002,
+                0.5237949458290669,
+                0.4170688846131822
+              ],
+              "retention": [
+                0.9149855907780979,
+                0.5115273775216138,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.7109258938013002,
+                0.5237949458290669,
+                0.46428447354908897
+              ],
+              "retention": [
+                0.9149855907780979,
+                0.5115273775216138,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t03",
+          "seconds": 0.48,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              1,
+              0,
+              2
+            ],
+            "proposed_mapping": [
+              2,
+              1,
+              0
+            ],
+            "mean_agreement": 0.12129945441725108,
+            "assignment_margin": 0.0023833077377131556
+          },
+          "quiet": "C",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.4424786669118907,
+                0.25079919103093506,
+                0.008265197446929226
+              ],
+              "retention": [
+                0.7454545454545455,
+                0.5454545454545454,
+                0.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.01818827493170669,
+                0.19184161247744974,
+                0.0027292493741557632
+              ],
+              "retention": [
+                0.3090909090909091,
+                0.3090909090909091,
+                0.39090909090909093
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                2,
+                1
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.4424786669118907,
+                0.25079919103093506,
+                0.008265197446929226
+              ],
+              "retention": [
+                0.7454545454545455,
+                0.5454545454545454,
+                0.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.4424786669118907,
+                0.25079919103093506,
+                0.008265197446929226
+              ],
+              "retention": [
+                0.7454545454545455,
+                0.5454545454545454,
+                0.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t04",
+          "seconds": 0.672,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              0,
+              1,
+              2
+            ],
+            "proposed_mapping": [
+              0,
+              1,
+              2
+            ],
+            "mean_agreement": 0.140401814758991,
+            "assignment_margin": 0.0015525569971079345
+          },
+          "quiet": "A",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.0005363351395156827,
+                0.8026847117136332,
+                0.8374112561473551
+              ],
+              "retention": [
+                0.0,
+                1.0,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                2.101057032917213e-05,
+                0.19592138716250065,
+                0.32821169027922703
+              ],
+              "retention": [
+                0.5357142857142857,
+                0.43452380952380953,
+                0.6369047619047619
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.0005363351395156827,
+                0.8026847117136332,
+                0.8374112561473551
+              ],
+              "retention": [
+                0.0,
+                1.0,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.0005363351395156827,
+                0.8026847117136332,
+                0.7114465023186906
+              ],
+              "retention": [
+                0.0,
+                1.0,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t05",
+          "seconds": 0.667,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              0,
+              2,
+              1
+            ],
+            "proposed_mapping": [
+              0,
+              2,
+              1
+            ],
+            "mean_agreement": 0.19108349323808047,
+            "assignment_margin": 0.008919996290690374
+          },
+          "quiet": "C",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.6944726122641528,
+                0.8096070329295763,
+                0.6436157764810134
+              ],
+              "retention": [
+                0.6416791604197901,
+                0.9415292353823088,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.05229014904809207,
+                0.12514468015093944,
+                0.40358126331458566
+              ],
+              "retention": [
+                0.18590704647676162,
+                0.18590704647676162,
+                0.48575712143928035
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.6944726122641528,
+                0.8096070329295763,
+                0.6436157764810134
+              ],
+              "retention": [
+                0.6416791604197901,
+                0.9415292353823088,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.6944726122641528,
+                0.8096070329295763,
+                0.6262355468841487
+              ],
+              "retention": [
+                0.6416791604197901,
+                0.9415292353823088,
+                0.8620689655172413
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t06",
+          "seconds": 0.475,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              0,
+              1,
+              2
+            ],
+            "proposed_mapping": [
+              1,
+              2,
+              0
+            ],
+            "mean_agreement": 0.08714432697608537,
+            "assignment_margin": 0.0006496580756095577
+          },
+          "quiet": "C",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.844150942294218,
+                0.8111041565366308,
+                0.6119470361152103
+              ],
+              "retention": [
+                0.8761061946902655,
+                1.0,
+                0.9026548672566371
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.5469629329205463,
+                0.20660913861371505,
+                0.07298608628548627
+              ],
+              "retention": [
+                0.8761061946902655,
+                0.8761061946902655,
+                0.7787610619469026
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                0,
+                1
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.844150942294218,
+                0.8111041565366308,
+                0.6119470361152103
+              ],
+              "retention": [
+                0.8761061946902655,
+                1.0,
+                0.9026548672566371
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.844150942294218,
+                0.8111041565366308,
+                0.6119470361152103
+              ],
+              "retention": [
+                0.8761061946902655,
+                1.0,
+                0.9026548672566371
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t07",
+          "seconds": 0.736,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              2,
+              1,
+              0
+            ],
+            "proposed_mapping": [
+              1,
+              0,
+              2
+            ],
+            "mean_agreement": 0.37011724799230467,
+            "assignment_margin": 0.001452869338168905
+          },
+          "quiet": "A",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.07072162690233053,
+                0.7998620191241136,
+                0.6129305799926508
+              ],
+              "retention": [
+                0.7206703910614525,
+                0.9050279329608939,
+                0.2849162011173184
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                1,
+                0
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.003818021185358291,
+                0.44112508668706635,
+                0.3461212701477799
+              ],
+              "retention": [
+                0.659217877094972,
+                0.7541899441340782,
+                0.7541899441340782
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.07072162690233053,
+                0.7998620191241136,
+                0.6129305799926508
+              ],
+              "retention": [
+                0.7206703910614525,
+                0.9050279329608939,
+                0.2849162011173184
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                1,
+                0
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.07072162690233053,
+                0.6961526234749845,
+                0.5069694242553255
+              ],
+              "retention": [
+                0.7206703910614525,
+                0.7988826815642458,
+                0.7541899441340782
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "id": "t08",
+          "seconds": 0.571,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              0,
+              1,
+              2
+            ],
+            "proposed_mapping": [
+              0,
+              2,
+              1
+            ],
+            "mean_agreement": 0.36822311925560197,
+            "assignment_margin": 0.0033841666133025416
+          },
+          "quiet": "B",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.019580856828417304,
+                0.00016960935161631753,
+                0.6859044985370765
+              ],
+              "retention": [
+                0.0,
+                0.8214285714285714,
+                0.8214285714285714
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.4612010347883536,
+                0.0012169911794204643,
+                0.39793466220244555
+              ],
+              "retention": [
+                0.8214285714285714,
+                0.4642857142857143,
+                0.8214285714285714
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                0,
+                1
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.019580856828417304,
+                0.00016960935161631753,
+                0.6859044985370765
+              ],
+              "retention": [
+                0.0,
+                0.8214285714285714,
+                0.8214285714285714
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.019580856828417304,
+                0.0007184092850622781,
+                0.5679722426979826
+              ],
+              "retention": [
+                0.0,
+                0.6428571428571429,
+                0.8214285714285714
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "confirm": {
+      "room": "R8005_M8007",
+      "events": 8,
+      "exact_three_seconds": 4.841,
+      "summary": {
+        "blend": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.16189883942203087,
+            "median_quiet": 0.09590942542386788,
+            "worst": 0.00032576631677049255,
+            "min_retention": 0.0
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.5022034210149781,
+            "median_quiet": 0.16054887556257968,
+            "worst": 0.00013048991084262064,
+            "min_retention": 0.0
+          }
+        },
+        "direct": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.22659164288586908,
+            "median_quiet": 0.05330498356056829,
+            "worst": 0.001021001582042309,
+            "min_retention": 0.411663807890223
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.22990393725261038,
+            "median_quiet": 0.04729115857526917,
+            "worst": 0.001320529638206669,
+            "min_retention": 0.411663807890223
+          }
+        },
+        "incumbent": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.15639947585249223,
+            "median_quiet": 0.09579372007803824,
+            "worst": 0.00032576631677049255,
+            "min_retention": 0.0
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.5022034210149781,
+            "median_quiet": 0.16054887556257968,
+            "worst": 0.00013048991084262064,
+            "min_retention": 0.0
+          }
+        },
+        "map_only": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.15639947585249223,
+            "median_quiet": 0.09579372007803824,
+            "worst": 0.00032576631677049255,
+            "min_retention": 0.0
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.5022034210149781,
+            "median_quiet": 0.16054887556257968,
+            "worst": 0.00013048991084262064,
+            "min_retention": 0.0
+          }
+        },
+        "positive_fit": {
+          "enrolled": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.22659164284944155,
+            "median_quiet": 0.0533049836046315,
+            "worst": 0.001021001582042309,
+            "min_retention": 0.0
+          },
+          "oracle": {
+            "j96": 0,
+            "j98": 0,
+            "individual96": 0,
+            "median": 0.22990393717296492,
+            "median_quiet": 0.04729115857526917,
+            "worst": 0.001320529638206669,
+            "min_retention": 0.0
+          }
+        }
+      },
+      "cases": [
+        {
+          "id": "t01",
+          "seconds": 0.598,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              1,
+              0,
+              2
+            ],
+            "proposed_mapping": [
+              1,
+              2,
+              0
+            ],
+            "mean_agreement": 0.5134286217285456,
+            "assignment_margin": 0.0002593201761991182
+          },
+          "quiet": "A",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.1562837705066626,
+                0.3325449740970342,
+                0.4024025558757184
+              ],
+              "retention": [
+                0.5517241379310345,
+                1.0,
+                0.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.41382765615217587,
+                0.3720476489636759,
+                0.21688876358002623
+              ],
+              "retention": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.1562837705066626,
+                0.3325449740970342,
+                0.4024025558757184
+              ],
+              "retention": [
+                0.5517241379310345,
+                1.0,
+                0.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.35532885318334273,
+                0.3629086033214389,
+                0.2275721656324173
+              ],
+              "retention": [
+                0.8765880217785844,
+                1.0,
+                0.8765880217785844
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t02",
+          "seconds": 0.635,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              2,
+              1,
+              0
+            ],
+            "proposed_mapping": [
+              1,
+              2,
+              0
+            ],
+            "mean_agreement": 0.009479946203857429,
+            "assignment_margin": 9.639815907436233e-05
+          },
+          "quiet": "B",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.03693941721946561,
+                0.03530366964941391,
+                0.33583217827225464
+              ],
+              "retention": [
+                0.24237560192616373,
+                0.5971107544141252,
+                0.6789727126805778
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                2,
+                0
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.476912027050198,
+                0.17877749004372578,
+                0.29155094416830846
+              ],
+              "retention": [
+                1.0,
+                0.723916532905297,
+                0.8394863563402889
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                0,
+                1
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.03693941721946561,
+                0.03530366964941391,
+                0.33583217827225464
+              ],
+              "retention": [
+                0.24237560192616373,
+                0.5971107544141252,
+                0.6789727126805778
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                2,
+                0
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.03693941721946561,
+                0.03530366964941391,
+                0.33583217827225464
+              ],
+              "retention": [
+                0.24237560192616373,
+                0.5971107544141252,
+                0.6789727126805778
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                2,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "id": "t03",
+          "seconds": 0.699,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              0,
+              1,
+              2
+            ],
+            "proposed_mapping": [
+              2,
+              0,
+              1
+            ],
+            "mean_agreement": 0.2892028001647448,
+            "assignment_margin": 0.014778612876264308
+          },
+          "quiet": "C",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.9132344884018831,
+                0.9333971085245646,
+                0.15817835363145283
+              ],
+              "retention": [
+                1.0,
+                1.0,
+                0.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.5025970831439582,
+                0.20942735089033407,
+                0.020435242936196512
+              ],
+              "retention": [
+                0.7424892703862661,
+                0.8626609442060086,
+                0.765379113018598
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                2,
+                0
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.9132344884018831,
+                0.9333971085245646,
+                0.15817835363145283
+              ],
+              "retention": [
+                1.0,
+                1.0,
+                0.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.8453059632296078,
+                0.9333971085245646,
+                0.15817835363145283
+              ],
+              "retention": [
+                1.0,
+                1.0,
+                0.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t04",
+          "seconds": 0.603,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              1,
+              0,
+              2
+            ],
+            "proposed_mapping": [
+              0,
+              2,
+              1
+            ],
+            "mean_agreement": 0.45868460065296457,
+            "assignment_margin": 0.00021482959205276764
+          },
+          "quiet": "A",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.00232166791587573,
+                0.011526454684728807,
+                0.4688130727416422
+              ],
+              "retention": [
+                0.871404399323181,
+                0.0,
+                0.8849407783417935
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.002202650655444194,
+                0.4763046711237959,
+                0.29875052293076076
+              ],
+              "retention": [
+                0.871404399323181,
+                0.7021996615905245,
+                0.7021996615905245
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.00232166791587573,
+                0.011526454684728807,
+                0.4688130727416422
+              ],
+              "retention": [
+                0.871404399323181,
+                0.0,
+                0.8849407783417935
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.0024753778600622206,
+                0.011526454684728807,
+                0.38716658014021327
+              ],
+              "retention": [
+                0.871404399323181,
+                0.0,
+                0.7563451776649747
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t05",
+          "seconds": 0.603,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              0,
+              2,
+              1
+            ],
+            "proposed_mapping": [
+              2,
+              0,
+              1
+            ],
+            "mean_agreement": 0.1933003445643351,
+            "assignment_margin": 0.0021308039253836453
+          },
+          "quiet": "A",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.00032576631677049255,
+                0.1511045720967182,
+                0.05690062633773795
+              ],
+              "retention": [
+                0.0,
+                0.7478559176672385,
+                0.4236706689536878
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                0,
+                1
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.38442941331200464,
+                0.1180726554049108,
+                0.040220254339722934
+              ],
+              "retention": [
+                0.4734133790737564,
+                0.4734133790737564,
+                0.411663807890223
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.00032576631677049255,
+                0.1511045720967182,
+                0.05690062633773795
+              ],
+              "retention": [
+                0.0,
+                0.7478559176672385,
+                0.4236706689536878
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                0,
+                1
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.00032576631677049255,
+                0.1511045720967182,
+                0.06085594144253613
+              ],
+              "retention": [
+                0.0,
+                0.7478559176672385,
+                0.411663807890223
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "id": "t06",
+          "seconds": 0.694,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              1,
+              0,
+              2
+            ],
+            "proposed_mapping": [
+              1,
+              2,
+              0
+            ],
+            "mean_agreement": 0.3384743151549758,
+            "assignment_margin": 0.006192574846968446
+          },
+          "quiet": "C",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.8581869463612165,
+                0.768578944833131,
+                0.15651518119832186
+              ],
+              "retention": [
+                1.0,
+                1.0,
+                0.28313253012048195
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.5399631251130134,
+                0.25041371824524067,
+                0.04854556217026974
+              ],
+              "retention": [
+                0.7891566265060241,
+                0.7650602409638554,
+                0.8674698795180723
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                2,
+                1
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.8581869463612165,
+                0.768578944833131,
+                0.15651518119832186
+              ],
+              "retention": [
+                1.0,
+                1.0,
+                0.28313253012048195
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.7905178792879595,
+                0.768578944833131,
+                0.15651518119832186
+              ],
+              "retention": [
+                0.9216867469879518,
+                1.0,
+                0.28313253012048195
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                1,
+                2
+              ]
+            }
+          }
+        },
+        {
+          "id": "t07",
+          "seconds": 0.566,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              1,
+              2,
+              0
+            ],
+            "proposed_mapping": [
+              0,
+              1,
+              2
+            ],
+            "mean_agreement": 0.1619359906267794,
+            "assignment_margin": 0.0011886045709809112
+          },
+          "quiet": "A",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.276833541760638,
+                0.000528781070397837,
+                0.42336851457746844
+              ],
+              "retention": [
+                0.33076923076923076,
+                0.0,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                2,
+                1
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.058064404950866844,
+                0.17631940491360093,
+                0.15129418236157008
+              ],
+              "retention": [
+                0.6384615384615384,
+                0.4461538461538462,
+                0.6384615384615384
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                1,
+                0,
+                2
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.276833541760638,
+                0.000528781070397837,
+                0.42336851457746844
+              ],
+              "retention": [
+                0.33076923076923076,
+                0.0,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                2,
+                1
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.276833541760638,
+                0.000528781070397837,
+                0.42336851457746844
+              ],
+              "retention": [
+                0.33076923076923076,
+                0.0,
+                1.0
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                2,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "id": "t08",
+          "seconds": 0.443,
+          "enrollment_mapping_gate": {
+            "accepted": false,
+            "base_order": [
+              2,
+              0,
+              1
+            ],
+            "proposed_mapping": [
+              1,
+              2,
+              0
+            ],
+            "mean_agreement": 0.23876805058724923,
+            "assignment_margin": 0.00538866889281539
+          },
+          "quiet": "B",
+          "arms": {
+            "incumbent": {
+              "fidelity": [
+                0.06062224817204581,
+                0.0009898271060728022,
+                0.12873924961795646
+              ],
+              "retention": [
+                0.1308411214953271,
+                0.22429906542056074,
+                0.719626168224299
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                1,
+                0
+              ]
+            },
+            "direct": {
+              "fidelity": [
+                0.2362945221917119,
+                0.001021001582042309,
+                0.39116813379070525
+              ],
+              "retention": [
+                0.7663551401869159,
+                0.7663551401869159,
+                0.5327102803738317
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                0,
+                2,
+                1
+              ]
+            },
+            "map_only": {
+              "fidelity": [
+                0.06062224817204581,
+                0.0009898271060728022,
+                0.12873924961795646
+              ],
+              "retention": [
+                0.1308411214953271,
+                0.22429906542056074,
+                0.719626168224299
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                1,
+                0
+              ]
+            },
+            "blend": {
+              "fidelity": [
+                0.1656193252126089,
+                0.0009898271060728022,
+                0.12873924961795646
+              ],
+              "retention": [
+                0.5327102803738317,
+                0.22429906542056074,
+                0.719626168224299
+              ],
+              "joint96": false,
+              "joint98": false,
+              "best_ref_mapping": [
+                2,
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

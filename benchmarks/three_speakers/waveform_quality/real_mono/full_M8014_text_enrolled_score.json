@@ -1,0 +1,70 @@
+{
+  "corpus": "R8008_M8014",
+  "excluded_start_s": 484.3,
+  "protocol": "Whole recording decoded once, then both measurement streams restricted to times after the fixed enrollment quarter. The per-speaker primary measure keeps enrolled A/B/C. Characters in straddling decoded segments use their CTC time midpoint when available.",
+  "fixed": {
+    "edits": 4950,
+    "reference_characters": 6972,
+    "CER": 0.7099827882960413,
+    "track_order": "ABC",
+    "per_speaker": {
+      "A": {
+        "reference_characters": 3771,
+        "edits": 2471,
+        "delete": 1948,
+        "insert": 14,
+        "replace": 509
+      },
+      "B": {
+        "reference_characters": 1232,
+        "edits": 1157,
+        "delete": 1042,
+        "insert": 0,
+        "replace": 115
+      },
+      "C": {
+        "reference_characters": 1969,
+        "edits": 1322,
+        "delete": 682,
+        "insert": 40,
+        "replace": 600
+      }
+    }
+  },
+  "one_global_permutation": {
+    "edits": 4950,
+    "reference_characters": 6972,
+    "CER": 0.7099827882960413,
+    "track_order": "ABC",
+    "per_speaker": {
+      "A": {
+        "reference_characters": 3771,
+        "edits": 2471,
+        "delete": 1948,
+        "insert": 14,
+        "replace": 509
+      },
+      "B": {
+        "reference_characters": 1232,
+        "edits": 1157,
+        "delete": 1042,
+        "insert": 0,
+        "replace": 115
+      },
+      "C": {
+        "reference_characters": 1969,
+        "edits": 1322,
+        "delete": 682,
+        "insert": 40,
+        "replace": 600
+      }
+    }
+  },
+  "hypothesis_boundary_segments": [
+    {
+      "label": "A",
+      "method": "character midpoint",
+      "kept": "了跟群众反馈的人说"
+    }
+  ]
+}

@@ -135,6 +135,71 @@
       }
     },
     "M8009": {
+      "legacy_forced": {
+        "duration_s": 20.0,
+        "labels": [
+          "Speaker_A",
+          "Speaker_B",
+          "Speaker_C",
+          "Speaker_D"
+        ],
+        "aligned_waveform_probes": 24,
+        "fixed_global_order_using_scoring_labels": [
+          "Speaker_A",
+          "Speaker_C",
+          "Speaker_B"
+        ],
+        "eligible_solo_per_physical_speaker": [
+          11,
+          9,
+          17
+        ],
+        "global_permutations_tied_on_primary_solo_hits": 1,
+        "global_permutations_tied_after_activity_tiebreak": 1,
+        "solo_correct_loudest": 28,
+        "eligible_solo": 37,
+        "double_both_named_outputs_audible": 53,
+        "eligible_double": 87,
+        "triple_three_named_outputs_audible": 13,
+        "eligible_triple": 33,
+        "count_of_eligible_blocks_by_actual_then_number_of_audible_outputs": {
+          "0": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "1": [
+            2,
+            8,
+            25,
+            2,
+            0
+          ],
+          "2": [
+            0,
+            30,
+            26,
+            31,
+            0
+          ],
+          "3": [
+            0,
+            12,
+            8,
+            13,
+            0
+          ]
+        },
+        "audio_export_wall_seconds": 39.35061072099961,
+        "output_sha256": {
+          "Speaker_A.wav": "f539ff508015c26b2d70a23b87580836cd39f97dba63f5ba23bbbd2a51d23633",
+          "Speaker_B.wav": "8299da1b3559a19a33bcc2ac5c3eee5e2171f8be2802e4266fbef3404ab38bc6",
+          "Speaker_C.wav": "19204639f936e25f58ab31132a2ac9230344339cdb36b50d22a515aeb7d3e92f",
+          "Speaker_D.wav": "f03c5f3d6b1c2838903900baa5e646f41acd75bb272b048c28d6d7e05a0c04e0"
+        }
+      },
       "revised_auto": {
         "duration_s": 20.0,
         "labels": [
